@@ -1,5 +1,5 @@
 import Tooltip from '@/components/Tooltip'
-import { currentChapterAtom, currentDictInfoAtom, isReviewModeAtom } from '@/store'
+import { currentChapterAtom, currentDictInfoAtom, isOpenDarkModeAtom, isReviewModeAtom } from '@/store'
 import range from '@/utils/range'
 import { Listbox, Transition } from '@headlessui/react'
 import { useAtom, useAtomValue } from 'jotai'
@@ -12,6 +12,7 @@ export const DictChapterButton = () => {
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const chapterCount = currentDictInfo.chapterCount
   const isReviewMode = useAtomValue(isReviewModeAtom)
+  const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
 
   const handleKeyDown: React.KeyboardEventHandler<HTMLButtonElement> = (event) => {
     if (event.key === ' ') {
@@ -22,7 +23,9 @@ export const DictChapterButton = () => {
     <>
       <Tooltip content="词典切换">
         <NavLink
-          className="block rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
+          className={`block rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none ${
+            isOpenDarkMode ? 'text-white text-opacity-60 hover:text-opacity-100' : 'text-gray-800 hover:text-white'
+          }`}
           to="/gallery"
         >
           {currentDictInfo.name} {isReviewMode && '错题复习'}
@@ -33,7 +36,9 @@ export const DictChapterButton = () => {
           <Listbox value={currentChapter} onChange={setCurrentChapter}>
             <Listbox.Button
               onKeyDown={handleKeyDown}
-              className="rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
+              className={`rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none ${
+                isOpenDarkMode ? 'text-white text-opacity-60 hover:text-opacity-100' : 'text-gray-800 hover:text-white'
+              }`}
             >
               第 {currentChapter + 1} 章
             </Listbox.Button>

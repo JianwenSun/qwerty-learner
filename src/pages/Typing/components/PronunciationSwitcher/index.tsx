@@ -1,6 +1,6 @@
 import Tooltip from '@/components/Tooltip'
 import { LANG_PRON_MAP } from '@/resources/soundResource'
-import { currentDictInfoAtom, phoneticConfigAtom, pronunciationConfigAtom } from '@/store'
+import { currentDictInfoAtom, isOpenDarkModeAtom, phoneticConfigAtom, pronunciationConfigAtom } from '@/store'
 import type { PronunciationType } from '@/typings'
 import { PRONUNCIATION_PHONETIC_MAP } from '@/typings'
 import { CTRL } from '@/utils'
@@ -15,6 +15,7 @@ const PronunciationSwitcher = () => {
   const [pronunciationConfig, setPronunciationConfig] = useAtom(pronunciationConfigAtom)
   const [phoneticConfig, setPhoneticConfig] = useAtom(phoneticConfigAtom)
   const pronunciationList = useMemo(() => LANG_PRON_MAP[currentDictInfo.language].pronunciation, [currentDictInfo.language])
+  const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
 
   useEffect(() => {
     const defaultPronIndex = currentDictInfo.defaultPronIndex || LANG_PRON_MAP[currentDictInfo.language].defaultPronIndex
@@ -109,8 +110,12 @@ const PronunciationSwitcher = () => {
       {({ open }) => (
         <>
           <Popover.Button
-            className={`flex h-8 min-w-max cursor-pointer items-center justify-center rounded-md px-1 transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100  ${
-              open ? 'bg-indigo-400 text-white' : 'bg-transparent'
+            className={`flex h-8 min-w-max cursor-pointer items-center justify-center rounded-md px-1 transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none ${
+              open
+                ? 'bg-indigo-400 text-white'
+                : `${
+                    isOpenDarkMode ? 'text-white text-opacity-60 hover:text-opacity-100' : 'text-gray-800 hover:text-white'
+                  } bg-transparent`
             }`}
             onFocus={(e) => {
               e.target.blur()
