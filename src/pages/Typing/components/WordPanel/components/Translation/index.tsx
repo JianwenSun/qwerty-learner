@@ -2,7 +2,7 @@ import Tooltip from '@/components/Tooltip'
 import { SoundIcon } from '@/components/WordPronunciationIcon/SoundIcon'
 import useSpeech from '@/hooks/useSpeech'
 import { fontSizeConfigAtom, isOpenDarkModeAtom, isTextSelectableAtom, pronunciationConfigAtom } from '@/store'
-import { useAtom, useAtomValue } from 'jotai'
+import { useAtomValue } from 'jotai'
 import { useCallback, useMemo } from 'react'
 
 export type TranslationProps = {

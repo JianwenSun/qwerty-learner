@@ -423,9 +423,7 @@ const MobilePage: React.FC = () => {
                     </svg>
                   </div>
                   <h3 className="mb-3 text-lg font-semibold text-gray-900 sm:text-xl">英语肌肉记忆训练</h3>
-                  <p className="text-sm leading-relaxed text-gray-600 sm:text-base">
-                    专为键盘工作者设计，将英语单词记忆与键盘输入的肌肉记忆锻炼相结合，在背诵单词的同时巩固打字技能。
-                  </p>
+                  <p className="text-sm leading-relaxed text-gray-600 sm:text-base"></p>
                 </div>
 
                 {/* 错误纠正 */}
