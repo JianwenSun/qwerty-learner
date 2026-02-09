@@ -1,0 +1,5 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/static/schemas/latest/wrangler-json-schema",
+  "name": "qwerty-learner",
+  "pages_build_output_dir": "build"
+}

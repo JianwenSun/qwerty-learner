@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": ".",
-  "packageManager": "npm@11.8.0",
   "dependencies": {
     "@floating-ui/react": "^0.20.1",
     "@headlessui/react": "^1.7.13",
@@ -124,6 +123,5 @@
     "typescript-plugin-css-modules": "^5.0.1",
     "unplugin-icons": "^0.16.1",
     "vite": "^4.1.1"
-  },
-  "packageManager": "yarn@4.12.0"
+  }
 }
