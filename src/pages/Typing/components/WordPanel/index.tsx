@@ -174,7 +174,7 @@ export default function WordPanel() {
               <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} />
               {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
               <Translation
-                trans={currentWord.trans.join('；')}
+                trans={currentWord.trans}
                 showTrans={shouldShowTranslation}
                 onMouseEnter={() => handleShowTranslation(true)}
                 onMouseLeave={() => handleShowTranslation(false)}

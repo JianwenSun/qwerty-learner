@@ -6,7 +6,7 @@ import { useAtomValue } from 'jotai'
 import { useCallback, useMemo } from 'react'
 
 export type TranslationProps = {
-  trans: string
+  trans: string[]
   showTrans?: boolean
   onMouseEnter?: () => void
   onMouseLeave?: () => void
@@ -18,7 +18,7 @@ export default function Translation({ trans, showTrans = true, onMouseEnter, onM
   const isOpenDarkMode = useAtomValue(isOpenDarkModeAtom)
   let isShowTransRead = window.speechSynthesis && pronunciationConfig.isTransRead
   const speechOptions = useMemo(() => ({ volume: pronunciationConfig.transVolume }), [pronunciationConfig.transVolume])
-  const { speak, speaking } = useSpeech(trans, speechOptions)
+  const { speak, speaking } = useSpeech(trans.join('；'), speechOptions)
 
   const handleClickSoundIcon = useCallback(() => {
     speak(true)
@@ -34,7 +34,7 @@ export default function Translation({ trans, showTrans = true, onMouseEnter, onM
         ${isTextSelectable && 'select-text'}`}
         style={{ fontSize: fontSizeConfig.translateFont.toString() + 'px' }}
       >
-        {showTrans ? trans : '\u00A0'}
+        {showTrans ? trans.join('；') : '\u00A0'}
       </span>
       {isShowTransRead && showTrans && (
         <Tooltip content="朗读释义" className="ml-3 h-5 w-5 cursor-pointer leading-7">
