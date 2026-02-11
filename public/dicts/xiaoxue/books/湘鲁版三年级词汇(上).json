@@ -1,0 +1,1147 @@
+[
+  {
+    "name": "hi",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "喂（表示问候或唤起注意）"
+      }
+    ],
+    "usphone": "haɪ",
+    "ukphone": "haɪ"
+  },
+  {
+    "name": "hello",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "喂（表示问候或唤起注意）；你好"
+      }
+    ],
+    "usphone": "hə'loʊ",
+    "ukphone": "hə'ləʊ"
+  },
+  {
+    "name": "I",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "我"
+      }
+    ],
+    "usphone": "aɪ",
+    "ukphone": "aɪ"
+  },
+  {
+    "name": "too",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "也，还；又；太，过分；很，非常"
+      }
+    ],
+    "usphone": "tuː",
+    "ukphone": "tuː"
+  },
+  {
+    "name": "Ms",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "女士（对女子婚姻状况不明时使用）"
+      }
+    ],
+    "usphone": "mɪz",
+    "ukphone": "mɪz"
+  },
+  {
+    "name": "my",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "我的"
+      }
+    ],
+    "usphone": "maɪ",
+    "ukphone": "maɪ"
+  },
+  {
+    "name": "be",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "是；有；位于"
+      }
+    ],
+    "usphone": "bi",
+    "ukphone": "bi"
+  },
+  {
+    "name": "am",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "系动词be的人称形式之一"
+      },
+      {
+        "type": "abbr.",
+        "definition": "上午"
+      }
+    ],
+    "usphone": "æm",
+    "ukphone": "æm"
+  },
+  {
+    "name": "is",
+    "pos": [
+      {
+        "type": "aux. v.",
+        "definition": "是（be的第三人称单数形式）"
+      }
+    ],
+    "usphone": "ɪz",
+    "ukphone": "ɪz"
+  },
+  {
+    "name": "are",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "系动词be的人称形式之一"
+      }
+    ],
+    "usphone": "ər; ɑːr",
+    "ukphone": "ə(r); ɑː(r)"
+  },
+  {
+    "name": "it",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "它"
+      }
+    ],
+    "usphone": "ɪt",
+    "ukphone": "ɪt"
+  },
+  {
+    "name": "pen",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "钢笔"
+      }
+    ],
+    "usphone": "pen",
+    "ukphone": "pen"
+  },
+  {
+    "name": "book",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "书"
+      },
+      {
+        "type": "vt.",
+        "definition": "预定，定（房间、车票等）"
+      }
+    ],
+    "usphone": "bʊk",
+    "ukphone": "bʊk"
+  },
+  {
+    "name": "bag",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "包；提包；袋子"
+      }
+    ],
+    "usphone": "bæɡ",
+    "ukphone": "bæɡ"
+  },
+  {
+    "name": "pencil",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "铅笔"
+      }
+    ],
+    "usphone": "'pensl",
+    "ukphone": "'pensl"
+  },
+  {
+    "name": "goodbye",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "再见"
+      }
+    ],
+    "usphone": "ˌɡʊd'baɪ",
+    "ukphone": "ˌɡʊd'baɪ"
+  },
+  {
+    "name": "bye",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "再见"
+      }
+    ],
+    "usphone": "baɪ",
+    "ukphone": "baɪ"
+  },
+  {
+    "name": "a",
+    "pos": [
+      {
+        "type": "article.",
+        "definition": "一，一个"
+      }
+    ],
+    "usphone": "eɪ; ə",
+    "ukphone": "eɪ; ə"
+  },
+  {
+    "name": "touch",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "触摸；接触；触及，涉及"
+      },
+      {
+        "type": "n.",
+        "definition": "触觉；接触"
+      }
+    ],
+    "usphone": "tʌtʃ",
+    "ukphone": "tʌtʃ"
+  },
+  {
+    "name": "nose",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鼻子"
+      }
+    ],
+    "usphone": "noʊz",
+    "ukphone": "nəʊz"
+  },
+  {
+    "name": "mouth",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "嘴，口"
+      }
+    ],
+    "usphone": "maʊθ",
+    "ukphone": "maʊθ"
+  },
+  {
+    "name": "eye",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "眼睛"
+      }
+    ],
+    "usphone": "aɪ",
+    "ukphone": "aɪ"
+  },
+  {
+    "name": "ear",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "耳朵"
+      }
+    ],
+    "usphone": "ɪr",
+    "ukphone": "ɪə(r)"
+  },
+  {
+    "name": "look",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "看，瞧；看上去"
+      }
+    ],
+    "usphone": "lʊk",
+    "ukphone": "lʊk"
+  },
+  {
+    "name": "in",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……里（内；上）；用……（表示）；（表示服饰等）穿着"
+      },
+      {
+        "type": "adv.",
+        "definition": "在里面；在内"
+      }
+    ],
+    "usphone": "ɪn",
+    "ukphone": "ɪn"
+  },
+  {
+    "name": "guess",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "猜，猜测"
+      }
+    ],
+    "usphone": "ɡes",
+    "ukphone": "ɡes"
+  },
+  {
+    "name": "toy",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "玩具"
+      }
+    ],
+    "usphone": "tɔɪ",
+    "ukphone": "tɔɪ"
+  },
+  {
+    "name": "turtle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "【动】龟, 【动】海龟"
+      }
+    ],
+    "usphone": "'tɜːrtl",
+    "ukphone": "'tɜːtl"
+  },
+  {
+    "name": "have",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "拥有；得到；吃，喝；进行；从事"
+      }
+    ],
+    "usphone": "hæv, həv, əv",
+    "ukphone": "hæv, həv, əv"
+  },
+  {
+    "name": "big",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "大的"
+      }
+    ],
+    "usphone": "bɪɡ",
+    "ukphone": "bɪɡ"
+  },
+  {
+    "name": "panda",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "熊猫"
+      }
+    ],
+    "usphone": "'pændə",
+    "ukphone": "'pændə"
+  },
+  {
+    "name": "long",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "长的"
+      }
+    ],
+    "usphone": "lɑːŋ",
+    "ukphone": "lɒŋ"
+  },
+  {
+    "name": "arm",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "臂; 手臂; 扶手; 支架; 上肢; 杆臂; 大树枝; 职能部门; 权力; 得力助手; [复数]武器"
+      },
+      {
+        "type": "v.",
+        "definition": "武装, 装备; 武装起来, 备战; 使(炸弹等)随时爆炸; 提供, 配备"
+      }
+    ],
+    "usphone": "ɑːrm",
+    "ukphone": "ɑːm"
+  },
+  {
+    "name": "and",
+    "pos": [
+      {
+        "type": "conj.",
+        "definition": "和"
+      }
+    ],
+    "usphone": "ænd; ənd; ən",
+    "ukphone": "ænd; ənd; (ə)n"
+  },
+  {
+    "name": "leg",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "腿"
+      }
+    ],
+    "usphone": "leɡ",
+    "ukphone": "leɡ"
+  },
+  {
+    "name": "monkey",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "猴子"
+      }
+    ],
+    "usphone": "'mʌŋki",
+    "ukphone": "'mʌŋki"
+  },
+  {
+    "name": "yes",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "是，是的"
+      }
+    ],
+    "usphone": "jes",
+    "ukphone": "jes"
+  },
+  {
+    "name": "thank you",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "（表示感激）谢谢你, （接受好意）好, （婉言谢绝）不用了"
+      },
+      {
+        "type": "n.",
+        "definition": "感谢, 谢意, 酬谢, 谢辞"
+      }
+    ],
+    "usphone": "θæŋk juː",
+    "ukphone": "θæŋk juː"
+  },
+  {
+    "name": "dad",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（口语）爸爸，爹爹"
+      }
+    ],
+    "usphone": "dæd",
+    "ukphone": "dæd"
+  },
+  {
+    "name": "head",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（人或动物等的）头，头部"
+      },
+      {
+        "type": "v.",
+        "definition": "朝（某方向）行进；领导，主管；排在前头；用头顶（球）"
+      }
+    ],
+    "usphone": "hed",
+    "ukphone": "hed"
+  },
+  {
+    "name": "small",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "小的"
+      }
+    ],
+    "usphone": "smɔːl",
+    "ukphone": "smɔːl"
+  },
+  {
+    "name": "who",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "谁 (用于疑问句，询问姓名和身份)"
+      },
+      {
+        "type": "abbr.",
+        "definition": "大写WHO (=World Health Organization)世界卫生组织(联合国)"
+      }
+    ],
+    "usphone": "huː",
+    "ukphone": "huː"
+  },
+  {
+    "name": "she",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "她"
+      }
+    ],
+    "usphone": "ʃi:",
+    "ukphone": "ʃi:"
+  },
+  {
+    "name": "new",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "新的"
+      }
+    ],
+    "usphone": "nuː",
+    "ukphone": "njuː"
+  },
+  {
+    "name": "teacher",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "教师"
+      }
+    ],
+    "usphone": "'tiːtʃər",
+    "ukphone": "'tiːtʃə(r)"
+  },
+  {
+    "name": "ruler",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "统治者；管理者；尺子"
+      }
+    ],
+    "usphone": "'ruːlər",
+    "ukphone": "'ruːlə(r)"
+  },
+  {
+    "name": "eraser",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "橡皮"
+      }
+    ],
+    "usphone": "ɪ'reɪsər",
+    "ukphone": "ɪ'reɪzə(r)"
+  },
+  {
+    "name": "desk",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "书桌"
+      }
+    ],
+    "usphone": "desk",
+    "ukphone": "desk"
+  },
+  {
+    "name": "that",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "那；那个"
+      },
+      {
+        "type": "pron.",
+        "definition": "那；那个"
+      },
+      {
+        "type": "conj.",
+        "definition": "那，那个（引导宾语从句等）"
+      },
+      {
+        "type": "adv.",
+        "definition": "那么，那样"
+      }
+    ],
+    "usphone": "ðæt",
+    "ukphone": "ðæt"
+  },
+  {
+    "name": "pupil",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "学生, (尤指)小学生, 弟子, 瞳孔"
+      }
+    ],
+    "usphone": "'pjuːpl",
+    "ukphone": "'pjuːpl"
+  },
+  {
+    "name": "he",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "他"
+      }
+    ],
+    "usphone": "hi:",
+    "ukphone": "hi:"
+  },
+  {
+    "name": "Mr",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "先生"
+      }
+    ],
+    "usphone": "'mɪstər",
+    "ukphone": "'mɪstə(r)"
+  },
+  {
+    "name": "our",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "我们的"
+      }
+    ],
+    "usphone": "'aʊər",
+    "ukphone": "'aʊə(r) "
+  },
+  {
+    "name": "go to school",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "去上学"
+      }
+    ],
+    "usphone": "ɡoʊ tə skʊl",
+    "ukphone": "ɡəʊ tə skuːl"
+  },
+  {
+    "name": "OK",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "对, 好, 行, （用以引起注意或引入话题）好了"
+      }
+    ],
+    "usphone": "oʊ'keɪ",
+    "ukphone": "əʊ'keɪ"
+  },
+  {
+    "name": "where",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "在哪里"
+      }
+    ],
+    "usphone": "wer",
+    "ukphone": "weə(r)"
+  },
+  {
+    "name": "on",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在…上；关于；一…就"
+      },
+      {
+        "type": "adv.",
+        "definition": "（穿，放…）上；接通；进行下去；（电灯）开"
+      },
+      {
+        "type": "adj.",
+        "definition": "开着的；正在进行的；正在播出的"
+      }
+    ],
+    "usphone": "ɑːn",
+    "ukphone": "ɒn"
+  },
+  {
+    "name": "the",
+    "pos": [
+      {
+        "type": "article.",
+        "definition": "这（那）个（用于特定人或物序数词最高级专有名词世上独一无二事物前）"
+      }
+    ],
+    "usphone": "ðə",
+    "ukphone": "ðə"
+  },
+  {
+    "name": "table",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "桌子，表格"
+      }
+    ],
+    "usphone": "'teɪbl",
+    "ukphone": "'teɪbl"
+  },
+  {
+    "name": "red",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "红色"
+      },
+      {
+        "type": "adj.",
+        "definition": "红色的"
+      }
+    ],
+    "usphone": "red",
+    "ukphone": "red"
+  },
+  {
+    "name": "chair",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "椅子"
+      }
+    ],
+    "usphone": "tʃer",
+    "ukphone": "tʃeə(r)"
+  },
+  {
+    "name": "colour",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "颜色"
+      },
+      {
+        "type": "vt.",
+        "definition": "给……着色，涂色"
+      }
+    ],
+    "usphone": "'kʌlər",
+    "ukphone": "'kʌlə(r)"
+  },
+  {
+    "name": "blue",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蓝色"
+      },
+      {
+        "type": "adj.",
+        "definition": "蓝色的"
+      }
+    ],
+    "usphone": "bluː",
+    "ukphone": "bluː"
+  },
+  {
+    "name": "let's see",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "让咱们看看"
+      },
+      {
+        "type": "phrase.",
+        "definition": "让咱们想一想"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "egg",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蛋"
+      }
+    ],
+    "usphone": "eɡ",
+    "ukphone": "eɡ"
+  },
+  {
+    "name": "apple",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "苹果"
+      }
+    ],
+    "usphone": "ˈæpəl",
+    "ukphone": "ˈæpəl"
+  },
+  {
+    "name": "good evening",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "（晚上见面时用语）晚上好"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "how many",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "多少（用于可数名词，如：How many books? 多少本书？）"
+      }
+    ],
+    "usphone": "haʊ 'meni",
+    "ukphone": "haʊ 'meni"
+  },
+  {
+    "name": "green",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "绿色的"
+      },
+      {
+        "type": "n.",
+        "definition": "绿色；绿色蔬菜，绿叶"
+      }
+    ],
+    "usphone": "ɡriːn",
+    "ukphone": "ɡriːn"
+  },
+  {
+    "name": "yellow",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "黄色的；黄色"
+      }
+    ],
+    "usphone": "'jeloʊ",
+    "ukphone": "'jeləʊ"
+  },
+  {
+    "name": "mum",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "妈妈"
+      },
+      {
+        "type": "adj.",
+        "definition": "守密的；沉默的"
+      }
+    ],
+    "usphone": "mʌm",
+    "ukphone": "mʌm"
+  },
+  {
+    "name": "there are",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "某处有..."
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "happy birthday",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "生日快乐"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "look at",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "看；看待"
+      }
+    ],
+    "usphone": "lʊk æt",
+    "ukphone": "lʊk æt"
+  },
+  {
+    "name": "cake",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蛋糕；糕；饼"
+      }
+    ],
+    "usphone": "keɪk",
+    "ukphone": "keɪk"
+  },
+  {
+    "name": "for",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "（表示对象）给；（表示目的）为；（表示目标，去向）往，向"
+      },
+      {
+        "type": "conj.",
+        "definition": "因为；由于……的缘故"
+      }
+    ],
+    "usphone": "fɔːr",
+    "ukphone": "fɔː(r)"
+  },
+  {
+    "name": "card",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "贺卡；卡片；纸牌"
+      }
+    ],
+    "usphone": "kɑːrd",
+    "ukphone": "kɑːd"
+  },
+  {
+    "name": "gift",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "赠品，礼物"
+      }
+    ],
+    "usphone": "ɡɪft",
+    "ukphone": "ɡɪft"
+  },
+  {
+    "name": "beautiful",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "美丽的，漂亮的"
+      }
+    ],
+    "usphone": "'bjuːtɪfl",
+    "ukphone": "'bjuːtɪfl"
+  },
+  {
+    "name": "they",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "他们；她们；它们"
+      }
+    ],
+    "usphone": "ðeɪ",
+    "ukphone": "ðeɪ"
+  },
+  {
+    "name": "draw",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "描画; 拖(动), 拉(动), 牵引; 取出; 抽出; 提取; 取得; 推断出; 引起; 吸引"
+      }
+    ],
+    "usphone": "drɔː",
+    "ukphone": "drɔː"
+  },
+  {
+    "name": "PE",
+    "pos": [
+      {
+        "type": "abbr.",
+        "definition": "体育（课）（=Physical Education）"
+      }
+    ],
+    "usphone": "ˌpiː'iː",
+    "ukphone": "ˌpiː'iː"
+  },
+  {
+    "name": "like",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "喜欢"
+      },
+      {
+        "type": "prep.",
+        "definition": "像，像……一样"
+      }
+    ],
+    "usphone": "laɪk",
+    "ukphone": "laɪk"
+  },
+  {
+    "name": "me",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "（用作宾语）我"
+      }
+    ],
+    "usphone": "mi:",
+    "ukphone": "mi:"
+  },
+  {
+    "name": "shoot",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "射击；嫩枝；苗；芽"
+      },
+      {
+        "type": "v.",
+        "definition": "射击；射中；发射"
+      }
+    ],
+    "usphone": "ʃuːt",
+    "ukphone": "ʃuːt"
+  },
+  {
+    "name": "goal",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（球赛等的）得分；目标，目的"
+      }
+    ],
+    "usphone": "ɡoʊl",
+    "ukphone": "ɡəʊl"
+  },
+  {
+    "name": "English",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "英国的，英格兰的；英国人的；英格兰人的；英语的"
+      },
+      {
+        "type": "n.",
+        "definition": "英语；（用作复）（总称）英国人，英格兰人"
+      }
+    ],
+    "usphone": "'ɪŋɡlɪʃ",
+    "ukphone": "'ɪŋɡlɪʃ"
+  },
+  {
+    "name": "Chinese",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "中国的；中国人的；汉语的"
+      },
+      {
+        "type": "n.",
+        "definition": "汉语，中文；中餐"
+      }
+    ],
+    "usphone": "ˌtʃaɪˈniːz",
+    "ukphone": "ˌtʃaɪˈniːz"
+  },
+  {
+    "name": "music",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "音乐"
+      }
+    ],
+    "usphone": "'mjuːzɪk",
+    "ukphone": "'mjuːzɪk"
+  },
+  {
+    "name": "fish",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鱼；鱼肉"
+      },
+      {
+        "type": "v.",
+        "definition": "钓（鱼）；捕（鱼）；在……中捕鱼"
+      }
+    ],
+    "usphone": "fɪʃ",
+    "ukphone": "fɪʃ"
+  },
+  {
+    "name": "ugly",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "丑陋的，难看的"
+      }
+    ],
+    "usphone": "'ʌɡli",
+    "ukphone": "'ʌɡli"
+  },
+  {
+    "name": "cool",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "凉的；凉快的；冷静的；酷的"
+      }
+    ],
+    "usphone": "kuːl",
+    "ukphone": "kuːl"
+  },
+  {
+    "name": "cat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "猫；猫科动物"
+      }
+    ],
+    "usphone": "kæt",
+    "ukphone": "kæt"
+  },
+  {
+    "name": "cute",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "漂亮的，迷人的，娇小可爱的，精巧的，小巧玲珑的；聪明伶俐的，机敏的；精明的"
+      }
+    ],
+    "usphone": "kjuːt",
+    "ukphone": "kjuːt"
+  },
+  {
+    "name": "dog",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "狗"
+      }
+    ],
+    "usphone": "dɔːɡ",
+    "ukphone": "dɒɡ"
+  }
+]

@@ -1,0 +1,901 @@
+[
+  {
+    "name": "make the bed",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "整理床铺，铺床"
+      }
+    ],
+    "usphone": "meɪk ðə bed",
+    "ukphone": "meɪk ðə bed"
+  },
+  {
+    "name": "now",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "现在"
+      }
+    ],
+    "usphone": "naʊ",
+    "ukphone": "naʊ"
+  },
+  {
+    "name": "earth",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "世界，地球（常作the earth）；陆地，地面，大地；土，泥，泥土"
+      }
+    ],
+    "usphone": "ɜːrθ",
+    "ukphone": "ɜːθ"
+  },
+  {
+    "name": "stamp",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "邮票"
+      }
+    ],
+    "usphone": "stæmp",
+    "ukphone": "stæmp"
+  },
+  {
+    "name": "garden",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "花园；菜园"
+      }
+    ],
+    "usphone": "'ɡɑːrdn",
+    "ukphone": "'ɡɑːdn"
+  },
+  {
+    "name": "table",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "桌子，表格"
+      }
+    ],
+    "usphone": "'teɪbl",
+    "ukphone": "'teɪbl"
+  },
+  {
+    "name": "people",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "人，人们"
+      }
+    ],
+    "usphone": "'piːpl",
+    "ukphone": "'piːpl"
+  },
+  {
+    "name": "watermelon",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "西瓜"
+      }
+    ],
+    "usphone": "'wɔːtərmelən",
+    "ukphone": "'wɔːtəmelən"
+  },
+  {
+    "name": "grass",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "草；草地"
+      }
+    ],
+    "usphone": "ɡræs",
+    "ukphone": "ɡrɑːs"
+  },
+  {
+    "name": "them",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "（用作宾语）他们，她们，它们"
+      }
+    ],
+    "usphone": "ðem",
+    "ukphone": "ðem"
+  },
+  {
+    "name": "squirrel",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "松鼠"
+      }
+    ],
+    "usphone": "'skwɜːrəl",
+    "ukphone": "'skwɪrəl"
+  },
+  {
+    "name": "any",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "任何（的）；一些"
+      },
+      {
+        "type": "pron.",
+        "definition": "任何（的）；一些"
+      }
+    ],
+    "usphone": "'eni",
+    "ukphone": "'eni"
+  },
+  {
+    "name": "sea",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "海"
+      }
+    ],
+    "usphone": "siː",
+    "ukphone": "siː"
+  },
+  {
+    "name": "shark",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鲨鱼"
+      }
+    ],
+    "usphone": "ʃɑːrk",
+    "ukphone": "ʃɑːk"
+  },
+  {
+    "name": "mountain",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "山；山脉；山区"
+      }
+    ],
+    "usphone": "'maʊntən",
+    "ukphone": "'maʊntən"
+  },
+  {
+    "name": "forest",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "森林"
+      }
+    ],
+    "usphone": "'fɔːrɪst",
+    "ukphone": "'fɒrɪst"
+  },
+  {
+    "name": "desert",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "沙漠；荒地"
+      },
+      {
+        "type": "vt.",
+        "definition": "离弃；抛弃；擅自离开"
+      }
+    ],
+    "usphone": "dɪˈzɜːrt  ˈdezərt ",
+    "ukphone": "dɪˈzɜːt  ˈdezət "
+  },
+  {
+    "name": "grassland",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "草地, 牧场"
+      }
+    ],
+    "usphone": "'ɡræslænd",
+    "ukphone": "'ɡrɑːslænd"
+  },
+  {
+    "name": "have a look",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "看一看"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "live",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "居住；生活；实践，身体力行"
+      },
+      {
+        "type": "adj.",
+        "definition": "活的，有生命的；现场直播的，实况转播的"
+      },
+      {
+        "type": "adv.",
+        "definition": "在（或从）现场，以现场直播方式"
+      }
+    ],
+    "usphone": "lɪv; laɪv",
+    "ukphone": "lɪv; laɪv"
+  },
+  {
+    "name": "swallow",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "燕子"
+      },
+      {
+        "type": "vt.",
+        "definition": "吞下，咽下"
+      }
+    ],
+    "usphone": "'swɑːloʊ",
+    "ukphone": "'swɒləʊ"
+  },
+  {
+    "name": "clothes",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（pl.）衣服"
+      }
+    ],
+    "usphone": "kloʊðz, kloʊz",
+    "ukphone": "kləʊðz, kləʊz"
+  },
+  {
+    "name": "jeans",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "牛仔裤"
+      }
+    ],
+    "usphone": "dʒiːnz",
+    "ukphone": "dʒiːnz"
+  },
+  {
+    "name": "shirt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（尤指男式的）衬衫"
+      }
+    ],
+    "usphone": "ʃɜːrt",
+    "ukphone": "ʃɜːt"
+  },
+  {
+    "name": "T-shirt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "T恤衫"
+      }
+    ],
+    "usphone": "'ti,ʃɜːrt",
+    "ukphone": "'ti:,ʃɜ:t"
+  },
+  {
+    "name": "sweater",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "厚运动衫；毛衣"
+      }
+    ],
+    "usphone": "'swetər",
+    "ukphone": "'swetə(r)"
+  },
+  {
+    "name": "shoe",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鞋"
+      }
+    ],
+    "usphone": "ʃuː",
+    "ukphone": "ʃuː"
+  },
+  {
+    "name": "coat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "外套；涂层；表皮；皮毛"
+      }
+    ],
+    "usphone": "koʊt",
+    "ukphone": "kəʊt"
+  },
+  {
+    "name": "wear",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "戴；穿；面露，面带"
+      }
+    ],
+    "usphone": "wer",
+    "ukphone": "weə(r)"
+  },
+  {
+    "name": "snow",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "下雪"
+      },
+      {
+        "type": "n.",
+        "definition": "雪"
+      }
+    ],
+    "usphone": "snoʊ",
+    "ukphone": "snəʊ"
+  },
+  {
+    "name": "come out",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "出来；（书等）出版，发行；发芽"
+      }
+    ],
+    "usphone": "kʌm aʊt",
+    "ukphone": "kʌm aʊt"
+  },
+  {
+    "name": "last",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "最近刚过去的；最后的"
+      },
+      {
+        "type": "vi.",
+        "definition": "持续，维持"
+      }
+    ],
+    "usphone": "læst",
+    "ukphone": "lɑːst"
+  },
+  {
+    "name": "harvest",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "收获，收割；收获时节"
+      },
+      {
+        "type": "v.",
+        "definition": "收获，收割；采集（人体的细胞或组织，以供医学实验等）"
+      }
+    ],
+    "usphone": "'hɑːrvɪst",
+    "ukphone": "'hɑːvɪst"
+  },
+  {
+    "name": "boat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小船，小舟"
+      }
+    ],
+    "usphone": "boʊt",
+    "ukphone": "bəʊt"
+  },
+  {
+    "name": "think",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "想；认为"
+      }
+    ],
+    "usphone": "θɪŋk",
+    "ukphone": "θɪŋk"
+  },
+  {
+    "name": "used to",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "过去常常"
+      }
+    ],
+    "usphone": "ˈjuːst tu",
+    "ukphone": "ˈjuːst tu"
+  },
+  {
+    "name": "holiday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "假期；假日"
+      }
+    ],
+    "usphone": "'hɑːlədeɪ",
+    "ukphone": "'hɒlədeɪ"
+  },
+  {
+    "name": "bank",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（河、海、湖的）岸，堤；银行"
+      }
+    ],
+    "usphone": "bæŋk",
+    "ukphone": "bæŋk"
+  },
+  {
+    "name": "symbol",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "符号；象征"
+      }
+    ],
+    "usphone": "'sɪmbl",
+    "ukphone": "'sɪmbl"
+  },
+  {
+    "name": "celebrate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "庆祝"
+      }
+    ],
+    "usphone": "'selɪbreɪt",
+    "ukphone": "'selɪbreɪt"
+  },
+  {
+    "name": "national",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "国家的"
+      }
+    ],
+    "usphone": "'næʃnəl",
+    "ukphone": "'næʃnəl"
+  },
+  {
+    "name": "first",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第一 (个) 的"
+      }
+    ],
+    "usphone": "fɜːrst",
+    "ukphone": "fɜːst"
+  },
+  {
+    "name": "second",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第二"
+      },
+      {
+        "type": "n.",
+        "definition": "秒；片刻"
+      }
+    ],
+    "usphone": "'sekənd",
+    "ukphone": "'sekənd"
+  },
+  {
+    "name": "third",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第三(的), 三分之一(的)"
+      }
+    ],
+    "usphone": "θɜːrd",
+    "ukphone": "θɜːd"
+  },
+  {
+    "name": "fourth",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第四(的), 四分之一(的)"
+      }
+    ],
+    "usphone": "fɔːrθ",
+    "ukphone": "fɔːθ"
+  },
+  {
+    "name": "fifth",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第五(的), 五分之一(的)"
+      }
+    ],
+    "usphone": "fɪfθ",
+    "ukphone": "fɪfθ"
+  },
+  {
+    "name": "sixth",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第六(的)；六分之一(的)"
+      }
+    ],
+    "usphone": "sɪksθ",
+    "ukphone": "sɪksθ"
+  },
+  {
+    "name": "seventh",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "第七(的)；七分之一(的)"
+      }
+    ],
+    "usphone": "'sevnθ",
+    "ukphone": "'sevnθ"
+  },
+  {
+    "name": "eighth",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第八(的), 八分之一(的)"
+      }
+    ],
+    "usphone": "eɪtθ",
+    "ukphone": "eɪtθ"
+  },
+  {
+    "name": "ninth",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第九(的)；九分之一(的)"
+      }
+    ],
+    "usphone": "naɪnθ",
+    "ukphone": "naɪnθ"
+  },
+  {
+    "name": "tenth",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "第十(的); 十分之一(的)"
+      }
+    ],
+    "usphone": "tenθ",
+    "ukphone": "tenθ"
+  },
+  {
+    "name": "eleventh",
+    "pos": [
+      {
+        "type": "ord.",
+        "definition": "第十一"
+      }
+    ],
+    "usphone": "ɪ'levnθ",
+    "ukphone": "ɪ'levnθ"
+  },
+  {
+    "name": "twelfth",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第十二(的)；十二分之一(的)"
+      }
+    ],
+    "usphone": "twelfθ",
+    "ukphone": "twelfθ"
+  },
+  {
+    "name": "thirteenth",
+    "pos": [
+      {
+        "type": "ord.",
+        "definition": "第十三"
+      }
+    ],
+    "usphone": "ˌθɜː'tiːnθ",
+    "ukphone": "ˌθɜː'tiːnθ"
+  },
+  {
+    "name": "fourteenth",
+    "pos": [
+      {
+        "type": "ord.",
+        "definition": "第十四"
+      }
+    ],
+    "usphone": "ˌfɔː'tiːnθ",
+    "ukphone": "ˌfɔː'tiːnθ"
+  },
+  {
+    "name": "fifteenth",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第十五, 十五分之一"
+      }
+    ],
+    "usphone": "ˌfɪf'tiːnθ",
+    "ukphone": "ˌfɪf'tiːnθ"
+  },
+  {
+    "name": "sixteenth",
+    "pos": [
+      {
+        "type": "ord.",
+        "definition": "第十六"
+      }
+    ],
+    "usphone": "ˌsɪks'tiːnθ",
+    "ukphone": "ˌsɪks'tiːnθ"
+  },
+  {
+    "name": "seventeenth",
+    "pos": [
+      {
+        "type": "ord.",
+        "definition": "第十七"
+      }
+    ],
+    "usphone": "ˌsevn'tiːnθ",
+    "ukphone": "ˌsevn'tiːnθ"
+  },
+  {
+    "name": "eighteenth",
+    "pos": [
+      {
+        "type": "ord.",
+        "definition": "第十八"
+      }
+    ],
+    "usphone": "ˌeɪ'tiːnθ",
+    "ukphone": "ˌeɪ'tiːnθ"
+  },
+  {
+    "name": "nineteenth",
+    "pos": [
+      {
+        "type": "ord.",
+        "definition": "第十九"
+      }
+    ],
+    "usphone": "ˌnaɪn'tiːnθ",
+    "ukphone": "ˌnaɪn'tiːnθ"
+  },
+  {
+    "name": "be free",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "免费的；空闲的"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "birthday party",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "生日聚会"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "on time",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "准时"
+      }
+    ],
+    "usphone": "ɑːn taɪm",
+    "ukphone": "ɒn taɪm"
+  },
+  {
+    "name": "sock",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "短袜"
+      }
+    ],
+    "usphone": "sɑːk",
+    "ukphone": "sɒk"
+  },
+  {
+    "name": "blouse",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "女衬衫；（妇女、儿童穿的）短上衣"
+      }
+    ],
+    "usphone": "blaʊs",
+    "ukphone": "blaʊz"
+  },
+  {
+    "name": "piano",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "钢琴"
+      }
+    ],
+    "usphone": "pɪ'ænəʊ",
+    "ukphone": "pɪ'ænəʊ"
+  },
+  {
+    "name": "money",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "钱；货币"
+      }
+    ],
+    "usphone": "'mʌni",
+    "ukphone": "'mʌni"
+  },
+  {
+    "name": "tape",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "录音带，磁带"
+      }
+    ],
+    "usphone": "teɪp",
+    "ukphone": "teɪp"
+  },
+  {
+    "name": "phone",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "给……打电话"
+      },
+      {
+        "type": "n.",
+        "definition": "电话，电话机，受话器（=telephone）"
+      }
+    ],
+    "usphone": "foʊn",
+    "ukphone": "fəʊn"
+  },
+  {
+    "name": "mobile phone",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "手机，移动电话"
+      }
+    ],
+    "usphone": "ˌmoʊbl ˈfoʊn",
+    "ukphone": "ˌməʊbaɪl ˈfəʊn"
+  },
+  {
+    "name": "look like",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "看起来像"
+      }
+    ],
+    "usphone": "lʊk laɪk",
+    "ukphone": "lʊk laɪk"
+  },
+  {
+    "name": "expensive",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "昂贵的"
+      }
+    ],
+    "usphone": "ɪk'spensɪv",
+    "ukphone": "ɪk'spensɪv"
+  },
+  {
+    "name": "make a wish",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "许愿"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "late",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "迟的；晚的"
+      },
+      {
+        "type": "adv.",
+        "definition": "迟（地）；晚（地）"
+      }
+    ],
+    "usphone": "leɪt",
+    "ukphone": "leɪt"
+  },
+  {
+    "name": "early",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "早的"
+      },
+      {
+        "type": "adv.",
+        "definition": "早地"
+      }
+    ],
+    "usphone": "'ɜːrli",
+    "ukphone": "'ɜːli"
+  },
+  {
+    "name": "be worried about",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "担心，担忧"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "must",
+    "pos": [
+      {
+        "type": "aux. v.",
+        "definition": "一定；必须"
+      },
+      {
+        "type": "n.",
+        "definition": "必须做的事"
+      }
+    ],
+    "usphone": "mʌst",
+    "ukphone": "mʌst"
+  }
+]

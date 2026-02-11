@@ -55,17 +55,17 @@ const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
 
       renderRecords.forEach((item: any) => {
         const dictInfo = idDictionaryMap[item.dict]
-        let translation = ''
+        let translation: string | undefined = undefined
 
         if (dictInfo?.url && dictDataMap.has(dictInfo.url)) {
           const wordList = dictDataMap.get(dictInfo.url) || []
           const word = wordList.find((w: any) => w.name === item.word)
-          translation = word ? word.trans.join('；') : ''
+          translation = word ? word.pos?.map((pos) => pos.definition).join('；') : ''
         }
 
         ExportData.push({
           单词: item.word,
-          释义: translation,
+          释义: translation || '',
           错误次数: item.wrongCount,
           词典: dictInfo?.name || item.dict,
         })

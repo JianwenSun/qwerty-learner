@@ -1,0 +1,996 @@
+[
+  {
+    "name": "textbook",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "课本，教科书"
+      }
+    ],
+    "usphone": "'tekstbʊk",
+    "ukphone": "'tekstbʊk"
+  },
+  {
+    "name": "notebook",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "笔记本"
+      }
+    ],
+    "usphone": "'noʊtbʊk",
+    "ukphone": "'nəʊtbʊk"
+  },
+  {
+    "name": "storybook",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "故事书"
+      }
+    ],
+    "usphone": "'stɔːribʊk",
+    "ukphone": "'stɔːribʊk"
+  },
+  {
+    "name": "workbook",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "练习册，作业本"
+      }
+    ],
+    "usphone": "'wɜːrkbʊk",
+    "ukphone": "'wɜːkbʊk"
+  },
+  {
+    "name": "mine",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "我的（东西）"
+      },
+      {
+        "type": "n.",
+        "definition": "矿藏；矿山"
+      },
+      {
+        "type": "v.",
+        "definition": "开采（矿物）"
+      }
+    ],
+    "usphone": "maɪn",
+    "ukphone": "maɪn"
+  },
+  {
+    "name": "yours",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "你的（东西）；你们的（东西）"
+      }
+    ],
+    "usphone": "jərz",
+    "ukphone": "jɔːz"
+  },
+  {
+    "name": "hers",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "她的（东西）"
+      }
+    ],
+    "usphone": "hɜːrz",
+    "ukphone": "hɜːz"
+  },
+  {
+    "name": "his",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "他的；他的（东西）"
+      }
+    ],
+    "usphone": "hɪz",
+    "ukphone": "hɪz"
+  },
+  {
+    "name": "whose",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "谁的"
+      }
+    ],
+    "usphone": "huːz",
+    "ukphone": "huːz"
+  },
+  {
+    "name": "one by one",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "一个接一个地"
+      }
+    ],
+    "usphone": "wʌn baɪ wʌn",
+    "ukphone": "wʌn baɪ wʌn"
+  },
+  {
+    "name": "art",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "艺术；美术"
+      }
+    ],
+    "usphone": "ɑːrt",
+    "ukphone": "ɑːt"
+  },
+  {
+    "name": "PE",
+    "pos": [
+      {
+        "type": "abbr.",
+        "definition": "体育（课）（=Physical Education）"
+      }
+    ],
+    "usphone": "ˌpiː'iː",
+    "ukphone": "ˌpiː'iː"
+  },
+  {
+    "name": "music",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "音乐"
+      }
+    ],
+    "usphone": "'mjuːzɪk",
+    "ukphone": "'mjuːzɪk"
+  },
+  {
+    "name": "maths",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "数学"
+      }
+    ],
+    "usphone": "mæθs",
+    "ukphone": "mæθs"
+  },
+  {
+    "name": "computer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "计算机（俗称电脑）"
+      }
+    ],
+    "usphone": "kəm'pjuːtər",
+    "ukphone": "kəm'pjuːtə(r)"
+  },
+  {
+    "name": "science",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "科学，自然科学"
+      }
+    ],
+    "usphone": "'saɪəns",
+    "ukphone": "'saɪəns"
+  },
+  {
+    "name": "class",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "课；（学校里的）班；阶级，阶层"
+      }
+    ],
+    "usphone": "klæs",
+    "ukphone": "klɑːs"
+  },
+  {
+    "name": "subject",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "学科, 科目; 主题; 主语"
+      },
+      {
+        "type": "adj.",
+        "definition": "隶属的, 受支配的; 易受……的"
+      },
+      {
+        "type": "vt.",
+        "definition": "使隶属, 使服从; 使受到"
+      }
+    ],
+    "usphone": "'sʌbdʒekt",
+    "ukphone": "'sʌbdʒɪkt"
+  },
+  {
+    "name": "because",
+    "pos": [
+      {
+        "type": "conj.",
+        "definition": "因为"
+      }
+    ],
+    "usphone": "bɪ'kɔːz",
+    "ukphone": "bɪ'kɒz"
+  },
+  {
+    "name": "enjoy",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "喜爱，欣赏，享受"
+      }
+    ],
+    "usphone": "ɪn'dʒɔɪ",
+    "ukphone": "ɪn'dʒɔɪ"
+  },
+  {
+    "name": "funny",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "滑稽的；有趣的"
+      }
+    ],
+    "usphone": "'fʌni",
+    "ukphone": "'fʌni"
+  },
+  {
+    "name": "easy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "容易的，简单的"
+      }
+    ],
+    "usphone": "'iːzi",
+    "ukphone": "'iːzi"
+  },
+  {
+    "name": "magic",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "魔术；戏法"
+      },
+      {
+        "type": "adj.",
+        "definition": "有魔力的，不可思议的；魔术的"
+      }
+    ],
+    "usphone": "'mædʒɪk",
+    "ukphone": "'mædʒɪk"
+  },
+  {
+    "name": "important",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "重要的"
+      }
+    ],
+    "usphone": "ɪm'pɔːrtnt",
+    "ukphone": "ɪm'pɔːtnt"
+  },
+  {
+    "name": "interesting",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有趣的"
+      }
+    ],
+    "usphone": "'ɪntrəstɪŋ",
+    "ukphone": "'ɪntrəstɪŋ"
+  },
+  {
+    "name": "difficult",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "难的，困难的"
+      }
+    ],
+    "usphone": "'dɪfɪkəlt",
+    "ukphone": "'dɪfɪkəlt"
+  },
+  {
+    "name": "boring",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "令人厌倦的，乏味的，无聊的"
+      }
+    ],
+    "usphone": "'bɔːrɪŋ",
+    "ukphone": "'bɔːrɪŋ"
+  },
+  {
+    "name": "useful",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有用的；有益的"
+      }
+    ],
+    "usphone": "'juːsfl",
+    "ukphone": "'juːsfl"
+  },
+  {
+    "name": "useless",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "无用的，无价值的；无益的，无效的"
+      }
+    ],
+    "usphone": "'juːsləs",
+    "ukphone": "'juːsləs"
+  },
+  {
+    "name": "what",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "什么"
+      }
+    ],
+    "usphone": "wʌt",
+    "ukphone": "wɒt"
+  },
+  {
+    "name": "work hard",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "用功；努力工作"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cool",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "凉的；凉快的；冷静的；酷的"
+      }
+    ],
+    "usphone": "kuːl",
+    "ukphone": "kuːl"
+  },
+  {
+    "name": "hundred",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "百；百个"
+      }
+    ],
+    "usphone": "'hʌndrəd",
+    "ukphone": "'hʌndrəd"
+  },
+  {
+    "name": "thousand",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "千，一千"
+      }
+    ],
+    "usphone": "'θaʊznd",
+    "ukphone": "'θaʊznd"
+  },
+  {
+    "name": "swimming",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "游泳, 游泳运动"
+      },
+      {
+        "type": "v.",
+        "definition": "“swim”的现在分词"
+      }
+    ],
+    "usphone": "'swɪmɪŋ",
+    "ukphone": "'swɪmɪŋ"
+  },
+  {
+    "name": "singing",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "唱歌, 歌唱"
+      }
+    ],
+    "usphone": "'sɪŋɪŋ",
+    "ukphone": "'sɪŋɪŋ"
+  },
+  {
+    "name": "working",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有工作的，有职业的，做工的，从事体力劳动的"
+      }
+    ],
+    "usphone": "'wɜːrkɪŋ",
+    "ukphone": "'wɜːkɪŋ"
+  },
+  {
+    "name": "sleeping",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "睡觉（sleep的现在分词）"
+      }
+    ],
+    "usphone": "'sliːpɪŋ",
+    "ukphone": "'sliːpɪŋ"
+  },
+  {
+    "name": "eating",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "吃，饮食"
+      },
+      {
+        "type": "adj.",
+        "definition": "食用的，可生吃的，腐蚀的"
+      },
+      {
+        "type": "v.",
+        "definition": "“eat”的现在分词"
+      }
+    ],
+    "usphone": "'iːtɪŋ",
+    "ukphone": "'iːtɪŋ"
+  },
+  {
+    "name": "reading",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "阅读"
+      }
+    ],
+    "usphone": "'riːdɪŋ",
+    "ukphone": "'riːdɪŋ"
+  },
+  {
+    "name": "missing",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "找不到的，丢失的"
+      }
+    ],
+    "usphone": "'mɪsɪŋ",
+    "ukphone": "'mɪsɪŋ"
+  },
+  {
+    "name": "solve",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "解决；解答"
+      }
+    ],
+    "usphone": "sɑːlv",
+    "ukphone": "sɒlv"
+  },
+  {
+    "name": "puzzle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "拼图等智力玩具"
+      },
+      {
+        "type": "vt.",
+        "definition": "使困惑，使迷惑不解"
+      }
+    ],
+    "usphone": "'pʌzl",
+    "ukphone": "'pʌzl"
+  },
+  {
+    "name": "body",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "身体；尸体；正文"
+      }
+    ],
+    "usphone": "'bɑːdi",
+    "ukphone": "'bɒdi"
+  },
+  {
+    "name": "insect",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "昆虫"
+      }
+    ],
+    "usphone": "'ɪnsekt",
+    "ukphone": "'ɪnsekt"
+  },
+  {
+    "name": "soft",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "轻柔的；柔软的"
+      }
+    ],
+    "usphone": "sɔːft",
+    "ukphone": "sɒft"
+  },
+  {
+    "name": "hard",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "硬的；困难的，艰难的；辛苦的，耗费体力的"
+      },
+      {
+        "type": "adv.",
+        "definition": "努力地；猛力地"
+      }
+    ],
+    "usphone": "hɑːrd",
+    "ukphone": "hɑːd"
+  },
+  {
+    "name": "butterfly",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蝴蝶"
+      }
+    ],
+    "usphone": "'bʌtərflaɪ",
+    "ukphone": "'bʌtəflaɪ"
+  },
+  {
+    "name": "dragonfly",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蜻蜓"
+      }
+    ],
+    "usphone": "'dræɡənflaɪ",
+    "ukphone": "'dræɡənflaɪ"
+  },
+  {
+    "name": "nothing",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "没有东西；没有事情"
+      }
+    ],
+    "usphone": "'nʌθɪŋ",
+    "ukphone": "'nʌθɪŋ"
+  },
+  {
+    "name": "tell",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "告诉；讲述；吩咐；辨别"
+      }
+    ],
+    "usphone": "tel",
+    "ukphone": "tel"
+  },
+  {
+    "name": "ladybug",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "瓢虫"
+      }
+    ],
+    "usphone": "'leɪdibʌɡ",
+    "ukphone": "'leɪdibʌɡ"
+  },
+  {
+    "name": "most",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "大多数, 最多, 最大, 非常"
+      }
+    ],
+    "usphone": "moʊst",
+    "ukphone": "məʊst"
+  },
+  {
+    "name": "not",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "不"
+      }
+    ],
+    "usphone": "nɑːt",
+    "ukphone": "nɒt"
+  },
+  {
+    "name": "no",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "不；不是"
+      }
+    ],
+    "usphone": "noʊ",
+    "ukphone": "nəʊ"
+  },
+  {
+    "name": "yes",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "是，是的"
+      }
+    ],
+    "usphone": "jes",
+    "ukphone": "jes"
+  },
+  {
+    "name": "Japan",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "日本"
+      }
+    ],
+    "usphone": "dʒə'pæn",
+    "ukphone": "dʒə'pæn"
+  },
+  {
+    "name": "France",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "法国"
+      }
+    ],
+    "usphone": "fræns",
+    "ukphone": "frɑːns"
+  },
+  {
+    "name": "spell",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "拼写；意味着；招致，带来"
+      },
+      {
+        "type": "vi.",
+        "definition": "拼写"
+      }
+    ],
+    "usphone": "spel",
+    "ukphone": "spel"
+  },
+  {
+    "name": "clock",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "钟"
+      }
+    ],
+    "usphone": "klɑːk",
+    "ukphone": "klɒk"
+  },
+  {
+    "name": "bed",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "床"
+      }
+    ],
+    "usphone": "bed",
+    "ukphone": "bed"
+  },
+  {
+    "name": "room",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "房间，室；空间"
+      }
+    ],
+    "usphone": "ruːm",
+    "ukphone": "ruːm"
+  },
+  {
+    "name": "bedroom",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "卧室，寝室"
+      }
+    ],
+    "usphone": "'bedruːm",
+    "ukphone": "'bedruːm"
+  },
+  {
+    "name": "lamp",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "灯，台灯"
+      }
+    ],
+    "usphone": "læmp",
+    "ukphone": "læmp"
+  },
+  {
+    "name": "bookshelf",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "书架"
+      }
+    ],
+    "usphone": "'bʊkʃelf",
+    "ukphone": "'bʊkʃelf"
+  },
+  {
+    "name": "desk",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "书桌"
+      }
+    ],
+    "usphone": "desk",
+    "ukphone": "desk"
+  },
+  {
+    "name": "chair",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "椅子"
+      }
+    ],
+    "usphone": "tʃer",
+    "ukphone": "tʃeə(r)"
+  },
+  {
+    "name": "woman",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "妇女，女人（pl.women）"
+      }
+    ],
+    "usphone": "'wʊmən",
+    "ukphone": "'wʊmən"
+  },
+  {
+    "name": "man",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "男人（pl.men）"
+      }
+    ],
+    "usphone": "mæn",
+    "ukphone": "mæn"
+  },
+  {
+    "name": "cousin",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "堂（表）兄弟；堂（表）姐妹"
+      }
+    ],
+    "usphone": "'kʌzn",
+    "ukphone": "'kʌzn"
+  },
+  {
+    "name": "family",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "家庭；家庭成员"
+      }
+    ],
+    "usphone": "'fæməli",
+    "ukphone": "'fæməli"
+  },
+  {
+    "name": "father",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "父亲"
+      }
+    ],
+    "usphone": "'fɑːðər",
+    "ukphone": "'fɑːðə(r)"
+  },
+  {
+    "name": "mother",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "母亲"
+      }
+    ],
+    "usphone": "'mʌðər",
+    "ukphone": "'mʌðə(r)"
+  },
+  {
+    "name": "grandfather",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "祖父；外祖父"
+      }
+    ],
+    "usphone": "'ɡrænfɑːðər",
+    "ukphone": "'ɡrænfɑːðə(r)"
+  },
+  {
+    "name": "grandmother",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "祖母；外祖母"
+      }
+    ],
+    "usphone": "'ɡrænmʌðər",
+    "ukphone": "'ɡrænmʌðə(r)"
+  },
+  {
+    "name": "people",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "人，人们"
+      }
+    ],
+    "usphone": "'piːpl",
+    "ukphone": "'piːpl"
+  },
+  {
+    "name": "dancer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "舞蹈演员，舞者"
+      }
+    ],
+    "usphone": "'dænsər",
+    "ukphone": "'dɑːnsə(r)"
+  },
+  {
+    "name": "cook",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "炊事员，厨师"
+      },
+      {
+        "type": "v.",
+        "definition": "烹调，做饭"
+      }
+    ],
+    "usphone": "kʊk",
+    "ukphone": "kʊk"
+  },
+  {
+    "name": "policeman",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "警察（pl.policemen）"
+      }
+    ],
+    "usphone": "pə'liːsmən",
+    "ukphone": "pə'liːsmən"
+  },
+  {
+    "name": "policewoman",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "女警察（pl.policewomen）"
+      }
+    ],
+    "usphone": "pə'liːswʊmən",
+    "ukphone": "pə'liːswʊmən"
+  },
+  {
+    "name": "doctor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "医生；博士"
+      }
+    ],
+    "usphone": "'dɑːktər",
+    "ukphone": "'dɒktə(r)"
+  },
+  {
+    "name": "nurse",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "护士"
+      }
+    ],
+    "usphone": "nɜːrs",
+    "ukphone": "nɜːs"
+  },
+  {
+    "name": "driver",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "司机，驾驶员"
+      }
+    ],
+    "usphone": "'draɪvər",
+    "ukphone": "'draɪvə(r)"
+  },
+  {
+    "name": "worker",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "工人"
+      }
+    ],
+    "usphone": "'wɜːrkər",
+    "ukphone": "'wɜːkə(r)"
+  },
+  {
+    "name": "singer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "歌手，歌唱家"
+      }
+    ],
+    "usphone": "'sɪŋər",
+    "ukphone": "'sɪŋə(r)"
+  },
+  {
+    "name": "pupil",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "学生, (尤指)小学生, 弟子, 瞳孔"
+      }
+    ],
+    "usphone": "'pjuːpl",
+    "ukphone": "'pjuːpl"
+  }
+]

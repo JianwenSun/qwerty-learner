@@ -1,0 +1,1404 @@
+[
+  {
+    "name": "dog",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "犬，雄性的犬科动物，常用于形容词后，〈侮辱〉卑鄙的人"
+      },
+      {
+        "type": "v.",
+        "definition": "跟踪，笼罩在…心头，弄得…狼狈不堪，被…困扰"
+      }
+    ],
+    "usphone": "dɔːɡ",
+    "ukphone": "dɒɡ"
+  },
+  {
+    "name": "cat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "猫，猫科动物；爵士乐爱好者；起锚滑车"
+      },
+      {
+        "type": "v.",
+        "definition": "把（锚）吊放在锚架上；宿娼；〈口〉呕吐；〈俚〉寻欢"
+      },
+      {
+        "type": "abbr.",
+        "definition": "（=computerized axial tomography）计算机化轴向层面X射线摄影法"
+      }
+    ],
+    "usphone": "kæt",
+    "ukphone": "kæt"
+  },
+  {
+    "name": "bird",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鸟，禽；家伙；姑娘，妞；羽毛球"
+      },
+      {
+        "type": "v.",
+        "definition": "捕鸟，猎鸟；=bird-watch嘘（表演者），向（演员）喝倒彩"
+      }
+    ],
+    "usphone": "bɜːrd",
+    "ukphone": "bɜːd"
+  },
+  {
+    "name": "rabbit",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "兔子；兔肉，兔毛；弱手"
+      },
+      {
+        "type": "v.",
+        "definition": "猎兔，〈非正式〉唠叨，喋喋不休"
+      }
+    ],
+    "usphone": "'ræbɪt",
+    "ukphone": "'ræbɪt"
+  },
+  {
+    "name": "hamster",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "仓鼠（有颊囊可存放食物，常作宠物）"
+      }
+    ],
+    "usphone": "'hæmstər",
+    "ukphone": "'hæmstə(r)"
+  },
+  {
+    "name": "turtle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "龟，海龟"
+      }
+    ],
+    "usphone": "'tɜːrtl",
+    "ukphone": "'tɜːtl"
+  },
+  {
+    "name": "sofa",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "沙发"
+      }
+    ],
+    "usphone": "'soʊfə",
+    "ukphone": "'səʊfə"
+  },
+  {
+    "name": "table",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "桌子，台子；表，一览表"
+      },
+      {
+        "type": "v.",
+        "definition": "（正式）提出，（将主意、建议等）搁置"
+      }
+    ],
+    "usphone": "'teɪbl",
+    "ukphone": "'teɪbl"
+  },
+  {
+    "name": "chair",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "椅子，（主持会议或委员会的）主席席位，委员长职位"
+      },
+      {
+        "type": "v.",
+        "definition": "担任（会议、讨论等的）主席，主持（会议、讨论等）"
+      }
+    ],
+    "usphone": "tʃer",
+    "ukphone": "tʃeə(r)"
+  },
+  {
+    "name": "box",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "箱，盒，方框，匣"
+      },
+      {
+        "type": "v.",
+        "definition": "（拳击运动中）击打（某人），把（某物）装箱（或盒、匣）"
+      }
+    ],
+    "usphone": "bɑːks",
+    "ukphone": "bɒks"
+  },
+  {
+    "name": "cupboard",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "橱柜，密室"
+      }
+    ],
+    "usphone": "'kʌbərd",
+    "ukphone": "'kʌbəd"
+  },
+  {
+    "name": "shelf",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "搁板，架子；陆架，陆棚；（悬崖上或海底）突出的岩石"
+      }
+    ],
+    "usphone": "ʃelf",
+    "ukphone": "ʃelf"
+  },
+  {
+    "name": "bed",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "床，（河）床，（海等的）底，花坛"
+      },
+      {
+        "type": "v.",
+        "definition": "为…提供床铺（或住宿），移栽（植物），固定，嵌入"
+      }
+    ],
+    "usphone": "bed",
+    "ukphone": "bed"
+  },
+  {
+    "name": "bedroom",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "卧室，有…个卧室的"
+      },
+      {
+        "type": "adj.",
+        "definition": "城郊住宅区的；两性关系的"
+      }
+    ],
+    "usphone": "'bedruːm",
+    "ukphone": "'bedruːm"
+  },
+  {
+    "name": "desk",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "书桌，办公桌，服务台，写字台"
+      },
+      {
+        "type": "adj.",
+        "definition": "书桌上用的"
+      },
+      {
+        "type": "v.",
+        "definition": "派某人做办公室工作"
+      }
+    ],
+    "usphone": "desk",
+    "ukphone": "desk"
+  },
+  {
+    "name": "drawer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "抽屉，出票人，起草者，酒馆侍者"
+      }
+    ],
+    "usphone": "drɔːr",
+    "ukphone": "drɔː(r)"
+  },
+  {
+    "name": "in",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在…里面，参与；穿着；进入"
+      },
+      {
+        "type": "adv.",
+        "definition": "进入，在内，上涨，在里面"
+      },
+      {
+        "type": "adj.",
+        "definition": "流行的，时髦的"
+      },
+      {
+        "type": "n.",
+        "definition": "执政党，〈美口〉入口，门路，提携"
+      },
+      {
+        "type": "abbr.",
+        "definition": "（=indium）铟"
+      }
+    ],
+    "usphone": "ɪn",
+    "ukphone": "ɪn"
+  },
+  {
+    "name": "on",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "对；根据；使用；在…上；一…就；关于"
+      },
+      {
+        "type": "adv.",
+        "definition": "值班；表示持续性；向前（移动）；穿在身上"
+      },
+      {
+        "type": "adj.",
+        "definition": "开着的；正在进行的；正在播出的"
+      },
+      {
+        "type": "n.",
+        "definition": "（打球人的）左边"
+      }
+    ],
+    "usphone": "ɑːn",
+    "ukphone": "ɒn"
+  },
+  {
+    "name": "under",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在（或到、通过）…下面，小于，在…掌控/管理之下；根据，不足"
+      },
+      {
+        "type": "adv.",
+        "definition": "小于，在下面，在水下，少于"
+      },
+      {
+        "type": "adj.",
+        "definition": "较低的，下面的"
+      }
+    ],
+    "usphone": "'ʌndər",
+    "ukphone": "'ʌndə(r)"
+  },
+  {
+    "name": "near",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "近的，近亲的，关系深的，近似的"
+      },
+      {
+        "type": "v.",
+        "definition": "靠近"
+      },
+      {
+        "type": "adv.",
+        "definition": "近，将近，节省地"
+      },
+      {
+        "type": "prep.",
+        "definition": "在……附近；接近；临近；大约，上下；相仿，接近；濒临，快要"
+      }
+    ],
+    "usphone": "nɪr",
+    "ukphone": "nɪə(r)"
+  },
+  {
+    "name": "hippo",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "河马"
+      }
+    ],
+    "usphone": "'hɪpoʊ",
+    "ukphone": "'hɪpəʊ"
+  },
+  {
+    "name": "elephant",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "象，大象，<比喻>体积庞大的人或物，（美国）共和党的象征"
+      }
+    ],
+    "usphone": "'elɪfənt",
+    "ukphone": "'elɪfənt"
+  },
+  {
+    "name": "lion",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "狮子；勇士；〈文学〉名人，名流"
+      }
+    ],
+    "usphone": "'laɪən",
+    "ukphone": "'laɪən"
+  },
+  {
+    "name": "zebra",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "斑马，如斑蝶"
+      },
+      {
+        "type": "adj.",
+        "definition": "有斑马般斑纹的，有条纹的"
+      }
+    ],
+    "usphone": "'ziːbrə",
+    "ukphone": "'zebrə; 'ziːbrə"
+  },
+  {
+    "name": "snake",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蛇，蜿蜒，〈比喻〉奸诈之人，卑鄙之人"
+      },
+      {
+        "type": "v.",
+        "definition": "蛇行，曲折前行，拖，拉"
+      }
+    ],
+    "usphone": "sneɪk",
+    "ukphone": "sneɪk"
+  },
+  {
+    "name": "monkey",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "猴子，〈非正式〉淘气包"
+      }
+    ],
+    "usphone": "'mʌŋki",
+    "ukphone": "'mʌŋki"
+  },
+  {
+    "name": "kangaroo",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "袋鼠"
+      }
+    ],
+    "usphone": "ˌkæŋɡə'ruː",
+    "ukphone": "ˌkæŋɡə'ruː"
+  },
+  {
+    "name": "panda",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "大熊猫，猫熊"
+      }
+    ],
+    "usphone": "'pændə",
+    "ukphone": "'pændə"
+  },
+  {
+    "name": "penguin",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "企鹅"
+      }
+    ],
+    "usphone": "'peŋɡwɪn",
+    "ukphone": "'peŋɡwɪn"
+  },
+  {
+    "name": "tiger",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "老虎；勇士；暴徒"
+      }
+    ],
+    "usphone": "'taɪɡər",
+    "ukphone": "'taɪɡə(r)"
+  },
+  {
+    "name": "sky",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "天空"
+      },
+      {
+        "type": "v.",
+        "definition": "把（球）击向高空"
+      }
+    ],
+    "usphone": "skaɪ",
+    "ukphone": "skaɪ"
+  },
+  {
+    "name": "in the sky",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "在空中"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "grass",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "草，草地，牧草，青草"
+      },
+      {
+        "type": "v.",
+        "definition": "（向警方）告密"
+      }
+    ],
+    "usphone": "ɡræs",
+    "ukphone": "ɡrɑːs"
+  },
+  {
+    "name": "on the grass",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "在草地上"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "tree",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "树，树木，乔木"
+      },
+      {
+        "type": "v.",
+        "definition": "赶（猎兽等）上树躲避，〈口〉使处于困境，穷追，把鞋型插入（鞋内）"
+      }
+    ],
+    "usphone": "triː",
+    "ukphone": "triː"
+  },
+  {
+    "name": "in the tree",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "(外来的东西)在树上"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "near the water",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "靠近水"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "eat",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "吃，吃饭，用餐"
+      }
+    ],
+    "usphone": "iːt",
+    "ukphone": "iːt"
+  },
+  {
+    "name": "sleep",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "睡，入睡，为…提供床位"
+      },
+      {
+        "type": "n.",
+        "definition": "睡眠，睡眠时间，眼眵"
+      }
+    ],
+    "usphone": "sliːp",
+    "ukphone": "sliːp"
+  },
+  {
+    "name": "fight",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "战斗，打架，作战，与……作斗争，参与竞争"
+      },
+      {
+        "type": "n.",
+        "definition": "斗争，打架，打斗，搏斗，竞争，竞赛，斗志"
+      }
+    ],
+    "usphone": "faɪt",
+    "ukphone": "faɪt"
+  },
+  {
+    "name": "hop",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "单脚跳行；（动物的）跳跃；（乘飞机）短途旅行；啤酒花；（非正式）舞会"
+      },
+      {
+        "type": "v.",
+        "definition": "单脚跳，跳跃；换来换去；登上（交通工具）；快速去…"
+      }
+    ],
+    "usphone": "hɑːp",
+    "ukphone": "hɒp"
+  },
+  {
+    "name": "swim",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "游泳，游水，游动"
+      },
+      {
+        "type": "n.",
+        "definition": "游泳，（构成复合词）与游泳有关的"
+      }
+    ],
+    "usphone": "swɪm",
+    "ukphone": "swɪm"
+  },
+  {
+    "name": "run",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "跑，奔跑，跑（某段距离），跑步；参加（赛跑）；举行（比赛）；组织；掌管；管理；经营铺设 （电线、管道等）；移动；运行；竞选；开车送（某人）；举办；持续，延续"
+      },
+      {
+        "type": "n.",
+        "definition": "跑，跑步，跑步的时间（或距离），航程"
+      }
+    ],
+    "usphone": "rʌn",
+    "ukphone": "rʌn"
+  },
+  {
+    "name": "fly",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "飞，飞翔，航行，（乘航空器或航天器）航行"
+      },
+      {
+        "type": "n.",
+        "definition": "蝇，苍蝇，（作钓饵的）假蝇钩钓，（裤子的）前裆开口"
+      },
+      {
+        "type": "adj.",
+        "definition": "机灵的，机警的，不会上当的，时髦迷人的"
+      }
+    ],
+    "usphone": "flaɪ",
+    "ukphone": "flaɪ"
+  },
+  {
+    "name": "cook",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "烹饪，烹调，煮（或烘烤、煎炸等），密谋"
+      },
+      {
+        "type": "n.",
+        "definition": "厨师，炊事员，做饭的人"
+      },
+      {
+        "type": "vt.",
+        "definition": "<非正式>篡改，捏造，杜撰"
+      }
+    ],
+    "usphone": "kʊk",
+    "ukphone": "kʊk"
+  },
+  {
+    "name": "play",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "玩；演奏，播放；扮演，演出，装扮；尽…本分；（以…方式）对待，处置，处理"
+      },
+      {
+        "type": "n.",
+        "definition": "游戏；玩耍；戏剧；比赛；作用"
+      }
+    ],
+    "usphone": "pleɪ",
+    "ukphone": "pleɪ"
+  },
+  {
+    "name": "football",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "<英>足球，足球运动；<美>橄榄球；屡起争议的问题"
+      }
+    ],
+    "usphone": "'fʊtbɔːl",
+    "ukphone": "'fʊtbɔːl"
+  },
+  {
+    "name": "play football",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "踢足球, 对难办的事采取踢皮球的态度"
+      }
+    ],
+    "usphone": "pleɪ ˈfʊtbɔːl",
+    "ukphone": "pleɪ ˈfʊtbɔːl"
+  },
+  {
+    "name": "watch",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "看，观看，观察；留心，注意〔某事〕；照看，照管；监视"
+      },
+      {
+        "type": "n.",
+        "definition": "手表；注视，监视；警卫，看守人；值班时间"
+      }
+    ],
+    "usphone": "wɑtʃ",
+    "ukphone": "wɒtʃ"
+  },
+  {
+    "name": "TV",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "电视，电视机"
+      },
+      {
+        "type": "abbr.",
+        "definition": "（=television）"
+      }
+    ],
+    "usphone": "ˌtiː'viː",
+    "ukphone": "ˌtiː'viː"
+  },
+  {
+    "name": "watch TV",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "看电视"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "make",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "制造，做，组装，写，导致；使变得，使成为；使成功，使圆满；挣钱，赚钱"
+      },
+      {
+        "type": "n.",
+        "definition": "型号"
+      },
+      {
+        "type": "linkv.",
+        "definition": "成为，适合，合计，等于"
+      }
+    ],
+    "usphone": "meɪk",
+    "ukphone": "meɪk"
+  },
+  {
+    "name": "plane",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "飞机；平面；刨子；境界"
+      },
+      {
+        "type": "v.",
+        "definition": "用刨子刨平，滑翔，擦着水面疾驶"
+      },
+      {
+        "type": "adj.",
+        "definition": "平的，平坦的"
+      }
+    ],
+    "usphone": "pleɪn",
+    "ukphone": "pleɪn"
+  },
+  {
+    "name": "make a plane",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "做一架飞机"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ride",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "骑，乘坐，骑马，搭乘"
+      },
+      {
+        "type": "n.",
+        "definition": "搭便车，（乘车或骑车的）短途旅程，免费搭车，（乘坐汽车等的）旅行"
+      }
+    ],
+    "usphone": "raɪd",
+    "ukphone": "raɪd"
+  },
+  {
+    "name": "ride a bicycle",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "骑自行车"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bicycle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "自行车，脚踏车"
+      },
+      {
+        "type": "v.",
+        "definition": "骑自行车"
+      }
+    ],
+    "usphone": "'baɪsɪkl",
+    "ukphone": "'baɪsɪkl"
+  },
+  {
+    "name": "dance",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "舞蹈，跳舞，舞会，舞曲"
+      },
+      {
+        "type": "v.",
+        "definition": "跳舞，雀跃，跳…舞，跳跃"
+      }
+    ],
+    "usphone": "dæns",
+    "ukphone": "dɑːns"
+  },
+  {
+    "name": "video",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "视频，录影，录像带，盒式录像带"
+      },
+      {
+        "type": "v.",
+        "definition": "录电视节目，给…录像"
+      },
+      {
+        "type": "adj.",
+        "definition": "电视（用）的"
+      }
+    ],
+    "usphone": "'vɪdioʊ",
+    "ukphone": "'vɪdiəʊ"
+  },
+  {
+    "name": "make a video",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "制作一个视频"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "wash",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "洗，洗脸，洗涤，洗手"
+      },
+      {
+        "type": "n.",
+        "definition": "洗，清洗，洗涤，洗刷"
+      }
+    ],
+    "usphone": "wɑːʃ",
+    "ukphone": "wɒʃ"
+  },
+  {
+    "name": "bathroom",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "浴室，卫生间，洗手间，厕所"
+      }
+    ],
+    "usphone": "'bæθruːm",
+    "ukphone": "'bɑːθruːm"
+  },
+  {
+    "name": "in the bathroom",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "在浴室里"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "in the bedroom",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "在卧室里"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "garden",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "花园，公园，庭园，园子"
+      },
+      {
+        "type": "v.",
+        "definition": "做园艺工作，种植花木"
+      },
+      {
+        "type": "adj.",
+        "definition": "果园的，老一套的，风光优美的，在园中栽培的"
+      }
+    ],
+    "usphone": "'ɡɑːrdn",
+    "ukphone": "'ɡɑːdn"
+  },
+  {
+    "name": "in the garden",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "在花园内"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "kitchen",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "厨房"
+      },
+      {
+        "type": "adj.",
+        "definition": "厨房的，炊事的"
+      }
+    ],
+    "usphone": "'kɪtʃɪn",
+    "ukphone": "'kɪtʃɪn"
+  },
+  {
+    "name": "in the kitchen",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "在厨房里"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "living room",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "客厅, 起居室"
+      }
+    ],
+    "usphone": "'lɪvɪŋ ru:m",
+    "ukphone": "'liviŋ ru:m"
+  },
+  {
+    "name": "in the living room",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "在客厅里"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shirt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（尤指男式的）衬衫"
+      }
+    ],
+    "usphone": "ʃɜːrt",
+    "ukphone": "ʃɜːt"
+  },
+  {
+    "name": "T-shirt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "T 恤衫，短袖汗衫"
+      }
+    ],
+    "usphone": "'ti,ʃɜːrt",
+    "ukphone": "'ti:,ʃɜ:t"
+  },
+  {
+    "name": "dress",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "衣服，连衣裙"
+      },
+      {
+        "type": "v.",
+        "definition": "穿衣服；（给……）穿衣服；清洗，包扎；装饰，布置"
+      },
+      {
+        "type": "adj.",
+        "definition": "盛装的；女服的；需要穿礼服的"
+      }
+    ],
+    "usphone": "dres",
+    "ukphone": "dres"
+  },
+  {
+    "name": "skirt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "裙子，衬裙，（连衣裙、外衣等的）下摆，裙板"
+      },
+      {
+        "type": "v.",
+        "definition": "环绕…的四周，位于…的边缘，沿…的边缘走，绕开"
+      }
+    ],
+    "usphone": "skɜːrt",
+    "ukphone": "skɜːt"
+  },
+  {
+    "name": "shorts",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "短裤"
+      }
+    ],
+    "usphone": "ʃɔːrts",
+    "ukphone": "ʃɔːts"
+  },
+  {
+    "name": "jeans",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "牛仔裤；斜纹棉布裤"
+      }
+    ],
+    "usphone": "dʒiːnz",
+    "ukphone": "dʒiːnz"
+  },
+  {
+    "name": "trousers",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "裤子"
+      },
+      {
+        "type": "v.",
+        "definition": "（“trouser”的第三人称单数） 收受；赚得"
+      }
+    ],
+    "usphone": "'traʊzərz",
+    "ukphone": "'traʊzəz"
+  },
+  {
+    "name": "cap",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（尤指男用有帽舌的）便帽，软帽，（大学师生在特别场合戴的）方帽，盖子；上限，封顶"
+      },
+      {
+        "type": "v.",
+        "definition": "用…覆盖顶部（或端部），限额收取（或支出），胜过，超过"
+      },
+      {
+        "type": "abbr.",
+        "definition": "（=Common Agricultural Policy）（欧洲经济共同体）共同农业政策"
+      }
+    ],
+    "usphone": "kæp",
+    "ukphone": "kæp"
+  },
+  {
+    "name": "hat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（常指带檐的）帽子，（双重的）职位"
+      },
+      {
+        "type": "v.",
+        "definition": "〈口〉给…戴上帽子"
+      }
+    ],
+    "usphone": "hæt",
+    "ukphone": "hæt"
+  },
+  {
+    "name": "jump",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "跳，跳跃；跨越；跳过，略过；快速移动；突然移动；激增；突然转变（话题）；突然袭击"
+      },
+      {
+        "type": "n.",
+        "definition": "跳，跳跃，激增，猛涨"
+      },
+      {
+        "type": "adj.",
+        "definition": "（爵士音乐中）急拍子的"
+      }
+    ],
+    "usphone": "dʒʌmp",
+    "ukphone": "dʒʌmp"
+  },
+  {
+    "name": "jumper",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（毛或棉的）针织套衫，跳跃者，跳跃动物，跳虫"
+      }
+    ],
+    "usphone": "'dʒʌmpər",
+    "ukphone": "'dʒʌmpə(r)"
+  },
+  {
+    "name": "sock",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "短袜，重击"
+      },
+      {
+        "type": "v.",
+        "definition": "猛击，狠打"
+      },
+      {
+        "type": "adv.",
+        "definition": "对准"
+      }
+    ],
+    "usphone": "sɑːk",
+    "ukphone": "sɒk"
+  },
+  {
+    "name": "shoe",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鞋"
+      },
+      {
+        "type": "v.",
+        "definition": "给（马）钉蹄铁"
+      }
+    ],
+    "usphone": "ʃuː",
+    "ukphone": "ʃuː"
+  },
+  {
+    "name": "cow",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "母牛，奶牛，肉牛；雌（象，鲸等）"
+      },
+      {
+        "type": "v.",
+        "definition": "恐吓，威吓"
+      }
+    ],
+    "usphone": "kaʊ",
+    "ukphone": "kaʊ"
+  },
+  {
+    "name": "hungry",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "饥饿的，挨饿的，渴望的"
+      },
+      {
+        "type": "n.",
+        "definition": "（统称）饥民"
+      }
+    ],
+    "usphone": "'hʌŋɡri",
+    "ukphone": "'hʌŋɡri"
+  },
+  {
+    "name": "thirsty",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "渴的，口渴的；渴望的，渴求的；干旱的，缺水的；耗油的"
+      }
+    ],
+    "usphone": "'θɜːrsti",
+    "ukphone": "'θɜːsti"
+  },
+  {
+    "name": "road",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "道路，公路，途径，方法"
+      },
+      {
+        "type": "v.",
+        "definition": "（狗）闻着臭迹追"
+      }
+    ],
+    "usphone": "roʊd",
+    "ukphone": "rəʊd"
+  },
+  {
+    "name": "on the road",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "在旅途中"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(推销员)到处奔走以兜揽生意"
+      },
+      {
+        "type": "phrase.",
+        "definition": "在流浪中"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(车辆)被继续使用着"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(剧团等)在巡回中;作巡回演出"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bread",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "面包，钱"
+      }
+    ],
+    "usphone": "bred",
+    "ukphone": "bred"
+  },
+  {
+    "name": "breakfast",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "早餐"
+      },
+      {
+        "type": "v.",
+        "definition": "吃早餐"
+      }
+    ],
+    "usphone": "'brekfəst",
+    "ukphone": "'brekfəst"
+  },
+  {
+    "name": "jam",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "果酱，堵塞，拥挤，卡住（因而发生故障）"
+      },
+      {
+        "type": "v.",
+        "definition": "使劲（往某处）挤（或压、塞）；（使）卡住，不能动弹，塞入， 塞进；挤满"
+      }
+    ],
+    "usphone": "dʒæm",
+    "ukphone": "dʒæm"
+  },
+  {
+    "name": "milk",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（牛或羊等的）奶；乳汁，乳液"
+      },
+      {
+        "type": "v.",
+        "definition": "挤奶，捞好处，敲诈勒索；榨取"
+      }
+    ],
+    "usphone": "mɪlk",
+    "ukphone": "mɪlk"
+  },
+  {
+    "name": "orange",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "橙子，桔子，桔树；橙色"
+      },
+      {
+        "type": "adj.",
+        "definition": "橙色的"
+      }
+    ],
+    "usphone": "'ɔːrɪndʒ",
+    "ukphone": "'ɒrɪndʒ"
+  },
+  {
+    "name": "juice",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "果汁；菜汁；肉汁；胃液；汽油，电"
+      },
+      {
+        "type": "v.",
+        "definition": "榨汁，榨出（水果或蔬菜的）汁液"
+      }
+    ],
+    "usphone": "dʒuːs",
+    "ukphone": "dʒuːs"
+  },
+  {
+    "name": "orange juice",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "柑桔汁, 橙汁"
+      }
+    ],
+    "usphone": "'ɔːrɪndʒ dʒʊs",
+    "ukphone": "'ɒrɪndʒ dʒuːs"
+  },
+  {
+    "name": "water",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "水，水域，河，海域"
+      },
+      {
+        "type": "v.",
+        "definition": "灌溉，给…浇水，充满眼泪，流口水"
+      }
+    ],
+    "usphone": "ˈwɔːtər",
+    "ukphone": "'wɔːtə(r)"
+  },
+  {
+    "name": "egg",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（鸟类的）蛋，（鱼、昆虫等的）卵，卵子，卵细胞"
+      },
+      {
+        "type": "v.",
+        "definition": "煽动，用蛋制作（食物），向人扔鸡蛋"
+      }
+    ],
+    "usphone": "eɡ",
+    "ukphone": "eɡ"
+  },
+  {
+    "name": "jacket",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "夹克衫，短上衣，书套，（热水管的）保温套"
+      },
+      {
+        "type": "v.",
+        "definition": "给…穿短上衣，给…盖上罩子[套子等]，给…包上护封，〈口〉打"
+      }
+    ],
+    "usphone": "'dʒækɪt",
+    "ukphone": "'dʒækɪt"
+  }
+]

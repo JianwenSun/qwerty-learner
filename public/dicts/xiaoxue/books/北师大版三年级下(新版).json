@@ -1,0 +1,1275 @@
+[
+  {
+    "name": "happy birthday",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "生日快乐"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "how old",
+    "pos": [
+      {
+        "type": "conj.",
+        "definition": "多少岁"
+      }
+    ],
+    "usphone": "haʊ oʊld",
+    "ukphone": "haʊ əʊld"
+  },
+  {
+    "name": "grandpa",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（口语）爷爷；外公"
+      }
+    ],
+    "usphone": "'ɡrænpɑː",
+    "ukphone": "'ɡrænpɑː"
+  },
+  {
+    "name": "grandma",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（口语）奶奶；外婆"
+      }
+    ],
+    "usphone": "'ɡrænmɑː",
+    "ukphone": "'ɡrænmɑː"
+  },
+  {
+    "name": "one",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "一；一（个，件……）（用来代替单数的人或物）"
+      }
+    ],
+    "usphone": "wʌn",
+    "ukphone": "wʌn"
+  },
+  {
+    "name": "two",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "二"
+      }
+    ],
+    "usphone": "tuː",
+    "ukphone": "tuː"
+  },
+  {
+    "name": "three",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "三"
+      }
+    ],
+    "usphone": "θriː",
+    "ukphone": "θriː"
+  },
+  {
+    "name": "four",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "四"
+      }
+    ],
+    "usphone": "fɔːr",
+    "ukphone": "fɔː(r)"
+  },
+  {
+    "name": "five",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "五"
+      }
+    ],
+    "usphone": "faɪv",
+    "ukphone": "faɪv"
+  },
+  {
+    "name": "six",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "六"
+      }
+    ],
+    "usphone": "sɪks",
+    "ukphone": "sɪks"
+  },
+  {
+    "name": "seven",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "七"
+      }
+    ],
+    "usphone": "'sevn",
+    "ukphone": "'sevn"
+  },
+  {
+    "name": "eight",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "八"
+      }
+    ],
+    "usphone": "eɪt",
+    "ukphone": "eɪt"
+  },
+  {
+    "name": "nine",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "九"
+      }
+    ],
+    "usphone": "naɪn",
+    "ukphone": "naɪn"
+  },
+  {
+    "name": "ten",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "十"
+      }
+    ],
+    "usphone": "ten",
+    "ukphone": "ten"
+  },
+  {
+    "name": "he",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "他"
+      }
+    ],
+    "usphone": "hi:",
+    "ukphone": "hi:"
+  },
+  {
+    "name": "colour",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "颜色"
+      },
+      {
+        "type": "vt.",
+        "definition": "给……着色，涂色"
+      }
+    ],
+    "usphone": "'kʌlər",
+    "ukphone": "'kʌlə(r)"
+  },
+  {
+    "name": "red",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "红色"
+      },
+      {
+        "type": "adj.",
+        "definition": "红色的"
+      }
+    ],
+    "usphone": "red",
+    "ukphone": "red"
+  },
+  {
+    "name": "blue",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蓝色"
+      },
+      {
+        "type": "adj.",
+        "definition": "蓝色的"
+      }
+    ],
+    "usphone": "bluː",
+    "ukphone": "bluː"
+  },
+  {
+    "name": "yellow",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "黄色的；黄色"
+      }
+    ],
+    "usphone": "'jeloʊ",
+    "ukphone": "'jeləʊ"
+  },
+  {
+    "name": "white",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "白色的；白的"
+      },
+      {
+        "type": "n.",
+        "definition": "白色"
+      }
+    ],
+    "usphone": "waɪt",
+    "ukphone": "waɪt"
+  },
+  {
+    "name": "black",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "黑色"
+      },
+      {
+        "type": "adj.",
+        "definition": "黑色的"
+      }
+    ],
+    "usphone": "blæk",
+    "ukphone": "blæk"
+  },
+  {
+    "name": "storybook",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "故事书"
+      }
+    ],
+    "usphone": "'stɔːribʊk",
+    "ukphone": "'stɔːribʊk"
+  },
+  {
+    "name": "play sport",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "做运动（英式常用 play sports）"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "run",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "管理，经营"
+      },
+      {
+        "type": "n.",
+        "definition": "跑；赛跑"
+      },
+      {
+        "type": "v.",
+        "definition": "跑，赛跑"
+      }
+    ],
+    "usphone": "rʌn",
+    "ukphone": "rʌn"
+  },
+  {
+    "name": "swim",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "游泳，游"
+      },
+      {
+        "type": "n.",
+        "definition": "游泳"
+      }
+    ],
+    "usphone": "swɪm",
+    "ukphone": "swɪm"
+  },
+  {
+    "name": "dance",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "跳舞，舞蹈"
+      },
+      {
+        "type": "vi.",
+        "definition": "跳舞"
+      }
+    ],
+    "usphone": "dæns",
+    "ukphone": "dɑːns"
+  },
+  {
+    "name": "plant",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "植物，工厂，发电厂"
+      },
+      {
+        "type": "vt.",
+        "definition": "种植"
+      }
+    ],
+    "usphone": "plænt",
+    "ukphone": "plɑːnt"
+  },
+  {
+    "name": "flower",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "花"
+      },
+      {
+        "type": "v.",
+        "definition": "开花"
+      }
+    ],
+    "usphone": "'flaʊər",
+    "ukphone": "'flaʊə(r)"
+  },
+  {
+    "name": "ride",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "骑（马、自行车等）"
+      },
+      {
+        "type": "n.",
+        "definition": "供乘骑的游乐设施；短途旅程；便车"
+      }
+    ],
+    "usphone": "raɪd",
+    "ukphone": "raɪd"
+  },
+  {
+    "name": "bike",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "自行车"
+      },
+      {
+        "type": "v.",
+        "definition": "骑自行车"
+      }
+    ],
+    "usphone": "baɪk",
+    "ukphone": "baɪk"
+  },
+  {
+    "name": "aunt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "阿姨；伯母；舅母；婶；姑；姨"
+      }
+    ],
+    "usphone": "ænt",
+    "ukphone": "ɑːnt"
+  },
+  {
+    "name": "uncle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "叔；伯；舅；姑父；姨父"
+      }
+    ],
+    "usphone": "'ʌŋkl",
+    "ukphone": "'ʌŋkl"
+  },
+  {
+    "name": "cousin",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "堂（表）兄弟；堂（表）姐妹"
+      }
+    ],
+    "usphone": "'kʌzn",
+    "ukphone": "'kʌzn"
+  },
+  {
+    "name": "she",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "她"
+      }
+    ],
+    "usphone": "ʃi:",
+    "ukphone": "ʃi:"
+  },
+  {
+    "name": "job",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "职业"
+      }
+    ],
+    "usphone": "dʒɑːb",
+    "ukphone": "dʒɒb"
+  },
+  {
+    "name": "doctor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "医生；博士"
+      }
+    ],
+    "usphone": "'dɑːktər",
+    "ukphone": "'dɒktə(r)"
+  },
+  {
+    "name": "worker",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "工人"
+      }
+    ],
+    "usphone": "'wɜːrkər",
+    "ukphone": "'wɜːkə(r)"
+  },
+  {
+    "name": "farmer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "农民；农场主"
+      }
+    ],
+    "usphone": "'fɑːrmər",
+    "ukphone": "'fɑːmə(r)"
+  },
+  {
+    "name": "driver",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "司机，驾驶员"
+      }
+    ],
+    "usphone": "'draɪvər",
+    "ukphone": "'draɪvə(r)"
+  },
+  {
+    "name": "what's wrong",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "怎么了"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "happy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "高兴的，快乐的；幸福的"
+      }
+    ],
+    "usphone": "'hæpi",
+    "ukphone": "'hæpi"
+  },
+  {
+    "name": "angry",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "生气的，愤怒的"
+      }
+    ],
+    "usphone": "'æŋɡri",
+    "ukphone": "'æŋɡri"
+  },
+  {
+    "name": "tired",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "疲劳的，累的"
+      }
+    ],
+    "usphone": "'taɪərd",
+    "ukphone": "'taɪəd"
+  },
+  {
+    "name": "sad",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "可惜；令人伤心的"
+      }
+    ],
+    "usphone": "sæd",
+    "ukphone": "sæd"
+  },
+  {
+    "name": "farm",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "农场，农庄"
+      }
+    ],
+    "usphone": "fɑːrm",
+    "ukphone": "fɑːm"
+  },
+  {
+    "name": "animal",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "动物"
+      }
+    ],
+    "usphone": "'ænɪml",
+    "ukphone": "'ænɪml"
+  },
+  {
+    "name": "chicken",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小鸡；鸡；鸡肉"
+      }
+    ],
+    "usphone": "'tʃɪkɪn",
+    "ukphone": "'tʃɪkɪn"
+  },
+  {
+    "name": "sheep",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "绵羊（pl.sheep）"
+      }
+    ],
+    "usphone": "ʃiːp",
+    "ukphone": "ʃiːp"
+  },
+  {
+    "name": "horse",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "马"
+      }
+    ],
+    "usphone": "hɔːrs",
+    "ukphone": "hɔːs"
+  },
+  {
+    "name": "cow",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "母牛，奶牛"
+      }
+    ],
+    "usphone": "kaʊ",
+    "ukphone": "kaʊ"
+  },
+  {
+    "name": "let's",
+    "pos": [
+      {
+        "type": "abbr.",
+        "definition": "(=let us)让我们"
+      }
+    ],
+    "usphone": "lets",
+    "ukphone": "lets"
+  },
+  {
+    "name": "go over",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "复习；仔细检查"
+      }
+    ],
+    "usphone": "ɡoʊ 'oʊvər",
+    "ukphone": "ɡəʊ 'əʊvə"
+  },
+  {
+    "name": "hill",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小山"
+      }
+    ],
+    "usphone": "hɪl",
+    "ukphone": "hɪl"
+  },
+  {
+    "name": "river",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "河；江"
+      }
+    ],
+    "usphone": "'rɪvər",
+    "ukphone": "'rɪvə(r)"
+  },
+  {
+    "name": "lake",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "湖"
+      }
+    ],
+    "usphone": "leɪk",
+    "ukphone": "leɪk"
+  },
+  {
+    "name": "forest",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "森林"
+      }
+    ],
+    "usphone": "'fɔːrɪst",
+    "ukphone": "'fɒrɪst"
+  },
+  {
+    "name": "boat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小船，小舟"
+      }
+    ],
+    "usphone": "boʊt",
+    "ukphone": "bəʊt"
+  },
+  {
+    "name": "spring",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "春天，春季；泉水，泉"
+      },
+      {
+        "type": "vi.",
+        "definition": "跳，跳跃；弹起"
+      }
+    ],
+    "usphone": "sprɪŋ",
+    "ukphone": "sprɪŋ"
+  },
+  {
+    "name": "summer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "夏天，夏季"
+      }
+    ],
+    "usphone": "'sʌmər",
+    "ukphone": "'sʌmə(r)"
+  },
+  {
+    "name": "autumn",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "秋天，秋季"
+      }
+    ],
+    "usphone": "ˈɔːtəm",
+    "ukphone": "ˈɔːtəm"
+  },
+  {
+    "name": "winter",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "冬天，冬季"
+      }
+    ],
+    "usphone": "'wɪntər",
+    "ukphone": "'wɪntə(r)"
+  },
+  {
+    "name": "favourite",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "特别喜爱的（同favorite）"
+      },
+      {
+        "type": "n.",
+        "definition": "特别喜爱的人或物（同favorite）"
+      }
+    ],
+    "usphone": "'feɪvərɪt",
+    "ukphone": "'feɪvərɪt "
+  },
+  {
+    "name": "season",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "季；季节"
+      }
+    ],
+    "usphone": "'siːzn",
+    "ukphone": "'siːzn"
+  },
+  {
+    "name": "fly kites",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "放风筝"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "travel",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "旅行，出行；长途行走；游历；旅游"
+      },
+      {
+        "type": "v.",
+        "definition": "旅行"
+      }
+    ],
+    "usphone": "'trævl",
+    "ukphone": "'trævl"
+  },
+  {
+    "name": "safe",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "安全的"
+      },
+      {
+        "type": "n.",
+        "definition": "保险柜"
+      }
+    ],
+    "usphone": "seɪf",
+    "ukphone": "seɪf"
+  },
+  {
+    "name": "park",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "公园"
+      },
+      {
+        "type": "v.",
+        "definition": "停放"
+      }
+    ],
+    "usphone": "pɑːrk",
+    "ukphone": "pɑːk"
+  },
+  {
+    "name": "by bus",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "乘公共汽车"
+      }
+    ],
+    "usphone": "baɪ bʌs",
+    "ukphone": "bai bʌs"
+  },
+  {
+    "name": "on foot",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "步行"
+      }
+    ],
+    "usphone": "ɑːn fʊt",
+    "ukphone": "ɒn fʊt"
+  },
+  {
+    "name": "fast",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "快的"
+      },
+      {
+        "type": "adv.",
+        "definition": "快地"
+      }
+    ],
+    "usphone": "fæst",
+    "ukphone": "fɑːst"
+  },
+  {
+    "name": "on the way",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "接近；在…途中；在进行中"
+      }
+    ],
+    "usphone": "ɑːn ðə weɪ",
+    "ukphone": "ɒn ðə weɪ"
+  },
+  {
+    "name": "we",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "我们"
+      }
+    ],
+    "usphone": "wiː",
+    "ukphone": "wiː"
+  },
+  {
+    "name": "plane",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "飞机"
+      }
+    ],
+    "usphone": "pleɪn",
+    "ukphone": "pleɪn"
+  },
+  {
+    "name": "ship",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "船，轮船"
+      },
+      {
+        "type": "vt.",
+        "definition": "用船装运"
+      }
+    ],
+    "usphone": "ʃɪp",
+    "ukphone": "ʃɪp"
+  },
+  {
+    "name": "far",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "较远的，远处的"
+      },
+      {
+        "type": "adv.",
+        "definition": "很，极，太"
+      }
+    ],
+    "usphone": "fɑːr",
+    "ukphone": "fɑː(r)"
+  },
+  {
+    "name": "close",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "靠近的；亲密的"
+      },
+      {
+        "type": "adv.",
+        "definition": "接近地"
+      },
+      {
+        "type": "v.",
+        "definition": "关闭; 接近; 倒闭; 结束, 终止"
+      }
+    ],
+    "usphone": "kləʊz kləʊs",
+    "ukphone": "kləʊz kləʊs"
+  },
+  {
+    "name": "water",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "给……浇水"
+      },
+      {
+        "type": "n.",
+        "definition": "水"
+      }
+    ],
+    "usphone": "ˈwɔːtər",
+    "ukphone": "'wɔːtə(r)"
+  },
+  {
+    "name": "excuse me",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "打扰一下，请原谅"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shop",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "商店"
+      },
+      {
+        "type": "vi.",
+        "definition": "买东西"
+      }
+    ],
+    "usphone": "ʃɑːp",
+    "ukphone": "ʃɒp"
+  },
+  {
+    "name": "walk along",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "沿着……走"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "street",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "街，街道"
+      }
+    ],
+    "usphone": "striːt",
+    "ukphone": "striːt"
+  },
+  {
+    "name": "turn right",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "转往右面，向右转"
+      }
+    ],
+    "usphone": "tɜːrn raɪt",
+    "ukphone": "tɜːn raɪt"
+  },
+  {
+    "name": "left",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "左，左边"
+      },
+      {
+        "type": "adj.",
+        "definition": "左边的"
+      },
+      {
+        "type": "adv.",
+        "definition": "向左"
+      }
+    ],
+    "usphone": "left",
+    "ukphone": "left"
+  },
+  {
+    "name": "love",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "喜爱；热爱"
+      },
+      {
+        "type": "vt.",
+        "definition": "喜爱；热爱"
+      }
+    ],
+    "usphone": "lʌv",
+    "ukphone": "lʌv"
+  },
+  {
+    "name": "china",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "瓷器；(China)中国"
+      }
+    ],
+    "usphone": "'tʃaɪnə",
+    "ukphone": "'tʃaɪnə"
+  },
+  {
+    "name": "star",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "明星；星，恒星；星形；星形物"
+      },
+      {
+        "type": "vt.",
+        "definition": "由……主演；由……担任主角"
+      }
+    ],
+    "usphone": "stɑːr",
+    "ukphone": "stɑː(r)"
+  },
+  {
+    "name": "sea",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "海"
+      }
+    ],
+    "usphone": "siː",
+    "ukphone": "siː"
+  },
+  {
+    "name": "sky",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "天，天空"
+      }
+    ],
+    "usphone": "skaɪ",
+    "ukphone": "skaɪ"
+  },
+  {
+    "name": "green",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "绿色的"
+      },
+      {
+        "type": "n.",
+        "definition": "绿色；绿色蔬菜，绿叶"
+      }
+    ],
+    "usphone": "ɡriːn",
+    "ukphone": "ɡriːn"
+  },
+  {
+    "name": "pink",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "粉红色"
+      },
+      {
+        "type": "adj.",
+        "definition": "粉红色的"
+      }
+    ],
+    "usphone": "pɪŋk",
+    "ukphone": "pɪŋk"
+  },
+  {
+    "name": "Mrs",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "太太；夫人"
+      }
+    ],
+    "usphone": "'mɪsɪz",
+    "ukphone": "'mɪsɪz"
+  },
+  {
+    "name": "some",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "一些，若干；有些；某一"
+      },
+      {
+        "type": "pron.",
+        "definition": "若干，一些"
+      }
+    ],
+    "usphone": "sʌm",
+    "ukphone": "sʌm"
+  },
+  {
+    "name": "fish",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鱼；鱼肉"
+      },
+      {
+        "type": "v.",
+        "definition": "钓（鱼）；捕（鱼）；在……中捕鱼"
+      }
+    ],
+    "usphone": "fɪʃ",
+    "ukphone": "fɪʃ"
+  },
+  {
+    "name": "meat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（猪、牛、羊等的）肉"
+      }
+    ],
+    "usphone": "miːt",
+    "ukphone": "miːt"
+  },
+  {
+    "name": "tofu",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "豆腐"
+      }
+    ],
+    "usphone": "'toʊfuː",
+    "ukphone": "'təʊfuː"
+  },
+  {
+    "name": "vegetable",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蔬菜"
+      }
+    ],
+    "usphone": "'vedʒtəbl",
+    "ukphone": "'vedʒtəbl"
+  },
+  {
+    "name": "Chinese",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "中国的；中国人的；汉语的"
+      },
+      {
+        "type": "n.",
+        "definition": "汉语，中文；中餐"
+      }
+    ],
+    "usphone": "ˌtʃaɪˈniːz",
+    "ukphone": "ˌtʃaɪˈniːz"
+  },
+  {
+    "name": "food",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "食物，食品"
+      }
+    ],
+    "usphone": "fuːd",
+    "ukphone": "fuːd"
+  },
+  {
+    "name": "homeland",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "祖国；家乡"
+      }
+    ],
+    "usphone": "'hoʊmlænd",
+    "ukphone": "'həʊmlænd"
+  },
+  {
+    "name": "the Great Wall",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "长城"
+      }
+    ],
+    "usphone": "ðə ɡreɪt wɔːl",
+    "ukphone": "ðə ɡreɪt wɔːl"
+  },
+  {
+    "name": "city",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "城市"
+      }
+    ],
+    "usphone": "'sɪti",
+    "ukphone": "'sɪti"
+  },
+  {
+    "name": "place",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "地方"
+      },
+      {
+        "type": "vt.",
+        "definition": "安排，放置"
+      }
+    ],
+    "usphone": "pleɪs",
+    "ukphone": "pleɪs"
+  },
+  {
+    "name": "lots of",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "许多，很多"
+      }
+    ],
+    "usphone": "lɒts əv",
+    "ukphone": "lɒts əv"
+  }
+]

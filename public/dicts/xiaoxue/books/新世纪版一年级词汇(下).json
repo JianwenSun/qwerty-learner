@@ -1,0 +1,924 @@
+[
+  {
+    "name": "new",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "新的"
+      }
+    ],
+    "usphone": "nuː",
+    "ukphone": "njuː"
+  },
+  {
+    "name": "old",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "老的；旧的"
+      }
+    ],
+    "usphone": "oʊld",
+    "ukphone": "əʊld"
+  },
+  {
+    "name": "pencil",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "铅笔"
+      }
+    ],
+    "usphone": "'pensl",
+    "ukphone": "'pensl"
+  },
+  {
+    "name": "knife",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "刀；餐刀（pl.knives）"
+      }
+    ],
+    "usphone": "naɪf",
+    "ukphone": "naɪf"
+  },
+  {
+    "name": "I",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "我"
+      }
+    ],
+    "usphone": "aɪ",
+    "ukphone": "aɪ"
+  },
+  {
+    "name": "am",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "系动词be的人称形式之一"
+      },
+      {
+        "type": "abbr.",
+        "definition": "上午"
+      }
+    ],
+    "usphone": "æm",
+    "ukphone": "æm"
+  },
+  {
+    "name": "doll",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "玩具娃娃"
+      }
+    ],
+    "usphone": "dɑːl",
+    "ukphone": "dɒl"
+  },
+  {
+    "name": "yo-yo",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "上下跳动的, 左右摇摆的"
+      },
+      {
+        "type": "v.",
+        "definition": "上下跳动, 左右摇摆"
+      },
+      {
+        "type": "n.",
+        "definition": "悠悠球"
+      }
+    ],
+    "usphone": "'joʊˌjoʊ",
+    "ukphone": "'jəʊjəʊ"
+  },
+  {
+    "name": "car",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "汽车；小汽车"
+      }
+    ],
+    "usphone": "kɑːr",
+    "ukphone": "kɑː(r)"
+  },
+  {
+    "name": "plane",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "飞机"
+      }
+    ],
+    "usphone": "pleɪn",
+    "ukphone": "pleɪn"
+  },
+  {
+    "name": "a",
+    "pos": [
+      {
+        "type": "article.",
+        "definition": "一，一个"
+      }
+    ],
+    "usphone": "eɪ; ə",
+    "ukphone": "eɪ; ə"
+  },
+  {
+    "name": "this",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "这；这个"
+      },
+      {
+        "type": "pron.",
+        "definition": "这；这个"
+      }
+    ],
+    "usphone": "ðɪs",
+    "ukphone": "ðɪs"
+  },
+  {
+    "name": "is",
+    "pos": [
+      {
+        "type": "aux. v.",
+        "definition": "是（be的第三人称单数形式）"
+      }
+    ],
+    "usphone": "ɪz",
+    "ukphone": "ɪz"
+  },
+  {
+    "name": "metro",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "地铁，（尤指）巴黎地铁，大城市"
+      },
+      {
+        "type": "adj.",
+        "definition": "大都市的"
+      }
+    ],
+    "usphone": "'metroʊ",
+    "ukphone": "'metrəʊ"
+  },
+  {
+    "name": "river",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "河；江"
+      }
+    ],
+    "usphone": "'rɪvər",
+    "ukphone": "'rɪvə(r)"
+  },
+  {
+    "name": "bridge",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "桥"
+      }
+    ],
+    "usphone": "brɪdʒ",
+    "ukphone": "brɪdʒ"
+  },
+  {
+    "name": "zoo",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "动物园"
+      }
+    ],
+    "usphone": "zuː",
+    "ukphone": "zuː"
+  },
+  {
+    "name": "theatre",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "剧院；电影院"
+      }
+    ],
+    "usphone": "ˈθiːətər",
+    "ukphone": "ˈθɪətə(r)"
+  },
+  {
+    "name": "ship",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "船，轮船"
+      },
+      {
+        "type": "vt.",
+        "definition": "用船装运"
+      }
+    ],
+    "usphone": "ʃɪp",
+    "ukphone": "ʃɪp"
+  },
+  {
+    "name": "big",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "大的"
+      }
+    ],
+    "usphone": "bɪɡ",
+    "ukphone": "bɪɡ"
+  },
+  {
+    "name": "small",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "小的"
+      }
+    ],
+    "usphone": "smɔːl",
+    "ukphone": "smɔːl"
+  },
+  {
+    "name": "face",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "脸"
+      },
+      {
+        "type": "vt.",
+        "definition": "面临，面对"
+      }
+    ],
+    "usphone": "feɪs",
+    "ukphone": "feɪs"
+  },
+  {
+    "name": "ear",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "耳朵"
+      }
+    ],
+    "usphone": "ɪr",
+    "ukphone": "ɪə(r)"
+  },
+  {
+    "name": "an",
+    "pos": [
+      {
+        "type": "article.",
+        "definition": "一，一个（放在元音音素前）"
+      }
+    ],
+    "usphone": "ən",
+    "ukphone": "ən"
+  },
+  {
+    "name": "he",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "他"
+      }
+    ],
+    "usphone": "hi:",
+    "ukphone": "hi:"
+  },
+  {
+    "name": "boy",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "男孩"
+      }
+    ],
+    "usphone": "bɔɪ",
+    "ukphone": "bɔɪ"
+  },
+  {
+    "name": "short",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "短的；个子矮的"
+      },
+      {
+        "type": "n.",
+        "definition": "短裤；少量烈酒"
+      }
+    ],
+    "usphone": "ʃɔːrt",
+    "ukphone": "ʃɔːt"
+  },
+  {
+    "name": "long",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "长的"
+      }
+    ],
+    "usphone": "lɑːŋ",
+    "ukphone": "lɒŋ"
+  },
+  {
+    "name": "nose",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鼻子"
+      }
+    ],
+    "usphone": "noʊz",
+    "ukphone": "nəʊz"
+  },
+  {
+    "name": "mouth",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "嘴，口"
+      }
+    ],
+    "usphone": "maʊθ",
+    "ukphone": "maʊθ"
+  },
+  {
+    "name": "she",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "她"
+      }
+    ],
+    "usphone": "ʃi:",
+    "ukphone": "ʃi:"
+  },
+  {
+    "name": "girl",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "女孩"
+      }
+    ],
+    "usphone": "ɡɜːrl",
+    "ukphone": "ɡɜːl"
+  },
+  {
+    "name": "tall",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "高的"
+      }
+    ],
+    "usphone": "tɔːl",
+    "ukphone": "tɔːl"
+  },
+  {
+    "name": "fat",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "胖的，肥的"
+      },
+      {
+        "type": "n.",
+        "definition": "脂肪"
+      }
+    ],
+    "usphone": "fæt",
+    "ukphone": "fæt"
+  },
+  {
+    "name": "thin",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "瘦的；薄的"
+      },
+      {
+        "type": "v.",
+        "definition": "（使）变稀，（使）变薄，（使）变淡；（使）变细"
+      }
+    ],
+    "usphone": "θɪn",
+    "ukphone": "θɪn"
+  },
+  {
+    "name": "sweet",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "甜的"
+      },
+      {
+        "type": "n.",
+        "definition": "糖果"
+      }
+    ],
+    "usphone": "swiːt",
+    "ukphone": "swiːt"
+  },
+  {
+    "name": "cookie",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小甜饼"
+      }
+    ],
+    "usphone": "'kʊki",
+    "ukphone": "'kʊki"
+  },
+  {
+    "name": "bone",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "骨，骨头"
+      }
+    ],
+    "usphone": "boʊn",
+    "ukphone": "bəʊn"
+  },
+  {
+    "name": "meat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（猪、牛、羊等的）肉"
+      }
+    ],
+    "usphone": "miːt",
+    "ukphone": "miːt"
+  },
+  {
+    "name": "can",
+    "pos": [
+      {
+        "type": "aux. v.",
+        "definition": "可能；能够；可以"
+      },
+      {
+        "type": "n.",
+        "definition": "（美）罐头，罐子"
+      }
+    ],
+    "usphone": "kæn",
+    "ukphone": "kæn"
+  },
+  {
+    "name": "see",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "看见; 领会, 理解"
+      }
+    ],
+    "usphone": "siː",
+    "ukphone": "siː"
+  },
+  {
+    "name": "smell",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "味道，气味；嗅觉"
+      },
+      {
+        "type": "vt.",
+        "definition": "嗅，闻；嗅到，闻到"
+      },
+      {
+        "type": "vi.",
+        "definition": "嗅，闻；有嗅觉；有（或散发）气味"
+      }
+    ],
+    "usphone": "smel",
+    "ukphone": "smel"
+  },
+  {
+    "name": "toy",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "玩具"
+      }
+    ],
+    "usphone": "tɔɪ",
+    "ukphone": "tɔɪ"
+  },
+  {
+    "name": "duck",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鸭子；鸭肉"
+      }
+    ],
+    "usphone": "dʌk",
+    "ukphone": "dʌk"
+  },
+  {
+    "name": "goose",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鹅（pl.geese）"
+      }
+    ],
+    "usphone": "ɡuːs",
+    "ukphone": "ɡuːs"
+  },
+  {
+    "name": "bird",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鸟"
+      }
+    ],
+    "usphone": "bɜːrd",
+    "ukphone": "bɜːd"
+  },
+  {
+    "name": "hen",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "母鸡"
+      }
+    ],
+    "usphone": "hen",
+    "ukphone": "hen"
+  },
+  {
+    "name": "it",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "它"
+      }
+    ],
+    "usphone": "ɪt",
+    "ukphone": "ɪt"
+  },
+  {
+    "name": "not",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "不"
+      }
+    ],
+    "usphone": "nɑːt",
+    "ukphone": "nɒt"
+  },
+  {
+    "name": "milk",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "牛奶"
+      },
+      {
+        "type": "v.",
+        "definition": "挤（奶）"
+      }
+    ],
+    "usphone": "mɪlk",
+    "ukphone": "mɪlk"
+  },
+  {
+    "name": "juice",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "果汁，菜汁，果汁饮料，肉汁"
+      }
+    ],
+    "usphone": "dʒuːs",
+    "ukphone": "dʒuːs"
+  },
+  {
+    "name": "jelly",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "果冻；肉冻；果酱；胶状物，胶凝物；轻便塑料鞋"
+      },
+      {
+        "type": "v.",
+        "definition": "使凝成胶状"
+      }
+    ],
+    "usphone": "'dʒeli",
+    "ukphone": "'dʒeli"
+  },
+  {
+    "name": "cake",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蛋糕；糕；饼"
+      }
+    ],
+    "usphone": "keɪk",
+    "ukphone": "keɪk"
+  },
+  {
+    "name": "chicken",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小鸡；鸡；鸡肉"
+      }
+    ],
+    "usphone": "'tʃɪkɪn",
+    "ukphone": "'tʃɪkɪn"
+  },
+  {
+    "name": "goodbye",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "再见"
+      }
+    ],
+    "usphone": "ˌɡʊd'baɪ",
+    "ukphone": "ˌɡʊd'baɪ"
+  },
+  {
+    "name": "play football",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "踢足球"
+      }
+    ],
+    "usphone": "pleɪ ˈfʊtbɔːl",
+    "ukphone": "pleɪ ˈfʊtbɔːl"
+  },
+  {
+    "name": "play hide-and-seek",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "捉迷藏"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "play basketball",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "打篮球"
+      }
+    ],
+    "usphone": "pleɪ 'bæskɪtbɔːl ",
+    "ukphone": "pleɪ 'bɑːskɪtbɔːl"
+  },
+  {
+    "name": "play ping-pong",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "打乒乓球"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "play games",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "闹着玩,不认真对待"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dog",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "狗"
+      }
+    ],
+    "usphone": "dɔːɡ",
+    "ukphone": "dɒɡ"
+  },
+  {
+    "name": "parrot",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鹦鹉"
+      }
+    ],
+    "usphone": "'pærət",
+    "ukphone": "'pærət"
+  },
+  {
+    "name": "pigeon",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鸽子"
+      }
+    ],
+    "usphone": "'pɪdʒɪn",
+    "ukphone": "'pɪdʒɪn"
+  },
+  {
+    "name": "goldfish",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "金鱼"
+      }
+    ],
+    "usphone": "'ɡoʊldfɪʃ",
+    "ukphone": "'ɡəʊldfɪʃ"
+  },
+  {
+    "name": "giraffe",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "长颈鹿"
+      }
+    ],
+    "usphone": "dʒə'ræf",
+    "ukphone": "dʒə'rɑːf"
+  },
+  {
+    "name": "zebra",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "斑马"
+      }
+    ],
+    "usphone": "'ziːbrə",
+    "ukphone": "'zebrə; 'ziːbrə"
+  },
+  {
+    "name": "rabbit",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "兔子"
+      }
+    ],
+    "usphone": "'ræbɪt",
+    "ukphone": "'ræbɪt"
+  },
+  {
+    "name": "elephant",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "大象"
+      }
+    ],
+    "usphone": "'elɪfənt",
+    "ukphone": "'elɪfənt"
+  },
+  {
+    "name": "waiter",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（旅馆、饭店等的）男服务员"
+      }
+    ],
+    "usphone": "'weɪtər",
+    "ukphone": "'weɪtə(r)"
+  },
+  {
+    "name": "farmer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "农民；农场主"
+      }
+    ],
+    "usphone": "'fɑːrmər",
+    "ukphone": "'fɑːmə(r)"
+  },
+  {
+    "name": "policeman",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "警察（pl.policemen）"
+      }
+    ],
+    "usphone": "pə'liːsmən",
+    "ukphone": "pə'liːsmən"
+  },
+  {
+    "name": "actor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "演员，男演员"
+      }
+    ],
+    "usphone": "'æktər",
+    "ukphone": "'æktə(r)"
+  },
+  {
+    "name": "my",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "我的"
+      }
+    ],
+    "usphone": "maɪ",
+    "ukphone": "maɪ"
+  },
+  {
+    "name": "young",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "年轻的"
+      }
+    ],
+    "usphone": "jʌŋ",
+    "ukphone": "jʌŋ"
+  },
+  {
+    "name": "dentist",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "牙科医生"
+      }
+    ],
+    "usphone": "'dentɪst",
+    "ukphone": "'dentɪst"
+  },
+  {
+    "name": "waitress",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（旅馆、饭店等的）女服务员"
+      }
+    ],
+    "usphone": "'weɪtrəs",
+    "ukphone": "'weɪtrəs"
+  },
+  {
+    "name": "shop assistant",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "店员，售货员"
+      }
+    ],
+    "usphone": "ʃɑp ə'sɪstənt",
+    "ukphone": "ʃɔp ə'sistənt"
+  },
+  {
+    "name": "actress",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "女演员"
+      }
+    ],
+    "usphone": "'æktrəs",
+    "ukphone": "'æktrəs"
+  }
+]

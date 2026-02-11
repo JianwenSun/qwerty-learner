@@ -2,6 +2,7 @@ import { TypingContext, TypingStateActionType } from '../../store'
 import type { TypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
 import Progress from '../Progress'
+import PartsOfSpeechLine from './components/PartsOfSpeechLine'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
@@ -160,9 +161,9 @@ export default function WordPanel() {
       </div>
       <div className="container flex flex-grow flex-col items-center justify-center">
         {currentWord && (
-          <div className="relative flex w-full justify-center">
+          <div className="relative flex w-full justify-center" style={{ margin: '0 0 60px 0' }}>
             {!state.isTyping && (
-              <div className="absolute flex h-full w-full justify-center">
+              <div className="justify absolute flex h-full w-full">
                 <div className="z-10 flex w-full items-center backdrop-blur-sm">
                   <p className="w-full select-none text-center text-xl text-gray-600 dark:text-gray-50">
                     按任意键{state.timerData.time ? '继续' : '开始'}
@@ -170,11 +171,11 @@ export default function WordPanel() {
                 </div>
               </div>
             )}
-            <div className="relative">
+            <div className="relative" style={{ margin: '0 0 60px 0' }}>
               <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} />
               {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
-              <Translation
-                trans={currentWord.trans}
+              <PartsOfSpeechLine
+                word={currentWord}
                 showTrans={shouldShowTranslation}
                 onMouseEnter={() => handleShowTranslation(true)}
                 onMouseLeave={() => handleShowTranslation(false)}

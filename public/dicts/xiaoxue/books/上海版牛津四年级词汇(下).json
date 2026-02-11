@@ -1,0 +1,1405 @@
+[
+  {
+    "name": "basket",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "篮子, 筐; 一篮, 一筐"
+      }
+    ],
+    "usphone": "'bæskɪt",
+    "ukphone": "'bɑːskɪt"
+  },
+  {
+    "name": "behind",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……后面"
+      },
+      {
+        "type": "adv.",
+        "definition": "在……后面"
+      }
+    ],
+    "usphone": "bɪ'haɪnd",
+    "ukphone": "bɪ'haɪnd"
+  },
+  {
+    "name": "beside",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……旁边；靠近"
+      }
+    ],
+    "usphone": "bɪ'saɪd",
+    "ukphone": "bɪ'saɪd"
+  },
+  {
+    "name": "blind",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "瞎的，失明的"
+      }
+    ],
+    "usphone": "blaɪnd",
+    "ukphone": "blaɪnd"
+  },
+  {
+    "name": "blunt",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "钝的；直言的"
+      },
+      {
+        "type": "v.",
+        "definition": "使减弱，使（尖端、刃）变钝"
+      }
+    ],
+    "usphone": "blʌnt",
+    "ukphone": "blʌnt"
+  },
+  {
+    "name": "brush",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "刷子；轻拂，掠过"
+      },
+      {
+        "type": "vt.",
+        "definition": "刷； 擦"
+      }
+    ],
+    "usphone": "brʌʃ",
+    "ukphone": "brʌʃ"
+  },
+  {
+    "name": "donkey",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "毛驴，驴；傻瓜，〈非正式〉笨蛋"
+      }
+    ],
+    "usphone": "'dɔːŋki",
+    "ukphone": "'dɒŋki"
+  },
+  {
+    "name": "drum",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鼓；鼓状物"
+      }
+    ],
+    "usphone": "drʌm",
+    "ukphone": "drʌm"
+  },
+  {
+    "name": "eat",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "吃"
+      }
+    ],
+    "usphone": "iːt",
+    "ukphone": "iːt"
+  },
+  {
+    "name": "felt pen",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "毡头笔"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fox",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "狐狸"
+      }
+    ],
+    "usphone": "fɑːks",
+    "ukphone": "fɒks"
+  },
+  {
+    "name": "grape",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "葡萄"
+      }
+    ],
+    "usphone": "ɡreɪp",
+    "ukphone": "ɡreɪp"
+  },
+  {
+    "name": "guitar",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "吉他"
+      }
+    ],
+    "usphone": "ɡɪ'tɑːr",
+    "ukphone": "ɡɪ'tɑː(r)"
+  },
+  {
+    "name": "hamburger",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "汉堡包"
+      }
+    ],
+    "usphone": "'hæmbɜːrɡər",
+    "ukphone": "'hæmbɜːɡə(r)"
+  },
+  {
+    "name": "hole",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "洞，穴，坑"
+      }
+    ],
+    "usphone": "hoʊl",
+    "ukphone": "həʊl"
+  },
+  {
+    "name": "kitchen",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "厨房"
+      }
+    ],
+    "usphone": "'kɪtʃɪn",
+    "ukphone": "'kɪtʃɪn"
+  },
+  {
+    "name": "make",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "做，制造；使得"
+      },
+      {
+        "type": "n.",
+        "definition": "（某公司产品的）牌；型号"
+      }
+    ],
+    "usphone": "meɪk",
+    "ukphone": "meɪk"
+  },
+  {
+    "name": "music",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "音乐"
+      }
+    ],
+    "usphone": "'mjuːzɪk",
+    "ukphone": "'mjuːzɪk"
+  },
+  {
+    "name": "old",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "老的；旧的"
+      }
+    ],
+    "usphone": "oʊld",
+    "ukphone": "əʊld"
+  },
+  {
+    "name": "paint",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "绘画；给…涂色；在…上刷油漆"
+      },
+      {
+        "type": "n.",
+        "definition": "颜料; 油漆; 涂料"
+      }
+    ],
+    "usphone": "peɪnt",
+    "ukphone": "peɪnt"
+  },
+  {
+    "name": "piano",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "钢琴"
+      }
+    ],
+    "usphone": "pɪ'ænəʊ",
+    "ukphone": "pɪ'ænəʊ"
+  },
+  {
+    "name": "recorder",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "录音机"
+      }
+    ],
+    "usphone": "rɪ'kɔːrdər",
+    "ukphone": "rɪ'kɔːdə(r)"
+  },
+  {
+    "name": "sleep",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "睡觉"
+      }
+    ],
+    "usphone": "sliːp",
+    "ukphone": "sliːp"
+  },
+  {
+    "name": "talk",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "谈话，讲话"
+      },
+      {
+        "type": "n.",
+        "definition": "演讲；讲座"
+      }
+    ],
+    "usphone": "tɔːk",
+    "ukphone": "tɔːk"
+  },
+  {
+    "name": "thick",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "厚的；密的；浓的"
+      }
+    ],
+    "usphone": "θɪk",
+    "ukphone": "θɪk"
+  },
+  {
+    "name": "thin",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "瘦的；薄的"
+      },
+      {
+        "type": "v.",
+        "definition": "（使）变稀，（使）变薄，（使）变淡；（使）变细"
+      }
+    ],
+    "usphone": "θɪn",
+    "ukphone": "θɪn"
+  },
+  {
+    "name": "thing",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "东西；物品"
+      }
+    ],
+    "usphone": "θɪŋ",
+    "ukphone": "θɪŋ"
+  },
+  {
+    "name": "those",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "那些"
+      },
+      {
+        "type": "adj.",
+        "definition": "那些"
+      }
+    ],
+    "usphone": "ðoʊz",
+    "ukphone": "ðəʊz"
+  },
+  {
+    "name": "triangle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "三角形；三角关系"
+      }
+    ],
+    "usphone": "'traɪæŋɡl",
+    "ukphone": "'traɪæŋɡl"
+  },
+  {
+    "name": "violin",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小提琴"
+      }
+    ],
+    "usphone": "ˌvaɪə'lɪn",
+    "ukphone": "ˌvaɪə'lɪn"
+  },
+  {
+    "name": "aunt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "阿姨；伯母；舅母；婶；姑；姨"
+      }
+    ],
+    "usphone": "ænt",
+    "ukphone": "ɑːnt"
+  },
+  {
+    "name": "bathroom",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "浴室；盥洗室"
+      }
+    ],
+    "usphone": "'bæθruːm",
+    "ukphone": "'bɑːθruːm"
+  },
+  {
+    "name": "bedroom",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "卧室，寝室"
+      }
+    ],
+    "usphone": "'bedruːm",
+    "ukphone": "'bedruːm"
+  },
+  {
+    "name": "bone",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "骨，骨头"
+      }
+    ],
+    "usphone": "boʊn",
+    "ukphone": "bəʊn"
+  },
+  {
+    "name": "busy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "忙的，忙碌的"
+      }
+    ],
+    "usphone": "'bɪzi",
+    "ukphone": "'bɪzi"
+  },
+  {
+    "name": "children",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "孩子们（child的复数）"
+      }
+    ],
+    "usphone": "'tʃɪldrən",
+    "ukphone": "'tʃɪldrən"
+  },
+  {
+    "name": "class",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "课；（学校里的）班；阶级，阶层"
+      }
+    ],
+    "usphone": "klæs",
+    "ukphone": "klɑːs"
+  },
+  {
+    "name": "cousin",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "堂（表）兄弟；堂（表）姐妹"
+      }
+    ],
+    "usphone": "'kʌzn",
+    "ukphone": "'kʌzn"
+  },
+  {
+    "name": "dig",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "挖，挖洞"
+      }
+    ],
+    "usphone": "dɪɡ",
+    "ukphone": "dɪɡ"
+  },
+  {
+    "name": "dining-room",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "餐厅"
+      }
+    ],
+    "usphone": "'daɪnɪŋ rʊm",
+    "ukphone": "'daɪnɪŋ rʊm"
+  },
+  {
+    "name": "dinner",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "正餐；宴会"
+      }
+    ],
+    "usphone": "'dɪnər",
+    "ukphone": "'dɪnə(r)"
+  },
+  {
+    "name": "dish",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "盘；碟；（常用复数）餐具；一道菜"
+      }
+    ],
+    "usphone": "dɪʃ",
+    "ukphone": "dɪʃ"
+  },
+  {
+    "name": "drive",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "驾驶；迫使（某人生气、发疯等）"
+      }
+    ],
+    "usphone": "draɪv",
+    "ukphone": "draɪv"
+  },
+  {
+    "name": "dry",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "弄干，变干"
+      },
+      {
+        "type": "adj.",
+        "definition": "干燥的，无水的"
+      }
+    ],
+    "usphone": "draɪ",
+    "ukphone": "draɪ"
+  },
+  {
+    "name": "help",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "帮助"
+      },
+      {
+        "type": "n.",
+        "definition": "帮助"
+      }
+    ],
+    "usphone": "help",
+    "ukphone": "help"
+  },
+  {
+    "name": "homework",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "家庭作业"
+      }
+    ],
+    "usphone": "'hoʊmwɜːrk",
+    "ukphone": "'həʊmwɜːk"
+  },
+  {
+    "name": "letter",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "信；字母"
+      }
+    ],
+    "usphone": "'letər",
+    "ukphone": "'letə(r)"
+  },
+  {
+    "name": "moon",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "月亮（常作the moon）"
+      }
+    ],
+    "usphone": "muːn",
+    "ukphone": "muːn"
+  },
+  {
+    "name": "mop",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "用拖把拖洗"
+      },
+      {
+        "type": "n.",
+        "definition": "拖把"
+      }
+    ],
+    "usphone": "mɑːp",
+    "ukphone": "mɒp"
+  },
+  {
+    "name": "motorbike",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "摩托自行车"
+      }
+    ],
+    "usphone": "'moʊtərbaɪk",
+    "ukphone": "'məʊtəbaɪk"
+  },
+  {
+    "name": "pet",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "宠物"
+      }
+    ],
+    "usphone": "pet",
+    "ukphone": "pet"
+  },
+  {
+    "name": "pilot",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "飞行员；（飞行器）驾驶员"
+      },
+      {
+        "type": "adj.",
+        "definition": "试验性的"
+      }
+    ],
+    "usphone": "'paɪlət",
+    "ukphone": "'paɪlət"
+  },
+  {
+    "name": "puzzle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "拼图等智力玩具"
+      },
+      {
+        "type": "vt.",
+        "definition": "使困惑，使迷惑不解"
+      }
+    ],
+    "usphone": "'pʌzl",
+    "ukphone": "'pʌzl"
+  },
+  {
+    "name": "restaurant",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "餐馆"
+      }
+    ],
+    "usphone": "'restrɑːnt; restərɑːnt",
+    "ukphone": "'restrɒnt"
+  },
+  {
+    "name": "spaceship",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "宇宙飞船"
+      }
+    ],
+    "usphone": "'speɪsʃɪp",
+    "ukphone": "'speɪsʃɪp"
+  },
+  {
+    "name": "rock",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "岩石"
+      },
+      {
+        "type": "vi.",
+        "definition": "摇；摇晃"
+      }
+    ],
+    "usphone": "rɑːk",
+    "ukphone": "rɒk"
+  },
+  {
+    "name": "shake",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "（使）摇动；（使）震动；握（手）"
+      }
+    ],
+    "usphone": "ʃeɪk",
+    "ukphone": "ʃeɪk"
+  },
+  {
+    "name": "singer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "歌手，歌唱家"
+      }
+    ],
+    "usphone": "'sɪŋər",
+    "ukphone": "'sɪŋə(r)"
+  },
+  {
+    "name": "sitting-room",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "起居室"
+      }
+    ],
+    "usphone": "'sɪtɪŋrʊm",
+    "ukphone": "'sɪtɪŋrʊm"
+  },
+  {
+    "name": "soldier",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "士兵，战士"
+      }
+    ],
+    "usphone": "'soʊldʒər",
+    "ukphone": "'səʊldʒə(r)"
+  },
+  {
+    "name": "student",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "学生"
+      }
+    ],
+    "usphone": "'stuːdnt",
+    "ukphone": "'stjuːdnt"
+  },
+  {
+    "name": "uncle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "叔；伯；舅；姑父；姨父"
+      }
+    ],
+    "usphone": "'ʌŋkl",
+    "ukphone": "'ʌŋkl"
+  },
+  {
+    "name": "wash",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "洗（涤）；冲洗；洗剂；泼溅；洗的衣服"
+      },
+      {
+        "type": "v.",
+        "definition": "洗涤；冲洗；流过；弄湿"
+      }
+    ],
+    "usphone": "wɑːʃ",
+    "ukphone": "wɒʃ"
+  },
+  {
+    "name": "watch",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "手表"
+      },
+      {
+        "type": "v.",
+        "definition": "观看；留神观察"
+      }
+    ],
+    "usphone": "wɑtʃ",
+    "ukphone": "wɒtʃ"
+  },
+  {
+    "name": "above",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……上面"
+      },
+      {
+        "type": "adj.",
+        "definition": "上面的"
+      },
+      {
+        "type": "adv.",
+        "definition": "在（或向）上面；在（或向）较高处"
+      }
+    ],
+    "usphone": "ə'bʌv",
+    "ukphone": "ə'bʌv"
+  },
+  {
+    "name": "afternoon",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "下午，午后"
+      }
+    ],
+    "usphone": "ˌæftər'nuːn",
+    "ukphone": "ˌɑːftə'nuːn"
+  },
+  {
+    "name": "live",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "居住；生活；实践，身体力行"
+      },
+      {
+        "type": "adj.",
+        "definition": "活的，有生命的；现场直播的，实况转播的"
+      },
+      {
+        "type": "adv.",
+        "definition": "在（或从）现场，以现场直播方式"
+      }
+    ],
+    "usphone": "lɪv; laɪv",
+    "ukphone": "lɪv; laɪv"
+  },
+  {
+    "name": "month",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "月"
+      }
+    ],
+    "usphone": "mʌnθ",
+    "ukphone": "mʌnθ"
+  },
+  {
+    "name": "January",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "一月"
+      }
+    ],
+    "usphone": "'dʒænjueri",
+    "ukphone": "'dʒænjuəri"
+  },
+  {
+    "name": "February",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "二月"
+      }
+    ],
+    "usphone": "'februeri",
+    "ukphone": "'februəri"
+  },
+  {
+    "name": "march",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "前进；行进"
+      },
+      {
+        "type": "n.",
+        "definition": "（March）三月"
+      }
+    ],
+    "usphone": "mɑːrtʃ",
+    "ukphone": "mɑːtʃ"
+  },
+  {
+    "name": "April",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "四月"
+      }
+    ],
+    "usphone": "'eɪprəl",
+    "ukphone": "'eɪprəl"
+  },
+  {
+    "name": "may",
+    "pos": [
+      {
+        "type": "aux. v.",
+        "definition": "可能；也许；可以"
+      }
+    ],
+    "usphone": "meɪ",
+    "ukphone": "meɪ"
+  },
+  {
+    "name": "June",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "六月"
+      }
+    ],
+    "usphone": "dʒuːn",
+    "ukphone": "dʒuːn"
+  },
+  {
+    "name": "July",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "七月"
+      }
+    ],
+    "usphone": "dʒu'laɪ",
+    "ukphone": "dʒu'laɪ"
+  },
+  {
+    "name": "August",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "八月"
+      }
+    ],
+    "usphone": "'ɔːɡəst",
+    "ukphone": "'ɔːɡəst"
+  },
+  {
+    "name": "September",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "九月"
+      }
+    ],
+    "usphone": "sep'tembər",
+    "ukphone": "sep'tembə(r)"
+  },
+  {
+    "name": "October",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "十月"
+      }
+    ],
+    "usphone": "ɑːk'toʊbər",
+    "ukphone": "ɒk'təʊbə(r)"
+  },
+  {
+    "name": "November",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "十一月"
+      }
+    ],
+    "usphone": "noʊ'vembər",
+    "ukphone": "nəʊ'vembə(r)"
+  },
+  {
+    "name": "December",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "十二月"
+      }
+    ],
+    "usphone": "dɪ'sembər",
+    "ukphone": "dɪ'sembə(r)"
+  },
+  {
+    "name": "week",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "星期，周"
+      }
+    ],
+    "usphone": "wiːk",
+    "ukphone": "wiːk"
+  },
+  {
+    "name": "Monday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "周一，星期一"
+      }
+    ],
+    "usphone": "'mʌndeɪ",
+    "ukphone": "'mʌndeɪ"
+  },
+  {
+    "name": "Tuesday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "星期二"
+      }
+    ],
+    "usphone": "'tuːzdeɪ",
+    "ukphone": "'tjuːzdeɪ"
+  },
+  {
+    "name": "Wednesday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "星期三"
+      }
+    ],
+    "usphone": "'wenzdeɪ",
+    "ukphone": "'wenzdeɪ"
+  },
+  {
+    "name": "Thursday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "星期四"
+      }
+    ],
+    "usphone": "'θɜːrzdeɪ",
+    "ukphone": "'θɜːzdeɪ"
+  },
+  {
+    "name": "Friday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "星期五"
+      }
+    ],
+    "usphone": "'fraɪdeɪ",
+    "ukphone": "'fraɪdeɪ"
+  },
+  {
+    "name": "Saturday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "星期六"
+      }
+    ],
+    "usphone": "'sætərdeɪ",
+    "ukphone": "'sætədeɪ"
+  },
+  {
+    "name": "Sunday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "星期日，星期天"
+      }
+    ],
+    "usphone": "'sʌndeɪ",
+    "ukphone": "'sʌndeɪ"
+  },
+  {
+    "name": "at",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在"
+      }
+    ],
+    "usphone": "ət; æt",
+    "ukphone": "ət; æt"
+  },
+  {
+    "name": "back",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "背；后部；背后"
+      },
+      {
+        "type": "adv.",
+        "definition": "向后，回原处"
+      }
+    ],
+    "usphone": "bæk",
+    "ukphone": "bæk"
+  },
+  {
+    "name": "beach",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "海滩"
+      }
+    ],
+    "usphone": "biːtʃ",
+    "ukphone": "biːtʃ"
+  },
+  {
+    "name": "bench",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "长椅，长凳"
+      }
+    ],
+    "usphone": "bentʃ",
+    "ukphone": "bentʃ"
+  },
+  {
+    "name": "between",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……之间"
+      }
+    ],
+    "usphone": "bɪ'twiːn",
+    "ukphone": "bɪ'twiːn"
+  },
+  {
+    "name": "china",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "瓷器；(China)中国"
+      }
+    ],
+    "usphone": "'tʃaɪnə",
+    "ukphone": "'tʃaɪnə"
+  },
+  {
+    "name": "cloudy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "多云的"
+      }
+    ],
+    "usphone": "'klaʊdi",
+    "ukphone": "'klaʊdi"
+  },
+  {
+    "name": "duckling",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小鸭子"
+      }
+    ],
+    "usphone": "'dʌklɪŋ",
+    "ukphone": "'dʌklɪŋ"
+  },
+  {
+    "name": "evening",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "傍晚；晚上"
+      }
+    ],
+    "usphone": "'iːvnɪŋ",
+    "ukphone": "'iːvnɪŋ"
+  },
+  {
+    "name": "football",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "足球运动，足球"
+      }
+    ],
+    "usphone": "'fʊtbɔːl",
+    "ukphone": "'fʊtbɔːl"
+  },
+  {
+    "name": "near",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "靠近的"
+      },
+      {
+        "type": "adv.",
+        "definition": "附近；邻近"
+      },
+      {
+        "type": "prep.",
+        "definition": "在……附近；靠近"
+      },
+      {
+        "type": "v.",
+        "definition": "接近，靠近"
+      }
+    ],
+    "usphone": "nɪr",
+    "ukphone": "nɪə(r)"
+  },
+  {
+    "name": "now",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "现在"
+      }
+    ],
+    "usphone": "naʊ",
+    "ukphone": "naʊ"
+  },
+  {
+    "name": "rainy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "下雨的；多雨的"
+      }
+    ],
+    "usphone": "'reɪni",
+    "ukphone": "'reɪni"
+  },
+  {
+    "name": "sunny",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "晴朗的；阳光充足的"
+      }
+    ],
+    "usphone": "'sʌni",
+    "ukphone": "'sʌni"
+  },
+  {
+    "name": "sail",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "航行；风帆"
+      },
+      {
+        "type": "vi.",
+        "definition": "航行；开航"
+      }
+    ],
+    "usphone": "seɪl",
+    "ukphone": "seɪl"
+  },
+  {
+    "name": "say",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "说，讲"
+      }
+    ],
+    "usphone": "seɪ",
+    "ukphone": "seɪ"
+  },
+  {
+    "name": "seat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "座位；椅子"
+      },
+      {
+        "type": "v.",
+        "definition": "使坐下"
+      }
+    ],
+    "usphone": "siːt",
+    "ukphone": "siːt"
+  },
+  {
+    "name": "swan",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "天鹅"
+      }
+    ],
+    "usphone": "swɑːn",
+    "ukphone": "swɒn"
+  },
+  {
+    "name": "temple",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "庙，寺庙"
+      }
+    ],
+    "usphone": "'templ",
+    "ukphone": "'templ"
+  },
+  {
+    "name": "thunder",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "雷，雷声"
+      }
+    ],
+    "usphone": "'θʌndər",
+    "ukphone": "'θʌndə(r)"
+  },
+  {
+    "name": "time",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "时间；时期；钟点；次，回"
+      },
+      {
+        "type": "vt.",
+        "definition": "测定……的时间，记录……时间"
+      }
+    ],
+    "usphone": "taɪm",
+    "ukphone": "taɪm"
+  },
+  {
+    "name": "top",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "顶，顶部"
+      },
+      {
+        "type": "adj.",
+        "definition": "拔尖的，头等的"
+      }
+    ],
+    "usphone": "tɑːp",
+    "ukphone": "tɒp"
+  },
+  {
+    "name": "ugly",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "丑陋的，难看的"
+      }
+    ],
+    "usphone": "'ʌɡli",
+    "ukphone": "'ʌɡli"
+  },
+  {
+    "name": "weather",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "天气"
+      }
+    ],
+    "usphone": "'weðər",
+    "ukphone": "'weðə(r)"
+  },
+  {
+    "name": "windy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有风的；多风的"
+      }
+    ],
+    "usphone": "'wɪndi",
+    "ukphone": "'wɪndi"
+  },
+  {
+    "name": "year",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "年；岁"
+      }
+    ],
+    "usphone": "jɪr",
+    "ukphone": "jɪə(r)"
+  },
+  {
+    "name": "pen-friend",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "笔友"
+      }
+    ],
+    "usphone": "'penfr'end",
+    "ukphone": "'penfr'end"
+  },
+  {
+    "name": "get up",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "起床"
+      }
+    ],
+    "usphone": "ɡet ʌp",
+    "ukphone": "ɡet ʌp"
+  },
+  {
+    "name": "o'clock",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "……点钟"
+      }
+    ],
+    "usphone": "ə'klɒk",
+    "ukphone": "ə'klɒk"
+  }
+]

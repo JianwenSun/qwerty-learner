@@ -1,0 +1,930 @@
+[
+  {
+    "name": "anywhere",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "任何地方"
+      }
+    ],
+    "usphone": "'eniwer",
+    "ukphone": "'eniweə(r)"
+  },
+  {
+    "name": "famous",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "著名的"
+      }
+    ],
+    "usphone": "'feɪməs",
+    "ukphone": "'feɪməs"
+  },
+  {
+    "name": "travel",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "旅行，出行；长途行走；游历；旅游"
+      },
+      {
+        "type": "v.",
+        "definition": "旅行"
+      }
+    ],
+    "usphone": "'trævl",
+    "ukphone": "'trævl"
+  },
+  {
+    "name": "along",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "向前，一道"
+      },
+      {
+        "type": "prep.",
+        "definition": "沿着"
+      }
+    ],
+    "usphone": "ə'lɔːŋ",
+    "ukphone": "ə'lɒŋ"
+  },
+  {
+    "name": "go back",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "后退"
+      },
+      {
+        "type": "phrase.",
+        "definition": "返回"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(夏令时间过后钟、表)被拨回到原来的时间"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(工人)结束罢工,复工"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(植物)盛极而衰,萎缩"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(两人)相互了解,熟悉"
+      }
+    ],
+    "usphone": "ɡoʊ bæk",
+    "ukphone": "ɡəʊ bæk"
+  },
+  {
+    "name": "made",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "“make”的过去式和过去分词"
+      }
+    ],
+    "usphone": "meɪd",
+    "ukphone": "meɪd"
+  },
+  {
+    "name": "make",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "做，制造；使得"
+      },
+      {
+        "type": "n.",
+        "definition": "（某公司产品的）牌；型号"
+      }
+    ],
+    "usphone": "meɪk",
+    "ukphone": "meɪk"
+  },
+  {
+    "name": "show",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "演出；节目；展览；表现"
+      },
+      {
+        "type": "vt.",
+        "definition": "给……看，出示，显示"
+      },
+      {
+        "type": "vi.",
+        "definition": "显出，显现，显露，显得"
+      }
+    ],
+    "usphone": "ʃoʊ",
+    "ukphone": "ʃəʊ"
+  },
+  {
+    "name": "fat",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "胖的，肥的"
+      },
+      {
+        "type": "n.",
+        "definition": "脂肪"
+      }
+    ],
+    "usphone": "fæt",
+    "ukphone": "fæt"
+  },
+  {
+    "name": "thin",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "瘦的；薄的"
+      },
+      {
+        "type": "v.",
+        "definition": "（使）变稀，（使）变薄，（使）变淡；（使）变细"
+      }
+    ],
+    "usphone": "θɪn",
+    "ukphone": "θɪn"
+  },
+  {
+    "name": "break",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "休息；间隙"
+      },
+      {
+        "type": "vt.",
+        "definition": "打破（断，碎）；损坏，撕开"
+      }
+    ],
+    "usphone": "breɪk",
+    "ukphone": "breɪk"
+  },
+  {
+    "name": "broke",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "破产的"
+      },
+      {
+        "type": "v.",
+        "definition": "“break”的过去式"
+      }
+    ],
+    "usphone": "broʊk",
+    "ukphone": "brəʊk"
+  },
+  {
+    "name": "hear",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "听见，听到；听说"
+      }
+    ],
+    "usphone": "hɪr",
+    "ukphone": "hɪə(r)"
+  },
+  {
+    "name": "lesson",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "课；功课"
+      }
+    ],
+    "usphone": "'lesn",
+    "ukphone": "'lesn"
+  },
+  {
+    "name": "heavy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "重的，沉的；比重大的；过度的；大量耗用的；不堪负担的"
+      }
+    ],
+    "usphone": "'hevi",
+    "ukphone": "'hevi"
+  },
+  {
+    "name": "carry",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "搬，运，带"
+      }
+    ],
+    "usphone": "'kæri",
+    "ukphone": "'kæri"
+  },
+  {
+    "name": "light",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "光；光线；灯"
+      },
+      {
+        "type": "adj.",
+        "definition": "轻的"
+      },
+      {
+        "type": "vt.",
+        "definition": "点燃；照亮"
+      }
+    ],
+    "usphone": "laɪt",
+    "ukphone": "laɪt"
+  },
+  {
+    "name": "feel",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "感觉；觉得"
+      }
+    ],
+    "usphone": "fiːl",
+    "ukphone": "fiːl"
+  },
+  {
+    "name": "hope",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "希望"
+      },
+      {
+        "type": "vt.",
+        "definition": "希望"
+      }
+    ],
+    "usphone": "hoʊp",
+    "ukphone": "həʊp"
+  },
+  {
+    "name": "soon",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "不久，很快"
+      }
+    ],
+    "usphone": "suːn",
+    "ukphone": "suːn"
+  },
+  {
+    "name": "ill",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有病的；不健康的；邪恶的"
+      }
+    ],
+    "usphone": "ɪl",
+    "ukphone": "ɪl"
+  },
+  {
+    "name": "wrong",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "错误的；有毛病的，不正常的"
+      },
+      {
+        "type": "adv.",
+        "definition": "错误地"
+      }
+    ],
+    "usphone": "rɔːŋ",
+    "ukphone": "rɒŋ"
+  },
+  {
+    "name": "headache",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "头痛"
+      }
+    ],
+    "usphone": "'hedeɪk",
+    "ukphone": "'hedeɪk"
+  },
+  {
+    "name": "have a cold",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "患感冒"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "toothache",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "牙痛"
+      }
+    ],
+    "usphone": "'tuːθeɪk",
+    "ukphone": "'tuːθeɪk"
+  },
+  {
+    "name": "fever",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "发烧，发热"
+      }
+    ],
+    "usphone": "'fiːvər",
+    "ukphone": "'fiːvə(r)"
+  },
+  {
+    "name": "open",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "打开"
+      },
+      {
+        "type": "adj.",
+        "definition": "开着的，敞开的；开阔的"
+      }
+    ],
+    "usphone": "'oʊpən",
+    "ukphone": "'əʊpən"
+  },
+  {
+    "name": "must",
+    "pos": [
+      {
+        "type": "aux. v.",
+        "definition": "一定；必须"
+      },
+      {
+        "type": "n.",
+        "definition": "必须做的事"
+      }
+    ],
+    "usphone": "mʌst",
+    "ukphone": "mʌst"
+  },
+  {
+    "name": "mustn't",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "(=must not)不准，不可以，不允许"
+      }
+    ],
+    "usphone": "'mʌsənt",
+    "ukphone": "'mʌsnt"
+  },
+  {
+    "name": "a lot of",
+    "pos": [
+      {
+        "type": "det.",
+        "definition": "许多"
+      }
+    ],
+    "usphone": "ə lɑːt əv",
+    "ukphone": "ə lɒt əv"
+  },
+  {
+    "name": "medicine",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "药"
+      }
+    ],
+    "usphone": "ˈmedɪsn",
+    "ukphone": "ˈmedɪsn"
+  },
+  {
+    "name": "doctor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "医生；博士"
+      }
+    ],
+    "usphone": "'dɑːktər",
+    "ukphone": "'dɒktə(r)"
+  },
+  {
+    "name": "cross",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "穿过"
+      },
+      {
+        "type": "n.",
+        "definition": "十字形；十字形物品"
+      }
+    ],
+    "usphone": "krɔːs",
+    "ukphone": "krɒs"
+  },
+  {
+    "name": "street",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "街，街道"
+      }
+    ],
+    "usphone": "striːt",
+    "ukphone": "striːt"
+  },
+  {
+    "name": "kiss",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "吻"
+      },
+      {
+        "type": "n.",
+        "definition": "吻"
+      }
+    ],
+    "usphone": "kɪs",
+    "ukphone": "kɪs"
+  },
+  {
+    "name": "love",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "喜爱；热爱"
+      },
+      {
+        "type": "vt.",
+        "definition": "喜爱；热爱"
+      }
+    ],
+    "usphone": "lʌv",
+    "ukphone": "lʌv"
+  },
+  {
+    "name": "surprise",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "惊奇，诧异"
+      },
+      {
+        "type": "vt.",
+        "definition": "使吃惊，使惊奇"
+      }
+    ],
+    "usphone": "sər'praɪz",
+    "ukphone": "sə'praɪz"
+  },
+  {
+    "name": "kind",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "种类"
+      },
+      {
+        "type": "adj.",
+        "definition": "友善的，仁慈的"
+      }
+    ],
+    "usphone": "kaɪnd",
+    "ukphone": "kaɪnd"
+  },
+  {
+    "name": "dining room",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "饭厅, 餐厅"
+      }
+    ],
+    "usphone": "'daɪnɪŋ ruːm",
+    "ukphone": "'daɪnɪŋ ruːm"
+  },
+  {
+    "name": "restaurant",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "餐馆"
+      }
+    ],
+    "usphone": "'restrɑːnt; restərɑːnt",
+    "ukphone": "'restrɒnt"
+  },
+  {
+    "name": "farmer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "农民；农场主"
+      }
+    ],
+    "usphone": "'fɑːrmər",
+    "ukphone": "'fɑːmə(r)"
+  },
+  {
+    "name": "cook",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "炊事员，厨师"
+      },
+      {
+        "type": "v.",
+        "definition": "烹调，做饭"
+      }
+    ],
+    "usphone": "kʊk",
+    "ukphone": "kʊk"
+  },
+  {
+    "name": "worker",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "工人"
+      }
+    ],
+    "usphone": "'wɜːrkər",
+    "ukphone": "'wɜːkə(r)"
+  },
+  {
+    "name": "grow",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "种，种植；生长；成长；变成"
+      }
+    ],
+    "usphone": "ɡroʊ",
+    "ukphone": "ɡrəʊ"
+  },
+  {
+    "name": "police officer",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "警察"
+      }
+    ],
+    "usphone": "pəˈliːs ɑːfɪsər",
+    "ukphone": "pəˈliːs ɒfɪsə(r)"
+  },
+  {
+    "name": "nurse",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "护士"
+      }
+    ],
+    "usphone": "nɜːrs",
+    "ukphone": "nɜːs"
+  },
+  {
+    "name": "job",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "职业"
+      }
+    ],
+    "usphone": "dʒɑːb",
+    "ukphone": "dʒɒb"
+  },
+  {
+    "name": "dancer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "舞蹈演员，舞者"
+      }
+    ],
+    "usphone": "'dænsər",
+    "ukphone": "'dɑːnsə(r)"
+  },
+  {
+    "name": "singer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "歌手，歌唱家"
+      }
+    ],
+    "usphone": "'sɪŋər",
+    "ukphone": "'sɪŋə(r)"
+  },
+  {
+    "name": "true",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "忠实的；真的；真实的，确实的"
+      }
+    ],
+    "usphone": "truː",
+    "ukphone": "truː"
+  },
+  {
+    "name": "driver",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "司机，驾驶员"
+      }
+    ],
+    "usphone": "'draɪvər",
+    "ukphone": "'draɪvə(r)"
+  },
+  {
+    "name": "scientist",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "科学家"
+      }
+    ],
+    "usphone": "'saɪəntɪst",
+    "ukphone": "'saɪəntɪst"
+  },
+  {
+    "name": "learn",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "学习"
+      }
+    ],
+    "usphone": "lɜːrn",
+    "ukphone": "lɜːn"
+  },
+  {
+    "name": "middle school",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "初中, （英国为 9 到 13 岁儿童所设的）中间学校"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "teachers' office",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "教师办公室"
+      }
+    ],
+    "usphone": "ˈtiːtʃərs ˈɑːfɪs",
+    "ukphone": "ˈtiːtʃə(r)s ˈɒfɪs"
+  },
+  {
+    "name": "study",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "学习，研究；书房"
+      },
+      {
+        "type": "v.",
+        "definition": "学习，研究"
+      }
+    ],
+    "usphone": "'stʌdi",
+    "ukphone": "'stʌdi"
+  },
+  {
+    "name": "physics",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "物理（学）"
+      }
+    ],
+    "usphone": "'fɪzɪks",
+    "ukphone": "'fɪzɪks"
+  },
+  {
+    "name": "lab",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "实验室"
+      }
+    ],
+    "usphone": "læb",
+    "ukphone": "læb"
+  },
+  {
+    "name": "chemistry",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "化学"
+      }
+    ],
+    "usphone": "'keməstri",
+    "ukphone": "'keməstri"
+  },
+  {
+    "name": "bottle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "瓶子"
+      }
+    ],
+    "usphone": "'bɑːtl",
+    "ukphone": "'bɒtl"
+  },
+  {
+    "name": "edison",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "爱迪生, Thomas Edison 陶迈斯爱迪生, 【男名】男子名"
+      }
+    ],
+    "usphone": "ˈɛdɪs(ə)n",
+    "ukphone": "ˈedəsən"
+  },
+  {
+    "name": "inventor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "发明家"
+      }
+    ],
+    "usphone": "ɪn'ventər",
+    "ukphone": "ɪn'ventə(r)"
+  },
+  {
+    "name": "subject",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "学科, 科目; 主题; 主语"
+      },
+      {
+        "type": "adj.",
+        "definition": "隶属的, 受支配的; 易受……的"
+      },
+      {
+        "type": "vt.",
+        "definition": "使隶属, 使服从; 使受到"
+      }
+    ],
+    "usphone": "'sʌbdʒekt",
+    "ukphone": "'sʌbdʒɪkt"
+  },
+  {
+    "name": "history",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "历史"
+      }
+    ],
+    "usphone": "ˈhɪstri",
+    "ukphone": "ˈhɪstri"
+  },
+  {
+    "name": "geography",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "地理课；地理学"
+      }
+    ],
+    "usphone": "dʒi'ɑːɡrəfi",
+    "ukphone": "dʒi'ɒɡrəfi"
+  },
+  {
+    "name": "miss",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "女士，小姐（对未婚妇女的称呼）"
+      },
+      {
+        "type": "vt.",
+        "definition": "想念；错过"
+      },
+      {
+        "type": "vi.",
+        "definition": "未击中，打偏"
+      },
+      {
+        "type": "n.",
+        "definition": "未击中（或抓住、达到等）"
+      }
+    ],
+    "usphone": "mɪs",
+    "ukphone": "mɪs"
+  },
+  {
+    "name": "year book",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "年鉴"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "address",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "地址, 住址; 网址; 演说, 讲话"
+      },
+      {
+        "type": "v.",
+        "definition": "向…讲话; 对…发表演说; 写信给; 对付, 处理; 称呼"
+      }
+    ],
+    "usphone": "ə'dres, ˈædres",
+    "ukphone": "ə'dres"
+  },
+  {
+    "name": "information",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "信息"
+      }
+    ],
+    "usphone": "ˌɪnfər'meɪʃn",
+    "ukphone": "ˌɪnfə'meɪʃn"
+  },
+  {
+    "name": "gave",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "给（give的过去式）"
+      }
+    ],
+    "usphone": "ɡeɪv",
+    "ukphone": "ɡeɪv"
+  },
+  {
+    "name": "give",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "给"
+      }
+    ],
+    "usphone": "ɡɪv",
+    "ukphone": "ɡɪv"
+  },
+  {
+    "name": "leave",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "离开；出发"
+      },
+      {
+        "type": "vt.",
+        "definition": "离开；使处于某种状态"
+      }
+    ],
+    "usphone": "liːv",
+    "ukphone": "liːv"
+  }
+]

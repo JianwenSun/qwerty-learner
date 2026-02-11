@@ -1,0 +1,748 @@
+[
+  {
+    "name": "school",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "学校"
+      },
+      {
+        "type": "vt.",
+        "definition": "使受学校教育；培养，教育"
+      }
+    ],
+    "usphone": "skuːl",
+    "ukphone": "skuːl"
+  },
+  {
+    "name": "classroom",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "教室"
+      }
+    ],
+    "usphone": "'klæsruːm",
+    "ukphone": "'klɑːsruːm"
+  },
+  {
+    "name": "textbook",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "课本，教科书"
+      }
+    ],
+    "usphone": "'tekstbʊk",
+    "ukphone": "'tekstbʊk"
+  },
+  {
+    "name": "storybook",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "故事书"
+      }
+    ],
+    "usphone": "'stɔːribʊk",
+    "ukphone": "'stɔːribʊk"
+  },
+  {
+    "name": "Chinese book",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "语文书"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "English book",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "英语书"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "exercise book",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "练习本, 练习册, 作业本"
+      }
+    ],
+    "usphone": "'eksərˌsaɪz bʊk",
+    "ukphone": "ˈeksəsaɪz bʊk"
+  },
+  {
+    "name": "notebook",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "笔记本"
+      }
+    ],
+    "usphone": "'noʊtbʊk",
+    "ukphone": "'nəʊtbʊk"
+  },
+  {
+    "name": "desk",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "书桌"
+      }
+    ],
+    "usphone": "desk",
+    "ukphone": "desk"
+  },
+  {
+    "name": "chair",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "椅子"
+      }
+    ],
+    "usphone": "tʃer",
+    "ukphone": "tʃeə(r)"
+  },
+  {
+    "name": "one",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "一；一（个，件……）（用来代替单数的人或物）"
+      }
+    ],
+    "usphone": "wʌn",
+    "ukphone": "wʌn"
+  },
+  {
+    "name": "two",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "二"
+      }
+    ],
+    "usphone": "tuː",
+    "ukphone": "tuː"
+  },
+  {
+    "name": "three",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "三"
+      }
+    ],
+    "usphone": "θriː",
+    "ukphone": "θriː"
+  },
+  {
+    "name": "four",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "四"
+      }
+    ],
+    "usphone": "fɔːr",
+    "ukphone": "fɔː(r)"
+  },
+  {
+    "name": "five",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "五"
+      }
+    ],
+    "usphone": "faɪv",
+    "ukphone": "faɪv"
+  },
+  {
+    "name": "six",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "六"
+      }
+    ],
+    "usphone": "sɪks",
+    "ukphone": "sɪks"
+  },
+  {
+    "name": "seven",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "七"
+      }
+    ],
+    "usphone": "'sevn",
+    "ukphone": "'sevn"
+  },
+  {
+    "name": "eight",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "八"
+      }
+    ],
+    "usphone": "eɪt",
+    "ukphone": "eɪt"
+  },
+  {
+    "name": "nine",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "九"
+      }
+    ],
+    "usphone": "naɪn",
+    "ukphone": "naɪn"
+  },
+  {
+    "name": "ten",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "十"
+      }
+    ],
+    "usphone": "ten",
+    "ukphone": "ten"
+  },
+  {
+    "name": "eleven",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "十一"
+      }
+    ],
+    "usphone": "ɪ'levn",
+    "ukphone": "ɪ'levn"
+  },
+  {
+    "name": "twelve",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "十二"
+      }
+    ],
+    "usphone": "twelv",
+    "ukphone": "twelv"
+  },
+  {
+    "name": "father",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "父亲"
+      }
+    ],
+    "usphone": "'fɑːðər",
+    "ukphone": "'fɑːðə(r)"
+  },
+  {
+    "name": "dad",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（口语）爸爸，爹爹"
+      }
+    ],
+    "usphone": "dæd",
+    "ukphone": "dæd"
+  },
+  {
+    "name": "mother",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "母亲"
+      }
+    ],
+    "usphone": "'mʌðər",
+    "ukphone": "'mʌðə(r)"
+  },
+  {
+    "name": "mum",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "妈妈"
+      },
+      {
+        "type": "adj.",
+        "definition": "守密的；沉默的"
+      }
+    ],
+    "usphone": "mʌm",
+    "ukphone": "mʌm"
+  },
+  {
+    "name": "brother",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "兄，弟"
+      }
+    ],
+    "usphone": "'brʌðər",
+    "ukphone": "'brʌðə(r)"
+  },
+  {
+    "name": "sister",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "姐，妹"
+      }
+    ],
+    "usphone": "'sɪstər",
+    "ukphone": "'sɪstə(r)"
+  },
+  {
+    "name": "daughter",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "女儿"
+      }
+    ],
+    "usphone": "'dɔːtər",
+    "ukphone": "'dɔːtə(r)"
+  },
+  {
+    "name": "son",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "儿子"
+      }
+    ],
+    "usphone": "sʌn",
+    "ukphone": "sʌn"
+  },
+  {
+    "name": "grandfather",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "祖父；外祖父"
+      }
+    ],
+    "usphone": "'ɡrænfɑːðər",
+    "ukphone": "'ɡrænfɑːðə(r)"
+  },
+  {
+    "name": "grandpa",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（口语）爷爷；外公"
+      }
+    ],
+    "usphone": "'ɡrænpɑː",
+    "ukphone": "'ɡrænpɑː"
+  },
+  {
+    "name": "grandmother",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "祖母；外祖母"
+      }
+    ],
+    "usphone": "'ɡrænmʌðər",
+    "ukphone": "'ɡrænmʌðə(r)"
+  },
+  {
+    "name": "grandma",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（口语）奶奶；外婆"
+      }
+    ],
+    "usphone": "'ɡrænmɑː",
+    "ukphone": "'ɡrænmɑː"
+  },
+  {
+    "name": "uncle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "叔；伯；舅；姑父；姨父"
+      }
+    ],
+    "usphone": "'ʌŋkl",
+    "ukphone": "'ʌŋkl"
+  },
+  {
+    "name": "aunt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "阿姨；伯母；舅母；婶；姑；姨"
+      }
+    ],
+    "usphone": "ænt",
+    "ukphone": "ɑːnt"
+  },
+  {
+    "name": "mango",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "芒果"
+      }
+    ],
+    "usphone": "'mæŋɡoʊ",
+    "ukphone": "'mæŋɡəʊ"
+  },
+  {
+    "name": "bread",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "面包"
+      }
+    ],
+    "usphone": "bred",
+    "ukphone": "bred"
+  },
+  {
+    "name": "candy",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "糖果"
+      }
+    ],
+    "usphone": "'kændi",
+    "ukphone": "'kændi"
+  },
+  {
+    "name": "doughnut",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "甜甜圈，多纳圈（常含果酱、水果、奶油等）"
+      }
+    ],
+    "usphone": "'doʊnʌt",
+    "ukphone": "'dəʊnʌt"
+  },
+  {
+    "name": "coffee",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "咖啡"
+      }
+    ],
+    "usphone": "'kɔːfi",
+    "ukphone": "'kɒfi"
+  },
+  {
+    "name": "fruit",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "水果"
+      }
+    ],
+    "usphone": "fruːt",
+    "ukphone": "fruːt"
+  },
+  {
+    "name": "grape",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "葡萄"
+      }
+    ],
+    "usphone": "ɡreɪp",
+    "ukphone": "ɡreɪp"
+  },
+  {
+    "name": "honey",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蜂蜜；甜蜜"
+      }
+    ],
+    "usphone": "'hʌni",
+    "ukphone": "'hʌni"
+  },
+  {
+    "name": "ice cream",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "冰淇淋"
+      }
+    ],
+    "usphone": "aɪs kriːm",
+    "ukphone": "aɪs kriːm"
+  },
+  {
+    "name": "jam",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "拥挤，阻塞；果酱"
+      }
+    ],
+    "usphone": "dʒæm",
+    "ukphone": "dʒæm"
+  },
+  {
+    "name": "kangaroo",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "袋鼠"
+      }
+    ],
+    "usphone": "ˌkæŋɡə'ruː",
+    "ukphone": "ˌkæŋɡə'ruː"
+  },
+  {
+    "name": "lion",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "狮子"
+      }
+    ],
+    "usphone": "'laɪən",
+    "ukphone": "'laɪən"
+  },
+  {
+    "name": "nest",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "窝，巢"
+      }
+    ],
+    "usphone": "nest",
+    "ukphone": "nest"
+  },
+  {
+    "name": "owl",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "猫头鹰"
+      }
+    ],
+    "usphone": "aʊl",
+    "ukphone": "aʊl"
+  },
+  {
+    "name": "parrot",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鹦鹉"
+      }
+    ],
+    "usphone": "'pærət",
+    "ukphone": "'pærət"
+  },
+  {
+    "name": "quail",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鹌鹑，鹌鹑肉"
+      },
+      {
+        "type": "v.",
+        "definition": "感觉（或显出）恐惧，胆怯，畏缩"
+      }
+    ],
+    "usphone": "kweɪl",
+    "ukphone": "kweɪl"
+  },
+  {
+    "name": "rooster",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "公鸡"
+      }
+    ],
+    "usphone": "'ruːstər",
+    "ukphone": "'ruːstə(r)"
+  },
+  {
+    "name": "elephant",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "大象"
+      }
+    ],
+    "usphone": "'elɪfənt",
+    "ukphone": "'elɪfənt"
+  },
+  {
+    "name": "tiger",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "老虎"
+      }
+    ],
+    "usphone": "'taɪɡər",
+    "ukphone": "'taɪɡə(r)"
+  },
+  {
+    "name": "skirt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "裙子; 衬裙"
+      }
+    ],
+    "usphone": "skɜːrt",
+    "ukphone": "skɜːt"
+  },
+  {
+    "name": "T-shirt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "T恤衫"
+      }
+    ],
+    "usphone": "'ti,ʃɜːrt",
+    "ukphone": "'ti:,ʃɜ:t"
+  },
+  {
+    "name": "uniform",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "制服"
+      }
+    ],
+    "usphone": "'juːnɪfɔːrm",
+    "ukphone": "'juːnɪfɔːm"
+  },
+  {
+    "name": "vest",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "背心，马甲"
+      }
+    ],
+    "usphone": "vest",
+    "ukphone": "vest"
+  },
+  {
+    "name": "watch",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "手表"
+      },
+      {
+        "type": "v.",
+        "definition": "观看；留神观察"
+      }
+    ],
+    "usphone": "wɑtʃ",
+    "ukphone": "wɒtʃ"
+  },
+  {
+    "name": "box",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "盒子，箱子"
+      }
+    ],
+    "usphone": "bɑːks",
+    "ukphone": "bɒks"
+  },
+  {
+    "name": "yacht",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "帆船；游艇"
+      }
+    ],
+    "usphone": "jɑːt",
+    "ukphone": "jɒt"
+  },
+  {
+    "name": "zip",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "拉开（或扣上）……的拉链"
+      },
+      {
+        "type": "n.",
+        "definition": "拉链"
+      }
+    ],
+    "usphone": "zɪp",
+    "ukphone": "zɪp"
+  },
+  {
+    "name": "zebra",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "斑马"
+      }
+    ],
+    "usphone": "'ziːbrə",
+    "ukphone": "'zebrə; 'ziːbrə"
+  },
+  {
+    "name": "coat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "外套；涂层；表皮；皮毛"
+      }
+    ],
+    "usphone": "koʊt",
+    "ukphone": "kəʊt"
+  },
+  {
+    "name": "sweater",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "厚运动衫；毛衣"
+      }
+    ],
+    "usphone": "'swetər",
+    "ukphone": "'swetə(r)"
+  }
+]

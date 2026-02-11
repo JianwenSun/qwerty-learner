@@ -1,0 +1,732 @@
+[
+  {
+    "name": "how long",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "多长（时间/距离）"
+      }
+    ],
+    "usphone": "haʊ lɔːŋ",
+    "ukphone": "haʊ lɒŋ"
+  },
+  {
+    "name": "near",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "靠近的"
+      },
+      {
+        "type": "adv.",
+        "definition": "附近；邻近"
+      },
+      {
+        "type": "prep.",
+        "definition": "在……附近；靠近"
+      },
+      {
+        "type": "v.",
+        "definition": "接近，靠近"
+      }
+    ],
+    "usphone": "nɪr",
+    "ukphone": "nɪə(r)"
+  },
+  {
+    "name": "along",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "向前，一道"
+      },
+      {
+        "type": "prep.",
+        "definition": "沿着"
+      }
+    ],
+    "usphone": "ə'lɔːŋ",
+    "ukphone": "ə'lɒŋ"
+  },
+  {
+    "name": "more than",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "多于；比……多；非常，极其"
+      }
+    ],
+    "usphone": "mɔːr ðən",
+    "ukphone": "mɔː ðən"
+  },
+  {
+    "name": "kilometre",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "(=<美>kilometer) 公里, 千米"
+      }
+    ],
+    "usphone": "kɪˈlɑːmɪtər",
+    "ukphone": "'kɪləmiːtə(r); kɪˈlɒmɪtə(r)"
+  },
+  {
+    "name": "metre",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "米，公尺"
+      }
+    ],
+    "usphone": "'miːtər",
+    "ukphone": "'miːtə(r)"
+  },
+  {
+    "name": "Chinatown",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "中国城, 唐人街"
+      }
+    ],
+    "usphone": "'tʃaɪnətaʊn",
+    "ukphone": "'tʃaɪnətaʊn"
+  },
+  {
+    "name": "town",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "镇，市镇；城镇，城"
+      }
+    ],
+    "usphone": "taʊn",
+    "ukphone": "taʊn"
+  },
+  {
+    "name": "subject",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "学科, 科目; 主题; 主语"
+      },
+      {
+        "type": "adj.",
+        "definition": "隶属的, 受支配的; 易受……的"
+      },
+      {
+        "type": "vt.",
+        "definition": "使隶属, 使服从; 使受到"
+      }
+    ],
+    "usphone": "'sʌbdʒekt",
+    "ukphone": "'sʌbdʒɪkt"
+  },
+  {
+    "name": "everywhere",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "到处"
+      }
+    ],
+    "usphone": "'evriwer",
+    "ukphone": "'evriweə(r)"
+  },
+  {
+    "name": "spoke",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "speak的过去式"
+      }
+    ],
+    "usphone": "spoʊk",
+    "ukphone": "spəʊk"
+  },
+  {
+    "name": "lion dance",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "舞狮"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "tomb",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "坟墓"
+      }
+    ],
+    "usphone": "tuːm",
+    "ukphone": "tuːm"
+  },
+  {
+    "name": "wrote",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "写（write的过去式）"
+      }
+    ],
+    "usphone": "roʊt",
+    "ukphone": "rəʊt"
+  },
+  {
+    "name": "when",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "什么时候，何时"
+      },
+      {
+        "type": "conj.",
+        "definition": "当……的时候"
+      }
+    ],
+    "usphone": "wen",
+    "ukphone": "wen"
+  },
+  {
+    "name": "stamp",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "邮票"
+      }
+    ],
+    "usphone": "stæmp",
+    "ukphone": "stæmp"
+  },
+  {
+    "name": "book",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "书"
+      },
+      {
+        "type": "vt.",
+        "definition": "预定，定（房间、车票等）"
+      }
+    ],
+    "usphone": "bʊk",
+    "ukphone": "bʊk"
+  },
+  {
+    "name": "collect",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "收集"
+      }
+    ],
+    "usphone": "kə'lekt",
+    "ukphone": "kə'lekt"
+  },
+  {
+    "name": "hobby",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "业余爱好"
+      }
+    ],
+    "usphone": "'hɑːbi",
+    "ukphone": "'hɒbi"
+  },
+  {
+    "name": "sun",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "太阳；阳光"
+      }
+    ],
+    "usphone": "sʌn",
+    "ukphone": "sʌn"
+  },
+  {
+    "name": "island",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "岛屿"
+      }
+    ],
+    "usphone": "'aɪlənd",
+    "ukphone": "'aɪlənd"
+  },
+  {
+    "name": "coconut",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "椰子，椰子肉"
+      }
+    ],
+    "usphone": "'koʊkənʌt",
+    "ukphone": "'kəʊkənʌt"
+  },
+  {
+    "name": "Thanksgiving",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（对上帝的）感恩；感恩节"
+      }
+    ],
+    "usphone": "ˌθæŋks'ɡɪvɪŋ",
+    "ukphone": "ˌθæŋks'ɡɪvɪŋ"
+  },
+  {
+    "name": "nearly",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "几乎，将近"
+      }
+    ],
+    "usphone": "'nɪrli",
+    "ukphone": "'nɪəli"
+  },
+  {
+    "name": "Spring Festival",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "春节"
+      }
+    ],
+    "usphone": "",
+    "ukphone": "\n"
+  },
+  {
+    "name": "sure",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "当然，的确"
+      },
+      {
+        "type": "adj.",
+        "definition": "对什么有把握，稳当的，可靠的"
+      }
+    ],
+    "usphone": "ʃʊr",
+    "ukphone": "ʃʊə(r)"
+  },
+  {
+    "name": "December",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "十二月"
+      }
+    ],
+    "usphone": "dɪ'sembər",
+    "ukphone": "dɪ'sembə(r)"
+  },
+  {
+    "name": "light",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "光；光线；灯"
+      },
+      {
+        "type": "adj.",
+        "definition": "轻的"
+      },
+      {
+        "type": "vt.",
+        "definition": "点燃；照亮"
+      }
+    ],
+    "usphone": "laɪt",
+    "ukphone": "laɪt"
+  },
+  {
+    "name": "pleased",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "满意的，高兴的，愉快的"
+      }
+    ],
+    "usphone": "pliːzd",
+    "ukphone": "pliːzd"
+  },
+  {
+    "name": "pretty",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "漂亮的，美丽的"
+      },
+      {
+        "type": "adv.",
+        "definition": "相当，颇"
+      }
+    ],
+    "usphone": "'prɪti",
+    "ukphone": "'prɪti"
+  },
+  {
+    "name": "French",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "法语，法国人"
+      }
+    ],
+    "usphone": "frentʃ",
+    "ukphone": "frentʃ"
+  },
+  {
+    "name": "phone",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "给……打电话"
+      },
+      {
+        "type": "n.",
+        "definition": "电话，电话机，受话器（=telephone）"
+      }
+    ],
+    "usphone": "foʊn",
+    "ukphone": "fəʊn"
+  },
+  {
+    "name": "world",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "世界"
+      }
+    ],
+    "usphone": "wɜːrld",
+    "ukphone": "wɜːld"
+  },
+  {
+    "name": "difficult",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "难的，困难的"
+      }
+    ],
+    "usphone": "'dɪfɪkəlt",
+    "ukphone": "'dɪfɪkəlt"
+  },
+  {
+    "name": "answer",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "回答，答复"
+      },
+      {
+        "type": "n.",
+        "definition": "答案"
+      }
+    ],
+    "usphone": "'ænsər",
+    "ukphone": "'ɑːnsə(r)"
+  },
+  {
+    "name": "miss",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "女士，小姐（对未婚妇女的称呼）"
+      },
+      {
+        "type": "vt.",
+        "definition": "想念；错过"
+      },
+      {
+        "type": "vi.",
+        "definition": "未击中，打偏"
+      },
+      {
+        "type": "n.",
+        "definition": "未击中（或抓住、达到等）"
+      }
+    ],
+    "usphone": "mɪs",
+    "ukphone": "mɪs"
+  },
+  {
+    "name": "bamboo",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "竹子"
+      }
+    ],
+    "usphone": "ˌbæm'buː",
+    "ukphone": "ˌbæm'buː"
+  },
+  {
+    "name": "gave",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "给（give的过去式）"
+      }
+    ],
+    "usphone": "ɡeɪv",
+    "ukphone": "ɡeɪv"
+  },
+  {
+    "name": "its",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "它的"
+      }
+    ],
+    "usphone": "ɪts",
+    "ukphone": "ɪts"
+  },
+  {
+    "name": "almost",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "几乎，差不多"
+      }
+    ],
+    "usphone": "'ɔːlmoʊst",
+    "ukphone": "'ɔːlməʊst"
+  },
+  {
+    "name": "deaf",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "聋的"
+      }
+    ],
+    "usphone": "def",
+    "ukphone": "def"
+  },
+  {
+    "name": "frightened",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "惊吓的，受惊的，害怕的"
+      },
+      {
+        "type": "v.",
+        "definition": "“frighten”的过去分词和过去式"
+      }
+    ],
+    "usphone": "'fraɪtnd",
+    "ukphone": "'fraɪtnd"
+  },
+  {
+    "name": "sh",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "（用以让别人安静）嘘"
+      }
+    ],
+    "usphone": "ʃ",
+    "ukphone": "ʃ"
+  },
+  {
+    "name": "roar",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "吼叫，咆哮，叫喊，大声地说"
+      },
+      {
+        "type": "n.",
+        "definition": "吼叫，咆哮，（风或海的）呼啸声，（机器的）隆隆声"
+      }
+    ],
+    "usphone": "rɔːr",
+    "ukphone": "rɔː(r)"
+  },
+  {
+    "name": "fox",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "狐狸"
+      }
+    ],
+    "usphone": "fɑːks",
+    "ukphone": "fɒks"
+  },
+  {
+    "name": "at night",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "在晚上；在夜里"
+      }
+    ],
+    "usphone": "æt naɪt",
+    "ukphone": "æt naɪt"
+  },
+  {
+    "name": "coin",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "硬币"
+      }
+    ],
+    "usphone": "kɔɪn",
+    "ukphone": "kɔɪn"
+  },
+  {
+    "name": "ever",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "曾经; 从来; 有时, 在某时"
+      }
+    ],
+    "usphone": "'evər",
+    "ukphone": "'evə(r)"
+  },
+  {
+    "name": "tidy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "整洁的"
+      },
+      {
+        "type": "vt.",
+        "definition": "使整洁，使整齐"
+      },
+      {
+        "type": "vi.",
+        "definition": "整理；收拾"
+      }
+    ],
+    "usphone": "'taɪdi",
+    "ukphone": "'taɪdi"
+  },
+  {
+    "name": "messy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "凌乱的，脏的"
+      }
+    ],
+    "usphone": "'mesi",
+    "ukphone": "'mesi"
+  },
+  {
+    "name": "never",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "从不；决不"
+      }
+    ],
+    "usphone": "'nevər",
+    "ukphone": "'nevə(r)"
+  },
+  {
+    "name": "blackboard",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "黑板"
+      }
+    ],
+    "usphone": "'blækbɔːrd",
+    "ukphone": "'blækbɔːd"
+  },
+  {
+    "name": "peace",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "和平；宁静；安宁"
+      }
+    ],
+    "usphone": "piːs",
+    "ukphone": "piːs"
+  },
+  {
+    "name": "famous",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "著名的"
+      }
+    ],
+    "usphone": "'feɪməs",
+    "ukphone": "'feɪməs"
+  },
+  {
+    "name": "aunt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "阿姨；伯母；舅母；婶；姑；姨"
+      }
+    ],
+    "usphone": "ænt",
+    "ukphone": "ɑːnt"
+  },
+  {
+    "name": "forgot",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "忘记（forget忘记的过去式）"
+      }
+    ],
+    "usphone": "fər'ɡɑːt",
+    "ukphone": "fə'ɡɒt"
+  },
+  {
+    "name": "way",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "方式，方法；路；路线"
+      },
+      {
+        "type": "adv.",
+        "definition": "非常"
+      }
+    ],
+    "usphone": "weɪ",
+    "ukphone": "weɪ"
+  },
+  {
+    "name": "cross",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "穿过"
+      },
+      {
+        "type": "n.",
+        "definition": "十字形；十字形物品"
+      }
+    ],
+    "usphone": "krɔːs",
+    "ukphone": "krɒs"
+  }
+]

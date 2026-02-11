@@ -9,17 +9,20 @@ import WordDictationSwitcher from '../WordDictationSwitcher'
 import Tooltip from '@/components/Tooltip'
 import { isOpenDarkModeAtom } from '@/store'
 import { CTRL } from '@/utils'
-import { useAtom } from 'jotai'
-import { useContext } from 'react'
+import { useAtom, useAtomValue } from 'jotai'
+import { useContext, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import IconMoon from '~icons/heroicons/moon-solid'
 import IconSun from '~icons/heroicons/sun-solid'
+import IconChevronLeft from '~icons/tabler/chevron-left'
+import IconChevronRight from '~icons/tabler/chevron-right'
 import IconLanguage from '~icons/tabler/language'
 import IconLanguageOff from '~icons/tabler/language-off'
 
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
   const { state, dispatch } = useContext(TypingContext) ?? {}
+  const [isCollapsed, setIsCollapsed] = useState(false)
 
   const changeDarkModeState = () => {
     setIsOpenDarkMode((old) => !old)
@@ -41,58 +44,75 @@ export default function Switcher() {
   )
 
   return (
-    <div className="flex items-center justify-center gap-2">
-      <Tooltip content="音效设置">
-        <SoundSwitcher />
-      </Tooltip>
+    <div className="flex items-center gap-2">
+      {!isCollapsed && (
+        <>
+          <Tooltip content="音效设置">
+            <SoundSwitcher />
+          </Tooltip>
 
-      <Tooltip className="h-7 w-7" content="设置单个单词循环">
-        <LoopWordSwitcher />
-      </Tooltip>
+          <Tooltip className="h-7 w-7" content="设置单个单词循环">
+            <LoopWordSwitcher />
+          </Tooltip>
 
-      <Tooltip className="h-7 w-7" content={`开关默写模式（${CTRL} + V）`}>
-        <WordDictationSwitcher />
-      </Tooltip>
-      <Tooltip className="h-7 w-7" content={`开关释义显示（${CTRL} + Shift + V）`}>
+          <Tooltip className="h-7 w-7" content={`开关默写模式（${CTRL} + V）`}>
+            <WordDictationSwitcher />
+          </Tooltip>
+          <Tooltip className="h-7 w-7" content={`开关释义显示（${CTRL} + Shift + V）`}>
+            <button
+              className={`p-[2px] ${state?.isTransVisible ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
+              type="button"
+              onClick={(e) => {
+                changeTransVisibleState()
+                e.currentTarget.blur()
+              }}
+              aria-label={`开关释义显示（${CTRL} + Shift + V）`}
+            >
+              {state?.isTransVisible ? <IconLanguage /> : <IconLanguageOff />}
+            </button>
+          </Tooltip>
+
+          <Tooltip content="错题本">
+            <ErrorBookButton />
+          </Tooltip>
+
+          <Tooltip className="h-7 w-7" content="查看数据统计">
+            <AnalysisButton />
+          </Tooltip>
+
+          <Tooltip className="h-7 w-7" content="开关深色模式">
+            <button
+              className={`p-[2px] text-lg text-indigo-500 focus:outline-none`}
+              type="button"
+              onClick={(e) => {
+                changeDarkModeState()
+                e.currentTarget.blur()
+              }}
+              aria-label="开关深色模式"
+            >
+              {isOpenDarkMode ? <IconMoon className="icon" /> : <IconSun className="icon" />}
+            </button>
+          </Tooltip>
+          <Tooltip className="h-7 w-7" content="指法图示">
+            <HandPositionIllustration></HandPositionIllustration>
+          </Tooltip>
+          <Tooltip content="设置">
+            <Setting />
+          </Tooltip>
+        </>
+      )}
+      <Tooltip content={isCollapsed ? '展开所有选项' : '收起所有选项'}>
         <button
-          className={`p-[2px] ${state?.isTransVisible ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
+          className={`p-[2px] text-lg text-gray-500 focus:outline-none`}
           type="button"
           onClick={(e) => {
-            changeTransVisibleState()
+            setIsCollapsed((old) => !old)
             e.currentTarget.blur()
           }}
-          aria-label={`开关释义显示（${CTRL} + Shift + V）`}
+          aria-label={isCollapsed ? '展开所有选项' : '收起所有选项'}
         >
-          {state?.isTransVisible ? <IconLanguage /> : <IconLanguageOff />}
+          {isCollapsed ? <IconChevronRight /> : <IconChevronLeft />}
         </button>
-      </Tooltip>
-
-      <Tooltip content="错题本">
-        <ErrorBookButton />
-      </Tooltip>
-
-      <Tooltip className="h-7 w-7" content="查看数据统计">
-        <AnalysisButton />
-      </Tooltip>
-
-      <Tooltip className="h-7 w-7" content="开关深色模式">
-        <button
-          className={`p-[2px] text-lg text-indigo-500 focus:outline-none`}
-          type="button"
-          onClick={(e) => {
-            changeDarkModeState()
-            e.currentTarget.blur()
-          }}
-          aria-label="开关深色模式"
-        >
-          {isOpenDarkMode ? <IconMoon className="icon" /> : <IconSun className="icon" />}
-        </button>
-      </Tooltip>
-      <Tooltip className="h-7 w-7" content="指法图示">
-        <HandPositionIllustration></HandPositionIllustration>
-      </Tooltip>
-      <Tooltip content="设置">
-        <Setting />
       </Tooltip>
     </div>
   )

@@ -1,0 +1,750 @@
+[
+  {
+    "name": "let's",
+    "pos": [
+      {
+        "type": "abbr.",
+        "definition": "让我们"
+      }
+    ],
+    "usphone": "lets",
+    "ukphone": "lets"
+  },
+  {
+    "name": "let us",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "让我们"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "count",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "数数"
+      }
+    ],
+    "usphone": "kaʊnt",
+    "ukphone": "kaʊnt"
+  },
+  {
+    "name": "Cool!",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "酷！太棒了！"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "how many",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "几个，多少"
+      }
+    ],
+    "usphone": "haʊ 'meni",
+    "ukphone": "haʊ 'meni"
+  },
+  {
+    "name": "marble",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "玻璃球，玻璃弹珠"
+      }
+    ],
+    "usphone": "'mɑːrbl",
+    "ukphone": "'mɑːbl"
+  },
+  {
+    "name": "one",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "一"
+      }
+    ],
+    "usphone": "wʌn",
+    "ukphone": "wʌn"
+  },
+  {
+    "name": "two",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "二"
+      }
+    ],
+    "usphone": "tuː",
+    "ukphone": "tuː"
+  },
+  {
+    "name": "three",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "三"
+      }
+    ],
+    "usphone": "θriː",
+    "ukphone": "θriː"
+  },
+  {
+    "name": "four",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "四"
+      }
+    ],
+    "usphone": "fɔːr",
+    "ukphone": "fɔː(r)"
+  },
+  {
+    "name": "yellow",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "黄色的"
+      }
+    ],
+    "usphone": "'jeloʊ",
+    "ukphone": "'jeləʊ"
+  },
+  {
+    "name": "five",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "五"
+      }
+    ],
+    "usphone": "faɪv",
+    "ukphone": "faɪv"
+  },
+  {
+    "name": "pencil",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "铅笔"
+      }
+    ],
+    "usphone": "'pensl",
+    "ukphone": "'pensl"
+  },
+  {
+    "name": "Ouch!",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "（表示突然的疼痛）哎呦！"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "I'm sorry.",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "对不起。请原谅。"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "That's OK.",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "没关系"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "book",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "书"
+      }
+    ],
+    "usphone": "bʊk",
+    "ukphone": "bʊk"
+  },
+  {
+    "name": "ruler",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "直尺"
+      }
+    ],
+    "usphone": "'ruːlər",
+    "ukphone": "'ruːlə(r)"
+  },
+  {
+    "name": "rubber",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "橡皮"
+      }
+    ],
+    "usphone": "'rʌbər",
+    "ukphone": "'rʌbə(r)"
+  },
+  {
+    "name": "like",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "喜欢"
+      }
+    ],
+    "usphone": "laɪk",
+    "ukphone": "laɪk"
+  },
+  {
+    "name": "carrot",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "胡萝卜"
+      }
+    ],
+    "usphone": "'kærət",
+    "ukphone": "'kærət"
+  },
+  {
+    "name": "Me too.",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "我也是。"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "onion",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "洋葱"
+      }
+    ],
+    "usphone": "'ʌnjən",
+    "ukphone": "'ʌnjən"
+  },
+  {
+    "name": "No, thanks.",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "不要了，谢谢。"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pea",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "豌豆，豌豆粒"
+      }
+    ],
+    "usphone": "piː",
+    "ukphone": "piː"
+  },
+  {
+    "name": "Yes, please.",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "好的，谢谢。"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "we",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "我们"
+      }
+    ],
+    "usphone": "wiː",
+    "ukphone": "wiː"
+  },
+  {
+    "name": "all",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "全部，全体"
+      }
+    ],
+    "usphone": "ɔːl",
+    "ukphone": "ɔːl"
+  },
+  {
+    "name": "pepper",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "甜椒，灯笼椒"
+      }
+    ],
+    "usphone": "'pepər",
+    "ukphone": "'pepə(r)"
+  },
+  {
+    "name": "spring",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "春天，春季"
+      }
+    ],
+    "usphone": "sprɪŋ",
+    "ukphone": "sprɪŋ"
+  },
+  {
+    "name": "the",
+    "pos": [
+      {
+        "type": "article.",
+        "definition": "（指代人或事物）这个；那个；这些；那些"
+      }
+    ],
+    "usphone": "ðə",
+    "ukphone": "ðə"
+  },
+  {
+    "name": "tree",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "树"
+      }
+    ],
+    "usphone": "triː",
+    "ukphone": "triː"
+  },
+  {
+    "name": "they're",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "他们是；她们是；它们是"
+      }
+    ],
+    "usphone": "ðer",
+    "ukphone": "ðeə(r)"
+  },
+  {
+    "name": "they are",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "他们是；她们是；它们是"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "flower",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "花"
+      }
+    ],
+    "usphone": "'flaʊər",
+    "ukphone": "'flaʊə(r)"
+  },
+  {
+    "name": "beautiful",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "美丽的，漂亮的"
+      }
+    ],
+    "usphone": "'bjuːtɪfl",
+    "ukphone": "'bjuːtɪfl"
+  },
+  {
+    "name": "bird",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鸟"
+      }
+    ],
+    "usphone": "bɜːrd",
+    "ukphone": "bɜːd"
+  },
+  {
+    "name": "happy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "快乐的"
+      }
+    ],
+    "usphone": "'hæpi",
+    "ukphone": "'hæpi"
+  },
+  {
+    "name": "kite",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "风筝"
+      }
+    ],
+    "usphone": "kaɪt",
+    "ukphone": "kaɪt"
+  },
+  {
+    "name": "colourful",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "五彩缤纷的"
+      }
+    ],
+    "usphone": "'kʌlərfl",
+    "ukphone": "'kʌləfl"
+  },
+  {
+    "name": "what is",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "是什么"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "what's",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "是什么"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "What's this?",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "这是什么？"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ladybird",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "瓢虫"
+      }
+    ],
+    "usphone": "'leɪdibɜːrd",
+    "ukphone": "'leɪdibɜːd"
+  },
+  {
+    "name": "cute",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "可爱的，漂亮的"
+      }
+    ],
+    "usphone": "kjuːt",
+    "ukphone": "kjuːt"
+  },
+  {
+    "name": "cicada",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蝉，知了"
+      }
+    ],
+    "usphone": "sɪ'keɪdə",
+    "ukphone": "sɪ'kɑːdə"
+  },
+  {
+    "name": "butterfly",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蝴蝶"
+      }
+    ],
+    "usphone": "'bʌtərflaɪ",
+    "ukphone": "'bʌtəflaɪ"
+  },
+  {
+    "name": "dragonfly",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蜻蜓"
+      }
+    ],
+    "usphone": "'dræɡənflaɪ",
+    "ukphone": "'dræɡənflaɪ"
+  },
+  {
+    "name": "Are you ready?",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "你们准备好了吗？"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "run",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "跑"
+      }
+    ],
+    "usphone": "rʌn",
+    "ukphone": "rʌn"
+  },
+  {
+    "name": "jump",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "跳，跳跃"
+      }
+    ],
+    "usphone": "dʒʌmp",
+    "ukphone": "dʒʌmp"
+  },
+  {
+    "name": "Well done!",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "干得好！"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hop",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "单脚跳"
+      }
+    ],
+    "usphone": "hɑːp",
+    "ukphone": "hɒp"
+  },
+  {
+    "name": "walk",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "走，步行"
+      }
+    ],
+    "usphone": "wɔːk",
+    "ukphone": "wɔːk"
+  },
+  {
+    "name": "What's that?",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "那是什么？"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "Shh!",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "（用以让别人安静）嘘！"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pig",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "猪"
+      }
+    ],
+    "usphone": "pɪɡ",
+    "ukphone": "pɪɡ"
+  },
+  {
+    "name": "Baa!",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "（羊叫声）咩！"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "lamb",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "羊羔，小羊"
+      }
+    ],
+    "usphone": "læm",
+    "ukphone": "læm"
+  },
+  {
+    "name": "Quack!",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "（鸭子叫声）嘎！"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "duck",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鸭子"
+      }
+    ],
+    "usphone": "dʌk",
+    "ukphone": "dʌk"
+  },
+  {
+    "name": "cow",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "奶牛"
+      }
+    ],
+    "usphone": "kaʊ",
+    "ukphone": "kaʊ"
+  },
+  {
+    "name": "in",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……内，在……里"
+      }
+    ],
+    "usphone": "ɪn",
+    "ukphone": "ɪn"
+  },
+  {
+    "name": "bottle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "瓶子"
+      }
+    ],
+    "usphone": "'bɑːtl",
+    "ukphone": "'bɒtl"
+  },
+  {
+    "name": "hankie",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "手帕，纸巾"
+      }
+    ],
+    "usphone": "'hæŋki",
+    "ukphone": "'hæŋki"
+  },
+  {
+    "name": "and",
+    "pos": [
+      {
+        "type": "conj.",
+        "definition": "和，同，与"
+      }
+    ],
+    "usphone": "ænd; ənd; ən",
+    "ukphone": "ænd; ənd; (ə)n"
+  },
+  {
+    "name": "sticker",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "贴纸"
+      }
+    ],
+    "usphone": "'stɪkər",
+    "ukphone": "'stɪkə(r)"
+  },
+  {
+    "name": "yo-yo",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "溜溜球"
+      }
+    ],
+    "usphone": "'joʊˌjoʊ",
+    "ukphone": "'jəʊjəʊ"
+  }
+]

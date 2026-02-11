@@ -1,0 +1,1096 @@
+[
+  {
+    "name": "job",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "职业"
+      }
+    ],
+    "usphone": "dʒɑːb",
+    "ukphone": "dʒɒb"
+  },
+  {
+    "name": "teacher",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "教师"
+      }
+    ],
+    "usphone": "'tiːtʃər",
+    "ukphone": "'tiːtʃə(r)"
+  },
+  {
+    "name": "doctor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "医生；博士"
+      }
+    ],
+    "usphone": "'dɑːktər",
+    "ukphone": "'dɒktə(r)"
+  },
+  {
+    "name": "vet",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "兽医，兽医诊所"
+      },
+      {
+        "type": "v.",
+        "definition": "审查（某人过去的生活和职业），审查（内容、质量等）"
+      }
+    ],
+    "usphone": "vet",
+    "ukphone": "vet"
+  },
+  {
+    "name": "juggler",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "玩杂耍的人, 耍把戏的人, 变戏法的人"
+      }
+    ],
+    "usphone": "'dʒʌɡlər",
+    "ukphone": "'dʒʌɡlə(r)"
+  },
+  {
+    "name": "miss",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "女士，小姐（对未婚妇女的称呼）"
+      },
+      {
+        "type": "vt.",
+        "definition": "想念；错过"
+      },
+      {
+        "type": "vi.",
+        "definition": "未击中，打偏"
+      },
+      {
+        "type": "n.",
+        "definition": "未击中（或抓住、达到等）"
+      }
+    ],
+    "usphone": "mɪs",
+    "ukphone": "mɪs"
+  },
+  {
+    "name": "telephone",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "打电话（给）"
+      },
+      {
+        "type": "n.",
+        "definition": "电话机，电话"
+      }
+    ],
+    "usphone": "'telɪfoʊn",
+    "ukphone": "'telɪfəʊn"
+  },
+  {
+    "name": "call",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "通话；（一次）电话；打电话（给）"
+      },
+      {
+        "type": "vt.",
+        "definition": "喊，叫；打电话"
+      },
+      {
+        "type": "vt.",
+        "definition": "把……叫做；给……命名"
+      }
+    ],
+    "usphone": "kɔːl",
+    "ukphone": "kɔːl"
+  },
+  {
+    "name": "farmer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "农民；农场主"
+      }
+    ],
+    "usphone": "'fɑːrmər",
+    "ukphone": "'fɑːmə(r)"
+  },
+  {
+    "name": "policeman",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "警察（pl.policemen）"
+      }
+    ],
+    "usphone": "pə'liːsmən",
+    "ukphone": "pə'liːsmən"
+  },
+  {
+    "name": "nurse",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "护士"
+      }
+    ],
+    "usphone": "nɜːrs",
+    "ukphone": "nɜːs"
+  },
+  {
+    "name": "student",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "学生"
+      }
+    ],
+    "usphone": "'stuːdnt",
+    "ukphone": "'stjuːdnt"
+  },
+  {
+    "name": "singer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "歌手，歌唱家"
+      }
+    ],
+    "usphone": "'sɪŋər",
+    "ukphone": "'sɪŋə(r)"
+  },
+  {
+    "name": "worker",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "工人"
+      }
+    ],
+    "usphone": "'wɜːrkər",
+    "ukphone": "'wɜːkə(r)"
+  },
+  {
+    "name": "taxi",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "出租车"
+      }
+    ],
+    "usphone": "'tæksi",
+    "ukphone": "'tæksi"
+  },
+  {
+    "name": "driver",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "司机，驾驶员"
+      }
+    ],
+    "usphone": "'draɪvər",
+    "ukphone": "'draɪvə(r)"
+  },
+  {
+    "name": "animal",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "动物"
+      }
+    ],
+    "usphone": "'ænɪml",
+    "ukphone": "'ænɪml"
+  },
+  {
+    "name": "rabbit",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "兔子"
+      }
+    ],
+    "usphone": "'ræbɪt",
+    "ukphone": "'ræbɪt"
+  },
+  {
+    "name": "squirrel",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "松鼠"
+      }
+    ],
+    "usphone": "'skwɜːrəl",
+    "ukphone": "'skwɪrəl"
+  },
+  {
+    "name": "meet",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "满足（需要等），达到（要求等）；遇见，见到；相遇"
+      },
+      {
+        "type": "n.",
+        "definition": "体育比赛"
+      }
+    ],
+    "usphone": "miːt",
+    "ukphone": "miːt"
+  },
+  {
+    "name": "cute",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "漂亮的，迷人的，娇小可爱的，精巧的，小巧玲珑的；聪明伶俐的，机敏的；精明的"
+      }
+    ],
+    "usphone": "kjuːt",
+    "ukphone": "kjuːt"
+  },
+  {
+    "name": "snake",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蛇"
+      },
+      {
+        "type": "vi.",
+        "definition": "蛇般爬行，蜿蜒行进"
+      }
+    ],
+    "usphone": "sneɪk",
+    "ukphone": "sneɪk"
+  },
+  {
+    "name": "scary",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "恐怖的，吓人的"
+      }
+    ],
+    "usphone": "'skeri",
+    "ukphone": "'skeəri"
+  },
+  {
+    "name": "a lot",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "许多；大量"
+      }
+    ],
+    "usphone": "ə lɑːt",
+    "ukphone": "ə lɒt"
+  },
+  {
+    "name": "go away",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "走开，离去"
+      }
+    ],
+    "usphone": "ɡoʊ ə'weɪ",
+    "ukphone": "ɡəʊ ə'weɪ"
+  },
+  {
+    "name": "fox",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "狐狸"
+      }
+    ],
+    "usphone": "fɑːks",
+    "ukphone": "fɒks"
+  },
+  {
+    "name": "beautiful",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "美丽的，漂亮的"
+      }
+    ],
+    "usphone": "'bjuːtɪfl",
+    "ukphone": "'bjuːtɪfl"
+  },
+  {
+    "name": "interesting",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有趣的"
+      }
+    ],
+    "usphone": "'ɪntrəstɪŋ",
+    "ukphone": "'ɪntrəstɪŋ"
+  },
+  {
+    "name": "funny",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "滑稽的；有趣的"
+      }
+    ],
+    "usphone": "'fʌni",
+    "ukphone": "'fʌni"
+  },
+  {
+    "name": "clever",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "聪明的，伶俐的"
+      }
+    ],
+    "usphone": "'klevər",
+    "ukphone": "'klevə(r)"
+  },
+  {
+    "name": "clothes",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（pl.）衣服"
+      }
+    ],
+    "usphone": "kloʊðz, kloʊz",
+    "ukphone": "kləʊðz, kləʊz"
+  },
+  {
+    "name": "T-shirt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "T恤衫"
+      }
+    ],
+    "usphone": "'ti,ʃɜːrt",
+    "ukphone": "'ti:,ʃɜ:t"
+  },
+  {
+    "name": "trousers",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "裤子，长裤"
+      }
+    ],
+    "usphone": "'traʊzərz",
+    "ukphone": "'traʊzəz"
+  },
+  {
+    "name": "cap",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "便帽"
+      }
+    ],
+    "usphone": "kæp",
+    "ukphone": "kæp"
+  },
+  {
+    "name": "shoe",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鞋"
+      }
+    ],
+    "usphone": "ʃuː",
+    "ukphone": "ʃuː"
+  },
+  {
+    "name": "too",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "也，还；又；太，过分；很，非常"
+      }
+    ],
+    "usphone": "tuː",
+    "ukphone": "tuː"
+  },
+  {
+    "name": "expensive",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "昂贵的"
+      }
+    ],
+    "usphone": "ɪk'spensɪv",
+    "ukphone": "ɪk'spensɪv"
+  },
+  {
+    "name": "cheap",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "便宜的"
+      }
+    ],
+    "usphone": "tʃiːp",
+    "ukphone": "tʃiːp"
+  },
+  {
+    "name": "size",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "尺寸，大小"
+      }
+    ],
+    "usphone": "saɪz",
+    "ukphone": "saɪz"
+  },
+  {
+    "name": "only",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "只；仅仅"
+      },
+      {
+        "type": "adj.",
+        "definition": "唯一的；仅有的"
+      }
+    ],
+    "usphone": "'oʊnli",
+    "ukphone": "'əʊnli"
+  },
+  {
+    "name": "shorts",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "短裤，短运动裤"
+      }
+    ],
+    "usphone": "ʃɔːrts",
+    "ukphone": "ʃɔːts"
+  },
+  {
+    "name": "dress",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "连衣裙；服装"
+      },
+      {
+        "type": "v.",
+        "definition": "（给……）穿衣服"
+      }
+    ],
+    "usphone": "dres",
+    "ukphone": "dres"
+  },
+  {
+    "name": "skirt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "裙子; 衬裙"
+      }
+    ],
+    "usphone": "skɜːrt",
+    "ukphone": "skɜːt"
+  },
+  {
+    "name": "shirt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（尤指男式的）衬衫"
+      }
+    ],
+    "usphone": "ʃɜːrt",
+    "ukphone": "ʃɜːt"
+  },
+  {
+    "name": "sweater",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "厚运动衫；毛衣"
+      }
+    ],
+    "usphone": "'swetər",
+    "ukphone": "'swetə(r)"
+  },
+  {
+    "name": "sock",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "短袜"
+      }
+    ],
+    "usphone": "sɑːk",
+    "ukphone": "sɒk"
+  },
+  {
+    "name": "position",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "位置；职位"
+      }
+    ],
+    "usphone": "pə'zɪʃn",
+    "ukphone": "pə'zɪʃn"
+  },
+  {
+    "name": "on",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在…上；关于；一…就"
+      },
+      {
+        "type": "adv.",
+        "definition": "（穿，放…）上；接通；进行下去；（电灯）开"
+      },
+      {
+        "type": "adj.",
+        "definition": "开着的；正在进行的；正在播出的"
+      }
+    ],
+    "usphone": "ɑːn",
+    "ukphone": "ɒn"
+  },
+  {
+    "name": "under",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……下面"
+      },
+      {
+        "type": "adv.",
+        "definition": "在……下面，向……下面"
+      }
+    ],
+    "usphone": "'ʌndər",
+    "ukphone": "'ʌndə(r)"
+  },
+  {
+    "name": "in",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……里（内；上）；用……（表示）；（表示服饰等）穿着"
+      },
+      {
+        "type": "adv.",
+        "definition": "在里面；在内"
+      }
+    ],
+    "usphone": "ɪn",
+    "ukphone": "ɪn"
+  },
+  {
+    "name": "in front of",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "在…前面；在…面前"
+      }
+    ],
+    "usphone": "ɪn frʌnt ʌv",
+    "ukphone": "in frʌnt ɔv"
+  },
+  {
+    "name": "magic",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "魔术；戏法"
+      },
+      {
+        "type": "adj.",
+        "definition": "有魔力的，不可思议的；魔术的"
+      }
+    ],
+    "usphone": "'mædʒɪk",
+    "ukphone": "'mædʒɪk"
+  },
+  {
+    "name": "gone",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "离去的；不再存在的；用光的"
+      },
+      {
+        "type": "v.",
+        "definition": "“go”的过去分词"
+      }
+    ],
+    "usphone": "ɡɔːn",
+    "ukphone": "ɡɒn"
+  },
+  {
+    "name": "table",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "桌子，表格"
+      }
+    ],
+    "usphone": "'teɪbl",
+    "ukphone": "'teɪbl"
+  },
+  {
+    "name": "get back",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "回来；恢复；找回"
+      }
+    ],
+    "usphone": "ɡet bæk",
+    "ukphone": "ɡet bæk"
+  },
+  {
+    "name": "behind",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……后面"
+      },
+      {
+        "type": "adv.",
+        "definition": "在……后面"
+      }
+    ],
+    "usphone": "bɪ'haɪnd",
+    "ukphone": "bɪ'haɪnd"
+  },
+  {
+    "name": "box",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "盒子，箱子"
+      }
+    ],
+    "usphone": "bɑːks",
+    "ukphone": "bɒks"
+  },
+  {
+    "name": "desk",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "书桌"
+      }
+    ],
+    "usphone": "desk",
+    "ukphone": "desk"
+  },
+  {
+    "name": "door",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "门"
+      }
+    ],
+    "usphone": "dɔːr",
+    "ukphone": "dɔː(r)"
+  },
+  {
+    "name": "window",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "窗"
+      }
+    ],
+    "usphone": "'wɪndoʊ",
+    "ukphone": "'wɪndəʊ"
+  },
+  {
+    "name": "bed",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "床"
+      }
+    ],
+    "usphone": "bed",
+    "ukphone": "bed"
+  },
+  {
+    "name": "floor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "地面，地板"
+      }
+    ],
+    "usphone": "flɔːr",
+    "ukphone": "flɔː(r)"
+  },
+  {
+    "name": "chair",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "椅子"
+      }
+    ],
+    "usphone": "tʃer",
+    "ukphone": "tʃeə(r)"
+  },
+  {
+    "name": "place",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "地方"
+      },
+      {
+        "type": "vt.",
+        "definition": "安排，放置"
+      }
+    ],
+    "usphone": "pleɪs",
+    "ukphone": "pleɪs"
+  },
+  {
+    "name": "zoo",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "动物园"
+      }
+    ],
+    "usphone": "zuː",
+    "ukphone": "zuː"
+  },
+  {
+    "name": "supermarket",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "超级市场，超市"
+      }
+    ],
+    "usphone": "ˈsuːpərmɑːrkɪt",
+    "ukphone": "'suːpəmɑːkɪt"
+  },
+  {
+    "name": "post office",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "邮局, 邮政部门, 邮政系统, 邮差敲门游戏（儿童用假托的信件换取亲吻）"
+      }
+    ],
+    "usphone": "pəust 'ɔfɪs",
+    "ukphone": "pəust 'ɔfis"
+  },
+  {
+    "name": "Train Station",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "火车站"
+      }
+    ],
+    "usphone": "treɪn 'steɪʃən",
+    "ukphone": "treɪn 'steɪʃən"
+  },
+  {
+    "name": "excuse me",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "打扰一下，请原谅"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "near",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "靠近的"
+      },
+      {
+        "type": "adv.",
+        "definition": "附近；邻近"
+      },
+      {
+        "type": "prep.",
+        "definition": "在……附近；靠近"
+      },
+      {
+        "type": "v.",
+        "definition": "接近，靠近"
+      }
+    ],
+    "usphone": "nɪr",
+    "ukphone": "nɪə(r)"
+  },
+  {
+    "name": "next to",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "紧邻, 在…近旁, 仅次于, 紧接"
+      }
+    ],
+    "usphone": "nekst tu",
+    "ukphone": "nekst tu"
+  },
+  {
+    "name": "town",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "镇，市镇；城镇，城"
+      }
+    ],
+    "usphone": "taʊn",
+    "ukphone": "taʊn"
+  },
+  {
+    "name": "map",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "地图"
+      }
+    ],
+    "usphone": "mæp",
+    "ukphone": "mæp"
+  },
+  {
+    "name": "down",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "向下"
+      },
+      {
+        "type": "prep.",
+        "definition": "沿……而下"
+      },
+      {
+        "type": "adj.",
+        "definition": "悲伤的，沮丧的"
+      }
+    ],
+    "usphone": "daʊn",
+    "ukphone": "daʊn"
+  },
+  {
+    "name": "street",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "街，街道"
+      }
+    ],
+    "usphone": "striːt",
+    "ukphone": "striːt"
+  },
+  {
+    "name": "then",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "当时；那时；然后；那么（通常用于句首或句尾）"
+      }
+    ],
+    "usphone": "ðen",
+    "ukphone": "ðen"
+  },
+  {
+    "name": "turn",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "转；旋转"
+      },
+      {
+        "type": "n.",
+        "definition": "轮次，轮流，（轮流的）顺序"
+      }
+    ],
+    "usphone": "tɜːrn",
+    "ukphone": "tɜːn"
+  },
+  {
+    "name": "between",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……之间"
+      }
+    ],
+    "usphone": "bɪ'twiːn",
+    "ukphone": "bɪ'twiːn"
+  },
+  {
+    "name": "lake",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "湖"
+      }
+    ],
+    "usphone": "leɪk",
+    "ukphone": "leɪk"
+  },
+  {
+    "name": "park",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "公园"
+      },
+      {
+        "type": "v.",
+        "definition": "停放"
+      }
+    ],
+    "usphone": "pɑːrk",
+    "ukphone": "pɑːk"
+  },
+  {
+    "name": "toilet",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "厕所"
+      }
+    ],
+    "usphone": "'tɔɪlət",
+    "ukphone": "'tɔɪlət"
+  },
+  {
+    "name": "cage",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鸟笼；笼子"
+      }
+    ],
+    "usphone": "keɪdʒ",
+    "ukphone": "keɪdʒ"
+  },
+  {
+    "name": "cinema",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "电影院"
+      }
+    ],
+    "usphone": "'sɪnəmə",
+    "ukphone": "'sɪnəmə"
+  },
+  {
+    "name": "bus",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "公共汽车"
+      }
+    ],
+    "usphone": "bʌs",
+    "ukphone": "bʌs"
+  },
+  {
+    "name": "bus stop",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "公共汽车站"
+      }
+    ],
+    "usphone": "bʌs stɑːp",
+    "ukphone": "bʌs stɒp"
+  },
+  {
+    "name": "hospital",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "医院"
+      }
+    ],
+    "usphone": "'hɑːspɪtl",
+    "ukphone": "'hɒspɪtl"
+  },
+  {
+    "name": "actor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "演员，男演员"
+      }
+    ],
+    "usphone": "'æktər",
+    "ukphone": "'æktə(r)"
+  },
+  {
+    "name": "dancer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "舞蹈演员，舞者"
+      }
+    ],
+    "usphone": "'dænsər",
+    "ukphone": "'dɑːnsə(r)"
+  },
+  {
+    "name": "angry",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "生气的，愤怒的"
+      }
+    ],
+    "usphone": "'æŋɡri",
+    "ukphone": "'æŋɡri"
+  },
+  {
+    "name": "again",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "又，再"
+      }
+    ],
+    "usphone": "ə'ɡen",
+    "ukphone": "ə'ɡen"
+  }
+]

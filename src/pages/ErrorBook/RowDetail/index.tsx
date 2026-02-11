@@ -79,7 +79,6 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
             {word ? <Phonetic word={word} /> : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}
             {word && (
               <WordPronunciationIcon
-                lang={dictInfo.language}
                 word={word}
                 className="absolute -right-7 top-1/2 h-5 w-5 -translate-y-1/2 transform "
                 ref={wordPronunciationIconRef}
@@ -88,7 +87,7 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
           </div>
           <div className="flex max-w-[24rem] items-center">
             <span className={`max-w-4xl text-center font-sans transition-colors duration-300 dark:text-white dark:text-opacity-80`}>
-              {word ? word.trans.join('；') : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}
+              {word ? word.pos?.map((pos) => pos.definition).join('；') : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}
             </span>
           </div>
         </div>

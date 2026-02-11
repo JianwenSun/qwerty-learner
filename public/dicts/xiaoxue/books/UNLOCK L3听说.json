@@ -1,0 +1,2448 @@
+[
+  {
+    "name": "abandon",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "放弃，抛弃，废弃，遗弃"
+      },
+      {
+        "type": "n.",
+        "definition": "放肆，狂热，任性，恣意任性"
+      }
+    ],
+    "usphone": "ə'bændən",
+    "ukphone": "ə'bændən"
+  },
+  {
+    "name": "abuse",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "虐待；滥用； 辱骂，谩骂； 侮辱； 恶习，陋习"
+      },
+      {
+        "type": "v.",
+        "definition": "虐待；滥用，妄用；辱骂，谩骂；伤害；摧残"
+      }
+    ],
+    "usphone": "ə'bjuːs; ə'bjuːz",
+    "ukphone": "ə'bjuːs; ə'bjuːz"
+  },
+  {
+    "name": "analyze",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "〈美〉同“analyse”，分析，剖析"
+      }
+    ],
+    "usphone": "'ænəlaɪz",
+    "ukphone": "'ænəlaɪz"
+  },
+  {
+    "name": "communicate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "沟通，传达，传播，传染"
+      }
+    ],
+    "usphone": "kə'mjuːnɪkeɪt",
+    "ukphone": "kə'mjuːnɪkeɪt"
+  },
+  {
+    "name": "condition",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "条件，状态，疾病；环境；身份"
+      },
+      {
+        "type": "v.",
+        "definition": "决定，护理（头发,皮肤）"
+      }
+    ],
+    "usphone": "kən'dɪʃn",
+    "ukphone": "kən'dɪʃn"
+  },
+  {
+    "name": "connect",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "连接，接通，沟通，联结"
+      }
+    ],
+    "usphone": "kə'nekt",
+    "ukphone": "kə'nekt"
+  },
+  {
+    "name": "cruel",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "残酷的，残忍的；引起痛苦的"
+      }
+    ],
+    "usphone": "'kruːəl",
+    "ukphone": "'kruːəl"
+  },
+  {
+    "name": "damage",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "损坏，破坏，损害；损害赔偿金（damages）"
+      },
+      {
+        "type": "v.",
+        "definition": "损害，毁坏"
+      }
+    ],
+    "usphone": "'dæmɪdʒ",
+    "ukphone": "'dæmɪdʒ"
+  },
+  {
+    "name": "debate",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "辩论，争论"
+      },
+      {
+        "type": "v.",
+        "definition": "辩论，争论，考虑"
+      }
+    ],
+    "usphone": "dɪ'beɪt",
+    "ukphone": "dɪ'beɪt"
+  },
+  {
+    "name": "depend on",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "依据...的；依靠"
+      }
+    ],
+    "usphone": "dɪ'pend ɑːn",
+    "ukphone": "dɪ'pend ɒn"
+  },
+  {
+    "name": "endangered",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有灭绝危险的，将要绝种的；（生命等）有危险的"
+      },
+      {
+        "type": "v.",
+        "definition": "使遭危险；危及，危害（endanger的过去式和过去分词）"
+      }
+    ],
+    "usphone": "ɪn'deɪndʒəd",
+    "ukphone": "ɪn'deɪndʒəd"
+  },
+  {
+    "name": "environment",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "生态环境，自然环境，（影响个体行为或事物发展的）环境，客观环境"
+      }
+    ],
+    "usphone": "ɪn'vaɪrənmənt",
+    "ukphone": "ɪn'vaɪrənmənt"
+  },
+  {
+    "name": "habitat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "生长环境，栖息地；人类居住地；海底实验室人员居住的加压舱"
+      }
+    ],
+    "usphone": "'hæbɪtæt",
+    "ukphone": "'hæbɪtæt"
+  },
+  {
+    "name": "involve",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "包含，需要，要求；牵涉，影响； [允许]参与，积极参与"
+      }
+    ],
+    "usphone": "ɪn'vɑːlv",
+    "ukphone": "ɪn'vɒlv"
+  },
+  {
+    "name": "issue",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "重要议题，问题；（书刊等）期，号；发行物；颁布；分配，分发"
+      },
+      {
+        "type": "v.",
+        "definition": "发表；颁布，发出；发给，分发；正式发行"
+      }
+    ],
+    "usphone": "'ɪʃuː",
+    "ukphone": "'ɪʃuː"
+  },
+  {
+    "name": "melt",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "融化，（使）软化"
+      },
+      {
+        "type": "n.",
+        "definition": "熔化,熔化物"
+      }
+    ],
+    "usphone": "melt",
+    "ukphone": "melt"
+  },
+  {
+    "name": "protect",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "保护，防护，（制定法律）保护，（通过征关税）保护（国内企业）"
+      }
+    ],
+    "usphone": "prə'tekt",
+    "ukphone": "prə'tekt"
+  },
+  {
+    "name": "source",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "来源，源头，根源，原因"
+      },
+      {
+        "type": "v.",
+        "definition": "（从…）获得"
+      }
+    ],
+    "usphone": "sɔːrs",
+    "ukphone": "sɔːs"
+  },
+  {
+    "name": "species",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "[生物]物种，种类"
+      }
+    ],
+    "usphone": "'spiːʃiːz",
+    "ukphone": "'spiːʃiːz"
+  },
+  {
+    "name": "suffer",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "遭受，蒙受；受难；变差"
+      }
+    ],
+    "usphone": "'sʌfər",
+    "ukphone": "'sʌfə(r)"
+  },
+  {
+    "name": "support",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "支持，拥护，支撑，支援，证实"
+      },
+      {
+        "type": "n.",
+        "definition": "支持；拥护；帮助；救助；支撑物；支柱；证据"
+      }
+    ],
+    "usphone": "sə'pɔːrt",
+    "ukphone": "sə'pɔːt"
+  },
+  {
+    "name": "survive",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "活下来；幸存；（在困境中）坚持下来；艰难度过；比…活得长"
+      }
+    ],
+    "usphone": "sər'vaɪv",
+    "ukphone": "sə'vaɪv"
+  },
+  {
+    "name": "threat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "威胁，恐吓，凶兆，隐患"
+      },
+      {
+        "type": "v.",
+        "definition": "〈古,方〉同“threaten”"
+      }
+    ],
+    "usphone": "θret",
+    "ukphone": "θret"
+  },
+  {
+    "name": "welfare",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "福利，社会保障，幸福"
+      }
+    ],
+    "usphone": "'welfer",
+    "ukphone": "'welfeə(r)"
+  },
+  {
+    "name": "affordable",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "负担得起的"
+      }
+    ],
+    "usphone": "ə'fɔːdəbl",
+    "ukphone": "ə'fɔːdəbl"
+  },
+  {
+    "name": "alternative",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "可供选择的；可替代的；两者（或两者以上）择一的;非主流的；非传统的"
+      },
+      {
+        "type": "n.",
+        "definition": "替换物；取舍"
+      }
+    ],
+    "usphone": "ɔːl'tɜːrnətɪv",
+    "ukphone": "ɔːl'tɜːnətɪv"
+  },
+  {
+    "name": "benefit",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "益处，优势，成效，福利费（政府对失业者、病人等提供的补助金）"
+      },
+      {
+        "type": "v.",
+        "definition": "对（某人）有用，使受益，得益于，得利于"
+      }
+    ],
+    "usphone": "'benɪfɪt",
+    "ukphone": "'benɪfɪt"
+  },
+  {
+    "name": "crisis",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "危急关头，危机"
+      }
+    ],
+    "usphone": "'kraɪsɪs",
+    "ukphone": "'kraɪsɪs"
+  },
+  {
+    "name": "disaster",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "灾害，灾难，灾祸，不幸"
+      }
+    ],
+    "usphone": "dɪ'zæstər",
+    "ukphone": "dɪ'zɑːstə(r)"
+  },
+  {
+    "name": "environmental",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "自然环境的；生态环境的；（影响个体或事物行为或发展的）环境的"
+      }
+    ],
+    "usphone": "ɪnˌvaɪrən'mentl",
+    "ukphone": "ɪnˌvaɪrən'mentl"
+  },
+  {
+    "name": "limited",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有限的，受（…的）限制"
+      },
+      {
+        "type": "n.",
+        "definition": "高级快车"
+      },
+      {
+        "type": "v.",
+        "definition": "“limit”的过去分词和过去式"
+      }
+    ],
+    "usphone": "'lɪmɪtɪd",
+    "ukphone": "'lɪmɪtɪd"
+  },
+  {
+    "name": "long-term",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "长期的，长远的，长期有效的，近期不大可能改变的"
+      }
+    ],
+    "usphone": "lɔːŋ tɜːrm",
+    "ukphone": "lɒŋ tɜːm"
+  },
+  {
+    "name": "opponent",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "对手，敌手；反对者"
+      }
+    ],
+    "usphone": "ə'poʊnənt",
+    "ukphone": "ə'pəʊnənt"
+  },
+  {
+    "name": "pollute",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "污染，弄脏"
+      },
+      {
+        "type": "adj.",
+        "definition": "污染的"
+      }
+    ],
+    "usphone": "pə'luːt",
+    "ukphone": "pə'luːt"
+  },
+  {
+    "name": "provide",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "提供，供应，给予，规定"
+      }
+    ],
+    "usphone": "prə'vaɪd",
+    "ukphone": "prə'vaɪd"
+  },
+  {
+    "name": "resource",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "资源，资料，才智，财力"
+      },
+      {
+        "type": "v.",
+        "definition": "向…提供资金（或设备）"
+      }
+    ],
+    "usphone": "rɪˈsɔːrs; ˈriːsɔːrs",
+    "ukphone": "rɪˈsɔːs"
+  },
+  {
+    "name": "risk",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "风险，危险，危险人物，会带来风险的事物"
+      },
+      {
+        "type": "v.",
+        "definition": "使…冒风险（或面临危险），冒…的风险（或危险），冒险做"
+      }
+    ],
+    "usphone": "rɪsk",
+    "ukphone": "rɪsk"
+  },
+  {
+    "name": "solution",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "解答，解决办法；溶解，溶液"
+      }
+    ],
+    "usphone": "sə'luːʃn",
+    "ukphone": "sə'luːʃn"
+  },
+  {
+    "name": "system",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "系统，体系，制度，体制"
+      }
+    ],
+    "usphone": "'sɪstəm",
+    "ukphone": "'sɪstəm"
+  },
+  {
+    "name": "avoid",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "避免，避开，防止，回避"
+      }
+    ],
+    "usphone": "ə'vɔɪd",
+    "ukphone": "ə'vɔɪd"
+  },
+  {
+    "name": "break the law",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "违法，犯法"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "compare",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "比较，对照；把…比作；相比；比得上"
+      },
+      {
+        "type": "n.",
+        "definition": "比较"
+      }
+    ],
+    "usphone": "kəm'per",
+    "ukphone": "kəm'peə(r)"
+  },
+  {
+    "name": "consist of",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "由…组成，包含"
+      }
+    ],
+    "usphone": "kən'sɪst əv",
+    "ukphone": "kən'sɪst əv"
+  },
+  {
+    "name": "control",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "控制权，控制（或操纵）能力，限制，限定，开关"
+      },
+      {
+        "type": "v.",
+        "definition": "指挥，控制，掌管，支配;管理"
+      }
+    ],
+    "usphone": "kən'troʊl",
+    "ukphone": "kən'trəʊl"
+  },
+  {
+    "name": "convenient",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "便利的，方便的；合适的；近便的，易于到达的"
+      }
+    ],
+    "usphone": "kənˈviːniənt",
+    "ukphone": "kənˈviːniənt"
+  },
+  {
+    "name": "crash",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "〔汽车的〕撞车事故；〔飞机的〕坠毁，失事；突然发出的巨响；崩溃，死机；〔股票的〕狂跌，暴跌"
+      },
+      {
+        "type": "v.",
+        "definition": "猛撞，撞击；发出巨响；崩溃；〔股市或股票〕狂跌，暴跌"
+      }
+    ],
+    "usphone": "kræʃ",
+    "ukphone": "kræʃ"
+  },
+  {
+    "name": "cure",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "治疗，治愈"
+      },
+      {
+        "type": "n.",
+        "definition": "治疗，治愈；疗法；解决方法"
+      }
+    ],
+    "usphone": "kjʊr",
+    "ukphone": "kjʊə(r)"
+  },
+  {
+    "name": "extreme",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "极度的；极大的；极端的；异乎寻常的；严重的"
+      },
+      {
+        "type": "n.",
+        "definition": "极端；极度；极端不同的感情（或境况、行为方式等）"
+      }
+    ],
+    "usphone": "ɪk'striːm",
+    "ukphone": "ɪk'striːm"
+  },
+  {
+    "name": "figure out",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "计算出;演算出"
+      },
+      {
+        "type": "phrase.",
+        "definition": "<美口>想出;理解,明白;弄清…的原因"
+      }
+    ],
+    "usphone": "'fɪɡjər aʊt",
+    "ukphone": "'fɪɡə aʊt"
+  },
+  {
+    "name": "fine",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "美好的，优雅的，清秀的，有风度的，健康的；令人满意的，可以接受的；很好的；水准很高的；晴朗的；纤细的，极细的；精美的，精巧的"
+      },
+      {
+        "type": "adv.",
+        "definition": "够好；蛮不错；可接受"
+      },
+      {
+        "type": "v.",
+        "definition": "（对…）处以罚款，把…提纯，变纯，变精致"
+      },
+      {
+        "type": "n.",
+        "definition": "罚款"
+      }
+    ],
+    "usphone": "faɪn",
+    "ukphone": "faɪn"
+  },
+  {
+    "name": "impact",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "撞击，冲击力，冲撞，巨大影响"
+      },
+      {
+        "type": "v.",
+        "definition": "冲击，撞击，有作用"
+      }
+    ],
+    "usphone": "'ɪmpækt",
+    "ukphone": "'ɪmpækt"
+  },
+  {
+    "name": "influence",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "影响，作用；支配力；势力； 有影响的人（或事物）"
+      },
+      {
+        "type": "v.",
+        "definition": "影响，对…起作用；支配；感化"
+      }
+    ],
+    "usphone": "'ɪnfluəns",
+    "ukphone": "'ɪnfluəns"
+  },
+  {
+    "name": "injure",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "伤害；使受伤"
+      }
+    ],
+    "usphone": "'ɪndʒər",
+    "ukphone": "'ɪndʒə(r)"
+  },
+  {
+    "name": "method",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "方法，办法，措施，条理"
+      }
+    ],
+    "usphone": "'meθəd",
+    "ukphone": "'meθəd"
+  },
+  {
+    "name": "pass",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "通过，传递，及格，传球，超过"
+      },
+      {
+        "type": "n.",
+        "definition": "通过，及格，通行证，合格"
+      }
+    ],
+    "usphone": "pæs",
+    "ukphone": "pɑːs"
+  },
+  {
+    "name": "prevent",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "预防；阻止，阻碍，阻挠；防止"
+      }
+    ],
+    "usphone": "prɪ'vent",
+    "ukphone": "prɪ'vent"
+  },
+  {
+    "name": "respect",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "尊敬，敬重；关系；方面；注重，重视"
+      },
+      {
+        "type": "v.",
+        "definition": "尊敬，尊重；重视；遵守；关于，涉及"
+      }
+    ],
+    "usphone": "rɪ'spekt",
+    "ukphone": "rɪ'spekt"
+  },
+  {
+    "name": "safety",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "安全，安全性，平安，无危险"
+      }
+    ],
+    "usphone": "'seɪfti",
+    "ukphone": "'seɪfti"
+  },
+  {
+    "name": "scared",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "害怕的，恐惧的，担心的，畏惧的"
+      },
+      {
+        "type": "v.",
+        "definition": "“scare”的过去式和过去分词"
+      }
+    ],
+    "usphone": "skerd",
+    "ukphone": "skeəd"
+  },
+  {
+    "name": "serious",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "严肃的，庄重的；不好的，严重的，有危险的；需认真思考的"
+      }
+    ],
+    "usphone": "'sɪriəs",
+    "ukphone": "'sɪəriəs"
+  },
+  {
+    "name": "solve",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "解决，处理，解答，破解"
+      }
+    ],
+    "usphone": "sɑːlv",
+    "ukphone": "sɒlv"
+  },
+  {
+    "name": "trouble",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "麻烦，问题，困难，困境"
+      },
+      {
+        "type": "v.",
+        "definition": "麻烦，打扰；费心，劳神；使烦恼，使忧虑"
+      }
+    ],
+    "usphone": "'trʌbəl",
+    "ukphone": "'trʌbl"
+  },
+  {
+    "name": "acceptable",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "可接受的，合意的；受欢迎的"
+      }
+    ],
+    "usphone": "ək'septəbl",
+    "ukphone": "ək'septəbl"
+  },
+  {
+    "name": "agreement",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "协议；同意，一致"
+      }
+    ],
+    "usphone": "ə'ɡriːmənt",
+    "ukphone": "ə'ɡriːmənt"
+  },
+  {
+    "name": "anniversary",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "周年纪念日"
+      }
+    ],
+    "usphone": "ˌænɪ'vɜːrsəri",
+    "ukphone": "ˌænɪ'vɜːsəri"
+  },
+  {
+    "name": "behaviour",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "行为，举止，待人接物的方式；（动物或人对环境或刺激的）反应行为，习惯；（机器的）特性；运转情况"
+      }
+    ],
+    "usphone": "bɪ'heɪvjər",
+    "ukphone": "bɪ'heɪvjə(r)"
+  },
+  {
+    "name": "celebration",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "庆祝，庆典，庆祝活动，颂扬"
+      }
+    ],
+    "usphone": "ˌselɪ'breɪʃn",
+    "ukphone": "ˌselɪ'breɪʃn"
+  },
+  {
+    "name": "commercial",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "商业的"
+      },
+      {
+        "type": "n.",
+        "definition": "商业广告"
+      }
+    ],
+    "usphone": "kə'mɜːrʃl",
+    "ukphone": "kə'mɜːʃl"
+  },
+  {
+    "name": "die out",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "消失"
+      },
+      {
+        "type": "phrase.",
+        "definition": "灭绝"
+      }
+    ],
+    "usphone": "daɪ aʊt",
+    "ukphone": "daɪ aʊt"
+  },
+  {
+    "name": "event",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "大事，事件；事情的进程；活动，经历；结果，后果；比赛项目；[物][统]事件"
+      }
+    ],
+    "usphone": "ɪ'vent",
+    "ukphone": "ɪ'vent"
+  },
+  {
+    "name": "frighten",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "使惊吓，使惊恐"
+      }
+    ],
+    "usphone": "'fraɪtn",
+    "ukphone": "'fraɪtn"
+  },
+  {
+    "name": "generation",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "代，一代；产生"
+      }
+    ],
+    "usphone": "ˌdʒenə'reɪʃn",
+    "ukphone": "ˌdʒenə'reɪʃn"
+  },
+  {
+    "name": "graduate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "毕业"
+      },
+      {
+        "type": "n.",
+        "definition": "毕业生"
+      }
+    ],
+    "usphone": "ˈɡrædʒueɪt; ˈɡrædʒuət",
+    "ukphone": "ˈɡrædʒueɪt; ˈɡrædʒuət"
+  },
+  {
+    "name": "interact",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "交流，交往，互动；相互作用，相互影响"
+      }
+    ],
+    "usphone": "ˌɪntər'ækt",
+    "ukphone": "ˌɪntər'ækt"
+  },
+  {
+    "name": "multicultural",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "多元文化的"
+      }
+    ],
+    "usphone": "ˌmʌlti'kʌltʃərəl",
+    "ukphone": "ˌmʌlti'kʌltʃərəl"
+  },
+  {
+    "name": "obligation",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "义务，责任"
+      }
+    ],
+    "usphone": "ˌɑːblɪ'ɡeɪʃn",
+    "ukphone": "ˌɒblɪ'ɡeɪʃn"
+  },
+  {
+    "name": "occasion",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "时刻，场合，机会，理由"
+      },
+      {
+        "type": "vt.",
+        "definition": "引起，惹起"
+      }
+    ],
+    "usphone": "ə'keɪʒn",
+    "ukphone": "ə'keɪʒn"
+  },
+  {
+    "name": "personal",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "个人的，私人的，人际的，个性的"
+      },
+      {
+        "type": "n.",
+        "definition": "个人，人身攻击，动产，人称代名词"
+      }
+    ],
+    "usphone": "'pɜːrsənl",
+    "ukphone": "'pɜːsənl"
+  },
+  {
+    "name": "political",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "政治的；政党的，派系斗争的；有政治头脑的"
+      }
+    ],
+    "usphone": "pə'lɪtɪkl",
+    "ukphone": "pə'lɪtɪkl"
+  },
+  {
+    "name": "social",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "社会的，社会上的，社会地位的，社交的"
+      },
+      {
+        "type": "n.",
+        "definition": "联谊会，联欢会"
+      }
+    ],
+    "usphone": "'soʊʃl",
+    "ukphone": "'səʊʃl"
+  },
+  {
+    "name": "specialize",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "专门从事；专门经营；专门研究；专攻"
+      }
+    ],
+    "usphone": "'speʃəlaɪz",
+    "ukphone": "'speʃəlaɪz"
+  },
+  {
+    "name": "thoughtful",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "沉思的，深思的，思考的，想得周到的，体贴的，关心的"
+      }
+    ],
+    "usphone": "'θɔːtfl",
+    "ukphone": "'θɔːtfl"
+  },
+  {
+    "name": "come down with",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "得,染上(病)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "出(钱)"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "concentration",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "专心；集中；浓度"
+      }
+    ],
+    "usphone": "ˌkɒnsen'treɪʃən",
+    "ukphone": "ˌkɒnsen'treɪʃən"
+  },
+  {
+    "name": "cultural",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "与文化有关的，文化的，与艺术、文学、音乐等有关的"
+      }
+    ],
+    "usphone": "'kʌltʃərəl",
+    "ukphone": "'kʌltʃərəl"
+  },
+  {
+    "name": "cut down on",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "削减，节省，减轻"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "educational",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "教育的，有关教育的，有教育意义的"
+      }
+    ],
+    "usphone": "ˌedʒu'keɪʃənl",
+    "ukphone": "ˌedʒu'keɪʃənl"
+  },
+  {
+    "name": "emotional",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "感情的，情感的，情绪的，激起感情的"
+      }
+    ],
+    "usphone": "ɪ'moʊʃənl",
+    "ukphone": "ɪ'məʊʃənl"
+  },
+  {
+    "name": "get over",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "从(疾病、失望、震惊等)中恢复过来"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(使)走完(一段路程)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "克服,战胜(困难、偏见等);解决(问题)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "把…忘怀;原谅"
+      },
+      {
+        "type": "phrase.",
+        "definition": "把…(向某人)讲清楚;(意思等)被理解,被接受"
+      },
+      {
+        "type": "phrase.",
+        "definition": "不再为…而感到惊讶"
+      }
+    ],
+    "usphone": "ɡet 'oʊvər",
+    "ukphone": "ɡet 'əʊvə"
+  },
+  {
+    "name": "give up",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "放弃,抛弃;辞去"
+      },
+      {
+        "type": "phrase.",
+        "definition": "交出;让出"
+      },
+      {
+        "type": "phrase.",
+        "definition": "不再指望…到来;对找到…不再抱有希望;对…的复原不再抱有希望"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(猜谜语、解数学难题等时)承认无能为力,承认失败,认输"
+      },
+      {
+        "type": "phrase.",
+        "definition": "泄露,透露;供出(某人)的躲藏处"
+      },
+      {
+        "type": "phrase.",
+        "definition": "停止"
+      },
+      {
+        "type": "phrase.",
+        "definition": "不再同…交往;不再同…谈恋爱"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(当投手时)准许(得分)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "对…表示绝望"
+      }
+    ],
+    "usphone": "ɡɪv ʌp",
+    "ukphone": "ɡɪv ʌp"
+  },
+  {
+    "name": "habit",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "习惯，习性，惯常行为，（吸毒、喝酒、抽烟的）瘾"
+      },
+      {
+        "type": "v.",
+        "definition": "装扮，〈古〉住在"
+      }
+    ],
+    "usphone": "'hæbɪt",
+    "ukphone": "'hæbɪt"
+  },
+  {
+    "name": "illness",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "病，（某种）病，患病期"
+      }
+    ],
+    "usphone": "'ɪlnəs",
+    "ukphone": "'ɪlnəs"
+  },
+  {
+    "name": "intellectual",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "智力的，脑力的，理智的"
+      },
+      {
+        "type": "n.",
+        "definition": "知识分子"
+      }
+    ],
+    "usphone": "ˌɪntə'lektʃuəl",
+    "ukphone": "ˌɪntə'lektʃuəl"
+  },
+  {
+    "name": "join in",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "参加, 参与"
+      }
+    ],
+    "usphone": "dʒɔːɪn ɪn",
+    "ukphone": "dʒɔɪn ɪn"
+  },
+  {
+    "name": "mental",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "精神的，心理的；脑力的"
+      },
+      {
+        "type": "n.",
+        "definition": "疯子"
+      }
+    ],
+    "usphone": "'mentl",
+    "ukphone": "'mentl"
+  },
+  {
+    "name": "overweight",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "太胖的，超重的，超过限制重量的，过重的"
+      },
+      {
+        "type": "n.",
+        "definition": "超重，偏重，优势"
+      },
+      {
+        "type": "v.",
+        "definition": "使…装载过重，使…负担过重，在重量上超过"
+      }
+    ],
+    "usphone": "ˌoʊvər'weɪt",
+    "ukphone": "ˌəʊvə'weɪt"
+  },
+  {
+    "name": "participate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "参加；参与"
+      }
+    ],
+    "usphone": "pɑːrˈtɪsɪpeɪt",
+    "ukphone": "pɑːˈtɪsɪpeɪt"
+  },
+  {
+    "name": "performance",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "表现，业绩，表演，性能"
+      }
+    ],
+    "usphone": "pər'fɔːrməns",
+    "ukphone": "pə'fɔːməns"
+  },
+  {
+    "name": "physical",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "身体的，肉体的；实物的，有形的；物理的，物理学的"
+      },
+      {
+        "type": "n.",
+        "definition": "体检，体格检查"
+      }
+    ],
+    "usphone": "'fɪzɪkl",
+    "ukphone": "'fɪzɪkl"
+  },
+  {
+    "name": "prove",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "证明，证实，展现，显示（自己）是"
+      },
+      {
+        "type": "linkv.",
+        "definition": "后来被发现是，最终显现为"
+      }
+    ],
+    "usphone": "pruːv",
+    "ukphone": "pruːv"
+  },
+  {
+    "name": "reduce",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "减少，（使）蒸发，减轻体重，节食"
+      }
+    ],
+    "usphone": "rɪ'duːs",
+    "ukphone": "rɪ'djuːs"
+  },
+  {
+    "name": "relax",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "放松，休息，松懈，放心"
+      }
+    ],
+    "usphone": "rɪ'læks",
+    "ukphone": "rɪ'læks"
+  },
+  {
+    "name": "sign up for",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "登记注册，登记报名"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "stress",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "压力；紧迫，紧张；造成紧张的因素；强调；重要性；重音；重读；[物]应力"
+      },
+      {
+        "type": "v.",
+        "definition": "着重，强调；重读；使受应力；加压力于；（使）紧张；焦虑"
+      }
+    ],
+    "usphone": "stres",
+    "ukphone": "stres"
+  },
+  {
+    "name": "take up",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "开始对…发生兴趣，开始专心致志于，开始从事；着手处理；论及"
+      },
+      {
+        "type": "phrase.",
+        "definition": "接纳(乘客)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "吸收；溶解"
+      },
+      {
+        "type": "phrase.",
+        "definition": "得到，获得"
+      },
+      {
+        "type": "phrase.",
+        "definition": "拿起；举起，抬起；拿走"
+      },
+      {
+        "type": "phrase.",
+        "definition": "接受(信仰、观点等)；开始采用；采取，承担"
+      },
+      {
+        "type": "phrase.",
+        "definition": "接受(挑战、建议等)；接受…的挑战(或建议)；同…接战(或较量)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "占去(地方、时间、注意力等)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "占用"
+      },
+      {
+        "type": "phrase.",
+        "definition": "开始在…安顿下来"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(为表示异议、申斥等)打断…的话，指责，责备"
+      },
+      {
+        "type": "phrase.",
+        "definition": "把…买光"
+      },
+      {
+        "type": "phrase.",
+        "definition": "开始作…的保护人，设法提携，资助，赞助，照顾"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(付息)借(款)；承兑；兑付(汇票等)；付清(欠款等)，赎回(抵押品等)；认购(股份等)；收(捐款等)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(把…)继续下去，(把…)接下去；参加"
+      },
+      {
+        "type": "phrase.",
+        "definition": "拘捕"
+      },
+      {
+        "type": "phrase.",
+        "definition": "扎住(动脉等)；收紧；收短；经调节除去"
+      },
+      {
+        "type": "phrase.",
+        "definition": "抓住(笑话、典故等)的要点所在；理解"
+      },
+      {
+        "type": "phrase.",
+        "definition": "解决(争吵等)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "停止；克制自己，悬崖勒马"
+      },
+      {
+        "type": "phrase.",
+        "definition": "变晴朗；变好"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(学校)开学；上课"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(漏洞等)自动闭合"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(卷轴等)把线(或带)状物卷起来；把…卷起来"
+      },
+      {
+        "type": "phrase.",
+        "definition": "申请；对…提出要求"
+      }
+    ],
+    "usphone": "teɪk ʌp",
+    "ukphone": "teɪk ʌp"
+  },
+  {
+    "name": "treatment",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "治疗，疗法；对待，处理"
+      }
+    ],
+    "usphone": "'triːtmənt",
+    "ukphone": "'triːtmənt"
+  },
+  {
+    "name": "try out for",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "参加…选拔 (或挑选)"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "unhealthy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "不健康的，虚弱的，损害健康的，对身体有害的"
+      }
+    ],
+    "usphone": "ʌn'helθi",
+    "ukphone": "ʌn'helθi"
+  },
+  {
+    "name": "work out",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "想出;制订出;产生出"
+      },
+      {
+        "type": "phrase.",
+        "definition": "解决;确定"
+      },
+      {
+        "type": "phrase.",
+        "definition": "使筋疲力尽;耗尽"
+      },
+      {
+        "type": "phrase.",
+        "definition": "计算;(被)算出"
+      },
+      {
+        "type": "phrase.",
+        "definition": "理解,弄懂;知道"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(使)松脱,(使)脱出"
+      },
+      {
+        "type": "phrase.",
+        "definition": "被证明有效(或切实可行、合适)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "产生结果;发展;成功"
+      },
+      {
+        "type": "phrase.",
+        "definition": "锻炼,训练"
+      },
+      {
+        "type": "phrase.",
+        "definition": "在工作中度过(时间)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(以工作)抵偿(债务)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "在外当雇工"
+      }
+    ],
+    "usphone": "wɜːrk aʊt",
+    "ukphone": "wɜːk aʊt"
+  },
+  {
+    "name": "access",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "入口； 接近，进入；进入权；使用权；接触的机会"
+      },
+      {
+        "type": "vt.",
+        "definition": "使用，获取；存取，访问（计算机信息）"
+      }
+    ],
+    "usphone": "'ækses",
+    "ukphone": "'ækses"
+  },
+  {
+    "name": "allow",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "允许，准许，给予，承认"
+      }
+    ],
+    "usphone": "ə'laʊ",
+    "ukphone": "ə'laʊ"
+  },
+  {
+    "name": "app",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "应用程序"
+      }
+    ],
+    "usphone": "æp",
+    "ukphone": "æp"
+  },
+  {
+    "name": "create",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "创造；创作；创建，创设；引起；产生"
+      }
+    ],
+    "usphone": "kri'eɪt",
+    "ukphone": "kri'eɪt"
+  },
+  {
+    "name": "design",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "设计，设计方案，构思，安排"
+      },
+      {
+        "type": "v.",
+        "definition": "设计，计划，构思，筹划"
+      }
+    ],
+    "usphone": "dɪ'zaɪn",
+    "ukphone": "dɪ'zaɪn"
+  },
+  {
+    "name": "develop",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "发展，开发，研制，发挥，生长，发育；冲洗，使底片显影；患上"
+      }
+    ],
+    "usphone": "dɪ'veləp",
+    "ukphone": "dɪ'veləp"
+  },
+  {
+    "name": "device",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "装置，设备，仪器；方法；计划，阴谋；诡计；图画；设计"
+      }
+    ],
+    "usphone": "dɪ'vaɪs",
+    "ukphone": "dɪ'vaɪs"
+  },
+  {
+    "name": "diagram",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "图解，图表"
+      },
+      {
+        "type": "v.",
+        "definition": "绘制示意图；用图表说明"
+      }
+    ],
+    "usphone": "'daɪəɡræm",
+    "ukphone": "'daɪəɡræm"
+  },
+  {
+    "name": "discover",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "发现，发觉；找到，查明，（第一个）发现，了解到"
+      }
+    ],
+    "usphone": "dɪ'skʌvər",
+    "ukphone": "dɪ'skʌvə(r)"
+  },
+  {
+    "name": "industry",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "工业，行业，勤奋，生产制造"
+      }
+    ],
+    "usphone": "'ɪndəstri",
+    "ukphone": "'ɪndəstri"
+  },
+  {
+    "name": "install",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "安装；安置，安顿；任命"
+      }
+    ],
+    "usphone": "ɪn'stɔːl",
+    "ukphone": "ɪn'stɔːl"
+  },
+  {
+    "name": "invent",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "发明，创造，编造，捏造"
+      }
+    ],
+    "usphone": "ɪn'vent",
+    "ukphone": "ɪn'vent"
+  },
+  {
+    "name": "make a comparison",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "做对比"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "make a contribution",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "出钱; 募捐；贡献"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "make a decision",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "作出决定"
+      },
+      {
+        "type": "phrase.",
+        "definition": "做出决定"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "make a difference",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "有关系;有影响;起(重要)作用"
+      },
+      {
+        "type": "phrase.",
+        "definition": "区别对待"
+      }
+    ],
+    "usphone": "meɪk ə 'dɪfərəns",
+    "ukphone": "meɪk ə 'dɪfərəns"
+  },
+  {
+    "name": "make an investment",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "进行投资"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "make attempts",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "做出努力，尝试"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "make improvements",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "获得进展"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "make public",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "公布，使公开"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "product",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "产品，产物，制品，积"
+      }
+    ],
+    "usphone": "'prɑːdʌkt",
+    "ukphone": "'prɒdʌkt"
+  },
+  {
+    "name": "scientific",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "科学（上）的，关于科学的，细致严谨的"
+      }
+    ],
+    "usphone": "ˌsaɪən'tɪfɪk",
+    "ukphone": "ˌsaɪən'tɪfɪk"
+  },
+  {
+    "name": "technology",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "技术；工艺，科技，工程技术，工艺学"
+      }
+    ],
+    "usphone": "tek'nɑːlədʒi",
+    "ukphone": "tek'nɒlədʒi"
+  },
+  {
+    "name": "user",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "用户，使用者，瘾君子，吸毒者"
+      }
+    ],
+    "usphone": "'juːzər",
+    "ukphone": "'juːzə(r)"
+  },
+  {
+    "name": "admire",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "钦佩，欣赏，赞赏，仰慕"
+      }
+    ],
+    "usphone": "əd'maɪər",
+    "ukphone": "əd'maɪə(r)"
+  },
+  {
+    "name": "collection",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "收藏品，收集物；收集，采集；一群，一批"
+      }
+    ],
+    "usphone": "kə'lekʃn",
+    "ukphone": "kə'lekʃn"
+  },
+  {
+    "name": "combine",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "（使）结合，联合"
+      },
+      {
+        "type": "n.",
+        "definition": "联合收割机；联盟，联合体；联合集团"
+      }
+    ],
+    "usphone": "kəm'baɪn",
+    "ukphone": "kəm'baɪn"
+  },
+  {
+    "name": "confidence",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "信心； 信任； 秘密"
+      }
+    ],
+    "usphone": "'kɑːnfɪdəns",
+    "ukphone": "'kɒnfɪdəns"
+  },
+  {
+    "name": "convert",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "（使）转变；（使）改变信仰"
+      },
+      {
+        "type": "n.",
+        "definition": "皈依者；改变信仰的人"
+      }
+    ],
+    "usphone": "kən'vɜːrt",
+    "ukphone": "kən'vɜːt"
+  },
+  {
+    "name": "fabric",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "织物；结构"
+      }
+    ],
+    "usphone": "'fæbrɪk",
+    "ukphone": "'fæbrɪk"
+  },
+  {
+    "name": "focus on",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "聚焦于, 集中于, 关注"
+      }
+    ],
+    "usphone": "'foʊkəs ɑːn",
+    "ukphone": "'fəʊkəs ɒn"
+  },
+  {
+    "name": "give a hand",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "给予帮助,助一臂之力"
+      }
+    ],
+    "usphone": "ɡɪv ə hænd",
+    "ukphone": "ɡɪv ə hænd"
+  },
+  {
+    "name": "go for it",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "大胆试一试,为了特定目的而冒一下险"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "individual",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "单独的，独有的；个别的；一个人（使用）的；独特的，与众不同的；个体的"
+      },
+      {
+        "type": "n.",
+        "definition": "个人，个体；某种类型的人"
+      }
+    ],
+    "usphone": "ˌɪndɪ'vɪdʒuəl",
+    "ukphone": "ˌɪndɪ'vɪdʒuəl"
+  },
+  {
+    "name": "keep one's eye on",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "照看;留神;密切注意"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "local",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "地方的，当地的，本地的，（身体）局部的"
+      },
+      {
+        "type": "n.",
+        "definition": "当地人，本地人，住处附近的酒吧，（工会的）地方分会"
+      }
+    ],
+    "usphone": "ˈləʊkl",
+    "ukphone": "'ləʊkl"
+  },
+  {
+    "name": "modest",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "谦虚的，谦逊的；适度的，适中的；朴素的；不太大的，不显著的，较小的"
+      }
+    ],
+    "usphone": "'mɑːdɪst",
+    "ukphone": "'mɒdɪst"
+  },
+  {
+    "name": "not a fan of",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "不喜欢"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "not really into",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "不太喜欢"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "over the top",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "进入最后(或需要作出决定)的状态"
+      },
+      {
+        "type": "phrase.",
+        "definition": "超过定额(或指标)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "<主英口>过分的，夸张的"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "practical",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "实际的，实用的"
+      }
+    ],
+    "usphone": "'præktɪkl",
+    "ukphone": "'præktɪkl"
+  },
+  {
+    "name": "smart",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "聪明的；衣冠楚楚的，衣着讲究的，整洁而漂亮的，光鲜的，时髦的"
+      },
+      {
+        "type": "v.",
+        "definition": "感到剧烈刺痛；（因批评、失败等）难过"
+      },
+      {
+        "type": "n.",
+        "definition": "<美口>聪敏；疼痛；<古>苦痛，悲痛"
+      },
+      {
+        "type": "adv.",
+        "definition": "同“smartly”"
+      }
+    ],
+    "usphone": "smɑːrt",
+    "ukphone": "smɑːt"
+  },
+  {
+    "name": "style",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "样式，风格，方式，作风"
+      },
+      {
+        "type": "v.",
+        "definition": "称呼，把…设计（或缝制、做）成某种式样，命名"
+      }
+    ],
+    "usphone": "staɪl",
+    "ukphone": "staɪl"
+  },
+  {
+    "name": "unique",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "唯一的，独一无二的；罕见的；独具的，特有的"
+      }
+    ],
+    "usphone": "ju'niːk",
+    "ukphone": "ju'niːk"
+  },
+  {
+    "name": "be up for",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "愿意或准备好做某事"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "useless",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "无用的，无效的，无价值的，差劲的"
+      }
+    ],
+    "usphone": "'juːsləs",
+    "ukphone": "'juːsləs"
+  },
+  {
+    "name": "afford",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "负担得起；提供，给予"
+      }
+    ],
+    "usphone": "ə'fɔːrd",
+    "ukphone": "ə'fɔːd"
+  },
+  {
+    "name": "borrow money",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "借钱"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "debt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "债务，欠款；负债状态；义务；恩义"
+      }
+    ],
+    "usphone": "det",
+    "ukphone": "det"
+  },
+  {
+    "name": "decision",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "决策，抉择，果断，决断（力）"
+      }
+    ],
+    "usphone": "dɪ'sɪʒn",
+    "ukphone": "dɪ'sɪʒn"
+  },
+  {
+    "name": "encourage",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "鼓励，激励，促进，助长"
+      }
+    ],
+    "usphone": "ɪn'kɜːrɪdʒ",
+    "ukphone": "ɪn'kʌrɪdʒ"
+  },
+  {
+    "name": "loan",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "借出，贷与"
+      },
+      {
+        "type": "n.",
+        "definition": "贷款；借款"
+      }
+    ],
+    "usphone": "loʊn",
+    "ukphone": "ləʊn"
+  },
+  {
+    "name": "lose money",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "亏本"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "make money",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "赚钱；发财"
+      }
+    ],
+    "usphone": "meɪk 'mʌni",
+    "ukphone": "meɪk 'mʌni"
+  },
+  {
+    "name": "manage",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "管理，控制，能对付；完成（困难的事），勉力完成 ，执行"
+      }
+    ],
+    "usphone": "'mænɪdʒ",
+    "ukphone": "'mænɪdʒ"
+  },
+  {
+    "name": "millionaire",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "百万富翁，富豪"
+      }
+    ],
+    "usphone": "ˌmɪljə'ner",
+    "ukphone": "ˌmɪljə'neə(r)"
+  },
+  {
+    "name": "minimum wage",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "（法定的）最低工资"
+      }
+    ],
+    "usphone": "'mɪnəməm weɪdʒ",
+    "ukphone": "'mɪnɪməm weɪdʒ"
+  },
+  {
+    "name": "owe money",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "欠钱"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pay a fine",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "交罚款；付罚款"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pay in cash",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "以现款支付"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pay off",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "还清 (债务等);清偿欠(某人)的债务"
+      },
+      {
+        "type": "phrase.",
+        "definition": "付清工资解雇(某人)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "向…报复;清算(旧账),为(宿怨等)进行报复"
+      },
+      {
+        "type": "phrase.",
+        "definition": "赢利;得到好结果;取得成功"
+      },
+      {
+        "type": "phrase.",
+        "definition": "因受威胁而给…钱财;向…行贿"
+      },
+      {
+        "type": "phrase.",
+        "definition": "使 (船) 头偏离风向;(船)偏航"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(使) (线或绳) 从线团 (或索筒) 放出"
+      }
+    ],
+    "usphone": "peɪ ɔːf",
+    "ukphone": "peɪ ɒf"
+  },
+  {
+    "name": "payment",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "支付，付款；款额；报答"
+      }
+    ],
+    "usphone": "'peɪmənt",
+    "ukphone": "'peɪmənt"
+  },
+  {
+    "name": "raise money",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "筹款"
+      }
+    ],
+    "usphone": "reɪz 'mʌni",
+    "ukphone": "reɪz 'mʌni"
+  },
+  {
+    "name": "responsible",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有责任的；承担义务的；应受责备的；可信任的"
+      }
+    ],
+    "usphone": "rɪ'spɑːnsəbl",
+    "ukphone": "rɪ'spɒnsəbl"
+  },
+  {
+    "name": "save money",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "省钱"
+      },
+      {
+        "type": "phrase.",
+        "definition": "节省费用"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "savings",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "储蓄"
+      }
+    ],
+    "usphone": "'seɪvɪŋz",
+    "ukphone": "'seɪvɪŋz"
+  },
+  {
+    "name": "sense",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "知觉，感觉，感官能力；含义，意义；理智，判断力；功能；观念；认识"
+      },
+      {
+        "type": "v.",
+        "definition": "意识到，感觉到，觉察出，检测出"
+      }
+    ],
+    "usphone": "sens",
+    "ukphone": "sens"
+  },
+  {
+    "name": "service",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "服务，使用，维修，发球；公共服务系统，公共事业机构（=Service）"
+      },
+      {
+        "type": "v.",
+        "definition": "维修，维护，检修，保养"
+      },
+      {
+        "type": "adj.",
+        "definition": "服务性的，为提供后勤[资料等]服务的，武装部队的，服现役用的"
+      }
+    ],
+    "usphone": "'sɜːrvɪs",
+    "ukphone": "'sɜːvɪs"
+  },
+  {
+    "name": "spend money",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "花钱"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  }
+]

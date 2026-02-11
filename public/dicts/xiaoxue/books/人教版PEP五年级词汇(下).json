@@ -1,0 +1,1870 @@
+[
+  {
+    "name": "eat breakfast",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "吃早餐"
+      }
+    ],
+    "usphone": "i:t 'brekfəst",
+    "ukphone": "i:t 'brekfəst"
+  },
+  {
+    "name": "have ... class",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "上...课"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "play sports",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "做运动"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "exercise",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "锻炼，运动；练习"
+      },
+      {
+        "type": "n.",
+        "definition": "锻炼，运动；练习"
+      }
+    ],
+    "usphone": "'eksərsaɪz",
+    "ukphone": "'eksəsaɪz"
+  },
+  {
+    "name": "do morning exercises",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "做早操"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "eat dinner",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "吃晚餐"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "clean my room",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "打扫我的房间"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "go for a walk",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "去散步"
+      }
+    ],
+    "usphone": "ɡoʊ fɔːr ə wɔːk",
+    "ukphone": "ɡəʊ fɔː ə wɔːk"
+  },
+  {
+    "name": "go shopping",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "去购物"
+      }
+    ],
+    "usphone": "ɡoʊ 'ʃɑːpɪŋ",
+    "ukphone": "ɡəʊ 'ʃɒpɪŋ"
+  },
+  {
+    "name": "take",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "拿走；吃，服用；花费"
+      },
+      {
+        "type": "n.",
+        "definition": "电影镜头；电视镜头"
+      }
+    ],
+    "usphone": "teɪk",
+    "ukphone": "teɪk"
+  },
+  {
+    "name": "dancing",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "跳舞, 舞蹈"
+      }
+    ],
+    "usphone": "'dænsɪŋ",
+    "ukphone": "'dɑːnsɪŋ"
+  },
+  {
+    "name": "take a dancing class",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "上舞蹈课"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "when",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "什么时候，何时"
+      },
+      {
+        "type": "conj.",
+        "definition": "当……的时候"
+      }
+    ],
+    "usphone": "wen",
+    "ukphone": "wen"
+  },
+  {
+    "name": "after",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……以后；在……后面"
+      },
+      {
+        "type": "conj.",
+        "definition": "在……以后；在……后面"
+      },
+      {
+        "type": "adv.",
+        "definition": "以后，过后，后来"
+      }
+    ],
+    "usphone": "'æftər",
+    "ukphone": "'ɑːftə(r)"
+  },
+  {
+    "name": "start",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "开始"
+      }
+    ],
+    "usphone": "stɑːrt",
+    "ukphone": "stɑːt"
+  },
+  {
+    "name": "usually",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "通常, 一般, 常常"
+      }
+    ],
+    "usphone": "'juːʒuəli",
+    "ukphone": "'juːʒuəli"
+  },
+  {
+    "name": "Spain",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "西班牙"
+      }
+    ],
+    "usphone": "speɪn",
+    "ukphone": "speɪn"
+  },
+  {
+    "name": "late",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "迟的；晚的"
+      },
+      {
+        "type": "adv.",
+        "definition": "迟（地）；晚（地）"
+      }
+    ],
+    "usphone": "leɪt",
+    "ukphone": "leɪt"
+  },
+  {
+    "name": "a.m.",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "午前，上午"
+      }
+    ],
+    "usphone": "eɪ em",
+    "ukphone": "eɪ em"
+  },
+  {
+    "name": "p.m.",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "下午；午后"
+      }
+    ],
+    "usphone": "pi em",
+    "ukphone": "pi em"
+  },
+  {
+    "name": "why",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "为什么"
+      }
+    ],
+    "usphone": "waɪ",
+    "ukphone": "waɪ"
+  },
+  {
+    "name": "shop",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "商店"
+      },
+      {
+        "type": "vi.",
+        "definition": "买东西"
+      }
+    ],
+    "usphone": "ʃɑːp",
+    "ukphone": "ʃɒp"
+  },
+  {
+    "name": "work",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "工作；劳动；起作用，有效果，奏效"
+      },
+      {
+        "type": "n.",
+        "definition": "工作"
+      }
+    ],
+    "usphone": "wɜːrk",
+    "ukphone": "wɜːk"
+  },
+  {
+    "name": "last",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "最近刚过去的；最后的"
+      },
+      {
+        "type": "vi.",
+        "definition": "持续，维持"
+      }
+    ],
+    "usphone": "læst",
+    "ukphone": "lɑːst"
+  },
+  {
+    "name": "sound",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "听起来"
+      },
+      {
+        "type": "n.",
+        "definition": "声音"
+      }
+    ],
+    "usphone": "saʊnd",
+    "ukphone": "saʊnd"
+  },
+  {
+    "name": "also",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "也，还"
+      }
+    ],
+    "usphone": "'ɔːlsoʊ",
+    "ukphone": "'ɔːlsəʊ"
+  },
+  {
+    "name": "busy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "忙的，忙碌的"
+      }
+    ],
+    "usphone": "'bɪzi",
+    "ukphone": "'bɪzi"
+  },
+  {
+    "name": "need",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "需要，必须"
+      },
+      {
+        "type": "n.",
+        "definition": "需要，必须"
+      },
+      {
+        "type": "aux. v.",
+        "definition": "必须（用于否定句和疑问句）"
+      }
+    ],
+    "usphone": "niːd",
+    "ukphone": "niːd"
+  },
+  {
+    "name": "play",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "玩；演奏；播放；参加（体育活动，比赛等）；扮演, 演出；装扮；尽…本分"
+      },
+      {
+        "type": "n.",
+        "definition": "游戏；玩耍；戏剧；比赛；作用；（戏剧的）演出"
+      }
+    ],
+    "usphone": "pleɪ",
+    "ukphone": "pleɪ"
+  },
+  {
+    "name": "letter",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "信；字母"
+      }
+    ],
+    "usphone": "'letər",
+    "ukphone": "'letə(r)"
+  },
+  {
+    "name": "live",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "居住；生活；实践，身体力行"
+      },
+      {
+        "type": "adj.",
+        "definition": "活的，有生命的；现场直播的，实况转播的"
+      },
+      {
+        "type": "adv.",
+        "definition": "在（或从）现场，以现场直播方式"
+      }
+    ],
+    "usphone": "lɪv; laɪv",
+    "ukphone": "lɪv; laɪv"
+  },
+  {
+    "name": "island",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "岛屿"
+      }
+    ],
+    "usphone": "'aɪlənd",
+    "ukphone": "'aɪlənd"
+  },
+  {
+    "name": "always",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "总是"
+      }
+    ],
+    "usphone": "'ɔːlweɪz",
+    "ukphone": "'ɔːlweɪz"
+  },
+  {
+    "name": "cave",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "洞穴，岩洞"
+      }
+    ],
+    "usphone": "keɪv",
+    "ukphone": "keɪv"
+  },
+  {
+    "name": "go swimming",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "去游泳"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "win",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "赢得；赢，获胜"
+      }
+    ],
+    "usphone": "wɪn",
+    "ukphone": "wɪn"
+  },
+  {
+    "name": "spring",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "春天，春季；泉水，泉"
+      },
+      {
+        "type": "vi.",
+        "definition": "跳，跳跃；弹起"
+      }
+    ],
+    "usphone": "sprɪŋ",
+    "ukphone": "sprɪŋ"
+  },
+  {
+    "name": "summer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "夏天，夏季"
+      }
+    ],
+    "usphone": "'sʌmər",
+    "ukphone": "'sʌmə(r)"
+  },
+  {
+    "name": "autumn",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "秋天，秋季"
+      }
+    ],
+    "usphone": "ˈɔːtəm",
+    "ukphone": "ˈɔːtəm"
+  },
+  {
+    "name": "winter",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "冬天，冬季"
+      }
+    ],
+    "usphone": "'wɪntər",
+    "ukphone": "'wɪntə(r)"
+  },
+  {
+    "name": "season",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "季；季节"
+      }
+    ],
+    "usphone": "'siːzn",
+    "ukphone": "'siːzn"
+  },
+  {
+    "name": "picnic",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "参加野餐，去野餐"
+      },
+      {
+        "type": "n.",
+        "definition": "野餐"
+      }
+    ],
+    "usphone": "'pɪknɪk",
+    "ukphone": "'pɪknɪk"
+  },
+  {
+    "name": "go on a picnic",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "去野餐"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pick",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "拾；采；摘；挑选"
+      }
+    ],
+    "usphone": "pɪk",
+    "ukphone": "pɪk"
+  },
+  {
+    "name": "pick apples",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "摘苹果"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "snowman",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（用雪堆成的）雪人"
+      }
+    ],
+    "usphone": "'snoʊmæn",
+    "ukphone": "'snəʊmæn"
+  },
+  {
+    "name": "make a snowman",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "堆雪人"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "which",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "哪一个，哪一些"
+      }
+    ],
+    "usphone": "wɪtʃ",
+    "ukphone": "wɪtʃ"
+  },
+  {
+    "name": "best",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "最好的"
+      },
+      {
+        "type": "adv.",
+        "definition": "最好地；最，极"
+      },
+      {
+        "type": "n.",
+        "definition": "最佳；最好的人或物"
+      }
+    ],
+    "usphone": "best",
+    "ukphone": "best"
+  },
+  {
+    "name": "snow",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "下雪"
+      },
+      {
+        "type": "n.",
+        "definition": "雪"
+      }
+    ],
+    "usphone": "snoʊ",
+    "ukphone": "snəʊ"
+  },
+  {
+    "name": "good job",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "做得好，干得漂亮"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "because",
+    "pos": [
+      {
+        "type": "conj.",
+        "definition": "因为"
+      }
+    ],
+    "usphone": "bɪ'kɔːz",
+    "ukphone": "bɪ'kɒz"
+  },
+  {
+    "name": "vacation",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（美）假期；休假"
+      }
+    ],
+    "usphone": "veɪˈkeɪʃn；vəˈkeɪʃn",
+    "ukphone": "veɪˈkeɪʃn；vəˈkeɪʃn"
+  },
+  {
+    "name": "all",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "所有的；全部的"
+      },
+      {
+        "type": "adv.",
+        "definition": "全部地"
+      },
+      {
+        "type": "pron.",
+        "definition": "全部；全体人员"
+      }
+    ],
+    "usphone": "ɔːl",
+    "ukphone": "ɔːl"
+  },
+  {
+    "name": "pink",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "粉红色"
+      },
+      {
+        "type": "adj.",
+        "definition": "粉红色的"
+      }
+    ],
+    "usphone": "pɪŋk",
+    "ukphone": "pɪŋk"
+  },
+  {
+    "name": "lovely",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "可爱的；令人愉快的，极好的"
+      }
+    ],
+    "usphone": "'lʌvli",
+    "ukphone": "'lʌvli"
+  },
+  {
+    "name": "leaf",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "叶子（pl.leaves）"
+      },
+      {
+        "type": "v.",
+        "definition": "匆匆翻阅；浏览"
+      }
+    ],
+    "usphone": "liːf",
+    "ukphone": "liːf"
+  },
+  {
+    "name": "fall",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "倒下；跌下；落下"
+      },
+      {
+        "type": "n.",
+        "definition": "（美）秋天"
+      }
+    ],
+    "usphone": "fɔːl",
+    "ukphone": "fɔːl"
+  },
+  {
+    "name": "paint",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "绘画；给…涂色；在…上刷油漆"
+      },
+      {
+        "type": "n.",
+        "definition": "颜料; 油漆; 涂料"
+      }
+    ],
+    "usphone": "peɪnt",
+    "ukphone": "peɪnt"
+  },
+  {
+    "name": "January",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "一月"
+      }
+    ],
+    "usphone": "'dʒænjueri",
+    "ukphone": "'dʒænjuəri"
+  },
+  {
+    "name": "February",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "二月"
+      }
+    ],
+    "usphone": "'februeri",
+    "ukphone": "'februəri"
+  },
+  {
+    "name": "march",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "前进；行进"
+      },
+      {
+        "type": "n.",
+        "definition": "（March）三月"
+      }
+    ],
+    "usphone": "mɑːrtʃ",
+    "ukphone": "mɑːtʃ"
+  },
+  {
+    "name": "April",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "四月"
+      }
+    ],
+    "usphone": "'eɪprəl",
+    "ukphone": "'eɪprəl"
+  },
+  {
+    "name": "may",
+    "pos": [
+      {
+        "type": "aux. v.",
+        "definition": "可能；也许；可以"
+      }
+    ],
+    "usphone": "meɪ",
+    "ukphone": "meɪ"
+  },
+  {
+    "name": "June",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "六月"
+      }
+    ],
+    "usphone": "dʒuːn",
+    "ukphone": "dʒuːn"
+  },
+  {
+    "name": "July",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "七月"
+      }
+    ],
+    "usphone": "dʒu'laɪ",
+    "ukphone": "dʒu'laɪ"
+  },
+  {
+    "name": "August",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "八月"
+      }
+    ],
+    "usphone": "'ɔːɡəst",
+    "ukphone": "'ɔːɡəst"
+  },
+  {
+    "name": "September",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "九月"
+      }
+    ],
+    "usphone": "sep'tembər",
+    "ukphone": "sep'tembə(r)"
+  },
+  {
+    "name": "October",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "十月"
+      }
+    ],
+    "usphone": "ɑːk'toʊbər",
+    "ukphone": "ɒk'təʊbə(r)"
+  },
+  {
+    "name": "November",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "十一月"
+      }
+    ],
+    "usphone": "noʊ'vembər",
+    "ukphone": "nəʊ'vembə(r)"
+  },
+  {
+    "name": "December",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "十二月"
+      }
+    ],
+    "usphone": "dɪ'sembər",
+    "ukphone": "dɪ'sembə(r)"
+  },
+  {
+    "name": "few",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "少数, 几个; 几乎没有"
+      },
+      {
+        "type": "adj.",
+        "definition": "几个; 很少的;不多的，少数的"
+      }
+    ],
+    "usphone": "fjuː",
+    "ukphone": "fjuː"
+  },
+  {
+    "name": "a few",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "几个"
+      }
+    ],
+    "usphone": "ə fjuː",
+    "ukphone": "ə fjuː"
+  },
+  {
+    "name": "thing",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "东西；物品"
+      }
+    ],
+    "usphone": "θɪŋ",
+    "ukphone": "θɪŋ"
+  },
+  {
+    "name": "meet",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "满足（需要等），达到（要求等）；遇见，见到；相遇"
+      },
+      {
+        "type": "n.",
+        "definition": "体育比赛"
+      }
+    ],
+    "usphone": "miːt",
+    "ukphone": "miːt"
+  },
+  {
+    "name": "sports meet",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "运动会"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "Easter",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "复活节"
+      }
+    ],
+    "usphone": "'iːstər",
+    "ukphone": "'iːstə(r)"
+  },
+  {
+    "name": "trip",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "旅行；旅程"
+      }
+    ],
+    "usphone": "trɪp",
+    "ukphone": "trɪp"
+  },
+  {
+    "name": "year",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "年；岁"
+      }
+    ],
+    "usphone": "jɪr",
+    "ukphone": "jɪə(r)"
+  },
+  {
+    "name": "plant",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "植物，工厂，发电厂"
+      },
+      {
+        "type": "vt.",
+        "definition": "种植"
+      }
+    ],
+    "usphone": "plænt",
+    "ukphone": "plɑːnt"
+  },
+  {
+    "name": "contest",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "比赛，竞赛"
+      }
+    ],
+    "usphone": "'kɑːntest",
+    "ukphone": "'kɒntest"
+  },
+  {
+    "name": "the Great Wall",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "长城"
+      }
+    ],
+    "usphone": "ðə ɡreɪt wɔːl",
+    "ukphone": "ðə ɡreɪt wɔːl"
+  },
+  {
+    "name": "national",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "国家的"
+      }
+    ],
+    "usphone": "'næʃnəl",
+    "ukphone": "'næʃnəl"
+  },
+  {
+    "name": "National Day",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "国庆节"
+      }
+    ],
+    "usphone": "'næʃənəl deɪ",
+    "ukphone": "'næʃənəl deɪ"
+  },
+  {
+    "name": "American",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "美国的；美国人的"
+      },
+      {
+        "type": "n.",
+        "definition": "美国人"
+      }
+    ],
+    "usphone": "ə'merɪkən",
+    "ukphone": "ə'merɪkən"
+  },
+  {
+    "name": "Thanksgiving",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（对上帝的）感恩；感恩节"
+      }
+    ],
+    "usphone": "ˌθæŋks'ɡɪvɪŋ",
+    "ukphone": "ˌθæŋks'ɡɪvɪŋ"
+  },
+  {
+    "name": "Christmas",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "圣诞节"
+      }
+    ],
+    "usphone": "'krɪsməs",
+    "ukphone": "'krɪsməs"
+  },
+  {
+    "name": "holiday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "假期；假日"
+      }
+    ],
+    "usphone": "'hɑːlədeɪ",
+    "ukphone": "'hɒlədeɪ"
+  },
+  {
+    "name": "game",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "游戏，比赛"
+      }
+    ],
+    "usphone": "ɡeɪm",
+    "ukphone": "ɡeɪm"
+  },
+  {
+    "name": "roll",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "卷（起）；转动；滚动"
+      },
+      {
+        "type": "n.",
+        "definition": "卷，卷形物"
+      }
+    ],
+    "usphone": "roʊl",
+    "ukphone": "rəʊl"
+  },
+  {
+    "name": "look for",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "寻找, 探索, 渴望, 盼望"
+      },
+      {
+        "type": "phrase.",
+        "definition": "寻找；搜索"
+      }
+    ],
+    "usphone": "lʊk fɔːr",
+    "ukphone": "lʊk fɔː"
+  },
+  {
+    "name": "chocolate",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "巧克力"
+      }
+    ],
+    "usphone": "'tʃɑːklət",
+    "ukphone": "'tʃɒklət"
+  },
+  {
+    "name": "bunny",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小兔子（儿童用语）"
+      }
+    ],
+    "usphone": "'bʌni",
+    "ukphone": "'bʌni"
+  },
+  {
+    "name": "RSVP",
+    "pos": [
+      {
+        "type": "abbr.",
+        "definition": "敬请回复"
+      }
+    ],
+    "usphone": "ˌɑːresviː'piː",
+    "ukphone": "ˌɑːresviː'piː"
+  },
+  {
+    "name": "by",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "乘（表示交通等的方式）；通过，靠，用（表示通过某种方式）"
+      }
+    ],
+    "usphone": "baɪ",
+    "ukphone": "baɪ"
+  },
+  {
+    "name": "first",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第一 (个) 的"
+      }
+    ],
+    "usphone": "fɜːrst",
+    "ukphone": "fɜːst"
+  },
+  {
+    "name": "second",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第二"
+      },
+      {
+        "type": "n.",
+        "definition": "秒；片刻"
+      }
+    ],
+    "usphone": "'sekənd",
+    "ukphone": "'sekənd"
+  },
+  {
+    "name": "third",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第三(的), 三分之一(的)"
+      }
+    ],
+    "usphone": "θɜːrd",
+    "ukphone": "θɜːd"
+  },
+  {
+    "name": "fourth",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第四(的), 四分之一(的)"
+      }
+    ],
+    "usphone": "fɔːrθ",
+    "ukphone": "fɔːθ"
+  },
+  {
+    "name": "fifth",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第五(的), 五分之一(的)"
+      }
+    ],
+    "usphone": "fɪfθ",
+    "ukphone": "fɪfθ"
+  },
+  {
+    "name": "twelfth",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第十二(的)；十二分之一(的)"
+      }
+    ],
+    "usphone": "twelfθ",
+    "ukphone": "twelfθ"
+  },
+  {
+    "name": "twentieth",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第二十(的), 二十分之一(的)"
+      }
+    ],
+    "usphone": "'twentiəθ",
+    "ukphone": "'twentiəθ"
+  },
+  {
+    "name": "twenty-first",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "第二十一"
+      }
+    ],
+    "usphone": "ˌtwenti ˈfɜːrst",
+    "ukphone": "ˌtwenti ˈfɜːst"
+  },
+  {
+    "name": "twenty-third",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "第二十三"
+      }
+    ],
+    "usphone": "ˌtwentɪ'θɜːd",
+    "ukphone": "ˌtwentɪ'θɜːd"
+  },
+  {
+    "name": "thirtieth",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "第三十"
+      }
+    ],
+    "usphone": "'θɜːtiəθ",
+    "ukphone": "'θɜːtiəθ"
+  },
+  {
+    "name": "special",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "特别的，特殊的"
+      }
+    ],
+    "usphone": "'speʃl",
+    "ukphone": "'speʃl"
+  },
+  {
+    "name": "fool",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "傻瓜，愚蠢的人"
+      },
+      {
+        "type": "v.",
+        "definition": "愚弄，欺骗"
+      }
+    ],
+    "usphone": "fuːl",
+    "ukphone": "fuːl"
+  },
+  {
+    "name": "kitten",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小猫"
+      }
+    ],
+    "usphone": "'kɪtn",
+    "ukphone": "'kɪtn"
+  },
+  {
+    "name": "diary",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "日记；日记簿"
+      }
+    ],
+    "usphone": "'daɪəri",
+    "ukphone": "'daɪəri"
+  },
+  {
+    "name": "still",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "静止的，不动的"
+      },
+      {
+        "type": "adv.",
+        "definition": "仍，还"
+      }
+    ],
+    "usphone": "stɪl",
+    "ukphone": "stɪl"
+  },
+  {
+    "name": "noise",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "声音，响声；噪音"
+      }
+    ],
+    "usphone": "nɔɪz",
+    "ukphone": "nɔɪz"
+  },
+  {
+    "name": "fur",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（动物的）皮毛，毛皮"
+      }
+    ],
+    "usphone": "fɜːr",
+    "ukphone": "fɜː(r)"
+  },
+  {
+    "name": "open",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "打开"
+      },
+      {
+        "type": "adj.",
+        "definition": "开着的，敞开的；开阔的"
+      }
+    ],
+    "usphone": "'oʊpən",
+    "ukphone": "'əʊpən"
+  },
+  {
+    "name": "walk",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "步行；散步"
+      },
+      {
+        "type": "v.",
+        "definition": "散步；步行；带……散步；带……遛弯"
+      }
+    ],
+    "usphone": "wɔːk",
+    "ukphone": "wɔːk"
+  },
+  {
+    "name": "mine",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "我的（东西）"
+      },
+      {
+        "type": "n.",
+        "definition": "矿藏；矿山"
+      },
+      {
+        "type": "v.",
+        "definition": "开采（矿物）"
+      }
+    ],
+    "usphone": "maɪn",
+    "ukphone": "maɪn"
+  },
+  {
+    "name": "yours",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "你的（东西）；你们的（东西）"
+      }
+    ],
+    "usphone": "jərz",
+    "ukphone": "jɔːz"
+  },
+  {
+    "name": "his",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "他的；他的（东西）"
+      }
+    ],
+    "usphone": "hɪz",
+    "ukphone": "hɪz"
+  },
+  {
+    "name": "hers",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "她的（东西）"
+      }
+    ],
+    "usphone": "hɜːrz",
+    "ukphone": "hɜːz"
+  },
+  {
+    "name": "theirs",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "他（她，它）们的（东西）"
+      }
+    ],
+    "usphone": "ðerz",
+    "ukphone": "ðeəz"
+  },
+  {
+    "name": "ours",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "我们的（东西）"
+      }
+    ],
+    "usphone": "ˈaʊərz",
+    "ukphone": "ˈaʊəz"
+  },
+  {
+    "name": "climbing",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "攀爬（climb的现在分词）"
+      }
+    ],
+    "usphone": "'klaɪmɪŋ",
+    "ukphone": "'klaɪmɪŋ"
+  },
+  {
+    "name": "playing",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "（正在）玩耍；play的现在分词"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "jumping",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "跳（jump的现在分词）"
+      }
+    ],
+    "usphone": "'dʒʌmpɪŋ",
+    "ukphone": "'dʒʌmpɪŋ"
+  },
+  {
+    "name": "drinking",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "喝（drink的现在分词）"
+      }
+    ],
+    "usphone": "'drɪŋkɪŋ",
+    "ukphone": "'drɪŋkɪŋ"
+  },
+  {
+    "name": "sleeping",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "睡觉（sleep的现在分词）"
+      }
+    ],
+    "usphone": "'sliːpɪŋ",
+    "ukphone": "'sliːpɪŋ"
+  },
+  {
+    "name": "each",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "每个（的），每一"
+      },
+      {
+        "type": "adj.",
+        "definition": "每个（的），每一"
+      }
+    ],
+    "usphone": "iːtʃ",
+    "ukphone": "iːtʃ"
+  },
+  {
+    "name": "other",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "其他的；另外的"
+      }
+    ],
+    "usphone": "'ʌðər",
+    "ukphone": "'ʌðə(r)"
+  },
+  {
+    "name": "each other",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "互相，彼此"
+      }
+    ],
+    "usphone": "iːtʃ 'ʌðər",
+    "ukphone": "iːtʃ 'ʌðə(r)"
+  },
+  {
+    "name": "excited",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "激动的, 兴奋的, 受刺激的, 紧张不安的"
+      }
+    ],
+    "usphone": "ɪk'saɪtɪd",
+    "ukphone": "ɪk'saɪtɪd"
+  },
+  {
+    "name": "like",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "喜欢"
+      },
+      {
+        "type": "prep.",
+        "definition": "像，像……一样"
+      }
+    ],
+    "usphone": "laɪk",
+    "ukphone": "laɪk"
+  },
+  {
+    "name": "eat lunch",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "吃午餐"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "read a book",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "读一本书"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "listen to music",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "听音乐"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "keep",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "保持，继续"
+      }
+    ],
+    "usphone": "kiːp",
+    "ukphone": "kiːp"
+  },
+  {
+    "name": "keep to the right",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "靠右行驶/行走"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "keep your desk clean",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "保持桌面整洁"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "talk quietly",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "小声说话"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "turn",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "转；旋转"
+      },
+      {
+        "type": "n.",
+        "definition": "轮次，轮流，（轮流的）顺序"
+      }
+    ],
+    "usphone": "tɜːrn",
+    "ukphone": "tɜːn"
+  },
+  {
+    "name": "take turns",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "轮流"
+      }
+    ],
+    "usphone": "teɪk 'tɜːnz",
+    "ukphone": "teɪk 'tɜːnz"
+  },
+  {
+    "name": "bamboo",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "竹子"
+      }
+    ],
+    "usphone": "ˌbæm'buː",
+    "ukphone": "ˌbæm'buː"
+  },
+  {
+    "name": "its",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "它的"
+      }
+    ],
+    "usphone": "ɪts",
+    "ukphone": "ɪts"
+  },
+  {
+    "name": "show",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "演出；节目；展览；表现"
+      },
+      {
+        "type": "vt.",
+        "definition": "给……看，出示，显示"
+      },
+      {
+        "type": "vi.",
+        "definition": "显出，显现，显露，显得"
+      }
+    ],
+    "usphone": "ʃoʊ",
+    "ukphone": "ʃəʊ"
+  },
+  {
+    "name": "anything",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "什么事（物）；任何事（物）"
+      }
+    ],
+    "usphone": "'eniθɪŋ",
+    "ukphone": "'eniθɪŋ"
+  },
+  {
+    "name": "else",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "别的，其他的"
+      },
+      {
+        "type": "adv.",
+        "definition": "其他"
+      }
+    ],
+    "usphone": "els",
+    "ukphone": "els"
+  },
+  {
+    "name": "exhibition",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "展览，展览会"
+      }
+    ],
+    "usphone": "ˌeksɪ'bɪʃn",
+    "ukphone": "ˌeksɪ'bɪʃn"
+  },
+  {
+    "name": "say",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "说，讲"
+      }
+    ],
+    "usphone": "seɪ",
+    "ukphone": "seɪ"
+  },
+  {
+    "name": "have a look",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "看一看"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "sushi",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "寿司"
+      }
+    ],
+    "usphone": "'suːʃi",
+    "ukphone": "'suːʃi"
+  },
+  {
+    "name": "teach",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "教；教书"
+      }
+    ],
+    "usphone": "tiːtʃ",
+    "ukphone": "tiːtʃ"
+  },
+  {
+    "name": "sure",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "当然，的确"
+      },
+      {
+        "type": "adj.",
+        "definition": "对什么有把握，稳当的，可靠的"
+      }
+    ],
+    "usphone": "ʃʊr",
+    "ukphone": "ʃʊə(r)"
+  },
+  {
+    "name": "Canadian",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "加拿大的；加拿大人的"
+      },
+      {
+        "type": "n.",
+        "definition": "加拿大人"
+      }
+    ],
+    "usphone": "kə'neɪdiən",
+    "ukphone": "kə'neɪdiən"
+  },
+  {
+    "name": "Spanish",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "西班牙的"
+      },
+      {
+        "type": "n.",
+        "definition": "西班牙语"
+      }
+    ],
+    "usphone": "'spænɪʃ",
+    "ukphone": "'spænɪʃ"
+  }
+]

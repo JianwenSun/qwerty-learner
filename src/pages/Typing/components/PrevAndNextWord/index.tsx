@@ -27,7 +27,7 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
   const headWord = useMemo(() => {
     if (!word) return ''
 
-    const showWord = ['romaji', 'hapin'].includes(currentLanguage) ? word.notation : word.name
+    const showWord = word.name
 
     if (type === 'prev') return showWord
 
@@ -55,7 +55,9 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
                 {headWord}
               </p>
               {state.isTransVisible && (
-                <p className="line-clamp-1 max-w-full text-sm font-normal text-gray-600 dark:text-gray-500">{word.trans.join('；')}</p>
+                <p className="line-clamp-1 max-w-full text-sm font-normal text-gray-600 dark:text-gray-500">
+                  {word.pos?.map((pos) => pos.definition).join('；')}
+                </p>
               )}
             </div>
             {type === 'next' && <IconNext className="ml-4 shrink-0 grow-0 text-2xl" />}

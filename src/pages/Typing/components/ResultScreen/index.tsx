@@ -55,7 +55,7 @@ const ResultScreen = () => {
       const wordName = word.name
       return {
         ...word,
-        trans: word.trans.join(';'),
+        trans: word.pos?.map((pos) => pos.definition).join(';') ?? '',
         correctCount: log.correctCount,
         wrongCount: log.wrongCount,
         wrongLetters: Object.entries(log.LetterMistakes)

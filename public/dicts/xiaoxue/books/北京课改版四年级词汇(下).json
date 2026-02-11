@@ -1,0 +1,793 @@
+[
+  {
+    "name": "music",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "音乐"
+      }
+    ],
+    "usphone": "'mjuːzɪk",
+    "ukphone": "'mjuːzɪk"
+  },
+  {
+    "name": "pop",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "（同popular）通俗的；流行的"
+      },
+      {
+        "type": "n.",
+        "definition": "（同popular）流行歌曲，流行音乐"
+      },
+      {
+        "type": "v.",
+        "definition": "（迅速）放置；突然出现；（眼睛）睁大"
+      }
+    ],
+    "usphone": "pɑːp",
+    "ukphone": "pɒp"
+  },
+  {
+    "name": "keep",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "保持，继续"
+      }
+    ],
+    "usphone": "kiːp",
+    "ukphone": "kiːp"
+  },
+  {
+    "name": "quiet",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "安静的"
+      }
+    ],
+    "usphone": "'kwaɪət",
+    "ukphone": "'kwaɪət"
+  },
+  {
+    "name": "noisy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "嘈杂的，喧闹的"
+      }
+    ],
+    "usphone": "'nɔɪzi",
+    "ukphone": "'nɔɪzi"
+  },
+  {
+    "name": "sometimes",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "有时"
+      }
+    ],
+    "usphone": "'sʌmtaɪmz",
+    "ukphone": "'sʌmtaɪmz"
+  },
+  {
+    "name": "model",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "模型；模范；模特儿；型号"
+      },
+      {
+        "type": "v.",
+        "definition": "以…为榜样"
+      }
+    ],
+    "usphone": "'mɑːdl",
+    "ukphone": "'mɒdl"
+  },
+  {
+    "name": "plane",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "飞机"
+      }
+    ],
+    "usphone": "pleɪn",
+    "ukphone": "pleɪn"
+  },
+  {
+    "name": "wrong",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "错误的；有毛病的，不正常的"
+      },
+      {
+        "type": "adv.",
+        "definition": "错误地"
+      }
+    ],
+    "usphone": "rɔːŋ",
+    "ukphone": "rɒŋ"
+  },
+  {
+    "name": "headache",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "头痛"
+      }
+    ],
+    "usphone": "'hedeɪk",
+    "ukphone": "'hedeɪk"
+  },
+  {
+    "name": "fever",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "发烧，发热"
+      }
+    ],
+    "usphone": "'fiːvər",
+    "ukphone": "'fiːvə(r)"
+  },
+  {
+    "name": "have",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "拥有；得到；吃，喝；进行；从事"
+      }
+    ],
+    "usphone": "hæv, həv, əv",
+    "ukphone": "hæv, həv, əv"
+  },
+  {
+    "name": "mouth",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "嘴，口"
+      }
+    ],
+    "usphone": "maʊθ",
+    "ukphone": "maʊθ"
+  },
+  {
+    "name": "flu",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "流行性感冒"
+      }
+    ],
+    "usphone": "fluː",
+    "ukphone": "fluː"
+  },
+  {
+    "name": "pill",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "药片"
+      }
+    ],
+    "usphone": "pɪl",
+    "ukphone": "pɪl"
+  },
+  {
+    "name": "soon",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "不久，很快"
+      }
+    ],
+    "usphone": "suːn",
+    "ukphone": "suːn"
+  },
+  {
+    "name": "man",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "男人（pl.men）"
+      }
+    ],
+    "usphone": "mæn",
+    "ukphone": "mæn"
+  },
+  {
+    "name": "right",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "对的，正确的；适当的；右边的"
+      },
+      {
+        "type": "adv.",
+        "definition": "对，不错；向右；（加强语气）恰恰，正好，立即，马上；完全"
+      },
+      {
+        "type": "n.",
+        "definition": "正确，对；正当，公正，正义；权利（复）"
+      }
+    ],
+    "usphone": "raɪt",
+    "ukphone": "raɪt"
+  },
+  {
+    "name": "hurt",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "使受伤；伤害"
+      }
+    ],
+    "usphone": "hɜːrt",
+    "ukphone": "hɜːt"
+  },
+  {
+    "name": "near",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "靠近的"
+      },
+      {
+        "type": "adv.",
+        "definition": "附近；邻近"
+      },
+      {
+        "type": "prep.",
+        "definition": "在……附近；靠近"
+      },
+      {
+        "type": "v.",
+        "definition": "接近，靠近"
+      }
+    ],
+    "usphone": "nɪr",
+    "ukphone": "nɪə(r)"
+  },
+  {
+    "name": "excuse",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "借口，理由"
+      },
+      {
+        "type": "v.",
+        "definition": "宽恕，原谅；准许…离开"
+      }
+    ],
+    "usphone": "ɪk'skjuːs",
+    "ukphone": "ɪk'skjuːs"
+  },
+  {
+    "name": "library",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "图书馆"
+      }
+    ],
+    "usphone": "'laɪbreri",
+    "ukphone": "'laɪbrəri"
+  },
+  {
+    "name": "floor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "地面，地板"
+      }
+    ],
+    "usphone": "flɔːr",
+    "ukphone": "flɔː(r)"
+  },
+  {
+    "name": "building",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "建筑物，楼房"
+      }
+    ],
+    "usphone": "'bɪldɪŋ",
+    "ukphone": "'bɪldɪŋ"
+  },
+  {
+    "name": "nearby",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "附近的"
+      }
+    ],
+    "usphone": "ˌnɪr'baɪ",
+    "ukphone": "ˌnɪə'baɪ"
+  },
+  {
+    "name": "grey",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "灰色，灰白"
+      },
+      {
+        "type": "adj.",
+        "definition": "灰色的"
+      }
+    ],
+    "usphone": "ɡreɪ",
+    "ukphone": "ɡreɪ"
+  },
+  {
+    "name": "beside",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……旁边；靠近"
+      }
+    ],
+    "usphone": "bɪ'saɪd",
+    "ukphone": "bɪ'saɪd"
+  },
+  {
+    "name": "station",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "局；所；站"
+      }
+    ],
+    "usphone": "'steɪʃn",
+    "ukphone": "'steɪʃn"
+  },
+  {
+    "name": "far",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "较远的，远处的"
+      },
+      {
+        "type": "adv.",
+        "definition": "很，极，太"
+      }
+    ],
+    "usphone": "fɑːr",
+    "ukphone": "fɑː(r)"
+  },
+  {
+    "name": "way",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "方式，方法；路；路线"
+      },
+      {
+        "type": "adv.",
+        "definition": "非常"
+      }
+    ],
+    "usphone": "weɪ",
+    "ukphone": "weɪ"
+  },
+  {
+    "name": "then",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "当时；那时；然后；那么（通常用于句首或句尾）"
+      }
+    ],
+    "usphone": "ðen",
+    "ukphone": "ðen"
+  },
+  {
+    "name": "left",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "左，左边"
+      },
+      {
+        "type": "adj.",
+        "definition": "左边的"
+      },
+      {
+        "type": "adv.",
+        "definition": "向左"
+      }
+    ],
+    "usphone": "left",
+    "ukphone": "left"
+  },
+  {
+    "name": "miss",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "女士，小姐（对未婚妇女的称呼）"
+      },
+      {
+        "type": "vt.",
+        "definition": "想念；错过"
+      },
+      {
+        "type": "vi.",
+        "definition": "未击中，打偏"
+      },
+      {
+        "type": "n.",
+        "definition": "未击中（或抓住、达到等）"
+      }
+    ],
+    "usphone": "mɪs",
+    "ukphone": "mɪs"
+  },
+  {
+    "name": "china",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "瓷器；(China)中国"
+      }
+    ],
+    "usphone": "'tʃaɪnə",
+    "ukphone": "'tʃaɪnə"
+  },
+  {
+    "name": "labour",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "(=labor) 劳动, 劳动力, 工人"
+      }
+    ],
+    "usphone": "'leɪbər",
+    "ukphone": "'leɪbə(r)"
+  },
+  {
+    "name": "wall",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "墙"
+      }
+    ],
+    "usphone": "wɔːl",
+    "ukphone": "wɔːl"
+  },
+  {
+    "name": "cinema",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "电影院"
+      }
+    ],
+    "usphone": "'sɪnəmə",
+    "ukphone": "'sɪnəmə"
+  },
+  {
+    "name": "museum",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "博物馆"
+      }
+    ],
+    "usphone": "mju'ziːəm",
+    "ukphone": "mju'ziːəm"
+  },
+  {
+    "name": "country",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "国家；乡村"
+      }
+    ],
+    "usphone": "'kʌntri",
+    "ukphone": "'kʌntri"
+  },
+  {
+    "name": "about",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "大约；关于"
+      },
+      {
+        "type": "adv.",
+        "definition": "在各处；四处；大约"
+      }
+    ],
+    "usphone": "ə'baʊt",
+    "ukphone": "ə'baʊt"
+  },
+  {
+    "name": "boat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小船，小舟"
+      }
+    ],
+    "usphone": "boʊt",
+    "ukphone": "bəʊt"
+  },
+  {
+    "name": "sound",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "听起来"
+      },
+      {
+        "type": "n.",
+        "definition": "声音"
+      }
+    ],
+    "usphone": "saʊnd",
+    "ukphone": "saʊnd"
+  },
+  {
+    "name": "safe",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "安全的"
+      },
+      {
+        "type": "n.",
+        "definition": "保险柜"
+      }
+    ],
+    "usphone": "seɪf",
+    "ukphone": "seɪf"
+  },
+  {
+    "name": "dangerous",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "危险的"
+      }
+    ],
+    "usphone": "'deɪndʒərəs",
+    "ukphone": "'deɪndʒərəs"
+  },
+  {
+    "name": "front",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "前面；前部；前线"
+      },
+      {
+        "type": "adj.",
+        "definition": "前面的；前部的"
+      }
+    ],
+    "usphone": "frʌnt",
+    "ukphone": "frʌnt"
+  },
+  {
+    "name": "thick",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "厚的；密的；浓的"
+      }
+    ],
+    "usphone": "θɪk",
+    "ukphone": "θɪk"
+  },
+  {
+    "name": "enough",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "足够的，充分的"
+      },
+      {
+        "type": "n.",
+        "definition": "充分，足够"
+      },
+      {
+        "type": "adv.",
+        "definition": "足够地，充分地"
+      }
+    ],
+    "usphone": "ɪ'nʌf",
+    "ukphone": "ɪ'nʌf"
+  },
+  {
+    "name": "safety",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "安全"
+      }
+    ],
+    "usphone": "'seɪfti",
+    "ukphone": "'seɪfti"
+  },
+  {
+    "name": "crowd",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "人群"
+      },
+      {
+        "type": "vi.",
+        "definition": "拥挤，群聚"
+      }
+    ],
+    "usphone": "kraʊd",
+    "ukphone": "kraʊd"
+  },
+  {
+    "name": "push",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "推；按"
+      }
+    ],
+    "usphone": "pʊʃ",
+    "ukphone": "pʊʃ"
+  },
+  {
+    "name": "slowly",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "缓慢地"
+      }
+    ],
+    "usphone": "'sloʊli",
+    "ukphone": "'sləʊli"
+  },
+  {
+    "name": "break",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "休息；间隙"
+      },
+      {
+        "type": "vt.",
+        "definition": "打破（断，碎）；损坏，撕开"
+      }
+    ],
+    "usphone": "breɪk",
+    "ukphone": "breɪk"
+  },
+  {
+    "name": "drop",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "使落下，扔；下降，降低；放弃"
+      },
+      {
+        "type": "n.",
+        "definition": "滴"
+      }
+    ],
+    "usphone": "drɑːp",
+    "ukphone": "drɒp"
+  },
+  {
+    "name": "fix",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "固定；确定；修理；决定"
+      }
+    ],
+    "usphone": "fɪks",
+    "ukphone": "fɪks"
+  },
+  {
+    "name": "never",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "从不；决不"
+      }
+    ],
+    "usphone": "'nevər",
+    "ukphone": "'nevə(r)"
+  },
+  {
+    "name": "lose",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "迷失；丢失；失去，丧失"
+      }
+    ],
+    "usphone": "luːz",
+    "ukphone": "luːz"
+  },
+  {
+    "name": "key",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "钥匙；关键"
+      },
+      {
+        "type": "adj.",
+        "definition": "关键的"
+      }
+    ],
+    "usphone": "kiː",
+    "ukphone": "kiː"
+  },
+  {
+    "name": "playground",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "操场"
+      }
+    ],
+    "usphone": "'pleɪɡraʊnd",
+    "ukphone": "'pleɪɡraʊnd"
+  },
+  {
+    "name": "next",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "下一个的；紧接着的"
+      },
+      {
+        "type": "adv.",
+        "definition": "随后；然后；下一步"
+      },
+      {
+        "type": "n.",
+        "definition": "下一个人（东西）"
+      }
+    ],
+    "usphone": "nekst",
+    "ukphone": "nekst"
+  },
+  {
+    "name": "happen",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "发生"
+      }
+    ],
+    "usphone": "'hæpən",
+    "ukphone": "'hæpən"
+  },
+  {
+    "name": "vase",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "花瓶"
+      }
+    ],
+    "usphone": "veɪs; veɪz",
+    "ukphone": "vɑːz"
+  }
+]

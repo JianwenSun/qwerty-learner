@@ -38,11 +38,11 @@ export default function WordList() {
 
   return (
     <>
-      <Tooltip content="List" placement="top" className="!absolute left-5 top-[50%] z-20">
+      <Tooltip content="List" placement="top" className="!absolute left-5 top-[40%] z-20">
         <button
           type="button"
           onClick={openModal}
-          className="fixed left-0 top-[50%] z-20 rounded-lg rounded-l-none bg-indigo-50 px-2 py-3 text-lg hover:bg-indigo-200 focus:outline-none dark:bg-indigo-900 dark:hover:bg-indigo-800"
+          className="fixed left-0 top-[40%] z-20 rounded-lg rounded-l-none bg-indigo-50 px-2 py-3 text-lg hover:bg-indigo-200 focus:outline-none dark:bg-indigo-900 dark:hover:bg-indigo-800"
         >
           <ListIcon className="h-6 w-6 text-lg text-indigo-500 dark:text-white" />
         </button>
@@ -54,8 +54,8 @@ export default function WordList() {
           <IconX onClick={closeModal} className="cursor-pointer" />
         </Dialog.Title>
         <ScrollArea.Root className="flex-1 select-none overflow-y-auto ">
-          <ScrollArea.Viewport className="h-full w-full px-3">
-            <div className="flex h-full w-full flex-col gap-1">
+          <ScrollArea.Viewport className="h-full w-full px-3"> 
+            <div className="flex flex-col gap-1">
               {state.chapterData.words?.map((word, index) => {
                 return <WordCard word={word} key={`${word.name}_${index}`} isActive={state.chapterData.index === index} />
               })}

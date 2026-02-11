@@ -44,7 +44,7 @@ export default function WordChip({ word }: { word: WordWithIndex }) {
           }}
           {...getFloatingProps()}
         >
-          {word.trans}
+          {word.pos?.map((pos) => pos.definition).join('；')}
         </div>
       )}
     </>

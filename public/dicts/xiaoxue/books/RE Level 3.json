@@ -1,0 +1,3607 @@
+[
+  {
+    "name": "competitor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "竞争者，对手"
+      }
+    ],
+    "usphone": "kəm'petɪtər",
+    "ukphone": "kəm'petɪtə(r)"
+  },
+  {
+    "name": "defeat",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "打败，战胜"
+      }
+    ],
+    "usphone": "dɪ'fiːt",
+    "ukphone": "dɪ'fiːt"
+  },
+  {
+    "name": "establish",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "建立"
+      },
+      {
+        "type": "v.",
+        "definition": "创立"
+      },
+      {
+        "type": "v.",
+        "definition": "证实"
+      }
+    ],
+    "usphone": "ɪ'stæblɪʃ",
+    "ukphone": "ɪ'stæblɪʃ"
+  },
+  {
+    "name": "passion",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "激情，热情；强烈的爱；酷爱"
+      }
+    ],
+    "usphone": "'pæʃn",
+    "ukphone": "'pæʃn"
+  },
+  {
+    "name": "recruit",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "吸收（新成员），征募（新兵），动员…（提供帮助），（通过招募）组成"
+      },
+      {
+        "type": "n.",
+        "definition": "新兵，新警员，新成员"
+      }
+    ],
+    "usphone": "rɪ'kruːt",
+    "ukphone": "rɪ'kruːt"
+  },
+  {
+    "name": "responsible",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有责任的；承担义务的；应受责备的；可信任的"
+      }
+    ],
+    "usphone": "rɪ'spɑːnsəbl",
+    "ukphone": "rɪ'spɒnsəbl"
+  },
+  {
+    "name": "unique",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "独特的"
+      },
+      {
+        "type": "adj.",
+        "definition": "独一无二的"
+      },
+      {
+        "type": "adj.",
+        "definition": "特有的"
+      }
+    ],
+    "usphone": "ju'niːk",
+    "ukphone": "ju'niːk"
+  },
+  {
+    "name": "unity",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "团结，一致；联合（状态）；统一（状态）"
+      }
+    ],
+    "usphone": "'juːnəti",
+    "ukphone": "'juːnəti"
+  },
+  {
+    "name": "universal",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "普遍的"
+      },
+      {
+        "type": "adj.",
+        "definition": "宇宙的"
+      },
+      {
+        "type": "adj.",
+        "definition": "全体的"
+      }
+    ],
+    "usphone": "ˌjuːnɪ'vɜːrsl",
+    "ukphone": "ˌjuːnɪ'vɜːsl"
+  },
+  {
+    "name": "victory",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "胜利"
+      }
+    ],
+    "usphone": "'vɪktəri",
+    "ukphone": "'vɪktəri"
+  },
+  {
+    "name": "adjust",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "调节"
+      },
+      {
+        "type": "v.",
+        "definition": "适应"
+      }
+    ],
+    "usphone": "ə'dʒʌst",
+    "ukphone": "ə'dʒʌst"
+  },
+  {
+    "name": "automatic",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "自动的，自动化的"
+      }
+    ],
+    "usphone": "ˌɔːtə'mætɪk",
+    "ukphone": "ˌɔːtə'mætɪk"
+  },
+  {
+    "name": "champion",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "冠军，优胜者"
+      },
+      {
+        "type": "v.",
+        "definition": "为…而斗争，捍卫"
+      }
+    ],
+    "usphone": "'tʃæmpiən",
+    "ukphone": "'tʃæmpiən"
+  },
+  {
+    "name": "differentiate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "区分，区别，辨别，表明…间的差别"
+      }
+    ],
+    "usphone": "ˌdɪfə'renʃieɪt",
+    "ukphone": "ˌdɪfə'renʃieɪt"
+  },
+  {
+    "name": "elite",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "精英，精华，杰出人物"
+      }
+    ],
+    "usphone": "ɪˈliːt",
+    "ukphone": "ɪˈliːt"
+  },
+  {
+    "name": "enhance",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "提高；增强；增进"
+      }
+    ],
+    "usphone": "ɪn'hæns",
+    "ukphone": "ɪn'hɑːns"
+  },
+  {
+    "name": "generate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "产生，创造；造成，引起"
+      }
+    ],
+    "usphone": "'dʒenəreɪt",
+    "ukphone": "'dʒenəreɪt"
+  },
+  {
+    "name": "genetic",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "基因的，遗传学的"
+      }
+    ],
+    "usphone": "dʒə'netɪk",
+    "ukphone": "dʒə'netɪk"
+  },
+  {
+    "name": "psychological",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "心灵的，心理的，精神上的，心理学的"
+      }
+    ],
+    "usphone": "ˌsaɪkə'lɑːdʒɪkl",
+    "ukphone": "ˌsaɪkə'lɒdʒɪkl"
+  },
+  {
+    "name": "require",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "需要，要求"
+      }
+    ],
+    "usphone": "rɪ'kwaɪər",
+    "ukphone": "rɪ'kwaɪə(r)"
+  },
+  {
+    "name": "associate with",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "与...常在一起，和...联想在一起"
+      }
+    ],
+    "usphone": "ə'soʊʊʃiːˌeɪt wɪð",
+    "ukphone": "ə'səʊʃɪeɪt wɪð"
+  },
+  {
+    "name": "conform",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "顺从；遵从；随大流；一致"
+      }
+    ],
+    "usphone": "kən'fɔːrm",
+    "ukphone": "kən'fɔːm"
+  },
+  {
+    "name": "consumer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "消费者；顾客；用户"
+      }
+    ],
+    "usphone": "kənˈsuːmər",
+    "ukphone": "kən'sjuːmə"
+  },
+  {
+    "name": "desire",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "愿望，渴望，欲望"
+      },
+      {
+        "type": "v.",
+        "definition": "愿望，渴望"
+      }
+    ],
+    "usphone": "dɪ'zaɪər",
+    "ukphone": "dɪ'zaɪə(r)"
+  },
+  {
+    "name": "devote",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "专心致力于"
+      },
+      {
+        "type": "v.",
+        "definition": "奉献"
+      },
+      {
+        "type": "v.",
+        "definition": "投入"
+      }
+    ],
+    "usphone": "dɪ'voʊt",
+    "ukphone": "dɪ'vəʊt"
+  },
+  {
+    "name": "feature",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "特色，特征"
+      },
+      {
+        "type": "v.",
+        "definition": "以……为特色，以……为主"
+      }
+    ],
+    "usphone": "'fiːtʃər",
+    "ukphone": "'fiːtʃə(r)"
+  },
+  {
+    "name": "gender",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "性别；性别差异（尤指社会和文化差异，而非生理差异）"
+      },
+      {
+        "type": "v.",
+        "definition": "〈诗〉同“engender”"
+      }
+    ],
+    "usphone": "'dʒendər",
+    "ukphone": "'dʒendə(r)"
+  },
+  {
+    "name": "notion",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "观念，想法，主张"
+      }
+    ],
+    "usphone": "'noʊʃn",
+    "ukphone": "'nəʊʃn"
+  },
+  {
+    "name": "subjective",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "主观的"
+      }
+    ],
+    "usphone": "səb'dʒektɪv",
+    "ukphone": "səb'dʒektɪv"
+  },
+  {
+    "name": "uniform",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "制服"
+      }
+    ],
+    "usphone": "'juːnɪfɔːrm",
+    "ukphone": "'juːnɪfɔːm"
+  },
+  {
+    "name": "criminal",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "罪犯"
+      }
+    ],
+    "usphone": "'krɪmɪnl",
+    "ukphone": "'krɪmɪnl"
+  },
+  {
+    "name": "crucial",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "至关重要的，关键性的"
+      }
+    ],
+    "usphone": "'kruːʃl",
+    "ukphone": "'kruːʃl"
+  },
+  {
+    "name": "external",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "外部的，外面的，外来的"
+      }
+    ],
+    "usphone": "ɪk'stɜːrnl",
+    "ukphone": "ɪk'stɜːnl"
+  },
+  {
+    "name": "fade",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "褪色"
+      },
+      {
+        "type": "v.",
+        "definition": "逐渐消失"
+      },
+      {
+        "type": "v.",
+        "definition": "使变暗"
+      }
+    ],
+    "usphone": "feɪd",
+    "ukphone": "feɪd"
+  },
+  {
+    "name": "leisure",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "闲暇；空闲；休闲"
+      },
+      {
+        "type": "adj.",
+        "definition": "空闲的，业余的"
+      }
+    ],
+    "usphone": "'liːʒər",
+    "ukphone": "'leʒə(r)"
+  },
+  {
+    "name": "mature",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "成熟的"
+      }
+    ],
+    "usphone": "mə'tʃʊr",
+    "ukphone": "mə'tʃʊə(r)"
+  },
+  {
+    "name": "permanent",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "永久的"
+      }
+    ],
+    "usphone": "'pɜːrmənənt",
+    "ukphone": "'pɜːmənənt"
+  },
+  {
+    "name": "protective",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "保护的，防卫的"
+      }
+    ],
+    "usphone": "prə'tektɪv",
+    "ukphone": "prə'tektɪv"
+  },
+  {
+    "name": "sector",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "部门"
+      },
+      {
+        "type": "n.",
+        "definition": "部分"
+      },
+      {
+        "type": "n.",
+        "definition": "防区"
+      },
+      {
+        "type": "n.",
+        "definition": "扇形"
+      }
+    ],
+    "usphone": "'sektər",
+    "ukphone": "'sektə(r)"
+  },
+  {
+    "name": "status",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "身份"
+      },
+      {
+        "type": "n.",
+        "definition": "社会地位"
+      }
+    ],
+    "usphone": "ˈstætəs; ˈsteɪtəs",
+    "ukphone": "ˈsteɪtəs"
+  },
+  {
+    "name": "capture",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "抓取，获得；迷住；记录，描述；引起注意"
+      },
+      {
+        "type": "n.",
+        "definition": "俘获"
+      }
+    ],
+    "usphone": "'kæptʃər",
+    "ukphone": "'kæptʃə(r)"
+  },
+  {
+    "name": "extinct",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "（动植物，语言）灭绝的；（习俗，工作等）消失的"
+      }
+    ],
+    "usphone": "ɪk'stɪŋkt",
+    "ukphone": "ɪk'stɪŋkt"
+  },
+  {
+    "name": "grasp",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "抓紧"
+      },
+      {
+        "type": "v.",
+        "definition": "领会"
+      },
+      {
+        "type": "n.",
+        "definition": "理解"
+      },
+      {
+        "type": "n.",
+        "definition": "紧握"
+      }
+    ],
+    "usphone": "ɡræsp",
+    "ukphone": "ɡrɑːsp"
+  },
+  {
+    "name": "physical",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "身体的"
+      },
+      {
+        "type": "adj.",
+        "definition": "物质的"
+      },
+      {
+        "type": "adj.",
+        "definition": "物理学的"
+      }
+    ],
+    "usphone": "'fɪzɪkl",
+    "ukphone": "'fɪzɪkl"
+  },
+  {
+    "name": "primary",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "主要的"
+      },
+      {
+        "type": "adj.",
+        "definition": "最初的"
+      },
+      {
+        "type": "adj.",
+        "definition": "初级的"
+      }
+    ],
+    "usphone": "'praɪmeri",
+    "ukphone": "'praɪməri"
+  },
+  {
+    "name": "reproduce",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "繁殖生育；再生产，再制造；再现；复制"
+      }
+    ],
+    "usphone": "ˌriːprə'duːs",
+    "ukphone": "ˌriːprə'djuːs"
+  },
+  {
+    "name": "signal",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "信号"
+      },
+      {
+        "type": "n.",
+        "definition": "标志"
+      }
+    ],
+    "usphone": "'sɪɡnəl",
+    "ukphone": "'sɪɡnəl"
+  },
+  {
+    "name": "suburb",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "郊区，城外"
+      }
+    ],
+    "usphone": "'sʌbɜːrb",
+    "ukphone": "'sʌbɜːb"
+  },
+  {
+    "name": "tend to",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "往往会；常常就；趋向；走向；倾向；趋于；照料；照管；护理"
+      }
+    ],
+    "usphone": "tend tu",
+    "ukphone": "tend tu"
+  },
+  {
+    "name": "threaten",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "构成威胁"
+      },
+      {
+        "type": "v.",
+        "definition": "恐吓"
+      }
+    ],
+    "usphone": "'θretn",
+    "ukphone": "'θretn"
+  },
+  {
+    "name": "bonus",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "奖金"
+      },
+      {
+        "type": "n.",
+        "definition": "意外收获"
+      },
+      {
+        "type": "n.",
+        "definition": "好处"
+      }
+    ],
+    "usphone": "'boʊnəs",
+    "ukphone": "'bəʊnəs"
+  },
+  {
+    "name": "conflict",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "冲突"
+      },
+      {
+        "type": "n.",
+        "definition": "矛盾"
+      },
+      {
+        "type": "n.",
+        "definition": "争论"
+      }
+    ],
+    "usphone": "'kɑːnflɪkt",
+    "ukphone": "'kɒnflɪkt"
+  },
+  {
+    "name": "distinctive",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "独特的，特别的，有特色的"
+      }
+    ],
+    "usphone": "dɪ'stɪŋktɪv",
+    "ukphone": "dɪ'stɪŋktɪv"
+  },
+  {
+    "name": "drag",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "拖，拉，拽"
+      }
+    ],
+    "usphone": "dræɡ",
+    "ukphone": "dræɡ"
+  },
+  {
+    "name": "enforce",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "实施，执行；强迫，迫使"
+      }
+    ],
+    "usphone": "ɪn'fɔːrs",
+    "ukphone": "ɪn'fɔːs"
+  },
+  {
+    "name": "landscape",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "风景，景色"
+      },
+      {
+        "type": "n.",
+        "definition": "风景画"
+      }
+    ],
+    "usphone": "'lændskeɪp",
+    "ukphone": "'lændskeɪp"
+  },
+  {
+    "name": "officially",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "正式地, 官方地, 公开地, 依据法规等"
+      }
+    ],
+    "usphone": "ə'fɪʃəli",
+    "ukphone": "ə'fɪʃəli"
+  },
+  {
+    "name": "poverty",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "贫困，贫穷"
+      },
+      {
+        "type": "n.",
+        "definition": "贫乏"
+      }
+    ],
+    "usphone": "'pɑːvərti",
+    "ukphone": "'pɒvəti"
+  },
+  {
+    "name": "reverse",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "反面；背面；倒退；相反的情况（或事物）"
+      },
+      {
+        "type": "v.",
+        "definition": "颠倒；倒车；撤销；彻底转变"
+      },
+      {
+        "type": "adj.",
+        "definition": "相反的；反面的；反向的"
+      }
+    ],
+    "usphone": "rɪ'vɜːrs",
+    "ukphone": "rɪ'vɜːs"
+  },
+  {
+    "name": "ancestor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "祖先"
+      }
+    ],
+    "usphone": "'ænsestər",
+    "ukphone": "'ænsestə(r)"
+  },
+  {
+    "name": "dawn",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "黎明，拂晓"
+      }
+    ],
+    "usphone": "dɔːn",
+    "ukphone": "dɔːn"
+  },
+  {
+    "name": "destruction",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "破坏，毁灭"
+      }
+    ],
+    "usphone": "dɪ'strʌkʃn",
+    "ukphone": "dɪ'strʌkʃn"
+  },
+  {
+    "name": "disaster",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "灾难"
+      },
+      {
+        "type": "n.",
+        "definition": "祸患"
+      }
+    ],
+    "usphone": "dɪ'zæstər",
+    "ukphone": "dɪ'zɑːstə(r)"
+  },
+  {
+    "name": "displace",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "取代，替代；转移；迫使（某人）离开家园"
+      }
+    ],
+    "usphone": "dɪs'pleɪs",
+    "ukphone": "dɪs'pleɪs"
+  },
+  {
+    "name": "expand",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "扩大"
+      },
+      {
+        "type": "v.",
+        "definition": "发展"
+      }
+    ],
+    "usphone": "ɪk'spænd",
+    "ukphone": "ɪk'spænd"
+  },
+  {
+    "name": "inevitable",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "不可避免的，必然（发生）的"
+      }
+    ],
+    "usphone": "ɪn'evɪtəbl",
+    "ukphone": "ɪn'evɪtəbl"
+  },
+  {
+    "name": "monitor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "班长"
+      },
+      {
+        "type": "n.",
+        "definition": "监视器"
+      },
+      {
+        "type": "v.",
+        "definition": "监控，监视"
+      }
+    ],
+    "usphone": "'mɑːnɪtər",
+    "ukphone": "'mɒnɪtə(r)"
+  },
+  {
+    "name": "summit",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "最高点；顶点；山顶"
+      },
+      {
+        "type": "n.",
+        "definition": "首脑会议；峰会"
+      }
+    ],
+    "usphone": "'sʌmɪt",
+    "ukphone": "'sʌmɪt"
+  },
+  {
+    "name": "witness",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "目击者，证人"
+      },
+      {
+        "type": "v.",
+        "definition": "目击，见证"
+      }
+    ],
+    "usphone": "'wɪtnəs",
+    "ukphone": "'wɪtnəs"
+  },
+  {
+    "name": "data",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "数据"
+      }
+    ],
+    "usphone": "ˈdeɪtə",
+    "ukphone": "ˈdeɪtə"
+  },
+  {
+    "name": "detect",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "测出；发现，查明"
+      }
+    ],
+    "usphone": "dɪ'tekt",
+    "ukphone": "dɪ'tekt"
+  },
+  {
+    "name": "foundation",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "基础，地基；建立；基金会"
+      }
+    ],
+    "usphone": "faʊn'deɪʃn",
+    "ukphone": "faʊn'deɪʃn"
+  },
+  {
+    "name": "laboratory",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "实验室"
+      }
+    ],
+    "usphone": "'læbrətɔːri",
+    "ukphone": "lə'bɒrətri"
+  },
+  {
+    "name": "massive",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "巨大的"
+      },
+      {
+        "type": "adj.",
+        "definition": "严重的"
+      },
+      {
+        "type": "adj.",
+        "definition": "大规模的"
+      }
+    ],
+    "usphone": "'mæsɪv",
+    "ukphone": "'mæsɪv"
+  },
+  {
+    "name": "precise",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "恰好"
+      },
+      {
+        "type": "adj.",
+        "definition": "精确的"
+      }
+    ],
+    "usphone": "prɪ'saɪs",
+    "ukphone": "prɪ'saɪs"
+  },
+  {
+    "name": "random",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "任意的"
+      }
+    ],
+    "usphone": "'rændəm",
+    "ukphone": "'rændəm"
+  },
+  {
+    "name": "schedule",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "日程表"
+      },
+      {
+        "type": "n.",
+        "definition": "时刻表"
+      },
+      {
+        "type": "n.",
+        "definition": "进度表"
+      },
+      {
+        "type": "v.",
+        "definition": "安排，预定"
+      }
+    ],
+    "usphone": "ˈskedʒuːl",
+    "ukphone": "ˈʃedjuːl"
+  },
+  {
+    "name": "track",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "追踪"
+      },
+      {
+        "type": "v.",
+        "definition": "跟踪"
+      },
+      {
+        "type": "n.",
+        "definition": "小道"
+      },
+      {
+        "type": "n.",
+        "definition": "踪迹"
+      },
+      {
+        "type": "n.",
+        "definition": "轨道"
+      }
+    ],
+    "usphone": "træk",
+    "ukphone": "træk"
+  },
+  {
+    "name": "zone",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "区域"
+      },
+      {
+        "type": "n.",
+        "definition": "范围"
+      }
+    ],
+    "usphone": "zoʊn",
+    "ukphone": "zəʊn"
+  },
+  {
+    "name": "architecture",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "建筑风格"
+      },
+      {
+        "type": "n.",
+        "definition": "建筑学"
+      }
+    ],
+    "usphone": "'ɑːrkɪtektʃər",
+    "ukphone": "'ɑːkɪtektʃə(r)"
+  },
+  {
+    "name": "award",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "奖"
+      },
+      {
+        "type": "n.",
+        "definition": "奖品"
+      },
+      {
+        "type": "n.",
+        "definition": "奖金"
+      }
+    ],
+    "usphone": "ə'wɔːrd",
+    "ukphone": "ə'wɔːd"
+  },
+  {
+    "name": "convert",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "（使）转变；（使）改变信仰"
+      },
+      {
+        "type": "n.",
+        "definition": "皈依者；改变信仰的人"
+      }
+    ],
+    "usphone": "kən'vɜːrt",
+    "ukphone": "kən'vɜːt"
+  },
+  {
+    "name": "cure",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "治愈"
+      },
+      {
+        "type": "n.",
+        "definition": "解决"
+      },
+      {
+        "type": "v.",
+        "definition": "治疗"
+      },
+      {
+        "type": "v.",
+        "definition": "解决"
+      }
+    ],
+    "usphone": "kjʊr",
+    "ukphone": "kjʊə(r)"
+  },
+  {
+    "name": "literally",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "逐字地"
+      },
+      {
+        "type": "adv.",
+        "definition": "按字义"
+      },
+      {
+        "type": "adv.",
+        "definition": "确确实实地"
+      }
+    ],
+    "usphone": "'lɪtərəli",
+    "ukphone": "'lɪtrəli"
+  },
+  {
+    "name": "migrate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "移动，迁移；（鸟类、动物等）随季节而迁徙；移民；转移"
+      }
+    ],
+    "usphone": "'maɪɡreɪt",
+    "ukphone": "maɪ'ɡreɪt"
+  },
+  {
+    "name": "monster",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "怪物；巨物；恶人"
+      },
+      {
+        "type": "adj.",
+        "definition": "巨大的，庞大的"
+      }
+    ],
+    "usphone": "'mɑːnstər",
+    "ukphone": "'mɒnstə(r)"
+  },
+  {
+    "name": "naturally",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "自然地，自然而然地，理所当然地，顺理成章地"
+      }
+    ],
+    "usphone": "'nætʃrəli",
+    "ukphone": "'nætʃrəli"
+  },
+  {
+    "name": "spectacular",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "壮观的，壮丽的，令人惊叹的"
+      },
+      {
+        "type": "n.",
+        "definition": "壮观的场面，精彩的表演"
+      }
+    ],
+    "usphone": "spek'tækjələr",
+    "ukphone": "spek'tækjələ(r)"
+  },
+  {
+    "name": "tension",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "紧张局势"
+      },
+      {
+        "type": "n.",
+        "definition": "对立"
+      },
+      {
+        "type": "n.",
+        "definition": "张力"
+      }
+    ],
+    "usphone": "'tenʃn",
+    "ukphone": "'tenʃn"
+  },
+  {
+    "name": "balance",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "平衡"
+      },
+      {
+        "type": "n.",
+        "definition": "余额"
+      },
+      {
+        "type": "n.",
+        "definition": "天平"
+      }
+    ],
+    "usphone": "'bæləns",
+    "ukphone": "'bæləns"
+  },
+  {
+    "name": "destination",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "目的地"
+      }
+    ],
+    "usphone": "ˌdestɪ'neɪʃn",
+    "ukphone": "ˌdestɪ'neɪʃn"
+  },
+  {
+    "name": "eager",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "热切的，渴望的"
+      }
+    ],
+    "usphone": "'iːɡər",
+    "ukphone": "'iːɡə(r)"
+  },
+  {
+    "name": "isolated",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "偏远的，孤立的，孤独的"
+      },
+      {
+        "type": "v.",
+        "definition": "分离"
+      }
+    ],
+    "usphone": "'aɪsəleɪtɪd",
+    "ukphone": "'aɪsəleɪtɪd"
+  },
+  {
+    "name": "magnificent",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "壮观的，瑰丽的，精彩的，了不起的"
+      }
+    ],
+    "usphone": "mæɡ'nɪfɪsnt",
+    "ukphone": "mæɡ'nɪfɪsnt"
+  },
+  {
+    "name": "prohibit",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "禁止"
+      }
+    ],
+    "usphone": "prə'hɪbɪt",
+    "ukphone": "prə'hɪbɪt"
+  },
+  {
+    "name": "rank",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "等级，级别"
+      }
+    ],
+    "usphone": "ræŋk",
+    "ukphone": "ræŋk"
+  },
+  {
+    "name": "spoil",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "毁掉"
+      },
+      {
+        "type": "v.",
+        "definition": "溺爱"
+      },
+      {
+        "type": "v.",
+        "definition": "变质"
+      }
+    ],
+    "usphone": "spɔɪl",
+    "ukphone": "spɔɪl"
+  },
+  {
+    "name": "state",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "状态"
+      },
+      {
+        "type": "n.",
+        "definition": "州"
+      },
+      {
+        "type": "n.",
+        "definition": "国家"
+      },
+      {
+        "type": "v.",
+        "definition": "陈述，说明"
+      }
+    ],
+    "usphone": "steɪt",
+    "ukphone": "steɪt"
+  },
+  {
+    "name": "ultimate",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "最后的，最终的；极端的，终极的；根本的，基本的；最大的；最高的；合计的"
+      },
+      {
+        "type": "n.",
+        "definition": "最终的事物；基本事实，基本原则；终极；极品"
+      }
+    ],
+    "usphone": "'ʌltɪmət",
+    "ukphone": "'ʌltɪmət"
+  },
+  {
+    "name": "abuse",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "虐待"
+      },
+      {
+        "type": "v.",
+        "definition": "辱骂"
+      },
+      {
+        "type": "v.",
+        "definition": "滥用"
+      }
+    ],
+    "usphone": "ə'bjuːs; ə'bjuːz",
+    "ukphone": "ə'bjuːs; ə'bjuːz"
+  },
+  {
+    "name": "contradict",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "反驳"
+      },
+      {
+        "type": "v.",
+        "definition": "抵触"
+      }
+    ],
+    "usphone": "ˌkɑːntrəˈdɪkt",
+    "ukphone": "ˌkɒntrəˈdɪkt"
+  },
+  {
+    "name": "exhibit",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "展览，展出；显示"
+      },
+      {
+        "type": "n.",
+        "definition": "展览品，展览"
+      }
+    ],
+    "usphone": "ɪɡ'zɪbɪt",
+    "ukphone": "ɪɡ'zɪbɪt"
+  },
+  {
+    "name": "facilitate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "促进；助长；使便利，使容易；帮助"
+      }
+    ],
+    "usphone": "fə'sɪlɪteɪt",
+    "ukphone": "fə'sɪlɪteɪt"
+  },
+  {
+    "name": "furthermore",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "此外，而且，再者"
+      }
+    ],
+    "usphone": "ˌfɜːrðər'mɔːr",
+    "ukphone": "ˌfɜːðə'mɔː(r)"
+  },
+  {
+    "name": "mental",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "精神的，心理的"
+      },
+      {
+        "type": "adj.",
+        "definition": "在脑中进行的"
+      }
+    ],
+    "usphone": "'mentl",
+    "ukphone": "'mentl"
+  },
+  {
+    "name": "proof",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "证据"
+      },
+      {
+        "type": "n.",
+        "definition": "证词"
+      },
+      {
+        "type": "n.",
+        "definition": "证实"
+      }
+    ],
+    "usphone": "pruːf",
+    "ukphone": "pruːf"
+  },
+  {
+    "name": "reaction",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "反应，反响；化学反应"
+      }
+    ],
+    "usphone": "ri'ækʃn",
+    "ukphone": "ri'ækʃn"
+  },
+  {
+    "name": "specialist",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "专科医师"
+      },
+      {
+        "type": "n.",
+        "definition": "专家"
+      }
+    ],
+    "usphone": "'speʃəlɪst",
+    "ukphone": "'speʃəlɪst"
+  },
+  {
+    "name": "temporary",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "临时的，暂时的"
+      }
+    ],
+    "usphone": "'tempəreri",
+    "ukphone": "'temprəri"
+  },
+  {
+    "name": "concentration",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "专心；集中；浓度"
+      }
+    ],
+    "usphone": "ˌkɒnsen'treɪʃən",
+    "ukphone": "ˌkɒnsen'treɪʃən"
+  },
+  {
+    "name": "consequently",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "因此，所以"
+      }
+    ],
+    "usphone": "'kɑːnsəkwentli",
+    "ukphone": "'kɒnsɪkwəntli"
+  },
+  {
+    "name": "constant",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "持续的，不断的"
+      }
+    ],
+    "usphone": "'kɑːnstənt",
+    "ukphone": "'kɒnstənt"
+  },
+  {
+    "name": "excessive",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "过多的，过分的"
+      }
+    ],
+    "usphone": "ɪk'sesɪv",
+    "ukphone": "ɪk'sesɪv"
+  },
+  {
+    "name": "focus",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "重点"
+      },
+      {
+        "type": "n.",
+        "definition": "关注"
+      },
+      {
+        "type": "n.",
+        "definition": "焦距"
+      },
+      {
+        "type": "v.",
+        "definition": "集中于"
+      },
+      {
+        "type": "v.",
+        "definition": "使对焦"
+      }
+    ],
+    "usphone": "'foʊkəs",
+    "ukphone": "'fəʊkəs"
+  },
+  {
+    "name": "in turn",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "反之，反过来；转而；依次；相应地"
+      }
+    ],
+    "usphone": "ɪn tɜːrn",
+    "ukphone": "ɪn tɜːn"
+  },
+  {
+    "name": "surroundings",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "环境"
+      }
+    ],
+    "usphone": "sə'raʊndɪŋz",
+    "ukphone": "sə'raʊndɪŋz"
+  },
+  {
+    "name": "switch",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "开关，电闸"
+      },
+      {
+        "type": "n.",
+        "definition": "转变"
+      },
+      {
+        "type": "v.",
+        "definition": "转换，转变"
+      }
+    ],
+    "usphone": "swɪtʃ",
+    "ukphone": "swɪtʃ"
+  },
+  {
+    "name": "therapy",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "治疗，疗法"
+      }
+    ],
+    "usphone": "'θerəpi",
+    "ukphone": "'θerəpi"
+  },
+  {
+    "name": "visual",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "视力的，视觉的"
+      }
+    ],
+    "usphone": "'vɪʒuəl",
+    "ukphone": "'vɪʒuəl"
+  },
+  {
+    "name": "capacity",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "容量，容积；能力；生产力；地位；职位，职责"
+      },
+      {
+        "type": "adj.",
+        "definition": "（达到最大容量）满的"
+      }
+    ],
+    "usphone": "kə'pæsəti",
+    "ukphone": "kə'pæsəti"
+  },
+  {
+    "name": "decline",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "减少"
+      },
+      {
+        "type": "v.",
+        "definition": "下降"
+      },
+      {
+        "type": "n.",
+        "definition": "衰退"
+      },
+      {
+        "type": "v.",
+        "definition": "衰败"
+      },
+      {
+        "type": "n.",
+        "definition": "下降"
+      },
+      {
+        "type": "v.",
+        "definition": "谢绝"
+      }
+    ],
+    "usphone": "dɪ'klaɪn",
+    "ukphone": "dɪ'klaɪn"
+  },
+  {
+    "name": "dispose",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "丢弃， 扔掉；排列，布置，安排；使倾向于；应付，解决"
+      }
+    ],
+    "usphone": "dɪ'spoʊz",
+    "ukphone": "dɪ'spəʊz"
+  },
+  {
+    "name": "eliminate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "排除，剔除；消除"
+      }
+    ],
+    "usphone": "ɪ'lɪmɪneɪt",
+    "ukphone": "ɪ'lɪmɪneɪt"
+  },
+  {
+    "name": "equivalent",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "等价的，相等的"
+      },
+      {
+        "type": "n.",
+        "definition": "相等的东西；对应词"
+      }
+    ],
+    "usphone": "ɪ'kwɪvələnt",
+    "ukphone": "ɪ'kwɪvələnt"
+  },
+  {
+    "name": "guarantee",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "保证"
+      },
+      {
+        "type": "v.",
+        "definition": "担保"
+      },
+      {
+        "type": "n.",
+        "definition": "保证"
+      },
+      {
+        "type": "n.",
+        "definition": "商品使用保证"
+      }
+    ],
+    "usphone": "ˌɡærən'tiː",
+    "ukphone": "ˌɡærən'tiː"
+  },
+  {
+    "name": "protest",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "反对，抗议"
+      },
+      {
+        "type": "n.",
+        "definition": "抗议，反对"
+      }
+    ],
+    "usphone": "'proʊtest",
+    "ukphone": "'prəʊtest"
+  },
+  {
+    "name": "steep",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "陡峭的"
+      },
+      {
+        "type": "adj.",
+        "definition": "急剧的"
+      },
+      {
+        "type": "adj.",
+        "definition": "难以接受"
+      }
+    ],
+    "usphone": "stiːp",
+    "ukphone": "stiːp"
+  },
+  {
+    "name": "substitute",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "代用品，替代品"
+      },
+      {
+        "type": "v.",
+        "definition": "用……代替"
+      }
+    ],
+    "usphone": "'sʌbstɪtuːt",
+    "ukphone": "'sʌbstɪtjuːt"
+  },
+  {
+    "name": "utilize",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "利用；使用"
+      }
+    ],
+    "usphone": "'juːtəlaɪz",
+    "ukphone": "'juːtəlaɪz"
+  },
+  {
+    "name": "comprehensive",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "综合的，全面的；有理解力的；详尽的"
+      }
+    ],
+    "usphone": "ˌkɑːmprɪ'hensɪv",
+    "ukphone": "ˌkɒmprɪ'hensɪv"
+  },
+  {
+    "name": "cooling",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "冷却；冷却机"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "distribute",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "分发"
+      },
+      {
+        "type": "v.",
+        "definition": "分配"
+      },
+      {
+        "type": "v.",
+        "definition": "分布"
+      }
+    ],
+    "usphone": "dɪ'strɪbjuːt",
+    "ukphone": "dɪ'strɪbjuːt"
+  },
+  {
+    "name": "efficiency",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "效率；效能；功效"
+      }
+    ],
+    "usphone": "ɪ'fɪʃnsi",
+    "ukphone": "ɪ'fɪʃnsi"
+  },
+  {
+    "name": "emission",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "排放，散发，射出；排放物，散发物"
+      }
+    ],
+    "usphone": "i'mɪʃn",
+    "ukphone": "i'mɪʃn"
+  },
+  {
+    "name": "regulation",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "规章，条例"
+      },
+      {
+        "type": "n.",
+        "definition": "管理"
+      }
+    ],
+    "usphone": "ˌreɡju'leɪʃn",
+    "ukphone": "ˌreɡju'leɪʃn"
+  },
+  {
+    "name": "resident",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "居民，定居者；住客，寄宿者；寄宿生;（美国）高级专科住院医师；无迁徙习性的动物"
+      },
+      {
+        "type": "adj.",
+        "definition": "在某地居住的，常驻的；住校的；住院的；固有的；无迁徙习性的"
+      }
+    ],
+    "usphone": "'rezɪdənt",
+    "ukphone": "'rezɪdənt"
+  },
+  {
+    "name": "sustainable",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "可持续的"
+      }
+    ],
+    "usphone": "sə'steɪnəbl",
+    "ukphone": "sə'steɪnəbl"
+  },
+  {
+    "name": "unrealistic",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "不切实际的，不实事求是的"
+      }
+    ],
+    "usphone": "ˌʌnriːə'lɪstɪk",
+    "ukphone": "ˌʌnrɪə'lɪstɪk"
+  },
+  {
+    "name": "wealthy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "富有的"
+      },
+      {
+        "type": "adj.",
+        "definition": "富裕的"
+      }
+    ],
+    "usphone": "'welθi",
+    "ukphone": "'welθi"
+  },
+  {
+    "name": "acquire",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "获得"
+      },
+      {
+        "type": "v.",
+        "definition": "学到"
+      },
+      {
+        "type": "v.",
+        "definition": "购得"
+      }
+    ],
+    "usphone": "ə'kwaɪər",
+    "ukphone": "ə'kwaɪə(r)"
+  },
+  {
+    "name": "citizen",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "市民"
+      },
+      {
+        "type": "n.",
+        "definition": "公民"
+      }
+    ],
+    "usphone": "'sɪtɪzn",
+    "ukphone": "'sɪtɪzn"
+  },
+  {
+    "name": "demolish",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "拆毁，破坏，驳倒（观点或理论），轻易而彻底地打败"
+      }
+    ],
+    "usphone": "dɪ'mɑːlɪʃ",
+    "ukphone": "dɪ'mɒlɪʃ"
+  },
+  {
+    "name": "former",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "以前的"
+      },
+      {
+        "type": "adj.",
+        "definition": "前者的"
+      }
+    ],
+    "usphone": "'fɔːrmər",
+    "ukphone": "'fɔːmə(r)"
+  },
+  {
+    "name": "monument",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "纪念碑"
+      },
+      {
+        "type": "n.",
+        "definition": "历史遗迹"
+      }
+    ],
+    "usphone": "'mɑːnjumənt",
+    "ukphone": "'mɒnjumənt"
+  },
+  {
+    "name": "proposal",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "提议"
+      },
+      {
+        "type": "n.",
+        "definition": "求婚"
+      }
+    ],
+    "usphone": "prə'poʊzl",
+    "ukphone": "prə'pəʊzl"
+  },
+  {
+    "name": "regional",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "地区的，区域的，地方的"
+      }
+    ],
+    "usphone": "'riːdʒənl",
+    "ukphone": "'riːdʒənl"
+  },
+  {
+    "name": "renovation",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "革新，翻修，修整"
+      }
+    ],
+    "usphone": "ˌrenə'veɪʃn",
+    "ukphone": "ˌrenə'veɪʃn"
+  },
+  {
+    "name": "repair",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "修理"
+      },
+      {
+        "type": "v.",
+        "definition": "补救"
+      },
+      {
+        "type": "n.",
+        "definition": "修理，修补"
+      }
+    ],
+    "usphone": "rɪ'per",
+    "ukphone": "rɪ'peə(r)"
+  },
+  {
+    "name": "transport",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "交通工具"
+      },
+      {
+        "type": "n.",
+        "definition": "交通"
+      },
+      {
+        "type": "n.",
+        "definition": "运输"
+      },
+      {
+        "type": "v.",
+        "definition": "运输，运送"
+      }
+    ],
+    "usphone": "'trænspɔːrt",
+    "ukphone": "'trænspɔːt"
+  },
+  {
+    "name": "accessible",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "可接近的，可得到的"
+      }
+    ],
+    "usphone": "ək'sesəbl",
+    "ukphone": "ək'sesəbl"
+  },
+  {
+    "name": "border",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "边界"
+      },
+      {
+        "type": "n.",
+        "definition": "国界"
+      },
+      {
+        "type": "v.",
+        "definition": "与…接壤"
+      }
+    ],
+    "usphone": "'bɔːrdər",
+    "ukphone": "'bɔːdə(r)"
+  },
+  {
+    "name": "dense",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "稠密的，密集的，浓厚的"
+      }
+    ],
+    "usphone": "dens",
+    "ukphone": "dens"
+  },
+  {
+    "name": "enormous",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "巨大的，庞大的"
+      }
+    ],
+    "usphone": "ɪ'nɔːrməs",
+    "ukphone": "ɪ'nɔːməs"
+  },
+  {
+    "name": "illustrate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "说明，阐明"
+      },
+      {
+        "type": "v.",
+        "definition": "给……作插图"
+      }
+    ],
+    "usphone": "'ɪləstreɪt",
+    "ukphone": "'ɪləstreɪt"
+  },
+  {
+    "name": "impact",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "冲击"
+      },
+      {
+        "type": "n.",
+        "definition": "影响"
+      },
+      {
+        "type": "n.",
+        "definition": "作用"
+      }
+    ],
+    "usphone": "'ɪmpækt",
+    "ukphone": "'ɪmpækt"
+  },
+  {
+    "name": "occur",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "存在"
+      },
+      {
+        "type": "v.",
+        "definition": "发生"
+      },
+      {
+        "type": "v.",
+        "definition": "出现"
+      }
+    ],
+    "usphone": "ə'kɜːr",
+    "ukphone": "ə'kɜː(r)"
+  },
+  {
+    "name": "partially",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "部分地；在某种程度上；有点儿"
+      }
+    ],
+    "usphone": "'pɑːrʃəli",
+    "ukphone": "'pɑːʃəli"
+  },
+  {
+    "name": "practical",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "实用的"
+      },
+      {
+        "type": "adj.",
+        "definition": "实际的"
+      }
+    ],
+    "usphone": "'præktɪkl",
+    "ukphone": "'præktɪkl"
+  },
+  {
+    "name": "ruin",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "废墟，遗迹"
+      },
+      {
+        "type": "v.",
+        "definition": "破坏，使毁灭"
+      }
+    ],
+    "usphone": "'ruːɪn",
+    "ukphone": "'ruːɪn"
+  },
+  {
+    "name": "actual",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "真实的"
+      },
+      {
+        "type": "adj.",
+        "definition": "实际的"
+      }
+    ],
+    "usphone": "'æktʃuəl",
+    "ukphone": "'æktʃuəl"
+  },
+  {
+    "name": "alter",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "改变"
+      }
+    ],
+    "usphone": "'ɔːltər",
+    "ukphone": "'ɔːltə(r)"
+  },
+  {
+    "name": "conference",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "会议"
+      }
+    ],
+    "usphone": "ˈkɑːnfərəns",
+    "ukphone": "'kɒnfərəns"
+  },
+  {
+    "name": "conversely",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "相反地，反过来"
+      }
+    ],
+    "usphone": "'kɑːnvɜːrsli",
+    "ukphone": "'kɒnvɜːsli"
+  },
+  {
+    "name": "demonstrate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "显示；演示；证明；示威"
+      }
+    ],
+    "usphone": "'demənstreɪt",
+    "ukphone": "'demənstreɪt"
+  },
+  {
+    "name": "downside",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "负面, 不利的一面, 消极面"
+      }
+    ],
+    "usphone": "'daʊnsaɪd",
+    "ukphone": "'daʊnsaɪd"
+  },
+  {
+    "name": "get to",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "（使）抵达；把……送到"
+      },
+      {
+        "type": "phrase.",
+        "definition": "达到（某一阶段或某一部分）"
+      },
+      {
+        "type": "phrase.",
+        "definition": "开始；着手处理"
+      },
+      {
+        "type": "phrase.",
+        "definition": "被……理解"
+      },
+      {
+        "type": "phrase.",
+        "definition": "<美口>对……施加影响；买通"
+      }
+    ],
+    "usphone": "ɡet tu",
+    "ukphone": "ɡet tu"
+  },
+  {
+    "name": "go over",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "仔细察看;检查;搜查"
+      },
+      {
+        "type": "phrase.",
+        "definition": "走过去;走访;离家远行,旅行"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(树等)倒下;(车等)倾覆"
+      },
+      {
+        "type": "phrase.",
+        "definition": "获得成功;得到赞许"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(议案等)被延期讨论"
+      },
+      {
+        "type": "phrase.",
+        "definition": "渡(河、海等);越过(墙、山等);在…上面经过;(从河、海等)渡过;在上面经过;翻越而过"
+      },
+      {
+        "type": "phrase.",
+        "definition": "审查(书面或口头的东西)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "检修"
+      },
+      {
+        "type": "phrase.",
+        "definition": "把…弄干净"
+      },
+      {
+        "type": "phrase.",
+        "definition": "列举;讨论;考虑"
+      },
+      {
+        "type": "phrase.",
+        "definition": "重复;温习;排练"
+      },
+      {
+        "type": "phrase.",
+        "definition": "对…作润色,改进"
+      },
+      {
+        "type": "phrase.",
+        "definition": "超过(限度等)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "对…施加暴力"
+      }
+    ],
+    "usphone": "ɡoʊ 'oʊvər",
+    "ukphone": "ɡəʊ 'əʊvə"
+  },
+  {
+    "name": "passive",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "被动的，消极的"
+      }
+    ],
+    "usphone": "'pæsɪv",
+    "ukphone": "'pæsɪv"
+  },
+  {
+    "name": "treat",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "招待"
+      },
+      {
+        "type": "v.",
+        "definition": "治疗"
+      },
+      {
+        "type": "v.",
+        "definition": "对待"
+      },
+      {
+        "type": "n.",
+        "definition": "款待"
+      },
+      {
+        "type": "n.",
+        "definition": "乐趣"
+      },
+      {
+        "type": "v.",
+        "definition": "处理"
+      }
+    ],
+    "usphone": "triːt",
+    "ukphone": "triːt"
+  },
+  {
+    "name": "affordable",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "负担得起的"
+      }
+    ],
+    "usphone": "ə'fɔːdəbl",
+    "ukphone": "ə'fɔːdəbl"
+  },
+  {
+    "name": "aid",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "帮助"
+      },
+      {
+        "type": "n.",
+        "definition": "援助"
+      },
+      {
+        "type": "n.",
+        "definition": "辅助器具"
+      },
+      {
+        "type": "v.",
+        "definition": "帮助，援助"
+      }
+    ],
+    "usphone": "eɪd",
+    "ukphone": "eɪd"
+  },
+  {
+    "name": "ambitious",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有野心的，有雄心的；费力的；耗资的"
+      }
+    ],
+    "usphone": "æm'bɪʃəs",
+    "ukphone": "æm'bɪʃəs"
+  },
+  {
+    "name": "assess",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "评定"
+      },
+      {
+        "type": "v.",
+        "definition": "估价"
+      },
+      {
+        "type": "v.",
+        "definition": "估计"
+      }
+    ],
+    "usphone": "ə'ses",
+    "ukphone": "ə'ses"
+  },
+  {
+    "name": "medical",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "医学的"
+      },
+      {
+        "type": "adj.",
+        "definition": "医疗的"
+      }
+    ],
+    "usphone": "'medɪkl",
+    "ukphone": "'medɪkl"
+  },
+  {
+    "name": "military",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "军事的"
+      },
+      {
+        "type": "adj.",
+        "definition": "军用的"
+      },
+      {
+        "type": "adj.",
+        "definition": "军人的"
+      },
+      {
+        "type": "adj.",
+        "definition": "军队的"
+      }
+    ],
+    "usphone": "'mɪləteri",
+    "ukphone": "'mɪlətri"
+  },
+  {
+    "name": "package",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "包裹"
+      },
+      {
+        "type": "n.",
+        "definition": "一揽子计划"
+      }
+    ],
+    "usphone": "'pækɪdʒ",
+    "ukphone": "'pækɪdʒ"
+  },
+  {
+    "name": "rapid",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "迅速的，飞快的"
+      }
+    ],
+    "usphone": "'ræpɪd",
+    "ukphone": "'ræpɪd"
+  },
+  {
+    "name": "sufficient",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "足够的，充分的"
+      }
+    ],
+    "usphone": "sə'fɪʃnt",
+    "ukphone": "sə'fɪʃnt"
+  },
+  {
+    "name": "survey",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "民意调查"
+      },
+      {
+        "type": "n.",
+        "definition": "勘测"
+      },
+      {
+        "type": "n.",
+        "definition": "概述"
+      },
+      {
+        "type": "v.",
+        "definition": "调查"
+      },
+      {
+        "type": "v.",
+        "definition": "审视"
+      },
+      {
+        "type": "v.",
+        "definition": "概述"
+      },
+      {
+        "type": "v.",
+        "definition": "勘测"
+      }
+    ],
+    "usphone": "'sɜːrveɪ",
+    "ukphone": "'sɜːveɪ"
+  },
+  {
+    "name": "conscious",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "神志清醒的"
+      },
+      {
+        "type": "adj.",
+        "definition": "意识到的"
+      },
+      {
+        "type": "adj.",
+        "definition": "有意的"
+      },
+      {
+        "type": "adj.",
+        "definition": "自觉的"
+      }
+    ],
+    "usphone": "'kɑːnʃəs",
+    "ukphone": "'kɒnʃəs"
+  },
+  {
+    "name": "emotion",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "感情"
+      },
+      {
+        "type": "n.",
+        "definition": "情绪"
+      },
+      {
+        "type": "n.",
+        "definition": "激动"
+      }
+    ],
+    "usphone": "ɪ'moʊʃn",
+    "ukphone": "ɪ'məʊʃn"
+  },
+  {
+    "name": "flexible",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "灵活的"
+      },
+      {
+        "type": "adj.",
+        "definition": "易弯曲的"
+      }
+    ],
+    "usphone": "'fleksəbl",
+    "ukphone": "'fleksəbl"
+  },
+  {
+    "name": "function",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "功能"
+      },
+      {
+        "type": "n.",
+        "definition": "函数"
+      },
+      {
+        "type": "v.",
+        "definition": "起作用"
+      },
+      {
+        "type": "v.",
+        "definition": "运转"
+      }
+    ],
+    "usphone": "'fʌŋkʃn",
+    "ukphone": "'fʌŋkʃn"
+  },
+  {
+    "name": "perspective",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "视角，观点，看法；透视画法；透视效果；客观判断力，权衡轻重的能力"
+      },
+      {
+        "type": "adj.",
+        "definition": "透视画的"
+      }
+    ],
+    "usphone": "pər'spektɪv",
+    "ukphone": "pə'spektɪv"
+  },
+  {
+    "name": "reinforce",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "加强，加固；强化"
+      }
+    ],
+    "usphone": "ˌriːɪn'fɔːrs",
+    "ukphone": "ˌriːɪn'fɔːs"
+  },
+  {
+    "name": "structure",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "结构，构造"
+      },
+      {
+        "type": "n.",
+        "definition": "建筑物"
+      },
+      {
+        "type": "v.",
+        "definition": "构成"
+      },
+      {
+        "type": "v.",
+        "definition": "组织"
+      },
+      {
+        "type": "v.",
+        "definition": "安排"
+      }
+    ],
+    "usphone": "'strʌktʃər",
+    "ukphone": "'strʌktʃə(r)"
+  },
+  {
+    "name": "transform",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "使彻底改变"
+      },
+      {
+        "type": "v.",
+        "definition": "转化"
+      }
+    ],
+    "usphone": "træns'fɔːm",
+    "ukphone": "træns'fɔːm"
+  },
+  {
+    "name": "vast",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "广阔的"
+      },
+      {
+        "type": "adj.",
+        "definition": "大量的"
+      }
+    ],
+    "usphone": "væst",
+    "ukphone": "vɑːst"
+  },
+  {
+    "name": "welfare",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "幸福"
+      },
+      {
+        "type": "n.",
+        "definition": "社会福利"
+      }
+    ],
+    "usphone": "'welfer",
+    "ukphone": "'welfeə(r)"
+  },
+  {
+    "name": "abstract",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "抽象的，纯理论的"
+      },
+      {
+        "type": "n.",
+        "definition": "摘要"
+      }
+    ],
+    "usphone": "'æbstrækt",
+    "ukphone": "'æbstrækt"
+  },
+  {
+    "name": "acknowledge",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "承认，认可"
+      }
+    ],
+    "usphone": "ək'nɑːlɪdʒ",
+    "ukphone": "ək'nɒlɪdʒ"
+  },
+  {
+    "name": "dismiss",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "准许离开"
+      },
+      {
+        "type": "v.",
+        "definition": "开除"
+      },
+      {
+        "type": "v.",
+        "definition": "不予考虑"
+      }
+    ],
+    "usphone": "dɪs'mɪs",
+    "ukphone": "dɪs'mɪs"
+  },
+  {
+    "name": "imitate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "模仿，仿效，模仿（某人的讲话、举止），作滑稽模仿"
+      }
+    ],
+    "usphone": "'ɪmɪteɪt",
+    "ukphone": "'ɪmɪteɪt"
+  },
+  {
+    "name": "master",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "专家"
+      },
+      {
+        "type": "n.",
+        "definition": "硕士"
+      },
+      {
+        "type": "n.",
+        "definition": "主人"
+      },
+      {
+        "type": "n.",
+        "definition": "大师"
+      },
+      {
+        "type": "v.",
+        "definition": "掌握，精通"
+      }
+    ],
+    "usphone": "'mæstər",
+    "ukphone": "'mɑːstə(r)"
+  },
+  {
+    "name": "motive",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "动机，目的"
+      }
+    ],
+    "usphone": "'moʊtɪv",
+    "ukphone": "'məʊtɪv"
+  },
+  {
+    "name": "possess",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "拥有"
+      }
+    ],
+    "usphone": "pəˈzes",
+    "ukphone": "pəˈzes"
+  },
+  {
+    "name": "primitive",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "原始的"
+      }
+    ],
+    "usphone": "ˈprɪmətɪv",
+    "ukphone": "ˈprɪmətɪv"
+  },
+  {
+    "name": "pronounce",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "发音"
+      },
+      {
+        "type": "v.",
+        "definition": "宣布"
+      }
+    ],
+    "usphone": "prə'naʊns",
+    "ukphone": "prə'naʊns"
+  },
+  {
+    "name": "theory",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "理论"
+      },
+      {
+        "type": "n.",
+        "definition": "原理"
+      },
+      {
+        "type": "n.",
+        "definition": "看法"
+      }
+    ],
+    "usphone": "ˈθiːəri",
+    "ukphone": "'θɪəri"
+  },
+  {
+    "name": "appreciate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "欣赏"
+      },
+      {
+        "type": "v.",
+        "definition": "领会"
+      },
+      {
+        "type": "v.",
+        "definition": "感激"
+      }
+    ],
+    "usphone": "ə'priːʃieɪt",
+    "ukphone": "ə'priːʃieɪt"
+  },
+  {
+    "name": "classic",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "典型的，经典的"
+      },
+      {
+        "type": "adj.",
+        "definition": "古典的"
+      },
+      {
+        "type": "adj.",
+        "definition": "一流的"
+      }
+    ],
+    "usphone": "'klæsɪk",
+    "ukphone": "'klæsɪk"
+  },
+  {
+    "name": "creativity",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "创造力，艺术创新"
+      }
+    ],
+    "usphone": "ˌkriːeɪ'tɪvəti",
+    "ukphone": "ˌkriːeɪ'tɪvəti"
+  },
+  {
+    "name": "innovative",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "革新的，创新的；引进新思想的；采用新方法的"
+      }
+    ],
+    "usphone": "'ɪnəveɪtɪv",
+    "ukphone": "'ɪnəveɪtɪv"
+  },
+  {
+    "name": "purchase",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "购买"
+      },
+      {
+        "type": "n.",
+        "definition": "购买"
+      },
+      {
+        "type": "n.",
+        "definition": "所购物品"
+      }
+    ],
+    "usphone": "'pɜːrtʃəs",
+    "ukphone": "'pɜːtʃəs"
+  },
+  {
+    "name": "recovery",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "恢复，复原，痊愈"
+      }
+    ],
+    "usphone": "rɪ'kʌvəri",
+    "ukphone": "rɪ'kʌvəri"
+  },
+  {
+    "name": "resist",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "抵抗"
+      },
+      {
+        "type": "v.",
+        "definition": "抵制"
+      },
+      {
+        "type": "v.",
+        "definition": "使不受伤害"
+      }
+    ],
+    "usphone": "rɪ'zɪst",
+    "ukphone": "rɪ'zɪst"
+  },
+  {
+    "name": "sensible",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "明智的，合理的，切合实际的；朴素而实用的；可感觉到的"
+      }
+    ],
+    "usphone": "'sensəbl",
+    "ukphone": "'sensəbl"
+  },
+  {
+    "name": "sensitive",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "敏感的"
+      }
+    ],
+    "usphone": "'sensətɪv",
+    "ukphone": "'sensətɪv"
+  },
+  {
+    "name": "wander",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "漫步"
+      },
+      {
+        "type": "v.",
+        "definition": "偏离"
+      },
+      {
+        "type": "v.",
+        "definition": "走神"
+      }
+    ],
+    "usphone": "'wɑːndər",
+    "ukphone": "'wɒndə(r)"
+  },
+  {
+    "name": "conservative",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "保守的"
+      },
+      {
+        "type": "adj.",
+        "definition": "传统的"
+      },
+      {
+        "type": "adj.",
+        "definition": "谨慎的"
+      }
+    ],
+    "usphone": "kən'sɜːrvətɪv",
+    "ukphone": "kən'sɜːvətɪv"
+  },
+  {
+    "name": "immigrant",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "移民，侨民"
+      }
+    ],
+    "usphone": "'ɪmɪɡrənt",
+    "ukphone": "'ɪmɪɡrənt"
+  },
+  {
+    "name": "influence",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "影响"
+      },
+      {
+        "type": "v.",
+        "definition": "对…起作用"
+      },
+      {
+        "type": "n.",
+        "definition": "影响"
+      },
+      {
+        "type": "n.",
+        "definition": "势力"
+      },
+      {
+        "type": "n.",
+        "definition": "有影响的人或事物"
+      }
+    ],
+    "usphone": "'ɪnfluəns",
+    "ukphone": "'ɪnfluəns"
+  },
+  {
+    "name": "native",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "本土的"
+      },
+      {
+        "type": "adj.",
+        "definition": "天生的"
+      },
+      {
+        "type": "adj.",
+        "definition": "土著的"
+      },
+      {
+        "type": "n.",
+        "definition": "本地人"
+      },
+      {
+        "type": "n.",
+        "definition": "本土人"
+      }
+    ],
+    "usphone": "'neɪtɪv",
+    "ukphone": "'neɪtɪv"
+  },
+  {
+    "name": "reflect",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "反映"
+      },
+      {
+        "type": "v.",
+        "definition": "反射"
+      },
+      {
+        "type": "v.",
+        "definition": "深思"
+      }
+    ],
+    "usphone": "rɪ'flekt",
+    "ukphone": "rɪ'flekt"
+  },
+  {
+    "name": "selection",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "选择，挑选； 被选中者；入选者；可供选择的事物"
+      }
+    ],
+    "usphone": "sɪ'lekʃn",
+    "ukphone": "sɪ'lekʃn"
+  },
+  {
+    "name": "settle",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "定居"
+      },
+      {
+        "type": "v.",
+        "definition": "解决"
+      },
+      {
+        "type": "v.",
+        "definition": "沉降"
+      },
+      {
+        "type": "phrase.",
+        "definition": "（settle on）决定，选定"
+      }
+    ],
+    "usphone": "'setl",
+    "ukphone": "'setl"
+  },
+  {
+    "name": "storage",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "贮藏"
+      },
+      {
+        "type": "n.",
+        "definition": "库房"
+      }
+    ],
+    "usphone": "'stɔːrɪdʒ",
+    "ukphone": "'stɔːrɪdʒ"
+  },
+  {
+    "name": "style",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "风格"
+      },
+      {
+        "type": "n.",
+        "definition": "款式"
+      },
+      {
+        "type": "n.",
+        "definition": "时髦"
+      }
+    ],
+    "usphone": "staɪl",
+    "ukphone": "staɪl"
+  },
+  {
+    "name": "urban",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "城市的"
+      }
+    ],
+    "usphone": "'ɜːrbən",
+    "ukphone": "'ɜːbən"
+  },
+  {
+    "name": "accumulate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "积聚"
+      },
+      {
+        "type": "v.",
+        "definition": "积累"
+      },
+      {
+        "type": "v.",
+        "definition": "搜集"
+      }
+    ],
+    "usphone": "ə'kjuːmjəleɪt",
+    "ukphone": "ə'kjuːmjəleɪt"
+  },
+  {
+    "name": "concern",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "关注"
+      },
+      {
+        "type": "n.",
+        "definition": "担忧"
+      },
+      {
+        "type": "v.",
+        "definition": "与……有关，涉及"
+      }
+    ],
+    "usphone": "kən'sɜːrn",
+    "ukphone": "kən'sɜːn"
+  },
+  {
+    "name": "consciousness",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "知觉，感觉；意识，观念；觉悟"
+      }
+    ],
+    "usphone": "'kɑːnʃəsnəs",
+    "ukphone": "'kɒnʃəsnəs"
+  },
+  {
+    "name": "demanding",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "要求高的"
+      },
+      {
+        "type": "adj.",
+        "definition": "苛求的"
+      }
+    ],
+    "usphone": "dɪ'mændɪŋ",
+    "ukphone": "dɪ'mɑːndɪŋ"
+  },
+  {
+    "name": "detached",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "独立的，分离的，不连接的；客观的，超然的，不带感情的；冷淡的；派遣的"
+      },
+      {
+        "type": "v.",
+        "definition": "“detach”的过去分词和过去式"
+      }
+    ],
+    "usphone": "dɪ'tætʃt",
+    "ukphone": "dɪ'tætʃt"
+  },
+  {
+    "name": "familiarize",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "使熟悉，使普及，使闻名"
+      }
+    ],
+    "usphone": "fə'mɪliəraɪz",
+    "ukphone": "fə'mɪliəraɪz"
+  },
+  {
+    "name": "impressive",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "给人印象深刻的"
+      },
+      {
+        "type": "adj.",
+        "definition": "令人赞叹的"
+      }
+    ],
+    "usphone": "ɪm'presɪv",
+    "ukphone": "ɪm'presɪv"
+  },
+  {
+    "name": "internal",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "内部的"
+      },
+      {
+        "type": "adj.",
+        "definition": "国内的"
+      }
+    ],
+    "usphone": "ɪn'tɜːrnl",
+    "ukphone": "ɪn'tɜːnl"
+  },
+  {
+    "name": "pioneer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "先锋"
+      },
+      {
+        "type": "n.",
+        "definition": "开拓者"
+      }
+    ],
+    "usphone": "ˌpaɪə'nɪr",
+    "ukphone": "ˌpaɪə'nɪə(r)"
+  },
+  {
+    "name": "venture",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "冒险去（某处）；小心地说，谨慎地做；冒险做，勇于做"
+      },
+      {
+        "type": "n.",
+        "definition": "冒险；冒险行动；风险项目（或活动）， （有风险的）企业，商业，投机活动 "
+      }
+    ],
+    "usphone": "'ventʃər",
+    "ukphone": "'ventʃə(r)"
+  },
+  {
+    "name": "backing",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "背衬，帮助，协助，（尤指流行音乐的）伴唱"
+      },
+      {
+        "type": "v.",
+        "definition": "“back”的现在分词"
+      }
+    ],
+    "usphone": "'bækɪŋ",
+    "ukphone": "'bækɪŋ"
+  },
+  {
+    "name": "decade",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "十年"
+      }
+    ],
+    "usphone": "'dekeɪd",
+    "ukphone": "'dekeɪd"
+  },
+  {
+    "name": "extremely",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "非常，极其，极端"
+      }
+    ],
+    "usphone": "ɪk'striːmli",
+    "ukphone": "ɪk'striːmli"
+  },
+  {
+    "name": "fortune",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "财富"
+      },
+      {
+        "type": "n.",
+        "definition": "运气，好运"
+      }
+    ],
+    "usphone": "'fɔːrtʃən",
+    "ukphone": "'fɔːtʃuːn"
+  },
+  {
+    "name": "founder",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "创办者"
+      },
+      {
+        "type": "v.",
+        "definition": "失败，破产，沉没"
+      }
+    ],
+    "usphone": "'faʊndər",
+    "ukphone": "'faʊndə(r)"
+  },
+  {
+    "name": "launch",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "开始从事"
+      },
+      {
+        "type": "v.",
+        "definition": "发射"
+      },
+      {
+        "type": "v.",
+        "definition": "推出"
+      },
+      {
+        "type": "n.",
+        "definition": "发起"
+      },
+      {
+        "type": "n.",
+        "definition": "发射"
+      }
+    ],
+    "usphone": "lɔːntʃ",
+    "ukphone": "lɔːntʃ"
+  },
+  {
+    "name": "precious",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "宝贵的"
+      },
+      {
+        "type": "adj.",
+        "definition": "贵重的"
+      }
+    ],
+    "usphone": "'preʃəs",
+    "ukphone": "'preʃəs"
+  },
+  {
+    "name": "replace",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "替换，代替，取代"
+      }
+    ],
+    "usphone": "rɪ'pleɪs",
+    "ukphone": "rɪ'pleɪs"
+  },
+  {
+    "name": "resource",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "资源"
+      },
+      {
+        "type": "n.",
+        "definition": "财力"
+      }
+    ],
+    "usphone": "rɪˈsɔːrs; ˈriːsɔːrs",
+    "ukphone": "rɪˈsɔːs"
+  },
+  {
+    "name": "sustain",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "维持；承受，经受；支持"
+      }
+    ],
+    "usphone": "sə'steɪn",
+    "ukphone": "sə'steɪn"
+  }
+]

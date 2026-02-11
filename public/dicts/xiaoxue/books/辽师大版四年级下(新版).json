@@ -1,0 +1,1784 @@
+[
+  {
+    "name": "favourite",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "特别喜爱的"
+      },
+      {
+        "type": "n.",
+        "definition": "特别喜爱的人或物"
+      }
+    ],
+    "usphone": "'feɪvərɪt",
+    "ukphone": "'feɪvərɪt "
+  },
+  {
+    "name": "festival",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "节日"
+      },
+      {
+        "type": "n.",
+        "definition": "纪念活动日"
+      },
+      {
+        "type": "adj.",
+        "definition": "节日的，喜庆的"
+      }
+    ],
+    "usphone": "'festɪvl",
+    "ukphone": "'festɪvl"
+  },
+  {
+    "name": "Christmas",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "圣诞节"
+      }
+    ],
+    "usphone": "'krɪsməs",
+    "ukphone": "'krɪsməs"
+  },
+  {
+    "name": "party",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "派对"
+      },
+      {
+        "type": "n.",
+        "definition": "政党"
+      },
+      {
+        "type": "n.",
+        "definition": "一方"
+      }
+    ],
+    "usphone": "'pɑːrti",
+    "ukphone": "'pɑːti"
+  },
+  {
+    "name": "will",
+    "pos": [
+      {
+        "type": "aux. v.",
+        "definition": "将"
+      },
+      {
+        "type": "aux. v.",
+        "definition": "愿意"
+      },
+      {
+        "type": "aux. v.",
+        "definition": "必须"
+      },
+      {
+        "type": "n.",
+        "definition": "意志"
+      },
+      {
+        "type": "n.",
+        "definition": "遗嘱"
+      }
+    ],
+    "usphone": "wɪl",
+    "ukphone": "wɪl"
+  },
+  {
+    "name": "tell",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "告诉"
+      },
+      {
+        "type": "v.",
+        "definition": "讲述"
+      },
+      {
+        "type": "v.",
+        "definition": "吩咐"
+      },
+      {
+        "type": "v.",
+        "definition": "辨别"
+      }
+    ],
+    "usphone": "tel",
+    "ukphone": "tel"
+  },
+  {
+    "name": "start",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "开始"
+      },
+      {
+        "type": "v.",
+        "definition": "发动"
+      },
+      {
+        "type": "v.",
+        "definition": "创办"
+      },
+      {
+        "type": "v.",
+        "definition": "出发"
+      }
+    ],
+    "usphone": "stɑːrt",
+    "ukphone": "stɑːt"
+  },
+  {
+    "name": "visit",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "访问"
+      },
+      {
+        "type": "n.",
+        "definition": "参观"
+      },
+      {
+        "type": "v.",
+        "definition": "拜访，访问"
+      },
+      {
+        "type": "v.",
+        "definition": "看望"
+      }
+    ],
+    "usphone": "'vɪzɪt",
+    "ukphone": "'vɪzɪt"
+  },
+  {
+    "name": "American",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "美洲的，（尤指）美国的"
+      },
+      {
+        "type": "n.",
+        "definition": "美洲人，（尤指）美国人，美国英语"
+      }
+    ],
+    "usphone": "ə'merɪkən",
+    "ukphone": "ə'merɪkən"
+  },
+  {
+    "name": "then",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "当时"
+      },
+      {
+        "type": "adv.",
+        "definition": "那时"
+      },
+      {
+        "type": "adv.",
+        "definition": "然后"
+      }
+    ],
+    "usphone": "ðen",
+    "ukphone": "ðen"
+  },
+  {
+    "name": "when",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "什么时候，何时"
+      },
+      {
+        "type": "conj.",
+        "definition": "在…时候"
+      },
+      {
+        "type": "conj.",
+        "definition": "在…之后"
+      },
+      {
+        "type": "conj.",
+        "definition": "一…就…"
+      }
+    ],
+    "usphone": "wen",
+    "ukphone": "wen"
+  },
+  {
+    "name": "near",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "靠近的"
+      },
+      {
+        "type": "adv.",
+        "definition": "附近"
+      },
+      {
+        "type": "adv.",
+        "definition": "不久以后"
+      },
+      {
+        "type": "adv.",
+        "definition": "几乎"
+      },
+      {
+        "type": "prep.",
+        "definition": "在……附近"
+      },
+      {
+        "type": "prep.",
+        "definition": "靠近"
+      },
+      {
+        "type": "prep.",
+        "definition": "大约"
+      },
+      {
+        "type": "v.",
+        "definition": "接近，靠近"
+      }
+    ],
+    "usphone": "nɪr",
+    "ukphone": "nɪə(r)"
+  },
+  {
+    "name": "end",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "结尾"
+      },
+      {
+        "type": "n.",
+        "definition": "末端"
+      },
+      {
+        "type": "n.",
+        "definition": "端点"
+      },
+      {
+        "type": "v.",
+        "definition": "结束"
+      }
+    ],
+    "usphone": "end",
+    "ukphone": "end"
+  },
+  {
+    "name": "letter",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "信"
+      },
+      {
+        "type": "n.",
+        "definition": "字母"
+      }
+    ],
+    "usphone": "'letər",
+    "ukphone": "'letə(r)"
+  },
+  {
+    "name": "Father Christmas",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "圣诞老人"
+      }
+    ],
+    "usphone": "ˈfɑːðər ˈkrɪsməs",
+    "ukphone": "ˈfɑːðə(r) ˈkrɪsməs"
+  },
+  {
+    "name": "meal",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "一餐饭"
+      }
+    ],
+    "usphone": "miːl",
+    "ukphone": "miːl"
+  },
+  {
+    "name": "week",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "星期，周"
+      }
+    ],
+    "usphone": "wiːk",
+    "ukphone": "wiːk"
+  },
+  {
+    "name": "call",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "打电话"
+      },
+      {
+        "type": "n.",
+        "definition": "叫喊声"
+      },
+      {
+        "type": "n.",
+        "definition": "短暂拜访"
+      },
+      {
+        "type": "v.",
+        "definition": "称呼"
+      },
+      {
+        "type": "v.",
+        "definition": "呼唤"
+      },
+      {
+        "type": "v.",
+        "definition": "打电话"
+      }
+    ],
+    "usphone": "kɔːl",
+    "ukphone": "kɔːl"
+  },
+  {
+    "name": "plan",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "计划"
+      },
+      {
+        "type": "n.",
+        "definition": "方案"
+      },
+      {
+        "type": "n.",
+        "definition": "设计图"
+      },
+      {
+        "type": "v.",
+        "definition": "计划"
+      },
+      {
+        "type": "v.",
+        "definition": "打算"
+      },
+      {
+        "type": "v.",
+        "definition": "构思"
+      }
+    ],
+    "usphone": "plæn",
+    "ukphone": "plæn"
+  },
+  {
+    "name": "make a plan",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "制定计划"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "stand",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "站，立"
+      },
+      {
+        "type": "v.",
+        "definition": "容忍"
+      },
+      {
+        "type": "v.",
+        "definition": "经受"
+      },
+      {
+        "type": "n.",
+        "definition": "态度"
+      },
+      {
+        "type": "n.",
+        "definition": "看台"
+      },
+      {
+        "type": "n.",
+        "definition": "架，座"
+      },
+      {
+        "type": "n.",
+        "definition": "货摊"
+      }
+    ],
+    "usphone": "stænd",
+    "ukphone": "stænd"
+  },
+  {
+    "name": "in the middle",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "夹在中间，左右为难；处于困境"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "between",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……之间"
+      }
+    ],
+    "usphone": "bɪ'twiːn",
+    "ukphone": "bɪ'twiːn"
+  },
+  {
+    "name": "cousin",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "堂 (表) 兄弟姐妹"
+      }
+    ],
+    "usphone": "'kʌzn",
+    "ukphone": "'kʌzn"
+  },
+  {
+    "name": "candle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蜡烛"
+      }
+    ],
+    "usphone": "'kændl",
+    "ukphone": "'kændl"
+  },
+  {
+    "name": "noodle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "面条"
+      }
+    ],
+    "usphone": "'nuːdl",
+    "ukphone": "'nuːdl"
+  },
+  {
+    "name": "egg",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蛋"
+      },
+      {
+        "type": "n.",
+        "definition": "卵"
+      }
+    ],
+    "usphone": "eɡ",
+    "ukphone": "eɡ"
+  },
+  {
+    "name": "where",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "在哪里"
+      }
+    ],
+    "usphone": "wer",
+    "ukphone": "weə(r)"
+  },
+  {
+    "name": "wish",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "希望，愿望，祝福"
+      },
+      {
+        "type": "v.",
+        "definition": "希望"
+      }
+    ],
+    "usphone": "wɪʃ",
+    "ukphone": "wɪʃ"
+  },
+  {
+    "name": "son",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "儿子"
+      }
+    ],
+    "usphone": "sʌn",
+    "ukphone": "sʌn"
+  },
+  {
+    "name": "cute",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "可爱的"
+      },
+      {
+        "type": "adj.",
+        "definition": "精明的，机灵的"
+      }
+    ],
+    "usphone": "kjuːt",
+    "ukphone": "kjuːt"
+  },
+  {
+    "name": "grade",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "年级"
+      },
+      {
+        "type": "n.",
+        "definition": "等级"
+      },
+      {
+        "type": "n.",
+        "definition": "成绩"
+      },
+      {
+        "type": "v.",
+        "definition": "评分"
+      }
+    ],
+    "usphone": "ɡreɪd",
+    "ukphone": "ɡreɪd"
+  },
+  {
+    "name": "village",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "村庄，乡村"
+      }
+    ],
+    "usphone": "'vɪlɪdʒ",
+    "ukphone": "'vɪlɪdʒ"
+  },
+  {
+    "name": "come",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "到来"
+      },
+      {
+        "type": "v.",
+        "definition": "发生"
+      },
+      {
+        "type": "v.",
+        "definition": "成为"
+      }
+    ],
+    "usphone": "kʌm",
+    "ukphone": "kʌm"
+  },
+  {
+    "name": "diet",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "节食"
+      },
+      {
+        "type": "n.",
+        "definition": "日常饮食"
+      }
+    ],
+    "usphone": "'daɪət",
+    "ukphone": "'daɪət"
+  },
+  {
+    "name": "life",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "生命"
+      },
+      {
+        "type": "n.",
+        "definition": "寿命"
+      },
+      {
+        "type": "n.",
+        "definition": "生物"
+      },
+      {
+        "type": "n.",
+        "definition": "生活经历"
+      }
+    ],
+    "usphone": "laɪf",
+    "ukphone": "laɪf"
+  },
+  {
+    "name": "meat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "肉"
+      }
+    ],
+    "usphone": "miːt",
+    "ukphone": "miːt"
+  },
+  {
+    "name": "fruit",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "水果"
+      }
+    ],
+    "usphone": "fruːt",
+    "ukphone": "fruːt"
+  },
+  {
+    "name": "vegetable",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "蔬菜"
+      }
+    ],
+    "usphone": "'vedʒtəbl",
+    "ukphone": "'vedʒtəbl"
+  },
+  {
+    "name": "banana",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "香蕉"
+      }
+    ],
+    "usphone": "bə'nænə",
+    "ukphone": "bə'nɑːnə"
+  },
+  {
+    "name": "milk",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "牛奶"
+      },
+      {
+        "type": "n.",
+        "definition": "乳汁"
+      },
+      {
+        "type": "v.",
+        "definition": "挤奶"
+      }
+    ],
+    "usphone": "mɪlk",
+    "ukphone": "mɪlk"
+  },
+  {
+    "name": "pork",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "猪肉"
+      }
+    ],
+    "usphone": "pɔːrk",
+    "ukphone": "pɔːk"
+  },
+  {
+    "name": "beef",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "牛肉"
+      }
+    ],
+    "usphone": "biːf",
+    "ukphone": "biːf"
+  },
+  {
+    "name": "fish",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鱼"
+      },
+      {
+        "type": "n.",
+        "definition": "鱼肉"
+      },
+      {
+        "type": "v.",
+        "definition": "钓鱼"
+      },
+      {
+        "type": "v.",
+        "definition": "捕鱼"
+      }
+    ],
+    "usphone": "fɪʃ",
+    "ukphone": "fɪʃ"
+  },
+  {
+    "name": "chicken",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鸡"
+      },
+      {
+        "type": "n.",
+        "definition": "鸡肉"
+      }
+    ],
+    "usphone": "'tʃɪkɪn",
+    "ukphone": "'tʃɪkɪn"
+  },
+  {
+    "name": "dinner",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "正餐"
+      },
+      {
+        "type": "n.",
+        "definition": "宴会"
+      }
+    ],
+    "usphone": "'dɪnər",
+    "ukphone": "'dɪnə(r)"
+  },
+  {
+    "name": "cook",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "炊事员，厨师"
+      },
+      {
+        "type": "v.",
+        "definition": "烹饪"
+      }
+    ],
+    "usphone": "kʊk",
+    "ukphone": "kʊk"
+  },
+  {
+    "name": "soup",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "汤"
+      }
+    ],
+    "usphone": "suːp",
+    "ukphone": "suːp"
+  },
+  {
+    "name": "cup",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "杯子"
+      },
+      {
+        "type": "n.",
+        "definition": "一杯"
+      },
+      {
+        "type": "n.",
+        "definition": "奖杯"
+      }
+    ],
+    "usphone": "kʌp",
+    "ukphone": "kʌp"
+  },
+  {
+    "name": "tea",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "茶叶，茶水，茶点"
+      }
+    ],
+    "usphone": "tiː",
+    "ukphone": "tiː"
+  },
+  {
+    "name": "candy",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "糖果"
+      }
+    ],
+    "usphone": "'kændi",
+    "ukphone": "'kændi"
+  },
+  {
+    "name": "tooth",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "牙齿"
+      }
+    ],
+    "usphone": "tuːθ",
+    "ukphone": "tuːθ"
+  },
+  {
+    "name": "everybody",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "每人，人人"
+      }
+    ],
+    "usphone": "'evribɑːdi",
+    "ukphone": "'evribɒdi"
+  },
+  {
+    "name": "police",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "警察"
+      }
+    ],
+    "usphone": "pə'liːs",
+    "ukphone": "pə'liːs"
+  },
+  {
+    "name": "officer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "官员"
+      },
+      {
+        "type": "n.",
+        "definition": "军官"
+      },
+      {
+        "type": "n.",
+        "definition": "警官"
+      }
+    ],
+    "usphone": "'ɔːfɪsər",
+    "ukphone": "'ɒfɪsə(r)"
+  },
+  {
+    "name": "cool",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "凉快的"
+      },
+      {
+        "type": "adj.",
+        "definition": "冷静的"
+      },
+      {
+        "type": "adj.",
+        "definition": "酷的"
+      }
+    ],
+    "usphone": "kuːl",
+    "ukphone": "kuːl"
+  },
+  {
+    "name": "worker",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "工人"
+      }
+    ],
+    "usphone": "'wɜːrkər",
+    "ukphone": "'wɜːkə(r)"
+  },
+  {
+    "name": "build",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "体格，身材"
+      },
+      {
+        "type": "v.",
+        "definition": "建造，开发，建构"
+      }
+    ],
+    "usphone": "bɪld",
+    "ukphone": "bɪld"
+  },
+  {
+    "name": "man",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "男人"
+      },
+      {
+        "type": "n.",
+        "definition": "人类"
+      }
+    ],
+    "usphone": "mæn",
+    "ukphone": "mæn"
+  },
+  {
+    "name": "farmer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "农民"
+      },
+      {
+        "type": "n.",
+        "definition": "农场主"
+      }
+    ],
+    "usphone": "'fɑːrmər",
+    "ukphone": "'fɑːmə(r)"
+  },
+  {
+    "name": "grow",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "种植"
+      },
+      {
+        "type": "v.",
+        "definition": "生长，成长"
+      },
+      {
+        "type": "v.",
+        "definition": "变成"
+      },
+      {
+        "type": "v.",
+        "definition": "增加"
+      }
+    ],
+    "usphone": "ɡroʊ",
+    "ukphone": "ɡrəʊ"
+  },
+  {
+    "name": "doctor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "医生"
+      },
+      {
+        "type": "n.",
+        "definition": "博士"
+      }
+    ],
+    "usphone": "'dɑːktər",
+    "ukphone": "'dɒktə(r)"
+  },
+  {
+    "name": "nurse",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "护士"
+      }
+    ],
+    "usphone": "nɜːrs",
+    "ukphone": "nɜːs"
+  },
+  {
+    "name": "taxi",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "出租车"
+      }
+    ],
+    "usphone": "'tæksi",
+    "ukphone": "'tæksi"
+  },
+  {
+    "name": "driver",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "司机"
+      },
+      {
+        "type": "n.",
+        "definition": "驱动因素"
+      }
+    ],
+    "usphone": "'draɪvər",
+    "ukphone": "'draɪvə(r)"
+  },
+  {
+    "name": "woman",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "妇女，女人"
+      }
+    ],
+    "usphone": "'wʊmən",
+    "ukphone": "'wʊmən"
+  },
+  {
+    "name": "scientist",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "科学家"
+      }
+    ],
+    "usphone": "'saɪəntɪst",
+    "ukphone": "'saɪəntɪst"
+  },
+  {
+    "name": "job",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "工作"
+      },
+      {
+        "type": "n.",
+        "definition": "任务"
+      },
+      {
+        "type": "n.",
+        "definition": "职责"
+      }
+    ],
+    "usphone": "dʒɑːb",
+    "ukphone": "dʒɒb"
+  },
+  {
+    "name": "world",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "世界"
+      }
+    ],
+    "usphone": "wɜːrld",
+    "ukphone": "wɜːld"
+  },
+  {
+    "name": "place",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "地方"
+      },
+      {
+        "type": "n.",
+        "definition": "地位"
+      },
+      {
+        "type": "n.",
+        "definition": "名次"
+      },
+      {
+        "type": "v.",
+        "definition": "安排，放置"
+      }
+    ],
+    "usphone": "pleɪs",
+    "ukphone": "pleɪs"
+  },
+  {
+    "name": "future",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "未来"
+      },
+      {
+        "type": "n.",
+        "definition": "前途"
+      },
+      {
+        "type": "adj.",
+        "definition": "未来的"
+      }
+    ],
+    "usphone": "'fjuːtʃər",
+    "ukphone": "'fjuːtʃə(r)"
+  },
+  {
+    "name": "rise",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "上升"
+      },
+      {
+        "type": "v.",
+        "definition": "起床"
+      },
+      {
+        "type": "v.",
+        "definition": "增加"
+      },
+      {
+        "type": "n.",
+        "definition": "上升"
+      },
+      {
+        "type": "n.",
+        "definition": "上涨"
+      }
+    ],
+    "usphone": "raɪz",
+    "ukphone": "raɪz"
+  },
+  {
+    "name": "o'clock",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "……点钟"
+      }
+    ],
+    "usphone": "ə'klɒk",
+    "ukphone": "ə'klɒk"
+  },
+  {
+    "name": "Los Angeles",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "洛杉矶"
+      }
+    ],
+    "usphone": "lɔs'ændʒələs",
+    "ukphone": "lɔs'ændʒələs"
+  },
+  {
+    "name": "moon",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "月亮"
+      },
+      {
+        "type": "n.",
+        "definition": "卫星"
+      }
+    ],
+    "usphone": "muːn",
+    "ukphone": "muːn"
+  },
+  {
+    "name": "star",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "明星"
+      },
+      {
+        "type": "n.",
+        "definition": "恒星"
+      },
+      {
+        "type": "n.",
+        "definition": "星形物"
+      },
+      {
+        "type": "v.",
+        "definition": "由……主演"
+      },
+      {
+        "type": "v.",
+        "definition": "由……担任主角"
+      }
+    ],
+    "usphone": "stɑːr",
+    "ukphone": "stɑː(r)"
+  },
+  {
+    "name": "earth",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "地球"
+      },
+      {
+        "type": "n.",
+        "definition": "陆地"
+      },
+      {
+        "type": "n.",
+        "definition": "土壤"
+      }
+    ],
+    "usphone": "ɜːrθ",
+    "ukphone": "ɜːθ"
+  },
+  {
+    "name": "night",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "夜"
+      },
+      {
+        "type": "n.",
+        "definition": "夜间"
+      }
+    ],
+    "usphone": "naɪt",
+    "ukphone": "naɪt"
+  },
+  {
+    "name": "move",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "移动"
+      },
+      {
+        "type": "v.",
+        "definition": "搬家"
+      },
+      {
+        "type": "v.",
+        "definition": "使感动"
+      },
+      {
+        "type": "n.",
+        "definition": "行动"
+      },
+      {
+        "type": "n.",
+        "definition": "改变"
+      },
+      {
+        "type": "n.",
+        "definition": "移动"
+      },
+      {
+        "type": "n.",
+        "definition": "搬家"
+      }
+    ],
+    "usphone": "muːv",
+    "ukphone": "muːv"
+  },
+  {
+    "name": "say",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "说，讲"
+      }
+    ],
+    "usphone": "seɪ",
+    "ukphone": "seɪ"
+  },
+  {
+    "name": "beside",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……旁边"
+      },
+      {
+        "type": "prep.",
+        "definition": "靠近"
+      }
+    ],
+    "usphone": "bɪ'saɪd",
+    "ukphone": "bɪ'saɪd"
+  },
+  {
+    "name": "east",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "东方"
+      },
+      {
+        "type": "n.",
+        "definition": "东方国家"
+      },
+      {
+        "type": "adj.",
+        "definition": "东方的"
+      },
+      {
+        "type": "adj.",
+        "definition": "朝东的"
+      },
+      {
+        "type": "adv.",
+        "definition": "向东"
+      }
+    ],
+    "usphone": "iːst",
+    "ukphone": "iːst"
+  },
+  {
+    "name": "head",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "头部"
+      },
+      {
+        "type": "n.",
+        "definition": "头脑"
+      },
+      {
+        "type": "n.",
+        "definition": "首领"
+      },
+      {
+        "type": "n.",
+        "definition": "主管"
+      },
+      {
+        "type": "v.",
+        "definition": "领导"
+      },
+      {
+        "type": "v.",
+        "definition": "朝...行进"
+      }
+    ],
+    "usphone": "hed",
+    "ukphone": "hed"
+  },
+  {
+    "name": "west",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "西部"
+      },
+      {
+        "type": "n.",
+        "definition": "西方"
+      },
+      {
+        "type": "n.",
+        "definition": "西面"
+      },
+      {
+        "type": "adj.",
+        "definition": "向西的"
+      },
+      {
+        "type": "adj.",
+        "definition": "西方的"
+      },
+      {
+        "type": "adv.",
+        "definition": "在西方"
+      },
+      {
+        "type": "adv.",
+        "definition": "向西方"
+      }
+    ],
+    "usphone": "west",
+    "ukphone": "west"
+  },
+  {
+    "name": "zoo",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "动物园"
+      }
+    ],
+    "usphone": "zuː",
+    "ukphone": "zuː"
+  },
+  {
+    "name": "animal",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "动物"
+      }
+    ],
+    "usphone": "'ænɪml",
+    "ukphone": "'ænɪml"
+  },
+  {
+    "name": "bear",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "熊"
+      },
+      {
+        "type": "v.",
+        "definition": "忍受"
+      },
+      {
+        "type": "v.",
+        "definition": "承担"
+      },
+      {
+        "type": "v.",
+        "definition": "生育"
+      }
+    ],
+    "usphone": "ber",
+    "ukphone": "beə(r)"
+  },
+  {
+    "name": "tiger",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "老虎"
+      }
+    ],
+    "usphone": "'taɪɡər",
+    "ukphone": "'taɪɡə(r)"
+  },
+  {
+    "name": "lion",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "狮子"
+      }
+    ],
+    "usphone": "'laɪən",
+    "ukphone": "'laɪən"
+  },
+  {
+    "name": "strong",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "强壮的"
+      },
+      {
+        "type": "adj.",
+        "definition": "强大的"
+      },
+      {
+        "type": "adj.",
+        "definition": "强烈的"
+      }
+    ],
+    "usphone": "strɔːŋ",
+    "ukphone": "strɒŋ"
+  },
+  {
+    "name": "panda",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "熊猫"
+      }
+    ],
+    "usphone": "'pændə",
+    "ukphone": "'pændə"
+  },
+  {
+    "name": "elephant",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "大象"
+      }
+    ],
+    "usphone": "'elɪfənt",
+    "ukphone": "'elɪfənt"
+  },
+  {
+    "name": "funny",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "滑稽的"
+      },
+      {
+        "type": "adj.",
+        "definition": "有趣的"
+      }
+    ],
+    "usphone": "'fʌni",
+    "ukphone": "'fʌni"
+  },
+  {
+    "name": "behind",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……后面"
+      },
+      {
+        "type": "adv.",
+        "definition": "在……后面"
+      }
+    ],
+    "usphone": "bɪ'haɪnd",
+    "ukphone": "bɪ'haɪnd"
+  },
+  {
+    "name": "its",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "它的"
+      }
+    ],
+    "usphone": "ɪts",
+    "ukphone": "ɪts"
+  },
+  {
+    "name": "body",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "身体"
+      },
+      {
+        "type": "n.",
+        "definition": "躯干"
+      },
+      {
+        "type": "n.",
+        "definition": "尸体"
+      },
+      {
+        "type": "n.",
+        "definition": "主体部分"
+      },
+      {
+        "type": "n.",
+        "definition": "团体"
+      }
+    ],
+    "usphone": "'bɑːdi",
+    "ukphone": "'bɒdi"
+  },
+  {
+    "name": "tail",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "尾巴"
+      },
+      {
+        "type": "n.",
+        "definition": "尾部"
+      }
+    ],
+    "usphone": "teɪl",
+    "ukphone": "teɪl"
+  },
+  {
+    "name": "hill",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小山"
+      }
+    ],
+    "usphone": "hɪl",
+    "ukphone": "hɪl"
+  },
+  {
+    "name": "arm",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "手臂"
+      },
+      {
+        "type": "n.",
+        "definition": "袖子"
+      },
+      {
+        "type": "n.",
+        "definition": "扶手"
+      },
+      {
+        "type": "v.",
+        "definition": "武装"
+      }
+    ],
+    "usphone": "ɑːrm",
+    "ukphone": "ɑːm"
+  },
+  {
+    "name": "bamboo",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "竹子"
+      }
+    ],
+    "usphone": "ˌbæm'buː",
+    "ukphone": "ˌbæm'buː"
+  },
+  {
+    "name": "grassland",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "草地，牧场"
+      }
+    ],
+    "usphone": "'ɡræslænd",
+    "ukphone": "'ɡrɑːslænd"
+  },
+  {
+    "name": "forest",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "森林"
+      }
+    ],
+    "usphone": "'fɔːrɪst",
+    "ukphone": "'fɒrɪst"
+  },
+  {
+    "name": "Asia",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "亚洲"
+      }
+    ],
+    "usphone": "'eɪʒə",
+    "ukphone": "'eɪʒə"
+  },
+  {
+    "name": "Africa",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "非洲"
+      }
+    ],
+    "usphone": "'æfrɪkə",
+    "ukphone": "'æfrɪkə"
+  },
+  {
+    "name": "ear",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "耳朵"
+      }
+    ],
+    "usphone": "ɪr",
+    "ukphone": "ɪə(r)"
+  },
+  {
+    "name": "nose",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鼻子"
+      },
+      {
+        "type": "n.",
+        "definition": "前端"
+      }
+    ],
+    "usphone": "noʊz",
+    "ukphone": "nəʊz"
+  },
+  {
+    "name": "cat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "猫"
+      },
+      {
+        "type": "n.",
+        "definition": "猫科动物"
+      }
+    ],
+    "usphone": "kæt",
+    "ukphone": "kæt"
+  },
+  {
+    "name": "cow",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "母牛，奶牛"
+      }
+    ],
+    "usphone": "kaʊ",
+    "ukphone": "kaʊ"
+  },
+  {
+    "name": "horse",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "马"
+      }
+    ],
+    "usphone": "hɔːrs",
+    "ukphone": "hɔːs"
+  },
+  {
+    "name": "friend",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "朋友"
+      }
+    ],
+    "usphone": "frend",
+    "ukphone": "frend"
+  }
+]

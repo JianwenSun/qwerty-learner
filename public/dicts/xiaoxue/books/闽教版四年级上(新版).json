@@ -1,0 +1,1816 @@
+[
+  {
+    "name": "there",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "在那里，到那里"
+      },
+      {
+        "type": "int.",
+        "definition": "你瞧"
+      },
+      {
+        "type": "int.",
+        "definition": "好啦"
+      }
+    ],
+    "usphone": "ðer",
+    "ukphone": "ðeə(r)"
+  },
+  {
+    "name": "new",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "新的"
+      }
+    ],
+    "usphone": "nuː",
+    "ukphone": "njuː"
+  },
+  {
+    "name": "student",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "学生"
+      }
+    ],
+    "usphone": "'stuːdnt",
+    "ukphone": "'stjuːdnt"
+  },
+  {
+    "name": "computer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "计算机"
+      }
+    ],
+    "usphone": "kəm'pjuːtər",
+    "ukphone": "kəm'pjuːtə(r)"
+  },
+  {
+    "name": "library",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "图书馆"
+      }
+    ],
+    "usphone": "'laɪbreri",
+    "ukphone": "'laɪbrəri"
+  },
+  {
+    "name": "which",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "哪一个，哪一些"
+      }
+    ],
+    "usphone": "wɪtʃ",
+    "ukphone": "wɪtʃ"
+  },
+  {
+    "name": "cousin",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "堂 (表) 兄弟姐妹"
+      }
+    ],
+    "usphone": "'kʌzn",
+    "ukphone": "'kʌzn"
+  },
+  {
+    "name": "grade",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "年级"
+      },
+      {
+        "type": "n.",
+        "definition": "等级"
+      },
+      {
+        "type": "n.",
+        "definition": "成绩"
+      },
+      {
+        "type": "v.",
+        "definition": "评分"
+      }
+    ],
+    "usphone": "ɡreɪd",
+    "ukphone": "ɡreɪd"
+  },
+  {
+    "name": "same",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "同样的，相同的"
+      },
+      {
+        "type": "n.",
+        "definition": "同样的事"
+      }
+    ],
+    "usphone": "seɪm",
+    "ukphone": "seɪm"
+  },
+  {
+    "name": "cow",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "母牛，奶牛"
+      }
+    ],
+    "usphone": "kaʊ",
+    "ukphone": "kaʊ"
+  },
+  {
+    "name": "card",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "贺卡"
+      },
+      {
+        "type": "n.",
+        "definition": "卡片"
+      },
+      {
+        "type": "n.",
+        "definition": "纸牌"
+      },
+      {
+        "type": "n.",
+        "definition": "银行卡"
+      }
+    ],
+    "usphone": "kɑːrd",
+    "ukphone": "kɑːd"
+  },
+  {
+    "name": "cold",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "寒冷的"
+      },
+      {
+        "type": "adj.",
+        "definition": "冷漠的"
+      },
+      {
+        "type": "n.",
+        "definition": "伤风，感冒"
+      }
+    ],
+    "usphone": "koʊld",
+    "ukphone": "kəʊld"
+  },
+  {
+    "name": "blackboard",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "黑板"
+      }
+    ],
+    "usphone": "'blækbɔːrd",
+    "ukphone": "'blækbɔːd"
+  },
+  {
+    "name": "clean",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "打扫"
+      },
+      {
+        "type": "v.",
+        "definition": "使…干净"
+      },
+      {
+        "type": "adj.",
+        "definition": "干净的"
+      },
+      {
+        "type": "adj.",
+        "definition": "无害的"
+      },
+      {
+        "type": "adj.",
+        "definition": "清白的"
+      }
+    ],
+    "usphone": "kliːn",
+    "ukphone": "kliːn"
+  },
+  {
+    "name": "bright",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "明亮的"
+      },
+      {
+        "type": "adj.",
+        "definition": "聪明的"
+      },
+      {
+        "type": "adj.",
+        "definition": "前途光明的"
+      }
+    ],
+    "usphone": "braɪt",
+    "ukphone": "braɪt"
+  },
+  {
+    "name": "come",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "到来"
+      },
+      {
+        "type": "v.",
+        "definition": "发生"
+      },
+      {
+        "type": "v.",
+        "definition": "成为"
+      }
+    ],
+    "usphone": "kʌm",
+    "ukphone": "kʌm"
+  },
+  {
+    "name": "desk",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "桌子"
+      }
+    ],
+    "usphone": "desk",
+    "ukphone": "desk"
+  },
+  {
+    "name": "Ms.",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "女士"
+      }
+    ],
+    "usphone": "'mɪz",
+    "ukphone": "'mɪz"
+  },
+  {
+    "name": "city",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "城市"
+      }
+    ],
+    "usphone": "'sɪti",
+    "ukphone": "'sɪti"
+  },
+  {
+    "name": "cinema",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "电影院"
+      },
+      {
+        "type": "n.",
+        "definition": "电影"
+      }
+    ],
+    "usphone": "'sɪnəmə",
+    "ukphone": "'sɪnəmə"
+  },
+  {
+    "name": "ice",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "冰"
+      }
+    ],
+    "usphone": "aɪs",
+    "ukphone": "aɪs"
+  },
+  {
+    "name": "sing",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "唱"
+      },
+      {
+        "type": "v.",
+        "definition": "唱，唱歌"
+      }
+    ],
+    "usphone": "sɪŋ",
+    "ukphone": "sɪŋ"
+  },
+  {
+    "name": "dance",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "舞蹈"
+      },
+      {
+        "type": "n.",
+        "definition": "舞会"
+      },
+      {
+        "type": "v.",
+        "definition": "跳舞"
+      }
+    ],
+    "usphone": "dæns",
+    "ukphone": "dɑːns"
+  },
+  {
+    "name": "classmate",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "同班同学"
+      }
+    ],
+    "usphone": "'klæsmeɪt",
+    "ukphone": "'klɑːsmeɪt"
+  },
+  {
+    "name": "daily",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "日报"
+      },
+      {
+        "type": "adj.",
+        "definition": "每日的"
+      },
+      {
+        "type": "adj.",
+        "definition": "日常的"
+      },
+      {
+        "type": "adv.",
+        "definition": "每天，天天"
+      }
+    ],
+    "usphone": "'deɪli",
+    "ukphone": "'deɪli"
+  },
+  {
+    "name": "life",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "生命"
+      },
+      {
+        "type": "n.",
+        "definition": "寿命"
+      },
+      {
+        "type": "n.",
+        "definition": "生物"
+      },
+      {
+        "type": "n.",
+        "definition": "生活经历"
+      }
+    ],
+    "usphone": "laɪf",
+    "ukphone": "laɪf"
+  },
+  {
+    "name": "get",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "得到"
+      },
+      {
+        "type": "v.",
+        "definition": "去取"
+      },
+      {
+        "type": "v.",
+        "definition": "乘坐"
+      },
+      {
+        "type": "v.",
+        "definition": "抵达"
+      },
+      {
+        "type": "v.",
+        "definition": "理解"
+      }
+    ],
+    "usphone": "ɡet",
+    "ukphone": "ɡet"
+  },
+  {
+    "name": "get up",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "(指在早晨)(使)起身;(指在病后)(使)起床"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(使)起立"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(使)爬上,(使)登上;(使)骑上马(或自行车等)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(鸟)从躲藏处飞起"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(风、火等)变得猛烈;增加(速度等)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "在地位方面提高"
+      },
+      {
+        "type": "phrase.",
+        "definition": "呕出(食物)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "安排,组织(舞会、庆祝活动等);准备"
+      },
+      {
+        "type": "phrase.",
+        "definition": "打扮;装饰"
+      },
+      {
+        "type": "phrase.",
+        "definition": "鼓起(勇气等);使自己产生(某种情感)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "增进有关…的知识"
+      },
+      {
+        "type": "phrase.",
+        "definition": "往前走,快走"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(投球)急速高飞"
+      },
+      {
+        "type": "phrase.",
+        "definition": "<美口>为(参赛者等)鼓劲,鼓励"
+      },
+      {
+        "type": "phrase.",
+        "definition": "<美俚>服刑期满"
+      },
+      {
+        "type": "phrase.",
+        "definition": "<美俚>(尤指在墙壁等处乱涂而)确立…的独特签名法"
+      }
+    ],
+    "usphone": "ɡet ʌp",
+    "ukphone": "ɡet ʌp"
+  },
+  {
+    "name": "bus",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "公共汽车"
+      }
+    ],
+    "usphone": "bʌs",
+    "ukphone": "bʌs"
+  },
+  {
+    "name": "full",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "完整的"
+      },
+      {
+        "type": "adj.",
+        "definition": "满的"
+      },
+      {
+        "type": "adj.",
+        "definition": "吃饱了的"
+      },
+      {
+        "type": "adj.",
+        "definition": "大量的"
+      }
+    ],
+    "usphone": "fʊl",
+    "ukphone": "fʊl"
+  },
+  {
+    "name": "into",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "到……里面"
+      },
+      {
+        "type": "prep.",
+        "definition": "朝，向"
+      },
+      {
+        "type": "prep.",
+        "definition": "成为...状况"
+      }
+    ],
+    "usphone": "ˈɪntu；ˈɪntə",
+    "ukphone": "ˈɪntu；ˈɪntə"
+  },
+  {
+    "name": "car",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "汽车"
+      }
+    ],
+    "usphone": "kɑːr",
+    "ukphone": "kɑː(r)"
+  },
+  {
+    "name": "when",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "什么时候，何时"
+      },
+      {
+        "type": "conj.",
+        "definition": "在…时候"
+      },
+      {
+        "type": "conj.",
+        "definition": "在…之后"
+      },
+      {
+        "type": "conj.",
+        "definition": "一…就…"
+      }
+    ],
+    "usphone": "wen",
+    "ukphone": "wen"
+  },
+  {
+    "name": "football",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "足球"
+      },
+      {
+        "type": "n.",
+        "definition": "橄榄球"
+      }
+    ],
+    "usphone": "'fʊtbɔːl",
+    "ukphone": "'fʊtbɔːl"
+  },
+  {
+    "name": "has",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "有（have的第三人称单数）"
+      }
+    ],
+    "usphone": "hæz",
+    "ukphone": "hæz"
+  },
+  {
+    "name": "garden",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "花园"
+      },
+      {
+        "type": "n.",
+        "definition": "菜园"
+      }
+    ],
+    "usphone": "'ɡɑːrdn",
+    "ukphone": "'ɡɑːdn"
+  },
+  {
+    "name": "sweep",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "打扫"
+      },
+      {
+        "type": "v.",
+        "definition": "席卷"
+      },
+      {
+        "type": "v.",
+        "definition": "迅速传播"
+      }
+    ],
+    "usphone": "swiːp",
+    "ukphone": "swiːp"
+  },
+  {
+    "name": "floor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "地面"
+      },
+      {
+        "type": "n.",
+        "definition": "楼层"
+      }
+    ],
+    "usphone": "flɔːr",
+    "ukphone": "flɔː(r)"
+  },
+  {
+    "name": "chore",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "家务活，杂事，事务"
+      }
+    ],
+    "usphone": "tʃɔːr",
+    "ukphone": "tʃɔː(r)"
+  },
+  {
+    "name": "pick up",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "拾起"
+      },
+      {
+        "type": "phrase.",
+        "definition": "接人"
+      },
+      {
+        "type": "phrase.",
+        "definition": "整理"
+      },
+      {
+        "type": "phrase.",
+        "definition": "学会，掌握"
+      }
+    ],
+    "usphone": "pɪk ʌp",
+    "ukphone": "pik ʌp"
+  },
+  {
+    "name": "wash",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "洗涤"
+      },
+      {
+        "type": "n.",
+        "definition": "冲洗"
+      },
+      {
+        "type": "v.",
+        "definition": "洗涤"
+      },
+      {
+        "type": "v.",
+        "definition": "冲洗"
+      },
+      {
+        "type": "v.",
+        "definition": "流过"
+      },
+      {
+        "type": "v.",
+        "definition": "弄湿"
+      }
+    ],
+    "usphone": "wɑːʃ",
+    "ukphone": "wɒʃ"
+  },
+  {
+    "name": "toilet",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "厕所"
+      }
+    ],
+    "usphone": "'tɔɪlət",
+    "ukphone": "'tɔɪlət"
+  },
+  {
+    "name": "gym",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "健身房"
+      },
+      {
+        "type": "n.",
+        "definition": "体育馆"
+      }
+    ],
+    "usphone": "dʒɪm",
+    "ukphone": "dʒɪm"
+  },
+  {
+    "name": "age",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "年龄"
+      },
+      {
+        "type": "n.",
+        "definition": "时代"
+      },
+      {
+        "type": "v.",
+        "definition": "变老"
+      },
+      {
+        "type": "v.",
+        "definition": "成熟"
+      }
+    ],
+    "usphone": "eɪdʒ",
+    "ukphone": "eɪdʒ"
+  },
+  {
+    "name": "often",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "经常"
+      }
+    ],
+    "usphone": "'ɔːfn",
+    "ukphone": "'ɒfn"
+  },
+  {
+    "name": "talk",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "谈话，讲话"
+      },
+      {
+        "type": "n.",
+        "definition": "演讲"
+      },
+      {
+        "type": "n.",
+        "definition": "讲座"
+      }
+    ],
+    "usphone": "tɔːk",
+    "ukphone": "tɔːk"
+  },
+  {
+    "name": "her",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "她"
+      }
+    ],
+    "usphone": "hɜːr",
+    "ukphone": "hɜː(r)"
+  },
+  {
+    "name": "sometimes",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "有时"
+      }
+    ],
+    "usphone": "'sʌmtaɪmz",
+    "ukphone": "'sʌmtaɪmz"
+  },
+  {
+    "name": "ball",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "球"
+      },
+      {
+        "type": "n.",
+        "definition": "舞会"
+      }
+    ],
+    "usphone": "bɔːl",
+    "ukphone": "bɔːl"
+  },
+  {
+    "name": "hand",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "手"
+      },
+      {
+        "type": "v.",
+        "definition": "传递，交递"
+      }
+    ],
+    "usphone": "hænd",
+    "ukphone": "hænd"
+  },
+  {
+    "name": "house",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "房子"
+      },
+      {
+        "type": "n.",
+        "definition": "住宅"
+      }
+    ],
+    "usphone": "haʊs",
+    "ukphone": "haʊs"
+  },
+  {
+    "name": "hobby",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "业余爱好"
+      }
+    ],
+    "usphone": "'hɑːbi",
+    "ukphone": "'hɒbi"
+  },
+  {
+    "name": "their",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "他（她，它）们的"
+      }
+    ],
+    "usphone": "ðer",
+    "ukphone": "ðeə(r)"
+  },
+  {
+    "name": "interesting",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有趣的"
+      }
+    ],
+    "usphone": "'ɪntrəstɪŋ",
+    "ukphone": "'ɪntrəstɪŋ"
+  },
+  {
+    "name": "wonderful",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "精彩的"
+      },
+      {
+        "type": "adj.",
+        "definition": "令人惊叹的"
+      }
+    ],
+    "usphone": "'wʌndərfl",
+    "ukphone": "'wʌndəfl"
+  },
+  {
+    "name": "basketball",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "篮球运动"
+      },
+      {
+        "type": "n.",
+        "definition": "篮球"
+      }
+    ],
+    "usphone": "'bæskɪtbɔːl",
+    "ukphone": "'bɑːskɪtbɔːl"
+  },
+  {
+    "name": "china",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "中国（C必须大写）；瓷器，瓷制品"
+      }
+    ],
+    "usphone": "'tʃaɪnə",
+    "ukphone": "'tʃaɪnə"
+  },
+  {
+    "name": "they're",
+    "pos": [
+      {
+        "type": "abbr.",
+        "definition": "(=they are)"
+      }
+    ],
+    "usphone": "ðer",
+    "ukphone": "ðeə(r)"
+  },
+  {
+    "name": "Kung Fu",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "功夫（中国拳术）"
+      },
+      {
+        "type": "v.",
+        "definition": "用功夫击打(对手)"
+      }
+    ],
+    "usphone": "ˌkʌŋ'fuː",
+    "ukphone": "ˌkʌŋ'fuː"
+  },
+  {
+    "name": "peking opera",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "京戏"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ping-pong",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "乒乓球"
+      }
+    ],
+    "usphone": "pɪŋ pɔːŋ",
+    "ukphone": "pɪŋ pɒŋ"
+  },
+  {
+    "name": "he's",
+    "pos": [
+      {
+        "type": "abbr.",
+        "definition": "(=he is, he has)"
+      }
+    ],
+    "usphone": "hiːz",
+    "ukphone": "hiːz"
+  },
+  {
+    "name": "tree",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "树"
+      }
+    ],
+    "usphone": "triː",
+    "ukphone": "triː"
+  },
+  {
+    "name": "lake",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "湖"
+      }
+    ],
+    "usphone": "leɪk",
+    "ukphone": "leɪk"
+  },
+  {
+    "name": "learn",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "学习"
+      },
+      {
+        "type": "v.",
+        "definition": "得知"
+      }
+    ],
+    "usphone": "lɜːrn",
+    "ukphone": "lɜːn"
+  },
+  {
+    "name": "a lot",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "许多；大量"
+      },
+      {
+        "type": "adv.",
+        "definition": "常"
+      }
+    ],
+    "usphone": "ə lɑːt",
+    "ukphone": "ə lɒt"
+  },
+  {
+    "name": "from",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "从"
+      },
+      {
+        "type": "prep.",
+        "definition": "来自"
+      }
+    ],
+    "usphone": "frɑːm",
+    "ukphone": "frɒm"
+  },
+  {
+    "name": "also",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "此外"
+      },
+      {
+        "type": "adv.",
+        "definition": "而且"
+      },
+      {
+        "type": "adv.",
+        "definition": "也"
+      }
+    ],
+    "usphone": "'ɔːlsoʊ",
+    "ukphone": "'ɔːlsəʊ"
+  },
+  {
+    "name": "collect",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "收集"
+      }
+    ],
+    "usphone": "kə'lekt",
+    "ukphone": "kə'lekt"
+  },
+  {
+    "name": "stamp",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "印记"
+      },
+      {
+        "type": "n.",
+        "definition": "章，戳"
+      },
+      {
+        "type": "n.",
+        "definition": "邮票"
+      }
+    ],
+    "usphone": "stæmp",
+    "ukphone": "stæmp"
+  },
+  {
+    "name": "thing",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "东西"
+      },
+      {
+        "type": "n.",
+        "definition": "物品"
+      }
+    ],
+    "usphone": "θɪŋ",
+    "ukphone": "θɪŋ"
+  },
+  {
+    "name": "listen",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "听"
+      },
+      {
+        "type": "v.",
+        "definition": "听从"
+      }
+    ],
+    "usphone": "'lɪsn",
+    "ukphone": "'lɪsn"
+  },
+  {
+    "name": "music",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "音乐"
+      }
+    ],
+    "usphone": "'mjuːzɪk",
+    "ukphone": "'mjuːzɪk"
+  },
+  {
+    "name": "song",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "歌曲"
+      }
+    ],
+    "usphone": "sɔːŋ",
+    "ukphone": "sɒŋ"
+  },
+  {
+    "name": "tail",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "尾巴"
+      },
+      {
+        "type": "n.",
+        "definition": "尾部"
+      }
+    ],
+    "usphone": "teɪl",
+    "ukphone": "teɪl"
+  },
+  {
+    "name": "festival",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "节日"
+      },
+      {
+        "type": "n.",
+        "definition": "纪念活动日"
+      },
+      {
+        "type": "adj.",
+        "definition": "节日的，喜庆的"
+      }
+    ],
+    "usphone": "'festɪvl",
+    "ukphone": "'festɪvl"
+  },
+  {
+    "name": "Spring Festival",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "春节"
+      }
+    ],
+    "usphone": "",
+    "ukphone": "\n"
+  },
+  {
+    "name": "before",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……以前"
+      },
+      {
+        "type": "prep.",
+        "definition": "在……前面"
+      },
+      {
+        "type": "conj.",
+        "definition": "在……以前"
+      },
+      {
+        "type": "adv.",
+        "definition": "以前"
+      }
+    ],
+    "usphone": "bɪ'fɔːr",
+    "ukphone": "bɪ'fɔː(r)"
+  },
+  {
+    "name": "put up",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "张贴;公布"
+      },
+      {
+        "type": "phrase.",
+        "definition": "把…拿出来出售(或拍卖、竞争等)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "建造;搭建"
+      },
+      {
+        "type": "phrase.",
+        "definition": "举起;抬起;升起"
+      },
+      {
+        "type": "phrase.",
+        "definition": "把…放在一边;把…搁置起来"
+      },
+      {
+        "type": "phrase.",
+        "definition": "提出(请愿、建议、问题等);作(祷告)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "提出(或举荐)…作候选人(或成员等),提名;参加竞选;自荐任职"
+      },
+      {
+        "type": "phrase.",
+        "definition": "表现出,显示出"
+      },
+      {
+        "type": "phrase.",
+        "definition": "包装;把…(加工)贮藏起来;把…装罐(或桶等)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "配制(药品等);配(方)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "为…提供(膳)宿;得到(膳)宿,宿夜"
+      },
+      {
+        "type": "phrase.",
+        "definition": "密谋,预谋"
+      },
+      {
+        "type": "phrase.",
+        "definition": "支付;提供(资金);储存(钱)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "拿出…来作奖金(或赌注)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "做需要做的事,拿出需要的东西"
+      },
+      {
+        "type": "phrase.",
+        "definition": "组成"
+      },
+      {
+        "type": "phrase.",
+        "definition": "梳理(头发);把(头发)盘在头上"
+      },
+      {
+        "type": "phrase.",
+        "definition": "进行(抵抗、斗争等)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "把(剑)插入鞘内,把(武器)收起来"
+      },
+      {
+        "type": "phrase.",
+        "definition": "传讯(犯人)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "雇用…当赛马骑师"
+      },
+      {
+        "type": "phrase.",
+        "definition": "上演(剧本)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "使(猎物)走出掩蔽处;把(猎物)惊出躲藏处"
+      },
+      {
+        "type": "phrase.",
+        "definition": "请(某人)站起来讲话"
+      },
+      {
+        "type": "phrase.",
+        "definition": "<主英>提高,增加(价格等)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "佩带(军人标志、职务标饰等)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "使恼怒;困扰"
+      },
+      {
+        "type": "phrase.",
+        "definition": "对…评判(或评价)"
+      }
+    ],
+    "usphone": "pʊt ʌp",
+    "ukphone": "pʊt ʌp"
+  },
+  {
+    "name": "luck",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "运气"
+      }
+    ],
+    "usphone": "lʌk",
+    "ukphone": "lʌk"
+  },
+  {
+    "name": "else",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "别的，其他的"
+      },
+      {
+        "type": "adv.",
+        "definition": "其他"
+      }
+    ],
+    "usphone": "els",
+    "ukphone": "els"
+  },
+  {
+    "name": "buy",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "购买"
+      },
+      {
+        "type": "v.",
+        "definition": "收买"
+      },
+      {
+        "type": "v.",
+        "definition": "相信"
+      }
+    ],
+    "usphone": "baɪ",
+    "ukphone": "baɪ"
+  },
+  {
+    "name": "dumpling",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "汤圆"
+      },
+      {
+        "type": "n.",
+        "definition": "饺子"
+      },
+      {
+        "type": "n.",
+        "definition": "水果布丁"
+      }
+    ],
+    "usphone": "'dʌmplɪŋ",
+    "ukphone": "'dʌmplɪŋ"
+  },
+  {
+    "name": "gala",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "盛会，庆典，演出，体育运动会"
+      },
+      {
+        "type": "adj.",
+        "definition": "节日的"
+      }
+    ],
+    "usphone": "'ɡɑːlə",
+    "ukphone": "'ɡɑːlə"
+  },
+  {
+    "name": "dragon",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "龙；〈侮辱〉恶婆娘"
+      }
+    ],
+    "usphone": "'dræɡən",
+    "ukphone": "'dræɡən"
+  },
+  {
+    "name": "say",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "说，讲"
+      }
+    ],
+    "usphone": "seɪ",
+    "ukphone": "seɪ"
+  },
+  {
+    "name": "them",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "他们，她们，它们"
+      }
+    ],
+    "usphone": "ðem",
+    "ukphone": "ðem"
+  },
+  {
+    "name": "any",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "任何（的）"
+      },
+      {
+        "type": "adj.",
+        "definition": "一些"
+      },
+      {
+        "type": "pron.",
+        "definition": "任何（的）"
+      },
+      {
+        "type": "pron.",
+        "definition": "一些"
+      }
+    ],
+    "usphone": "'eni",
+    "ukphone": "'eni"
+  },
+  {
+    "name": "lucky",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "幸运的"
+      }
+    ],
+    "usphone": "'lʌki",
+    "ukphone": "'lʌki"
+  },
+  {
+    "name": "money",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "钱"
+      },
+      {
+        "type": "n.",
+        "definition": "货币"
+      }
+    ],
+    "usphone": "'mʌni",
+    "ukphone": "'mʌni"
+  },
+  {
+    "name": "lantern",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "灯笼"
+      }
+    ],
+    "usphone": "'læntərn",
+    "ukphone": "'læntən"
+  },
+  {
+    "name": "riddle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "谜语"
+      }
+    ],
+    "usphone": "'rɪdl",
+    "ukphone": "'rɪdl"
+  },
+  {
+    "name": "Lantern Festival",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "【中节】元宵节"
+      }
+    ],
+    "usphone": "'læntərn 'festɪvl",
+    "ukphone": "'læntən 'festɪvl"
+  },
+  {
+    "name": "Dragon Boat Festival",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "端午节"
+      }
+    ],
+    "usphone": "'dræɡən boʊt 'festəvəl",
+    "ukphone": "'dræɡən bəʊt 'festəvəl"
+  },
+  {
+    "name": "Mid-Autumn Festival",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "中秋节"
+      }
+    ],
+    "usphone": "mɪd 'ɔtəm 'festɪvəl",
+    "ukphone": "mɪd 'ɔtəm 'festɪvəl"
+  },
+  {
+    "name": "fair",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "合理的"
+      },
+      {
+        "type": "adj.",
+        "definition": "公平的"
+      },
+      {
+        "type": "adj.",
+        "definition": "浅色的"
+      },
+      {
+        "type": "n.",
+        "definition": "集市"
+      },
+      {
+        "type": "n.",
+        "definition": "展览会"
+      },
+      {
+        "type": "n.",
+        "definition": "展销会"
+      }
+    ],
+    "usphone": "fer",
+    "ukphone": "feə(r)"
+  },
+  {
+    "name": "boat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小船，小舟"
+      }
+    ],
+    "usphone": "boʊt",
+    "ukphone": "bəʊt"
+  },
+  {
+    "name": "race",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "赛跑"
+      },
+      {
+        "type": "v.",
+        "definition": "竞赛"
+      },
+      {
+        "type": "n.",
+        "definition": "赛跑"
+      },
+      {
+        "type": "n.",
+        "definition": "种族"
+      }
+    ],
+    "usphone": "reɪs",
+    "ukphone": "reɪs"
+  },
+  {
+    "name": "try",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "尝试"
+      },
+      {
+        "type": "v.",
+        "definition": "努力"
+      }
+    ],
+    "usphone": "traɪ",
+    "ukphone": "traɪ"
+  },
+  {
+    "name": "map",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "地图"
+      }
+    ],
+    "usphone": "mæp",
+    "ukphone": "mæp"
+  },
+  {
+    "name": "sleep",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "睡觉"
+      }
+    ],
+    "usphone": "sliːp",
+    "ukphone": "sliːp"
+  },
+  {
+    "name": "merry",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "高兴的，愉快的"
+      }
+    ],
+    "usphone": "'meri",
+    "ukphone": "'meri"
+  },
+  {
+    "name": "Christmas",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "圣诞节"
+      }
+    ],
+    "usphone": "'krɪsməs",
+    "ukphone": "'krɪsməs"
+  },
+  {
+    "name": "moon",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "月亮"
+      },
+      {
+        "type": "n.",
+        "definition": "卫星"
+      }
+    ],
+    "usphone": "muːn",
+    "ukphone": "muːn"
+  },
+  {
+    "name": "mooncake",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "【食】月饼"
+      }
+    ],
+    "usphone": "'muːnkeɪk",
+    "ukphone": "'muːnkeɪk"
+  },
+  {
+    "name": "hope",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "希望"
+      },
+      {
+        "type": "v.",
+        "definition": "希望"
+      }
+    ],
+    "usphone": "hoʊp",
+    "ukphone": "həʊp"
+  },
+  {
+    "name": "join",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "加入"
+      },
+      {
+        "type": "v.",
+        "definition": "参加"
+      },
+      {
+        "type": "v.",
+        "definition": "连接"
+      },
+      {
+        "type": "v.",
+        "definition": "汇合"
+      }
+    ],
+    "usphone": "dʒɔɪn",
+    "ukphone": "dʒɔɪn"
+  },
+  {
+    "name": "best",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "最好的，最出色的，最优秀的，最愉快的"
+      },
+      {
+        "type": "adv.",
+        "definition": "最，最高程度地，最出色地，最高标准地"
+      },
+      {
+        "type": "n.",
+        "definition": "最好的事物（或人），（人或事物所能达到的）最高标准"
+      },
+      {
+        "type": "v.",
+        "definition": "胜过，打败"
+      }
+    ],
+    "usphone": "best",
+    "ukphone": "best"
+  },
+  {
+    "name": "yours",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "你的"
+      },
+      {
+        "type": "pron.",
+        "definition": "你们的"
+      }
+    ],
+    "usphone": "jərz",
+    "ukphone": "jɔːz"
+  },
+  {
+    "name": "quiet",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "安静的"
+      }
+    ],
+    "usphone": "'kwaɪət",
+    "ukphone": "'kwaɪət"
+  }
+]

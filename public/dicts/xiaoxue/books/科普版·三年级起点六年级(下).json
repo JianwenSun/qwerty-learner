@@ -1,0 +1,966 @@
+[
+  {
+    "name": "wear",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "戴；穿；面露，面带"
+      }
+    ],
+    "usphone": "wer",
+    "ukphone": "weə(r)"
+  },
+  {
+    "name": "coat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "外套；涂层；表皮；皮毛"
+      }
+    ],
+    "usphone": "koʊt",
+    "ukphone": "kəʊt"
+  },
+  {
+    "name": "sleep",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "睡觉"
+      }
+    ],
+    "usphone": "sliːp",
+    "ukphone": "sliːp"
+  },
+  {
+    "name": "tired",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "疲劳的，累的"
+      }
+    ],
+    "usphone": "'taɪərd",
+    "ukphone": "'taɪəd"
+  },
+  {
+    "name": "pass",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "传；递；通过"
+      },
+      {
+        "type": "n.",
+        "definition": "合格；通过；通行证；传球"
+      }
+    ],
+    "usphone": "pæs",
+    "ukphone": "pɑːs"
+  },
+  {
+    "name": "headache",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "头痛"
+      }
+    ],
+    "usphone": "'hedeɪk",
+    "ukphone": "'hedeɪk"
+  },
+  {
+    "name": "habit",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "习惯；习性"
+      }
+    ],
+    "usphone": "'hæbɪt",
+    "ukphone": "'hæbɪt"
+  },
+  {
+    "name": "have a cold",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "患感冒"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "stay up",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "熬夜，不睡"
+      }
+    ],
+    "usphone": "steɪ ʌp",
+    "ukphone": "steɪ ʌp"
+  },
+  {
+    "name": "go to bed",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "上床睡觉"
+      }
+    ],
+    "usphone": "ɡoʊ tu bed",
+    "ukphone": "ɡəʊ tu bed"
+  },
+  {
+    "name": "from then on",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "从那时起"
+      }
+    ],
+    "usphone": "frʌm ðen ɑːn",
+    "ukphone": "frɒm ðen ɒn"
+  },
+  {
+    "name": "visit",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "访问；参观"
+      },
+      {
+        "type": "v.",
+        "definition": "拜访，访问；看望"
+      }
+    ],
+    "usphone": "'vɪzɪt",
+    "ukphone": "'vɪzɪt"
+  },
+  {
+    "name": "photo",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "照片（=photograph）"
+      }
+    ],
+    "usphone": "'foʊtoʊ",
+    "ukphone": "'fəʊtəʊ"
+  },
+  {
+    "name": "angry",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "生气的，愤怒的"
+      }
+    ],
+    "usphone": "'æŋɡri",
+    "ukphone": "'æŋɡri"
+  },
+  {
+    "name": "high",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "高的"
+      }
+    ],
+    "usphone": "haɪ",
+    "ukphone": "haɪ"
+  },
+  {
+    "name": "once",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "一次"
+      },
+      {
+        "type": "adv.",
+        "definition": "一次；一度；从前；曾经"
+      },
+      {
+        "type": "conj.",
+        "definition": "一旦……就"
+      }
+    ],
+    "usphone": "wʌns",
+    "ukphone": "wʌns"
+  },
+  {
+    "name": "trip",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "旅行；旅程"
+      }
+    ],
+    "usphone": "trɪp",
+    "ukphone": "trɪp"
+  },
+  {
+    "name": "build",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "体形，体格，身材"
+      },
+      {
+        "type": "vt.",
+        "definition": "建筑，建造，开发，建构"
+      }
+    ],
+    "usphone": "bɪld",
+    "ukphone": "bɪld"
+  },
+  {
+    "name": "take photos",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "照相，拍照"
+      }
+    ],
+    "usphone": "teɪk 'foʊtoʊz",
+    "ukphone": "teɪk 'fəʊtəʊz"
+  },
+  {
+    "name": "boat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小船，小舟"
+      }
+    ],
+    "usphone": "boʊt",
+    "ukphone": "bəʊt"
+  },
+  {
+    "name": "zoo",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "动物园"
+      }
+    ],
+    "usphone": "zuː",
+    "ukphone": "zuː"
+  },
+  {
+    "name": "last",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "最近刚过去的；最后的"
+      },
+      {
+        "type": "vi.",
+        "definition": "持续，维持"
+      }
+    ],
+    "usphone": "læst",
+    "ukphone": "lɑːst"
+  },
+  {
+    "name": "life",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "生活；生命；人生；生物（pl.lives）"
+      }
+    ],
+    "usphone": "laɪf",
+    "ukphone": "laɪf"
+  },
+  {
+    "name": "protect",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "保护"
+      }
+    ],
+    "usphone": "prə'tekt",
+    "ukphone": "prə'tekt"
+  },
+  {
+    "name": "mine",
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "我的（东西）"
+      },
+      {
+        "type": "n.",
+        "definition": "矿藏；矿山"
+      },
+      {
+        "type": "v.",
+        "definition": "开采（矿物）"
+      }
+    ],
+    "usphone": "maɪn",
+    "ukphone": "maɪn"
+  },
+  {
+    "name": "middle",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "中间，中央"
+      },
+      {
+        "type": "adj.",
+        "definition": "中间的"
+      }
+    ],
+    "usphone": "'mɪdl",
+    "ukphone": "'mɪdl"
+  },
+  {
+    "name": "off",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "离开，脱离，（走）开"
+      },
+      {
+        "type": "adv.",
+        "definition": "离开；（电、自来水）停了，中断"
+      }
+    ],
+    "usphone": "ɔːf",
+    "ukphone": "ɒf"
+  },
+  {
+    "name": "world",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "世界"
+      }
+    ],
+    "usphone": "wɜːrld",
+    "ukphone": "wɜːld"
+  },
+  {
+    "name": "have a look at",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "(仔细)看一看"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "do one's best",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "尽最大的努力"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "wait for",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "等候，等待"
+      }
+    ],
+    "usphone": "weɪt fɔːr",
+    "ukphone": "weɪt fɔː"
+  },
+  {
+    "name": "in the middle of",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "在…当中；在…的中途；正忙于"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "after some time",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "不久之后"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "supermarket",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "超级市场，超市"
+      }
+    ],
+    "usphone": "ˈsuːpərmɑːrkɪt",
+    "ukphone": "'suːpəmɑːkɪt"
+  },
+  {
+    "name": "taxi",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "出租车"
+      }
+    ],
+    "usphone": "'tæksi",
+    "ukphone": "'tæksi"
+  },
+  {
+    "name": "sweater",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "厚运动衫；毛衣"
+      }
+    ],
+    "usphone": "'swetər",
+    "ukphone": "'swetə(r)"
+  },
+  {
+    "name": "cool",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "凉的；凉快的；冷静的；酷的"
+      }
+    ],
+    "usphone": "kuːl",
+    "ukphone": "kuːl"
+  },
+  {
+    "name": "young",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "年轻的"
+      }
+    ],
+    "usphone": "jʌŋ",
+    "ukphone": "jʌŋ"
+  },
+  {
+    "name": "clothes",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（pl.）衣服"
+      }
+    ],
+    "usphone": "kloʊðz, kloʊz",
+    "ukphone": "kləʊðz, kləʊz"
+  },
+  {
+    "name": "poor",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "贫穷的；可怜的；不好的，差的"
+      }
+    ],
+    "usphone": "pʊr",
+    "ukphone": "pʊə(r)"
+  },
+  {
+    "name": "dead",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "死的"
+      }
+    ],
+    "usphone": "ded",
+    "ukphone": "ded"
+  },
+  {
+    "name": "quickly",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "迅速地，马上"
+      }
+    ],
+    "usphone": "'kwɪkli",
+    "ukphone": "'kwɪkli"
+  },
+  {
+    "name": "lose",
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "迷失；丢失；失去，丧失"
+      }
+    ],
+    "usphone": "luːz",
+    "ukphone": "luːz"
+  },
+  {
+    "name": "try on",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "试穿"
+      }
+    ],
+    "usphone": "traɪ ɑːn",
+    "ukphone": "traɪ ɒn"
+  },
+  {
+    "name": "put on",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "穿上"
+      },
+      {
+        "type": "phrase.",
+        "definition": "穿上，戴上；增加；上演"
+      }
+    ],
+    "usphone": "'pʊtˌɑːnˌ -ˌɔːn",
+    "ukphone": "'pʊtˌɒn, -ˌɔːn"
+  },
+  {
+    "name": "umbrella",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "伞, 雨伞, 保护伞, 阳伞"
+      }
+    ],
+    "usphone": "ʌm'brelə",
+    "ukphone": "ʌm'brelə"
+  },
+  {
+    "name": "luck",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "运气"
+      }
+    ],
+    "usphone": "lʌk",
+    "ukphone": "lʌk"
+  },
+  {
+    "name": "library",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "图书馆"
+      }
+    ],
+    "usphone": "'laɪbreri",
+    "ukphone": "'laɪbrəri"
+  },
+  {
+    "name": "left",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "左，左边"
+      },
+      {
+        "type": "adj.",
+        "definition": "左边的"
+      },
+      {
+        "type": "adv.",
+        "definition": "向左"
+      }
+    ],
+    "usphone": "left",
+    "ukphone": "left"
+  },
+  {
+    "name": "end",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "最后，最终"
+      },
+      {
+        "type": "v.",
+        "definition": "结束"
+      }
+    ],
+    "usphone": "end",
+    "ukphone": "end"
+  },
+  {
+    "name": "surprised",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "惊讶的，感觉意外的"
+      },
+      {
+        "type": "v.",
+        "definition": "“surprise”的过去分词和过去式"
+      }
+    ],
+    "usphone": "sər'praɪzd",
+    "ukphone": "sə'praɪzd"
+  },
+  {
+    "name": "at the end",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "最终"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "on the right",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "在右边"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "next to",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "紧邻, 在…近旁, 仅次于, 紧接"
+      }
+    ],
+    "usphone": "nekst tu",
+    "ukphone": "nekst tu"
+  },
+  {
+    "name": "look for",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "寻找, 探索, 渴望, 盼望"
+      },
+      {
+        "type": "phrase.",
+        "definition": "寻找；搜索"
+      }
+    ],
+    "usphone": "lʊk fɔːr",
+    "ukphone": "lʊk fɔː"
+  },
+  {
+    "name": "lovely",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "可爱的；令人愉快的，极好的"
+      }
+    ],
+    "usphone": "'lʌvli",
+    "ukphone": "'lʌvli"
+  },
+  {
+    "name": "a lot of",
+    "pos": [
+      {
+        "type": "det.",
+        "definition": "许多"
+      }
+    ],
+    "usphone": "ə lɑːt əv",
+    "ukphone": "ə lɒt əv"
+  },
+  {
+    "name": "between",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……之间"
+      }
+    ],
+    "usphone": "bɪ'twiːn",
+    "ukphone": "bɪ'twiːn"
+  },
+  {
+    "name": "hour",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小时"
+      }
+    ],
+    "usphone": "'aʊər",
+    "ukphone": "'aʊə(r)"
+  },
+  {
+    "name": "team",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "队，组"
+      }
+    ],
+    "usphone": "tiːm",
+    "ukphone": "tiːm"
+  },
+  {
+    "name": "later",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "以后，过后，后来；较晚地"
+      },
+      {
+        "type": "adj.",
+        "definition": "更迟的；更后的"
+      }
+    ],
+    "usphone": "'leɪtər",
+    "ukphone": "'leɪtə(r)"
+  },
+  {
+    "name": "cloud",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "云"
+      }
+    ],
+    "usphone": "klaʊd",
+    "ukphone": "klaʊd"
+  },
+  {
+    "name": "clear",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "清楚的；明确的；清澈的"
+      }
+    ],
+    "usphone": "klɪr",
+    "ukphone": "klɪə(r)"
+  },
+  {
+    "name": "shine",
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "发光，照耀，闪耀"
+      },
+      {
+        "type": "n.",
+        "definition": "光泽；光彩；阳光；晴天"
+      }
+    ],
+    "usphone": "ʃaɪn",
+    "ukphone": "ʃaɪn"
+  },
+  {
+    "name": "raincoat",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "雨衣"
+      }
+    ],
+    "usphone": "'reɪnkoʊt",
+    "ukphone": "'reɪnkəʊt"
+  },
+  {
+    "name": "talk about",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "讲，谈论(某事)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "谈及，说到"
+      }
+    ],
+    "usphone": "tɔːk ə'baʊt",
+    "ukphone": "tɔːk ə'baʊt"
+  },
+  {
+    "name": "laugh at",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "嘲笑"
+      }
+    ],
+    "usphone": "læf æt",
+    "ukphone": "lɑːf æt"
+  },
+  {
+    "name": "deaf",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "聋的"
+      }
+    ],
+    "usphone": "def",
+    "ukphone": "def"
+  },
+  {
+    "name": "queen",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "王后，女王"
+      }
+    ],
+    "usphone": "kwiːn",
+    "ukphone": "kwiːn"
+  },
+  {
+    "name": "holiday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "假期；假日"
+      }
+    ],
+    "usphone": "'hɑːlədeɪ",
+    "ukphone": "'hɒlədeɪ"
+  },
+  {
+    "name": "student",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "学生"
+      }
+    ],
+    "usphone": "'stuːdnt",
+    "ukphone": "'stjuːdnt"
+  },
+  {
+    "name": "parent",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "父；母"
+      }
+    ],
+    "usphone": "'perənt",
+    "ukphone": "'peərənt"
+  },
+  {
+    "name": "travel",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "旅行，出行；长途行走；游历；旅游"
+      },
+      {
+        "type": "v.",
+        "definition": "旅行"
+      }
+    ],
+    "usphone": "'trævl",
+    "ukphone": "'trævl"
+  },
+  {
+    "name": "moon",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "月亮（常作the moon）"
+      }
+    ],
+    "usphone": "muːn",
+    "ukphone": "muːn"
+  },
+  {
+    "name": "ago",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "以前"
+      }
+    ],
+    "usphone": "ə'ɡoʊ",
+    "ukphone": "ə'ɡəʊ"
+  },
+  {
+    "name": "famous",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "著名的"
+      }
+    ],
+    "usphone": "'feɪməs",
+    "ukphone": "'feɪməs"
+  },
+  {
+    "name": "capital",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "首都，省会；资金，资本"
+      }
+    ],
+    "usphone": "'kæpɪtl",
+    "ukphone": "'kæpɪtl"
+  },
+  {
+    "name": "climb",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "攀登，攀爬"
+      },
+      {
+        "type": "n.",
+        "definition": "攀登"
+      }
+    ],
+    "usphone": "klaɪm",
+    "ukphone": "klaɪm"
+  },
+  {
+    "name": "come to an end",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "完结,终了,结束"
+      }
+    ],
+    "usphone": "kʌm tu ən end",
+    "ukphone": "kʌm tu æn end"
+  },
+  {
+    "name": "some day",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "（日后）某一天，总有一天"
+      }
+    ],
+    "usphone": "sʌm deɪ",
+    "ukphone": "sʌm deɪ"
+  }
+]

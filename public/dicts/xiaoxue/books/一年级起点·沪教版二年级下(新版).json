@@ -1,0 +1,564 @@
+[
+  {
+    "name": "feed the cows",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "喂牛"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "see a film",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "看电影"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "vist Grandma and Grandpa",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "看望爷爷奶奶"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "have a good time",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "过得愉快, 很愉快"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "do the housework",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "做家务"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "tidy my room",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "整理我的房间"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "make the bed",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "整理床铺"
+      }
+    ],
+    "usphone": "meɪk ðə bed",
+    "ukphone": "meɪk ðə bed"
+  },
+  {
+    "name": "dish",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "盘"
+      },
+      {
+        "type": "n.",
+        "definition": "碟"
+      },
+      {
+        "type": "n.",
+        "definition": "餐具"
+      },
+      {
+        "type": "n.",
+        "definition": "一道菜"
+      }
+    ],
+    "usphone": "dɪʃ",
+    "ukphone": "dɪʃ"
+  },
+  {
+    "name": "happy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "快乐的"
+      },
+      {
+        "type": "adj.",
+        "definition": "幸福的"
+      }
+    ],
+    "usphone": "'hæpi",
+    "ukphone": "'hæpi"
+  },
+  {
+    "name": "excited",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "激动的，兴奋的，受刺激的，紧张不安的"
+      },
+      {
+        "type": "v.",
+        "definition": "“excite”的过去式和过去分词"
+      }
+    ],
+    "usphone": "ɪk'saɪtɪd",
+    "ukphone": "ɪk'saɪtɪd"
+  },
+  {
+    "name": "upset",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "心烦的，苦恼的"
+      },
+      {
+        "type": "v.",
+        "definition": "使烦恼，使生气"
+      }
+    ],
+    "usphone": "ʌp'set",
+    "ukphone": "ʌp'set"
+  },
+  {
+    "name": "angry",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "生气的，愤怒的"
+      }
+    ],
+    "usphone": "'æŋɡri",
+    "ukphone": "'æŋɡri"
+  },
+  {
+    "name": "play music",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "奏乐"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "sing and dance",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "唱歌跳舞"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "talk with the baby",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "和婴儿说话"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "play a game",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "玩游戏"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "talk and share",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "交谈和分享"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "have a go",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "（对身体）攻击，袭击；走到…身边, 试一试, 好好干一场"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "nice",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "漂亮的"
+      },
+      {
+        "type": "adj.",
+        "definition": "美好的"
+      },
+      {
+        "type": "adj.",
+        "definition": "令人愉快的"
+      }
+    ],
+    "usphone": "naɪs",
+    "ukphone": "naɪs"
+  },
+  {
+    "name": "cook",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "炊事员，厨师"
+      },
+      {
+        "type": "v.",
+        "definition": "烹饪"
+      }
+    ],
+    "usphone": "kʊk",
+    "ukphone": "kʊk"
+  },
+  {
+    "name": "great",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "巨大的"
+      },
+      {
+        "type": "adj.",
+        "definition": "重大的"
+      },
+      {
+        "type": "adj.",
+        "definition": "伟大的"
+      },
+      {
+        "type": "adj.",
+        "definition": "极好的"
+      },
+      {
+        "type": "adv.",
+        "definition": "极好地，很棒地"
+      }
+    ],
+    "usphone": "ɡreɪt",
+    "ukphone": "ɡreɪt"
+  },
+  {
+    "name": "teacher",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "教师"
+      }
+    ],
+    "usphone": "'tiːtʃər",
+    "ukphone": "'tiːtʃə(r)"
+  },
+  {
+    "name": "tree",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "树"
+      }
+    ],
+    "usphone": "triː",
+    "ukphone": "triː"
+  },
+  {
+    "name": "leaf",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "叶子"
+      },
+      {
+        "type": "n.",
+        "definition": "书页"
+      },
+      {
+        "type": "v.",
+        "definition": "匆匆翻阅"
+      },
+      {
+        "type": "v.",
+        "definition": "浏览"
+      }
+    ],
+    "usphone": "liːf",
+    "ukphone": "liːf"
+  },
+  {
+    "name": "flower",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "花"
+      },
+      {
+        "type": "v.",
+        "definition": "开花"
+      }
+    ],
+    "usphone": "'flaʊər",
+    "ukphone": "'flaʊə(r)"
+  },
+  {
+    "name": "grass",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "草"
+      },
+      {
+        "type": "n.",
+        "definition": "草地"
+      }
+    ],
+    "usphone": "ɡræs",
+    "ukphone": "ɡrɑːs"
+  },
+  {
+    "name": "duck",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鸭子"
+      },
+      {
+        "type": "n.",
+        "definition": "鸭肉"
+      }
+    ],
+    "usphone": "dʌk",
+    "ukphone": "dʌk"
+  },
+  {
+    "name": "pond",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "池塘"
+      }
+    ],
+    "usphone": "pɑːnd",
+    "ukphone": "pɒnd"
+  },
+  {
+    "name": "frog",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "青蛙"
+      }
+    ],
+    "usphone": "frɔːɡ",
+    "ukphone": "frɒɡ"
+  },
+  {
+    "name": "lake",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "湖"
+      }
+    ],
+    "usphone": "leɪk",
+    "ukphone": "leɪk"
+  },
+  {
+    "name": "river",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "河"
+      },
+      {
+        "type": "n.",
+        "definition": "江"
+      }
+    ],
+    "usphone": "'rɪvər",
+    "ukphone": "'rɪvə(r)"
+  },
+  {
+    "name": "shark",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "鲨鱼"
+      }
+    ],
+    "usphone": "ʃɑːrk",
+    "ukphone": "ʃɑːk"
+  },
+  {
+    "name": "sea",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "海"
+      }
+    ],
+    "usphone": "siː",
+    "ukphone": "siː"
+  },
+  {
+    "name": "wash my hands",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "洗我的手"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "before eating",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "餐前"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "after using the toilet",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "上厕所后"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dirty",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "肮脏的"
+      },
+      {
+        "type": "adj.",
+        "definition": "下流的"
+      }
+    ],
+    "usphone": "'dɜːrti",
+    "ukphone": "'dɜːti"
+  },
+  {
+    "name": "clean",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "打扫"
+      },
+      {
+        "type": "v.",
+        "definition": "使…干净"
+      },
+      {
+        "type": "adj.",
+        "definition": "干净的"
+      },
+      {
+        "type": "adj.",
+        "definition": "无害的"
+      },
+      {
+        "type": "adj.",
+        "definition": "清白的"
+      }
+    ],
+    "usphone": "kliːn",
+    "ukphone": "kliːn"
+  },
+  {
+    "name": "drink some milk",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "喝牛奶"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "say good night",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "说晚安"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "sleep",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "睡觉"
+      }
+    ],
+    "usphone": "sliːp",
+    "ukphone": "sliːp"
+  },
+  {
+    "name": "read a story",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "讲故事"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  }
+]

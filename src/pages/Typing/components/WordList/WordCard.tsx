@@ -1,13 +1,14 @@
+import PartsOfSpeechListView from '../PartsOfSpeechListView'
 import type { WordPronunciationIconRef } from '@/components/WordPronunciationIcon'
 import { WordPronunciationIcon } from '@/components/WordPronunciationIcon'
-import { currentDictInfoAtom, isOpenDarkModeAtom } from '@/store'
+import { isOpenDarkModeAtom, phoneticConfigAtom } from '@/store'
 import type { Word } from '@/typings'
 import { useAtom, useAtomValue } from 'jotai'
 import { useCallback, useRef } from 'react'
 
 export default function WordCard({ word, isActive }: { word: Word; isActive: boolean }) {
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
-  const currentLanguage = useAtomValue(currentDictInfoAtom).language
+  const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
 
   const handlePlay = useCallback(() => {
@@ -24,13 +25,17 @@ export default function WordCard({ word, isActive }: { word: Word; isActive: boo
     >
       <div className="flex-1">
         <p className={`select-all font-mono text-xl font-normal leading-6 ${isOpenDarkMode ? 'text-gray-50' : 'text-gray-800'}`}>
-          {['romaji', 'hapin'].includes(currentLanguage) ? word.notation : word.name}
+          {word.name}
+          {phoneticConfig.type === 'us' && word.usphone && word.usphone.length > 1 && (
+            <span className="text-sm font-normal text-gray-600 dark:text-gray-400">{`     [${word.usphone}]`}</span>
+          )}
+          {phoneticConfig.type === 'uk' && word.ukphone && word.ukphone.length > 1 && (
+            <span className="text-sm font-normal text-gray-600 dark:text-gray-400">{`     [${word.ukphone}]`}</span>
+          )}
         </p>
-        <div className={`mt-2 max-w-sm font-sans text-sm ${isOpenDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-          {word.trans.join('；')}
-        </div>
+        <PartsOfSpeechListView word={word} />
       </div>
-      <WordPronunciationIcon word={word} lang={currentLanguage} className="h-8 w-8" ref={wordPronunciationIconRef} />
+      <WordPronunciationIcon word={word} className="h-8 w-8" ref={wordPronunciationIconRef} />
     </div>
   )
 }

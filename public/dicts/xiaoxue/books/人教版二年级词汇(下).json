@@ -1,0 +1,791 @@
+[
+  {
+    "name": "play football",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "踢足球, 对难办的事采取踢皮球的态度"
+      }
+    ],
+    "usphone": "pleɪ ˈfʊtbɔːl",
+    "ukphone": "pleɪ ˈfʊtbɔːl"
+  },
+  {
+    "name": "Monday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "周一"
+      }
+    ],
+    "usphone": "'mʌndeɪ",
+    "ukphone": "'mʌndeɪ"
+  },
+  {
+    "name": "hot",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "温度高的，热的,；觉得闷（或燥、湿）热，使人感到热的；辣的，辛辣的；热门的"
+      },
+      {
+        "type": "v.",
+        "definition": "〈英〉变热，变得激动，骚动起来，使骚动"
+      },
+      {
+        "type": "adv.",
+        "definition": "趁热，猛烈地，愤怒地"
+      }
+    ],
+    "usphone": "hɑːt",
+    "ukphone": "hɒt"
+  },
+  {
+    "name": "cold",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "寒冷的，未热过的，已凉的，冷却的，冷淡的"
+      },
+      {
+        "type": "n.",
+        "definition": "冷，寒冷，（尤指）低气温，感冒"
+      },
+      {
+        "type": "adv.",
+        "definition": "突然，完全，毫无准备地"
+      }
+    ],
+    "usphone": "koʊld",
+    "ukphone": "kəʊld"
+  },
+  {
+    "name": "favourite",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "特别受喜爱的，中意的，心爱的"
+      },
+      {
+        "type": "n.",
+        "definition": "受宠信者，受人特别喜爱的人[物]，〈美〉党内有声望的政治家"
+      }
+    ],
+    "usphone": "'feɪvərɪt",
+    "ukphone": "'feɪvərɪt "
+  },
+  {
+    "name": "windy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "多风的，风大的；夸夸其谈的，空话连篇的"
+      }
+    ],
+    "usphone": "'wɪndi",
+    "ukphone": "'wɪndi"
+  },
+  {
+    "name": "twelve",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "十二，十二岁，十二点钟，十二个东西[人]"
+      },
+      {
+        "type": "num.",
+        "definition": "十二"
+      }
+    ],
+    "usphone": "twelv",
+    "ukphone": "twelv"
+  },
+  {
+    "name": "when",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "什么时候，何时；当时；什么情况下"
+      },
+      {
+        "type": "pron.",
+        "definition": "什么时候，何时"
+      },
+      {
+        "type": "n.",
+        "definition": "时候"
+      },
+      {
+        "type": "conj.",
+        "definition": "既然，虽然；可是；在…时候"
+      }
+    ],
+    "usphone": "wen",
+    "ukphone": "wen"
+  },
+  {
+    "name": "rainy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "阴雨的，多雨的"
+      }
+    ],
+    "usphone": "'reɪni",
+    "ukphone": "'reɪni"
+  },
+  {
+    "name": "today",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "现在，当今，在今天，在今日"
+      },
+      {
+        "type": "n.",
+        "definition": "今天，今日，现在，当今"
+      }
+    ],
+    "usphone": "tə'deɪ",
+    "ukphone": "tə'deɪ"
+  },
+  {
+    "name": "twenty",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（twenties）二十几，二十年代"
+      },
+      {
+        "type": "num.",
+        "definition": "二十"
+      }
+    ],
+    "usphone": "'twenti",
+    "ukphone": "'twenti"
+  },
+  {
+    "name": "eleven",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "十一"
+      },
+      {
+        "type": "n.",
+        "definition": "（足球、板球或曲棍球）十一人队"
+      }
+    ],
+    "usphone": "ɪ'levn",
+    "ukphone": "ɪ'levn"
+  },
+  {
+    "name": "swim",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "游泳，游水，游动"
+      },
+      {
+        "type": "n.",
+        "definition": "游泳，（构成复合词）与游泳有关的"
+      }
+    ],
+    "usphone": "swɪm",
+    "ukphone": "swɪm"
+  },
+  {
+    "name": "go to school",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "到校上课"
+      }
+    ],
+    "usphone": "ɡoʊ tə skʊl",
+    "ukphone": "ɡəʊ tə skuːl"
+  },
+  {
+    "name": "go to bed",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "就寝"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(报刊等)付印"
+      }
+    ],
+    "usphone": "ɡoʊ tu bed",
+    "ukphone": "ɡəʊ tu bed"
+  },
+  {
+    "name": "Saturday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "礼拜六"
+      }
+    ],
+    "usphone": "'sætərdeɪ",
+    "ukphone": "'sætədeɪ"
+  },
+  {
+    "name": "umbrella",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "伞，雨伞，保护伞，阳伞"
+      },
+      {
+        "type": "v.",
+        "definition": "掩护，以战斗机队保护伞保护，用伞遮覆"
+      },
+      {
+        "type": "adj.",
+        "definition": "似伞的，机构庞大的"
+      }
+    ],
+    "usphone": "ʌm'brelə",
+    "ukphone": "ʌm'brelə"
+  },
+  {
+    "name": "eat breakfast",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "吃早饭"
+      }
+    ],
+    "usphone": "i:t 'brekfəst",
+    "ukphone": "i:t 'brekfəst"
+  },
+  {
+    "name": "fifteen",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "十五人制橄榄球队，联合会橄榄球队"
+      },
+      {
+        "type": "num.",
+        "definition": "十五"
+      }
+    ],
+    "usphone": "ˌfɪf'tiːn",
+    "ukphone": "ˌfɪf'tiːn"
+  },
+  {
+    "name": "fifty",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "五十几，五十年代"
+      },
+      {
+        "type": "num.",
+        "definition": "五十"
+      },
+      {
+        "type": "adj.",
+        "definition": "许多的"
+      }
+    ],
+    "usphone": "'fɪfti",
+    "ukphone": "'fɪfti"
+  },
+  {
+    "name": "forty",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "四十几，四十年代"
+      },
+      {
+        "type": "num.",
+        "definition": "四十"
+      }
+    ],
+    "usphone": "'fɔːrti",
+    "ukphone": "'fɔːti"
+  },
+  {
+    "name": "cool",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "凉的，凉爽的，凉快的，使人感到凉爽的；酷的，出色的；冷漠的，冷淡的"
+      },
+      {
+        "type": "v.",
+        "definition": "冷却，冷静下来，镇静下来，冷淡下来"
+      },
+      {
+        "type": "n.",
+        "definition": "凉气，凉快的地方"
+      }
+    ],
+    "usphone": "kuːl",
+    "ukphone": "kuːl"
+  },
+  {
+    "name": "wow",
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "（尤指以表演）博得…的称赞"
+      },
+      {
+        "type": "n.",
+        "definition": "极大的成功, 一鸣惊人之举, 颤动"
+      },
+      {
+        "type": "int.",
+        "definition": "哇，呀"
+      }
+    ],
+    "usphone": "waʊ",
+    "ukphone": "waʊ"
+  },
+  {
+    "name": "fourteen",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "十四"
+      },
+      {
+        "type": "n.",
+        "definition": "十四岁，十四的记号"
+      }
+    ],
+    "usphone": "ˌfɔːr'tiːn",
+    "ukphone": "ˌfɔː'tiːn"
+  },
+  {
+    "name": "get up",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "(指在早晨)(使)起身;(指在病后)(使)起床"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(使)起立"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(使)爬上,(使)登上;(使)骑上马(或自行车等)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(鸟)从躲藏处飞起"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(风、火等)变得猛烈;增加(速度等)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "在地位方面提高"
+      },
+      {
+        "type": "phrase.",
+        "definition": "呕出(食物)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "安排,组织(舞会、庆祝活动等);准备"
+      },
+      {
+        "type": "phrase.",
+        "definition": "打扮;装饰"
+      },
+      {
+        "type": "phrase.",
+        "definition": "鼓起(勇气等);使自己产生(某种情感)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "增进有关…的知识"
+      },
+      {
+        "type": "phrase.",
+        "definition": "往前走,快走"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(投球)急速高飞"
+      },
+      {
+        "type": "phrase.",
+        "definition": "<美口>为(参赛者等)鼓劲,鼓励"
+      },
+      {
+        "type": "phrase.",
+        "definition": "<美俚>服刑期满"
+      },
+      {
+        "type": "phrase.",
+        "definition": "<美俚>(尤指在墙壁等处乱涂而)确立…的独特签名法"
+      }
+    ],
+    "usphone": "ɡet ʌp",
+    "ukphone": "ɡet ʌp"
+  },
+  {
+    "name": "winter",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "冬季，冬天"
+      },
+      {
+        "type": "v.",
+        "definition": "过冬"
+      },
+      {
+        "type": "adj.",
+        "definition": "冬天的，越冬的，冬播的"
+      }
+    ],
+    "usphone": "'wɪntər",
+    "ukphone": "'wɪntə(r)"
+  },
+  {
+    "name": "Thursday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "星期四"
+      }
+    ],
+    "usphone": "'θɜːrzdeɪ",
+    "ukphone": "'θɜːzdeɪ"
+  },
+  {
+    "name": "spring",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "春天，春季；泉水；弹簧，发条；跳，跃"
+      },
+      {
+        "type": "v.",
+        "definition": "跳，跃，蹦，突然猛烈地移动"
+      }
+    ],
+    "usphone": "sprɪŋ",
+    "ukphone": "sprɪŋ"
+  },
+  {
+    "name": "let's",
+    "pos": [
+      {
+        "type": "abbr.",
+        "definition": "(=let us)让我们"
+      }
+    ],
+    "usphone": "lets",
+    "ukphone": "lets"
+  },
+  {
+    "name": "snowy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "被雪覆盖的，下雪多的，雪白的"
+      }
+    ],
+    "usphone": "'snoʊi",
+    "ukphone": "'snəʊi"
+  },
+  {
+    "name": "season",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "季节，旺季，雨季，（一部戏剧在一地的）演出期"
+      },
+      {
+        "type": "v.",
+        "definition": "加调料调味，加作料"
+      }
+    ],
+    "usphone": "'siːzn",
+    "ukphone": "'siːzn"
+  },
+  {
+    "name": "can't",
+    "pos": [
+      {
+        "type": "abbr.",
+        "definition": "(=cannot)不能, 不可以"
+      }
+    ],
+    "usphone": "kænt",
+    "ukphone": "kɑːnt"
+  },
+  {
+    "name": "thirteen",
+    "pos": [
+      {
+        "type": "num.",
+        "definition": "十三"
+      }
+    ],
+    "usphone": "ˌθɜːr'tiːn",
+    "ukphone": "ˌθɜː'tiːn"
+  },
+  {
+    "name": "thirty",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "三十几，三十年代"
+      },
+      {
+        "type": "num.",
+        "definition": "三十"
+      }
+    ],
+    "usphone": "'θɜːrti",
+    "ukphone": "'θɜːti"
+  },
+  {
+    "name": "playtime",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（学校的）游戏时间, 娱乐时间"
+      }
+    ],
+    "usphone": "'pleɪtaɪm",
+    "ukphone": "'pleɪtaɪm"
+  },
+  {
+    "name": "ride a bike",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "骑自行车"
+      }
+    ],
+    "usphone": "raɪd ə baɪk",
+    "ukphone": "raɪd  ə baɪk"
+  },
+  {
+    "name": "warm",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "温暖的，暖和的，保暖的，保温的"
+      },
+      {
+        "type": "v.",
+        "definition": "变暖和，变得更温情"
+      },
+      {
+        "type": "n.",
+        "definition": "暖和的地方"
+      },
+      {
+        "type": "adv.",
+        "definition": "使人暖和地，温暖地"
+      }
+    ],
+    "usphone": "wɔːrm",
+    "ukphone": "wɔːm"
+  },
+  {
+    "name": "go home",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "回家；回国"
+      },
+      {
+        "type": "phrase.",
+        "definition": "死；损坏；(食物)腐败"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(矢、话等)击中要害"
+      }
+    ],
+    "usphone": "ɡoʊ hoʊm",
+    "ukphone": "ɡəʊ həʊm"
+  },
+  {
+    "name": "at",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "朝，向，在（某处），在（表示学习或工作地点）"
+      }
+    ],
+    "usphone": "ət; æt",
+    "ukphone": "ət; æt"
+  },
+  {
+    "name": "every day",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "每日"
+      }
+    ],
+    "usphone": "ˈevri deɪ",
+    "ukphone": "ˈevri deɪ"
+  },
+  {
+    "name": "summer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "夏季，夏天"
+      },
+      {
+        "type": "v.",
+        "definition": "避暑，使度过夏季，夏季放牧（家畜）"
+      },
+      {
+        "type": "adj.",
+        "definition": "夏季的"
+      }
+    ],
+    "usphone": "'sʌmər",
+    "ukphone": "'sʌmə(r)"
+  },
+  {
+    "name": "Sunday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "礼拜日"
+      }
+    ],
+    "usphone": "'sʌndeɪ",
+    "ukphone": "'sʌndeɪ"
+  },
+  {
+    "name": "sunny",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "阳光灿烂的，明快的，其乐融融的"
+      }
+    ],
+    "usphone": "'sʌni",
+    "ukphone": "'sʌni"
+  },
+  {
+    "name": "fly a kite",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "放风筝"
+      },
+      {
+        "type": "phrase.",
+        "definition": "试探舆论"
+      },
+      {
+        "type": "phrase.",
+        "definition": "用空头支票(或通融票据)骗钱;涂改支票弄钱"
+      },
+      {
+        "type": "phrase.",
+        "definition": "<美俚>(在囚犯和外界之间)秘密传递信件"
+      }
+    ],
+    "usphone": "flaɪ ə kaɪt",
+    "ukphone": "flaɪ  ə kaɪt"
+  },
+  {
+    "name": "Friday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "礼拜五，星期五"
+      }
+    ],
+    "usphone": "'fraɪdeɪ",
+    "ukphone": "'fraɪdeɪ"
+  },
+  {
+    "name": "autumn",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "秋季，秋天"
+      }
+    ],
+    "usphone": "ˈɔːtəm",
+    "ukphone": "ˈɔːtəm"
+  },
+  {
+    "name": "weather",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "天气，气象，气象预报"
+      },
+      {
+        "type": "v.",
+        "definition": "变形，经受住，（因风吹日晒等）褪色，变形"
+      }
+    ],
+    "usphone": "'weðər",
+    "ukphone": "'weðə(r)"
+  },
+  {
+    "name": "Wednesday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "星期三"
+      }
+    ],
+    "usphone": "'wenzdeɪ",
+    "ukphone": "'wenzdeɪ"
+  },
+  {
+    "name": "cloudy",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "阴云密布的；多云的；不清澈的，不透明的"
+      }
+    ],
+    "usphone": "'klaʊdi",
+    "ukphone": "'klaʊdi"
+  },
+  {
+    "name": "Tuesday",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "周二"
+      }
+    ],
+    "usphone": "'tuːzdeɪ",
+    "ukphone": "'tjuːzdeɪ"
+  },
+  {
+    "name": "time",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "时间，时候，次，时代"
+      },
+      {
+        "type": "v.",
+        "definition": "计时，为…安排时间，选择…的时机，测定…所需的时间"
+      }
+    ],
+    "usphone": "taɪm",
+    "ukphone": "taɪm"
+  }
+]

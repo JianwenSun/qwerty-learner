@@ -1,0 +1,4306 @@
+[
+  {
+    "name": "dentist",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "牙医；牙科诊所"
+      }
+    ],
+    "usphone": "'dentɪst",
+    "ukphone": "'dentɪst"
+  },
+  {
+    "name": "take",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "拿走；带去；使达到；拿，接；挪开；夺取，攻占；买下；吃，喝；记录；拍照；接受；采取；花费；做；需要，要求"
+      },
+      {
+        "type": "n.",
+        "definition": "镜头，收入额，进项，看法"
+      }
+    ],
+    "usphone": "teɪk",
+    "ukphone": "teɪk"
+  },
+  {
+    "name": "take care of",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "爱护;小心使用"
+      },
+      {
+        "type": "phrase.",
+        "definition": "照顾,照料"
+      },
+      {
+        "type": "phrase.",
+        "definition": "满足…的需要"
+      },
+      {
+        "type": "phrase.",
+        "definition": "处理,对付;提防"
+      },
+      {
+        "type": "phrase.",
+        "definition": "殴打;杀死"
+      }
+    ],
+    "usphone": "teɪk ker əv",
+    "ukphone": "teɪk keə əv"
+  },
+  {
+    "name": "people",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "人，人们，人民，百姓；民族"
+      },
+      {
+        "type": "v.",
+        "definition": "居住在，把…挤满人，住满居民"
+      }
+    ],
+    "usphone": "'piːpl",
+    "ukphone": "'piːpl"
+  },
+  {
+    "name": "tooth",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "齿，牙，齿状部分"
+      },
+      {
+        "type": "v.",
+        "definition": "使具齿状，给…装牙齿，刻齿，（用牙齿）咬（住）"
+      }
+    ],
+    "usphone": "tuːθ",
+    "ukphone": "tuːθ"
+  },
+  {
+    "name": "engineer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "工程师，技师，工兵，技工"
+      },
+      {
+        "type": "v.",
+        "definition": "设计制造；密谋策划；改变…的基因（或遗传）结构"
+      }
+    ],
+    "usphone": "ˌendʒɪ'nɪr",
+    "ukphone": "ˌendʒɪ'nɪə(r)"
+  },
+  {
+    "name": "build",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "建造，创建，建筑，开发"
+      },
+      {
+        "type": "n.",
+        "definition": "体格，身材，体形"
+      }
+    ],
+    "usphone": "bɪld",
+    "ukphone": "bɪld"
+  },
+  {
+    "name": "repair",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "修理；补救"
+      },
+      {
+        "type": "n.",
+        "definition": "修理，补救"
+      }
+    ],
+    "usphone": "rɪ'per",
+    "ukphone": "rɪ'peə(r)"
+  },
+  {
+    "name": "thing",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "东西，事物，事件，行为"
+      }
+    ],
+    "usphone": "θɪŋ",
+    "ukphone": "θɪŋ"
+  },
+  {
+    "name": "fashion",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "时兴，时装业，（衣服、发式等的）流行款式，（做事的）方式"
+      },
+      {
+        "type": "v.",
+        "definition": "（尤指用手工）制作，使成形，塑造"
+      }
+    ],
+    "usphone": "'fæʃn",
+    "ukphone": "'fæʃn"
+  },
+  {
+    "name": "designer",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "设计者，构思者"
+      },
+      {
+        "type": "adj.",
+        "definition": "由著名设计师设计的，标有设计师姓名的，名牌的"
+      }
+    ],
+    "usphone": "dɪ'zaɪnər",
+    "ukphone": "dɪ'zaɪnə(r)"
+  },
+  {
+    "name": "design",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "设计，设计方案，构思，安排"
+      },
+      {
+        "type": "v.",
+        "definition": "设计，计划，构思，筹划"
+      }
+    ],
+    "usphone": "dɪ'zaɪn",
+    "ukphone": "dɪ'zaɪn"
+  },
+  {
+    "name": "new",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "刚出现的，新的，新近推出的，新买的"
+      },
+      {
+        "type": "n.",
+        "definition": "新东西，新事物"
+      },
+      {
+        "type": "abbr.",
+        "definition": "〈美〉（=net economic welfare）纯经济福利"
+      },
+      {
+        "type": "adv.",
+        "definition": "同“newly”"
+      }
+    ],
+    "usphone": "nuː",
+    "ukphone": "njuː"
+  },
+  {
+    "name": "style",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "样式，风格，方式，作风"
+      },
+      {
+        "type": "v.",
+        "definition": "称呼，把…设计（或缝制、做）成某种式样，命名"
+      }
+    ],
+    "usphone": "staɪl",
+    "ukphone": "staɪl"
+  },
+  {
+    "name": "take care of people's teeth",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "爱护人们的牙齿"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "build and repair things",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "建造和修理东西"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fashion designer",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "时装设计师"
+      }
+    ],
+    "usphone": "",
+    "ukphone": "\n"
+  },
+  {
+    "name": "clothes",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "衣服，服装"
+      },
+      {
+        "type": "v.",
+        "definition": "“clothe”的第三人称单数"
+      }
+    ],
+    "usphone": "kloʊðz, kloʊz",
+    "ukphone": "kləʊðz, kləʊz"
+  },
+  {
+    "name": "design new styles of clothes",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "设计新款式的衣服"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "astronaut",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "航天员，宇航员，太空人"
+      }
+    ],
+    "usphone": "'æstrənɔːt",
+    "ukphone": "'æstrənɔːt"
+  },
+  {
+    "name": "explore",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "探索，探讨，探究，勘探，仔细检查"
+      }
+    ],
+    "usphone": "ɪk'splɔːr",
+    "ukphone": "ɪk'splɔː(r)"
+  },
+  {
+    "name": "space",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "空间，太空，空格，空白"
+      },
+      {
+        "type": "v.",
+        "definition": "以一定间隔排列"
+      }
+    ],
+    "usphone": "speɪs",
+    "ukphone": "speɪs"
+  },
+  {
+    "name": "explore space",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "探索太空"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "vet",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "兽医，兽医诊所"
+      },
+      {
+        "type": "v.",
+        "definition": "审查（某人过去的生活和职业），审查（内容、质量等）"
+      }
+    ],
+    "usphone": "vet",
+    "ukphone": "vet"
+  },
+  {
+    "name": "look after",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "照料,照顾,照管"
+      },
+      {
+        "type": "phrase.",
+        "definition": "注意,关心"
+      },
+      {
+        "type": "phrase.",
+        "definition": "目送"
+      }
+    ],
+    "usphone": "lʊk 'æftər",
+    "ukphone": "lʊk 'ɑːftə"
+  },
+  {
+    "name": "animal",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "兽，牲畜，动物（不包括鸟、鱼、爬行动物、昆虫和人）"
+      },
+      {
+        "type": "adj.",
+        "definition": "肉体的，肉欲的，情欲的"
+      }
+    ],
+    "usphone": "'ænɪml",
+    "ukphone": "'ænɪml"
+  },
+  {
+    "name": "look after animals",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "照顾动物"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "invent",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "发明，创造，编造，捏造"
+      }
+    ],
+    "usphone": "ɪn'vent",
+    "ukphone": "ɪn'vent"
+  },
+  {
+    "name": "inventor",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "发明家，发明者，创造者"
+      }
+    ],
+    "usphone": "ɪn'ventər",
+    "ukphone": "ɪn'ventə(r)"
+  },
+  {
+    "name": "think up",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "想出;设计出,发明"
+      },
+      {
+        "type": "phrase.",
+        "definition": "捏造,虚构"
+      }
+    ],
+    "usphone": "θɪŋk ʌp",
+    "ukphone": "θɪŋk ʌp"
+  },
+  {
+    "name": "think up new things",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "思考新事物"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pilot",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "飞行员，领航员，引水员，（航空器）驾驶员"
+      },
+      {
+        "type": "v.",
+        "definition": "试点，引导，试行，驾驶（航空器）"
+      },
+      {
+        "type": "adj.",
+        "definition": "试验性的，试点的，指引的，引导的"
+      }
+    ],
+    "usphone": "'paɪlət",
+    "ukphone": "'paɪlət"
+  },
+  {
+    "name": "fly",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "飞，飞翔，航行，（乘航空器或航天器）航行"
+      },
+      {
+        "type": "n.",
+        "definition": "蝇，苍蝇，（作钓饵的）假蝇钩钓，（裤子的）前裆开口"
+      },
+      {
+        "type": "adj.",
+        "definition": "机灵的，机警的，不会上当的，时髦迷人的"
+      }
+    ],
+    "usphone": "flaɪ",
+    "ukphone": "flaɪ"
+  },
+  {
+    "name": "plane",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "飞机；平面；刨子；境界"
+      },
+      {
+        "type": "v.",
+        "definition": "用刨子刨平，滑翔，擦着水面疾驶"
+      },
+      {
+        "type": "adj.",
+        "definition": "平的，平坦的"
+      }
+    ],
+    "usphone": "pleɪn",
+    "ukphone": "pleɪn"
+  },
+  {
+    "name": "fly planes",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "驾驶飞机"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "film",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "电影，影片，胶卷，膜，层"
+      },
+      {
+        "type": "v.",
+        "definition": "（在…上）蒙上薄膜，（使）生薄膜，（使）变朦胧，（把…）摄成影片"
+      }
+    ],
+    "usphone": "fɪlm",
+    "ukphone": "fɪlm"
+  },
+  {
+    "name": "director",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "董事，经理，理事；负责人，主管；导演"
+      }
+    ],
+    "usphone": "də'rektər; daɪˈrektər",
+    "ukphone": "də'rektə(r); daɪˈrektə(r)"
+  },
+  {
+    "name": "film director",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "电影导演"
+      }
+    ],
+    "usphone": "",
+    "ukphone": "\n"
+  },
+  {
+    "name": "make",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "制造，做，组装，写，导致；使变得，使成为；使成功，使圆满；挣钱，赚钱"
+      },
+      {
+        "type": "n.",
+        "definition": "型号"
+      },
+      {
+        "type": "linkv.",
+        "definition": "成为，适合，合计，等于"
+      }
+    ],
+    "usphone": "meɪk",
+    "ukphone": "meɪk"
+  },
+  {
+    "name": "make films",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "拍电影"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "businessman",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "企业家，（尤指上层）商界人员，商界能手，善做生意的人"
+      }
+    ],
+    "usphone": "'bɪznəsmæn",
+    "ukphone": "'bɪznəsmæn"
+  },
+  {
+    "name": "like",
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "如，比如，像"
+      },
+      {
+        "type": "v.",
+        "definition": "喜欢，想，愿意，希望"
+      },
+      {
+        "type": "n.",
+        "definition": "爱好，诸如此类，像…这样的人（或物）"
+      },
+      {
+        "type": "adv.",
+        "definition": "好像"
+      },
+      {
+        "type": "adj.",
+        "definition": "相似的，相像的"
+      },
+      {
+        "type": "conj.",
+        "definition": "像"
+      }
+    ],
+    "usphone": "laɪk",
+    "ukphone": "laɪk"
+  },
+  {
+    "name": "money",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "钱，财富，钞票，款项"
+      }
+    ],
+    "usphone": "'mʌni",
+    "ukphone": "'mʌni"
+  },
+  {
+    "name": "like making money",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "比如赚钱"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "coin",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "硬币；金属货币"
+      },
+      {
+        "type": "v.",
+        "definition": "创造新词语；铸币"
+      }
+    ],
+    "usphone": "kɔɪn",
+    "ukphone": "kɔɪn"
+  },
+  {
+    "name": "stamp",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "邮票，戳，印花，章，踩踏，痕迹，标志"
+      },
+      {
+        "type": "v.",
+        "definition": "踩踏，贴邮票于，在…上盖印，冲压，表现出"
+      }
+    ],
+    "usphone": "stæmp",
+    "ukphone": "stæmp"
+  },
+  {
+    "name": "collect",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "收集，搜集，采集，收藏"
+      },
+      {
+        "type": "n.",
+        "definition": "短祷"
+      },
+      {
+        "type": "adj.",
+        "definition": "由受话人付费的"
+      }
+    ],
+    "usphone": "kə'lekt",
+    "ukphone": "kə'lekt"
+  },
+  {
+    "name": "collect coins",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "收集硬币"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "collect stamps",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "集邮"
+      }
+    ],
+    "usphone": "kə'lekt stæmps",
+    "ukphone": "kə'lekt stæmps"
+  },
+  {
+    "name": "paint",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "颜料；油漆；涂料"
+      },
+      {
+        "type": "v.",
+        "definition": "画…；涂…；油漆…；描绘；展现"
+      }
+    ],
+    "usphone": "peɪnt",
+    "ukphone": "peɪnt"
+  },
+  {
+    "name": "picture",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "照片；图画；描绘；（电视或电影的） 图像，画面；情况，局面；电影"
+      },
+      {
+        "type": "v.",
+        "definition": "想象，描述，描写，设想"
+      }
+    ],
+    "usphone": "'pɪktʃər",
+    "ukphone": "'pɪktʃə(r)"
+  },
+  {
+    "name": "paint pictures",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "绘画，画画"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "handicraft",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "手工艺，手工艺品"
+      }
+    ],
+    "usphone": "'hændikræft",
+    "ukphone": "'hændikrɑːft"
+  },
+  {
+    "name": "make handicrafts",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "制作手工艺品"
+      },
+      {
+        "type": "phrase.",
+        "definition": "制作手工艺品"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "violin",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小提琴"
+      }
+    ],
+    "usphone": "ˌvaɪə'lɪn",
+    "ukphone": "ˌvaɪə'lɪn"
+  },
+  {
+    "name": "play the violin",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "拉小提琴"
+      }
+    ],
+    "usphone": "pleɪ ðə ˌvaɪə'lɪn",
+    "ukphone": "pleɪ ðə ˌvaɪə'lɪn"
+  },
+  {
+    "name": "do",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "做，进行，完成，做出，合适，足够"
+      },
+      {
+        "type": "n.",
+        "definition": "社交聚会，社交活动"
+      },
+      {
+        "type": "auxv.",
+        "definition": "用于实义动词前构成否定句和疑问句, 构成附加疑问句"
+      },
+      {
+        "type": "aux. v.",
+        "definition": "确实（对动词进行强调）；将主语置于 do 和主动词的原形之间，构成疑问句"
+      }
+    ],
+    "usphone": "duː",
+    "ukphone": "duː"
+  },
+  {
+    "name": "ballet",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "芭蕾舞；芭蕾舞剧"
+      }
+    ],
+    "usphone": "'bæleɪ",
+    "ukphone": "'bæleɪ"
+  },
+  {
+    "name": "karate",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "空手道"
+      }
+    ],
+    "usphone": "kə'rɑːti",
+    "ukphone": "kə'rɑːti"
+  },
+  {
+    "name": "do ballet",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "跳芭蕾舞"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "do karate",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "打空手道"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "grow",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "生长，发育；栽种，种植；产生，形成；扩大；增加；逐渐变得……"
+      },
+      {
+        "type": "linkv.",
+        "definition": "逐渐变得，逐渐成为"
+      }
+    ],
+    "usphone": "ɡroʊ",
+    "ukphone": "ɡrəʊ"
+  },
+  {
+    "name": "flower",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "花，花朵，开花植物，（已摘）带梗的花"
+      },
+      {
+        "type": "v.",
+        "definition": "开花，成熟，繁荣，兴旺"
+      }
+    ],
+    "usphone": "'flaʊər",
+    "ukphone": "'flaʊə(r)"
+  },
+  {
+    "name": "grow flowers",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "种花"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "china",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "中国（C必须大写）；瓷器，瓷制品"
+      }
+    ],
+    "usphone": "'tʃaɪnə",
+    "ukphone": "'tʃaɪnə"
+  },
+  {
+    "name": "glass",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "玻璃，玻璃器皿，玻璃制品，（复）眼镜，透镜"
+      },
+      {
+        "type": "v.",
+        "definition": "用玻璃把…盖住，给…装上玻璃，使成玻璃状，反映，反射，审视；用光学仪器眺望"
+      }
+    ],
+    "usphone": "ɡlæs",
+    "ukphone": "ɡlɑːs"
+  },
+  {
+    "name": "wood",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "木材，木头，树林，木料"
+      },
+      {
+        "type": "v.",
+        "definition": "在…植树造林，供木材给…，用木头垫住[支住]，收集木材"
+      },
+      {
+        "type": "adj.",
+        "definition": "精神错乱的，暴怒，愤怒"
+      }
+    ],
+    "usphone": "wʊd",
+    "ukphone": "wʊd"
+  },
+  {
+    "name": "jade",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "玉，翡翠，玉器，碧玉"
+      },
+      {
+        "type": "adj.",
+        "definition": "玉制的，翡翠色的"
+      },
+      {
+        "type": "v.",
+        "definition": "（使）疲倦，（使）精疲力尽"
+      }
+    ],
+    "usphone": "dʒeɪd",
+    "ukphone": "dʒeɪd"
+  },
+  {
+    "name": "plastic",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "塑料的；可塑的；不自然的，做作的"
+      },
+      {
+        "type": "n.",
+        "definition": "塑料；信用卡"
+      }
+    ],
+    "usphone": "'plæstɪk",
+    "ukphone": "'plæstɪk"
+  },
+  {
+    "name": "metal",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "金属"
+      }
+    ],
+    "usphone": "'metl",
+    "ukphone": "'metl"
+  },
+  {
+    "name": "leather",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "皮革，皮外套"
+      },
+      {
+        "type": "v.",
+        "definition": "制成皮，蒙上皮，〈口〉（用皮带等）抽打"
+      },
+      {
+        "type": "adj.",
+        "definition": "皮革的"
+      }
+    ],
+    "usphone": "'leðər",
+    "ukphone": "'leðə(r)"
+  },
+  {
+    "name": "silk",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "丝绸；（蚕）丝；丝织物；（用于缝纫的）丝线；王室律师"
+      }
+    ],
+    "usphone": "sɪlk",
+    "ukphone": "sɪlk"
+  },
+  {
+    "name": "wool",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "羊毛；羊毛织物；毛线；毛衣，毛料衣服"
+      }
+    ],
+    "usphone": "wʊl",
+    "ukphone": "wʊl"
+  },
+  {
+    "name": "cotton",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "棉，棉布，棉纱，棉织物"
+      },
+      {
+        "type": "adj.",
+        "definition": "棉的；棉制的"
+      },
+      {
+        "type": "v.",
+        "definition": "欢迎；娇宠；讨好；明白，领悟"
+      }
+    ],
+    "usphone": "'kɑːtn",
+    "ukphone": "'kɒtn"
+  },
+  {
+    "name": "vase",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "花瓶，装饰瓶"
+      }
+    ],
+    "usphone": "veɪs; veɪz",
+    "ukphone": "vɑːz"
+  },
+  {
+    "name": "telephone",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "电话，电话机，（电话机的）受话器"
+      },
+      {
+        "type": "v.",
+        "definition": "给某人打电话"
+      }
+    ],
+    "usphone": "'telɪfoʊn",
+    "ukphone": "'telɪfəʊn"
+  },
+  {
+    "name": "knife",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "刀"
+      },
+      {
+        "type": "v.",
+        "definition": "用刀伤害（或杀害）;劈开；划过"
+      }
+    ],
+    "usphone": "naɪf",
+    "ukphone": "naɪf"
+  },
+  {
+    "name": "bracelet",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "手镯，手链，臂镯"
+      }
+    ],
+    "usphone": "'breɪslət",
+    "ukphone": "'breɪslət"
+  },
+  {
+    "name": "belt",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "皮带，腰带，传动带，传送带"
+      },
+      {
+        "type": "v.",
+        "definition": "猛击，狠打，飞奔，飞驰"
+      }
+    ],
+    "usphone": "belt",
+    "ukphone": "belt"
+  },
+  {
+    "name": "glove",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（分手指的）手套"
+      },
+      {
+        "type": "v.",
+        "definition": "给戴手套，作…的手套"
+      }
+    ],
+    "usphone": "ɡlʌv",
+    "ukphone": "ɡlʌv"
+  },
+  {
+    "name": "chopstick",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "筷子"
+      }
+    ],
+    "usphone": "'tʃɑːpstɪk",
+    "ukphone": "'tʃɒpstɪk"
+  },
+  {
+    "name": "chopsticks",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "筷子"
+      }
+    ],
+    "usphone": "'tʃɑːpstɪks",
+    "ukphone": "'tʃɒpstɪks"
+  },
+  {
+    "name": "bowl",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "碗，一碗…，碗状物，木球"
+      },
+      {
+        "type": "v.",
+        "definition": "（板球中的）投球，使…出局，使…退场，玩滚木球"
+      }
+    ],
+    "usphone": "boʊl",
+    "ukphone": "bəʊl"
+  },
+  {
+    "name": "handbag",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小手提包，（尤指）坤包"
+      }
+    ],
+    "usphone": "'hændbæɡ",
+    "ukphone": "'hændbæɡ"
+  },
+  {
+    "name": "tablecloth",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "桌布"
+      }
+    ],
+    "usphone": "'teɪblklɔːθ",
+    "ukphone": "'teɪblklɒθ"
+  },
+  {
+    "name": "use",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "使用，利用，运用，消耗"
+      },
+      {
+        "type": "n.",
+        "definition": "使用，用途，用法，使用权"
+      }
+    ],
+    "usphone": "juːz",
+    "ukphone": "juːz"
+  },
+  {
+    "name": "own",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "本人的，自己做的，为自己的"
+      },
+      {
+        "type": "v.",
+        "definition": "拥有；承认"
+      },
+      {
+        "type": "pron.",
+        "definition": "自己的东西[家属,责任,立场（等）]，心爱的人"
+      }
+    ],
+    "usphone": "oʊn",
+    "ukphone": "əʊn"
+  },
+  {
+    "name": "bag",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "手提包，旅行袋，塑料袋，眼袋"
+      },
+      {
+        "type": "v.",
+        "definition": "把…装进袋子，猎杀（动物），得分，抢占"
+      }
+    ],
+    "usphone": "bæɡ",
+    "ukphone": "bæɡ"
+  },
+  {
+    "name": "side",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "边，身边，一边，一面"
+      },
+      {
+        "type": "adj.",
+        "definition": "旁，横，副的，片面的"
+      },
+      {
+        "type": "v.",
+        "definition": "支持，偏袒，宽度仅有…，站在…的一边"
+      }
+    ],
+    "usphone": "saɪd",
+    "ukphone": "saɪd"
+  },
+  {
+    "name": "recycle",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "回收利用，再利用，再次应用"
+      }
+    ],
+    "usphone": "ˌriː'saɪkl",
+    "ukphone": "ˌriː'saɪkl"
+  },
+  {
+    "name": "paper",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "纸，纸张；论文；文件；报纸；证件"
+      },
+      {
+        "type": "v.",
+        "definition": "贴壁纸"
+      },
+      {
+        "type": "adj.",
+        "definition": "书面的"
+      }
+    ],
+    "usphone": "'peɪpər",
+    "ukphone": "'peɪpə(r)"
+  },
+  {
+    "name": "only",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "只，只有，仅，只能"
+      },
+      {
+        "type": "adj.",
+        "definition": "仅有的，唯一的，最好的，最适当的"
+      },
+      {
+        "type": "conj.",
+        "definition": "不过，但是，可是"
+      }
+    ],
+    "usphone": "'oʊnli",
+    "ukphone": "'əʊnli"
+  },
+  {
+    "name": "recycle paper",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "回收纸张"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "use a new plastic bag",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "使用一个新的塑料袋"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "use paper on both sides",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "双面用纸"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "use paper on one side only",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "单面用纸"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "use your own bag",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "用自己的包"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "can",
+    "pos": [
+      {
+        "type": "mod. v.",
+        "definition": "能，行，会 ；（可）能"
+      },
+      {
+        "type": "n.",
+        "definition": "（盛食品或饮料的）金属罐；一罐（的量）；塑料容器；喷雾罐"
+      },
+      {
+        "type": "v.",
+        "definition": "把（食品）装罐保存； 解雇，让…卷铺盖走人， 炒…的鱿鱼"
+      }
+    ],
+    "usphone": "kæn",
+    "ukphone": "kæn"
+  },
+  {
+    "name": "throw",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "扔，抛，丢，投"
+      },
+      {
+        "type": "n.",
+        "definition": "扔，抛，摔，投（球）"
+      }
+    ],
+    "usphone": "θroʊ",
+    "ukphone": "θrəʊ"
+  },
+  {
+    "name": "throw away",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "扔掉;抛弃,丢弃"
+      },
+      {
+        "type": "phrase.",
+        "definition": "丧失,错过"
+      },
+      {
+        "type": "phrase.",
+        "definition": "垫(牌)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "轻轻带过(台词等)"
+      }
+    ],
+    "usphone": "θroʊ ə'weɪ",
+    "ukphone": "θrəʊ ə'weɪ"
+  },
+  {
+    "name": "leftovers",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（复数）吃剩的食物；残羹剩饭"
+      }
+    ],
+    "usphone": "ˈleftəʊvərs",
+    "ukphone": "ˈleftəʊvə(r)s"
+  },
+  {
+    "name": "collect leftover food and recycle it",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "收集剩饭剩菜并循环利用"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "food",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "食物"
+      }
+    ],
+    "usphone": "fuːd",
+    "ukphone": "fuːd"
+  },
+  {
+    "name": "sink",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "（使）下沉；沉没；降低；挖，掘；把…埋入；使受挫，使陷入麻烦"
+      },
+      {
+        "type": "n.",
+        "definition": "洗碗槽；洗脸盆"
+      }
+    ],
+    "usphone": "sɪŋk",
+    "ukphone": "sɪŋk"
+  },
+  {
+    "name": "throw away paper",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "扔掉纸张"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "throw leftover food down the sink",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "把吃剩的食物扔到水槽里"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "turn",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "转动，旋转；转身，扭转；翻转；转弯，转向；（使）变成，成为"
+      },
+      {
+        "type": "n.",
+        "definition": "转向，转变，转动，旋动"
+      },
+      {
+        "type": "linkv.",
+        "definition": "成为，超过（某一年龄或时间）"
+      }
+    ],
+    "usphone": "tɜːrn",
+    "ukphone": "tɜːn"
+  },
+  {
+    "name": "turn down",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "拒绝"
+      },
+      {
+        "type": "phrase.",
+        "definition": "掀开 (被单) 准备睡觉;铺 (床) 准备睡觉"
+      },
+      {
+        "type": "phrase.",
+        "definition": "使颠倒;使 (纸牌等) 面朝下"
+      },
+      {
+        "type": "phrase.",
+        "definition": "关小,调低"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(金融行市等) 低落,下降"
+      },
+      {
+        "type": "phrase.",
+        "definition": "拐入,转入"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(被) 向下折转;(被) 翻下"
+      }
+    ],
+    "usphone": "tɜːrn daʊn",
+    "ukphone": "tɜːn daʊn"
+  },
+  {
+    "name": "turn down the air-con",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "把空调关小一点"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "turn off",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "(被) 关;(被) 关断;(被) 关上"
+      },
+      {
+        "type": "phrase.",
+        "definition": "解雇,辞退"
+      },
+      {
+        "type": "phrase.",
+        "definition": "卖掉"
+      },
+      {
+        "type": "phrase.",
+        "definition": "做出;生产;完成"
+      },
+      {
+        "type": "phrase.",
+        "definition": "吊死,绞死"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(用车床) 车削掉;车削成,车削出"
+      },
+      {
+        "type": "phrase.",
+        "definition": "转弯,拐入旁路;离开…转入岔路;(路) 分岔"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(使) 离开;(使) 退出"
+      },
+      {
+        "type": "phrase.",
+        "definition": "突然(或无意识地)收敛"
+      },
+      {
+        "type": "phrase.",
+        "definition": "岔开;回避;使偏离"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(使) 失去兴趣 (或爱好、热情);(使) 不再喜欢 (人或事物);(使) 厌烦"
+      },
+      {
+        "type": "phrase.",
+        "definition": "变坏,腐烂"
+      },
+      {
+        "type": "phrase.",
+        "definition": "变成"
+      },
+      {
+        "type": "phrase.",
+        "definition": "<美俚>成功地抢劫"
+      }
+    ],
+    "usphone": "'tɜːrnˌɔːfˌ -ˌɑːf",
+    "ukphone": "'tɜːnˌɔːf, -ˌɒf"
+  },
+  {
+    "name": "tap",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "水龙头，轻拍，轻敲，轻叩，窃听"
+      },
+      {
+        "type": "v.",
+        "definition": "开发，轻拍，轻敲，轻叩，窃听，利用（资源、知识等）"
+      }
+    ],
+    "usphone": "tæp",
+    "ukphone": "tæp"
+  },
+  {
+    "name": "turn the tap off",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "关掉水龙头"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "turn up",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "开大,调高"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(被) 向上折转;(被) 翻起;折起 (贴边);折起贴边改短 (衣服)"
+      },
+      {
+        "type": "phrase.",
+        "definition": "转身上 (山等);拐入,转入"
+      },
+      {
+        "type": "phrase.",
+        "definition": "把…翻转过来;翻掘出"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(使) (鼻子、脚趾等) 向上翘,(使) 朝上"
+      },
+      {
+        "type": "phrase.",
+        "definition": "出现;重现;来到"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(尤指偶然地) (被) 找到;(被) 发现"
+      },
+      {
+        "type": "phrase.",
+        "definition": "证明是,结果是"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(偶然事件、机会等) 发生,意外地发生"
+      },
+      {
+        "type": "phrase.",
+        "definition": "查找;查阅,参考"
+      },
+      {
+        "type": "phrase.",
+        "definition": "使仰卧"
+      },
+      {
+        "type": "phrase.",
+        "definition": "使 (纸牌等) 面朝上"
+      },
+      {
+        "type": "phrase.",
+        "definition": "转速达到,功率可达到"
+      },
+      {
+        "type": "phrase.",
+        "definition": "逆风换抢"
+      },
+      {
+        "type": "phrase.",
+        "definition": "使呕吐,使反胃"
+      },
+      {
+        "type": "phrase.",
+        "definition": "(财务状况等) 改善,上升,增长"
+      }
+    ],
+    "usphone": "tɜːrn ʌp",
+    "ukphone": "tɜːn ʌp"
+  },
+  {
+    "name": "turn up the air-con",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "把空调打开"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "leave",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "离开（某人或某处），离开居住地点（或群体、工作单位等）；遗弃，丢弃；留出；使保留，让…处于（某种状态、某地等）"
+      },
+      {
+        "type": "n.",
+        "definition": "假期，休假，准许，许可"
+      }
+    ],
+    "usphone": "liːv",
+    "ukphone": "liːv"
+  },
+  {
+    "name": "leave the tap on",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "让水龙头开着"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "save",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "保存，拯救，节省，节约"
+      },
+      {
+        "type": "n.",
+        "definition": "（守门员的）救球"
+      },
+      {
+        "type": "prep.",
+        "definition": "除了，除…外"
+      },
+      {
+        "type": "conj.",
+        "definition": "除了"
+      }
+    ],
+    "usphone": "seɪv",
+    "ukphone": "seɪv"
+  },
+  {
+    "name": "energy",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "能源，能量，精力，活力"
+      }
+    ],
+    "usphone": "'enərdʒi",
+    "ukphone": "'enədʒi"
+  },
+  {
+    "name": "save energy",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "节能"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "waste",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "垃圾，废物，浪费，废料，排泄物"
+      },
+      {
+        "type": "v.",
+        "definition": "浪费，白费，糟蹋，滥用"
+      },
+      {
+        "type": "adj.",
+        "definition": "荒芜的，废弃的，丢弃的，无用的"
+      }
+    ],
+    "usphone": "weɪst",
+    "ukphone": "weɪst"
+  },
+  {
+    "name": "oil",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "石油，原油，燃油，润滑油"
+      },
+      {
+        "type": "v.",
+        "definition": "给…加润滑油"
+      }
+    ],
+    "usphone": "ɔɪl",
+    "ukphone": "ɔɪl"
+  },
+  {
+    "name": "waste energy",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "浪费精力"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "waste water and oil",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "废水和油"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "water",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "水，水域，河，海域"
+      },
+      {
+        "type": "v.",
+        "definition": "灌溉，给…浇水，充满眼泪，流口水"
+      }
+    ],
+    "usphone": "ˈwɔːtər",
+    "ukphone": "'wɔːtə(r)"
+  },
+  {
+    "name": "pollution",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "污染，污染物，垃圾，玷污"
+      }
+    ],
+    "usphone": "pə'luːʃn",
+    "ukphone": "pə'luːʃn"
+  },
+  {
+    "name": "water pollution",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "水污染"
+      }
+    ],
+    "usphone": "ˈwɔːtər pəˈluːʃn",
+    "ukphone": "ˈwɔːtə(r) pəˈluːʃn"
+  },
+  {
+    "name": "air",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "空气，空中，天空，神态"
+      },
+      {
+        "type": "v.",
+        "definition": "播出，播送，晾，晾干，使通风，公开表达"
+      }
+    ],
+    "usphone": "er",
+    "ukphone": "eə(r)"
+  },
+  {
+    "name": "air conditioning",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "空调系统；空气调节系统"
+      }
+    ],
+    "usphone": "er kən'dɪʃənɪŋ",
+    "ukphone": "eə kən'dɪʃənɪŋ"
+  },
+  {
+    "name": "air pollution",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "大气污染"
+      }
+    ],
+    "usphone": "er pə'lʊʃən",
+    "ukphone": "eə pə'lʊʃən"
+  },
+  {
+    "name": "land",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "土地，陆地，大地，地产，地景"
+      },
+      {
+        "type": "v.",
+        "definition": "降落，着陆，登陆，靠岸"
+      }
+    ],
+    "usphone": "lænd",
+    "ukphone": "lænd"
+  },
+  {
+    "name": "land pollution",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "大地污染"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "noise",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "噪声，噪音，声音，干扰"
+      },
+      {
+        "type": "v.",
+        "definition": "吵，哄传，传说，〈罕〉大声谈论"
+      }
+    ],
+    "usphone": "nɔɪz",
+    "ukphone": "nɔɪz"
+  },
+  {
+    "name": "noise pollution",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "噪音污染"
+      }
+    ],
+    "usphone": "nɔːɪz pə'lʊʃən",
+    "ukphone": "nɔɪz pə'lʊʃən"
+  },
+  {
+    "name": "public",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "平民的，大众的，公众的，百姓的；公共的，公用的；公开的；政府的；公立的"
+      },
+      {
+        "type": "n.",
+        "definition": "民众，百姓，平民，志趣相同（或从事同一类活动）的群体；公共场所"
+      }
+    ],
+    "usphone": "'pʌblɪk",
+    "ukphone": "'pʌblɪk"
+  },
+  {
+    "name": "transport",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "运输，运输工具"
+      },
+      {
+        "type": "v.",
+        "definition": "运输，运送"
+      }
+    ],
+    "usphone": "'trænspɔːrt",
+    "ukphone": "'trænspɔːt"
+  },
+  {
+    "name": "take public transport",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "乘坐公共交通工具"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "always",
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "总是，一直，一贯，每次都是"
+      }
+    ],
+    "usphone": "'ɔːlweɪz",
+    "ukphone": "'ɔːlweɪz"
+  },
+  {
+    "name": "drive",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "驾驶，开车，驾车送（人）；推动；迫使；驱赶"
+      },
+      {
+        "type": "n.",
+        "definition": "驱车旅行，驾车路程；强烈欲望，本能需求；传动（或驱动）装置；车道；有组织的努力"
+      }
+    ],
+    "usphone": "draɪv",
+    "ukphone": "draɪv"
+  },
+  {
+    "name": "car",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "车，汽车，轿车，车厢"
+      }
+    ],
+    "usphone": "kɑːr",
+    "ukphone": "kɑː(r)"
+  },
+  {
+    "name": "always drive your car",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "一直开着你的车"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "music",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "音乐，乐曲，乐曲创作（或演奏）艺术，乐谱"
+      }
+    ],
+    "usphone": "'mjuːzɪk",
+    "ukphone": "'mjuːzɪk"
+  },
+  {
+    "name": "loud",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "响亮的，洪亮的；大声的；说话太大声的；喧闹的，吵闹的；（衣服）俗艳花哨的"
+      },
+      {
+        "type": "adv.",
+        "definition": "大声地，响亮地"
+      }
+    ],
+    "usphone": "laʊd",
+    "ukphone": "laʊd"
+  },
+  {
+    "name": "soft",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "软的，柔软的，硬度较低的，较软的，柔和的，心软的"
+      },
+      {
+        "type": "n.",
+        "definition": "柔软（部分），〈口〉拙笨，傻子，〈美俚〉钱"
+      },
+      {
+        "type": "adv.",
+        "definition": "同“softly. lie soft”"
+      },
+      {
+        "type": "int.",
+        "definition": "〈古〉别响"
+      }
+    ],
+    "usphone": "sɔːft",
+    "ukphone": "sɒft"
+  },
+  {
+    "name": "play music loudly",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "大声地播放音乐"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "play music softly",
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "轻柔地播放音乐"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "smoke",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "烟，吸烟，抽烟"
+      },
+      {
+        "type": "v.",
+        "definition": "抽烟，冒烟，吸（烟），抽（烟）"
+      }
+    ],
+    "usphone": "smoʊk",
+    "ukphone": "sməʊk"
+  },
+  {
+    "name": "fumes",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "烟雾, 烟气"
+      }
+    ],
+    "usphone": "fjuːmz",
+    "ukphone": "fjuːmz"
+  },
+  {
+    "name": "rubbish",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "垃圾，废弃物，废话，劣质的东西"
+      },
+      {
+        "type": "v.",
+        "definition": "狠批，把…看得一文不值"
+      }
+    ],
+    "usphone": "'rʌbɪʃ",
+    "ukphone": "'rʌbɪʃ"
+  },
+  {
+    "name": "visit",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "访问，参观，拜访，看望"
+      },
+      {
+        "type": "n.",
+        "definition": "访问，参观，看望，游览"
+      }
+    ],
+    "usphone": "'vɪzɪt",
+    "ukphone": "'vɪzɪt"
+  },
+  {
+    "name": "work",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "劳动，干活；工作；起作用，奏效；运行；争取；力争；努力取得"
+      },
+      {
+        "type": "n.",
+        "definition": "工作；作品；劳动；功"
+      }
+    ],
+    "usphone": "wɜːrk",
+    "ukphone": "wɜːk"
+  },
+  {
+    "name": "win",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "赢，获得，（尤指通过自己的努力）取得"
+      },
+      {
+        "type": "n.",
+        "definition": "（在比赛、竞赛等中的）胜利"
+      }
+    ],
+    "usphone": "wɪn",
+    "ukphone": "wɪn"
+  },
+  {
+    "name": "buy",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "买，购买；收买，贿赂；接受，相信〔尤指不大可能属实的事〕"
+      },
+      {
+        "type": "n.",
+        "definition": "购买，合算的商品，买进（或出售）的东西"
+      }
+    ],
+    "usphone": "baɪ",
+    "ukphone": "baɪ"
+  },
+  {
+    "name": "cost",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "成本，费用，花费，代价"
+      },
+      {
+        "type": "v.",
+        "definition": "估价，需付费，价钱为，使丧失"
+      }
+    ],
+    "usphone": "kɔːst",
+    "ukphone": "kɒst"
+  },
+  {
+    "name": "spend",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "用，花（时间），度过，用尽（精力等）"
+      },
+      {
+        "type": "n.",
+        "definition": "开销"
+      }
+    ],
+    "usphone": "spend",
+    "ukphone": "spend"
+  },
+  {
+    "name": "change",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "变化，改变，变更，转换"
+      },
+      {
+        "type": "n.",
+        "definition": "变化，改变，变革，变更；零钱"
+      }
+    ],
+    "usphone": "tʃeɪndʒ",
+    "ukphone": "tʃeɪndʒ"
+  },
+  {
+    "name": "tell",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "告诉，说，讲述；知道；辨别；区分，区别；告诫"
+      },
+      {
+        "type": "n.",
+        "definition": "传闻；（层层覆盖古代遗址的）人工丘阜"
+      }
+    ],
+    "usphone": "tel",
+    "ukphone": "tel"
+  },
+  {
+    "name": "ask",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "问，要求，请，询问"
+      }
+    ],
+    "usphone": "æsk",
+    "ukphone": "ɑːsk"
+  },
+  {
+    "name": "run",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "跑，奔跑，跑（某段距离），跑步；参加（赛跑）；举行（比赛）；组织；掌管；管理；经营铺设 （电线、管道等）；移动；运行；竞选；开车送（某人）；举办；持续，延续"
+      },
+      {
+        "type": "n.",
+        "definition": "跑，跑步，跑步的时间（或距离），航程"
+      }
+    ],
+    "usphone": "rʌn",
+    "ukphone": "rʌn"
+  },
+  {
+    "name": "die",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "死，死亡，消失，消亡"
+      },
+      {
+        "type": "n.",
+        "definition": "模具，冲模，压模"
+      }
+    ],
+    "usphone": "daɪ",
+    "ukphone": "daɪ"
+  },
+  {
+    "name": "hear",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "听到，听见，听说，倾听"
+      }
+    ],
+    "usphone": "hɪr",
+    "ukphone": "hɪə(r)"
+  },
+  {
+    "name": "walk",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "走，步行，行走，散步"
+      },
+      {
+        "type": "n.",
+        "definition": "步行，行走，散步，人行道"
+      }
+    ],
+    "usphone": "wɔːk",
+    "ukphone": "wɔːk"
+  },
+  {
+    "name": "cut",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "切，割；割破；修剪；剪裁；削减，缩减；删减；断绝；穿过"
+      },
+      {
+        "type": "n.",
+        "definition": "伤口，划口，（锋利物留下的）开口，缩减，理发，发型"
+      },
+      {
+        "type": "adj.",
+        "definition": "像刀割似的，刺骨的，切得动的，讽刺的"
+      }
+    ],
+    "usphone": "kʌt",
+    "ukphone": "kʌt"
+  },
+  {
+    "name": "play",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "玩；演奏，播放；扮演，演出，装扮；尽…本分；（以…方式）对待，处置，处理"
+      },
+      {
+        "type": "n.",
+        "definition": "游戏；玩耍；戏剧；比赛；作用"
+      }
+    ],
+    "usphone": "pleɪ",
+    "ukphone": "pleɪ"
+  },
+  {
+    "name": "laugh",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "笑，发笑，（尤因成功而）处于有利地位"
+      },
+      {
+        "type": "n.",
+        "definition": "笑声，令人开心的时刻，引人发笑的事，笑料"
+      }
+    ],
+    "usphone": "læf",
+    "ukphone": "lɑːf"
+  },
+  {
+    "name": "draw",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "描画；拖（动），拉（动），牵引；取出；抽出；提取；取得；推断出；引起；吸引；打成平局"
+      },
+      {
+        "type": "n.",
+        "definition": "拉；拖；抽；提取；吸引力；平局；抽签"
+      }
+    ],
+    "usphone": "drɔː",
+    "ukphone": "drɔː"
+  },
+  {
+    "name": "learn",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "学习，学会，得知，获悉"
+      }
+    ],
+    "usphone": "lɜːrn",
+    "ukphone": "lɜːn"
+  },
+  {
+    "name": "break",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "破坏，弄破，碎；打断，稍停，暂停，中断；背弃"
+      },
+      {
+        "type": "n.",
+        "definition": "中断，休息，破裂，机会"
+      }
+    ],
+    "usphone": "breɪk",
+    "ukphone": "breɪk"
+  },
+  {
+    "name": "study",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "学习，研究，功课，课业，书房"
+      },
+      {
+        "type": "v.",
+        "definition": "学习，攻读，审视，端详"
+      }
+    ],
+    "usphone": "'stʌdi",
+    "ukphone": "'stʌdi"
+  },
+  {
+    "name": "remember",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "记得，记住，想起，记起"
+      }
+    ],
+    "usphone": "rɪ'membər",
+    "ukphone": "rɪ'membə(r)"
+  },
+  {
+    "name": "talk",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "说话，谈话，讨论，讲话，说人闲话"
+      },
+      {
+        "type": "n.",
+        "definition": "谈话，讨论，交谈，演讲，说辞"
+      }
+    ],
+    "usphone": "tɔːk",
+    "ukphone": "tɔːk"
+  },
+  {
+    "name": "call",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "呼唤，称呼，召唤，打电话叫，将…称为"
+      },
+      {
+        "type": "n.",
+        "definition": "打电话，呼唤，呼吁，要求"
+      }
+    ],
+    "usphone": "kɔːl",
+    "ukphone": "kɔːl"
+  },
+  {
+    "name": "go",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "去，走；移动，旅行，行走；离开，出发；去做（某事）；参加，从事（活动或运动）；通向；说（代替say）；（故事）发生情况如何"
+      },
+      {
+        "type": "n.",
+        "definition": "干劲，活力，（游戏或活动中）轮到的机会，（做某事的）尝试"
+      },
+      {
+        "type": "adj.",
+        "definition": "正常运转的"
+      },
+      {
+        "type": "abbr.",
+        "definition": "（=General Orders）一般命令，卫兵守则"
+      },
+      {
+        "type": "linkv.",
+        "definition": "变成"
+      },
+      {
+        "type": "int.",
+        "definition": "（赛跑口令）跑"
+      }
+    ],
+    "usphone": "ɡoʊ",
+    "ukphone": "ɡəʊ"
+  },
+  {
+    "name": "love",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "爱，喜欢，热爱，喜爱"
+      },
+      {
+        "type": "n.",
+        "definition": "爱，爱情，热爱，恋爱，（称呼爱人）亲爱的"
+      }
+    ],
+    "usphone": "lʌv",
+    "ukphone": "lʌv"
+  },
+  {
+    "name": "carry",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "携带，搬，拿，提"
+      },
+      {
+        "type": "n.",
+        "definition": "携带，〈美〉运输，空，（两条水道间）陆上运送"
+      }
+    ],
+    "usphone": "'kæri",
+    "ukphone": "'kæri"
+  },
+  {
+    "name": "send",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "发送，打发，派遣，邮寄"
+      },
+      {
+        "type": "n.",
+        "definition": "波浪的推（进）力，船的纵摇"
+      }
+    ],
+    "usphone": "send",
+    "ukphone": "send"
+  },
+  {
+    "name": "see",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "看见，看到；观看，参观，游览；领会，理解；把…看作；参见"
+      },
+      {
+        "type": "n.",
+        "definition": "主教（或大主教）教区，主教（或大主教）权限，牧座"
+      }
+    ],
+    "usphone": "siː",
+    "ukphone": "siː"
+  },
+  {
+    "name": "share",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "共享，分享，分担，分摊"
+      },
+      {
+        "type": "n.",
+        "definition": "份额，股份，（在若干人之间分得的）一份；分享"
+      },
+      {
+        "type": "adj.",
+        "definition": "分享的，共有的"
+      }
+    ],
+    "usphone": "ʃer",
+    "ukphone": "ʃeə(r)"
+  },
+  {
+    "name": "bring",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "带来，引起，导致，起诉"
+      }
+    ],
+    "usphone": "brɪŋ",
+    "ukphone": "brɪŋ"
+  },
+  {
+    "name": "meet",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "遇见， 相遇；满足；开会；迎接"
+      },
+      {
+        "type": "n.",
+        "definition": "运动会，体育比赛；猎狐运动（现在于英国用狗猎狐属违法行为）"
+      },
+      {
+        "type": "adj.",
+        "definition": "适合的"
+      }
+    ],
+    "usphone": "miːt",
+    "ukphone": "miːt"
+  },
+  {
+    "name": "show",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "表明，证明，给…看，出示，领...到某处，展示"
+      },
+      {
+        "type": "n.",
+        "definition": "演出，歌舞表演；（电视或广播）节目，（尤指摇滚）音乐会；事情，活动；展览"
+      }
+    ],
+    "usphone": "ʃoʊ",
+    "ukphone": "ʃəʊ"
+  },
+  {
+    "name": "find",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "（意外或偶然地）发现；找到，找回；（经寻找、研究或思考）发现；裁决，判决"
+      },
+      {
+        "type": "n.",
+        "definition": "发现物，被发现的人（尤指有趣、有价值或有用者）"
+      }
+    ],
+    "usphone": "faɪnd",
+    "ukphone": "faɪnd"
+  },
+  {
+    "name": "look",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "看；寻找；瞧，注意；看起来好像；似乎，显得；面向，正对；观察"
+      },
+      {
+        "type": "n.",
+        "definition": "看，瞧；神情，脸色；外观；相貌；式样，风格"
+      },
+      {
+        "type": "linkv.",
+        "definition": "显得，似乎，看来好像"
+      },
+      {
+        "type": "int.",
+        "definition": "听我说"
+      }
+    ],
+    "usphone": "lʊk",
+    "ukphone": "lʊk"
+  },
+  {
+    "name": "join",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "加入，参加，连接，参与"
+      },
+      {
+        "type": "n.",
+        "definition": "连接处，接合点"
+      }
+    ],
+    "usphone": "dʒɔɪn",
+    "ukphone": "dʒɔɪn"
+  },
+  {
+    "name": "come",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "来，来到，发生，成为；由…引起；是…的结果"
+      },
+      {
+        "type": "int.",
+        "definition": "得啦"
+      },
+      {
+        "type": "prep.",
+        "definition": "（提及的时间）到来"
+      }
+    ],
+    "usphone": "kʌm",
+    "ukphone": "kʌm"
+  },
+  {
+    "name": "keep",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "（使）保持；保存；保守；留在（某处）；抚养；饲养；防止，妨碍；履行，遵循"
+      },
+      {
+        "type": "n.",
+        "definition": "保持；保养；抚养；饲养；生计，生活所需；看守人；照管人；城堡主楼"
+      }
+    ],
+    "usphone": "kiːp",
+    "ukphone": "kiːp"
+  },
+  {
+    "name": "stand",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "站立，直立，站起来，起立，忍受，处于（某种状态）；持有（某种态度或看法）；达特定水平（或数量、高度等）"
+      },
+      {
+        "type": "n.",
+        "definition": "态度，立场，观点，保卫，看台"
+      }
+    ],
+    "usphone": "stænd",
+    "ukphone": "stænd"
+  },
+  {
+    "name": "start",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "开始，启动，出发，发动"
+      },
+      {
+        "type": "n.",
+        "definition": "开始，起点，开端，开头"
+      },
+      {
+        "type": "abbr.",
+        "definition": "（=Strategic Arms Reduction Talks）战略武器削减谈判"
+      }
+    ],
+    "usphone": "stɑːrt",
+    "ukphone": "stɑːt"
+  },
+  {
+    "name": "sign",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "签名；签署；预示；以手势表示"
+      },
+      {
+        "type": "n.",
+        "definition": "标志；符号；足迹；踪迹；迹象；手势；招牌"
+      }
+    ],
+    "usphone": "saɪn",
+    "ukphone": "saɪn"
+  },
+  {
+    "name": "have",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "拥有；具有（品质，特点）；由……构成；掌握（知识等）；体验；患有；有 （感觉等）；让（某人）做"
+      },
+      {
+        "type": "auxv.",
+        "definition": "与过去分词连用构成完成时"
+      }
+    ],
+    "usphone": "hæv, həv, əv",
+    "ukphone": "hæv, həv, əv"
+  },
+  {
+    "name": "agree",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "同意，一致，赞成，答应"
+      }
+    ],
+    "usphone": "ə'ɡriː",
+    "ukphone": "ə'ɡriː"
+  },
+  {
+    "name": "stop",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "停止，阻止，停下，防止"
+      },
+      {
+        "type": "n.",
+        "definition": "停止，阻止，车站，停留"
+      }
+    ],
+    "usphone": "stɑːp",
+    "ukphone": "stɒp"
+  },
+  {
+    "name": "receive",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "接收，收到，接待，接到"
+      }
+    ],
+    "usphone": "rɪ'siːv",
+    "ukphone": "rɪ'siːv"
+  },
+  {
+    "name": "give",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "给，交给；赠送，赠予；提供；捐赠，捐款；支出，付款"
+      },
+      {
+        "type": "n.",
+        "definition": "伸展性，弹性"
+      }
+    ],
+    "usphone": "ɡɪv",
+    "ukphone": "ɡɪv"
+  },
+  {
+    "name": "hope",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "希望"
+      },
+      {
+        "type": "n.",
+        "definition": "希望，期望，希望的东西，期望的事情"
+      }
+    ],
+    "usphone": "hoʊp",
+    "ukphone": "həʊp"
+  },
+  {
+    "name": "hold",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "拿着；抓住；抱住；托住；召开；举行；容纳；怀有；认为；（使）保持；抑制；发生；有效，适用"
+      },
+      {
+        "type": "n.",
+        "definition": "抓，握，拿；支撑物；掌握；容器；栖身处；躲避处；擒拿法"
+      }
+    ],
+    "usphone": "hoʊld",
+    "ukphone": "həʊld"
+  },
+  {
+    "name": "think",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "认为，以为，想，思考"
+      },
+      {
+        "type": "n.",
+        "definition": "想法，念头，〈方,口〉思考"
+      },
+      {
+        "type": "adj.",
+        "definition": "思想（方面）的，供思考的"
+      }
+    ],
+    "usphone": "θɪŋk",
+    "ukphone": "θɪŋk"
+  },
+  {
+    "name": "suggest",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "建议；推荐；暗示，显示，表明；认为"
+      }
+    ],
+    "usphone": "sə'dʒest",
+    "ukphone": "sə'dʒest"
+  },
+  {
+    "name": "help",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "帮助，协助，促进，援助"
+      },
+      {
+        "type": "n.",
+        "definition": "帮助，协助，救助，有用"
+      }
+    ],
+    "usphone": "help",
+    "ukphone": "help"
+  },
+  {
+    "name": "describe",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "描述，形容，把…称为，沿…形状移动"
+      }
+    ],
+    "usphone": "dɪ'skraɪb",
+    "ukphone": "dɪ'skraɪb"
+  },
+  {
+    "name": "write",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "写作；书写；编写；写信"
+      }
+    ],
+    "usphone": "raɪt",
+    "ukphone": "raɪt"
+  },
+  {
+    "name": "happen",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "发生，出现，向对方表示异议或不悦等"
+      },
+      {
+        "type": "linkv.",
+        "definition": "碰巧，恰好"
+      }
+    ],
+    "usphone": "'hæpən",
+    "ukphone": "'hæpən"
+  },
+  {
+    "name": "begin",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "开始，启动，起始，开始存在（或进行）"
+      }
+    ],
+    "usphone": "bɪ'ɡɪn",
+    "ukphone": "bɪ'ɡɪn"
+  },
+  {
+    "name": "want",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "要，希望，想要，需要"
+      },
+      {
+        "type": "n.",
+        "definition": "需要；缺乏，缺少，匮乏，贫困"
+      }
+    ],
+    "usphone": "wɑːnt",
+    "ukphone": "wɒnt"
+  },
+  {
+    "name": "wait",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "等，等待，等候，期待"
+      },
+      {
+        "type": "n.",
+        "definition": "等待，等候，等待的时间"
+      }
+    ],
+    "usphone": "weɪt",
+    "ukphone": "weɪt"
+  },
+  {
+    "name": "become",
+    "pos": [
+      {
+        "type": "linkv.",
+        "definition": "成为，变成，开始变得"
+      },
+      {
+        "type": "vt.",
+        "definition": "适合（某人），（与…）相称，使（人）显得漂亮，使好看"
+      }
+    ],
+    "usphone": "bɪ'kʌm",
+    "ukphone": "bɪ'kʌm"
+  },
+  {
+    "name": "try",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "试图，想要，设法，努力"
+      },
+      {
+        "type": "n.",
+        "definition": "尝试，试图，努力，在对方球门线后带球触地"
+      }
+    ],
+    "usphone": "traɪ",
+    "ukphone": "traɪ"
+  },
+  {
+    "name": "get",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "得到，获得，使，收到，购买；变得；达到；开始做；搭乘；移动"
+      },
+      {
+        "type": "n.",
+        "definition": "赢利，薪资，幼畜，（煤炭）产量"
+      },
+      {
+        "type": "linkv.",
+        "definition": "处于"
+      }
+    ],
+    "usphone": "ɡet",
+    "ukphone": "ɡet"
+  },
+  {
+    "name": "earn",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "赢得，挣得，挣钱，赚得"
+      }
+    ],
+    "usphone": "ɜːrn",
+    "ukphone": "ɜːn"
+  },
+  {
+    "name": "travel",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "旅行，旅游，传播，流传"
+      },
+      {
+        "type": "n.",
+        "definition": "旅行，泛指出行，游历，尤指一系列的经常性出行"
+      }
+    ],
+    "usphone": "'trævl",
+    "ukphone": "'trævl"
+  },
+  {
+    "name": "catch",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "抓住，捕捉，捕获；接住；赶上；染上；击中；侵袭；听清楚；领会；迷住"
+      },
+      {
+        "type": "n.",
+        "definition": "接（球等）；捕获量；扣拴物，扣件；隐藏的困难；意中人"
+      },
+      {
+        "type": "adj.",
+        "definition": "吸引人的，引人注意的；引人上当的，设有圈套的"
+      }
+    ],
+    "usphone": "kætʃ",
+    "ukphone": "kætʃ"
+  },
+  {
+    "name": "choose",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "选择，选取，挑选，决定"
+      }
+    ],
+    "usphone": "tʃuːz",
+    "ukphone": "tʃuːz"
+  },
+  {
+    "name": "clean",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "洁净的，干净的；爱干净的，爱整洁的"
+      },
+      {
+        "type": "v.",
+        "definition": "除去…的灰尘，使…干净，打扫，变干净，（烹饪前）清除内脏"
+      },
+      {
+        "type": "adv.",
+        "definition": "完全地"
+      },
+      {
+        "type": "n.",
+        "definition": "打扫，清扫"
+      }
+    ],
+    "usphone": "kliːn",
+    "ukphone": "kliːn"
+  },
+  {
+    "name": "hurt",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "受伤，感到疼痛，使不快，使烦恼，使伤心，损害"
+      },
+      {
+        "type": "adj.",
+        "definition": "（身体上）受伤的，（感情上）受伤的"
+      },
+      {
+        "type": "n.",
+        "definition": "（身体上的）伤痛；（精神上的）创伤，痛苦"
+      }
+    ],
+    "usphone": "hɜːrt",
+    "ukphone": "hɜːt"
+  },
+  {
+    "name": "eat",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "吃，吃饭，用餐"
+      }
+    ],
+    "usphone": "iːt",
+    "ukphone": "iːt"
+  },
+  {
+    "name": "drink",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "喝，喝酒，饮，（尤指）酗酒"
+      },
+      {
+        "type": "n.",
+        "definition": "饮料，酒，一口（饮料），酒精饮料"
+      }
+    ],
+    "usphone": "drɪŋk",
+    "ukphone": "drɪŋk"
+  },
+  {
+    "name": "teach",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "教，教导，教授，教育"
+      }
+    ],
+    "usphone": "tiːtʃ",
+    "ukphone": "tiːtʃ"
+  },
+  {
+    "name": "wear",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "穿，戴，佩戴，留（发、须等）；（使）磨损，磨坏；面露，面带（某种表情）"
+      },
+      {
+        "type": "n.",
+        "definition": "（尤用于商店）…时穿的衣服，衣着，穿着，穿戴"
+      }
+    ],
+    "usphone": "wer",
+    "ukphone": "weə(r)"
+  },
+  {
+    "name": "listen",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "倾听，听从，（注意地）听，听信"
+      },
+      {
+        "type": "n.",
+        "definition": "听"
+      }
+    ],
+    "usphone": "'lɪsn",
+    "ukphone": "'lɪsn"
+  },
+  {
+    "name": "finish",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "完成，做好，（使）结束，吃完"
+      },
+      {
+        "type": "n.",
+        "definition": "结局，结尾，最后部分，抛光"
+      }
+    ],
+    "usphone": "'fɪnɪʃ",
+    "ukphone": "'fɪnɪʃ"
+  },
+  {
+    "name": "sleep",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "睡，入睡，为…提供床位"
+      },
+      {
+        "type": "n.",
+        "definition": "睡眠，睡眠时间，眼眵"
+      }
+    ],
+    "usphone": "sliːp",
+    "ukphone": "sliːp"
+  },
+  {
+    "name": "fill",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "填满，满足，弥漫，担任"
+      },
+      {
+        "type": "n.",
+        "definition": "填满…的量，足够…的量，吃饱的量，喝足的量，填充物"
+      }
+    ],
+    "usphone": "fɪl",
+    "ukphone": "fɪl"
+  },
+  {
+    "name": "cry",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "哭，哭泣，呼喊，喊叫"
+      },
+      {
+        "type": "n.",
+        "definition": "哭，呼喊，叫声，口号"
+      }
+    ],
+    "usphone": "kraɪ",
+    "ukphone": "kraɪ"
+  },
+  {
+    "name": "guess",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "猜测，猜到，想，估计"
+      },
+      {
+        "type": "n.",
+        "definition": "猜测，猜想"
+      }
+    ],
+    "usphone": "ɡes",
+    "ukphone": "ɡes"
+  },
+  {
+    "name": "brush",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "刷子，毛刷；画笔，笔刷；灌木丛；小冲突"
+      },
+      {
+        "type": "v.",
+        "definition": "掸，刷亮，（用刷子）抹，轻擦"
+      }
+    ],
+    "usphone": "brʌʃ",
+    "ukphone": "brʌʃ"
+  },
+  {
+    "name": "swim",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "游泳，游水，游动"
+      },
+      {
+        "type": "n.",
+        "definition": "游泳，（构成复合词）与游泳有关的"
+      }
+    ],
+    "usphone": "swɪm",
+    "ukphone": "swɪm"
+  },
+  {
+    "name": "wash",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "洗，洗脸，洗涤，洗手"
+      },
+      {
+        "type": "n.",
+        "definition": "洗，清洗，洗涤，洗刷"
+      }
+    ],
+    "usphone": "wɑːʃ",
+    "ukphone": "wɒʃ"
+  },
+  {
+    "name": "watch",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "看，观看，观察；留心，注意〔某事〕；照看，照管；监视"
+      },
+      {
+        "type": "n.",
+        "definition": "手表；注视，监视；警卫，看守人；值班时间"
+      }
+    ],
+    "usphone": "wɑtʃ",
+    "ukphone": "wɒtʃ"
+  },
+  {
+    "name": "live",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "住，居住；生存；过日子，生活"
+      },
+      {
+        "type": "adj.",
+        "definition": "活的，现场直播的，实况转播的，现场演出的"
+      },
+      {
+        "type": "adv.",
+        "definition": "在现场直播，在现场表演（或录制）"
+      }
+    ],
+    "usphone": "lɪv; laɪv",
+    "ukphone": "lɪv; laɪv"
+  },
+  {
+    "name": "wake",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "醒来，唤醒，弄醒，唤起（记忆）"
+      },
+      {
+        "type": "n.",
+        "definition": "守灵，（葬礼前的）守夜，航迹"
+      }
+    ],
+    "usphone": "weɪk",
+    "ukphone": "weɪk"
+  },
+  {
+    "name": "excuse",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "借口；理由；辩解；（正当的）理由"
+      },
+      {
+        "type": "v.",
+        "definition": "原谅；宽恕；为…辩解（或找理由）；准许…离开"
+      }
+    ],
+    "usphone": "ɪk'skjuːs",
+    "ukphone": "ɪk'skjuːs"
+  },
+  {
+    "name": "lend",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "借给，借出；（向…）贷（款）；给予；添加"
+      },
+      {
+        "type": "n.",
+        "definition": "借贷；出借"
+      }
+    ],
+    "usphone": "lend",
+    "ukphone": "lend"
+  },
+  {
+    "name": "mean",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "意味着，意思是，打算，表示…的意思"
+      },
+      {
+        "type": "adj.",
+        "definition": "刻薄，吝啬的，小气的，不善良"
+      },
+      {
+        "type": "n.",
+        "definition": "平均值，中庸，平均数，中间"
+      }
+    ],
+    "usphone": "miːn",
+    "ukphone": "miːn"
+  },
+  {
+    "name": "surf",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "冲浪；（在互联网上）冲浪，浏览"
+      },
+      {
+        "type": "n.",
+        "definition": "表面，激浪，拍岸碎浪[涛声]，碎波"
+      }
+    ],
+    "usphone": "sɜːrf",
+    "ukphone": "sɜːf"
+  },
+  {
+    "name": "sing",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "演唱，鸣，啼，唱（歌）"
+      },
+      {
+        "type": "n.",
+        "definition": "（风,小河,开水壶等的）呜呜声，〈美口〉歌唱会"
+      }
+    ],
+    "usphone": "sɪŋ",
+    "ukphone": "sɪŋ"
+  },
+  {
+    "name": "need",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "需要，必需，（表示应该或不得不做）有必要"
+      },
+      {
+        "type": "n.",
+        "definition": "需要，必须，特别需要，迫切要求"
+      },
+      {
+        "type": "auxv.",
+        "definition": "必须, She need not go. 这句话"
+      },
+      {
+        "type": "modalv.",
+        "definition": "（表示没有必要或询问是否有必要）需要"
+      },
+      {
+        "type": "adj.",
+        "definition": "需要的"
+      }
+    ],
+    "usphone": "niːd",
+    "ukphone": "niːd"
+  },
+  {
+    "name": "practise",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "练习，训练，实习，经常做，实行，奉行，〔医生、律师〕执业，从事（职业）"
+      }
+    ],
+    "usphone": "'præktɪs",
+    "ukphone": "'præktɪs"
+  },
+  {
+    "name": "say",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "说，告诉，讲，表达；表明；体现；显示；比如说"
+      },
+      {
+        "type": "n.",
+        "definition": "发言权，决定权"
+      },
+      {
+        "type": "int.",
+        "definition": "啧啧，我说"
+      }
+    ],
+    "usphone": "seɪ",
+    "ukphone": "seɪ"
+  },
+  {
+    "name": "decide",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "决定，选定，裁决，判决"
+      }
+    ],
+    "usphone": "dɪ'saɪd",
+    "ukphone": "dɪ'saɪd"
+  },
+  {
+    "name": "read",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "读，阅读，朗读，读懂"
+      },
+      {
+        "type": "n.",
+        "definition": "阅读，读书，好的（或有意思等的）读物，好书（或文章等）"
+      },
+      {
+        "type": "adj.",
+        "definition": "博学的，熟知的，精通的"
+      }
+    ],
+    "usphone": "riːd",
+    "ukphone": "riːd"
+  },
+  {
+    "name": "open",
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "开放，营业，坦诚，开放的"
+      },
+      {
+        "type": "v.",
+        "definition": "打开，开放，开启，张开"
+      },
+      {
+        "type": "n.",
+        "definition": "公开，户外，野外，旷野"
+      }
+    ],
+    "usphone": "'oʊpən",
+    "ukphone": "'əʊpən"
+  },
+  {
+    "name": "marry",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "嫁；娶；（和某人）结婚；为……主持婚礼"
+      },
+      {
+        "type": "int.",
+        "definition": "〈古〉哎呀"
+      },
+      {
+        "type": "n.",
+        "definition": "女子名"
+      }
+    ],
+    "usphone": "'mæri",
+    "ukphone": "'mæri"
+  },
+  {
+    "name": "celebrate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "庆祝，庆贺；赞美，颂扬"
+      }
+    ],
+    "usphone": "'selɪbreɪt",
+    "ukphone": "'selɪbreɪt"
+  },
+  {
+    "name": "fix",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "使固定，修理，确定，安排，安装"
+      },
+      {
+        "type": "n.",
+        "definition": "定位，困境，（尤指简单、暂时的）解决方法"
+      }
+    ],
+    "usphone": "fɪks",
+    "ukphone": "fɪks"
+  },
+  {
+    "name": "drop",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "（使）滴下；（使）落下；（使）降低；（使）减少；累倒；停止，结束"
+      },
+      {
+        "type": "n.",
+        "definition": "滴；微量；下落；降低"
+      }
+    ],
+    "usphone": "drɑːp",
+    "ukphone": "drɒp"
+  },
+  {
+    "name": "fold",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "折叠，包，可叠平（以便贮存或携带），裹；倒闭，结束"
+      },
+      {
+        "type": "n.",
+        "definition": "褶，褶层，折叠部分，褶痕"
+      }
+    ],
+    "usphone": "foʊld",
+    "ukphone": "fəʊld"
+  },
+  {
+    "name": "cough",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "咳嗽，（从喉咙或肺中）咳出，突然发出刺耳的声音"
+      },
+      {
+        "type": "n.",
+        "definition": "咳嗽，咳嗽声，咳嗽病"
+      }
+    ],
+    "usphone": "kɔːf",
+    "ukphone": "kɒf"
+  },
+  {
+    "name": "breathe",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "呼吸，透气，呼出，低声说"
+      }
+    ],
+    "usphone": "briːð",
+    "ukphone": "briːð"
+  },
+  {
+    "name": "plant",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "植物，工厂，设备，发电厂"
+      },
+      {
+        "type": "v.",
+        "definition": "种植，栽种，播种，在（某处）栽种；放置，安放"
+      }
+    ],
+    "usphone": "plænt",
+    "ukphone": "plɑːnt"
+  },
+  {
+    "name": "reduce",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "减少，（使）蒸发，减轻体重，节食"
+      }
+    ],
+    "usphone": "rɪ'duːs",
+    "ukphone": "rɪ'djuːs"
+  },
+  {
+    "name": "race",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "人种，种族，赛跑，竞争，民族"
+      },
+      {
+        "type": "v.",
+        "definition": "（和…）比赛，参加比赛，使比赛，让…参加速度比赛"
+      }
+    ],
+    "usphone": "reɪs",
+    "ukphone": "reɪs"
+  },
+  {
+    "name": "train",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "列车，火车，列队行进的人（或动物），队列"
+      },
+      {
+        "type": "v.",
+        "definition": "训练，培训，教育，接受训练"
+      }
+    ],
+    "usphone": "treɪn",
+    "ukphone": "treɪn"
+  },
+  {
+    "name": "attract",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "吸引，招引，使喜爱，引起…的好感（或爱慕）"
+      }
+    ],
+    "usphone": "ə'trækt",
+    "ukphone": "ə'trækt"
+  },
+  {
+    "name": "produce",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "生产，制造，制作，出示，产生，引起"
+      },
+      {
+        "type": "n.",
+        "definition": "（尤指）农产品，产品"
+      }
+    ],
+    "usphone": "prə'duːs",
+    "ukphone": "prə'djuːs"
+  },
+  {
+    "name": "forgive",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "原谅，宽恕，请原谅，对不起"
+      }
+    ],
+    "usphone": "fər'ɡɪv",
+    "ukphone": "fə'ɡɪv"
+  },
+  {
+    "name": "stick",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "刺，戳；插入，刺入；粘贴；钉住"
+      },
+      {
+        "type": "n.",
+        "definition": "棍，棒；手杖；条状物；棍状物；枝条，枯枝"
+      }
+    ],
+    "usphone": "stɪk",
+    "ukphone": "stɪk"
+  },
+  {
+    "name": "succeed",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "成功；继承，接替；继续；有作为"
+      }
+    ],
+    "usphone": "sək'siːd",
+    "ukphone": "sək'siːd"
+  },
+  {
+    "name": "raise",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "举起；养育，喂养，种植；提出；募集；提升，增大；引起，唤起"
+      },
+      {
+        "type": "n.",
+        "definition": "加薪；赌注加码；（持杠铃时的） 提，举"
+      }
+    ],
+    "usphone": "reɪz",
+    "ukphone": "reɪz"
+  },
+  {
+    "name": "promise",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "承诺，保证；有希望，有可能"
+      },
+      {
+        "type": "n.",
+        "definition": "承诺，保证；希望，迹象"
+      }
+    ],
+    "usphone": "'prɑːmɪs",
+    "ukphone": "'prɒmɪs"
+  },
+  {
+    "name": "solve",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "解决，处理，解答，破解"
+      }
+    ],
+    "usphone": "sɑːlv",
+    "ukphone": "sɒlv"
+  },
+  {
+    "name": "burn",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "燃烧，烧着；发烧；发光，发亮；烧毁；烧伤；充满炽热情感；点燃；烧制；把…晒黑；刻录"
+      },
+      {
+        "type": "n.",
+        "definition": "燃烧；烧伤，烫伤，灼伤"
+      }
+    ],
+    "usphone": "bɜːrn",
+    "ukphone": "bɜːn"
+  },
+  {
+    "name": "name",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "名称，名字，名声，名誉"
+      },
+      {
+        "type": "v.",
+        "definition": "命名，给…取名；说出…的名称；任命"
+      },
+      {
+        "type": "adj.",
+        "definition": "〈美口〉著名的，（作品等）据以取名的"
+      }
+    ],
+    "usphone": "neɪm",
+    "ukphone": "neɪm"
+  },
+  {
+    "name": "shape",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "形状，外形，状况，样子"
+      },
+      {
+        "type": "v.",
+        "definition": "塑造，使成为…形状（或样子），决定…的形成，影响…的发展"
+      },
+      {
+        "type": "abbr.",
+        "definition": "（=Supreme Headquarters，Allied Powers in Europe）（北大西洋公约组织的）欧洲盟军最高司令部"
+      }
+    ],
+    "usphone": "ʃeɪp",
+    "ukphone": "ʃeɪp"
+  },
+  {
+    "name": "fight",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "战斗，打架，作战，与……作斗争，参与竞争"
+      },
+      {
+        "type": "n.",
+        "definition": "斗争，打架，打斗，搏斗，竞争，竞赛，斗志"
+      }
+    ],
+    "usphone": "faɪt",
+    "ukphone": "faɪt"
+  },
+  {
+    "name": "inspire",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "激励，鼓舞；启发，使产生灵感"
+      }
+    ],
+    "usphone": "ɪn'spaɪər",
+    "ukphone": "ɪn'spaɪə(r)"
+  },
+  {
+    "name": "care",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "照顾，照料，护理；小心"
+      },
+      {
+        "type": "v.",
+        "definition": "关心，关怀，在意，关注"
+      }
+    ],
+    "usphone": "ker",
+    "ukphone": "keə(r)"
+  },
+  {
+    "name": "weigh",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "权衡；称……重量；重量为……；具有重要性"
+      }
+    ],
+    "usphone": "weɪ",
+    "ukphone": "weɪ"
+  },
+  {
+    "name": "feed",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "饲养，喂养，供应，供给"
+      },
+      {
+        "type": "n.",
+        "definition": "（婴儿的）一次喂奶，（动物的）一次喂给的饲料，动物的饲料"
+      }
+    ],
+    "usphone": "fiːd",
+    "ukphone": "fiːd"
+  },
+  {
+    "name": "appear",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "出现，显现，呈现，出版"
+      },
+      {
+        "type": "linkv.",
+        "definition": "似乎，显得，看来"
+      }
+    ],
+    "usphone": "ə'pɪr",
+    "ukphone": "ə'pɪə(r)"
+  },
+  {
+    "name": "protect",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "保护，防护，（制定法律）保护，（通过征关税）保护（国内企业）"
+      }
+    ],
+    "usphone": "prə'tekt",
+    "ukphone": "prə'tekt"
+  },
+  {
+    "name": "focus",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "集中（注意力、精力），（使）调节焦距，集中（光束于）"
+      },
+      {
+        "type": "n.",
+        "definition": "关注，中心点（指人或事物），调焦，源"
+      }
+    ],
+    "usphone": "'foʊkəs",
+    "ukphone": "'fəʊkəs"
+  },
+  {
+    "name": "enjoy",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "享受，欣赏，享有，喜爱"
+      }
+    ],
+    "usphone": "ɪn'dʒɔɪ",
+    "ukphone": "ɪn'dʒɔɪ"
+  },
+  {
+    "name": "lay",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "（尤指轻轻地或小心地）放置，铺设（尤指在地板上），涂，用一层…覆盖； 下（蛋）；产（卵）"
+      },
+      {
+        "type": "adj.",
+        "definition": "外行的，非专业的，缺少专门知识的，平信徒的"
+      },
+      {
+        "type": "n.",
+        "definition": "性伙伴,（供吟唱的）叙事诗"
+      }
+    ],
+    "usphone": "leɪ",
+    "ukphone": "leɪ"
+  },
+  {
+    "name": "peel",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "果皮，外皮"
+      },
+      {
+        "type": "v.",
+        "definition": "剥落，剥去；揭掉；脱落；脱皮，蜕皮"
+      }
+    ],
+    "usphone": "piːl",
+    "ukphone": "piːl"
+  },
+  {
+    "name": "concern",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "关心，忧虑，公司，企业"
+      },
+      {
+        "type": "v.",
+        "definition": "涉及，影响，牵涉，与…有关"
+      }
+    ],
+    "usphone": "kən'sɜːrn",
+    "ukphone": "kən'sɜːn"
+  },
+  {
+    "name": "launch",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "发射；把（航天器、武器等）发射上天；水中发射；开始从事，发起，发动（尤指有组织的活动）；（首次）上市，发行；使（船，尤指新船）下水"
+      },
+      {
+        "type": "n.",
+        "definition": "（航天器的）发射；（船的）下水；（产品的）上市；（事件的）发起；大型汽艇；机动大舢板；交通艇"
+      }
+    ],
+    "usphone": "lɔːntʃ",
+    "ukphone": "lɔːntʃ"
+  },
+  {
+    "name": "whisper",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "耳语，小声说；私下说，秘密告诉；沙沙作响"
+      },
+      {
+        "type": "n.",
+        "definition": "耳语；私语；轻柔的声音；传言"
+      },
+      {
+        "type": "adj.",
+        "definition": "（whispered）耳语的，低声的"
+      }
+    ],
+    "usphone": "'wɪspər",
+    "ukphone": "'wɪspə(r)"
+  },
+  {
+    "name": "chop",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "砍，劈，剁；猪排，羊排"
+      },
+      {
+        "type": "v.",
+        "definition": "切碎，剁碎；砍，劈；削减，降低；取消，终止"
+      }
+    ],
+    "usphone": "tʃɑːp",
+    "ukphone": "tʃɒp"
+  },
+  {
+    "name": "pollute",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "污染，弄脏"
+      },
+      {
+        "type": "adj.",
+        "definition": "污染的"
+      }
+    ],
+    "usphone": "pə'luːt",
+    "ukphone": "pə'luːt"
+  },
+  {
+    "name": "educate",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "教导，训练，（在学校）教育，教养"
+      }
+    ],
+    "usphone": "'edʒukeɪt",
+    "ukphone": "'edʒukeɪt"
+  },
+  {
+    "name": "cause",
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "原因，事业，病因，理由"
+      },
+      {
+        "type": "v.",
+        "definition": "导致，使，引起，产生"
+      }
+    ],
+    "usphone": "kɔːz",
+    "ukphone": "kɔːz"
+  },
+  {
+    "name": "dump",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "倾倒，抛售，抛弃，转存"
+      },
+      {
+        "type": "n.",
+        "definition": "垃圾场，转储，转存，废物堆"
+      }
+    ],
+    "usphone": "dʌmp",
+    "ukphone": "dʌmp"
+  },
+  {
+    "name": "spit",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "唾（唾沫、食物等），啐唾沫（常表示愤怒或鄙视），怒斥"
+      },
+      {
+        "type": "n.",
+        "definition": "唾液，唾沫，啐唾沫，吐痰"
+      }
+    ],
+    "usphone": "spɪt",
+    "ukphone": "spɪt"
+  },
+  {
+    "name": "be",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "到场，位于，在（某处），（在某时或某地）发生，是"
+      },
+      {
+        "type": "linkv.",
+        "definition": "有，等同，存在，提供名称或信息时用"
+      },
+      {
+        "type": "auxv.",
+        "definition": "与过去分词连用构成被动语态, 与现在分词连用构成进行时"
+      },
+      {
+        "type": "abbr.",
+        "definition": "（BE=Bank of England）（英国）英格兰银行"
+      }
+    ],
+    "usphone": "bi",
+    "ukphone": "bi"
+  },
+  {
+    "name": "mash",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "捣碎（食物）"
+      },
+      {
+        "type": "n.",
+        "definition": "（煮软的）谷物饲料，麦芽浆（用于酿制啤酒），糊状食物"
+      }
+    ],
+    "usphone": "mæʃ",
+    "ukphone": "mæʃ"
+  },
+  {
+    "name": "reuse",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "重复使用，再次使用"
+      },
+      {
+        "type": "n.",
+        "definition": "回用"
+      },
+      {
+        "type": "adj.",
+        "definition": "可重复使用的"
+      }
+    ],
+    "usphone": "ˌriː'juːz",
+    "ukphone": "ˌriː'juːz"
+  },
+  {
+    "name": "fail",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "失败，不及格，倒闭，破产"
+      },
+      {
+        "type": "n.",
+        "definition": "（考试）不及格"
+      }
+    ],
+    "usphone": "feɪl",
+    "ukphone": "feɪl"
+  },
+  {
+    "name": "scold",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "骂，责备，数落，奚落"
+      },
+      {
+        "type": "n.",
+        "definition": "唠唠叨叨[吵吵嚷嚷,高声]骂人的人[妇女]"
+      }
+    ],
+    "usphone": "skoʊld",
+    "ukphone": "skəʊld"
+  },
+  {
+    "name": "cook",
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "烹饪，烹调，煮（或烘烤、煎炸等），密谋"
+      },
+      {
+        "type": "n.",
+        "definition": "厨师，炊事员，做饭的人"
+      },
+      {
+        "type": "vt.",
+        "definition": "<非正式>篡改，捏造，杜撰"
+      }
+    ],
+    "usphone": "kʊk",
+    "ukphone": "kʊk"
+  }
+]
