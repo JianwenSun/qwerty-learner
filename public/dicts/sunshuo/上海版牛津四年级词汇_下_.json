@@ -1,0 +1,938 @@
+[
+  {
+    "name": "basket",
+    "trans": [
+      "- n. 篮子, 筐; 一篮, 一筐"
+    ],
+    "usphone": "'bæskɪt",
+    "ukphone": "'bɑːskɪt"
+  },
+  {
+    "name": "behind",
+    "trans": [
+      "- prep. 在……后面,- adv. 在……后面"
+    ],
+    "usphone": "bɪ'haɪnd",
+    "ukphone": "bɪ'haɪnd"
+  },
+  {
+    "name": "beside",
+    "trans": [
+      "- prep. 在……旁边；靠近"
+    ],
+    "usphone": "bɪ'saɪd",
+    "ukphone": "bɪ'saɪd"
+  },
+  {
+    "name": "blind",
+    "trans": [
+      "- adj. 瞎的，失明的"
+    ],
+    "usphone": "blaɪnd",
+    "ukphone": "blaɪnd"
+  },
+  {
+    "name": "blunt",
+    "trans": [
+      "- adj. 钝的；直言的,- v. 使减弱，使（尖端、刃）变钝"
+    ],
+    "usphone": "blʌnt",
+    "ukphone": "blʌnt"
+  },
+  {
+    "name": "brush",
+    "trans": [
+      "- n. 刷子；轻拂，掠过,- vt. 刷； 擦"
+    ],
+    "usphone": "brʌʃ",
+    "ukphone": "brʌʃ"
+  },
+  {
+    "name": "donkey",
+    "trans": [
+      "- n. 毛驴，驴；傻瓜，〈非正式〉笨蛋"
+    ],
+    "usphone": "'dɔːŋki",
+    "ukphone": "'dɒŋki"
+  },
+  {
+    "name": "drum",
+    "trans": [
+      "- n. 鼓；鼓状物"
+    ],
+    "usphone": "drʌm",
+    "ukphone": "drʌm"
+  },
+  {
+    "name": "eat",
+    "trans": [
+      "- vt. 吃"
+    ],
+    "usphone": "iːt",
+    "ukphone": "iːt"
+  },
+  {
+    "name": "felt pen",
+    "trans": [
+      "- phrase. 毡头笔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fox",
+    "trans": [
+      "- n. 狐狸"
+    ],
+    "usphone": "fɑːks",
+    "ukphone": "fɒks"
+  },
+  {
+    "name": "grape",
+    "trans": [
+      "- n. 葡萄"
+    ],
+    "usphone": "ɡreɪp",
+    "ukphone": "ɡreɪp"
+  },
+  {
+    "name": "guitar",
+    "trans": [
+      "- n. 吉他"
+    ],
+    "usphone": "ɡɪ'tɑːr",
+    "ukphone": "ɡɪ'tɑː(r)"
+  },
+  {
+    "name": "hamburger",
+    "trans": [
+      "- n. 汉堡包"
+    ],
+    "usphone": "'hæmbɜːrɡər",
+    "ukphone": "'hæmbɜːɡə(r)"
+  },
+  {
+    "name": "hole",
+    "trans": [
+      "- n. 洞，穴，坑"
+    ],
+    "usphone": "hoʊl",
+    "ukphone": "həʊl"
+  },
+  {
+    "name": "kitchen",
+    "trans": [
+      "- n. 厨房"
+    ],
+    "usphone": "'kɪtʃɪn",
+    "ukphone": "'kɪtʃɪn"
+  },
+  {
+    "name": "make",
+    "trans": [
+      "- v. 做，制造；使得,- n. （某公司产品的）牌；型号"
+    ],
+    "usphone": "meɪk",
+    "ukphone": "meɪk"
+  },
+  {
+    "name": "music",
+    "trans": [
+      "- n. 音乐"
+    ],
+    "usphone": "'mjuːzɪk",
+    "ukphone": "'mjuːzɪk"
+  },
+  {
+    "name": "old",
+    "trans": [
+      "- adj. 老的；旧的"
+    ],
+    "usphone": "oʊld",
+    "ukphone": "əʊld"
+  },
+  {
+    "name": "paint",
+    "trans": [
+      "- v. 绘画；给…涂色；在…上刷油漆,- n. 颜料; 油漆; 涂料"
+    ],
+    "usphone": "peɪnt",
+    "ukphone": "peɪnt"
+  },
+  {
+    "name": "piano",
+    "trans": [
+      "- n. 钢琴"
+    ],
+    "usphone": "pɪ'ænəʊ",
+    "ukphone": "pɪ'ænəʊ"
+  },
+  {
+    "name": "recorder",
+    "trans": [
+      "- n. 录音机"
+    ],
+    "usphone": "rɪ'kɔːrdər",
+    "ukphone": "rɪ'kɔːdə(r)"
+  },
+  {
+    "name": "sleep",
+    "trans": [
+      "- vi. 睡觉"
+    ],
+    "usphone": "sliːp",
+    "ukphone": "sliːp"
+  },
+  {
+    "name": "talk",
+    "trans": [
+      "- v. 谈话，讲话,- n. 演讲；讲座"
+    ],
+    "usphone": "tɔːk",
+    "ukphone": "tɔːk"
+  },
+  {
+    "name": "thick",
+    "trans": [
+      "- adj. 厚的；密的；浓的"
+    ],
+    "usphone": "θɪk",
+    "ukphone": "θɪk"
+  },
+  {
+    "name": "thin",
+    "trans": [
+      "- adj. 瘦的；薄的,- v. （使）变稀，（使）变薄，（使）变淡；（使）变细"
+    ],
+    "usphone": "θɪn",
+    "ukphone": "θɪn"
+  },
+  {
+    "name": "thing",
+    "trans": [
+      "- n. 东西；物品"
+    ],
+    "usphone": "θɪŋ",
+    "ukphone": "θɪŋ"
+  },
+  {
+    "name": "those",
+    "trans": [
+      "- pron. 那些,- adj. 那些"
+    ],
+    "usphone": "ðoʊz",
+    "ukphone": "ðəʊz"
+  },
+  {
+    "name": "triangle",
+    "trans": [
+      "- n. 三角形；三角关系"
+    ],
+    "usphone": "'traɪæŋɡl",
+    "ukphone": "'traɪæŋɡl"
+  },
+  {
+    "name": "violin",
+    "trans": [
+      "- n. 小提琴"
+    ],
+    "usphone": "ˌvaɪə'lɪn",
+    "ukphone": "ˌvaɪə'lɪn"
+  },
+  {
+    "name": "aunt",
+    "trans": [
+      "- n. 阿姨；伯母；舅母；婶；姑；姨"
+    ],
+    "usphone": "ænt",
+    "ukphone": "ɑːnt"
+  },
+  {
+    "name": "bathroom",
+    "trans": [
+      "- n. 浴室；盥洗室"
+    ],
+    "usphone": "'bæθruːm",
+    "ukphone": "'bɑːθruːm"
+  },
+  {
+    "name": "bedroom",
+    "trans": [
+      "- n. 卧室，寝室"
+    ],
+    "usphone": "'bedruːm",
+    "ukphone": "'bedruːm"
+  },
+  {
+    "name": "bone",
+    "trans": [
+      "- n. 骨，骨头"
+    ],
+    "usphone": "boʊn",
+    "ukphone": "bəʊn"
+  },
+  {
+    "name": "busy",
+    "trans": [
+      "- adj. 忙的，忙碌的"
+    ],
+    "usphone": "'bɪzi",
+    "ukphone": "'bɪzi"
+  },
+  {
+    "name": "children",
+    "trans": [
+      "- n. 孩子们（child的复数）"
+    ],
+    "usphone": "'tʃɪldrən",
+    "ukphone": "'tʃɪldrən"
+  },
+  {
+    "name": "class",
+    "trans": [
+      "- n. 课；（学校里的）班；阶级，阶层"
+    ],
+    "usphone": "klæs",
+    "ukphone": "klɑːs"
+  },
+  {
+    "name": "cousin",
+    "trans": [
+      "- n. 堂（表）兄弟；堂（表）姐妹"
+    ],
+    "usphone": "'kʌzn",
+    "ukphone": "'kʌzn"
+  },
+  {
+    "name": "dig",
+    "trans": [
+      "- v. 挖，挖洞"
+    ],
+    "usphone": "dɪɡ",
+    "ukphone": "dɪɡ"
+  },
+  {
+    "name": "dining-room",
+    "trans": [
+      "- n. 餐厅"
+    ],
+    "usphone": "'daɪnɪŋ rʊm",
+    "ukphone": "'daɪnɪŋ rʊm"
+  },
+  {
+    "name": "dinner",
+    "trans": [
+      "- n. 正餐；宴会"
+    ],
+    "usphone": "'dɪnər",
+    "ukphone": "'dɪnə(r)"
+  },
+  {
+    "name": "dish",
+    "trans": [
+      "- n. 盘；碟；（常用复数）餐具；一道菜"
+    ],
+    "usphone": "dɪʃ",
+    "ukphone": "dɪʃ"
+  },
+  {
+    "name": "drive",
+    "trans": [
+      "- v. 驾驶；迫使（某人生气、发疯等）"
+    ],
+    "usphone": "draɪv",
+    "ukphone": "draɪv"
+  },
+  {
+    "name": "dry",
+    "trans": [
+      "- v. 弄干，变干,- adj. 干燥的，无水的"
+    ],
+    "usphone": "draɪ",
+    "ukphone": "draɪ"
+  },
+  {
+    "name": "help",
+    "trans": [
+      "- vt. 帮助,- n. 帮助"
+    ],
+    "usphone": "help",
+    "ukphone": "help"
+  },
+  {
+    "name": "homework",
+    "trans": [
+      "- n. 家庭作业"
+    ],
+    "usphone": "'hoʊmwɜːrk",
+    "ukphone": "'həʊmwɜːk"
+  },
+  {
+    "name": "letter",
+    "trans": [
+      "- n. 信；字母"
+    ],
+    "usphone": "'letər",
+    "ukphone": "'letə(r)"
+  },
+  {
+    "name": "moon",
+    "trans": [
+      "- n. 月亮（常作the moon）"
+    ],
+    "usphone": "muːn",
+    "ukphone": "muːn"
+  },
+  {
+    "name": "mop",
+    "trans": [
+      "- vt. 用拖把拖洗,- n. 拖把"
+    ],
+    "usphone": "mɑːp",
+    "ukphone": "mɒp"
+  },
+  {
+    "name": "motorbike",
+    "trans": [
+      "- n. 摩托自行车"
+    ],
+    "usphone": "'moʊtərbaɪk",
+    "ukphone": "'məʊtəbaɪk"
+  },
+  {
+    "name": "pet",
+    "trans": [
+      "- n. 宠物"
+    ],
+    "usphone": "pet",
+    "ukphone": "pet"
+  },
+  {
+    "name": "pilot",
+    "trans": [
+      "- n. 飞行员；（飞行器）驾驶员,- adj. 试验性的"
+    ],
+    "usphone": "'paɪlət",
+    "ukphone": "'paɪlət"
+  },
+  {
+    "name": "puzzle",
+    "trans": [
+      "- n. 拼图等智力玩具,- vt. 使困惑，使迷惑不解"
+    ],
+    "usphone": "'pʌzl",
+    "ukphone": "'pʌzl"
+  },
+  {
+    "name": "restaurant",
+    "trans": [
+      "- n. 餐馆"
+    ],
+    "usphone": "'restrɑːnt; restərɑːnt",
+    "ukphone": "'restrɒnt"
+  },
+  {
+    "name": "spaceship",
+    "trans": [
+      "- n. 宇宙飞船"
+    ],
+    "usphone": "'speɪsʃɪp",
+    "ukphone": "'speɪsʃɪp"
+  },
+  {
+    "name": "rock",
+    "trans": [
+      "- n. 岩石,- vi. 摇；摇晃"
+    ],
+    "usphone": "rɑːk",
+    "ukphone": "rɒk"
+  },
+  {
+    "name": "shake",
+    "trans": [
+      "- v. （使）摇动；（使）震动；握（手）"
+    ],
+    "usphone": "ʃeɪk",
+    "ukphone": "ʃeɪk"
+  },
+  {
+    "name": "singer",
+    "trans": [
+      "- n. 歌手，歌唱家"
+    ],
+    "usphone": "'sɪŋər",
+    "ukphone": "'sɪŋə(r)"
+  },
+  {
+    "name": "sitting-room",
+    "trans": [
+      "- n. 起居室"
+    ],
+    "usphone": "'sɪtɪŋrʊm",
+    "ukphone": "'sɪtɪŋrʊm"
+  },
+  {
+    "name": "soldier",
+    "trans": [
+      "- n. 士兵，战士"
+    ],
+    "usphone": "'soʊldʒər",
+    "ukphone": "'səʊldʒə(r)"
+  },
+  {
+    "name": "student",
+    "trans": [
+      "- n. 学生"
+    ],
+    "usphone": "'stuːdnt",
+    "ukphone": "'stjuːdnt"
+  },
+  {
+    "name": "uncle",
+    "trans": [
+      "- n. 叔；伯；舅；姑父；姨父"
+    ],
+    "usphone": "'ʌŋkl",
+    "ukphone": "'ʌŋkl"
+  },
+  {
+    "name": "wash",
+    "trans": [
+      "- n. 洗（涤）；冲洗；洗剂；泼溅；洗的衣服,- v. 洗涤；冲洗；流过；弄湿"
+    ],
+    "usphone": "wɑːʃ",
+    "ukphone": "wɒʃ"
+  },
+  {
+    "name": "watch",
+    "trans": [
+      "- n. 手表,- v. 观看；留神观察"
+    ],
+    "usphone": "wɑtʃ",
+    "ukphone": "wɒtʃ"
+  },
+  {
+    "name": "above",
+    "trans": [
+      "- prep. 在……上面,- adj. 上面的,- adv. 在（或向）上面；在（或向）较高处"
+    ],
+    "usphone": "ə'bʌv",
+    "ukphone": "ə'bʌv"
+  },
+  {
+    "name": "afternoon",
+    "trans": [
+      "- n. 下午，午后"
+    ],
+    "usphone": "ˌæftər'nuːn",
+    "ukphone": "ˌɑːftə'nuːn"
+  },
+  {
+    "name": "live",
+    "trans": [
+      "- vi. 居住；生活；实践，身体力行,- adj. 活的，有生命的；现场直播的，实况转播的,- adv. 在（或从）现场，以现场直播方式"
+    ],
+    "usphone": "lɪv; laɪv",
+    "ukphone": "lɪv; laɪv"
+  },
+  {
+    "name": "month",
+    "trans": [
+      "- n. 月"
+    ],
+    "usphone": "mʌnθ",
+    "ukphone": "mʌnθ"
+  },
+  {
+    "name": "January",
+    "trans": [
+      "- n. 一月"
+    ],
+    "usphone": "'dʒænjueri",
+    "ukphone": "'dʒænjuəri"
+  },
+  {
+    "name": "February",
+    "trans": [
+      "- n. 二月"
+    ],
+    "usphone": "'februeri",
+    "ukphone": "'februəri"
+  },
+  {
+    "name": "march",
+    "trans": [
+      "- vi. 前进；行进,- n. （March）三月"
+    ],
+    "usphone": "mɑːrtʃ",
+    "ukphone": "mɑːtʃ"
+  },
+  {
+    "name": "April",
+    "trans": [
+      "- n. 四月"
+    ],
+    "usphone": "'eɪprəl",
+    "ukphone": "'eɪprəl"
+  },
+  {
+    "name": "may",
+    "trans": [
+      "- aux. v. 可能；也许；可以"
+    ],
+    "usphone": "meɪ",
+    "ukphone": "meɪ"
+  },
+  {
+    "name": "June",
+    "trans": [
+      "- n. 六月"
+    ],
+    "usphone": "dʒuːn",
+    "ukphone": "dʒuːn"
+  },
+  {
+    "name": "July",
+    "trans": [
+      "- n. 七月"
+    ],
+    "usphone": "dʒu'laɪ",
+    "ukphone": "dʒu'laɪ"
+  },
+  {
+    "name": "August",
+    "trans": [
+      "- n. 八月"
+    ],
+    "usphone": "'ɔːɡəst",
+    "ukphone": "'ɔːɡəst"
+  },
+  {
+    "name": "September",
+    "trans": [
+      "- n. 九月"
+    ],
+    "usphone": "sep'tembər",
+    "ukphone": "sep'tembə(r)"
+  },
+  {
+    "name": "October",
+    "trans": [
+      "- n. 十月"
+    ],
+    "usphone": "ɑːk'toʊbər",
+    "ukphone": "ɒk'təʊbə(r)"
+  },
+  {
+    "name": "November",
+    "trans": [
+      "- n. 十一月"
+    ],
+    "usphone": "noʊ'vembər",
+    "ukphone": "nəʊ'vembə(r)"
+  },
+  {
+    "name": "December",
+    "trans": [
+      "- n. 十二月"
+    ],
+    "usphone": "dɪ'sembər",
+    "ukphone": "dɪ'sembə(r)"
+  },
+  {
+    "name": "week",
+    "trans": [
+      "- n. 星期，周"
+    ],
+    "usphone": "wiːk",
+    "ukphone": "wiːk"
+  },
+  {
+    "name": "Monday",
+    "trans": [
+      "- n. 周一，星期一"
+    ],
+    "usphone": "'mʌndeɪ",
+    "ukphone": "'mʌndeɪ"
+  },
+  {
+    "name": "Tuesday",
+    "trans": [
+      "- n. 星期二"
+    ],
+    "usphone": "'tuːzdeɪ",
+    "ukphone": "'tjuːzdeɪ"
+  },
+  {
+    "name": "Wednesday",
+    "trans": [
+      "- n. 星期三"
+    ],
+    "usphone": "'wenzdeɪ",
+    "ukphone": "'wenzdeɪ"
+  },
+  {
+    "name": "Thursday",
+    "trans": [
+      "- n. 星期四"
+    ],
+    "usphone": "'θɜːrzdeɪ",
+    "ukphone": "'θɜːzdeɪ"
+  },
+  {
+    "name": "Friday",
+    "trans": [
+      "- n. 星期五"
+    ],
+    "usphone": "'fraɪdeɪ",
+    "ukphone": "'fraɪdeɪ"
+  },
+  {
+    "name": "Saturday",
+    "trans": [
+      "- n. 星期六"
+    ],
+    "usphone": "'sætərdeɪ",
+    "ukphone": "'sætədeɪ"
+  },
+  {
+    "name": "Sunday",
+    "trans": [
+      "- n. 星期日，星期天"
+    ],
+    "usphone": "'sʌndeɪ",
+    "ukphone": "'sʌndeɪ"
+  },
+  {
+    "name": "at",
+    "trans": [
+      "- prep. 在"
+    ],
+    "usphone": "ət; æt",
+    "ukphone": "ət; æt"
+  },
+  {
+    "name": "back",
+    "trans": [
+      "- n. 背；后部；背后,- adv. 向后，回原处"
+    ],
+    "usphone": "bæk",
+    "ukphone": "bæk"
+  },
+  {
+    "name": "beach",
+    "trans": [
+      "- n. 海滩"
+    ],
+    "usphone": "biːtʃ",
+    "ukphone": "biːtʃ"
+  },
+  {
+    "name": "bench",
+    "trans": [
+      "- n. 长椅，长凳"
+    ],
+    "usphone": "bentʃ",
+    "ukphone": "bentʃ"
+  },
+  {
+    "name": "between",
+    "trans": [
+      "- prep. 在……之间"
+    ],
+    "usphone": "bɪ'twiːn",
+    "ukphone": "bɪ'twiːn"
+  },
+  {
+    "name": "china",
+    "trans": [
+      "- n. 瓷器；(China)中国"
+    ],
+    "usphone": "'tʃaɪnə",
+    "ukphone": "'tʃaɪnə"
+  },
+  {
+    "name": "cloudy",
+    "trans": [
+      "- adj. 多云的"
+    ],
+    "usphone": "'klaʊdi",
+    "ukphone": "'klaʊdi"
+  },
+  {
+    "name": "duckling",
+    "trans": [
+      "- n. 小鸭子"
+    ],
+    "usphone": "'dʌklɪŋ",
+    "ukphone": "'dʌklɪŋ"
+  },
+  {
+    "name": "evening",
+    "trans": [
+      "- n. 傍晚；晚上"
+    ],
+    "usphone": "'iːvnɪŋ",
+    "ukphone": "'iːvnɪŋ"
+  },
+  {
+    "name": "football",
+    "trans": [
+      "- n. 足球运动，足球"
+    ],
+    "usphone": "'fʊtbɔːl",
+    "ukphone": "'fʊtbɔːl"
+  },
+  {
+    "name": "near",
+    "trans": [
+      "- adj. 靠近的,- adv. 附近；邻近,- prep. 在……附近；靠近,- v. 接近，靠近"
+    ],
+    "usphone": "nɪr",
+    "ukphone": "nɪə(r)"
+  },
+  {
+    "name": "now",
+    "trans": [
+      "- adv. 现在"
+    ],
+    "usphone": "naʊ",
+    "ukphone": "naʊ"
+  },
+  {
+    "name": "rainy",
+    "trans": [
+      "- adj. 下雨的；多雨的"
+    ],
+    "usphone": "'reɪni",
+    "ukphone": "'reɪni"
+  },
+  {
+    "name": "sunny",
+    "trans": [
+      "- adj. 晴朗的；阳光充足的"
+    ],
+    "usphone": "'sʌni",
+    "ukphone": "'sʌni"
+  },
+  {
+    "name": "sail",
+    "trans": [
+      "- n. 航行；风帆,- vi. 航行；开航"
+    ],
+    "usphone": "seɪl",
+    "ukphone": "seɪl"
+  },
+  {
+    "name": "say",
+    "trans": [
+      "- vt. 说，讲"
+    ],
+    "usphone": "seɪ",
+    "ukphone": "seɪ"
+  },
+  {
+    "name": "seat",
+    "trans": [
+      "- n. 座位；椅子,- v. 使坐下"
+    ],
+    "usphone": "siːt",
+    "ukphone": "siːt"
+  },
+  {
+    "name": "swan",
+    "trans": [
+      "- n. 天鹅"
+    ],
+    "usphone": "swɑːn",
+    "ukphone": "swɒn"
+  },
+  {
+    "name": "temple",
+    "trans": [
+      "- n. 庙，寺庙"
+    ],
+    "usphone": "'templ",
+    "ukphone": "'templ"
+  },
+  {
+    "name": "thunder",
+    "trans": [
+      "- n. 雷，雷声"
+    ],
+    "usphone": "'θʌndər",
+    "ukphone": "'θʌndə(r)"
+  },
+  {
+    "name": "time",
+    "trans": [
+      "- n. 时间；时期；钟点；次，回,- vt. 测定……的时间，记录……时间"
+    ],
+    "usphone": "taɪm",
+    "ukphone": "taɪm"
+  },
+  {
+    "name": "top",
+    "trans": [
+      "- n. 顶，顶部,- adj. 拔尖的，头等的"
+    ],
+    "usphone": "tɑːp",
+    "ukphone": "tɒp"
+  },
+  {
+    "name": "ugly",
+    "trans": [
+      "- adj. 丑陋的，难看的"
+    ],
+    "usphone": "'ʌɡli",
+    "ukphone": "'ʌɡli"
+  },
+  {
+    "name": "weather",
+    "trans": [
+      "- n. 天气"
+    ],
+    "usphone": "'weðər",
+    "ukphone": "'weðə(r)"
+  },
+  {
+    "name": "windy",
+    "trans": [
+      "- adj. 有风的；多风的"
+    ],
+    "usphone": "'wɪndi",
+    "ukphone": "'wɪndi"
+  },
+  {
+    "name": "year",
+    "trans": [
+      "- n. 年；岁"
+    ],
+    "usphone": "jɪr",
+    "ukphone": "jɪə(r)"
+  },
+  {
+    "name": "pen-friend",
+    "trans": [
+      "- n. 笔友"
+    ],
+    "usphone": "'penfr'end",
+    "ukphone": "'penfr'end"
+  },
+  {
+    "name": "get up",
+    "trans": [
+      "- phrase. 起床"
+    ],
+    "usphone": "ɡet ʌp",
+    "ukphone": "ɡet ʌp"
+  },
+  {
+    "name": "o'clock",
+    "trans": [
+      "- n. ……点钟"
+    ],
+    "usphone": "ə'klɒk",
+    "ukphone": "ə'klɒk"
+  }
+]

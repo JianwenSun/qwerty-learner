@@ -52,8 +52,8 @@ const App: React.FC = () => {
   useEffect(() => {
     const id = currentDictId
     if (!(id in idDictionaryMap)) {
-      setCurrentDictId('cet4')
-      setCurrentChapter(0)
+      //setCurrentDictId('cet4')
+      //setCurrentChapter(0)
       return
     }
   }, [currentDictId, setCurrentChapter, setCurrentDictId])
@@ -86,8 +86,9 @@ const App: React.FC = () => {
         }
       }
       window.addEventListener('keydown', onKeyDown)
-
-      return () => window.removeEventListener('keydown', onKeyDown)
+      return () => {
+        window.removeEventListener('keydown', onKeyDown)
+      }
     }
   }, [state.isTyping, isLoading, dispatch])
 

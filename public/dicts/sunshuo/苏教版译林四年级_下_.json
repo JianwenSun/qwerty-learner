@@ -1,0 +1,946 @@
+[
+  {
+    "name": "school",
+    "trans": [
+      "- n. 学校"
+    ],
+    "usphone": "skuːl",
+    "ukphone": "skuːl"
+  },
+  {
+    "name": "subject",
+    "trans": [
+      "- n. 课程,- n. 话题；主题"
+    ],
+    "usphone": "'sʌbdʒekt",
+    "ukphone": "'sʌbdʒɪkt"
+  },
+  {
+    "name": "Welcome back to …",
+    "trans": [
+      "- phrase. 欢迎回到……"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "see",
+    "trans": [
+      "- v. 看见，看到"
+    ],
+    "usphone": "siː",
+    "ukphone": "siː"
+  },
+  {
+    "name": "timetable",
+    "trans": [
+      "- n. 课程表；时间表"
+    ],
+    "usphone": "'taɪmteɪbl",
+    "ukphone": "'taɪmteɪbl"
+  },
+  {
+    "name": "Chinese",
+    "trans": [
+      "- n. 语文（课）"
+    ],
+    "usphone": "ˌtʃaɪˈniːz",
+    "ukphone": "ˌtʃaɪˈniːz"
+  },
+  {
+    "name": "maths",
+    "trans": [
+      "- n. 数学（课）"
+    ],
+    "usphone": "mæθs",
+    "ukphone": "mæθs"
+  },
+  {
+    "name": "art",
+    "trans": [
+      "- n. 美术（课）"
+    ],
+    "usphone": "ɑːrt",
+    "ukphone": "ɑːt"
+  },
+  {
+    "name": "PE",
+    "trans": [
+      "- n. 体育（课）"
+    ],
+    "usphone": "ˌpiː'iː",
+    "ukphone": "ˌpiː'iː"
+  },
+  {
+    "name": "music",
+    "trans": [
+      "- n. 音乐（课）"
+    ],
+    "usphone": "'mjuːzɪk",
+    "ukphone": "'mjuːzɪk"
+  },
+  {
+    "name": "science",
+    "trans": [
+      "- n. 科学（课）"
+    ],
+    "usphone": "'saɪəns",
+    "ukphone": "'saɪəns"
+  },
+  {
+    "name": "fun",
+    "trans": [
+      "- n. 乐趣，快乐"
+    ],
+    "usphone": "fʌn",
+    "ukphone": "fʌn"
+  },
+  {
+    "name": "go to",
+    "trans": [
+      "- phrase. 去……"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "playground",
+    "trans": [
+      "- n. 操场"
+    ],
+    "usphone": "'pleɪɡraʊnd",
+    "ukphone": "'pleɪɡraʊnd"
+  },
+  {
+    "name": "lesson",
+    "trans": [
+      "- n. 课"
+    ],
+    "usphone": "'lesn",
+    "ukphone": "'lesn"
+  },
+  {
+    "name": "Monday",
+    "trans": [
+      "- n. 星期一"
+    ],
+    "usphone": "'mʌndeɪ",
+    "ukphone": "'mʌndeɪ"
+  },
+  {
+    "name": "afternoon",
+    "trans": [
+      "- n. 下午"
+    ],
+    "usphone": "ˌæftər'nuːn",
+    "ukphone": "ˌɑːftə'nuːn"
+  },
+  {
+    "name": "after school",
+    "trans": [
+      "- phrase. 放学后"
+    ],
+    "usphone": "ˈæftər skuːl",
+    "ukphone": "ˈɑːftə(r) skuːl"
+  },
+  {
+    "name": "go",
+    "trans": [
+      "- v. 去"
+    ],
+    "usphone": "ɡoʊ",
+    "ukphone": "ɡəʊ"
+  },
+  {
+    "name": "What day is it today?",
+    "trans": [
+      "- phrase. 今天星期几？"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "Wednesday",
+    "trans": [
+      "- n. 星期三"
+    ],
+    "usphone": "'wenzdeɪ",
+    "ukphone": "'wenzdeɪ"
+  },
+  {
+    "name": "match",
+    "trans": [
+      "- n. 比赛,- n. 相配；般配"
+    ],
+    "usphone": "mætʃ",
+    "ukphone": "mætʃ"
+  },
+  {
+    "name": "today",
+    "trans": [
+      "- n. 今天"
+    ],
+    "usphone": "tə'deɪ",
+    "ukphone": "tə'deɪ"
+  },
+  {
+    "name": "What a pity!",
+    "trans": [
+      "- int. 真遗憾！"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "Saturday",
+    "trans": [
+      "- n. 星期六"
+    ],
+    "usphone": "'sætərdeɪ",
+    "ukphone": "'sætədeɪ"
+  },
+  {
+    "name": "All right.",
+    "trans": [
+      "- int. 好的。"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "Sunday",
+    "trans": [
+      "- n. 星期日"
+    ],
+    "usphone": "'sʌndeɪ",
+    "ukphone": "'sʌndeɪ"
+  },
+  {
+    "name": "Tuesday",
+    "trans": [
+      "- n. 星期二"
+    ],
+    "usphone": "'tuːzdeɪ",
+    "ukphone": "'tjuːzdeɪ"
+  },
+  {
+    "name": "Thursday",
+    "trans": [
+      "- n. 星期四"
+    ],
+    "usphone": "'θɜːrzdeɪ",
+    "ukphone": "'θɜːzdeɪ"
+  },
+  {
+    "name": "Friday",
+    "trans": [
+      "- n. 星期五"
+    ],
+    "usphone": "'fraɪdeɪ",
+    "ukphone": "'fraɪdeɪ"
+  },
+  {
+    "name": "get up",
+    "trans": [
+      "- phrase. 起床"
+    ],
+    "usphone": "ɡet ʌp",
+    "ukphone": "ɡet ʌp"
+  },
+  {
+    "name": "when",
+    "trans": [
+      "- adv. 什么时候"
+    ],
+    "usphone": "wen",
+    "ukphone": "wen"
+  },
+  {
+    "name": "every",
+    "trans": [
+      "- det. 每个"
+    ],
+    "usphone": "'evri",
+    "ukphone": "'evri"
+  },
+  {
+    "name": "day",
+    "trans": [
+      "- n. 天"
+    ],
+    "usphone": "deɪ",
+    "ukphone": "deɪ"
+  },
+  {
+    "name": "usually",
+    "trans": [
+      "- adv. 通常，常常"
+    ],
+    "usphone": "'juːʒuəli",
+    "ukphone": "'juːʒuəli"
+  },
+  {
+    "name": "go to school",
+    "trans": [
+      "- phrase. 上学"
+    ],
+    "usphone": "ɡoʊ tə skʊl",
+    "ukphone": "ɡəʊ tə skuːl"
+  },
+  {
+    "name": "in the morning",
+    "trans": [
+      "- phrase. 在上午"
+    ],
+    "usphone": "ɪn ðə 'mɔ:niŋ",
+    "ukphone": "in ðə 'mɔ:niŋ"
+  },
+  {
+    "name": "have lunch",
+    "trans": [
+      "- phrase. 吃午饭"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "in the afternoon",
+    "trans": [
+      "- phrase. 在下午"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "play football",
+    "trans": [
+      "- phrase. 踢足球"
+    ],
+    "usphone": "pleɪ ˈfʊtbɔːl",
+    "ukphone": "pleɪ ˈfʊtbɔːl"
+  },
+  {
+    "name": "go home",
+    "trans": [
+      "- phrase. 回家"
+    ],
+    "usphone": "ɡoʊ hoʊm",
+    "ukphone": "ɡəʊ həʊm"
+  },
+  {
+    "name": "homework",
+    "trans": [
+      "- n. 家庭作业"
+    ],
+    "usphone": "'hoʊmwɜːrk",
+    "ukphone": "'həʊmwɜːk"
+  },
+  {
+    "name": "have dinner",
+    "trans": [
+      "- phrase. 吃晚饭"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "watch TV",
+    "trans": [
+      "- phrase. 看电视"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "go to bed",
+    "trans": [
+      "- phrase. 睡觉"
+    ],
+    "usphone": "ɡoʊ tu bed",
+    "ukphone": "ɡəʊ tu bed"
+  },
+  {
+    "name": "in the evening",
+    "trans": [
+      "- phrase. 在晚上"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "at night",
+    "trans": [
+      "- phrase. 在夜里"
+    ],
+    "usphone": "æt naɪt",
+    "ukphone": "æt naɪt"
+  },
+  {
+    "name": "drawing",
+    "trans": [
+      "- n. 画画"
+    ],
+    "usphone": "'drɔːɪŋ",
+    "ukphone": "'drɔːɪŋ"
+  },
+  {
+    "name": "park",
+    "trans": [
+      "- n. 公园,- v. 停车"
+    ],
+    "usphone": "pɑːrk",
+    "ukphone": "pɑːk"
+  },
+  {
+    "name": "draw",
+    "trans": [
+      "- v. 画"
+    ],
+    "usphone": "drɔː",
+    "ukphone": "drɔː"
+  },
+  {
+    "name": "Good idea!",
+    "trans": [
+      "- phrase. 好主意！"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "flower",
+    "trans": [
+      "- n. 花，花朵"
+    ],
+    "usphone": "'flaʊər",
+    "ukphone": "'flaʊə(r)"
+  },
+  {
+    "name": "them",
+    "trans": [
+      "- pron. 他们；她们；它们"
+    ],
+    "usphone": "ðem",
+    "ukphone": "ðem"
+  },
+  {
+    "name": "easy",
+    "trans": [
+      "- adj. 容易的，简单的"
+    ],
+    "usphone": "'iːzi",
+    "ukphone": "'iːzi"
+  },
+  {
+    "name": "boat",
+    "trans": [
+      "- n. 小船"
+    ],
+    "usphone": "boʊt",
+    "ukphone": "bəʊt"
+  },
+  {
+    "name": "river",
+    "trans": [
+      "- n. 河；江"
+    ],
+    "usphone": "'rɪvər",
+    "ukphone": "'rɪvə(r)"
+  },
+  {
+    "name": "difficult",
+    "trans": [
+      "- adj. 难的，困难的"
+    ],
+    "usphone": "'dɪfɪkəlt",
+    "ukphone": "'dɪfɪkəlt"
+  },
+  {
+    "name": "try",
+    "trans": [
+      "- v. 试"
+    ],
+    "usphone": "traɪ",
+    "ukphone": "traɪ"
+  },
+  {
+    "name": "hill",
+    "trans": [
+      "- n. 小山，山丘"
+    ],
+    "usphone": "hɪl",
+    "ukphone": "hɪl"
+  },
+  {
+    "name": "lake",
+    "trans": [
+      "- n. 湖，湖泊"
+    ],
+    "usphone": "leɪk",
+    "ukphone": "leɪk"
+  },
+  {
+    "name": "again",
+    "trans": [
+      "- adv. 再一次，又一次"
+    ],
+    "usphone": "ə'ɡen",
+    "ukphone": "ə'ɡen"
+  },
+  {
+    "name": "season",
+    "trans": [
+      "- n. 季节"
+    ],
+    "usphone": "'siːzn",
+    "ukphone": "'siːzn"
+  },
+  {
+    "name": "spring",
+    "trans": [
+      "- n. 春天，春季"
+    ],
+    "usphone": "sprɪŋ",
+    "ukphone": "sprɪŋ"
+  },
+  {
+    "name": "warm",
+    "trans": [
+      "- adj. 温暖的，暖和的"
+    ],
+    "usphone": "wɔːrm",
+    "ukphone": "wɔːm"
+  },
+  {
+    "name": "fly",
+    "trans": [
+      "- v. 飞,- v. 放（风筝、飞机模型等）"
+    ],
+    "usphone": "flaɪ",
+    "ukphone": "flaɪ"
+  },
+  {
+    "name": "kite",
+    "trans": [
+      "- n. 风筝"
+    ],
+    "usphone": "kaɪt",
+    "ukphone": "kaɪt"
+  },
+  {
+    "name": "go boating",
+    "trans": [
+      "- phrase. 去划船"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "summer",
+    "trans": [
+      "- n. 夏天，夏季"
+    ],
+    "usphone": "'sʌmər",
+    "ukphone": "'sʌmə(r)"
+  },
+  {
+    "name": "hot",
+    "trans": [
+      "- adj. 热的，炎热的"
+    ],
+    "usphone": "hɑːt",
+    "ukphone": "hɒt"
+  },
+  {
+    "name": "go swimming",
+    "trans": [
+      "- phrase. 去游泳"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "autumn",
+    "trans": [
+      "- n. 秋天，秋季"
+    ],
+    "usphone": "ˈɔːtəm",
+    "ukphone": "ˈɔːtəm"
+  },
+  {
+    "name": "cool",
+    "trans": [
+      "- adj. 酷，真棒,- adj. 凉爽的，凉快的"
+    ],
+    "usphone": "kuːl",
+    "ukphone": "kuːl"
+  },
+  {
+    "name": "picnic",
+    "trans": [
+      "- n. 野餐"
+    ],
+    "usphone": "'pɪknɪk",
+    "ukphone": "'pɪknɪk"
+  },
+  {
+    "name": "go climbing",
+    "trans": [
+      "- phrase. 去爬山"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "winter",
+    "trans": [
+      "- n. 冬天，冬季"
+    ],
+    "usphone": "'wɪntər",
+    "ukphone": "'wɪntə(r)"
+  },
+  {
+    "name": "cold",
+    "trans": [
+      "- adj. 冷的，寒冷的,- n. 感冒"
+    ],
+    "usphone": "koʊld",
+    "ukphone": "kəʊld"
+  },
+  {
+    "name": "go skating",
+    "trans": [
+      "- phrase. 去溜冰；去滑冰"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fine",
+    "trans": [
+      "- adj. 晴朗的,- adv. 挺好，蛮不错,- v. 罚款"
+    ],
+    "usphone": "faɪn",
+    "ukphone": "faɪn"
+  },
+  {
+    "name": "hey",
+    "trans": [
+      "- int. 嘿，喂,- int. 嘿，喂"
+    ],
+    "usphone": "heɪ",
+    "ukphone": "heɪ"
+  },
+  {
+    "name": "whose",
+    "trans": [
+      "- pron. 谁的"
+    ],
+    "usphone": "huːz",
+    "ukphone": "huːz"
+  },
+  {
+    "name": "dress",
+    "trans": [
+      "- n. 连衣裙"
+    ],
+    "usphone": "dres",
+    "ukphone": "dres"
+  },
+  {
+    "name": "too",
+    "trans": [
+      "- adv. 太，过于"
+    ],
+    "usphone": "tuː",
+    "ukphone": "tuː"
+  },
+  {
+    "name": "trousers",
+    "trans": [
+      "- n. 裤子"
+    ],
+    "usphone": "'traʊzərz",
+    "ukphone": "'traʊzəz"
+  },
+  {
+    "name": "party",
+    "trans": [
+      "- n. 聚会，派对"
+    ],
+    "usphone": "'pɑːrti",
+    "ukphone": "'pɑːti"
+  },
+  {
+    "name": "glove",
+    "trans": [
+      "- n. 手套"
+    ],
+    "usphone": "ɡlʌv",
+    "ukphone": "ɡlʌv"
+  },
+  {
+    "name": "so",
+    "trans": [
+      "- adv. 如此，这么"
+    ],
+    "usphone": "soʊ",
+    "ukphone": "səʊ"
+  },
+  {
+    "name": "coat",
+    "trans": [
+      "- n. 外衣，外套"
+    ],
+    "usphone": "koʊt",
+    "ukphone": "kəʊt"
+  },
+  {
+    "name": "shirt",
+    "trans": [
+      "- n. （男式）衬衫"
+    ],
+    "usphone": "ʃɜːrt",
+    "ukphone": "ʃɜːt"
+  },
+  {
+    "name": "sweater",
+    "trans": [
+      "- n. 毛衣；绒衣"
+    ],
+    "usphone": "'swetər",
+    "ukphone": "'swetə(r)"
+  },
+  {
+    "name": "jeans",
+    "trans": [
+      "- n. 牛仔裤"
+    ],
+    "usphone": "dʒiːnz",
+    "ukphone": "dʒiːnz"
+  },
+  {
+    "name": "shorts",
+    "trans": [
+      "- n. 短裤"
+    ],
+    "usphone": "ʃɔːrts",
+    "ukphone": "ʃɔːts"
+  },
+  {
+    "name": "wrong",
+    "trans": [
+      "- adj. 错的，错误的,- adv. 错误地，不对"
+    ],
+    "usphone": "rɔːŋ",
+    "ukphone": "rɒŋ"
+  },
+  {
+    "name": "move",
+    "trans": [
+      "- v. 移动,- v. 活动, 移动, 搬迁"
+    ],
+    "usphone": "muːv",
+    "ukphone": "muːv"
+  },
+  {
+    "name": "I think so.",
+    "trans": [
+      "- phrase. 我想是。"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "What's the matter?",
+    "trans": [
+      "- phrase. 怎么了？"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hand",
+    "trans": [
+      "- n. 手,- v. 交；递，给"
+    ],
+    "usphone": "hænd",
+    "ukphone": "hænd"
+  },
+  {
+    "name": "hurt",
+    "trans": [
+      "- v. 感到疼痛"
+    ],
+    "usphone": "hɜːrt",
+    "ukphone": "hɜːt"
+  },
+  {
+    "name": "thirsty",
+    "trans": [
+      "- adj. 渴的，口渴的,- adj. 口渴的"
+    ],
+    "usphone": "'θɜːrsti",
+    "ukphone": "'θɜːsti"
+  },
+  {
+    "name": "water",
+    "trans": [
+      "- n. 水"
+    ],
+    "usphone": "ˈwɔːtər",
+    "ukphone": "'wɔːtə(r)"
+  },
+  {
+    "name": "ill",
+    "trans": [
+      "- adj. 生病的"
+    ],
+    "usphone": "ɪl",
+    "ukphone": "ɪl"
+  },
+  {
+    "name": "tired",
+    "trans": [
+      "- adj. 累的，疲劳的"
+    ],
+    "usphone": "'taɪərd",
+    "ukphone": "'taɪəd"
+  },
+  {
+    "name": "Good night.",
+    "trans": [
+      "- phrase. 晚安。"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dear",
+    "trans": [
+      "- adj. 亲爱的"
+    ],
+    "usphone": "dɪr",
+    "ukphone": "dɪə(r)"
+  },
+  {
+    "name": "happy",
+    "trans": [
+      "- adj. 快乐的，高兴的"
+    ],
+    "usphone": "'hæpi",
+    "ukphone": "'hæpi"
+  },
+  {
+    "name": "Mrs",
+    "trans": [
+      "- n. 夫人，太太"
+    ],
+    "usphone": "'mɪsɪz",
+    "ukphone": "'mɪsɪz"
+  },
+  {
+    "name": "speak",
+    "trans": [
+      "- v. 说话，讲话"
+    ],
+    "usphone": "spiːk",
+    "ukphone": "spiːk"
+  },
+  {
+    "name": "may",
+    "trans": [
+      "- v. 可以,- n. 五月"
+    ],
+    "usphone": "meɪ",
+    "ukphone": "meɪ"
+  },
+  {
+    "name": "come to school",
+    "trans": [
+      "- phrase. 来学校"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fever",
+    "trans": [
+      "- n. 发烧,- n. 发烧"
+    ],
+    "usphone": "'fiːvər",
+    "ukphone": "'fiːvə(r)"
+  },
+  {
+    "name": "hear",
+    "trans": [
+      "- v. 听到，听见"
+    ],
+    "usphone": "hɪr",
+    "ukphone": "hɪə(r)"
+  },
+  {
+    "name": "take care",
+    "trans": [
+      "- phrase. 保重,- phrase. 保重"
+    ],
+    "usphone": "teɪk ker",
+    "ukphone": "teɪk keə"
+  },
+  {
+    "name": "I'm fine, thank you.",
+    "trans": [
+      "- phrase. 我很好，谢谢。"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "see you tomorrow",
+    "trans": [
+      "- phrase. 明天见。"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "see you",
+    "trans": [
+      "- phrase. 再见。"
+    ],
+    "usphone": "",
+    "ukphone": "\n"
+  },
+  {
+    "name": "cough",
+    "trans": [
+      "- n. 咳嗽,- v. 咳嗽"
+    ],
+    "usphone": "kɔːf",
+    "ukphone": "kɒf"
+  },
+  {
+    "name": "headache",
+    "trans": [
+      "- n. 头疼，头痛,- n. 头痛"
+    ],
+    "usphone": "'hedeɪk",
+    "ukphone": "'hedeɪk"
+  },
+  {
+    "name": "not so good",
+    "trans": [
+      "- phrase. 不太好。"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "at school",
+    "trans": [
+      "- prep. 在上学；在学校"
+    ],
+    "usphone": "æt skʊl",
+    "ukphone": "æt skuːl"
+  }
+]

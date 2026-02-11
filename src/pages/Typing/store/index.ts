@@ -69,11 +69,11 @@ export type TypingStateAction =
   | { type: TypingStateActionType.REPORT_WRONG_WORD; payload: { letterMistake: LetterMistakes } }
   | { type: TypingStateActionType.REPORT_CORRECT_WORD }
   | {
-      type: TypingStateActionType.NEXT_WORD
-      payload?: {
-        updateReviewRecord?: (state: TypingState) => void
-      }
+    type: TypingStateActionType.NEXT_WORD
+    payload?: {
+      updateReviewRecord?: (state: TypingState) => void
     }
+  }
   | { type: TypingStateActionType.LOOP_CURRENT_WORD }
   | { type: TypingStateActionType.FINISH_CHAPTER }
   | { type: TypingStateActionType.SKIP_WORD }

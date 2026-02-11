@@ -10,9 +10,15 @@ import { defineConfig } from 'vite'
 import type { PluginOption } from 'vite'
 
 // https://vitejs.dev/config/
-export default defineConfig(async ({ mode }) => {
-  const latestCommitHash = await new Promise<string>((resolve) => {
-    return getLastCommit((err, commit) => (err ? 'unknown' : resolve(commit.shortHash)))
+export default defineConfig(({ mode }) => {
+  const latestCommitHash = new Promise<string>((resolve) => {
+    getLastCommit((err, commit) => {
+      if (err) {
+        resolve('unknown')
+      } else {
+        resolve(commit.shortHash)
+      }
+    })
   })
   return {
     plugins: [

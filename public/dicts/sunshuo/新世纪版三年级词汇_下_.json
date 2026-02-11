@@ -1,0 +1,922 @@
+[
+  {
+    "name": "subject",
+    "trans": [
+      "- n. 学科, 科目; 主题; 主语,- adj. 隶属的, 受支配的; 易受……的,- vt. 使隶属, 使服从; 使受到"
+    ],
+    "usphone": "'sʌbdʒekt",
+    "ukphone": "'sʌbdʒɪkt"
+  },
+  {
+    "name": "Chinese",
+    "trans": [
+      "- adj. 中国的；中国人的；汉语的,- n. 汉语，中文；中餐"
+    ],
+    "usphone": "ˌtʃaɪˈniːz",
+    "ukphone": "ˌtʃaɪˈniːz"
+  },
+  {
+    "name": "English",
+    "trans": [
+      "- adj. 英国的，英格兰的；英国人的；英格兰人的；英语的,- n. 英语；（用作复）（总称）英国人，英格兰人"
+    ],
+    "usphone": "'ɪŋɡlɪʃ",
+    "ukphone": "'ɪŋɡlɪʃ"
+  },
+  {
+    "name": "maths",
+    "trans": [
+      "- n. 数学"
+    ],
+    "usphone": "mæθs",
+    "ukphone": "mæθs"
+  },
+  {
+    "name": "music",
+    "trans": [
+      "- n. 音乐"
+    ],
+    "usphone": "'mjuːzɪk",
+    "ukphone": "'mjuːzɪk"
+  },
+  {
+    "name": "art",
+    "trans": [
+      "- n. 艺术；美术"
+    ],
+    "usphone": "ɑːrt",
+    "ukphone": "ɑːt"
+  },
+  {
+    "name": "science",
+    "trans": [
+      "- n. 科学，自然科学"
+    ],
+    "usphone": "'saɪəns",
+    "ukphone": "'saɪəns"
+  },
+  {
+    "name": "it",
+    "trans": [
+      "- pron. 它"
+    ],
+    "usphone": "ɪt",
+    "ukphone": "ɪt"
+  },
+  {
+    "name": "programme",
+    "trans": [
+      "- n. 节目；项目"
+    ],
+    "usphone": "'proʊɡræm",
+    "ukphone": "'prəʊɡræm"
+  },
+  {
+    "name": "TV news",
+    "trans": [
+      "- phrase. 电视新闻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "sports",
+    "trans": [
+      "- adj. 有关运动的"
+    ],
+    "usphone": "spɔːts",
+    "ukphone": "spɔːts"
+  },
+  {
+    "name": "cartoon",
+    "trans": [
+      "- n. 动画片，卡通"
+    ],
+    "usphone": "kɑːr'tuːn",
+    "ukphone": "kɑː'tuːn"
+  },
+  {
+    "name": "school life",
+    "trans": [
+      "- phrase. 校园生活"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ad",
+    "trans": [
+      "- abbr. (大写AD)公元,- abbr. 广告（=advertisement）"
+    ],
+    "usphone": "æd",
+    "ukphone": "æd"
+  },
+  {
+    "name": "cooking",
+    "trans": [
+      "- n. 烹饪；饭菜,- adj. 适于烹饪的,- v. “cook”的现在分词"
+    ],
+    "usphone": "'kʊkɪŋ",
+    "ukphone": "'kʊkɪŋ"
+  },
+  {
+    "name": "P.E.",
+    "trans": [
+      "- abbr. 体育（Physical Education）"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "tv play",
+    "trans": [
+      "- phrase. 电视剧"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hear",
+    "trans": [
+      "- v. 听见，听到；听说"
+    ],
+    "usphone": "hɪr",
+    "ukphone": "hɪə(r)"
+  },
+  {
+    "name": "see",
+    "trans": [
+      "- vt. 看见; 领会, 理解"
+    ],
+    "usphone": "siː",
+    "ukphone": "siː"
+  },
+  {
+    "name": "taste",
+    "trans": [
+      "- v. 有…味道；品尝,- n. 味道；味觉"
+    ],
+    "usphone": "teɪst",
+    "ukphone": "teɪst"
+  },
+  {
+    "name": "feel",
+    "trans": [
+      "- vt. 感觉；觉得"
+    ],
+    "usphone": "fiːl",
+    "ukphone": "fiːl"
+  },
+  {
+    "name": "jump",
+    "trans": [
+      "- vi. 跳，蹦"
+    ],
+    "usphone": "dʒʌmp",
+    "ukphone": "dʒʌmp"
+  },
+  {
+    "name": "sing",
+    "trans": [
+      "- vt. 唱,- vi. 唱，唱歌"
+    ],
+    "usphone": "sɪŋ",
+    "ukphone": "sɪŋ"
+  },
+  {
+    "name": "shout",
+    "trans": [
+      "- n. 呼喊，喊叫,- vi. 喊，高声呼喊"
+    ],
+    "usphone": "ʃaʊt",
+    "ukphone": "ʃaʊt"
+  },
+  {
+    "name": "swim",
+    "trans": [
+      "- vi. 游泳，游,- n. 游泳"
+    ],
+    "usphone": "swɪm",
+    "ukphone": "swɪm"
+  },
+  {
+    "name": "blackboard",
+    "trans": [
+      "- n. 黑板"
+    ],
+    "usphone": "'blækbɔːrd",
+    "ukphone": "'blækbɔːd"
+  },
+  {
+    "name": "letter",
+    "trans": [
+      "- n. 信；字母"
+    ],
+    "usphone": "'letər",
+    "ukphone": "'letə(r)"
+  },
+  {
+    "name": "word",
+    "trans": [
+      "- n. 话；单词"
+    ],
+    "usphone": "wɜːrd",
+    "ukphone": "wɜːd"
+  },
+  {
+    "name": "sentence",
+    "trans": [
+      "- n. 句子; 判决, 宣判; 命题"
+    ],
+    "usphone": "'sentəns",
+    "ukphone": "'sentəns"
+  },
+  {
+    "name": "chalk",
+    "trans": [
+      "- n. 粉笔"
+    ],
+    "usphone": "tʃɔːk",
+    "ukphone": "tʃɔːk"
+  },
+  {
+    "name": "eraser",
+    "trans": [
+      "- n. 橡皮"
+    ],
+    "usphone": "ɪ'reɪsər",
+    "ukphone": "ɪ'reɪzə(r)"
+  },
+  {
+    "name": "map",
+    "trans": [
+      "- n. 地图"
+    ],
+    "usphone": "mæp",
+    "ukphone": "mæp"
+  },
+  {
+    "name": "picture",
+    "trans": [
+      "- n. 图画；照片,- v. 想象；描述"
+    ],
+    "usphone": "'pɪktʃər",
+    "ukphone": "'pɪktʃə(r)"
+  },
+  {
+    "name": "sun",
+    "trans": [
+      "- n. 太阳；阳光"
+    ],
+    "usphone": "sʌn",
+    "ukphone": "sʌn"
+  },
+  {
+    "name": "moon",
+    "trans": [
+      "- n. 月亮（常作the moon）"
+    ],
+    "usphone": "muːn",
+    "ukphone": "muːn"
+  },
+  {
+    "name": "star",
+    "trans": [
+      "- n. 明星；星，恒星；星形；星形物,- vt. 由……主演；由……担任主角"
+    ],
+    "usphone": "stɑːr",
+    "ukphone": "stɑː(r)"
+  },
+  {
+    "name": "cloud",
+    "trans": [
+      "- n. 云"
+    ],
+    "usphone": "klaʊd",
+    "ukphone": "klaʊd"
+  },
+  {
+    "name": "wind",
+    "trans": [
+      "- n. 风,- v. 给……上发条；缠，绕"
+    ],
+    "usphone": "wɪnd；waɪnd",
+    "ukphone": "wɪnd；waɪnd"
+  },
+  {
+    "name": "snow",
+    "trans": [
+      "- vi. 下雪,- n. 雪"
+    ],
+    "usphone": "snoʊ",
+    "ukphone": "snəʊ"
+  },
+  {
+    "name": "rain",
+    "trans": [
+      "- vi. 下雨,- n. 雨，雨水"
+    ],
+    "usphone": "reɪn",
+    "ukphone": "reɪn"
+  },
+  {
+    "name": "rainbow",
+    "trans": [
+      "- n. 彩虹"
+    ],
+    "usphone": "'reɪnboʊ",
+    "ukphone": "'reɪnbəʊ"
+  },
+  {
+    "name": "world",
+    "trans": [
+      "- n. 世界"
+    ],
+    "usphone": "wɜːrld",
+    "ukphone": "wɜːld"
+  },
+  {
+    "name": "ping-pong table",
+    "trans": [
+      "- phrase. 乒乓球桌"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ping-pong ball",
+    "trans": [
+      "- phrase. 乒乓球"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bat",
+    "trans": [
+      "- n. （棒球、板球的）球棒；蝙蝠"
+    ],
+    "usphone": "bæt",
+    "ukphone": "bæt"
+  },
+  {
+    "name": "hoop",
+    "trans": [
+      "- n. 箍，环，圈，（篮球）篮圈,- v. 百日咳患者咳嗽时发唬唬声，唬唬地叫，在（桶等）上加箍，用箍围绕"
+    ],
+    "usphone": "huːp",
+    "ukphone": "huːp"
+  },
+  {
+    "name": "football",
+    "trans": [
+      "- n. 足球运动，足球"
+    ],
+    "usphone": "'fʊtbɔːl",
+    "ukphone": "'fʊtbɔːl"
+  },
+  {
+    "name": "basketball",
+    "trans": [
+      "- n. 篮球运动，篮球"
+    ],
+    "usphone": "'bæskɪtbɔːl",
+    "ukphone": "'bɑːskɪtbɔːl"
+  },
+  {
+    "name": "volleyball",
+    "trans": [
+      "- n. 排球；排球运动"
+    ],
+    "usphone": "'vɑːlibɔːl",
+    "ukphone": "'vɒlibɔːl"
+  },
+  {
+    "name": "flower",
+    "trans": [
+      "- n. 花,- v. 开花"
+    ],
+    "usphone": "'flaʊər",
+    "ukphone": "'flaʊə(r)"
+  },
+  {
+    "name": "carnation",
+    "trans": [
+      "- n. 康乃馨，香石竹；淡红色，肉红色,- adj. 淡红色的，肉红色的"
+    ],
+    "usphone": "kɑːr'neɪʃn",
+    "ukphone": "kɑː'neɪʃn"
+  },
+  {
+    "name": "rose",
+    "trans": [
+      "- n. 玫瑰"
+    ],
+    "usphone": "roʊz",
+    "ukphone": "rəʊz"
+  },
+  {
+    "name": "lily",
+    "trans": [
+      "- n. 百合花"
+    ],
+    "usphone": "'lɪli",
+    "ukphone": "'lɪli"
+  },
+  {
+    "name": "tulip",
+    "trans": [
+      "- n. 郁金香"
+    ],
+    "usphone": "'tuːlɪp",
+    "ukphone": "'tjuːlɪp"
+  },
+  {
+    "name": "sunflower",
+    "trans": [
+      "- n. 向日葵"
+    ],
+    "usphone": "sʌn ˈflaʊər",
+    "ukphone": "sʌn ˈflaʊə(r)"
+  },
+  {
+    "name": "lotus",
+    "trans": [
+      "- n. 荷花；莲花；莲属植物；莲花图案"
+    ],
+    "usphone": "'loʊtəs",
+    "ukphone": "'ləʊtəs"
+  },
+  {
+    "name": "pine",
+    "trans": [
+      "- n. 松树"
+    ],
+    "usphone": "paɪn",
+    "ukphone": "paɪn"
+  },
+  {
+    "name": "grass",
+    "trans": [
+      "- n. 草；草地"
+    ],
+    "usphone": "ɡræs",
+    "ukphone": "ɡrɑːs"
+  },
+  {
+    "name": "library",
+    "trans": [
+      "- n. 图书馆"
+    ],
+    "usphone": "'laɪbreri",
+    "ukphone": "'laɪbrəri"
+  },
+  {
+    "name": "shelf",
+    "trans": [
+      "- n. 架子（pl.shelves）"
+    ],
+    "usphone": "ʃelf",
+    "ukphone": "ʃelf"
+  },
+  {
+    "name": "newspaper",
+    "trans": [
+      "- n. 报纸"
+    ],
+    "usphone": "'nuːzpeɪpər",
+    "ukphone": "'njuːzpeɪpə(r)"
+  },
+  {
+    "name": "storybook",
+    "trans": [
+      "- n. 故事书"
+    ],
+    "usphone": "'stɔːribʊk",
+    "ukphone": "'stɔːribʊk"
+  },
+  {
+    "name": "art-and-craft book",
+    "trans": [
+      "- phrase. 工艺美术书"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "magazine",
+    "trans": [
+      "- n. 杂志"
+    ],
+    "usphone": "'mæɡəziːn",
+    "ukphone": "ˌmæɡə'ziːn"
+  },
+  {
+    "name": "picture book",
+    "trans": [
+      "- phrase. 画册，图画书"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fruit",
+    "trans": [
+      "- n. 水果"
+    ],
+    "usphone": "fruːt",
+    "ukphone": "fruːt"
+  },
+  {
+    "name": "apple",
+    "trans": [
+      "- n. 苹果"
+    ],
+    "usphone": "ˈæpəl",
+    "ukphone": "ˈæpəl"
+  },
+  {
+    "name": "pear",
+    "trans": [
+      "- n. 梨"
+    ],
+    "usphone": "per",
+    "ukphone": "peə(r)"
+  },
+  {
+    "name": "peach",
+    "trans": [
+      "- n. 桃子"
+    ],
+    "usphone": "piːtʃ",
+    "ukphone": "piːtʃ"
+  },
+  {
+    "name": "banana",
+    "trans": [
+      "- n. 香蕉"
+    ],
+    "usphone": "bə'nænə",
+    "ukphone": "bə'nɑːnə"
+  },
+  {
+    "name": "pineapple",
+    "trans": [
+      "- n. 菠萝"
+    ],
+    "usphone": "'paɪnæpl",
+    "ukphone": "'paɪnæpl"
+  },
+  {
+    "name": "orange",
+    "trans": [
+      "- adj. 橙色的,- n. 橙色，橙子，桔子"
+    ],
+    "usphone": "'ɔːrɪndʒ",
+    "ukphone": "'ɒrɪndʒ"
+  },
+  {
+    "name": "lemon",
+    "trans": [
+      "- n. 柠檬,- adj. 柠檬色的"
+    ],
+    "usphone": "'lemən",
+    "ukphone": "'lemən"
+  },
+  {
+    "name": "salad",
+    "trans": [
+      "- n. 色拉（西餐中的一种凉拌菜）"
+    ],
+    "usphone": "'sæləd",
+    "ukphone": "'sæləd"
+  },
+  {
+    "name": "play",
+    "trans": [
+      "- v. 玩；演奏；播放；参加（体育活动，比赛等）；扮演, 演出；装扮；尽…本分,- n. 游戏；玩耍；戏剧；比赛；作用；（戏剧的）演出"
+    ],
+    "usphone": "pleɪ",
+    "ukphone": "pleɪ"
+  },
+  {
+    "name": "come",
+    "trans": [
+      "- vi. 来"
+    ],
+    "usphone": "kʌm",
+    "ukphone": "kʌm"
+  },
+  {
+    "name": "go",
+    "trans": [
+      "- vi. 去"
+    ],
+    "usphone": "ɡoʊ",
+    "ukphone": "ɡəʊ"
+  },
+  {
+    "name": "dance",
+    "trans": [
+      "- n. 跳舞，舞蹈,- vi. 跳舞"
+    ],
+    "usphone": "dæns",
+    "ukphone": "dɑːns"
+  },
+  {
+    "name": "clean",
+    "trans": [
+      "- vt. 把……弄干净；擦干净,- adj. 干净的"
+    ],
+    "usphone": "kliːn",
+    "ukphone": "kliːn"
+  },
+  {
+    "name": "wash",
+    "trans": [
+      "- n. 洗（涤）；冲洗；洗剂；泼溅；洗的衣服,- v. 洗涤；冲洗；流过；弄湿"
+    ],
+    "usphone": "wɑːʃ",
+    "ukphone": "wɒʃ"
+  },
+  {
+    "name": "mop",
+    "trans": [
+      "- vt. 用拖把拖洗,- n. 拖把"
+    ],
+    "usphone": "mɑːp",
+    "ukphone": "mɒp"
+  },
+  {
+    "name": "get",
+    "trans": [
+      "- vt. 变得；得到；购买；到达"
+    ],
+    "usphone": "ɡet",
+    "ukphone": "ɡet"
+  },
+  {
+    "name": "drink",
+    "trans": [
+      "- v. 喝，饮；喝酒,- n. 饮料；酒"
+    ],
+    "usphone": "drɪŋk",
+    "ukphone": "drɪŋk"
+  },
+  {
+    "name": "run",
+    "trans": [
+      "- vt. 管理，经营,- n. 跑；赛跑,- v. 跑，赛跑"
+    ],
+    "usphone": "rʌn",
+    "ukphone": "rʌn"
+  },
+  {
+    "name": "listen",
+    "trans": [
+      "- v. 听，倾听"
+    ],
+    "usphone": "'lɪsn",
+    "ukphone": "'lɪsn"
+  },
+  {
+    "name": "walk",
+    "trans": [
+      "- n. 步行；散步,- v. 散步；步行；带……散步；带……遛弯"
+    ],
+    "usphone": "wɔːk",
+    "ukphone": "wɔːk"
+  },
+  {
+    "name": "talk",
+    "trans": [
+      "- v. 谈话，讲话,- n. 演讲；讲座"
+    ],
+    "usphone": "tɔːk",
+    "ukphone": "tɔːk"
+  },
+  {
+    "name": "eat",
+    "trans": [
+      "- vt. 吃"
+    ],
+    "usphone": "iːt",
+    "ukphone": "iːt"
+  },
+  {
+    "name": "plant",
+    "trans": [
+      "- n. 植物，工厂，发电厂,- vt. 种植"
+    ],
+    "usphone": "plænt",
+    "ukphone": "plɑːnt"
+  },
+  {
+    "name": "dig",
+    "trans": [
+      "- v. 挖，挖洞"
+    ],
+    "usphone": "dɪɡ",
+    "ukphone": "dɪɡ"
+  },
+  {
+    "name": "water",
+    "trans": [
+      "- vt. 给……浇水,- n. 水"
+    ],
+    "usphone": "ˈwɔːtər",
+    "ukphone": "'wɔːtə(r)"
+  },
+  {
+    "name": "do",
+    "trans": [
+      "- aux. v. （构成否定句及疑问句的助动词，无词义）,- v. 做，干"
+    ],
+    "usphone": "duː",
+    "ukphone": "duː"
+  },
+  {
+    "name": "watch",
+    "trans": [
+      "- n. 手表,- v. 观看；留神观察"
+    ],
+    "usphone": "wɑtʃ",
+    "ukphone": "wɒtʃ"
+  },
+  {
+    "name": "wipe",
+    "trans": [
+      "- vt. 擦，擦去"
+    ],
+    "usphone": "waɪp",
+    "ukphone": "waɪp"
+  },
+  {
+    "name": "read",
+    "trans": [
+      "- v. 读；朗读,- n. 阅读；读物"
+    ],
+    "usphone": "riːd",
+    "ukphone": "riːd"
+  },
+  {
+    "name": "write",
+    "trans": [
+      "- v. 写"
+    ],
+    "usphone": "raɪt",
+    "ukphone": "raɪt"
+  },
+  {
+    "name": "I",
+    "trans": [
+      "- pron. 我"
+    ],
+    "usphone": "aɪ",
+    "ukphone": "aɪ"
+  },
+  {
+    "name": "you",
+    "trans": [
+      "- pron. 你；你们"
+    ],
+    "usphone": "ju",
+    "ukphone": "juː"
+  },
+  {
+    "name": "he",
+    "trans": [
+      "- pron. 他"
+    ],
+    "usphone": "hi:",
+    "ukphone": "hi:"
+  },
+  {
+    "name": "she",
+    "trans": [
+      "- pron. 她"
+    ],
+    "usphone": "ʃi:",
+    "ukphone": "ʃi:"
+  },
+  {
+    "name": "we",
+    "trans": [
+      "- pron. 我们"
+    ],
+    "usphone": "wiː",
+    "ukphone": "wiː"
+  },
+  {
+    "name": "they",
+    "trans": [
+      "- pron. 他们；她们；它们"
+    ],
+    "usphone": "ðeɪ",
+    "ukphone": "ðeɪ"
+  },
+  {
+    "name": "my",
+    "trans": [
+      "- pron. 我的"
+    ],
+    "usphone": "maɪ",
+    "ukphone": "maɪ"
+  },
+  {
+    "name": "your",
+    "trans": [
+      "- pron. 你的；你们的"
+    ],
+    "usphone": "jʊr",
+    "ukphone": "jɔː(r)"
+  },
+  {
+    "name": "his",
+    "trans": [
+      "- pron. 他的；他的（东西）"
+    ],
+    "usphone": "hɪz",
+    "ukphone": "hɪz"
+  },
+  {
+    "name": "her",
+    "trans": [
+      "- pron. 她的；（用作宾语）她"
+    ],
+    "usphone": "hɜːr",
+    "ukphone": "hɜː(r)"
+  },
+  {
+    "name": "its",
+    "trans": [
+      "- pron. 它的"
+    ],
+    "usphone": "ɪts",
+    "ukphone": "ɪts"
+  },
+  {
+    "name": "our",
+    "trans": [
+      "- pron. 我们的"
+    ],
+    "usphone": "'aʊər",
+    "ukphone": "'aʊə(r) "
+  },
+  {
+    "name": "their",
+    "trans": [
+      "- pron. 他（她）们的，它们的"
+    ],
+    "usphone": "ðer",
+    "ukphone": "ðeə(r)"
+  },
+  {
+    "name": "I'm",
+    "trans": [
+      "- abbr. 我是（=I am）"
+    ],
+    "usphone": "aɪm",
+    "ukphone": "aɪm"
+  },
+  {
+    "name": "you're",
+    "trans": [
+      "- abbr. (=you are)"
+    ],
+    "usphone": "jʊr",
+    "ukphone": "jʊə(r)"
+  },
+  {
+    "name": "he's",
+    "trans": [
+      "- abbr. (=he is, he has)"
+    ],
+    "usphone": "hiːz",
+    "ukphone": "hiːz"
+  },
+  {
+    "name": "she's",
+    "trans": [
+      "- abbr. (=she is [has])"
+    ],
+    "usphone": "ʃiːz",
+    "ukphone": "ʃiːz"
+  },
+  {
+    "name": "it's",
+    "trans": [
+      "- abbr. 同“it is”, 同“it has”"
+    ],
+    "usphone": "ɪts",
+    "ukphone": "ɪts"
+  },
+  {
+    "name": "we're",
+    "trans": [
+      "- abbr. (=we are)"
+    ],
+    "usphone": "wɪr",
+    "ukphone": "wɪə(r)"
+  }
+]

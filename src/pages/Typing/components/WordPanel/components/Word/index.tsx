@@ -137,11 +137,15 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const getLetterVisible = useCallback(
     (index: number) => {
       if (wordState.letterStates[index] === 'correct' || (isShowAnswerOnHover && isHoveringWord)) return true
+      const letter = wordState.displayWord[index]
 
       if (wordDictationConfig.isOpen) {
+        if (letter === EXPLICIT_SPACE) {
+          return true
+        }
+
         if (wordDictationConfig.type === 'hideAll') return false
 
-        const letter = wordState.displayWord[index]
         if (wordDictationConfig.type === 'hideVowel') {
           return vowelLetters.includes(letter.toUpperCase()) ? false : true
         }
@@ -210,24 +214,25 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     } else {
       // 出错时
       playBeepSound()
+      const updatedMistake = JSON.parse(JSON.stringify(wordState.letterMistake))
+      if (updatedMistake[inputLength - 1]) {
+        updatedMistake[inputLength - 1].push(inputChar)
+      } else {
+        updatedMistake[inputLength - 1] = [inputChar]
+      }
+
       setWordState((state) => {
         state.letterStates[inputLength - 1] = 'wrong'
         state.hasWrong = true
         state.hasMadeInputWrong = true
         state.wrongCount += 1
         state.letterTimeArray = []
-
-        if (state.letterMistake[inputLength - 1]) {
-          state.letterMistake[inputLength - 1].push(inputChar)
-        } else {
-          state.letterMistake[inputLength - 1] = [inputChar]
-        }
-
-        const currentState = JSON.parse(JSON.stringify(state))
-        dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD, payload: { letterMistake: currentState.letterMistake } })
+        state.letterMistake = updatedMistake
       })
 
-      if (currentChapter === 0 && state.chapterData.index === 0 && wordState.wrongCount >= 3) {
+      dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD, payload: { letterMistake: updatedMistake } })
+
+      if (currentChapter === 0 && state.chapterData.index === 0 && wordState.wrongCount + 1 >= 3) {
         setShowTipAlert(true)
       }
     }

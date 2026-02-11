@@ -20,9 +20,9 @@ export const currentDictIdAtom = atomWithStorage('currentDict', 'cet4')
 export const currentDictInfoAtom = atom<Dictionary>((get) => {
   const id = get(currentDictIdAtom)
   let dict = idDictionaryMap[id]
-  // 如果 dict 不存在，则返回 cet4. Typing 中会检查 DictId 是否存在，如果不存在则会重置为 cet4
+  // 如果 dict 不存在，则返回 idDictionaryMap 中的第一个元素
   if (!dict) {
-    dict = idDictionaryMap.cet4
+    dict = Object.values(idDictionaryMap)[0]
   }
   return dict
 })

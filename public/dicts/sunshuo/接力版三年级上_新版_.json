@@ -1,0 +1,890 @@
+[
+  {
+    "name": "hello",
+    "trans": [
+      "- int. 喂（表示问候或唤起注意）；你好"
+    ],
+    "usphone": "hə'loʊ",
+    "ukphone": "hə'ləʊ"
+  },
+  {
+    "name": "hi",
+    "trans": [
+      "- int. 喂（表示问候或唤起注意）"
+    ],
+    "usphone": "haɪ",
+    "ukphone": "haɪ"
+  },
+  {
+    "name": "I",
+    "trans": [
+      "- pron. 我"
+    ],
+    "usphone": "aɪ",
+    "ukphone": "aɪ"
+  },
+  {
+    "name": "am",
+    "trans": [
+      "- v. 系动词be的人称形式之一,- abbr. 上午"
+    ],
+    "usphone": "æm",
+    "ukphone": "æm"
+  },
+  {
+    "name": "yes",
+    "trans": [
+      "- adv. 是，是的"
+    ],
+    "usphone": "jes",
+    "ukphone": "jes"
+  },
+  {
+    "name": "no",
+    "trans": [
+      "- adv. 不；不是"
+    ],
+    "usphone": "noʊ",
+    "ukphone": "nəʊ"
+  },
+  {
+    "name": "good",
+    "trans": [
+      "- adj. 好的"
+    ],
+    "usphone": "ɡʊd",
+    "ukphone": "ɡʊd"
+  },
+  {
+    "name": "morning",
+    "trans": [
+      "- n. 早晨，上午"
+    ],
+    "usphone": "'mɔːrnɪŋ",
+    "ukphone": "'mɔːnɪŋ"
+  },
+  {
+    "name": "dad",
+    "trans": [
+      "- n. （口语）爸爸，爹爹"
+    ],
+    "usphone": "dæd",
+    "ukphone": "dæd"
+  },
+  {
+    "name": "goodbye",
+    "trans": [
+      "- int. 再见"
+    ],
+    "usphone": "ˌɡʊd'baɪ",
+    "ukphone": "ˌɡʊd'baɪ"
+  },
+  {
+    "name": "mom",
+    "trans": [
+      "- n. （美）妈妈（=mum）"
+    ],
+    "usphone": "mɑːm",
+    "ukphone": "mɒm"
+  },
+  {
+    "name": "miss",
+    "trans": [
+      "- n. 女士，小姐（对未婚妇女的称呼）,- vt. 想念；错过,- vi. 未击中，打偏,- n. 未击中（或抓住、达到等）"
+    ],
+    "usphone": "mɪs",
+    "ukphone": "mɪs"
+  },
+  {
+    "name": "bye",
+    "trans": [
+      "- int. 再见"
+    ],
+    "usphone": "baɪ",
+    "ukphone": "baɪ"
+  },
+  {
+    "name": "a",
+    "trans": [
+      "- article. 一，一个"
+    ],
+    "usphone": "eɪ; ə",
+    "ukphone": "eɪ; ə"
+  },
+  {
+    "name": "teacher",
+    "trans": [
+      "- n. 教师"
+    ],
+    "usphone": "'tiːtʃər",
+    "ukphone": "'tiːtʃə(r)"
+  },
+  {
+    "name": "student",
+    "trans": [
+      "- n. 学生"
+    ],
+    "usphone": "'stuːdnt",
+    "ukphone": "'stjuːdnt"
+  },
+  {
+    "name": "stand",
+    "trans": [
+      "- v. 站；立；容忍，忍让；经受，遭受,- n. 态度；看台；架，座；货摊"
+    ],
+    "usphone": "stænd",
+    "ukphone": "stænd"
+  },
+  {
+    "name": "up",
+    "trans": [
+      "- adv. 向上；在上方；起来；,- adj. 上面的，向上的，上行的,- n. 上升；上坡；上行；繁荣,- v. （站）起来，举起，拿起；提高,- prep. 向（高处）；向（在）……的上游"
+    ],
+    "usphone": "ʌp",
+    "ukphone": "ʌp"
+  },
+  {
+    "name": "sit",
+    "trans": [
+      "- vi. 坐"
+    ],
+    "usphone": "sɪt",
+    "ukphone": "sɪt"
+  },
+  {
+    "name": "down",
+    "trans": [
+      "- adv. 向下,- prep. 沿……而下,- adj. 悲伤的，沮丧的"
+    ],
+    "usphone": "daʊn",
+    "ukphone": "daʊn"
+  },
+  {
+    "name": "please",
+    "trans": [
+      "- v. 使满意，取悦,- int. 请（用于礼貌的请求）"
+    ],
+    "usphone": "pliːz",
+    "ukphone": "pliːz"
+  },
+  {
+    "name": "and",
+    "trans": [
+      "- conj. 和"
+    ],
+    "usphone": "ænd; ənd; ən",
+    "ukphone": "ænd; ənd; (ə)n"
+  },
+  {
+    "name": "go",
+    "trans": [
+      "- vi. 去"
+    ],
+    "usphone": "ɡoʊ",
+    "ukphone": "ɡəʊ"
+  },
+  {
+    "name": "stop",
+    "trans": [
+      "- n. 停，（停车）站,- vt. 停，停止，阻止"
+    ],
+    "usphone": "stɑːp",
+    "ukphone": "stɒp"
+  },
+  {
+    "name": "are",
+    "trans": [
+      "- v. 系动词be的人称形式之一"
+    ],
+    "usphone": "ər; ɑːr",
+    "ukphone": "ə(r); ɑː(r)"
+  },
+  {
+    "name": "you",
+    "trans": [
+      "- pron. 你；你们"
+    ],
+    "usphone": "ju",
+    "ukphone": "juː"
+  },
+  {
+    "name": "girl",
+    "trans": [
+      "- n. 女孩"
+    ],
+    "usphone": "ɡɜːrl",
+    "ukphone": "ɡɜːl"
+  },
+  {
+    "name": "boy",
+    "trans": [
+      "- n. 男孩"
+    ],
+    "usphone": "bɔɪ",
+    "ukphone": "bɔɪ"
+  },
+  {
+    "name": "this",
+    "trans": [
+      "- adj. 这；这个,- pron. 这；这个"
+    ],
+    "usphone": "ðɪs",
+    "ukphone": "ðɪs"
+  },
+  {
+    "name": "is",
+    "trans": [
+      "- aux. v. 是（be的第三人称单数形式）"
+    ],
+    "usphone": "ɪz",
+    "ukphone": "ɪz"
+  },
+  {
+    "name": "box",
+    "trans": [
+      "- n. 盒子，箱子"
+    ],
+    "usphone": "bɑːks",
+    "ukphone": "bɒks"
+  },
+  {
+    "name": "ball",
+    "trans": [
+      "- n. 球"
+    ],
+    "usphone": "bɔːl",
+    "ukphone": "bɔːl"
+  },
+  {
+    "name": "bag",
+    "trans": [
+      "- n. 包；提包；袋子"
+    ],
+    "usphone": "bæɡ",
+    "ukphone": "bæɡ"
+  },
+  {
+    "name": "cat",
+    "trans": [
+      "- n. 猫；猫科动物"
+    ],
+    "usphone": "kæt",
+    "ukphone": "kæt"
+  },
+  {
+    "name": "book",
+    "trans": [
+      "- n. 书,- vt. 预定，定（房间、车票等）"
+    ],
+    "usphone": "bʊk",
+    "ukphone": "bʊk"
+  },
+  {
+    "name": "an",
+    "trans": [
+      "- article. 一，一个（放在元音音素前）"
+    ],
+    "usphone": "ən",
+    "ukphone": "ən"
+  },
+  {
+    "name": "apple",
+    "trans": [
+      "- n. 苹果"
+    ],
+    "usphone": "ˈæpəl",
+    "ukphone": "ˈæpəl"
+  },
+  {
+    "name": "it",
+    "trans": [
+      "- pron. 它"
+    ],
+    "usphone": "ɪt",
+    "ukphone": "ɪt"
+  },
+  {
+    "name": "ruler",
+    "trans": [
+      "- n. 统治者；管理者；尺子"
+    ],
+    "usphone": "'ruːlər",
+    "ukphone": "'ruːlə(r)"
+  },
+  {
+    "name": "pencil",
+    "trans": [
+      "- n. 铅笔"
+    ],
+    "usphone": "'pensl",
+    "ukphone": "'pensl"
+  },
+  {
+    "name": "pen",
+    "trans": [
+      "- n. 钢笔"
+    ],
+    "usphone": "pen",
+    "ukphone": "pen"
+  },
+  {
+    "name": "tree",
+    "trans": [
+      "- n. 树"
+    ],
+    "usphone": "triː",
+    "ukphone": "triː"
+  },
+  {
+    "name": "what",
+    "trans": [
+      "- pron. 什么"
+    ],
+    "usphone": "wʌt",
+    "ukphone": "wɒt"
+  },
+  {
+    "name": "car",
+    "trans": [
+      "- n. 汽车；小汽车"
+    ],
+    "usphone": "kɑːr",
+    "ukphone": "kɑː(r)"
+  },
+  {
+    "name": "taxi",
+    "trans": [
+      "- n. 出租车"
+    ],
+    "usphone": "'tæksi",
+    "ukphone": "'tæksi"
+  },
+  {
+    "name": "train",
+    "trans": [
+      "- n. 火车,- v. 训练；培养"
+    ],
+    "usphone": "treɪn",
+    "ukphone": "treɪn"
+  },
+  {
+    "name": "bus",
+    "trans": [
+      "- n. 公共汽车"
+    ],
+    "usphone": "bʌs",
+    "ukphone": "bʌs"
+  },
+  {
+    "name": "dog",
+    "trans": [
+      "- n. 狗"
+    ],
+    "usphone": "dɔːɡ",
+    "ukphone": "dɒɡ"
+  },
+  {
+    "name": "door",
+    "trans": [
+      "- n. 门"
+    ],
+    "usphone": "dɔːr",
+    "ukphone": "dɔː(r)"
+  },
+  {
+    "name": "chair",
+    "trans": [
+      "- n. 椅子"
+    ],
+    "usphone": "tʃer",
+    "ukphone": "tʃeə(r)"
+  },
+  {
+    "name": "banana",
+    "trans": [
+      "- n. 香蕉"
+    ],
+    "usphone": "bə'nænə",
+    "ukphone": "bə'nɑːnə"
+  },
+  {
+    "name": "orange",
+    "trans": [
+      "- adj. 橙色的,- n. 橙色，橙子，桔子"
+    ],
+    "usphone": "'ɔːrɪndʒ",
+    "ukphone": "'ɒrɪndʒ"
+  },
+  {
+    "name": "that",
+    "trans": [
+      "- adj. 那；那个,- pron. 那；那个,- conj. 那，那个（引导宾语从句等）,- adv. 那么，那样"
+    ],
+    "usphone": "ðæt",
+    "ukphone": "ðæt"
+  },
+  {
+    "name": "come",
+    "trans": [
+      "- vi. 来"
+    ],
+    "usphone": "kʌm",
+    "ukphone": "kʌm"
+  },
+  {
+    "name": "here",
+    "trans": [
+      "- adv. 这里；这儿"
+    ],
+    "usphone": "hɪr",
+    "ukphone": "hɪə(r)"
+  },
+  {
+    "name": "not",
+    "trans": [
+      "- adv. 不"
+    ],
+    "usphone": "nɑːt",
+    "ukphone": "nɒt"
+  },
+  {
+    "name": "color",
+    "trans": [
+      "- n. 颜色；颜料；面色；肤色,- v. 给...着色, 染；使脸红；歪曲；影响；脸红；变色"
+    ],
+    "usphone": "'kʌlər",
+    "ukphone": "'kʌlə(r)"
+  },
+  {
+    "name": "yellow",
+    "trans": [
+      "- adj. 黄色的；黄色"
+    ],
+    "usphone": "'jeloʊ",
+    "ukphone": "'jeləʊ"
+  },
+  {
+    "name": "red",
+    "trans": [
+      "- n. 红色,- adj. 红色的"
+    ],
+    "usphone": "red",
+    "ukphone": "red"
+  },
+  {
+    "name": "green",
+    "trans": [
+      "- adj. 绿色的,- n. 绿色；绿色蔬菜，绿叶"
+    ],
+    "usphone": "ɡriːn",
+    "ukphone": "ɡriːn"
+  },
+  {
+    "name": "blue",
+    "trans": [
+      "- n. 蓝色,- adj. 蓝色的"
+    ],
+    "usphone": "bluː",
+    "ukphone": "bluː"
+  },
+  {
+    "name": "black",
+    "trans": [
+      "- n. 黑色,- adj. 黑色的"
+    ],
+    "usphone": "blæk",
+    "ukphone": "blæk"
+  },
+  {
+    "name": "white",
+    "trans": [
+      "- adj. 白色的；白的,- n. 白色"
+    ],
+    "usphone": "waɪt",
+    "ukphone": "waɪt"
+  },
+  {
+    "name": "panda",
+    "trans": [
+      "- n. 熊猫"
+    ],
+    "usphone": "'pændə",
+    "ukphone": "'pændə"
+  },
+  {
+    "name": "show",
+    "trans": [
+      "- n. 演出；节目；展览；表现,- vt. 给……看，出示，显示,- vi. 显出，显现，显露，显得"
+    ],
+    "usphone": "ʃoʊ",
+    "ukphone": "ʃəʊ"
+  },
+  {
+    "name": "me",
+    "trans": [
+      "- pron. （用作宾语）我"
+    ],
+    "usphone": "mi:",
+    "ukphone": "mi:"
+  },
+  {
+    "name": "have",
+    "trans": [
+      "- vt. 拥有；得到；吃，喝；进行；从事"
+    ],
+    "usphone": "hæv, həv, əv",
+    "ukphone": "hæv, həv, əv"
+  },
+  {
+    "name": "two",
+    "trans": [
+      "- num. 二"
+    ],
+    "usphone": "tuː",
+    "ukphone": "tuː"
+  },
+  {
+    "name": "three",
+    "trans": [
+      "- num. 三"
+    ],
+    "usphone": "θriː",
+    "ukphone": "θriː"
+  },
+  {
+    "name": "one",
+    "trans": [
+      "- pron. 一；一（个，件……）（用来代替单数的人或物）"
+    ],
+    "usphone": "wʌn",
+    "ukphone": "wʌn"
+  },
+  {
+    "name": "four",
+    "trans": [
+      "- num. 四"
+    ],
+    "usphone": "fɔːr",
+    "ukphone": "fɔː(r)"
+  },
+  {
+    "name": "five",
+    "trans": [
+      "- num. 五"
+    ],
+    "usphone": "faɪv",
+    "ukphone": "faɪv"
+  },
+  {
+    "name": "six",
+    "trans": [
+      "- num. 六"
+    ],
+    "usphone": "sɪks",
+    "ukphone": "sɪks"
+  },
+  {
+    "name": "how",
+    "trans": [
+      "- adv. 怎么"
+    ],
+    "usphone": "haʊ",
+    "ukphone": "haʊ"
+  },
+  {
+    "name": "old",
+    "trans": [
+      "- adj. 老的；旧的"
+    ],
+    "usphone": "oʊld",
+    "ukphone": "əʊld"
+  },
+  {
+    "name": "nine",
+    "trans": [
+      "- num. 九"
+    ],
+    "usphone": "naɪn",
+    "ukphone": "naɪn"
+  },
+  {
+    "name": "ten",
+    "trans": [
+      "- num. 十"
+    ],
+    "usphone": "ten",
+    "ukphone": "ten"
+  },
+  {
+    "name": "seven",
+    "trans": [
+      "- num. 七"
+    ],
+    "usphone": "'sevn",
+    "ukphone": "'sevn"
+  },
+  {
+    "name": "eight",
+    "trans": [
+      "- num. 八"
+    ],
+    "usphone": "eɪt",
+    "ukphone": "eɪt"
+  },
+  {
+    "name": "happy",
+    "trans": [
+      "- adj. 高兴的，快乐的；幸福的"
+    ],
+    "usphone": "'hæpi",
+    "ukphone": "'hæpi"
+  },
+  {
+    "name": "birthday",
+    "trans": [
+      "- n. 生日"
+    ],
+    "usphone": "'bɜːrθdeɪ",
+    "ukphone": "'bɜːθdeɪ"
+  },
+  {
+    "name": "to",
+    "trans": [
+      "- prep. 到，往，朝；位于……方向；去做，去参加；达到；对，对于"
+    ],
+    "usphone": "tuː",
+    "ukphone": "tuː"
+  },
+  {
+    "name": "thank",
+    "trans": [
+      "- n. 谢谢,- vt. 感谢"
+    ],
+    "usphone": "θæŋk",
+    "ukphone": "θæŋk"
+  },
+  {
+    "name": "card",
+    "trans": [
+      "- n. 贺卡；卡片；纸牌"
+    ],
+    "usphone": "kɑːrd",
+    "ukphone": "kɑːd"
+  },
+  {
+    "name": "new",
+    "trans": [
+      "- adj. 新的"
+    ],
+    "usphone": "nuː",
+    "ukphone": "njuː"
+  },
+  {
+    "name": "year",
+    "trans": [
+      "- n. 年；岁"
+    ],
+    "usphone": "jɪr",
+    "ukphone": "jɪə(r)"
+  },
+  {
+    "name": "for",
+    "trans": [
+      "- prep. （表示对象）给；（表示目的）为；（表示目标，去向）往，向,- conj. 因为；由于……的缘故"
+    ],
+    "usphone": "fɔːr",
+    "ukphone": "fɔː(r)"
+  },
+  {
+    "name": "dear",
+    "trans": [
+      "- adj. 亲爱的；昂贵的"
+    ],
+    "usphone": "dɪr",
+    "ukphone": "dɪə(r)"
+  },
+  {
+    "name": "yours",
+    "trans": [
+      "- pron. 你的（东西）；你们的（东西）"
+    ],
+    "usphone": "jərz",
+    "ukphone": "jɔːz"
+  },
+  {
+    "name": "some",
+    "trans": [
+      "- adj. 一些，若干；有些；某一,- pron. 若干，一些"
+    ],
+    "usphone": "sʌm",
+    "ukphone": "sʌm"
+  },
+  {
+    "name": "water",
+    "trans": [
+      "- vt. 给……浇水,- n. 水"
+    ],
+    "usphone": "ˈwɔːtər",
+    "ukphone": "'wɔːtə(r)"
+  },
+  {
+    "name": "hungry",
+    "trans": [
+      "- adj. 饥饿的"
+    ],
+    "usphone": "'hʌŋɡri",
+    "ukphone": "'hʌŋɡri"
+  },
+  {
+    "name": "bread",
+    "trans": [
+      "- n. 面包"
+    ],
+    "usphone": "bred",
+    "ukphone": "bred"
+  },
+  {
+    "name": "OK",
+    "trans": [
+      "- int. 对, 好, 行, （用以引起注意或引入话题）好了"
+    ],
+    "usphone": "oʊ'keɪ",
+    "ukphone": "əʊ'keɪ"
+  },
+  {
+    "name": "do",
+    "trans": [
+      "- aux. v. （构成否定句及疑问句的助动词，无词义）,- v. 做，干"
+    ],
+    "usphone": "duː",
+    "ukphone": "duː"
+  },
+  {
+    "name": "like",
+    "trans": [
+      "- vt. 喜欢,- prep. 像，像……一样"
+    ],
+    "usphone": "laɪk",
+    "ukphone": "laɪk"
+  },
+  {
+    "name": "juice",
+    "trans": [
+      "- n. 果汁，菜汁，果汁饮料，肉汁"
+    ],
+    "usphone": "dʒuːs",
+    "ukphone": "dʒuːs"
+  },
+  {
+    "name": "fish",
+    "trans": [
+      "- n. 鱼；鱼肉,- v. 钓（鱼）；捕（鱼）；在……中捕鱼"
+    ],
+    "usphone": "fɪʃ",
+    "ukphone": "fɪʃ"
+  },
+  {
+    "name": "driver",
+    "trans": [
+      "- n. 司机，驾驶员"
+    ],
+    "usphone": "'draɪvər",
+    "ukphone": "'draɪvə(r)"
+  },
+  {
+    "name": "farmer",
+    "trans": [
+      "- n. 农民；农场主"
+    ],
+    "usphone": "'fɑːrmər",
+    "ukphone": "'fɑːmə(r)"
+  },
+  {
+    "name": "doctor",
+    "trans": [
+      "- n. 医生；博士"
+    ],
+    "usphone": "'dɑːktər",
+    "ukphone": "'dɒktə(r)"
+  },
+  {
+    "name": "nurse",
+    "trans": [
+      "- n. 护士"
+    ],
+    "usphone": "nɜːrs",
+    "ukphone": "nɜːs"
+  },
+  {
+    "name": "she",
+    "trans": [
+      "- pron. 她"
+    ],
+    "usphone": "ʃi:",
+    "ukphone": "ʃi:"
+  },
+  {
+    "name": "he",
+    "trans": [
+      "- pron. 他"
+    ],
+    "usphone": "hi:",
+    "ukphone": "hi:"
+  },
+  {
+    "name": "who",
+    "trans": [
+      "- pron. 谁 (用于疑问句，询问姓名和身份),- abbr. 大写WHO (=World Health Organization)世界卫生组织(联合国)"
+    ],
+    "usphone": "huː",
+    "ukphone": "huː"
+  },
+  {
+    "name": "Mr.",
+    "trans": [
+      "- n. 先生（用于姓或姓名之前）"
+    ],
+    "usphone": "'mɪstə",
+    "ukphone": "'mɪstə"
+  },
+  {
+    "name": "Ms.",
+    "trans": [
+      "- n. 女士（用在婚姻状况不明的女子姓名前）"
+    ],
+    "usphone": "'mɪz",
+    "ukphone": "'mɪz"
+  },
+  {
+    "name": "worker",
+    "trans": [
+      "- n. 工人"
+    ],
+    "usphone": "'wɜːrkər",
+    "ukphone": "'wɜːkə(r)"
+  },
+  {
+    "name": "stand up",
+    "trans": [
+      "- phrase. 起立"
+    ],
+    "usphone": "'stændˌʌp",
+    "ukphone": "'stændʌp"
+  },
+  {
+    "name": "sit down",
+    "trans": [
+      "- phrase. （使）坐下；（使）就座"
+    ],
+    "usphone": "'sɪtˌdaʊn",
+    "ukphone": "'sɪtˌdaʊn"
+  },
+  {
+    "name": "come here",
+    "trans": [
+      "- v. 来这里"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  }
+]

@@ -1,0 +1,810 @@
+[
+  {
+    "name": "hello",
+    "trans": [
+      "- int. 喂（表示问候或唤起注意）；你好"
+    ],
+    "usphone": "hə'loʊ",
+    "ukphone": "hə'ləʊ"
+  },
+  {
+    "name": "I",
+    "trans": [
+      "- pron. 我"
+    ],
+    "usphone": "aɪ",
+    "ukphone": "aɪ"
+  },
+  {
+    "name": "am",
+    "trans": [
+      "- v. 系动词be的人称形式之一,- abbr. 上午"
+    ],
+    "usphone": "æm",
+    "ukphone": "æm"
+  },
+  {
+    "name": "hi",
+    "trans": [
+      "- int. 喂（表示问候或唤起注意）"
+    ],
+    "usphone": "haɪ",
+    "ukphone": "haɪ"
+  },
+  {
+    "name": "miss",
+    "trans": [
+      "- n. 女士，小姐（对未婚妇女的称呼）,- vt. 想念；错过,- vi. 未击中，打偏,- n. 未击中（或抓住、达到等）"
+    ],
+    "usphone": "mɪs",
+    "ukphone": "mɪs"
+  },
+  {
+    "name": "good",
+    "trans": [
+      "- adj. 好的"
+    ],
+    "usphone": "ɡʊd",
+    "ukphone": "ɡʊd"
+  },
+  {
+    "name": "morning",
+    "trans": [
+      "- n. 早晨，上午"
+    ],
+    "usphone": "'mɔːrnɪŋ",
+    "ukphone": "'mɔːnɪŋ"
+  },
+  {
+    "name": "class",
+    "trans": [
+      "- n. 课；（学校里的）班；阶级，阶层"
+    ],
+    "usphone": "klæs",
+    "ukphone": "klɑːs"
+  },
+  {
+    "name": "goodbye",
+    "trans": [
+      "- int. 再见"
+    ],
+    "usphone": "ˌɡʊd'baɪ",
+    "ukphone": "ˌɡʊd'baɪ"
+  },
+  {
+    "name": "afternoon",
+    "trans": [
+      "- n. 下午，午后"
+    ],
+    "usphone": "ˌæftər'nuːn",
+    "ukphone": "ˌɑːftə'nuːn"
+  },
+  {
+    "name": "what",
+    "trans": [
+      "- pron. 什么"
+    ],
+    "usphone": "wʌt",
+    "ukphone": "wɒt"
+  },
+  {
+    "name": "is",
+    "trans": [
+      "- aux. v. 是（be的第三人称单数形式）"
+    ],
+    "usphone": "ɪz",
+    "ukphone": "ɪz"
+  },
+  {
+    "name": "your",
+    "trans": [
+      "- pron. 你的；你们的"
+    ],
+    "usphone": "jʊr",
+    "ukphone": "jɔː(r)"
+  },
+  {
+    "name": "name",
+    "trans": [
+      "- n. 名字,- vt. 命名，给……取名"
+    ],
+    "usphone": "neɪm",
+    "ukphone": "neɪm"
+  },
+  {
+    "name": "my",
+    "trans": [
+      "- pron. 我的"
+    ],
+    "usphone": "maɪ",
+    "ukphone": "maɪ"
+  },
+  {
+    "name": "how",
+    "trans": [
+      "- adv. 怎么"
+    ],
+    "usphone": "haʊ",
+    "ukphone": "haʊ"
+  },
+  {
+    "name": "old",
+    "trans": [
+      "- adj. 老的；旧的"
+    ],
+    "usphone": "oʊld",
+    "ukphone": "əʊld"
+  },
+  {
+    "name": "are",
+    "trans": [
+      "- v. 系动词be的人称形式之一"
+    ],
+    "usphone": "ər; ɑːr",
+    "ukphone": "ə(r); ɑː(r)"
+  },
+  {
+    "name": "you",
+    "trans": [
+      "- pron. 你；你们"
+    ],
+    "usphone": "ju",
+    "ukphone": "juː"
+  },
+  {
+    "name": "one",
+    "trans": [
+      "- pron. 一；一（个，件……）（用来代替单数的人或物）"
+    ],
+    "usphone": "wʌn",
+    "ukphone": "wʌn"
+  },
+  {
+    "name": "two",
+    "trans": [
+      "- num. 二"
+    ],
+    "usphone": "tuː",
+    "ukphone": "tuː"
+  },
+  {
+    "name": "three",
+    "trans": [
+      "- num. 三"
+    ],
+    "usphone": "θriː",
+    "ukphone": "θriː"
+  },
+  {
+    "name": "four",
+    "trans": [
+      "- num. 四"
+    ],
+    "usphone": "fɔːr",
+    "ukphone": "fɔː(r)"
+  },
+  {
+    "name": "five",
+    "trans": [
+      "- num. 五"
+    ],
+    "usphone": "faɪv",
+    "ukphone": "faɪv"
+  },
+  {
+    "name": "six",
+    "trans": [
+      "- num. 六"
+    ],
+    "usphone": "sɪks",
+    "ukphone": "sɪks"
+  },
+  {
+    "name": "seven",
+    "trans": [
+      "- num. 七"
+    ],
+    "usphone": "'sevn",
+    "ukphone": "'sevn"
+  },
+  {
+    "name": "eight",
+    "trans": [
+      "- num. 八"
+    ],
+    "usphone": "eɪt",
+    "ukphone": "eɪt"
+  },
+  {
+    "name": "nine",
+    "trans": [
+      "- num. 九"
+    ],
+    "usphone": "naɪn",
+    "ukphone": "naɪn"
+  },
+  {
+    "name": "ten",
+    "trans": [
+      "- num. 十"
+    ],
+    "usphone": "ten",
+    "ukphone": "ten"
+  },
+  {
+    "name": "this",
+    "trans": [
+      "- adj. 这；这个,- pron. 这；这个"
+    ],
+    "usphone": "ðɪs",
+    "ukphone": "ðɪs"
+  },
+  {
+    "name": "family",
+    "trans": [
+      "- n. 家庭；家庭成员"
+    ],
+    "usphone": "'fæməli",
+    "ukphone": "'fæməli"
+  },
+  {
+    "name": "father",
+    "trans": [
+      "- n. 父亲"
+    ],
+    "usphone": "'fɑːðər",
+    "ukphone": "'fɑːðə(r)"
+  },
+  {
+    "name": "mother",
+    "trans": [
+      "- n. 母亲"
+    ],
+    "usphone": "'mʌðər",
+    "ukphone": "'mʌðə(r)"
+  },
+  {
+    "name": "brother",
+    "trans": [
+      "- n. 兄，弟"
+    ],
+    "usphone": "'brʌðər",
+    "ukphone": "'brʌðə(r)"
+  },
+  {
+    "name": "sister",
+    "trans": [
+      "- n. 姐，妹"
+    ],
+    "usphone": "'sɪstər",
+    "ukphone": "'sɪstə(r)"
+  },
+  {
+    "name": "who",
+    "trans": [
+      "- pron. 谁 (用于疑问句，询问姓名和身份),- abbr. 大写WHO (=World Health Organization)世界卫生组织(联合国)"
+    ],
+    "usphone": "huː",
+    "ukphone": "huː"
+  },
+  {
+    "name": "he",
+    "trans": [
+      "- pron. 他"
+    ],
+    "usphone": "hi:",
+    "ukphone": "hi:"
+  },
+  {
+    "name": "she",
+    "trans": [
+      "- pron. 她"
+    ],
+    "usphone": "ʃi:",
+    "ukphone": "ʃi:"
+  },
+  {
+    "name": "grandfather",
+    "trans": [
+      "- n. 祖父；外祖父"
+    ],
+    "usphone": "'ɡrænfɑːðər",
+    "ukphone": "'ɡrænfɑːðə(r)"
+  },
+  {
+    "name": "grandpa",
+    "trans": [
+      "- n. （口语）爷爷；外公"
+    ],
+    "usphone": "'ɡrænpɑː",
+    "ukphone": "'ɡrænpɑː"
+  },
+  {
+    "name": "grandmother",
+    "trans": [
+      "- n. 祖母；外祖母"
+    ],
+    "usphone": "'ɡrænmʌðər",
+    "ukphone": "'ɡrænmʌðə(r)"
+  },
+  {
+    "name": "grandma",
+    "trans": [
+      "- n. （口语）奶奶；外婆"
+    ],
+    "usphone": "'ɡrænmɑː",
+    "ukphone": "'ɡrænmɑː"
+  },
+  {
+    "name": "cousin",
+    "trans": [
+      "- n. 堂（表）兄弟；堂（表）姐妹"
+    ],
+    "usphone": "'kʌzn",
+    "ukphone": "'kʌzn"
+  },
+  {
+    "name": "aunt",
+    "trans": [
+      "- n. 阿姨；伯母；舅母；婶；姑；姨"
+    ],
+    "usphone": "ænt",
+    "ukphone": "ɑːnt"
+  },
+  {
+    "name": "uncle",
+    "trans": [
+      "- n. 叔；伯；舅；姑父；姨父"
+    ],
+    "usphone": "'ʌŋkl",
+    "ukphone": "'ʌŋkl"
+  },
+  {
+    "name": "it",
+    "trans": [
+      "- pron. 它"
+    ],
+    "usphone": "ɪt",
+    "ukphone": "ɪt"
+  },
+  {
+    "name": "a",
+    "trans": [
+      "- article. 一，一个"
+    ],
+    "usphone": "eɪ; ə",
+    "ukphone": "eɪ; ə"
+  },
+  {
+    "name": "dog",
+    "trans": [
+      "- n. 狗"
+    ],
+    "usphone": "dɔːɡ",
+    "ukphone": "dɒɡ"
+  },
+  {
+    "name": "cow",
+    "trans": [
+      "- n. 母牛，奶牛"
+    ],
+    "usphone": "kaʊ",
+    "ukphone": "kaʊ"
+  },
+  {
+    "name": "yes",
+    "trans": [
+      "- adv. 是，是的"
+    ],
+    "usphone": "jes",
+    "ukphone": "jes"
+  },
+  {
+    "name": "no",
+    "trans": [
+      "- adv. 不；不是"
+    ],
+    "usphone": "noʊ",
+    "ukphone": "nəʊ"
+  },
+  {
+    "name": "not",
+    "trans": [
+      "- adv. 不"
+    ],
+    "usphone": "nɑːt",
+    "ukphone": "nɒt"
+  },
+  {
+    "name": "duck",
+    "trans": [
+      "- n. 鸭子；鸭肉"
+    ],
+    "usphone": "dʌk",
+    "ukphone": "dʌk"
+  },
+  {
+    "name": "cat",
+    "trans": [
+      "- n. 猫；猫科动物"
+    ],
+    "usphone": "kæt",
+    "ukphone": "kæt"
+  },
+  {
+    "name": "horse",
+    "trans": [
+      "- n. 马"
+    ],
+    "usphone": "hɔːrs",
+    "ukphone": "hɔːs"
+  },
+  {
+    "name": "hen",
+    "trans": [
+      "- n. 母鸡"
+    ],
+    "usphone": "hen",
+    "ukphone": "hen"
+  },
+  {
+    "name": "schoolbag",
+    "trans": [
+      "- n. 书包"
+    ],
+    "usphone": "'skuːlˌbæg",
+    "ukphone": "'skuːlbæg"
+  },
+  {
+    "name": "pencil-box",
+    "trans": [
+      "- n. 铅笔盒；文具盒"
+    ],
+    "usphone": "ˈpensl bɑːks",
+    "ukphone": "ˈpensl bɒks"
+  },
+  {
+    "name": "that",
+    "trans": [
+      "- adj. 那；那个,- pron. 那；那个,- conj. 那，那个（引导宾语从句等）,- adv. 那么，那样"
+    ],
+    "usphone": "ðæt",
+    "ukphone": "ðæt"
+  },
+  {
+    "name": "pen",
+    "trans": [
+      "- n. 钢笔"
+    ],
+    "usphone": "pen",
+    "ukphone": "pen"
+  },
+  {
+    "name": "beautiful",
+    "trans": [
+      "- adj. 美丽的，漂亮的"
+    ],
+    "usphone": "'bjuːtɪfl",
+    "ukphone": "'bjuːtɪfl"
+  },
+  {
+    "name": "ruler",
+    "trans": [
+      "- n. 统治者；管理者；尺子"
+    ],
+    "usphone": "'ruːlər",
+    "ukphone": "'ruːlə(r)"
+  },
+  {
+    "name": "pencil",
+    "trans": [
+      "- n. 铅笔"
+    ],
+    "usphone": "'pensl",
+    "ukphone": "'pensl"
+  },
+  {
+    "name": "book",
+    "trans": [
+      "- n. 书,- vt. 预定，定（房间、车票等）"
+    ],
+    "usphone": "bʊk",
+    "ukphone": "bʊk"
+  },
+  {
+    "name": "mouth",
+    "trans": [
+      "- n. 嘴，口"
+    ],
+    "usphone": "maʊθ",
+    "ukphone": "maʊθ"
+  },
+  {
+    "name": "sorry",
+    "trans": [
+      "- adj. 对不起的；抱歉的"
+    ],
+    "usphone": "'sɑːri",
+    "ukphone": "'sɒri"
+  },
+  {
+    "name": "know",
+    "trans": [
+      "- v. 知道；懂"
+    ],
+    "usphone": "noʊ",
+    "ukphone": "nəʊ"
+  },
+  {
+    "name": "nose",
+    "trans": [
+      "- n. 鼻子"
+    ],
+    "usphone": "noʊz",
+    "ukphone": "nəʊz"
+  },
+  {
+    "name": "face",
+    "trans": [
+      "- n. 脸,- vt. 面临，面对"
+    ],
+    "usphone": "feɪs",
+    "ukphone": "feɪs"
+  },
+  {
+    "name": "hair",
+    "trans": [
+      "- n. 头发"
+    ],
+    "usphone": "her",
+    "ukphone": "heə(r)"
+  },
+  {
+    "name": "ear",
+    "trans": [
+      "- n. 耳朵"
+    ],
+    "usphone": "ɪr",
+    "ukphone": "ɪə(r)"
+  },
+  {
+    "name": "eye",
+    "trans": [
+      "- n. 眼睛"
+    ],
+    "usphone": "aɪ",
+    "ukphone": "aɪ"
+  },
+  {
+    "name": "touch",
+    "trans": [
+      "- v. 触摸；接触；触及，涉及,- n. 触觉；接触"
+    ],
+    "usphone": "tʌtʃ",
+    "ukphone": "tʌtʃ"
+  },
+  {
+    "name": "head",
+    "trans": [
+      "- n. （人或动物等的）头，头部,- v. 朝（某方向）行进；领导，主管；排在前头；用头顶（球）"
+    ],
+    "usphone": "hed",
+    "ukphone": "hed"
+  },
+  {
+    "name": "raise",
+    "trans": [
+      "- vt. 举起; 养育, 喂养; 提出; 募集; 提升, 增大; 抬高; 引起, 唤起; 引发; 使上升"
+    ],
+    "usphone": "reɪz",
+    "ukphone": "reɪz"
+  },
+  {
+    "name": "hand",
+    "trans": [
+      "- n. 手,- vt. 传递，交递"
+    ],
+    "usphone": "hænd",
+    "ukphone": "hænd"
+  },
+  {
+    "name": "leg",
+    "trans": [
+      "- n. 腿"
+    ],
+    "usphone": "leɡ",
+    "ukphone": "leɡ"
+  },
+  {
+    "name": "arm",
+    "trans": [
+      "- n. 臂; 手臂; 扶手; 支架; 上肢; 杆臂; 大树枝; 职能部门; 权力; 得力助手; [复数]武器,- v. 武装, 装备; 武装起来, 备战; 使(炸弹等)随时爆炸; 提供, 配备"
+    ],
+    "usphone": "ɑːrm",
+    "ukphone": "ɑːm"
+  },
+  {
+    "name": "neck",
+    "trans": [
+      "- n. 脖子"
+    ],
+    "usphone": "nek",
+    "ukphone": "nek"
+  },
+  {
+    "name": "body",
+    "trans": [
+      "- n. 身体；尸体；正文"
+    ],
+    "usphone": "'bɑːdi",
+    "ukphone": "'bɒdi"
+  },
+  {
+    "name": "foot",
+    "trans": [
+      "- n. 足，脚；英尺（pl.feet）"
+    ],
+    "usphone": "fʊt",
+    "ukphone": "fʊt"
+  },
+  {
+    "name": "feet",
+    "trans": [
+      "- n. foot(脚，足)的复数；英尺"
+    ],
+    "usphone": "fiːt",
+    "ukphone": "fiːt"
+  },
+  {
+    "name": "like",
+    "trans": [
+      "- vt. 喜欢,- prep. 像，像……一样"
+    ],
+    "usphone": "laɪk",
+    "ukphone": "laɪk"
+  },
+  {
+    "name": "the",
+    "trans": [
+      "- article. 这（那）个（用于特定人或物序数词最高级专有名词世上独一无二事物前）"
+    ],
+    "usphone": "ðə",
+    "ukphone": "ðə"
+  },
+  {
+    "name": "bird",
+    "trans": [
+      "- n. 鸟"
+    ],
+    "usphone": "bɜːrd",
+    "ukphone": "bɜːd"
+  },
+  {
+    "name": "monkey",
+    "trans": [
+      "- n. 猴子"
+    ],
+    "usphone": "'mʌŋki",
+    "ukphone": "'mʌŋki"
+  },
+  {
+    "name": "all right",
+    "trans": [
+      "- phrase. 满意（的）；安全健康（的）；可以（的）；没关系"
+    ],
+    "usphone": "ɔːl raɪt",
+    "ukphone": "ɔːl raɪt"
+  },
+  {
+    "name": "lion",
+    "trans": [
+      "- n. 狮子"
+    ],
+    "usphone": "'laɪən",
+    "ukphone": "'laɪən"
+  },
+  {
+    "name": "tiger",
+    "trans": [
+      "- n. 老虎"
+    ],
+    "usphone": "'taɪɡər",
+    "ukphone": "'taɪɡə(r)"
+  },
+  {
+    "name": "panda",
+    "trans": [
+      "- n. 熊猫"
+    ],
+    "usphone": "'pændə",
+    "ukphone": "'pændə"
+  },
+  {
+    "name": "elephant",
+    "trans": [
+      "- n. 大象"
+    ],
+    "usphone": "'elɪfənt",
+    "ukphone": "'elɪfənt"
+  },
+  {
+    "name": "happy",
+    "trans": [
+      "- adj. 高兴的，快乐的；幸福的"
+    ],
+    "usphone": "'hæpi",
+    "ukphone": "'hæpi"
+  },
+  {
+    "name": "birthday",
+    "trans": [
+      "- n. 生日"
+    ],
+    "usphone": "'bɜːrθdeɪ",
+    "ukphone": "'bɜːθdeɪ"
+  },
+  {
+    "name": "gift",
+    "trans": [
+      "- n. 赠品，礼物"
+    ],
+    "usphone": "ɡɪft",
+    "ukphone": "ɡɪft"
+  },
+  {
+    "name": "for",
+    "trans": [
+      "- prep. （表示对象）给；（表示目的）为；（表示目标，去向）往，向,- conj. 因为；由于……的缘故"
+    ],
+    "usphone": "fɔːr",
+    "ukphone": "fɔː(r)"
+  },
+  {
+    "name": "love",
+    "trans": [
+      "- n. 喜爱；热爱,- vt. 喜爱；热爱"
+    ],
+    "usphone": "lʌv",
+    "ukphone": "lʌv"
+  },
+  {
+    "name": "toy",
+    "trans": [
+      "- n. 玩具"
+    ],
+    "usphone": "tɔɪ",
+    "ukphone": "tɔɪ"
+  },
+  {
+    "name": "card",
+    "trans": [
+      "- n. 贺卡；卡片；纸牌"
+    ],
+    "usphone": "kɑːrd",
+    "ukphone": "kɑːd"
+  },
+  {
+    "name": "cake",
+    "trans": [
+      "- n. 蛋糕；糕；饼"
+    ],
+    "usphone": "keɪk",
+    "ukphone": "keɪk"
+  },
+  {
+    "name": "picture",
+    "trans": [
+      "- n. 图画；照片,- v. 想象；描述"
+    ],
+    "usphone": "'pɪktʃər",
+    "ukphone": "'pɪktʃə(r)"
+  },
+  {
+    "name": "notebook",
+    "trans": [
+      "- n. 笔记本"
+    ],
+    "usphone": "'noʊtbʊk",
+    "ukphone": "'nəʊtbʊk"
+  }
+]

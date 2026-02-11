@@ -1,11 +1,6360 @@
 import type { Dictionary, DictionaryResource } from '@/typings/index'
 import { calcChapterCount } from '@/utils'
 
+
+const childrenEnglish: DictionaryResource[] = [
+  {
+    id: "buonbp",
+    name: "人教精通版一年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版一年级上_新版_.json",
+    length: 35,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "yamqx",
+    name: "人教精通版一年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版一年级下_新版_.json",
+    length: 30,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "qyhrp",
+    name: "人教精通版二年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版二年级上_新版_.json",
+    length: 28,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bkkzvl",
+    name: "人教精通版二年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版二年级下_新版_.json",
+    length: 29,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bqsius",
+    name: "人教精通版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版三年级上_新版_.json",
+    length: 133,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "breuwz",
+    name: "人教精通版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版三年级下_新版_.json",
+    length: 112,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "kybtq",
+    name: "人教精通版四年级上(新版)",
+    description: "根据新版教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版四年级上_新版_.json",
+    length: 115,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "btvttz",
+    name: "人教精通版四年级下(新版)",
+    description: "根据新版教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版四年级下_新版_.json",
+    length: 105,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "hrqps",
+    name: "人教精通版三年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版三年级词汇_上_.json",
+    length: 68,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbzlfg",
+    name: "人教精通版三年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版三年级词汇_下_.json",
+    length: 66,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "sdfkl",
+    name: "人教精通版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版四年级词汇_上_.json",
+    length: 87,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "oimie",
+    name: "人教精通版四年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版四年级词汇_下_.json",
+    length: 120,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "buvdrp",
+    name: "人教精通版五年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版五年级词汇_上_.json",
+    length: 123,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "qnstp",
+    name: "人教精通版五年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版五年级词汇_下_.json",
+    length: 141,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "efmlc",
+    name: "人教精通版六年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版六年级词汇_上_.json",
+    length: 130,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "mxeei",
+    name: "人教精通版六年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教精通"
+    ],
+    url: "/dicts/sunshuo/人教精通版六年级词汇_下_.json",
+    length: 81,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "aphen",
+    name: "人教版一年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版"
+    ],
+    url: "/dicts/sunshuo/人教版一年级词汇_上_.json",
+    length: 51,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zisju",
+    name: "人教版一年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版"
+    ],
+    url: "/dicts/sunshuo/人教版一年级词汇_下_.json",
+    length: 41,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "kdpkg",
+    name: "人教版二年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版"
+    ],
+    url: "/dicts/sunshuo/人教版二年级词汇_上_.json",
+    length: 54,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "hlckg",
+    name: "人教版二年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版"
+    ],
+    url: "/dicts/sunshuo/人教版二年级词汇_下_.json",
+    length: 51,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bqqfpx",
+    name: "人教版三年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版"
+    ],
+    url: "/dicts/sunshuo/人教版三年级词汇_上_.json",
+    length: 95,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "tsuqs",
+    name: "人教版三年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版"
+    ],
+    url: "/dicts/sunshuo/人教版三年级词汇_下_.json",
+    length: 64,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "gkwqc",
+    name: "人教版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版"
+    ],
+    url: "/dicts/sunshuo/人教版四年级词汇_上_.json",
+    length: 101,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "hooui",
+    name: "人教版四年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版"
+    ],
+    url: "/dicts/sunshuo/人教版四年级词汇_下_.json",
+    length: 68,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "pcgyp",
+    name: "人教版五年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版"
+    ],
+    url: "/dicts/sunshuo/人教版五年级词汇_上_.json",
+    length: 56,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "buzrgc",
+    name: "人教版五年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版"
+    ],
+    url: "/dicts/sunshuo/人教版五年级词汇_下_.json",
+    length: 48,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "iqcmz",
+    name: "人教版六年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版"
+    ],
+    url: "/dicts/sunshuo/人教版六年级词汇_上_.json",
+    length: 89,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "qgpic",
+    name: "人教版六年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版"
+    ],
+    url: "/dicts/sunshuo/人教版六年级词汇_下_.json",
+    length: 36,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bqnzfg",
+    name: "人教版PEP一年级上(新版)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP一年级上_新版_.json",
+    length: 21,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "tprkl",
+    name: "人教版PEP一年级下(新版)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP一年级下_新版_.json",
+    length: 25,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "pzdie",
+    name: "人教版PEP二年级上(新版)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP二年级上_新版_.json",
+    length: 31,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "nmqei",
+    name: "人教版PEP二年级下(新版)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP二年级下_新版_.json",
+    length: 20,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "buihtz",
+    name: "人教版PEP三年级上(新版)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP三年级上_新版_.json",
+    length: 109,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "pwxai",
+    name: "人教版PEP三年级下(新版)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP三年级下_新版_.json",
+    length: 113,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "qtrtl",
+    name: "人教版PEP四年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP四年级上_新版_.json",
+    length: 117,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "mtarl",
+    name: "人教版PEP四年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP四年级下_新版_.json",
+    length: 111,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ynsju",
+    name: "人教版PEP三年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP三年级词汇_上_.json",
+    length: 64,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bkfnsa",
+    name: "人教版PEP三年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP三年级词汇_下_.json",
+    length: 71,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "tljmp",
+    name: "人教版PEP四年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP四年级词汇_上_.json",
+    length: 84,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "afyrg",
+    name: "人教版PEP四年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP四年级词汇_下_.json",
+    length: 104,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "lavdu",
+    name: "人教版PEP五年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP五年级词汇_上_.json",
+    length: 132,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "heuxc",
+    name: "人教版PEP五年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP五年级词汇_下_.json",
+    length: 152,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bqkpia",
+    name: "人教版PEP六年级词汇(上)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP六年级词汇_上_.json",
+    length: 146,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "dsicx",
+    name: "人教版PEP六年级词汇(下)",
+    description: "根据教材编写",
+    category: "人教版",
+    tags: [
+      "人教版PEP"
+    ],
+    url: "/dicts/sunshuo/人教版PEP六年级词汇_下_.json",
+    length: 85,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bukjmu",
+    name: "小学标准词汇(新课标)",
+    description: "根据《义务教育课程标准(二级词汇)》大纲编写，为小学阶段应掌握的单词",
+    category: "词汇合集",
+    tags: [
+      "小升初"
+    ],
+    url: "/dicts/sunshuo/小学标准词汇_新课标_.json",
+    length: 505,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ehyza",
+    name: "小学汇总词汇",
+    description: "小学汇总词汇",
+    category: "词汇合集",
+    tags: [
+      "小升初"
+    ],
+    url: "/dicts/sunshuo/小学汇总词汇.json",
+    length: 646,
+    language: "en",
+    languageCategory: "en"
+  },
+
+  {
+    id: "qplou",
+    name: "剑桥通用英语考试KET核心词汇",
+    description: "剑桥五级考试的第一级Key English Test，约A2/小学初中水平",
+    category: "国际版",
+    tags: [
+      "剑桥KET_PET_FCE"
+    ],
+    url: "/dicts/sunshuo/剑桥通用英语考试KET核心词汇.json",
+    length: 1689,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wgojq",
+    name: "剑桥通用英语考试PET核心词汇",
+    description: "剑桥五级考试的第二级Preliminary English Test，约B1/初高中水平",
+    category: "国际版",
+    tags: [
+      "剑桥KET_PET_FCE"
+    ],
+    url: "/dicts/sunshuo/剑桥通用英语考试PET核心词汇.json",
+    length: 2889,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zohvu",
+    name: "剑桥通用英语考试FCE核心词汇",
+    description: "剑桥五级考试的第三级First Certificate in English必须掌握的词汇（含常见词组），约B2水平",
+    category: "国际版",
+    tags: [
+      "剑桥KET_PET_FCE"
+    ],
+    url: "/dicts/sunshuo/剑桥通用英语考试FCE核心词汇.json",
+    length: 1291,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ecdhp",
+    name: "POWER UP 预备级",
+    description: "根据剑桥等级考试官方教材编写，适合6-12岁的学生，可用于备考YLE、KET、PET",
+    category: "国际版",
+    tags: [
+      "POWER_UP"
+    ],
+    url: "/dicts/sunshuo/POWER_UP_预备级.json",
+    length: 121,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rieca",
+    name: "POWER UP 第一册",
+    description: "根据剑桥等级考试官方教材编写，适合6-12岁的学生，可用于备考YLE、KET、PET",
+    category: "国际版",
+    tags: [
+      "POWER_UP"
+    ],
+    url: "/dicts/sunshuo/POWER_UP_第一册.json",
+    length: 245,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "iwzxx",
+    name: "POWER UP 第二册",
+    description: "根据剑桥等级考试官方教材编写，适合6-12岁的学生，可用于备考YLE、KET、PET",
+    category: "国际版",
+    tags: [
+      "POWER_UP"
+    ],
+    url: "/dicts/sunshuo/POWER_UP_第二册.json",
+    length: 284,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "fyvua",
+    name: "POWER UP 第三册",
+    description: "根据剑桥等级考试官方教材编写，适合6-12岁的学生，可用于备考YLE、KET、PET",
+    category: "国际版",
+    tags: [
+      "POWER_UP"
+    ],
+    url: "/dicts/sunshuo/POWER_UP_第三册.json",
+    length: 288,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zteou",
+    name: "POWER UP 第四册",
+    description: "根据剑桥等级考试官方教材编写，适合6-12岁的学生，可用于备考YLE、KET、PET",
+    category: "国际版",
+    tags: [
+      "POWER_UP"
+    ],
+    url: "/dicts/sunshuo/POWER_UP_第四册.json",
+    length: 310,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "kudce",
+    name: "POWER UP 第五册",
+    description: "根据剑桥等级考试官方教材编写，适合6-12岁的学生，可用于备考YLE、KET、PET",
+    category: "国际版",
+    tags: [
+      "POWER_UP"
+    ],
+    url: "/dicts/sunshuo/POWER_UP_第五册.json",
+    length: 212,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wmqbu",
+    name: "POWER UP 第六册",
+    description: "根据剑桥等级考试官方教材编写，适合6-12岁的学生，可用于备考YLE、KET、PET",
+    category: "国际版",
+    tags: [
+      "POWER_UP"
+    ],
+    url: "/dicts/sunshuo/POWER_UP_第六册.json",
+    length: 253,
+    language: "en",
+    languageCategory: "en"
+  },
+
+  {
+    id: "bvtmpx",
+    name: "培生PEIC Firstwords一级",
+    description: "根据《培生PEIC》 Firstwords一级词表编写，适合培生英语国际证书A1级别",
+    category: "其他版本",
+    tags: [
+      "培生PEIC"
+    ],
+    url: "/dicts/sunshuo/培生PEIC_Firstwords一级.json",
+    length: 517,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "qubbz",
+    name: "培生PEIC Springboard二级",
+    description: "根据《培生PEIC》Springboard二级词表编写",
+    category: "其他版本",
+    tags: [
+      "培生PEIC"
+    ],
+    url: "/dicts/sunshuo/培生PEIC_Springboard二级.json",
+    length: 935,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "mlyyq",
+    name: "培生PEIC Quickmarch三级",
+    description: "根据《培生PEIC》Quickmarch三级词表编写",
+    category: "其他版本",
+    tags: [
+      "培生PEIC"
+    ],
+    url: "/dicts/sunshuo/培生PEIC_Quickmarch三级.json",
+    length: 1183,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wjjie",
+    name: "培生PEIC Breakthrough四级",
+    description: "根据《培生PEIC》 Breakthrough四级词表编写",
+    category: "其他版本",
+    tags: [
+      "培生PEIC"
+    ],
+    url: "/dicts/sunshuo/培生PEIC_Breakthrough四级.json",
+    length: 1520,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "qrtyl",
+    name: "苏教版译林三年级上(新版)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林三年级上_新版_.json",
+    length: 127,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "sgbyq",
+    name: "苏教版译林三年级下(新版)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林三年级下_新版_.json",
+    length: 134,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wsofl",
+    name: "苏教版译林四年级上(新版)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林四年级上_新版_.json",
+    length: 153,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ojxcc",
+    name: "苏教版译林四年级下(新版)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林四年级下_新版_.json",
+    length: 131,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "buskg",
+    name: "苏教版译林一年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林一年级_上_.json",
+    length: 68,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcqzex",
+    name: "苏教版译林一年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林一年级_下_.json",
+    length: 68,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wdmwg",
+    name: "苏教版译林二年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林二年级_上_.json",
+    length: 75,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "svrgx",
+    name: "苏教版译林二年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林二年级_下_.json",
+    length: 68,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bsreic",
+    name: "苏教版译林三年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林三年级_上_.json",
+    length: 72,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "vttmg",
+    name: "苏教版译林三年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林三年级_下_.json",
+    length: 102,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "whspn",
+    name: "苏教版译林四年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林四年级_上_.json",
+    length: 121,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zxaps",
+    name: "苏教版译林四年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林四年级_下_.json",
+    length: 118,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "btiewl",
+    name: "苏教版译林五年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林五年级_上_.json",
+    length: 146,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "kmkie",
+    name: "苏教版译林五年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林五年级_下_.json",
+    length: 153,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "audkl",
+    name: "苏教版译林六年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林六年级_上_.json",
+    length: 164,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbeyrp",
+    name: "苏教版译林六年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "苏教版译林"
+    ],
+    url: "/dicts/sunshuo/苏教版译林六年级_下_.json",
+    length: 117,
+    language: "en",
+    languageCategory: "en"
+  },
+
+  {
+    id: "sjpvl",
+    name: "新交际一年级词汇(上)",
+    description: "根据24新版教材编写",
+    category: "外研",
+    tags: [
+      "外研社·新交际"
+    ],
+    url: "/dicts/sunshuo/外研社_新交际一年级词汇_上_.json",
+    length: 77,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bsbqwl",
+    name: "新交际一年级词汇(下)",
+    description: "根据24新版教材编写",
+    category: "外研",
+    tags: [
+      "外研社·新交际"
+    ],
+    url: "/dicts/sunshuo/外研社_新交际一年级词汇_下_.json",
+    length: 98,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "hcfns",
+    name: "新交际二年级词汇(上)",
+    description: "根据24新版教材编写",
+    category: "外研",
+    tags: [
+      "外研社·新交际"
+    ],
+    url: "/dicts/sunshuo/外研社_新交际二年级词汇_上_.json",
+    length: 60,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "vqoqi",
+    name: "新交际二年级词汇(下)",
+    description: "根据24新版教材编写",
+    category: "外研",
+    tags: [
+      "外研社·新交际"
+    ],
+    url: "/dicts/sunshuo/外研社_新交际二年级词汇_下_.json",
+    length: 60,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "kpgwq",
+    name: "新启航一年级词汇(上)",
+    description: "根据24新版教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_新启航一年级词汇_上_.json",
+    length: 72,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "jmevz",
+    name: "新启航一年级词汇(下)",
+    description: "根据24新版教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_新启航一年级词汇_下_.json",
+    length: 84,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ilktl",
+    name: "三年级起点·外研社三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/三年级起点_外研社三年级上_新版_.json",
+    length: 208,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "faxca",
+    name: "三年级起点·外研社三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/三年级起点_外研社三年级下_新版_.json",
+    length: 198,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "arbnn",
+    name: "三年级起点·外研社四年级上(新版)",
+    description: "根据新版教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/三年级起点_外研社四年级上_新版_.json",
+    length: 161,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "qbbzx",
+    name: "三年级起点·外研社四年级下(新版)",
+    description: "根据新版教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/三年级起点_外研社四年级下_新版_.json",
+    length: 139,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "qszcc",
+    name: "一年级起点一年级词汇(上)",
+    description: "根据教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_一年级起点一年级词汇_上_.json",
+    length: 128,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "eojoq",
+    name: "一年级起点一年级词汇(下)",
+    description: "根据教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_一年级起点一年级词汇_下_.json",
+    length: 110,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "mkchz",
+    name: "一年级起点二年级词汇(上)",
+    description: "根据教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_一年级起点二年级词汇_上_.json",
+    length: 112,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "brzxqn",
+    name: "一年级起点二年级词汇(下)",
+    description: "根据教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_一年级起点二年级词汇_下_.json",
+    length: 107,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ueaxa",
+    name: "一年级起点三年级词汇(上)",
+    description: "根据教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_一年级起点三年级词汇_上_.json",
+    length: 78,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "jrvee",
+    name: "一年级起点三年级词汇(下)",
+    description: "根据教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_一年级起点三年级词汇_下_.json",
+    length: 97,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wiytl",
+    name: "一年级起点四年级词汇(上)",
+    description: "根据教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_一年级起点四年级词汇_上_.json",
+    length: 105,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcvils",
+    name: "一年级起点四年级词汇(下)",
+    description: "根据教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_一年级起点四年级词汇_下_.json",
+    length: 78,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "hgzdl",
+    name: "一年级起点五年级词汇(上)",
+    description: "根据教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_一年级起点五年级词汇_上_.json",
+    length: 79,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "gfxxi",
+    name: "一年级起点五年级词汇(下)",
+    description: "根据教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_一年级起点五年级词汇_下_.json",
+    length: 69,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "oyabp",
+    name: "一年级起点六年级词汇(上)",
+    description: "根据教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_一年级起点六年级词汇_上_.json",
+    length: 58,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "buavuc",
+    name: "一年级起点六年级词汇(下)",
+    description: "根据教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研社_一年级起点六年级词汇_下_.json",
+    length: 88,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "kmnun",
+    name: "外研版·三年级起点三年级词汇(上)",
+    description: "根据外研社教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研版_三年级起点三年级词汇_上_.json",
+    length: 132,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "lqmbl",
+    name: "外研版·三年级起点三年级词汇(下)",
+    description: "根据外研社教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研版_三年级起点三年级词汇_下_.json",
+    length: 154,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rtmwg",
+    name: "外研版·三年级起点四年级词汇(上)",
+    description: "根据外研社教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研版_三年级起点四年级词汇_上_.json",
+    length: 144,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "elhtz",
+    name: "外研版·三年级起点四年级词汇(下)",
+    description: "根据外研社教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研版_三年级起点四年级词汇_下_.json",
+    length: 131,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcsgqe",
+    name: "外研版·三年级起点五年级词汇(上)",
+    description: "根据外研社教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研版_三年级起点五年级词汇_上_.json",
+    length: 148,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "oohes",
+    name: "外研版·三年级起点五年级词汇(下)",
+    description: "根据外研社教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研版_三年级起点五年级词汇_下_.json",
+    length: 144,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbvgyu",
+    name: "外研版·三年级起点六年级词汇(上)",
+    description: "根据外研社教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研版_三年级起点六年级词汇_上_.json",
+    length: 102,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbdboq",
+    name: "外研版·三年级起点六年级词汇(下)",
+    description: "根据外研社教材编写",
+    category: "外研",
+    tags: [
+      "外研社版"
+    ],
+    url: "/dicts/sunshuo/外研版_三年级起点六年级词汇_下_.json",
+    length: 104,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "xlznx",
+    name: "一年级起点·沪教版一年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "其他版本",
+    tags: [
+      "沪教版"
+    ],
+    url: "/dicts/sunshuo/一年级起点_沪教版一年级上_新版_.json",
+    length: 59,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "fovan",
+    name: "一年级起点·沪教版一年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "其他版本",
+    tags: [
+      "沪教版"
+    ],
+    url: "/dicts/sunshuo/一年级起点_沪教版一年级下_新版_.json",
+    length: 63,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "deqpn",
+    name: "一年级起点·沪教版二年级上(新版)",
+    description: "根据新版教材编写",
+    category: "其他版本",
+    tags: [
+      "沪教版"
+    ],
+    url: "/dicts/sunshuo/一年级起点_沪教版二年级上_新版_.json",
+    length: 43,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcsven",
+    name: "一年级起点·沪教版二年级下(新版)",
+    description: "根据新版教材编写",
+    category: "其他版本",
+    tags: [
+      "沪教版"
+    ],
+    url: "/dicts/sunshuo/一年级起点_沪教版二年级下_新版_.json",
+    length: 42,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "babhes",
+    name: "沪教版·三年级起点 三年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "沪教版"
+    ],
+    url: "/dicts/sunshuo/沪教版_三年级起点_三年级_上_.json",
+    length: 106,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bsyubg",
+    name: "沪教版·三年级起点 三年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "沪教版"
+    ],
+    url: "/dicts/sunshuo/沪教版_三年级起点_三年级_下_.json",
+    length: 113,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "nvihq",
+    name: "沪教版·三年级起点 四年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "沪教版"
+    ],
+    url: "/dicts/sunshuo/沪教版_三年级起点_四年级_上_.json",
+    length: 139,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "xhvse",
+    name: "沪教版·三年级起点 四年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "沪教版"
+    ],
+    url: "/dicts/sunshuo/沪教版_三年级起点_四年级_下_.json",
+    length: 151,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "fnwnn",
+    name: "沪教版·三年级起点 五年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "沪教版"
+    ],
+    url: "/dicts/sunshuo/沪教版_三年级起点_五年级_上_.json",
+    length: 163,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rrcvz",
+    name: "沪教版·三年级起点 五年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "沪教版"
+    ],
+    url: "/dicts/sunshuo/沪教版_三年级起点_五年级_下_.json",
+    length: 160,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bkupkp",
+    name: "沪教版·三年级起点 六年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "沪教版"
+    ],
+    url: "/dicts/sunshuo/沪教版_三年级起点_六年级_上_.json",
+    length: 134,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "xrifg",
+    name: "沪教版·三年级起点 六年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "沪教版"
+    ],
+    url: "/dicts/sunshuo/沪教版_三年级起点_六年级_下_.json",
+    length: 137,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wogyg",
+    name: "沪教牛津三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/沪教牛津三年级上_新版_.json",
+    length: 154,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ufyru",
+    name: "沪教牛津三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/沪教牛津三年级下_新版_.json",
+    length: 215,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "lwmjq",
+    name: "沪教牛津四年级上(新版)",
+    description: "根据新版教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/沪教牛津四年级上_新版_.json",
+    length: 146,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "mtsyp",
+    name: "沪教牛津四年级下(新版)",
+    description: "根据新版教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/沪教牛津四年级下_新版_.json",
+    length: 158,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "xghkl",
+    name: "上海版牛津(试用本)一年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津_试用本_一年级词汇_上_.json",
+    length: 50,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bkusps",
+    name: "上海版牛津(试用本)一年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津_试用本_一年级词汇_下_.json",
+    length: 47,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bjqhl",
+    name: "上海版牛津(试用本)二年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津_试用本_二年级词汇_上_.json",
+    length: 43,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "upmtq",
+    name: "上海版牛津(试用本)二年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津_试用本_二年级词汇_下_.json",
+    length: 54,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "eclqs",
+    name: "上海版牛津(试用本)三年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津_试用本_三年级词汇_上_.json",
+    length: 81,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ihzkg",
+    name: "上海版牛津(试用本)三年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津_试用本_三年级词汇_下_.json",
+    length: 62,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wdben",
+    name: "上海版牛津(试用本)四年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津_试用本_四年级词汇_上_.json",
+    length: 109,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcqcju",
+    name: "上海版牛津(试用本)四年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津_试用本_四年级词汇_下_.json",
+    length: 85,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "mrdne",
+    name: "上海版牛津(试用本)五年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津_试用本_五年级词汇_上_.json",
+    length: 87,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "broayp",
+    name: "上海版牛津(试用本)五年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津_试用本_五年级词汇_下_.json",
+    length: 106,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wuanc",
+    name: "上海版牛津一年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津一年级词汇_上_.json",
+    length: 49,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bvwvyq",
+    name: "上海版牛津一年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津一年级词汇_下_.json",
+    length: 48,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rdzdq",
+    name: "上海版牛津二年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津二年级词汇_上_.json",
+    length: 45,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "gqjhg",
+    name: "上海版牛津二年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津二年级词汇_下_.json",
+    length: 51,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "nikcn",
+    name: "上海版牛津三年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津三年级词汇_上_.json",
+    length: 136,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "btvxou",
+    name: "上海版牛津三年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津三年级词汇_下_.json",
+    length: 88,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bazctp",
+    name: "上海版牛津四年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津四年级词汇_上_.json",
+    length: 117,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bszzze",
+    name: "上海版牛津四年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津四年级词汇_下_.json",
+    length: 117,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "veruc",
+    name: "上海版牛津五年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津五年级词汇_上_.json",
+    length: 156,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "yoyxs",
+    name: "上海版牛津五年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津五年级词汇_下_.json",
+    length: 83,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bnsnc",
+    name: "上海版牛津六年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津六年级词汇_上_.json",
+    length: 200,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "grqei",
+    name: "上海版牛津六年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津六年级词汇_下_.json",
+    length: 262,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "kpedq",
+    name: "上海版牛津英语1-3年级词汇",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津英语1_3年级词汇.json",
+    length: 373,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "gssku",
+    name: "上海版牛津英语4-5年级词汇",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "上海版牛津"
+    ],
+    url: "/dicts/sunshuo/上海版牛津英语4_5年级词汇.json",
+    length: 392,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rdlge",
+    name: "Join In 剑桥英语三年级上(新版)",
+    description: "根据外研社24新版Join In教材编写",
+    category: "国际版",
+    tags: [
+      "Join_In版"
+    ],
+    url: "/dicts/sunshuo/Join_In_剑桥英语三年级上_新版_.json",
+    length: 269,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "vjnzs",
+    name: "Join In 剑桥英语三年级下(新版)",
+    description: "根据外研社24新版Join In教材编写",
+    category: "国际版",
+    tags: [
+      "Join_In版"
+    ],
+    url: "/dicts/sunshuo/Join_In_剑桥英语三年级下_新版_.json",
+    length: 226,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "owyoq",
+    name: "Join In 剑桥英语四年级上(新版)",
+    description: "根据新版教材编写",
+    category: "国际版",
+    tags: [
+      "Join_In版"
+    ],
+    url: "/dicts/sunshuo/Join_In_剑桥英语四年级上_新版_.json",
+    length: 228,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bsrkxe",
+    name: "Join In 剑桥英语四年级下(新版)",
+    description: "根据新版教材编写",
+    category: "国际版",
+    tags: [
+      "Join_In版"
+    ],
+    url: "/dicts/sunshuo/Join_In_剑桥英语四年级下_新版_.json",
+    length: 112,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "uxvyl",
+    name: "Join In 剑桥英语三年级词汇(上)",
+    description: "根据外研社Join In教材编写",
+    category: "国际版",
+    tags: [
+      "Join_In版"
+    ],
+    url: "/dicts/sunshuo/Join_In_剑桥英语三年级词汇_上_.json",
+    length: 195,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ijpgs",
+    name: "Join In 剑桥英语三年级词汇(下)",
+    description: "根据外研社Join In教材编写",
+    category: "国际版",
+    tags: [
+      "Join_In版"
+    ],
+    url: "/dicts/sunshuo/Join_In_剑桥英语三年级词汇_下_.json",
+    length: 139,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "weiue",
+    name: "Join In 剑桥英语四年级词汇(上)",
+    description: "根据外研社Join In教材编写",
+    category: "国际版",
+    tags: [
+      "Join_In版"
+    ],
+    url: "/dicts/sunshuo/Join_In_剑桥英语四年级词汇_上_.json",
+    length: 229,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcstmp",
+    name: "Join In 剑桥英语四年级词汇(下)",
+    description: "根据外研社Join In教材编写",
+    category: "国际版",
+    tags: [
+      "Join_In版"
+    ],
+    url: "/dicts/sunshuo/Join_In_剑桥英语四年级词汇_下_.json",
+    length: 133,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "brphrg",
+    name: "Join In 剑桥英语五年级词汇(上)",
+    description: "根据外研社Join In教材编写",
+    category: "国际版",
+    tags: [
+      "Join_In版"
+    ],
+    url: "/dicts/sunshuo/Join_In_剑桥英语五年级词汇_上_.json",
+    length: 175,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "scxop",
+    name: "Join In 剑桥英语五年级词汇(下)",
+    description: "根据外研社Join In教材编写",
+    category: "国际版",
+    tags: [
+      "Join_In版"
+    ],
+    url: "/dicts/sunshuo/Join_In_剑桥英语五年级词汇_下_.json",
+    length: 163,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "gyhzc",
+    name: "Join In 剑桥英语六年级词汇(上)",
+    description: "根据外研社Join In教材编写",
+    category: "国际版",
+    tags: [
+      "Join_In版"
+    ],
+    url: "/dicts/sunshuo/Join_In_剑桥英语六年级词汇_上_.json",
+    length: 176,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "oovqi",
+    name: "Join In 剑桥英语六年级词汇(下)",
+    description: "根据外研社Join In教材编写",
+    category: "国际版",
+    tags: [
+      "Join_In版"
+    ],
+    url: "/dicts/sunshuo/Join_In_剑桥英语六年级词汇_下_.json",
+    length: 122,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "dlmtz",
+    name: "北京版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京版三年级上_新版_.json",
+    length: 165,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zldpi",
+    name: "北京版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京版三年级下_新版_.json",
+    length: 146,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zioux",
+    name: "北京版四年级上(新版)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京版四年级上_新版_.json",
+    length: 135,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "aswlx",
+    name: "北京版四年级下(新版)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京版四年级下_新版_.json",
+    length: 128,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bnbwu",
+    name: "北京课改版一年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京课改版一年级词汇_上_.json",
+    length: 47,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "dfcea",
+    name: "北京课改版一年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京课改版一年级词汇_下_.json",
+    length: 52,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "lxzsx",
+    name: "北京课改版二年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京课改版二年级词汇_上_.json",
+    length: 78,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bqjjkl",
+    name: "北京课改版二年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京课改版二年级词汇_下_.json",
+    length: 79,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ubkgi",
+    name: "北京课改版三年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京课改版三年级词汇_上_.json",
+    length: 98,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bqfzxx",
+    name: "北京课改版三年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京课改版三年级词汇_下_.json",
+    length: 66,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bqbjru",
+    name: "北京课改版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京课改版四年级词汇_上_.json",
+    length: 66,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "mxvae",
+    name: "北京课改版四年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京课改版四年级词汇_下_.json",
+    length: 61,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "pcaus",
+    name: "北京课改版五年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京课改版五年级词汇_上_.json",
+    length: 69,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "sdvwu",
+    name: "北京课改版五年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京课改版五年级词汇_下_.json",
+    length: 64,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "fsjyz",
+    name: "北京课改版六年级词汇(上)",
+    description: "北京课改版六年级词汇（上）",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京课改版六年级词汇_上_.json",
+    length: 68,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zqbxn",
+    name: "北京课改版六年级词汇(下)",
+    description: "北京课改版六年级词汇（下）",
+    category: "小学英语",
+    tags: [
+      "北京版"
+    ],
+    url: "/dicts/sunshuo/北京课改版六年级词汇_下_.json",
+    length: 71,
+    language: "en",
+    languageCategory: "en"
+  },
+
+  {
+    id: "djbzx",
+    name: "粤人版三年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "粤人版"
+    ],
+    url: "/dicts/sunshuo/粤人版三年级词汇_上_.json",
+    length: 112,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "lemru",
+    name: "粤人版三年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "粤人版"
+    ],
+    url: "/dicts/sunshuo/粤人版三年级词汇_下_.json",
+    length: 81,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "brrzca",
+    name: "粤人版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "粤人版"
+    ],
+    url: "/dicts/sunshuo/粤人版四年级词汇_上_.json",
+    length: 92,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "utqfp",
+    name: "粤人版四年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "粤人版"
+    ],
+    url: "/dicts/sunshuo/粤人版四年级词汇_下_.json",
+    length: 70,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "iplac",
+    name: "粤人版五年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "粤人版"
+    ],
+    url: "/dicts/sunshuo/粤人版五年级词汇_上_.json",
+    length: 78,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wkdli",
+    name: "粤人版五年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "粤人版"
+    ],
+    url: "/dicts/sunshuo/粤人版五年级词汇_下_.json",
+    length: 68,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bvdawz",
+    name: "粤人版六年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "粤人版"
+    ],
+    url: "/dicts/sunshuo/粤人版六年级词汇_上_.json",
+    length: 88,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rhmyz",
+    name: "粤人版六年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "粤人版"
+    ],
+    url: "/dicts/sunshuo/粤人版六年级词汇_下_.json",
+    length: 103,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "vshwp",
+    name: "三年级起点·冀教版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/三年级起点_冀教版三年级上_新版_.json",
+    length: 92,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ewxac",
+    name: "三年级起点·冀教版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/三年级起点_冀教版三年级下_新版_.json",
+    length: 92,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bqwtlx",
+    name: "冀教版·三年级起点四年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_三年级起点四年级上_新版_.json",
+    length: 91,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcwmgx",
+    name: "冀教版·三年级起点四年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_三年级起点四年级下_新版_.json",
+    length: 92,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bsabjz",
+    name: "冀教版·三年级起点三年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_三年级起点三年级_上_.json",
+    length: 74,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "vbnou",
+    name: "冀教版·三年级起点三年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_三年级起点三年级_下_.json",
+    length: 76,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "jldza",
+    name: "冀教版·三年级起点四年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_三年级起点四年级_上_.json",
+    length: 77,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "kbydg",
+    name: "冀教版·三年级起点四年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_三年级起点四年级_下_.json",
+    length: 81,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbliix",
+    name: "冀教版·三年级起点五年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_三年级起点五年级_上_.json",
+    length: 79,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "xurqx",
+    name: "冀教版·三年级起点五年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_三年级起点五年级_下_.json",
+    length: 89,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcwlvl",
+    name: "冀教版·三年级起点六年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_三年级起点六年级_上_.json",
+    length: 66,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bccxx",
+    name: "冀教版·三年级起点六年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_三年级起点六年级_下_.json",
+    length: 51,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zdyrg",
+    name: "冀教版·一年级起点一年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_一年级起点一年级_上_.json",
+    length: 148,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "swhes",
+    name: "冀教版·一年级起点一年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_一年级起点一年级_下_.json",
+    length: 99,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "gjsii",
+    name: "冀教版·一年级起点二年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_一年级起点二年级_上_.json",
+    length: 47,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "oepkp",
+    name: "冀教版·一年级起点二年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_一年级起点二年级_下_.json",
+    length: 46,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "burfpc",
+    name: "冀教版·一年级起点三年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_一年级起点三年级_上_.json",
+    length: 106,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "jugqe",
+    name: "冀教版·一年级起点三年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_一年级起点三年级_下_.json",
+    length: 124,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "awoui",
+    name: "冀教版·一年级起点四年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_一年级起点四年级_上_.json",
+    length: 146,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "hpqdl",
+    name: "冀教版·一年级起点四年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_一年级起点四年级_下_.json",
+    length: 146,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "pknsa",
+    name: "冀教版·一年级起点五年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_一年级起点五年级_上_.json",
+    length: 125,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bsmqsi",
+    name: "冀教版·一年级起点五年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_一年级起点五年级_下_.json",
+    length: 116,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "cazcc",
+    name: "冀教版·一年级起点六年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_一年级起点六年级_上_.json",
+    length: 124,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ytchz",
+    name: "冀教版·一年级起点六年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "冀教版"
+    ],
+    url: "/dicts/sunshuo/冀教版_一年级起点六年级_下_.json",
+    length: 114,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bvdvhu",
+    name: "接力版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "接力版"
+    ],
+    url: "/dicts/sunshuo/接力版三年级上_新版_.json",
+    length: 111,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "iiddu",
+    name: "接力版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "接力版"
+    ],
+    url: "/dicts/sunshuo/接力版三年级下_新版_.json",
+    length: 125,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bokie",
+    name: "接力版四年级上(新版)",
+    description: "根据新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "接力版"
+    ],
+    url: "/dicts/sunshuo/接力版四年级上_新版_.json",
+    length: 103,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "dywfl",
+    name: "接力版词汇三年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "接力版"
+    ],
+    url: "/dicts/sunshuo/接力版词汇三年级_上_.json",
+    length: 60,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "lnjua",
+    name: "接力版词汇三年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "接力版"
+    ],
+    url: "/dicts/sunshuo/接力版词汇三年级_下_.json",
+    length: 92,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zucku",
+    name: "接力版词汇四年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "接力版"
+    ],
+    url: "/dicts/sunshuo/接力版词汇四年级_上_.json",
+    length: 134,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bqgule",
+    name: "接力版词汇四年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "接力版"
+    ],
+    url: "/dicts/sunshuo/接力版词汇四年级_下_.json",
+    length: 102,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "blwwpa",
+    name: "接力版词汇五年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "接力版"
+    ],
+    url: "/dicts/sunshuo/接力版词汇五年级_上_.json",
+    length: 105,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "aqxwl",
+    name: "接力版词汇五年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "接力版"
+    ],
+    url: "/dicts/sunshuo/接力版词汇五年级_下_.json",
+    length: 73,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "thxic",
+    name: "接力版词汇六年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "接力版"
+    ],
+    url: "/dicts/sunshuo/接力版词汇六年级_上_.json",
+    length: 59,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "iuirq",
+    name: "接力版词汇六年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "接力版"
+    ],
+    url: "/dicts/sunshuo/接力版词汇六年级_下_.json",
+    length: 44,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ettbl",
+    name: "三年级起点·科普版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "科普版"
+    ],
+    url: "/dicts/sunshuo/三年级起点_科普版三年级上_新版_.json",
+    length: 153,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bkolnc",
+    name: "三年级起点·科普版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "科普版"
+    ],
+    url: "/dicts/sunshuo/三年级起点_科普版三年级下_新版_.json",
+    length: 134,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zuduc",
+    name: "三年级起点·科普版四年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "科普版"
+    ],
+    url: "/dicts/sunshuo/三年级起点_科普版四年级上_新版_.json",
+    length: 134,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "jlfvu",
+    name: "三年级起点·科普版四年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "科普版"
+    ],
+    url: "/dicts/sunshuo/三年级起点_科普版四年级下_新版_.json",
+    length: 146,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wqvoz",
+    name: "科普版·三年级起点三年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "科普版"
+    ],
+    url: "/dicts/sunshuo/科普版_三年级起点三年级_上_.json",
+    length: 82,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bvmpzn",
+    name: "科普版·三年级起点三年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "科普版"
+    ],
+    url: "/dicts/sunshuo/科普版_三年级起点三年级_下_.json",
+    length: 88,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rwjen",
+    name: "科普版·三年级起点四年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "科普版"
+    ],
+    url: "/dicts/sunshuo/科普版_三年级起点四年级_上_.json",
+    length: 80,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "fjuju",
+    name: "科普版·三年级起点四年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "科普版"
+    ],
+    url: "/dicts/sunshuo/科普版_三年级起点四年级_下_.json",
+    length: 111,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "nexkg",
+    name: "科普版·三年级起点五年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "科普版"
+    ],
+    url: "/dicts/sunshuo/科普版_三年级起点五年级_上_.json",
+    length: 117,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "btrhpx",
+    name: "科普版·三年级起点五年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "科普版"
+    ],
+    url: "/dicts/sunshuo/科普版_三年级起点五年级_下_.json",
+    length: 116,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zmhes",
+    name: "科普版·三年级起点六年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "科普版"
+    ],
+    url: "/dicts/sunshuo/科普版_三年级起点六年级_上_.json",
+    length: 94,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "kvvse",
+    name: "科普版·三年级起点六年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "科普版"
+    ],
+    url: "/dicts/sunshuo/科普版_三年级起点六年级_下_.json",
+    length: 80,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ctcqs",
+    name: "天津新蕾版一年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "新蕾版"
+    ],
+    url: "/dicts/sunshuo/天津新蕾版一年级_上_.json",
+    length: 43,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bapwui",
+    name: "天津新蕾版一年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "新蕾版"
+    ],
+    url: "/dicts/sunshuo/天津新蕾版一年级_下_.json",
+    length: 37,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ykiyp",
+    name: "天津新蕾版二年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "新蕾版"
+    ],
+    url: "/dicts/sunshuo/天津新蕾版二年级_上_.json",
+    length: 34,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bkdtgc",
+    name: "天津新蕾版二年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "新蕾版"
+    ],
+    url: "/dicts/sunshuo/天津新蕾版二年级_下_.json",
+    length: 30,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "esrtz",
+    name: "湘鲁版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘鲁版"
+    ],
+    url: "/dicts/sunshuo/湘鲁版三年级上_新版_.json",
+    length: 122,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "btlnbg",
+    name: "湘鲁版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘鲁版"
+    ],
+    url: "/dicts/sunshuo/湘鲁版三年级下_新版_.json",
+    length: 123,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "brbvzi",
+    name: "湘鲁版四年级上(新版)",
+    description: "根据新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘鲁版"
+    ],
+    url: "/dicts/sunshuo/湘鲁版四年级上_新版_.json",
+    length: 147,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ipvfq",
+    name: "湘鲁版四年级下(新版)",
+    description: "根据新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘鲁版"
+    ],
+    url: "/dicts/sunshuo/湘鲁版四年级下_新版_.json",
+    length: 165,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbxpkp",
+    name: "湘鲁版三年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘鲁版"
+    ],
+    url: "/dicts/sunshuo/湘鲁版三年级词汇_上_.json",
+    length: 95,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "adlgs",
+    name: "湘鲁版三年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘鲁版"
+    ],
+    url: "/dicts/sunshuo/湘鲁版三年级词汇_下_.json",
+    length: 61,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "syihq",
+    name: "湘鲁版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘鲁版"
+    ],
+    url: "/dicts/sunshuo/湘鲁版四年级词汇_上_.json",
+    length: 86,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "hbubg",
+    name: "湘鲁版四年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘鲁版"
+    ],
+    url: "/dicts/sunshuo/湘鲁版四年级词汇_下_.json",
+    length: 106,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "dqzai",
+    name: "湘鲁版五年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘鲁版"
+    ],
+    url: "/dicts/sunshuo/湘鲁版五年级词汇_上_.json",
+    length: 157,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ogwnn",
+    name: "湘鲁版五年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘鲁版"
+    ],
+    url: "/dicts/sunshuo/湘鲁版五年级词汇_下_.json",
+    length: 131,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "butgyu",
+    name: "湘鲁版六年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘鲁版"
+    ],
+    url: "/dicts/sunshuo/湘鲁版六年级词汇_上_.json",
+    length: 122,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "qlvdu",
+    name: "湘鲁版六年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘鲁版"
+    ],
+    url: "/dicts/sunshuo/湘鲁版六年级词汇_下_.json",
+    length: 134,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wpeia",
+    name: "五四学制·鲁科版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "鲁科版"
+    ],
+    url: "/dicts/sunshuo/五四学制_鲁科版三年级上_新版_.json",
+    length: 185,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "jsica",
+    name: "五四学制·鲁科版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "鲁科版"
+    ],
+    url: "/dicts/sunshuo/五四学制_鲁科版三年级下_新版_.json",
+    length: 135,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "haytl",
+    name: "五四学制·鲁科版四年级上(新版)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "鲁科版"
+    ],
+    url: "/dicts/sunshuo/五四学制_鲁科版四年级上_新版_.json",
+    length: 134,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "sctua",
+    name: "五四学制·鲁科版四年级下(新版)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "鲁科版"
+    ],
+    url: "/dicts/sunshuo/五四学制_鲁科版四年级下_新版_.json",
+    length: 112,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "hzacx",
+    name: "鲁科版五四学制三年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "鲁科版"
+    ],
+    url: "/dicts/sunshuo/鲁科版五四学制三年级_上_.json",
+    length: 108,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bugxia",
+    name: "鲁科版五四学制三年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "鲁科版"
+    ],
+    url: "/dicts/sunshuo/鲁科版五四学制三年级_下_.json",
+    length: 104,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rbqaa",
+    name: "鲁科版五四学制四年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "鲁科版"
+    ],
+    url: "/dicts/sunshuo/鲁科版五四学制四年级_上_.json",
+    length: 101,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "flkse",
+    name: "鲁科版五四学制四年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "鲁科版"
+    ],
+    url: "/dicts/sunshuo/鲁科版五四学制四年级_下_.json",
+    length: 92,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "edpia",
+    name: "鲁科版五四学制五年级(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "鲁科版"
+    ],
+    url: "/dicts/sunshuo/鲁科版五四学制五年级_上_.json",
+    length: 140,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "mpicx",
+    name: "鲁科版五四学制五年级(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "鲁科版"
+    ],
+    url: "/dicts/sunshuo/鲁科版五四学制五年级_下_.json",
+    length: 136,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "pnuyp",
+    name: "川教版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "川教版"
+    ],
+    url: "/dicts/sunshuo/川教版三年级上_新版_.json",
+    length: 166,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "kdola",
+    name: "川教版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "川教版"
+    ],
+    url: "/dicts/sunshuo/川教版三年级下_新版_.json",
+    length: 173,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "iwjui",
+    name: "川教版四年级上(新版)",
+    description: "根据新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "川教版"
+    ],
+    url: "/dicts/sunshuo/川教版四年级上_新版_.json",
+    length: 165,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bspjes",
+    name: "川教版三年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "川教版"
+    ],
+    url: "/dicts/sunshuo/川教版三年级词汇_上_.json",
+    length: 115,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "vxlvz",
+    name: "川教版三年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "川教版"
+    ],
+    url: "/dicts/sunshuo/川教版三年级词汇_下_.json",
+    length: 131,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "jjynn",
+    name: "川教版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "川教版"
+    ],
+    url: "/dicts/sunshuo/川教版四年级词汇_上_.json",
+    length: 92,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "xfahq",
+    name: "川教版四年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "川教版"
+    ],
+    url: "/dicts/sunshuo/川教版四年级词汇_下_.json",
+    length: 81,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bkscbg",
+    name: "川教版五年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "川教版"
+    ],
+    url: "/dicts/sunshuo/川教版五年级词汇_上_.json",
+    length: 86,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "britol",
+    name: "川教版五年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "川教版"
+    ],
+    url: "/dicts/sunshuo/川教版五年级词汇_下_.json",
+    length: 77,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bhumq",
+    name: "川教版六年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "川教版"
+    ],
+    url: "/dicts/sunshuo/川教版六年级词汇_上_.json",
+    length: 82,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "euowg",
+    name: "川教版六年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "川教版"
+    ],
+    url: "/dicts/sunshuo/川教版六年级词汇_下_.json",
+    length: 113,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "kptss",
+    name: "陕旅版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "陕旅版"
+    ],
+    url: "/dicts/sunshuo/陕旅版三年级上_新版_.json",
+    length: 140,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ncxmq",
+    name: "陕旅版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "陕旅版"
+    ],
+    url: "/dicts/sunshuo/陕旅版三年级下_新版_.json",
+    length: 99,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "brtvpx",
+    name: "陕旅版四年级上(新版)",
+    description: "根据新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "陕旅版"
+    ],
+    url: "/dicts/sunshuo/陕旅版四年级上_新版_.json",
+    length: 139,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "brzohu",
+    name: "陕旅版四年级下(新版)",
+    description: "根据新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "陕旅版"
+    ],
+    url: "/dicts/sunshuo/陕旅版四年级下_新版_.json",
+    length: 129,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "mbhan",
+    name: "陕旅版三年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "陕旅版"
+    ],
+    url: "/dicts/sunshuo/陕旅版三年级词汇_上_.json",
+    length: 109,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "brmstu",
+    name: "陕旅版三年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "陕旅版"
+    ],
+    url: "/dicts/sunshuo/陕旅版三年级词汇_下_.json",
+    length: 95,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "unpze",
+    name: "陕旅版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "陕旅版"
+    ],
+    url: "/dicts/sunshuo/陕旅版四年级词汇_上_.json",
+    length: 93,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "iffhp",
+    name: "陕旅版四年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "陕旅版"
+    ],
+    url: "/dicts/sunshuo/陕旅版四年级词汇_下_.json",
+    length: 109,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wytcs",
+    name: "陕旅版五年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "陕旅版"
+    ],
+    url: "/dicts/sunshuo/陕旅版五年级词汇_上_.json",
+    length: 91,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcanni",
+    name: "陕旅版五年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "陕旅版"
+    ],
+    url: "/dicts/sunshuo/陕旅版五年级词汇_下_.json",
+    length: 128,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "sshpi",
+    name: "陕旅版六年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "陕旅版"
+    ],
+    url: "/dicts/sunshuo/陕旅版六年级词汇_上_.json",
+    length: 98,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ujxai",
+    name: "陕旅版六年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "陕旅版"
+    ],
+    url: "/dicts/sunshuo/陕旅版六年级词汇_下_.json",
+    length: 93,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "promg",
+    name: "闽教版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "闽教版"
+    ],
+    url: "/dicts/sunshuo/闽教版三年级上_新版_.json",
+    length: 179,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ozxpe",
+    name: "闽教版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "闽教版"
+    ],
+    url: "/dicts/sunshuo/闽教版三年级下_新版_.json",
+    length: 135,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bsggpn",
+    name: "闽教版四年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "闽教版"
+    ],
+    url: "/dicts/sunshuo/闽教版四年级上_新版_.json",
+    length: 110,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "chooz",
+    name: "闽教版四年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "闽教版"
+    ],
+    url: "/dicts/sunshuo/闽教版四年级下_新版_.json",
+    length: 99,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "gpsdz",
+    name: "闽教版三年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "闽教版"
+    ],
+    url: "/dicts/sunshuo/闽教版三年级词汇_上_.json",
+    length: 123,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "jchtz",
+    name: "闽教版三年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "闽教版"
+    ],
+    url: "/dicts/sunshuo/闽教版三年级词汇_下_.json",
+    length: 82,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "okpsc",
+    name: "闽教版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "闽教版"
+    ],
+    url: "/dicts/sunshuo/闽教版四年级词汇_上_.json",
+    length: 94,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "btzfkq",
+    name: "闽教版四年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "闽教版"
+    ],
+    url: "/dicts/sunshuo/闽教版四年级词汇_下_.json",
+    length: 88,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "cetgx",
+    name: "闽教版五年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "闽教版"
+    ],
+    url: "/dicts/sunshuo/闽教版五年级词汇_上_.json",
+    length: 93,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbrobl",
+    name: "闽教版五年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "闽教版"
+    ],
+    url: "/dicts/sunshuo/闽教版五年级词汇_下_.json",
+    length: 98,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "xsuxc",
+    name: "闽教版六年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "闽教版"
+    ],
+    url: "/dicts/sunshuo/闽教版六年级词汇_上_.json",
+    length: 101,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "yigna",
+    name: "闽教版六年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "闽教版"
+    ],
+    url: "/dicts/sunshuo/闽教版六年级词汇_下_.json",
+    length: 72,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "gcbli",
+    name: "辽师大版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "小学英语",
+    tags: [
+      "辽师大版"
+    ],
+    url: "/dicts/sunshuo/辽师大版三年级上_新版_.json",
+    length: 112,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "egnaa",
+    name: "辽师大版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "小学英语",
+    tags: [
+      "辽师大版"
+    ],
+    url: "/dicts/sunshuo/辽师大版三年级下_新版_.json",
+    length: 104,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "uuzqs",
+    name: "辽师大版四年级上(新版)",
+    description: "根据新版教材编写",
+    category: "小学英语",
+    tags: [
+      "辽师大版"
+    ],
+    url: "/dicts/sunshuo/辽师大版四年级上_新版_.json",
+    length: 131,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "snvui",
+    name: "辽师大版四年级下(新版)",
+    description: "根据新版教材编写",
+    category: "小学英语",
+    tags: [
+      "辽师大版"
+    ],
+    url: "/dicts/sunshuo/辽师大版四年级下_新版_.json",
+    length: 110,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbjgdq",
+    name: "辽师大版三年级词汇(上)",
+    description: "根据教材编写，单词乱序排列",
+    category: "小学英语",
+    tags: [
+      "辽师大版"
+    ],
+    url: "/dicts/sunshuo/辽师大版三年级词汇_上_.json",
+    length: 55,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "tbvux",
+    name: "辽师大版三年级词汇(下)",
+    description: "根据教材编写，单词乱序排列",
+    category: "小学英语",
+    tags: [
+      "辽师大版"
+    ],
+    url: "/dicts/sunshuo/辽师大版三年级词汇_下_.json",
+    length: 64,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcoofq",
+    name: "辽师大版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "辽师大版"
+    ],
+    url: "/dicts/sunshuo/辽师大版四年级词汇_上_.json",
+    length: 70,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "kxwpc",
+    name: "辽师大版四年级词汇(下)",
+    description: "根据教材编写，单词乱序排列",
+    category: "小学英语",
+    tags: [
+      "辽师大版"
+    ],
+    url: "/dicts/sunshuo/辽师大版四年级词汇_下_.json",
+    length: 101,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "hlpml",
+    name: "辽师大版五年级词汇(上)",
+    description: "根据教材编写，单词乱序排列",
+    category: "小学英语",
+    tags: [
+      "辽师大版"
+    ],
+    url: "/dicts/sunshuo/辽师大版五年级词汇_上_.json",
+    length: 109,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "pthga",
+    name: "辽师大版五年级词汇(下)",
+    description: "根据教材编写，单词乱序排列",
+    category: "小学英语",
+    tags: [
+      "辽师大版"
+    ],
+    url: "/dicts/sunshuo/辽师大版五年级词汇_下_.json",
+    length: 96,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "buwtae",
+    name: "辽师大版六年级词汇(上)",
+    description: "根据教材编写，单词乱序排列",
+    category: "小学英语",
+    tags: [
+      "辽师大版"
+    ],
+    url: "/dicts/sunshuo/辽师大版六年级词汇_上_.json",
+    length: 95,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "qdxqe",
+    name: "辽师大版六年级词汇(下)",
+    description: "根据教材编写，单词乱序排列",
+    category: "小学英语",
+    tags: [
+      "辽师大版"
+    ],
+    url: "/dicts/sunshuo/辽师大版六年级词汇_下_.json",
+    length: 51,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "orlfp",
+    name: "湘少版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘少版"
+    ],
+    url: "/dicts/sunshuo/湘少版三年级上_新版_.json",
+    length: 117,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "pjuqn",
+    name: "湘少版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘少版"
+    ],
+    url: "/dicts/sunshuo/湘少版三年级下_新版_.json",
+    length: 106,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbrizs",
+    name: "湘少版四年级上(新版)",
+    description: "根据新版教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘少版"
+    ],
+    url: "/dicts/sunshuo/湘少版四年级上_新版_.json",
+    length: 111,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "fqhvp",
+    name: "湘少版三年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘少版"
+    ],
+    url: "/dicts/sunshuo/湘少版三年级词汇_上_.json",
+    length: 101,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "miuzs",
+    name: "湘少版三年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘少版"
+    ],
+    url: "/dicts/sunshuo/湘少版三年级词汇_下_.json",
+    length: 91,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bsvogi",
+    name: "湘少版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘少版"
+    ],
+    url: "/dicts/sunshuo/湘少版四年级词汇_上_.json",
+    length: 87,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "vciln",
+    name: "湘少版四年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘少版"
+    ],
+    url: "/dicts/sunshuo/湘少版四年级词汇_下_.json",
+    length: 82,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "jztwu",
+    name: "湘少版五年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘少版"
+    ],
+    url: "/dicts/sunshuo/湘少版五年级词汇_上_.json",
+    length: 95,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "xopjg",
+    name: "湘少版五年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘少版"
+    ],
+    url: "/dicts/sunshuo/湘少版五年级词汇_下_.json",
+    length: 103,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcggsx",
+    name: "湘少版六年级词汇(上)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘少版"
+    ],
+    url: "/dicts/sunshuo/湘少版六年级词汇_上_.json",
+    length: 79,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bweog",
+    name: "湘少版六年级词汇(下)",
+    description: "根据教材编写",
+    category: "不常见版本",
+    tags: [
+      "湘少版"
+    ],
+    url: "/dicts/sunshuo/湘少版六年级词汇_下_.json",
+    length: 36,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "mdbqx",
+    name: "剑桥少儿英语预备级A词汇",
+    description: "根据教材编写",
+    category: "国际版",
+    tags: [
+      "剑桥少儿英语"
+    ],
+    url: "/dicts/sunshuo/剑桥少儿英语预备级A词汇.json",
+    length: 505,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bsqcvl",
+    name: "剑桥少儿英语预备级B词汇",
+    description: "根据教材编写",
+    category: "国际版",
+    tags: [
+      "剑桥少儿英语"
+    ],
+    url: "/dicts/sunshuo/剑桥少儿英语预备级B词汇.json",
+    length: 231,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "vrzei",
+    name: "剑桥少儿英语一级词汇",
+    description: "根据教材编写",
+    category: "国际版",
+    tags: [
+      "剑桥少儿英语"
+    ],
+    url: "/dicts/sunshuo/剑桥少儿英语一级词汇.json",
+    length: 327,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "jnjjz",
+    name: "剑桥少儿英语二级词汇",
+    description: "根据教材编写",
+    category: "国际版",
+    tags: [
+      "剑桥少儿英语"
+    ],
+    url: "/dicts/sunshuo/剑桥少儿英语二级词汇.json",
+    length: 444,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "xcklc",
+    name: "剑桥少儿英语三级词汇",
+    description: "根据教材编写",
+    category: "国际版",
+    tags: [
+      "剑桥少儿英语"
+    ],
+    url: "/dicts/sunshuo/剑桥少儿英语三级词汇.json",
+    length: 341,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "guzgn",
+    name: "教科版EEC三年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "教科版EEC"
+    ],
+    url: "/dicts/sunshuo/教科版EEC三年级_上_.json",
+    length: 169,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "oqqvq",
+    name: "教科版EEC三年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "教科版EEC"
+    ],
+    url: "/dicts/sunshuo/教科版EEC三年级_下_.json",
+    length: 124,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "btmkmg",
+    name: "教科版EEC四年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "教科版EEC"
+    ],
+    url: "/dicts/sunshuo/教科版EEC四年级_上_.json",
+    length: 94,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "cndjl",
+    name: "教科版EEC四年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "教科版EEC"
+    ],
+    url: "/dicts/sunshuo/教科版EEC四年级_下_.json",
+    length: 120,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bagbss",
+    name: "教科版EEC五年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "教科版EEC"
+    ],
+    url: "/dicts/sunshuo/教科版EEC五年级_上_.json",
+    length: 107,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "yylpe",
+    name: "教科版EEC五年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "教科版EEC"
+    ],
+    url: "/dicts/sunshuo/教科版EEC五年级_下_.json",
+    length: 153,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bunsc",
+    name: "教科版EEC六年级(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "教科版EEC"
+    ],
+    url: "/dicts/sunshuo/教科版EEC六年级_上_.json",
+    length: 126,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "blaydp",
+    name: "教科版EEC六年级(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "教科版EEC"
+    ],
+    url: "/dicts/sunshuo/教科版EEC六年级_下_.json",
+    length: 116,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bufogc",
+    name: "清华版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版三年级上_新版_.json",
+    length: 176,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bafres",
+    name: "清华版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版三年级下_新版_.json",
+    length: 164,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ltoce",
+    name: "清华版一年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版一年级词汇_上_.json",
+    length: 103,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bqpeop",
+    name: "清华版一年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版一年级词汇_下_.json",
+    length: 98,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "txtbq",
+    name: "清华版二年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版二年级词汇_上_.json",
+    length: 81,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "hjntg",
+    name: "清华版二年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版二年级词汇_下_.json",
+    length: 78,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "pefxn",
+    name: "清华版三年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版三年级词汇_上_.json",
+    length: 95,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bvsqfu",
+    name: "清华版三年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版三年级词汇_下_.json",
+    length: 93,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rcohu",
+    name: "清华版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版四年级词汇_上_.json",
+    length: 90,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "fyfqa",
+    name: "清华版四年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版四年级词汇_下_.json",
+    length: 94,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "vhgsi",
+    name: "清华版五年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版五年级词汇_上_.json",
+    length: 106,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bsgmyl",
+    name: "清华版五年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版五年级词汇_下_.json",
+    length: 105,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bkmdjq",
+    name: "清华版六年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版六年级词汇_上_.json",
+    length: 114,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "yqnec",
+    name: "清华版六年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "清华版"
+    ],
+    url: "/dicts/sunshuo/清华版六年级词汇_下_.json",
+    length: 113,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bvhrgx",
+    name: "北师大版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版三年级上_新版_.json",
+    length: 101,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "krcvq",
+    name: "北师大版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版三年级下_新版_.json",
+    length: 103,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "smahz",
+    name: "北师大版四年级上(新版)",
+    description: "根据新版教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版四年级上_新版_.json",
+    length: 131,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbyjpc",
+    name: "北师大版四年级下(新版)",
+    description: "根据新版教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版四年级下_新版_.json",
+    length: 98,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "xkgbu",
+    name: "北师大版一年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版一年级词汇_上_.json",
+    length: 67,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcdrua",
+    name: "北师大版一年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版一年级词汇_下_.json",
+    length: 64,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "stnac",
+    name: "北师大版二年级词汇",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版二年级词汇.json",
+    length: 143,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "btdken",
+    name: "北师大版三年级词汇",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版三年级词汇.json",
+    length: 149,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "yjlhl",
+    name: "北师大版四年级词汇",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版四年级词汇.json",
+    length: 198,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wlvgc",
+    name: "北师大版五年级词汇",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版五年级词汇.json",
+    length: 188,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bshaqe",
+    name: "北师大版六年级词汇",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版六年级词汇.json",
+    length: 174,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "btgpvz",
+    name: "北师大版·三年级起点三年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版_三年级起点三年级词汇_上_.json",
+    length: 67,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "chifu",
+    name: "北师大版·三年级起点三年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版_三年级起点三年级词汇_下_.json",
+    length: 77,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbvuaa",
+    name: "北师大版·三年级起点四年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版_三年级起点四年级词汇_上_.json",
+    length: 96,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zoeun",
+    name: "北师大版·三年级起点四年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版_三年级起点四年级词汇_下_.json",
+    length: 98,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zqwlx",
+    name: "北师大版·三年级起点五年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版_三年级起点五年级词汇_上_.json",
+    length: 90,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "kkryq",
+    name: "北师大版·三年级起点五年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版_三年级起点五年级词汇_下_.json",
+    length: 79,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "blmgwl",
+    name: "北师大版·三年级起点六年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版_三年级起点六年级词汇_上_.json",
+    length: 105,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "asobz",
+    name: "北师大版·三年级起点六年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "北师大版"
+    ],
+    url: "/dicts/sunshuo/北师大版_三年级起点六年级词汇_下_.json",
+    length: 45,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "yyygc",
+    name: "重大版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "其他版本",
+    tags: [
+      "重大版"
+    ],
+    url: "/dicts/sunshuo/重大版三年级上_新版_.json",
+    length: 143,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbnwmg",
+    name: "重大版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "其他版本",
+    tags: [
+      "重大版"
+    ],
+    url: "/dicts/sunshuo/重大版三年级下_新版_.json",
+    length: 111,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "okjfq",
+    name: "重大版四年级上(新版)",
+    description: "根据新版教材编写",
+    category: "其他版本",
+    tags: [
+      "重大版"
+    ],
+    url: "/dicts/sunshuo/重大版四年级上_新版_.json",
+    length: 118,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "qnprl",
+    name: "重大版四年级下(新版)",
+    description: "根据新版教材编写",
+    category: "其他版本",
+    tags: [
+      "重大版"
+    ],
+    url: "/dicts/sunshuo/重大版四年级下_新版_.json",
+    length: 90,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bsjnml",
+    name: "重大版三年级词汇(上)",
+    description: "重大版三年级词汇（上）",
+    category: "其他版本",
+    tags: [
+      "重大版"
+    ],
+    url: "/dicts/sunshuo/重大版三年级词汇_上_.json",
+    length: 91,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "qwhss",
+    name: "重大版三年级词汇(下)",
+    description: "根据重大版教材编写",
+    category: "其他版本",
+    tags: [
+      "重大版"
+    ],
+    url: "/dicts/sunshuo/重大版三年级词汇_下_.json",
+    length: 93,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ytopc",
+    name: "重大版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "重大版"
+    ],
+    url: "/dicts/sunshuo/重大版四年级词汇_上_.json",
+    length: 103,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ejsci",
+    name: "重大版四年级词汇(下)",
+    description: "根据重大版教材编写",
+    category: "其他版本",
+    tags: [
+      "重大版"
+    ],
+    url: "/dicts/sunshuo/重大版四年级词汇_下_.json",
+    length: 80,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ziuhz",
+    name: "重大版五年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "重大版"
+    ],
+    url: "/dicts/sunshuo/重大版五年级词汇_上_.json",
+    length: 86,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "duljp",
+    name: "重大版五年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "重大版"
+    ],
+    url: "/dicts/sunshuo/重大版五年级词汇_下_.json",
+    length: 70,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "meodp",
+    name: "重大版六年级词汇(上)",
+    description: "根据重大版教材编写",
+    category: "其他版本",
+    tags: [
+      "重大版"
+    ],
+    url: "/dicts/sunshuo/重大版六年级词汇_上_.json",
+    length: 68,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "lbels",
+    name: "重大版六年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "重大版"
+    ],
+    url: "/dicts/sunshuo/重大版六年级词汇_下_.json",
+    length: 105,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bkzepe",
+    name: "广州教科版三年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "其他版本",
+    tags: [
+      "广州教科版"
+    ],
+    url: "/dicts/sunshuo/广州教科版三年级上_新版_.json",
+    length: 147,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "azjpx",
+    name: "广州教科版三年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "其他版本",
+    tags: [
+      "广州教科版"
+    ],
+    url: "/dicts/sunshuo/广州教科版三年级下_新版_.json",
+    length: 140,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "khxsa",
+    name: "广州教科版四年级上(新版)",
+    description: "根据24新版教材编写",
+    category: "其他版本",
+    tags: [
+      "广州教科版"
+    ],
+    url: "/dicts/sunshuo/广州教科版四年级上_新版_.json",
+    length: 136,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bqffru",
+    name: "广州教科版四年级下(新版)",
+    description: "根据24新版教材编写",
+    category: "其他版本",
+    tags: [
+      "广州教科版"
+    ],
+    url: "/dicts/sunshuo/广州教科版四年级下_新版_.json",
+    length: 134,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "oshae",
+    name: "广州教科版三年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "广州教科版"
+    ],
+    url: "/dicts/sunshuo/广州教科版三年级词汇_上_.json",
+    length: 199,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bspjbz",
+    name: "广州教科版三年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "广州教科版"
+    ],
+    url: "/dicts/sunshuo/广州教科版三年级词汇_下_.json",
+    length: 132,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rseix",
+    name: "广州教科版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "广州教科版"
+    ],
+    url: "/dicts/sunshuo/广州教科版四年级词汇_上_.json",
+    length: 169,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "fpqrl",
+    name: "广州教科版四年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "广州教科版"
+    ],
+    url: "/dicts/sunshuo/广州教科版四年级词汇_下_.json",
+    length: 136,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ahree",
+    name: "广州教科版五年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "广州教科版"
+    ],
+    url: "/dicts/sunshuo/广州教科版五年级词汇_上_.json",
+    length: 109,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "nkmpa",
+    name: "广州教科版五年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "广州教科版"
+    ],
+    url: "/dicts/sunshuo/广州教科版五年级词汇_下_.json",
+    length: 135,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "cyouc",
+    name: "广州教科版六年级词汇(上)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "广州教科版"
+    ],
+    url: "/dicts/sunshuo/广州教科版六年级词汇_上_.json",
+    length: 129,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bltman",
+    name: "广州教科版六年级词汇(下)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "广州教科版"
+    ],
+    url: "/dicts/sunshuo/广州教科版六年级词汇_下_.json",
+    length: 144,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ilnmq",
+    name: "新世纪版一年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "新世纪版"
+    ],
+    url: "/dicts/sunshuo/新世纪版一年级词汇_上_.json",
+    length: 71,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rdpqn",
+    name: "新世纪版一年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "新世纪版"
+    ],
+    url: "/dicts/sunshuo/新世纪版一年级词汇_下_.json",
+    length: 78,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "lbwdp",
+    name: "新世纪版二年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "新世纪版"
+    ],
+    url: "/dicts/sunshuo/新世纪版二年级词汇_上_.json",
+    length: 82,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bktbyl",
+    name: "新世纪版二年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "新世纪版"
+    ],
+    url: "/dicts/sunshuo/新世纪版二年级词汇_下_.json",
+    length: 86,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "evvtl",
+    name: "新世纪版三年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "新世纪版"
+    ],
+    url: "/dicts/sunshuo/新世纪版三年级词汇_上_.json",
+    length: 117,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "brmhee",
+    name: "新世纪版三年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "新世纪版"
+    ],
+    url: "/dicts/sunshuo/新世纪版三年级词汇_下_.json",
+    length: 115,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "btdpix",
+    name: "新世纪版四年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "新世纪版"
+    ],
+    url: "/dicts/sunshuo/新世纪版四年级词汇_上_.json",
+    length: 146,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "cejns",
+    name: "新世纪版四年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "新世纪版"
+    ],
+    url: "/dicts/sunshuo/新世纪版四年级词汇_下_.json",
+    length: 103,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "blchuc",
+    name: "新世纪版五年级词汇(上)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "新世纪版"
+    ],
+    url: "/dicts/sunshuo/新世纪版五年级词汇_上_.json",
+    length: 116,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zfjdu",
+    name: "新世纪版五年级词汇(下)",
+    description: "根据教材编写",
+    category: "小学英语",
+    tags: [
+      "新世纪版"
+    ],
+    url: "/dicts/sunshuo/新世纪版五年级词汇_下_.json",
+    length: 87,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcfrtl",
+    name: "粤教沪外版三年级上(新版)",
+    description: "根据教材编写(",
+    category: "其他版本",
+    tags: [
+      "粤教沪外版"
+    ],
+    url: "/dicts/sunshuo/粤教沪外版三年级上_新版_.json",
+    length: 153,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbwlsc",
+    name: "粤教沪外版三年级下(新版)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "粤教沪外版"
+    ],
+    url: "/dicts/sunshuo/粤教沪外版三年级下_新版_.json",
+    length: 145,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bsfrqi",
+    name: "粤教沪外版四年级上(新版)",
+    description: "根据教材编写",
+    category: "其他版本",
+    tags: [
+      "粤教沪外版"
+    ],
+    url: "/dicts/sunshuo/粤教沪外版四年级上_新版_.json",
+    length: 138,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ngngs",
+    name: "新概念英语词汇1(初阶)",
+    description: "词表依照教材顺序。适合零基础用户，配套教材可掌握入门（小学）程度的词汇。",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语词汇1_初阶_.json",
+    length: 867,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "btteai",
+    name: "新概念英语词汇2(实践与进步)",
+    description: "根据教材顺序排序",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语词汇2_实践与进步_.json",
+    length: 833,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "cvspn",
+    name: "新概念英语词汇3(培养技能)",
+    description: "根据教材顺序排序",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语词汇3_培养技能_.json",
+    length: 1046,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "baxmdu",
+    name: "新概念英语词汇4(流利英语)",
+    description: "根据教材顺序排序",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语词汇4_流利英语_.json",
+    length: 781,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "brenpe",
+    name: "新概念英语青少版词汇 入门A",
+    description: "根据教材词表编写",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语青少版词汇_入门A.json",
+    length: 95,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ufhqc",
+    name: "新概念英语青少版词汇 入门B",
+    description: "根据教材词表编写",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语青少版词汇_入门B.json",
+    length: 134,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "brtpec",
+    name: "新概念英语青少版词汇1A",
+    description: "新概念英语青少版1A",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语青少版词汇1A.json",
+    length: 377,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ixunx",
+    name: "新概念英语青少版词汇2A",
+    description: "新概念英语青少版词汇2A",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语青少版词汇2A.json",
+    length: 294,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "wmwhu",
+    name: "新概念英语青少版词汇2B",
+    description: "新概念英语青少版词汇2B",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语青少版词汇2B.json",
+    length: 266,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bvehqa",
+    name: "新概念英语青少版词汇3A",
+    description: "新概念英语青少版词汇3A",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语青少版词汇3A.json",
+    length: 308,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rjcsa",
+    name: "新概念英语青少版词汇3B",
+    description: "新概念英语青少版词汇3B",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语青少版词汇3B.json",
+    length: 192,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "krpus",
+    name: "新概念英语青少版词汇4A",
+    description: "新概念英语青少版4A",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语青少版词汇4A.json",
+    length: 517,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbnfli",
+    name: "新概念英语青少版词汇4B",
+    description: "新概念英语青少版4B",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语青少版词汇4B.json",
+    length: 455,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zcsfp",
+    name: "新概念英语青少版词汇5A",
+    description: "新概念英语青少版词汇5A",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语青少版词汇5A.json",
+    length: 361,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "blynac",
+    name: "新概念英语青少版词汇5B",
+    description: "新概念英语青少版词汇5B",
+    category: "小学英语",
+    tags: [
+      "新概念"
+    ],
+    url: "/dicts/sunshuo/新概念英语青少版词汇5B.json",
+    length: 333,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ixxca",
+    name: "基础1000词",
+    description: "根据《1000 Basic English Words》编写，适合零基础、备考KET/PET的同学",
+    category: "词汇合集",
+    tags: [
+      "1000词_2000词_4000词"
+    ],
+    url: "/dicts/sunshuo/基础1000词.json",
+    length: 961,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbpgci",
+    name: "核心2000词",
+    description: "根据《2000 Core English Words》编写，适合初、高中生，以及备考PET/FCE的同学",
+    category: "词汇合集",
+    tags: [
+      "1000词_2000词_4000词"
+    ],
+    url: "/dicts/sunshuo/核心2000词.json",
+    length: 1659,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "gjpbu",
+    name: "实用4000词",
+    description: "根据《4000 Essential English Words》编写，适合高中水平以上的同学",
+    category: "词汇合集",
+    tags: [
+      "1000词_2000词_4000词"
+    ],
+    url: "/dicts/sunshuo/实用4000词.json",
+    length: 3590,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcyxwq",
+    name: "Oxford Discover 第一册",
+    description: "根据《Oxford Discover》教师用书编写，适合6-12岁，备考KET/PET等剑桥考试的同学",
+    category: "国际版",
+    tags: [
+      "Oxford_Discover"
+    ],
+    url: "/dicts/sunshuo/Oxford_Discover_第一册.json",
+    length: 336,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "blpic",
+    name: "Oxford Discover 第二册",
+    description: "根据《Oxford Discover》教师用书编写，适合6-12岁，备考KET/PET等剑桥考试的同学",
+    category: "国际版",
+    tags: [
+      "Oxford_Discover"
+    ],
+    url: "/dicts/sunshuo/Oxford_Discover_第二册.json",
+    length: 353,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "lwtoz",
+    name: "Oxford Discover 第三册",
+    description: "根据《Oxford Discover》教师用书编写，适合6-12岁，备考KET/PET等剑桥考试的同学",
+    category: "国际版",
+    tags: [
+      "Oxford_Discover"
+    ],
+    url: "/dicts/sunshuo/Oxford_Discover_第三册.json",
+    length: 251,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bqinzn",
+    name: "Oxford Discover 第四册",
+    description: "根据《Oxford Discover》教师用书编写，适合6-12岁，备考KET/PET等剑桥考试的同学",
+    category: "国际版",
+    tags: [
+      "Oxford_Discover"
+    ],
+    url: "/dicts/sunshuo/Oxford_Discover_第四册.json",
+    length: 270,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "tjhua",
+    name: "Oxford Discover 第五册",
+    description: "根据《Oxford Discover》教师用书编写，适合6-12岁，备考KET/PET等剑桥考试的同学",
+    category: "国际版",
+    tags: [
+      "Oxford_Discover"
+    ],
+    url: "/dicts/sunshuo/Oxford_Discover_第五册.json",
+    length: 322,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "iksle",
+    name: "Oxford Discover 第六册",
+    description: "根据《Oxford Discover》教师用书编写，适合6-12岁，备考KET/PET等剑桥考试的同学",
+    category: "国际版",
+    tags: [
+      "Oxford_Discover"
+    ],
+    url: "/dicts/sunshuo/Oxford_Discover_第六册.json",
+    length: 342,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "irkxs",
+    name: "THiNK 预备",
+    description: "根据剑桥大学《THiNK》教材编写，适合10岁以上、备考剑桥英语考试的同学",
+    category: "国际版",
+    tags: [
+      "THiNK"
+    ],
+    url: "/dicts/sunshuo/THiNK_预备.json",
+    length: 317,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rnmvp",
+    name: "THiNK L1",
+    description: "根据剑桥大学《THiNK》教材编写，适合10岁以上、备考剑桥英语考试的同学",
+    category: "国际版",
+    tags: [
+      "THiNK"
+    ],
+    url: "/dicts/sunshuo/THiNK_L1.json",
+    length: 291,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "nybgi",
+    name: "THiNK L2",
+    description: "根据剑桥大学《THiNK》教材编写，适合10岁以上、备考剑桥英语考试的同学",
+    category: "国际版",
+    tags: [
+      "THiNK"
+    ],
+    url: "/dicts/sunshuo/THiNK_L2.json",
+    length: 280,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "btakbz",
+    name: "THiNK L3",
+    description: "根据剑桥大学《THiNK》教材编写，适合10岁以上、备考剑桥英语考试的同学",
+    category: "国际版",
+    tags: [
+      "THiNK"
+    ],
+    url: "/dicts/sunshuo/THiNK_L3.json",
+    length: 258,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bamaea",
+    name: "THiNK L4",
+    description: "根据剑桥大学《THiNK》教材编写，适合10岁以上、备考剑桥英语考试的同学",
+    category: "国际版",
+    tags: [
+      "THiNK"
+    ],
+    url: "/dicts/sunshuo/THiNK_L4.json",
+    length: 318,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bqrerl",
+    name: "THiNK L5",
+    description: "根据剑桥大学《THiNK》教材编写，适合10岁以上、备考剑桥英语考试的同学",
+    category: "国际版",
+    tags: [
+      "THiNK"
+    ],
+    url: "/dicts/sunshuo/THiNK_L5.json",
+    length: 283,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "nurqx",
+    name: "UNLOCK BS",
+    description: "根据《UNLOCK》BS词表编写",
+    category: "国际版",
+    tags: [
+      "UNLOCK"
+    ],
+    url: "/dicts/sunshuo/UNLOCK_BS.json",
+    length: 259,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bhxic",
+    name: "UNLOCK L1听说",
+    description: "根据《UNLOCK》L1听说词表编写",
+    category: "国际版",
+    tags: [
+      "UNLOCK"
+    ],
+    url: "/dicts/sunshuo/UNLOCK_L1听说.json",
+    length: 178,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "baabjz",
+    name: "UNLOCK L1读写",
+    description: "根据《UNLOCK》L1读写词表编写",
+    category: "国际版",
+    tags: [
+      "UNLOCK"
+    ],
+    url: "/dicts/sunshuo/UNLOCK_L1读写.json",
+    length: 182,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "mqvoz",
+    name: "UNLOCK L2听说",
+    description: "根据《UNLOCK》L2听说词表编写",
+    category: "国际版",
+    tags: [
+      "UNLOCK"
+    ],
+    url: "/dicts/sunshuo/UNLOCK_L2听说.json",
+    length: 176,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "euirq",
+    name: "UNLOCK L2读写",
+    description: "根据《UNLOCK》L2读写词表编写",
+    category: "国际版",
+    tags: [
+      "UNLOCK"
+    ],
+    url: "/dicts/sunshuo/UNLOCK_L2读写.json",
+    length: 155,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "okiyp",
+    name: "UNLOCK L3听说",
+    description: "根据《UNLOCK》L3听说词表编写",
+    category: "国际版",
+    tags: [
+      "UNLOCK"
+    ],
+    url: "/dicts/sunshuo/UNLOCK_L3听说.json",
+    length: 178,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "brmpzn",
+    name: "UNLOCK L3读写",
+    description: "根据《UNLOCK》L3读写词表编写",
+    category: "国际版",
+    tags: [
+      "UNLOCK"
+    ],
+    url: "/dicts/sunshuo/UNLOCK_L3读写.json",
+    length: 171,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "tivoq",
+    name: "UNLOCK L4听说",
+    description: "根据《UNLOCK》L4听说词表编写",
+    category: "国际版",
+    tags: [
+      "UNLOCK"
+    ],
+    url: "/dicts/sunshuo/UNLOCK_L4听说.json",
+    length: 144,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "iiqhq",
+    name: "UNLOCK L4读写",
+    description: "根据《UNLOCK》L4读写词表编写",
+    category: "国际版",
+    tags: [
+      "UNLOCK"
+    ],
+    url: "/dicts/sunshuo/UNLOCK_L4读写.json",
+    length: 205,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ankns",
+    name: "UNLOCK L5听说",
+    description: "根据《UNLOCK》L5听说词表编写",
+    category: "国际版",
+    tags: [
+      "UNLOCK"
+    ],
+    url: "/dicts/sunshuo/UNLOCK_L5听说.json",
+    length: 247,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "blcpsa",
+    name: "UNLOCK L5读写",
+    description: "根据《UNLOCK》L5读写词表编写",
+    category: "国际版",
+    tags: [
+      "UNLOCK"
+    ],
+    url: "/dicts/sunshuo/UNLOCK_L5读写.json",
+    length: 270,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "cgngs",
+    name: "新思维小学英语 1A",
+    description: "根据《新思维小学英语》1A词表编写",
+    category: "小学英语",
+    tags: [
+      "新思维"
+    ],
+    url: "/dicts/sunshuo/新思维小学英语_1A.json",
+    length: 88,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbteai",
+    name: "新思维小学英语 1B",
+    description: "根据《新思维小学英语》1B词表编写",
+    category: "小学英语",
+    tags: [
+      "新思维"
+    ],
+    url: "/dicts/sunshuo/新思维小学英语_1B.json",
+    length: 98,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zbrmp",
+    name: "新思维小学英语 2A",
+    description: "根据《新思维小学英语》2A词表编写",
+    category: "小学英语",
+    tags: [
+      "新思维"
+    ],
+    url: "/dicts/sunshuo/新思维小学英语_2A.json",
+    length: 73,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "qfhqc",
+    name: "新思维小学英语 2B",
+    description: "根据《新思维小学英语》2B词表编写",
+    category: "小学英语",
+    tags: [
+      "新思维"
+    ],
+    url: "/dicts/sunshuo/新思维小学英语_2B.json",
+    length: 127,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ftsvq",
+    name: "新思维小学英语 3A",
+    description: "根据《新思维小学英语》3A词表编写",
+    category: "小学英语",
+    tags: [
+      "新思维"
+    ],
+    url: "/dicts/sunshuo/新思维小学英语_3A.json",
+    length: 197,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "naoyz",
+    name: "新思维小学英语 3B",
+    description: "根据《新思维小学英语》3B词表编写",
+    category: "小学英语",
+    tags: [
+      "新思维"
+    ],
+    url: "/dicts/sunshuo/新思维小学英语_3B.json",
+    length: 178,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "jenpe",
+    name: "新思维小学英语 4A",
+    description: "根据《新思维小学英语》4A词表编写",
+    category: "小学英语",
+    tags: [
+      "新思维"
+    ],
+    url: "/dicts/sunshuo/新思维小学英语_4A.json",
+    length: 218,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcjrss",
+    name: "新思维小学英语 4B",
+    description: "根据《新思维小学英语》4B词表编写",
+    category: "小学英语",
+    tags: [
+      "新思维"
+    ],
+    url: "/dicts/sunshuo/新思维小学英语_4B.json",
+    length: 212,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bzbol",
+    name: "新思维小学英语 5A",
+    description: "根据《新思维小学英语》5A词表编写",
+    category: "小学英语",
+    tags: [
+      "新思维"
+    ],
+    url: "/dicts/sunshuo/新思维小学英语_5A.json",
+    length: 283,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ebczs",
+    name: "新思维小学英语 5B",
+    description: "根据《新思维小学英语》5B词表编写",
+    category: "小学英语",
+    tags: [
+      "新思维"
+    ],
+    url: "/dicts/sunshuo/新思维小学英语_5B.json",
+    length: 266,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "uvkfq",
+    name: "新思维小学英语 6A",
+    description: "根据《新思维小学英语》6A词表编写",
+    category: "小学英语",
+    tags: [
+      "新思维"
+    ],
+    url: "/dicts/sunshuo/新思维小学英语_6A.json",
+    length: 288,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ixxjg",
+    name: "新思维小学英语 6B",
+    description: "根据《新思维小学英语》6B词表编写",
+    category: "小学英语",
+    tags: [
+      "新思维"
+    ],
+    url: "/dicts/sunshuo/新思维小学英语_6B.json",
+    length: 220,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "lgkes",
+    name: "RAZ词表--AA",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__AA.json",
+    length: 427,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "uvbnn",
+    name: "RAZ词表--A",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__A.json",
+    length: 495,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rjlcx",
+    name: "RAZ词表--B",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__B.json",
+    length: 630,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ydktz",
+    name: "RAZ词表--C",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__C.json",
+    length: 766,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "vjefg",
+    name: "RAZ词表--D",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__D.json",
+    length: 688,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "quxju",
+    name: "RAZ词表--E",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__E.json",
+    length: 1120,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "mmvpx",
+    name: "RAZ词表--F",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__F.json",
+    length: 1034,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "jtumz",
+    name: "RAZ词表--G",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__G.json",
+    length: 1342,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zmbzx",
+    name: "RAZ词表--H",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__H.json",
+    length: 899,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbwzca",
+    name: "RAZ词表--I",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__I.json",
+    length: 1791,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ukgsi",
+    name: "RAZ词表--J",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__J.json",
+    length: 1002,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ygris",
+    name: "RAZ词表--K",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__K.json",
+    length: 509,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "akumq",
+    name: "RAZ词表--L",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__L.json",
+    length: 995,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zzowg",
+    name: "RAZ词表--M",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__M.json",
+    length: 555,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bssfkq",
+    name: "RAZ词表--N",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__N.json",
+    length: 1525,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "vutgx",
+    name: "RAZ词表--O",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__O.json",
+    length: 630,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcerxe",
+    name: "RAZ词表--P",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__P.json",
+    length: 867,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "boqaa",
+    name: "RAZ词表--Q",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__Q.json",
+    length: 896,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "clbmp",
+    name: "RAZ词表--R",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__R.json",
+    length: 1270,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ypzai",
+    name: "RAZ词表--S",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__S.json",
+    length: 685,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bkhjtz",
+    name: "RAZ词表--T",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__T.json",
+    length: 652,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "fwqps",
+    name: "RAZ词表--U",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__U.json",
+    length: 677,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "vfryq",
+    name: "RAZ词表--V",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__V.json",
+    length: 1080,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "xjeun",
+    name: "RAZ词表--W",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__W.json",
+    length: 722,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "brwhpx",
+    name: "RAZ词表--X",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__X.json",
+    length: 1018,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bcttgc",
+    name: "RAZ词表--Y",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__Y.json",
+    length: 1146,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "zpeyu",
+    name: "RAZ词表--Z",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__Z.json",
+    length: 830,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bbdmux",
+    name: "RAZ词表--Z1",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__Z1.json",
+    length: 1103,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "ojnkp",
+    name: "RAZ词表--Z2",
+    description: "精选RAZ系列重点词汇",
+    category: "词汇合集",
+    tags: [
+      "RAZ"
+    ],
+    url: "/dicts/sunshuo/RAZ词表__Z2.json",
+    length: 1386,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bblwmg",
+    name: "基础阅读核心200词",
+    description: "实体书Basic Reading 200 Key Words词汇",
+    category: "词汇合集",
+    tags: [
+      "200_400_800_1200词"
+    ],
+    url: "/dicts/sunshuo/基础阅读核心200词.json",
+    length: 191,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "blwubu",
+    name: "基础阅读核心400词",
+    description: "实体书Basic Reading 400 Key Words词汇",
+    category: "词汇合集",
+    tags: [
+      "200_400_800_1200词"
+    ],
+    url: "/dicts/sunshuo/基础阅读核心400词.json",
+    length: 239,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "clpac",
+    name: "基础阅读核心800词",
+    description: "实体书Basic Reading 800 Key Words词汇",
+    category: "词汇合集",
+    tags: [
+      "200_400_800_1200词"
+    ],
+    url: "/dicts/sunshuo/基础阅读核心800词.json",
+    length: 239,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "bkimen",
+    name: "基础阅读核心1200词",
+    description: "实体书Basic Reading 1200 Key Words词汇",
+    category: "词汇合集",
+    tags: [
+      "200_400_800_1200词"
+    ],
+    url: "/dicts/sunshuo/基础阅读核心1200词.json",
+    length: 284,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "rbxdl",
+    name: "Foundations",
+    description: "Reading Explorer系列词书",
+    category: "Reading_Explorer系列",
+    tags: [
+      "Reading_Explorer系列"
+    ],
+    url: "/dicts/sunshuo/Foundations.json",
+    length: 192,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "nuvce",
+    name: "RE Level 1",
+    description: "Reading Explorer系列词书",
+    category: "Reading_Explorer系列",
+    tags: [
+      "Reading_Explorer系列"
+    ],
+    url: "/dicts/sunshuo/RE_Level_1.json",
+    length: 240,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "mqmdg",
+    name: "RE Level 2",
+    description: "Reading Explorer系列词书",
+    category: "Reading_Explorer系列",
+    tags: [
+      "Reading_Explorer系列"
+    ],
+    url: "/dicts/sunshuo/RE_Level_2.json",
+    length: 239,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "brmzix",
+    name: "RE Level 3",
+    description: "Reading Explorer系列词书",
+    category: "Reading_Explorer系列",
+    tags: [
+      "Reading_Explorer系列"
+    ],
+    url: "/dicts/sunshuo/RE_Level_3.json",
+    length: 239,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "uorns",
+    name: "RE Level 4",
+    description: "Reading Explorer系列词书",
+    category: "Reading_Explorer系列",
+    tags: [
+      "Reading_Explorer系列"
+    ],
+    url: "/dicts/sunshuo/RE_Level_4.json",
+    length: 240,
+    language: "en",
+    languageCategory: "en"
+  },
+  {
+    id: "iglxi",
+    name: "RE Level 5",
+    description: "Reading Explorer系列词书",
+    category: "Reading_Explorer系列",
+    tags: [
+      "Reading_Explorer系列"
+    ],
+    url: "/dicts/sunshuo/RE_Level_5.json",
+    length: 241,
+    language: "en",
+    languageCategory: "en"
+  }
+]
+
 // 中国考试
 const chinaExam: DictionaryResource[] = [
-
-
-
   {
     id: 'san1',
     name: '三年级上',
@@ -167,4015 +6516,20 @@ const chinaExam: DictionaryResource[] = [
     length: 2607,
     language: 'en',
     languageCategory: 'en',
-  },
-  {
-    id: 'cet6',
-    name: 'CET-6',
-    description: '大学英语六级词库',
-    category: '中国考试',
-    tags: ['大学英语'],
-    url: '/dicts/CET6_T.json',
-    length: 2345,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'xinghuoqiaoji_4',
-    name: '四级巧记速记',
-    description: '四级巧记速记',
-    category: '中国考试',
-    tags: ['大学英语'],
-    url: '/dicts/xinghuoqiaoji_4.json',
-    length: 2522,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'xinghuoqiaoji_6',
-    name: '六级巧记速记',
-    description: '六级巧记速记',
-    category: '中国考试',
-    tags: ['大学英语'],
-    url: '/dicts/xinghuoqiaoji_6.json',
-    length: 7520,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'cet4-sub',
-    name: 'CET-4-Sub',
-    description: '单词的减法-四级',
-    category: '中国考试',
-    tags: ['大学英语'],
-    url: '/dicts/DanCiDeJianFa_4.json',
-    length: 1957,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'cet6-sub',
-    name: 'CET-6-Sub',
-    description: '单词的减法-六级',
-    category: '中国考试',
-    tags: ['大学英语'],
-    url: '/dicts/DanCiDeJianFa_6.json',
-    length: 1949,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'kaoyan',
-    name: '考研',
-    description: '研究生英语入学考试词库',
-    category: '中国考试',
-    tags: ['考研'],
-    url: '/dicts/KaoYan_3_T.json',
-    length: 3728,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'kaoyan_2024',
-    name: '考研 2024',
-    description: '研究生英语入学考试词库 2024',
-    category: '中国考试',
-    tags: ['考研'],
-    url: '/dicts/KaoYan_2024.json',
-    length: 3731,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'kaoyanshanguo_2023',
-    name: '考研闪过 2023',
-    description: '高中低频词2023',
-    category: '中国考试',
-    tags: ['考研'],
-    url: '/dicts/KaoYanShanGuo_2023.json',
-    length: 1771,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: '926',
-    name: '考研926词汇',
-    description: '926核心词汇',
-    category: '中国考试',
-    tags: ['考研'],
-    url: '/dicts/926.json',
-    length: 926,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'dancimimi_1',
-    name: '单词的秘密-英语一',
-    description: '单词的秘密英语（一）',
-    category: '中国考试',
-    tags: ['考研'],
-    url: '/dicts/DanCiDeMimi_1.json',
-    length: 5657,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'dancimimi_2',
-    name: '单词的秘密-英语二',
-    description: '单词的秘密英语（二）',
-    category: '中国考试',
-    tags: ['考研'],
-    url: '/dicts/DanCiDeMimi_2.json',
-    length: 3827,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: '2024HongBao T1',
-    name: '2024考研英语hongbaoshu(上)',
-    description: '2024考研英语hongbaoshu必考词（上）',
-    category: '中国考试',
-    tags: ['考研'],
-    url: '/dicts/2024HongBao_T1.json',
-    length: 997,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: '2024HongBao T2',
-    name: '2024考研英语hongbaoshu(下)',
-    description: '2024考研英语hongbaoshu必考词（下）',
-    category: '中国考试',
-    tags: ['考研'],
-    url: '/dicts/2024HongBao_T2.json',
-    length: 854,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'hongbaoshu-2026',
-    name: '2026考研英语 hongbaoshu',
-    description: '2026 考研词汇 (必考词+基础词+超纲词）',
-    category: '中国考试',
-    tags: ['考研'],
-    url: '/dicts/hongbaoshu-2026.json',
-    length: 4858,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'English_II',
-    name: '英语二单词书',
-    description: '考研英语二单词书',
-    category: '中国考试',
-    tags: ['考研'],
-    url: '/dicts/English_II.json',
-    length: 4559,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'kaoyanshanguo2025',
-    name: '考研 shanguo 2025',
-    description: '考研 shanguo 2025',
-    category: '中国考试',
-    tags: ['考研'],
-    url: '/dicts/kaoyanshanguo2025.json',
-    length: 2257,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'level4',
-    name: '专四',
-    description: '英语专业四级词库',
-    category: '中国考试',
-    tags: ['大学英语'],
-    url: '/dicts/Level4luan_2_T.json',
-    length: 4025,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'level8',
-    name: '专八',
-    description: '英语专业八级词库',
-    category: '中国考试',
-    tags: ['大学英语'],
-    url: '/dicts/Level8luan_2_T.json',
-    length: 12197,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'archVocabulary',
-    name: '建筑专业英语',
-    description: '大学建筑专业英语词汇',
-    category: '中国考试',
-    tags: ['专业英语'],
-    url: '/dicts/archVocabulary.json',
-    length: 630,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'itVocabulary',
-    name: '计算机专用英语',
-    description: '大学计算机专业英语词汇',
-    category: '中国考试',
-    tags: ['专业英语'],
-    url: '/dicts/itVocabulary.json',
-    length: 1665,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'pets3',
-    name: 'PETS',
-    description: '全国英语等级考试常考词汇',
-    category: '中国考试',
-    tags: ['PET'],
-    url: '/dicts/PETS_3.json',
-    length: 1942,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'pets3-2023',
-    name: 'PETS-2023',
-    description: '全国英语等级考试常考词汇',
-    category: '中国考试',
-    tags: ['PET'],
-    url: '/dicts/PETS3-2023.json',
-    length: 4449,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'self-study_English1',
-    name: '自考1800高频单词',
-    description: '自考1800高频单词',
-    category: '中国考试',
-    tags: ['自考英语二'],
-    url: '/dicts/self-study_English1.json',
-    length: 1800,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'self-study_English2',
-    name: '自考英语二高频悠悠单词',
-    description: '自考英语二高频悠悠单词',
-    category: '中国考试',
-    tags: ['自考英语二'],
-    url: '/dicts/self-study_English2.json',
-    length: 2181,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'self-study_English3',
-    name: '自考英语二完整单词',
-    description: '00015自考英语二完整单词书',
-    category: '中国考试',
-    tags: ['自考英语二'],
-    url: '/dicts/self-study_English3.json',
-    length: 4603,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'coca_20000',
-    name: 'COCA20000词',
-    description: 'COCA20000词',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/coca20000.json',
-    length: 20199,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: '4000_Essential_English_Words1',
-    name: 'Essential Words',
-    description: '4000 Essential English Words meaning',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/4000_Essential_English_Words-meaning.json',
-    length: 3600,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: '4000_Essential_English_Words2',
-    name: 'Essential Words',
-    description: '4000 Essential English Words sentence',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/4000_Essential_English_Words-sentence.json',
-    length: 3600,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'longman_communication_3000_words',
-    name: 'Longman Communication 3000',
-    description: 'Most frequent words in both spoken and written English',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/Longman_Communication_3000.json',
-    length: 3168,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'top_2000_English_Words',
-    name: 'Top 2000 words',
-    description: 'with highest frequency',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/top2000words.json',
-    length: 1867,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'top_1500_nouns_Words',
-    name: 'Top 1500 Nouns',
-    description: 'with highest frequency',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/Top1500NounWords.json',
-    length: 1525,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'top_1000_verb_Words',
-    name: 'Top 1000 Verbs',
-    description: 'with highest frequency',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/Top1000VerbWords.json',
-    length: 1011,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'top_500_Adj_Words',
-    name: 'Top 500 adj.',
-    description: 'with highest frequency',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/Top500AdjectiveWords.json',
-    length: 527,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'top_250_Adv_Words',
-    name: 'Top 250 adv.',
-    description: 'with highest frequency',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/Top250AdverbWords.json',
-    length: 255,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'top_60_Pronouns',
-    name: 'Top 60 pron.',
-    description: 'with highest frequency',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/Top60Pronouns.json',
-    length: 59,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'top_50_Prepositions',
-    name: 'Top 50 prep.',
-    description: 'with highest frequency',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/Top50Prepositions.json',
-    length: 46,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'suffix word',
-    name: 'suffix word',
-    description: 'common suffix',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/suffix_word.json',
-    length: 126,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'word roots1',
-    name: 'word roots1',
-    description: 'common roots',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/word_roots1.json',
-    length: 369,
-    language: 'en',
-    languageCategory: 'en',
-  },
-
-  {
-    id: 'adult self-study examination',
-    name: '专升本词汇',
-    description: '专升本词汇',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/adult-self-study-examination.json',
-    length: 3692,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'zhuan-cha-ben-ying-yu',
-    name: '专插本英语词汇',
-    description: '专插本英语词汇',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/zhuan-cha-ben.json',
-    length: 3217,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'zhuan-sheng-ben-xue-shi',
-    name: '专升本学士学位的英语',
-    description: '专升本学士学位的英语',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/xueshiyingyu.json',
-    length: 897,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Oxford5000',
-    name: '牛津5000词',
-    description: '牛津5000词',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/Oxford5000.json',
-    length: 5836,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Merriam_Webster_sVocabularyBuilder',
-    name: '韦氏词根词典',
-    description: '韦氏词根词典',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/Merriam_Webster_sVocabularyBuilder.json',
-    length: 1191,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'tingshuokaoshi',
-    name: '听说考试常见词汇',
-    description: '听说考试16个场景常见词汇量',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/tingshuokaoshi.json',
-    length: 557,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'TOEFL_ZhangHongYan',
-    name: 'ZhangHongYan的TOEFL词汇书',
-    description: 'ZhangHongYan的TOEFL词汇书-词以类记',
-    category: '国际考试',
-    tags: ['TOEFL'],
-    url: '/dicts/TOEFL_ZhangHongYan.json',
-    length: 4032,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: '2025KaoYanHongBaoShu',
-    name: '2025考研英语词汇hongbao书',
-    description: '2025考研英语词汇hongbao书',
-    category: '中国考试',
-    tags: ['考研'],
-    url: '/dicts/2025KaoYanHongBaoShu.json',
-    length: 6705,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: '3000_ClassRoom_English_Words',
-    name: '专升本3000词',
-    description: '专升本词汇',
-    category: '中国考试',
-    tags: ['大学英语'],
-    url: '/dicts/3000_ClassRoom_English_Words.json',
-    length: 2991,
-    language: 'en',
-    languageCategory: 'en',
-  },
-
-  {
-    id: 'frequently_used_words01',
-    name: '超频单词level 1',
-    description: '超频单词level 1',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/frequently_used_word01.json',
-    length: 679,
-    language: 'en',
-    languageCategory: 'en',
-  },
-
-  {
-    id: 'frequently_used_words03',
-    name: '超频单词level 2',
-    description: '超频单词level 2',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/frequently_used_word02.json',
-    length: 1040,
-    language: 'en',
-    languageCategory: 'en',
-  },
-
-  {
-    id: 'frequently_used_words03',
-    name: '超频单词level 3',
-    description: '超频单词level 3',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/frequently_used_word03.json',
-    length: 1435,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'roger',
-    name: "Roger's Words",
-    description: '学习、工作常用英语',
-    category: '英语词典',
-    tags: ['课外词汇'],
-    url: '/dicts/RogersWords.json',
-    length: 4174,
-    language: 'en',
-    languageCategory: 'en',
-  },
+  }
 ]
 
-// 国际考试
-const internationalExam: DictionaryResource[] = [
-  {
-    id: 'pet-2024',
-    name: 'PET-2024',
-    description: '剑桥英语 - 2024',
-    category: '国际考试',
-    tags: ['PET'],
-    url: '/dicts/pet-vacabulary-list-2024.json',
-    length: 1871,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'gmat',
-    name: 'GMAT',
-    description: 'GMAT 词库',
-    category: '国际考试',
-    tags: ['GMAT'],
-    url: '/dicts/GMAT_3_T.json',
-    length: 3047,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'gre',
-    name: 'GRE',
-    description: 'GRE 词库',
-    category: '国际考试',
-    tags: ['GRE'],
-    url: '/dicts/GRE_3_T.json',
-    length: 6515,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'gre1500',
-    name: 'GRE重点1500词-fen哥',
-    description: 'GRE & TEM8 重叠高频词汇',
-    category: '国际考试',
-    tags: ['GRE'],
-    url: '/dicts/GRE_1500.json',
-    length: 1533,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'gre3000',
-    name: 'GRE3000',
-    description: 'GRE3000 词库',
-    category: '国际考试',
-    tags: ['GRE'],
-    url: '/dicts/GRE3000_3_T.json',
-    length: 3041,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'GRE-computer-based-test',
-    name: 'GRE机经词汇',
-    description: 'GRE机经词汇',
-    category: '国际考试',
-    tags: ['GRE'],
-    url: '/dicts/GRE-computer-based-test.json',
-    length: 1451,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ZaiYaoNiMing_GRE3000',
-    name: '再要你命GRE3000',
-    description: '再要你命GRE3000词库-有词性新版',
-    category: '国际考试',
-    tags: ['GRE'],
-    url: '/dicts/ZaiYaoNiMing_GRE3000.json',
-    length: 3041,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'GRE_equivalent',
-    name: 'GRE等价词',
-    description: 'GRE等价词',
-    category: '国际考试',
-    tags: ['GRE'],
-    url: '/dicts/GRE_equivalent.json',
-    length: 827,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'GRE_ciyileiji',
-    name: 'GRE词以类记',
-    description: 'GRE词以类记',
-    category: '国际考试',
-    tags: ['GRE'],
-    url: '/dicts/gre-ciyileiji.json',
-    length: 8785,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  // {
-  //   id: 'biomedical-terms',
-  //   name: '生物医学专业英语词汇',
-  //   description: '生物医学专业英语词汇',
-  //   category: '专业词汇',
-  //   tags: ['生物'],
-  //   url: '/dicts/BIOmedical.json',
-  //   length: 560,
-  //   language: 'en',
-  //   languageCategory: 'en',
-  // },
-  {
-    id: 'IELTS_tinglichangjing',
-    name: '雅思听力场景词汇',
-    description: '雅思听力场景词汇',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS_tinglichangjing.json',
-    length: 1204,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ielts_disorder',
-    name: 'IELTS乱序完整版',
-    description: 'IELTS乱序完整版',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS_disorder.json',
-    length: 9389,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ielts_order',
-    name: 'IELTS顺序完整版',
-    description: 'IELTS顺序完整版',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS_order.json',
-    length: 9389,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ielts',
-    name: 'IELTS',
-    description: '雅思词库',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS_3_T.json',
-    length: 3575,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'heqiong',
-    name: 'heQiong雅思听力必考词汇',
-    description: '综合测试',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/HeQiong_IELTS.json',
-    length: 2529,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ieltsWang3',
-    name: '雅思wang C3',
-    description: '雅思听力特别名词语料库',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS_WANG_3.json',
-    length: 1135,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ieltsWang4',
-    name: '雅思wang C4',
-    description: '雅思听力形容词副词语料库',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS_WANG_4.json',
-    length: 346,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ieltsWang5',
-    name: '雅思wang C5',
-    description: '吞音连读混合训练语料库',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS_WANG_5.json',
-    length: 1569,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ieltsWang11',
-    name: '雅思wang C11',
-    description: '综合测试',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS_WANG_11.json',
-    length: 1738,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'DuckCircle_IELTS',
-    name: '鸭圈雅思核心词',
-    description: '鸭圈雅思核心词',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/DuckCircle_IELTS.json',
-    length: 2644,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTSVocabularyBible',
-    name: '雅思词汇真经',
-    description: '雅思词汇真经',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTSVocabularyBible.json',
-    length: 3673,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-807',
-    name: '雅思 wanglu 807',
-    description: '雅思 wanglu 807',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/ielts-807.json',
-    length: 4340,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ielts-real-high',
-    name: '雅思 real 词汇 高频',
-    description: '雅思 real 词汇（高频词汇）',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/ielts-real-high.json',
-    length: 524,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ielts-real-5',
-    name: '雅思 real 词汇 5',
-    description: '雅思 real 词汇 （5频词汇及变频）',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/ielts-real-5.json',
-    length: 183,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ielts-real-4',
-    name: '雅思 real 词汇 4',
-    description: '雅思 real 词汇 （4频词汇及变频）',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/ielts-real-4.json',
-    length: 201,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ielts-real-3',
-    name: '雅思 real 词汇 3',
-    description: '雅思 real 词汇 （3频词汇及变频）',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/ielts-real-3.json',
-    length: 256,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ielts-real-2',
-    name: '雅思 real 词汇 2',
-    description: '雅思 real 词汇 （2频词汇及变频）',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/ielts-real-2.json',
-    length: 402,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ielts-real-1',
-    name: '雅思 real 词汇 1',
-    description: '雅思 real 词汇 （1频词汇及变频）',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/ielts-real-1.json',
-    length: 737,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS9988wangyong',
-    name: '雅思9988wangyong',
-    description: '雅思9988wangyong',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS9988wangyong.json',
-    length: 3698,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTSKingLu807',
-    name: 'wanglu807雅思词汇听力第2版',
-    description: 'wanglu807雅思词汇听力第2版',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTSKingLu807.json',
-    length: 1916,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTSXDF7000',
-    name: '100个句子记完7000个雅思单词',
-    description: 'xdf 100个句子记完7000个雅思单词 词汇表',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS_XDF_7000.json',
-    length: 5567,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-oral-900',
-    name: '雅思口语 900 beta版',
-    description: '雅思口语 900 句, 需在 qwerty 设置中调小英语字体',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-oral-900.json',
-    length: 900,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task1',
-    name: 'xdf听力 雅思中级直通车 day1',
-    description: 'xdf听力 雅思中级直通车 day1',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task1.json',
-    length: 44,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task2',
-    name: 'xdf听力 雅思中级直通车 day2',
-    description: 'xdf听力 雅思中级直通车 day2',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task2.json',
-    length: 33,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task3',
-    name: 'xdf听力 雅思中级直通车 day3',
-    description: 'xdf听力 雅思中级直通车 day3',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task3.json',
-    length: 33,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task4',
-    name: 'xdf听力 雅思中级直通车 day4',
-    description: 'xdf听力 雅思中级直通车 day4',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task4.json',
-    length: 33,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task5',
-    name: 'xdf听力 雅思中级直通车 day5',
-    description: 'xdf听力 雅思中级直通车 day5',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task5.json',
-    length: 38,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task6',
-    name: 'xdf听力 雅思中级直通车 day6',
-    description: 'xdf听力 雅思中级直通车 day6',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task6.json',
-    length: 33,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task7',
-    name: 'xdf听力 雅思中级直通车 day7',
-    description: 'xdf听力 雅思中级直通车 day7',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task7.json',
-    length: 39,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task8',
-    name: 'xdf听力 雅思中级直通车 day8',
-    description: 'xdf听力 雅思中级直通车 day8',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task8.json',
-    length: 32,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task9',
-    name: 'xdf听力 雅思中级直通车 day9',
-    description: 'xdf听力 雅思中级直通车 day9',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task9.json',
-    length: 46,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task10',
-    name: 'xdf听力 雅思中级直通车 day10',
-    description: 'xdf听力 雅思中级直通车 day10',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task10.json',
-    length: 44,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task11',
-    name: 'xdf听力 雅思中级直通车 day11',
-    description: 'xdf听力 雅思中级直通车 day11',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task11.json',
-    length: 36,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task12',
-    name: 'xdf听力 雅思中级直通车 day12',
-    description: 'xdf听力 雅思中级直通车 day12',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task12.json',
-    length: 45,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task13',
-    name: 'xdf听力 雅思中级直通车 day13',
-    description: 'xdf听力 雅思中级直通车 day13',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task13.json',
-    length: 49,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task14',
-    name: 'xdf听力 雅思中级直通车 day14',
-    description: 'xdf听力 雅思中级直通车 day14',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task14.json',
-    length: 46,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task15',
-    name: 'xdf听力 雅思中级直通车 day15',
-    description: 'xdf听力 雅思中级直通车 day15',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task15.json',
-    length: 29,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task16',
-    name: 'xdf听力 雅思中级直通车 day16',
-    description: 'xdf听力 雅思中级直通车 day16',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task16.json',
-    length: 42,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task17',
-    name: 'xdf听力 雅思中级直通车 day17',
-    description: 'xdf听力 雅思中级直通车 day17',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task17.json',
-    length: 22,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task18',
-    name: 'xdf听力 雅思中级直通车 day18',
-    description: 'xdf听力 雅思中级直通车 day18',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task18.json',
-    length: 37,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-NeworientalDirect-Task19',
-    name: 'xdf听力 雅思中级直通车 day19',
-    description: 'xdf听力 雅思中级直通车 day19',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-NewOrientalDirect-Task19.json',
-    length: 26,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-1',
-    name: '雅思听力词汇18天 day1',
-    description: '雅思听力词汇18天 day1',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day1.json',
-    length: 74,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-2',
-    name: '雅思听力词汇18天 day2',
-    description: '雅思听力词汇18天 day2',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day2.json',
-    length: 77,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-3',
-    name: '雅思听力词汇18天 day3',
-    description: '雅思听力词汇18天 day3',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day3.json',
-    length: 77,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-4',
-    name: '雅思听力词汇18天 day4',
-    description: '雅思听力词汇18天 day4',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day4.json',
-    length: 73,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-5',
-    name: '雅思听力词汇18天 day5',
-    description: '雅思听力词汇18天 day5',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day5.json',
-    length: 76,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-6',
-    name: '雅思听力词汇18天 day6',
-    description: '雅思听力词汇18天 day6',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day6.json',
-    length: 77,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-7',
-    name: '雅思听力词汇18天 day7',
-    description: '雅思听力词汇18天 day7',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day7.json',
-    length: 75,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-8',
-    name: '雅思听力词汇18天 day8',
-    description: '雅思听力词汇18天 day8',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day8.json',
-    length: 76,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-9',
-    name: '雅思听力词汇18天 day9',
-    description: '雅思听力词汇18天 day9',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day9.json',
-    length: 76,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-10',
-    name: '雅思听力词汇18天 day10',
-    description: '雅思听力词汇18天 day10',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day10.json',
-    length: 33,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-11',
-    name: '雅思听力词汇18天 day11',
-    description: '雅思听力词汇18天 day11',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day11.json',
-    length: 52,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-12',
-    name: '雅思听力词汇18天 day12',
-    description: '雅思听力词汇18天 day12',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day12.json',
-    length: 77,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-13',
-    name: '雅思听力词汇18天 day13',
-    description: '雅思听力词汇18天 day13',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day13.json',
-    length: 78,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-14',
-    name: '雅思听力词汇18天 day14',
-    description: '雅思听力词汇18天 day14',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day14.json',
-    length: 76,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-15',
-    name: '雅思听力词汇18天 day15',
-    description: '雅思听力词汇18天 day15',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day15.json',
-    length: 77,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-16',
-    name: '雅思听力词汇18天 day16',
-    description: '雅思听力词汇18天 day16',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day16.json',
-    length: 77,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-17',
-    name: '雅思听力词汇18天 day17',
-    description: '雅思听力词汇18天 day17',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day17.json',
-    length: 46,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'IELTS-listening-18-days-18',
-    name: '雅思听力词汇18天 day18',
-    description: '雅思听力词汇18天 day18',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTS-listening-18days-day18.json',
-    length: 76,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'ket',
-    name: 'KET',
-    description: 'KET 2021单词',
-    category: '国际考试',
-    tags: ['KET'],
-    url: './dicts/ket2021.json',
-    length: 1147,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'sat',
-    name: 'SAT',
-    description: '美国 SAT 考试词库',
-    category: '国际考试',
-    tags: ['SAT'],
-    url: '/dicts/SAT_3_T.json',
-    length: 4464,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'SATen',
-    name: 'SAT en-en',
-    description: 'SAT英英',
-    category: '国际考试',
-    tags: ['SAT'],
-    url: '/dicts/SATen.json',
-    length: 2681,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'toefl',
-    name: 'TOEFL',
-    description: '托福考试常见词',
-    category: '国际考试',
-    tags: ['TOEFL'],
-    url: '/dicts/TOEFL_3_T.json',
-    length: 4264,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'bec2',
-    name: '商务英语',
-    description: '商务英语常见词',
-    category: '国际考试',
-    tags: ['BEC'],
-    url: '/dicts/BEC_2_T.json',
-    length: 2753,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'bec3',
-    name: 'BEC',
-    description: 'BEC考试常见词',
-    category: '国际考试',
-    tags: ['BEC'],
-    url: '/dicts/BEC_3_T.json',
-    length: 2825,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'PTE_junior',
-    name: 'PTE 基础词汇',
-    description: '',
-    category: '国际考试',
-    tags: ['PTE'],
-    url: '/dicts/PTE_junior.json',
-    length: 2651,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  // {
-  //   id: 'PTE_WFDgaopinci.json',
-  //   name: 'PTE WFD高频词汇',
-  //   description: 'WFD高频词汇从高到低，最低掌握350个',
-  //   category: '国际考试',
-  //   tags: ['PTE'],
-  //   url: '/dicts/PTE_WFDgaopinci.json',
-  //   length: 1175,
-  //   language: 'en',
-  //   languageCategory: 'en',
-  // },
-  {
-    id: 'PTE_senior',
-    name: 'PTE 高阶词汇',
-    description: '',
-    category: '国际考试',
-    tags: ['PTE'],
-    url: '/dicts/PTE_senior.json',
-    length: 3170,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'PTE_FIB_R_junior',
-    name: '阅读 FIB 基础机经词汇',
-    description: '',
-    category: '国际考试',
-    tags: ['PTE'],
-    url: '/dicts/PTE_FIB_R_junior.json',
-    length: 941,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'PTE_FIB_R_senior',
-    name: '阅读 FIB 高阶机经词汇',
-    description: '',
-    category: '国际考试',
-    tags: ['PTE'],
-    url: '/dicts/PTE_FIB_R_senior.json',
-    length: 1272,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'PTE_WFD',
-    name: 'WFD 机经词汇',
-    description: '',
-    category: '国际考试',
-    tags: ['PTE'],
-    url: '/dicts/PTE_WFD.json',
-    length: 1212,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'PTE_FIB_L',
-    name: '听力 FIB 机经词汇',
-    description: '',
-    category: '国际考试',
-    tags: ['PTE'],
-    url: '/dicts/PTE_FIB_L.json',
-    length: 646,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'PTE_Basic_apeuni',
-    name: 'PTE 基础词汇 xingji',
-    description: '',
-    category: '国际考试',
-    tags: ['PTE'],
-    url: '/dicts/PTE_Basic_apeuni.json',
-    length: 2652,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'PTE_Advanced_apeuni.json',
-    name: 'PTE 高阶词汇 xingji',
-    description: '',
-    category: '国际考试',
-    tags: ['PTE'],
-    url: '/dicts/PTE_Advanced_apeuni.json',
-    length: 3169,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'PTE_Read_apeuni.json',
-    name: 'PTE 阅读FIB机经词汇 xingji',
-    description: '',
-    category: '国际考试',
-    tags: ['PTE'],
-    url: '/dicts/PTE_Read_apeuni.json',
-    length: 630,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'PTE_Listening_apeuni.json',
-    name: 'PTE 听力FIB机经词汇 xingji',
-    description: '',
-    category: '国际考试',
-    tags: ['PTE'],
-    url: '/dicts/PTE_Listening_apeuni.json',
-    length: 674,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'TOEIC',
-    name: 'TOEIC 词汇',
-    description: '',
-    category: '国际考试',
-    tags: ['TOEIC'],
-    url: '/dicts/TOEIC.json',
-    length: 1694,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Duolingo_Vocabulary_B1',
-    name: '多邻国分级词汇B1',
-    description: '多邻国分级词汇B1',
-    category: '国际考试',
-    tags: ['CEFR'],
-    url: '/dicts/Duolingo_Vocabulary_B1.json',
-    length: 801,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Duolingo_Vocabulary_B2',
-    name: '多邻国分级词汇B2',
-    description: '多邻国分级词汇B2',
-    category: '国际考试',
-    tags: ['CEFR'],
-    url: '/dicts/Duolingo_Vocabulary_B2.json',
-    length: 1423,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Duolingo_Vocabulary_C1',
-    name: '多邻国分级词汇C1',
-    description: '多邻国分级词汇C1',
-    category: '国际考试',
-    tags: ['CEFR'],
-    url: '/dicts/Duolingo_Vocabulary_C1.json',
-    length: 1314,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Oxford3000',
-    name: '牛津3000词',
-    description: '牛津3000词',
-    category: '国际考试',
-    tags: ['牛津版'],
-    url: '/dicts/Oxford3000.json',
-    length: 1342,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Oxford5000',
-    name: '牛津5000词',
-    description: '牛津5000词',
-    category: '国际考试',
-    tags: ['牛津版'],
-    url: '/dicts/Oxford5000.json',
-    length: 5836,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'voa',
-    name: 'VOA 基础词库',
-    description: 'VOA 基础词库',
-    category: '国际考试',
-    tags: ['其他'],
-    url: '/dicts/voa.json',
-    length: 1505,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Common-Phrases-PTE-Unofficial',
-    name: 'PTE 常用短语 (非官方)',
-    description: 'PTE 常用短语',
-    category: '国际考试',
-    tags: ['PTE'],
-    url: '/dicts/Common-Phrases-PTE-Unofficial.json',
-    length: 274,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Common-Phrases-FCE-Unofficial',
-    name: 'FCE 常用短语 (非官方)',
-    description: 'FCE 常用短语',
-    category: '国际考试',
-    tags: ['FCE'],
-    url: '/dicts/Common-Phrases-FCE-Unofficial.json',
-    length: 438,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Categorized_TOEFL_Vocabulary_by_Zhanghongyan',
-    name: 'Categorized Vocab.',
-    description: '词以类记 TOEFL 2021 by ZhangHongYan (原书释义和助记; 单词序号)',
-    category: '国际考试',
-    tags: ['TOEFL'],
-    url: '/dicts/Categorized_TOEFL_Vocabulary_by_Zhanghongyan.json',
-    length: 4123,
-    language: 'en',
-    languageCategory: 'en',
-  },
-]
 
-// 青少儿英语
-const childrenEnglish: DictionaryResource[] = [
-  {
-    id: 'gaokao3500',
-    name: '高考 3500 词',
-    description: '高考常见词 3500',
-    category: '青少年英语',
-    tags: ['通用'],
-    url: '/dicts/GaoKao_3500.json',
-    length: 3893,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'gaokaozhentihexin',
-    name: '高考历年真题核心高频',
-    description: '高考历年真题核心高频',
-    category: '青少年英语',
-    tags: ['通用'],
-    url: '/dicts/GaoKaoZhenTiHeXinGaoPin.json',
-    length: 799,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'gaokao-yuedu-gaopin',
-    name: '高考英语阅读高频词汇',
-    description: '高考英语阅读高频词汇',
-    category: '青少年英语',
-    tags: ['通用'],
-    url: '/dicts/gaokao-yuedu-gaopin.json',
-    length: 688,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'zhongkaohexin',
-    name: '中考核心词',
-    description: '中考核心词',
-    category: '青少年英语',
-    tags: ['通用'],
-    url: '/dicts/ZhongKaoHeXin.json',
-    length: 2140,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'nce1',
-    name: '新概念英语-1',
-    description: '新概念英语第一册',
-    category: '青少年英语',
-    tags: ['新概念英语'],
-    url: '/dicts/NCE_1.json',
-    length: 900,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'nce2',
-    name: '新概念英语-2',
-    description: '新概念英语第二册',
-    category: '青少年英语',
-    tags: ['新概念英语'],
-    url: '/dicts/NCE_2.json',
-    length: 858,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'nce3',
-    name: '新概念英语-3',
-    description: '新概念英语第三册',
-    category: '青少年英语',
-    tags: ['新概念英语'],
-    url: '/dicts/NCE_3.json',
-    length: 1052,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'nce4',
-    name: '新概念英语-4',
-    description: '新概念英语第四册',
-    category: '青少年英语',
-    tags: ['新概念英语'],
-    url: '/dicts/NCE_4.json',
-    length: 784,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'nce-new-1',
-    name: '新概念英语(新版)-1',
-    description: '新概念英语新版第一册',
-    category: '青少年英语',
-    tags: ['新概念英语'],
-    url: '/dicts/nce-new-1.json',
-    length: 908,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'nce-new-2',
-    name: '新概念英语(新版)-2',
-    description: '新概念英语新版第二册',
-    category: '青少年英语',
-    tags: ['新概念英语'],
-    url: '/dicts/nce-new-2.json',
-    length: 862,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'nce-new-3',
-    name: '新概念英语(新版)-3',
-    description: '新概念英语新版第三册',
-    category: '青少年英语',
-    tags: ['新概念英语'],
-    url: '/dicts/nce-new-3.json',
-    length: 1062,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'nce-new-4',
-    name: '新概念英语(新版)-4',
-    description: '新概念英语新版第四册',
-    category: '青少年英语',
-    tags: ['新概念英语'],
-    url: '/dicts/nce-new-4.json',
-    length: 793,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'SHjuniormiddleOxford',
-    name: '上海初中牛津词汇',
-    description: '上海初中牛津词汇',
-    category: '青少年英语',
-    tags: ['牛津版'],
-    url: '/dicts/OxfordVocabulary_juniorMiddleSH.json',
-    length: 1270,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'pep-sl-yi1',
-    name: '人教版(新起点)一年级上',
-    description: '人教版一年级上册',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEP_SL_XiaoXue1_1_t.json',
-    length: 52,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'pep-sl-yi2',
-    name: '人教版(新起点)一年级下',
-    description: '人教版一年级下册',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEP_SL_XiaoXue1_2_t.json',
-    length: 45,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'pep-sl-er1',
-    name: '人教版(新起点)二年级上',
-    description: '人教版二年级上册',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEP_SL_XiaoXue2_1_t.json',
-    length: 54,
-    language: 'en',
-    languageCategory: 'en',
-  },
-
-  {
-    id: 'pep-sl-er2',
-    name: '人教版(新起点)二年级下',
-    description: '人教版二年级下册',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEP_SL_XiaoXue2_2_t.json',
-    length: 55,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'pep-sl-san1',
-    name: '人教版(新起点)三年级上',
-    description: '人教版三年级上册',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEP_SL_XiaoXue3_1_t.json',
-    length: 103,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'pep-sl-san2',
-    name: '人教版(新起点)三年级下',
-    description: '人教版三年级下册',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEP_SL_XiaoXue3_2_t.json',
-    length: 84,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'pep-sl-si1',
-    name: '人教版(新起点)四年级上',
-    description: '人教版四年级上册',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEP_SL_XiaoXue4_1_t.json',
-    length: 116,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'pep-sl-si2',
-    name: '人教版(新起点)四年级下',
-    description: '人教版四年级下册',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEP_SL_XiaoXue4_2_t.json',
-    length: 87,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'pep-sl-wu1',
-    name: '人教版(新起点)五年级上',
-    description: '人教版五年级上册',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEP_SL_XiaoXue5_1_t.json',
-    length: 66,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'pep-sl-wu2',
-    name: '人教版(新起点)五年级下',
-    description: '人教版五年级下册',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEP_SL_XiaoXue5_2_t.json',
-    length: 96,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'pep-sl-liu1',
-    name: '人教版(新起点)六年级上',
-    description: '人教版六年级上册',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEP_SL_XiaoXue6_1_t.json',
-    length: 102,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'pep-sl-liu2',
-    name: '人教版(新起点)六年级下',
-    description: '人教版六年级下册',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEP_SL_XiaoXue6_2_t.json',
-    length: 41,
-    language: 'en',
-    languageCategory: 'en',
-  },
-
-  {
-    id: 'renjiaogaozhong1',
-    name: '高中必修1',
-    description: '人教版高中必修1',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEPGaoZhong_1_T.json',
-    length: 311,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'renjiaogaozhong2',
-    name: '高中必修2',
-    description: '人教版高中必修2',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEPGaoZhong_2_T.json',
-    length: 319,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'renjiaogaozhong3',
-    name: '高中必修3',
-    description: '人教版高中必修3',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEPGaoZhong_3_T.json',
-    length: 366,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'renjiaogaozhong4',
-    name: '高中必修4',
-    description: '人教版高中必修4',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEPGaoZhong_4_T.json',
-    length: 307,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'renjiaogaozhong5',
-    name: '高中必修5',
-    description: '人教版高中必修5',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEPGaoZhong_5_T.json',
-    length: 357,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'renjiaogaozhong6',
-    name: '高中选修6',
-    description: '人教版高中选修6',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEPGaoZhong_6_T.json',
-    length: 391,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'renjiaogaozhong7',
-    name: '高中选修7',
-    description: '人教版高中选修7',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEPGaoZhong_7_T.json',
-    length: 384,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'renjiaogaozhong8',
-    name: '高中选修8',
-    description: '人教版高中选修8',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEPGaoZhong_8_T.json',
-    length: 420,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'renjiaogaozhong9',
-    name: '高中选修9',
-    description: '人教版高中选修9',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEPGaoZhong_9_T.json',
-    length: 352,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'renjiaogaozhong10',
-    name: '高中选修10',
-    description: '人教版高中选修10',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEPGaoZhong_10_T.json',
-    length: 361,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'renjiaogaozhong11',
-    name: '高中选修11',
-    description: '人教版高中选修11',
-    category: '青少年英语',
-    tags: ['人教版'],
-    url: '/dicts/PEPGaoZhong_11_T.json',
-    length: 309,
-    language: 'en',
-    languageCategory: 'en',
-  },
-
-  {
-    id: 'waiyan1',
-    name: '外研七年级上册',
-    description: '外研版七年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_1_T.json',
-    length: 629,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'new-waiyan1',
-    name: '新外研七年级上册',
-    description: '新外研版七年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/Newwaiyan7-1.json',
-    length: 294,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'new-waiyan2',
-    name: '新外研七年级下册',
-    description: '新外研版七年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/Newwaiyan7-2.json',
-    length: 306,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan2',
-    name: '外研七年级下册',
-    description: '外研版七年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_2_T.json',
-    length: 438,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan3',
-    name: '外研八年级上册',
-    description: '外研版八年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_3_T.json',
-    length: 320,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan4',
-    name: '外研八年级下册',
-    description: '外研版八年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_4_T.json',
-    length: 266,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan5',
-    name: '外研九年级上册',
-    description: '外研版九年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_5_T.json',
-    length: 381,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan6',
-    name: '外研九年级下册',
-    description: '外研版九年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_6_T.json',
-    length: 128,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan7',
-    name: '外研高中必修1',
-    description: '外研高中必修1',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheGaoZhong_1_T.json',
-    length: 411,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan8',
-    name: '外研高中必修2',
-    description: '外研高中必修2',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheGaoZhong_2_T.json',
-    length: 272,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan9',
-    name: '外研一年级上册',
-    description: '外研一年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_1-Volume-up.json',
-    length: 138,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan10',
-    name: '外研一年级下册',
-    description: '外研一年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_1-Volume-down.json',
-    length: 118,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan11',
-    name: '外研二年级上册',
-    description: '外研二年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_2-Volume-top.json',
-    length: 118,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan12',
-    name: '外研二年级下册',
-    description: '外研二年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_2-Volume-down.json',
-    length: 110,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan13',
-    name: '外研三年级上册',
-    description: '外研三年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_3-Volume-top.json',
-    length: 82,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan14',
-    name: '外研三年级下册',
-    description: '外研三年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_3-Volume-down.json',
-    length: 106,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan15',
-    name: '外研四年级上册',
-    description: '外研四年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_4-Volume-top.json',
-    length: 116,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan16',
-    name: '外研四年级下册',
-    description: '外研四年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_4-Volume-down.json',
-    length: 78,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan17',
-    name: '外研五年级上册',
-    description: '外研五年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_5-Volume-top.json',
-    length: 80,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan18',
-    name: '外研五年级下册',
-    description: '外研五年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_5-Volume-down.json',
-    length: 72,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan19',
-    name: '外研六年级上册',
-    description: '外研六年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_6-Volume-top.json',
-    length: 61,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan20',
-    name: '外研六年级下册',
-    description: '外研六年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/WaiYanSheChuZhong_6-Volume-down.json',
-    length: 91,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan3-1',
-    name: '外研新起点三年级上册',
-    description: '外研新起点三年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/waiyan-xin-3-1.json',
-    length: 134,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan3-2',
-    name: '外研新起点三年级下册',
-    description: '外研新起点三年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/waiyan-xin-3-2.json',
-    length: 156,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan4-1',
-    name: '外研新起点四年级上册',
-    description: '外研新起点四年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/waiyan-xin-4-1.json',
-    length: 144,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan4-2',
-    name: '外研新起点四年级下册',
-    description: '外研新起点四年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/waiyan-xin-4-2.json',
-    length: 134,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan5-1',
-    name: '外研新起点五年级上册',
-    description: '外研新起点五年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/waiyan-xin-5-1.json',
-    length: 152,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan5-2',
-    name: '外研新起点五年级下册',
-    description: '外研新起点五年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/waiyan-xin-5-2.json',
-    length: 147,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan6-1',
-    name: '外研新起点六年级上册',
-    description: '外研新起点六年级上册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/waiyan-xin-6-1.json',
-    length: 83,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'waiyan6-2',
-    name: '外研新起点六年级下册',
-    description: '外研新起点六年级下册',
-    category: '青少年英语',
-    tags: ['外研版'],
-    url: '/dicts/waiyan-xin-6-2.json',
-    length: 105,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'shanghai-6-2word',
-    name: '上海新教材六年级下',
-    description: '上海新教材六年级下',
-    category: '青少年英语',
-    tags: ['上海版'],
-    url: '/dicts/shanghai-6-2-word.json',
-    length: 274,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Yilin1',
-    name: '高中必修1',
-    description: '译林版高中必修1',
-    category: '青少年英语',
-    tags: ['译林版'],
-    url: './dicts/YiLin_1.json',
-    length: 276,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Yilin2',
-    name: '高中必修2',
-    description: '译林版高中必修2',
-    category: '青少年英语',
-    tags: ['译林版'],
-    url: './dicts/YiLin_2.json',
-    length: 297,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Yilin3',
-    name: '高中必修3',
-    description: '译林版高中必修3',
-    category: '青少年英语',
-    tags: ['译林版'],
-    url: './dicts/YiLin_3.json',
-    length: 295,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'beishi1',
-    name: '高中必修1',
-    description: '北师大版高中必修1',
-    category: '青少年英语',
-    tags: ['北师大'],
-    url: '/dicts/BeiShiGaoZhong_1_T.json',
-    length: 226,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'beishi2',
-    name: '高中必修2',
-    description: '北师大版高中必修2',
-    category: '青少年英语',
-    tags: ['北师大'],
-    url: '/dicts/BeiShiGaoZhong_2_T.json',
-    length: 244,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'beishi3',
-    name: '高中必修3',
-    description: '北师大版高中必修3',
-    category: '青少年英语',
-    tags: ['北师大'],
-    url: '/dicts/BeiShiGaoZhong_3_T.json',
-    length: 295,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'beishi4',
-    name: '高中必修4',
-    description: '北师大版高中必修4',
-    category: '青少年英语',
-    tags: ['北师大'],
-    url: '/dicts/BeiShiGaoZhong_4_T.json',
-    length: 336,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'beishi5',
-    name: '高中必修5',
-    description: '北师大版高中必修5',
-    category: '青少年英语',
-    tags: ['北师大'],
-    url: '/dicts/BeiShiGaoZhong_5_T.json',
-    length: 327,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'beishi6',
-    name: '高中选修6',
-    description: '北师大版高中选修6',
-    category: '青少年英语',
-    tags: ['北师大'],
-    url: '/dicts/BeiShiGaoZhong_6_T.json',
-    length: 271,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'beishi7',
-    name: '高中选修7',
-    description: '北师大版高中选修7',
-    category: '青少年英语',
-    tags: ['北师大'],
-    url: '/dicts/BeiShiGaoZhong_7_T.json',
-    length: 334,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'beishi8',
-    name: '高中选修8',
-    description: '北师大版高中选修8',
-    category: '青少年英语',
-    tags: ['北师大'],
-    url: '/dicts/BeiShiGaoZhong_8_T.json',
-    length: 364,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'beishi9',
-    name: '高中选修9',
-    description: '北师大版高中选修9',
-    category: '青少年英语',
-    tags: ['北师大'],
-    url: '/dicts/BeiShiGaoZhong_9_T.json',
-    length: 299,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'beishi10',
-    name: '高中选修10',
-    description: '北师大版高中选修10',
-    category: '青少年英语',
-    tags: ['北师大'],
-    url: '/dicts/BeiShiGaoZhong_10_T.json',
-    length: 267,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'beishi11',
-    name: '高中选修11',
-    description: '北师大版高中选修11',
-    category: '青少年英语',
-    tags: ['北师大'],
-    url: '/dicts/BeiShiGaoZhong_11_T.json',
-    length: 330,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'jijiao1',
-    name: '冀教 3 上',
-    description: '冀教版三年级起点三年级上',
-    category: '青少年英语',
-    tags: ['冀教版'],
-    url: '/dicts/jiJiao3-1.json',
-    length: 75,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'jijiao2',
-    name: '冀教 3 下',
-    description: '冀教版三年级起点三年级下',
-    category: '青少年英语',
-    tags: ['冀教版'],
-    url: '/dicts/jiJiao3-2.json',
-    length: 76,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'jijiao3',
-    name: '冀教 4 上',
-    description: '冀教版三年级起点四年级上',
-    category: '青少年英语',
-    tags: ['冀教版'],
-    url: '/dicts/jiJiao4-1.json',
-    length: 78,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'jijiao4',
-    name: '冀教 4 下',
-    description: '冀教版三年级起点四年级下',
-    category: '青少年英语',
-    tags: ['冀教版'],
-    url: '/dicts/jiJiao4-2.json',
-    length: 84,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'jijiao5',
-    name: '冀教 5 上',
-    description: '冀教版三年级起点五年级上',
-    category: '青少年英语',
-    tags: ['冀教版'],
-    url: '/dicts/jiJiao5-1.json',
-    length: 79,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'jijiao6',
-    name: '冀教 5 下',
-    description: '冀教版三年级起点五年级下',
-    category: '青少年英语',
-    tags: ['冀教版'],
-    url: '/dicts/jiJiao5-2.json',
-    length: 96,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'jijiao7',
-    name: '冀教 6 上',
-    description: '冀教版三年级起点六年级上',
-    category: '青少年英语',
-    tags: ['冀教版'],
-    url: '/dicts/jiJiao6-1.json',
-    length: 66,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'jijiao8',
-    name: '冀教 6 下',
-    description: '冀教版三年级起点六年级下',
-    category: '青少年英语',
-    tags: ['冀教版'],
-    url: '/dicts/jiJiao6-2.json',
-    length: 51,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'jijiao9',
-    name: '冀教 7 上',
-    description: '冀教版三年级起点七年级上',
-    category: '青少年英语',
-    tags: ['冀教版'],
-    url: '/dicts/jiJiao7-1.json',
-    length: 561,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'jijiao10',
-    name: '冀教 7 下',
-    description: '冀教版三年级起点七年级下',
-    category: '青少年英语',
-    tags: ['冀教版'],
-    url: '/dicts/jiJiao7-2.json',
-    length: 514,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'jijiao11',
-    name: '冀教 8 上',
-    description: '冀教版三年级起点八年级上',
-    category: '青少年英语',
-    tags: ['冀教版'],
-    url: '/dicts/jiJiao8-1.json',
-    length: 420,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'jijiao12',
-    name: '冀教 8 下',
-    description: '冀教版三年级起点八年级下',
-    category: '青少年英语',
-    tags: ['冀教版'],
-    url: '/dicts/jiJiao8-2.json',
-    length: 487,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'jijiao13',
-    name: '冀教 9 上',
-    description: '冀教版三年级起点九年级全册',
-    category: '青少年英语',
-    tags: ['冀教版'],
-    url: '/dicts/jiJiao9.json',
-    length: 636,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'BJJuniorHigh',
-    name: '北京初中',
-    description: '北京初中',
-    category: '青少年英语',
-    tags: ['其他'],
-    url: '/dicts/beijing_junior_high_school.json',
-    length: 1844,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel1',
-    name: 'EF-LEVEL-1',
-    description: 'EF等级1',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_1.json',
-    length: 297,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel2',
-    name: 'EF-LEVEL-2',
-    description: 'EF等级2',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_2.json',
-    length: 353,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel3',
-    name: 'EF-LEVEL-3',
-    description: 'EF等级3',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_3.json',
-    length: 172,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel4',
-    name: 'EF-LEVEL-4',
-    description: 'EF等级4',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_4.json',
-    length: 178,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel5',
-    name: 'EF-LEVEL-5',
-    description: 'EF等级5',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_5.json',
-    length: 172,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel6',
-    name: 'EF-LEVEL-6',
-    description: 'EF等级6',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_6.json',
-    length: 172,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel7',
-    name: 'EF-LEVEL-7',
-    description: 'EF等级7',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_7.json',
-    length: 171,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel8',
-    name: 'EF-LEVEL-8',
-    description: 'EF等级8',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_8.json',
-    length: 172,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel9',
-    name: 'EF-LEVEL-9',
-    description: 'EF等级9',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_9.json',
-    length: 165,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel10',
-    name: 'EF-LEVEL-10',
-    description: 'EF等级10',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_10.json',
-    length: 174,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel11',
-    name: 'EF-LEVEL-11',
-    description: 'EF等级11',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_11.json',
-    length: 176,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel12',
-    name: 'EF-LEVEL-12',
-    description: 'EF等级12',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_12.json',
-    length: 170,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel13',
-    name: 'EF-LEVEL-13',
-    description: 'EF等级13',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_13.json',
-    length: 172,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel14',
-    name: 'EF-LEVEL-14',
-    description: 'EF等级14',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_14.json',
-    length: 171,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel15',
-    name: 'EF-LEVEL-15',
-    description: 'EF等级15',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_15.json',
-    length: 168,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel16',
-    name: 'EF-LEVEL-16',
-    description: 'EF等级16',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_16.json',
-    length: 170,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  //Reading_Explorer系列
-  {
-    id: 'ReadingExplorer3',
-    name: 'Reading Explorer 3',
-    description: '词汇表来自Reading Explorer 3, Third Edition',
-    category: '青少年英语',
-    tags: ['其他'],
-    url: '/dicts/ReadingExplorer3.json',
-    length: 239,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Macmillan7000',
-    name: '麦克米伦7000',
-    description: '麦克米伦7000',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/Macmillan7000.json',
-    length: 6268,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  // RAZ 系列
-  {
-    id: 'raz-AA',
-    name: 'RAZ 分级阅读 AA',
-    description: 'RAZ 分级阅读 AA',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-AA.json',
-    length: 422,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-A',
-    name: 'RAZ 分级阅读 A',
-    description: 'RAZ 分级阅读 A',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-A.json',
-    length: 487,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-B',
-    name: 'RAZ 分级阅读 B',
-    description: 'RAZ 分级阅读 B',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-B.json',
-    length: 465,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-C',
-    name: 'RAZ 分级阅读 C',
-    description: 'RAZ 分级阅读 C',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-C.json',
-    length: 480,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-D',
-    name: 'RAZ 分级阅读 D',
-    description: 'RAZ 分级阅读 D',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-D.json',
-    length: 436,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-E',
-    name: 'RAZ 分级阅读 E',
-    description: 'RAZ 分级阅读 E',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-E.json',
-    length: 427,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-F',
-    name: 'RAZ 分级阅读 F',
-    description: 'RAZ 分级阅读 F',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-F.json',
-    length: 437,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-G',
-    name: 'RAZ 分级阅读 G',
-    description: 'RAZ 分级阅读 G',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-G.json',
-    length: 435,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-H',
-    name: 'RAZ 分级阅读 H',
-    description: 'RAZ 分级阅读 H',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-H.json',
-    length: 385,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-I',
-    name: 'RAZ 分级阅读 I',
-    description: 'RAZ 分级阅读 I',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-I.json',
-    length: 408,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-J',
-    name: 'RAZ 分级阅读 J',
-    description: 'RAZ 分级阅读 J',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-J.json',
-    length: 434,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-K',
-    name: 'RAZ 分级阅读 K',
-    description: 'RAZ 分级阅读 K',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-K.json',
-    length: 397,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-L',
-    name: 'RAZ 分级阅读 L',
-    description: 'RAZ 分级阅读 L',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-L.json',
-    length: 402,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-M',
-    name: 'RAZ 分级阅读 M',
-    description: 'RAZ 分级阅读 M',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-M.json',
-    length: 403,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-N',
-    name: 'RAZ 分级阅读 N',
-    description: 'RAZ 分级阅读 N',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-N.json',
-    length: 376,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-O',
-    name: 'RAZ 分级阅读 O',
-    description: 'RAZ 分级阅读 O',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-O.json',
-    length: 429,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-P',
-    name: 'RAZ 分级阅读 P',
-    description: 'RAZ 分级阅读 P',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-P.json',
-    length: 379,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-Q',
-    name: 'RAZ 分级阅读 Q',
-    description: 'RAZ 分级阅读 Q',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-Q.json',
-    length: 442,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-R',
-    name: 'RAZ 分级阅读 R',
-    description: 'RAZ 分级阅读 R',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-R.json',
-    length: 422,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-S',
-    name: 'RAZ 分级阅读 S',
-    description: 'RAZ 分级阅读 S',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-S.json',
-    length: 434,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-T',
-    name: 'RAZ 分级阅读 T',
-    description: 'RAZ 分级阅读 T',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-T.json',
-    length: 427,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-U',
-    name: 'RAZ 分级阅读 U',
-    description: 'RAZ 分级阅读 U',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-U.json',
-    length: 418,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-V',
-    name: 'RAZ 分级阅读 V',
-    description: 'RAZ 分级阅读 V',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-V.json',
-    length: 409,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-W',
-    name: 'RAZ 分级阅读 W',
-    description: 'RAZ 分级阅读 W',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-W.json',
-    length: 392,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-X',
-    name: 'RAZ 分级阅读 X',
-    description: 'RAZ 分级阅读 X',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-X.json',
-    length: 546,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-Y',
-    name: 'RAZ 分级阅读 Y',
-    description: 'RAZ 分级阅读 Y',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-Y.json',
-    length: 461,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-Z',
-    name: 'RAZ 分级阅读 Z',
-    description: 'RAZ 分级阅读 Z',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-Z.json',
-    length: 414,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-Z1',
-    name: 'RAZ 分级阅读 Z1',
-    description: 'RAZ 分级阅读 Z1',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-Z1.json',
-    length: 467,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-Z2',
-    name: 'RAZ 分级阅读 Z2',
-    description: 'RAZ 分级阅读 Z2',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-Z2.json',
-    length: 492,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'raz-all',
-    name: 'RAZ 分级阅读 所有词汇',
-    description: 'RAZ 分级阅读 所有词汇',
-    category: '青少年英语',
-    tags: ['RAZ'],
-    url: '/dicts/raz-all.json',
-    length: 5831,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'Cambridge_JOIN_IN',
-    name: '剑桥小学英语 JOIN IN',
-    description: '外研社和剑桥大学出版社依据《义务教育英语课程标准》要求联合为我国小学生开发的一套英语教材。',
-    category: '青少年英语',
-    tags: ['其他'],
-    url: '/dicts/Cambridge_JOIN_IN.json',
-    length: 1350,
-    language: 'en',
-    languageCategory: 'en',
-  },
-]
-
-// 编程字典
-const programming: DictionaryResource[] = [
-  {
-    id: 'coder',
-    name: 'Coder Dict',
-    description: '程序员常见单词词库',
-    category: '代码练习',
-    tags: ['通用'],
-    url: '/dicts/it-words.json',
-    length: 1700,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'childCode',
-    name: '少儿 Python',
-    description: '少儿 Python 常见词',
-    category: '代码练习',
-    tags: ['少儿编程', 'Python'],
-    url: '/dicts/Child_python_code.json',
-    length: 19,
-    language: 'en',
-    languageCategory: 'code',
-  },
-  {
-    id: 'childCode002',
-    name: '少儿 Python Turtle',
-    description: '少儿 Python Turtle 常见词',
-    category: '代码练习',
-    tags: ['少儿编程', 'Python'],
-    url: '/dicts/Child_python_turtle_code.json',
-    length: 27,
-    language: 'en',
-    languageCategory: 'code',
-  },
-  {
-    id: 'childCode003',
-    name: '少儿 C++',
-    description: '少儿 C++ 常见词',
-    category: '代码练习',
-    tags: ['少儿编程', 'C++'],
-    url: '/dicts/Child_cpp.json',
-    length: 39,
-    language: 'en',
-    languageCategory: 'code',
-  },
-  {
-    id: 'oi-xcpc',
-    name: 'OI / XCPC 竞赛词汇',
-    description: 'OI / XCPC 竞赛词汇',
-    category: '代码练习',
-    tags: ['C++'],
-    url: '/dicts/OI_XCPC.json',
-    length: 195,
-    language: 'en',
-    languageCategory: 'code',
-  },
-  {
-    id: 'childCode004',
-    name: 'Arduino',
-    description: 'Arduino常见词',
-    category: '代码练习',
-    tags: ['少儿编程', 'Arduino'],
-    url: '/dicts/arduino_keywords.json',
-    length: 78,
-    language: 'en',
-    languageCategory: 'code',
-  },
-  {
-    id: 'jsArray',
-    name: 'JS: Array',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['JavaScript'],
-    url: '/dicts/js-array.json',
-    length: 36,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'jsDate',
-    name: 'JS: Date',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['JavaScript'],
-    url: '/dicts/js-date.json',
-    length: 34,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'jsGlobal',
-    name: 'JS: Global',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['JavaScript'],
-    url: '/dicts/js-global.json',
-    length: 9,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'jsMapSet',
-    name: 'JS: Map & Set',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['JavaScript'],
-    url: '/dicts/js-map-set.json',
-    length: 16,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'jsMath',
-    name: 'JS: Math',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['JavaScript'],
-    url: '/dicts/js-math.json',
-    length: 38,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'jsNumber',
-    name: 'JS: Number',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['JavaScript'],
-    url: '/dicts/js-number.json',
-    length: 22,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'jsObject',
-    name: 'JS: Object',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['JavaScript'],
-    url: '/dicts/js-object.json',
-    length: 37,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'jsPromise',
-    name: 'JS: Promise',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['JavaScript'],
-    url: '/dicts/js-promise.json',
-    length: 9,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'jsString',
-    name: 'JS: String',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['JavaScript'],
-    url: '/dicts/js-string.json',
-    length: 32,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'python-builtin',
-    name: 'Python: Built-in',
-    description: 'Python Built-in API',
-    category: '代码练习',
-    tags: ['Python'],
-    url: '/dicts/python-builtin.json',
-    length: 65,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'python-array',
-    name: 'Python: array',
-    description: 'Python array API ',
-    category: '代码练习',
-    tags: ['Python'],
-    url: '/dicts/python-array.json',
-    length: 11,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'python-date',
-    name: 'Python: date',
-    description: 'Python date API ',
-    category: '代码练习',
-    tags: ['Python'],
-    url: '/dicts/python-date.json',
-    length: 39,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'python-file',
-    name: 'Python: file',
-    description: 'Python file API ',
-    category: '代码练习',
-    tags: ['Python'],
-    url: '/dicts/python-file.json',
-    length: 21,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'python-class',
-    name: 'Python: class',
-    description: 'Python class API ',
-    category: '代码练习',
-    tags: ['Python'],
-    url: '/dicts/python-class.json',
-    length: 13,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'python-set',
-    name: 'Python: set',
-    description: 'Python set API ',
-    category: '代码练习',
-    tags: ['Python'],
-    url: '/dicts/python-set.json',
-    length: 29,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'python-math',
-    name: 'Python: math',
-    description: 'Python math API ',
-    category: '代码练习',
-    tags: ['Python'],
-    url: '/dicts/python-math.json',
-    length: 37,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'python-string',
-    name: 'Python: string',
-    description: 'Python string API ',
-    category: '代码练习',
-    tags: ['Python'],
-    url: '/dicts/python-string.json',
-    length: 40,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'python-system',
-    name: 'Python: system',
-    description: 'Python system API ',
-    category: '代码练习',
-    tags: ['Python'],
-    url: '/dicts/python-sys.json',
-    length: 24,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'javeArrayList',
-    name: 'Java: ArrayList',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['Java'],
-    url: '/dicts/java-arraylist.json',
-    length: 25,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'javaCharacter',
-    name: 'Java: Character',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['Java'],
-    url: '/dicts/java-character.json',
-    length: 8,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'javaHashmap',
-    name: 'Java: Hashmap',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['Java'],
-    url: '/dicts/java-hashmap.json',
-    length: 22,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'javaLinkedList',
-    name: 'Java: LinkedList',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['Java'],
-    url: '/dicts/java-linkedlist.json',
-    length: 25,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'javaString',
-    name: 'Java: String',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['Java'],
-    url: '/dicts/java-string.json',
-    length: 48,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'javaStringBuffer',
-    name: 'Java: StringBuffer',
-    description: 'JavaScript API 词典',
-    category: '代码练习',
-    tags: ['Java'],
-    url: '/dicts/java-stringBuffer.json',
-    length: 20,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'linuxCommand',
-    name: 'Linux',
-    description: 'Linux Command',
-    category: '代码练习',
-    tags: ['Linux'],
-    url: '/dicts/linux-command.json',
-    length: 575,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'csharpKeywords',
-    name: 'C#关键字',
-    description: 'C#关键字以及用途',
-    category: '代码练习',
-    tags: ['C#'],
-    url: '/dicts/csharp-keywords.json',
-    length: 78,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'csharpString',
-    name: 'C#: String API',
-    description: 'C# String API',
-    category: '代码练习',
-    tags: ['C#'],
-    url: '/dicts/csharp-string.json',
-    length: 79,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'csharpList',
-    name: 'C#: List API',
-    description: 'C# List API',
-    category: '代码练习',
-    tags: ['C#'],
-    url: '/dicts/csharp-list.json',
-    length: 36,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'sql-lower-case',
-    name: 'SQL: 常用语句 lower case',
-    description: 'SQL 常用语句 小写',
-    category: '代码练习',
-    tags: ['SQL'],
-    url: '/dicts/SQL_statement_lower-case.json',
-    length: 12,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'sql-upper-case',
-    name: 'SQL: 常用语句 upper case',
-    description: 'SQL 常用语句 大写',
-    category: '代码练习',
-    tags: ['SQL'],
-    url: '/dicts/SQL_statement_upper-case.json',
-    length: 12,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'ai-machine-learning',
-    name: '人工智能: 机器学习',
-    description: 'AI机器学习 常用英语词汇',
-    category: '代码练习',
-    tags: ['AI'],
-    url: '/dicts/ai_machine_learning.json',
-    length: 726,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'ai-ai-for-science',
-    name: '人工智能: AI for Science',
-    description: 'AI for Science 常用英语词汇',
-    category: '代码练习',
-    tags: ['AI'],
-    url: '/dicts/ai_for_science.json',
-    length: 491,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'go_keyword',
-    name: 'golang-keyword',
-    description: 'go语言关键字,',
-    category: '代码练习',
-    tags: ['golang'],
-    url: '/dicts/go_keyword.json',
-    length: 25,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'go_builtin',
-    name: 'golang-builtin',
-    description: 'go语言内建函数和类型',
-    category: '代码练习',
-    tags: ['golang'],
-    url: '/dicts/go_builtin.json',
-    length: 46,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'rustKeyword',
-    name: 'Rust: Keyword',
-    description: 'Rust 关键字',
-    category: '代码练习',
-    tags: ['Rust'],
-    url: '/dicts/rust-keyword.json',
-    length: 35,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'rustString',
-    name: 'Rust: String',
-    description: 'Rust 标准库字符串类型常用方法',
-    category: '代码练习',
-    tags: ['Rust'],
-    url: '/dicts/rust-string.json',
-    length: 24,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'rustVector',
-    name: 'Rust: Vector',
-    description: 'Rust 集合类型动态数组Vector常用方法',
-    category: '代码练习',
-    tags: ['Rust'],
-    url: '/dicts/rust-vector.json',
-    length: 28,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  {
-    id: 'rustHashMap',
-    name: 'Rust: HashMap',
-    description: 'Rust 集合类型HashMap常用方法',
-    category: '代码练习',
-    tags: ['Rust'],
-    url: '/dicts/rust-hashmap.json',
-    length: 23,
-    language: 'code',
-    languageCategory: 'code',
-  },
-  // {
-  //   id: 'SoundSfxKey',
-  //   name: 'AudioKey_UCS-SubCategory',
-  //   description: '游戏音效常用单词-UCS-SubCategory',
-  //   category: '代码练习',
-  //   tags: ['RAZ'],
-  //   url: '/dicts/AudioKey_SubCategory.json',
-  //   length: 436,
-  //   language: 'en',
-  //   languageCategory: 'en',
-  // },
-  // {
-  //   id: 'SoundSfxKey2',
-  //   name: 'AudioKey_UCS-Category',
-  //   description: '游戏音效常用单词-UCS-Category',
-  //   category: '代码练习',
-  //   tags: ['RAZ'],
-  //   url: '/dicts/AudioKey_Category.json',
-  //   length: 82,
-  //   language: 'code',
-  //   languageCategory: 'code',
-  // },
-]
-
-// 日语词典
-const japaneseExam: DictionaryResource[] = [
-  {
-    id: 'japanese-hiragana',
-    name: '平假名',
-    description: '平假名练习',
-    category: '日语学习',
-    tags: ['基础', '五十音', '平假名'],
-    url: '/dicts/JapaneseHiragana.json',
-    length: 280,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese-katakana',
-    name: '片假名',
-    description: '片假名练习',
-    category: '日语学习',
-    tags: ['基础', '五十音', '片假名'],
-    url: '/dicts/JapaneseKatakana.json',
-    length: 280,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese001',
-    name: '日语常见词',
-    description: '英语翻译',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/Japanesebasicword.json',
-    length: 100,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese001-zh',
-    name: '日语常见词',
-    description: '中文翻译',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/Japanesebasicword_zh.json',
-    length: 100,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese002',
-    name: 'N5',
-    description: '英语翻译',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/JapVocabList.N5.json',
-    length: 670,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese002-zh',
-    name: 'N5',
-    description: '中文翻译',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/JapVocabList.N5_zh.json',
-    length: 670,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese003',
-    name: 'N4',
-    description: '英语翻译',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/JapVocabList.N4.json',
-    length: 635,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese003-zh',
-    name: 'N4',
-    description: '中文翻译',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/JapVocabList.N4_zh.json',
-    length: 635,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese004',
-    name: 'N3',
-    description: '英语翻译',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/JapVocabList.N3.json',
-    length: 1830,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese004-zh',
-    name: 'N3',
-    description: '中文翻译',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/JapVocabList.N3_zh.json',
-    length: 1830,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese005',
-    name: 'N2',
-    description: '英语翻译',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/JapVocabList.N2.json',
-    length: 1836,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese005-zh',
-    name: 'N2',
-    description: '中文翻译',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/JapVocabList.N2_zh.json',
-    length: 1836,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese006',
-    name: 'N1',
-    description: '英语翻译',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/JapVocabList.N1.json',
-    length: 3477,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese006-zh',
-    name: 'N1',
-    description: '中文翻译',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/JapVocabList.N1_zh.json',
-    length: 3477,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese007',
-    name: '高频单词_N1',
-    description: '高频单词_日语N1',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/Jap_High-Frequency_N1.json',
-    length: 3000,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese008',
-    name: '高频单词_N2',
-    description: '高频单词_日语N2',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/Jap_High-Frequency_N2.json',
-    length: 2500,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese009',
-    name: '高频单词_N3',
-    description: '高频单词_日语N3',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/Jap_High-Frequency_N3.json',
-    length: 1999,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-  {
-    id: 'japanese0010',
-    name: '高频单词_N4N5',
-    description: '高频单词_日语N4N5',
-    category: '日语学习',
-    tags: ['基础'],
-    url: '/dicts/Jap_High-Frequency_N4N5.json',
-    length: 2000,
-    language: 'romaji',
-    languageCategory: 'ja',
-  },
-]
-
-// 德语词典
-const germanExam: DictionaryResource[] = [
-  {
-    id: 'german2en',
-    name: '德语 英译',
-    description: '德语词汇, 英语翻译',
-    category: '德语学习',
-    tags: ['基础'],
-    url: '/dicts/german2en.json',
-    length: 5892,
-    language: 'de',
-    languageCategory: 'de',
-  },
-  {
-    id: 'en2german',
-    name: '英语 德译',
-    description: '英语词汇，德语翻译',
-    category: '德语学习',
-    tags: ['基础'],
-    url: '/dicts/en2german.json',
-    length: 5025,
-    language: 'en',
-    languageCategory: 'de',
-  },
-]
-
-// 哈萨克语哈拼词典
-const kazakhHapinDicts: DictionaryResource[] = [
-  {
-    id: 'kazakh_basic_3000_arabic_hapin',
-    name: '基础3000词(老文字版)',
-    description: '哈萨克语基础3000词(哈拼老文字版)',
-    category: '哈萨克语',
-    tags: ['老文字', '哈拼'],
-    url: '/dicts/kazakh_basic_3000_arabic_hapin.json',
-    length: 3002,
-    language: 'hapin',
-    languageCategory: 'kk',
-  },
-  {
-    id: 'kazakh_basic_3000_cyrillic_hapin',
-    name: '基础3000词(西里尔字母版)',
-    description: '哈萨克语基础3000词(哈拼西里尔字母版)',
-    category: '哈萨克语',
-    tags: ['西里尔字母', '哈拼'],
-    url: '/dicts/kazakh_basic_3000_cyrillic_hapin.json',
-    length: 3002,
-    language: 'hapin',
-    languageCategory: 'kk',
-  },
-]
-
-//印尼语高频词汇
-const indonesianDicts: DictionaryResource[] = [
-  {
-    id: 'indonesian_highFrequency_3043',
-    name: '印尼语高频词汇',
-    description: '印尼语常用单词及中文解释',
-    category: '印尼语',
-    tags: ['基础'],
-    url: '/dicts/Indonesian.json',
-    length: 3037,
-    language: 'id',
-    languageCategory: 'id',
-  },
-]
 
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
  */
 export const dictionaryResources: DictionaryResource[] = [
-  ...chinaExam,
-  ...internationalExam,
   ...childrenEnglish,
-  ...programming,
+  //...internationalExam,
+  //...childrenEnglish,
+  //...programming,
   //...japaneseExam,
   //...germanExam,
   //...kazakhHapinDicts,

@@ -1,0 +1,842 @@
+[
+  {
+    "name": "spaceship",
+    "trans": [
+      "- n. 宇宙飞船"
+    ],
+    "usphone": "'speɪsʃɪp",
+    "ukphone": "'speɪsʃɪp"
+  },
+  {
+    "name": "moon",
+    "trans": [
+      "- n. 月亮（常作the moon）"
+    ],
+    "usphone": "muːn",
+    "ukphone": "muːn"
+  },
+  {
+    "name": "astronaut",
+    "trans": [
+      "- n. 宇航员"
+    ],
+    "usphone": "'æstrənɔːt",
+    "ukphone": "'æstrənɔːt"
+  },
+  {
+    "name": "have",
+    "trans": [
+      "- vt. 拥有；得到；吃，喝；进行；从事"
+    ],
+    "usphone": "hæv, həv, əv",
+    "ukphone": "hæv, həv, əv"
+  },
+  {
+    "name": "dream",
+    "trans": [
+      "- n. 梦；梦想,- v. 做梦；梦见"
+    ],
+    "usphone": "driːm",
+    "ukphone": "driːm"
+  },
+  {
+    "name": "last night",
+    "trans": [
+      "- phrase. 昨晚，最后一夜"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "am",
+    "trans": [
+      "- v. 系动词be的人称形式之一,- abbr. 上午"
+    ],
+    "usphone": "æm",
+    "ukphone": "æm"
+  },
+  {
+    "name": "is",
+    "trans": [
+      "- aux. v. 是（be的第三人称单数形式）"
+    ],
+    "usphone": "ɪz",
+    "ukphone": "ɪz"
+  },
+  {
+    "name": "was",
+    "trans": [
+      "- v. 是（am，is的过去式）"
+    ],
+    "usphone": "wʌz",
+    "ukphone": "wɒz"
+  },
+  {
+    "name": "are",
+    "trans": [
+      "- v. 系动词be的人称形式之一"
+    ],
+    "usphone": "ər; ɑːr",
+    "ukphone": "ə(r); ɑː(r)"
+  },
+  {
+    "name": "were",
+    "trans": [
+      "- v. 是，在（are的过去式）"
+    ],
+    "usphone": "wɜːr",
+    "ukphone": "wɜː(r)"
+  },
+  {
+    "name": "air",
+    "trans": [
+      "- n. 空气；大气"
+    ],
+    "usphone": "er",
+    "ukphone": "eə(r)"
+  },
+  {
+    "name": "friendly",
+    "trans": [
+      "- adj. 友好的"
+    ],
+    "usphone": "'frendli",
+    "ukphone": "'frendli"
+  },
+  {
+    "name": "earth",
+    "trans": [
+      "- n. 世界，地球（常作the earth）；陆地，地面，大地；土，泥，泥土"
+    ],
+    "usphone": "ɜːrθ",
+    "ukphone": "ɜːθ"
+  },
+  {
+    "name": "yesterday",
+    "trans": [
+      "- n. 昨天,- adv. 在昨天"
+    ],
+    "usphone": "'jestərdeɪ",
+    "ukphone": "'jestədeɪ"
+  },
+  {
+    "name": "swimming pool",
+    "trans": [
+      "- n. 游泳池"
+    ],
+    "usphone": "'ˈswɪmɪŋ puːl",
+    "ukphone": "'swɪmɪŋ puːl"
+  },
+  {
+    "name": "clean",
+    "trans": [
+      "- vt. 把……弄干净；擦干净,- adj. 干净的"
+    ],
+    "usphone": "kliːn",
+    "ukphone": "kliːn"
+  },
+  {
+    "name": "film",
+    "trans": [
+      "- n. 电影；胶卷,- vt. 拍摄，把……拍成电影"
+    ],
+    "usphone": "fɪlm",
+    "ukphone": "fɪlm"
+  },
+  {
+    "name": "visit",
+    "trans": [
+      "- n. 访问；参观,- v. 拜访，访问；看望"
+    ],
+    "usphone": "'vɪzɪt",
+    "ukphone": "'vɪzɪt"
+  },
+  {
+    "name": "go",
+    "trans": [
+      "- vi. 去"
+    ],
+    "usphone": "ɡoʊ",
+    "ukphone": "ɡəʊ"
+  },
+  {
+    "name": "went",
+    "trans": [
+      "- v. 走（go的过去式）"
+    ],
+    "usphone": "went",
+    "ukphone": "went"
+  },
+  {
+    "name": "slowly",
+    "trans": [
+      "- adv. 缓慢地"
+    ],
+    "usphone": "'sloʊli",
+    "ukphone": "'sləʊli"
+  },
+  {
+    "name": "want",
+    "trans": [
+      "- vt. 要，想要"
+    ],
+    "usphone": "wɑːnt",
+    "ukphone": "wɒnt"
+  },
+  {
+    "name": "pass",
+    "trans": [
+      "- vt. 传；递；通过,- n. 合格；通过；通行证；传球"
+    ],
+    "usphone": "pæs",
+    "ukphone": "pɑːs"
+  },
+  {
+    "name": "eat",
+    "trans": [
+      "- vt. 吃"
+    ],
+    "usphone": "iːt",
+    "ukphone": "iːt"
+  },
+  {
+    "name": "ate",
+    "trans": [
+      "- v. 吃（eat的过去式）"
+    ],
+    "usphone": "et",
+    "ukphone": "et"
+  },
+  {
+    "name": "quickly",
+    "trans": [
+      "- adv. 迅速地，马上"
+    ],
+    "usphone": "'kwɪkli",
+    "ukphone": "'kwɪkli"
+  },
+  {
+    "name": "another",
+    "trans": [
+      "- adj. 另一个，别的,- pron. 另一个，别的"
+    ],
+    "usphone": "ə'nʌðər",
+    "ukphone": "ə'nʌðə(r)"
+  },
+  {
+    "name": "suddenly",
+    "trans": [
+      "- adv. 突然"
+    ],
+    "usphone": "'sʌdənli",
+    "ukphone": "'sʌdənli"
+  },
+  {
+    "name": "look",
+    "trans": [
+      "- vi. 看，瞧；看上去"
+    ],
+    "usphone": "lʊk",
+    "ukphone": "lʊk"
+  },
+  {
+    "name": "sick",
+    "trans": [
+      "- adj. 患病的；不舒服的"
+    ],
+    "usphone": "sɪk",
+    "ukphone": "sɪk"
+  },
+  {
+    "name": "cough",
+    "trans": [
+      "- vi. 咳嗽,- n. 咳嗽"
+    ],
+    "usphone": "kɔːf",
+    "ukphone": "kɒf"
+  },
+  {
+    "name": "everywhere",
+    "trans": [
+      "- adv. 到处"
+    ],
+    "usphone": "'evriwer",
+    "ukphone": "'evriweə(r)"
+  },
+  {
+    "name": "help",
+    "trans": [
+      "- vt. 帮助,- n. 帮助"
+    ],
+    "usphone": "help",
+    "ukphone": "help"
+  },
+  {
+    "name": "careful",
+    "trans": [
+      "- adj. 小心的，仔细的"
+    ],
+    "usphone": "'kerfl",
+    "ukphone": "'keəfl"
+  },
+  {
+    "name": "first",
+    "trans": [
+      "- num. 第一 (个) 的"
+    ],
+    "usphone": "fɜːrst",
+    "ukphone": "fɜːst"
+  },
+  {
+    "name": "second",
+    "trans": [
+      "- num. 第二,- n. 秒；片刻"
+    ],
+    "usphone": "'sekənd",
+    "ukphone": "'sekənd"
+  },
+  {
+    "name": "third",
+    "trans": [
+      "- num. 第三(的), 三分之一(的)"
+    ],
+    "usphone": "θɜːrd",
+    "ukphone": "θɜːd"
+  },
+  {
+    "name": "fourth",
+    "trans": [
+      "- num. 第四(的), 四分之一(的)"
+    ],
+    "usphone": "fɔːrθ",
+    "ukphone": "fɔːθ"
+  },
+  {
+    "name": "fifth",
+    "trans": [
+      "- num. 第五(的), 五分之一(的)"
+    ],
+    "usphone": "fɪfθ",
+    "ukphone": "fɪfθ"
+  },
+  {
+    "name": "run",
+    "trans": [
+      "- vt. 管理，经营,- n. 跑；赛跑,- v. 跑，赛跑"
+    ],
+    "usphone": "rʌn",
+    "ukphone": "rʌn"
+  },
+  {
+    "name": "ran",
+    "trans": [
+      "- v. 跑（run的过去式）"
+    ],
+    "usphone": "ræn",
+    "ukphone": "ræn"
+  },
+  {
+    "name": "race",
+    "trans": [
+      "- v. 赛跑；竞赛；和……比赛（或竞赛）,- n. 赛跑；种族"
+    ],
+    "usphone": "reɪs",
+    "ukphone": "reɪs"
+  },
+  {
+    "name": "meter",
+    "trans": [
+      "- n. 米，公尺=meter（美）"
+    ],
+    "usphone": "'miːtər",
+    "ukphone": "'miːtə(r)"
+  },
+  {
+    "name": "win",
+    "trans": [
+      "- v. 赢得；赢，获胜"
+    ],
+    "usphone": "wɪn",
+    "ukphone": "wɪn"
+  },
+  {
+    "name": "won",
+    "trans": [
+      "- v. 获胜，赢，“win”的过去式和过去分词"
+    ],
+    "usphone": "wʌn",
+    "ukphone": "wʌn"
+  },
+  {
+    "name": "excited",
+    "trans": [
+      "- adj. 激动的, 兴奋的, 受刺激的, 紧张不安的"
+    ],
+    "usphone": "ɪk'saɪtɪd",
+    "ukphone": "ɪk'saɪtɪd"
+  },
+  {
+    "name": "last",
+    "trans": [
+      "- adj. 最近刚过去的；最后的,- vi. 持续，维持"
+    ],
+    "usphone": "læst",
+    "ukphone": "lɑːst"
+  },
+  {
+    "name": "prize",
+    "trans": [
+      "- n. 奖励；奖品；奖金"
+    ],
+    "usphone": "praɪz",
+    "ukphone": "praɪz"
+  },
+  {
+    "name": "sad",
+    "trans": [
+      "- adj. 可惜；令人伤心的"
+    ],
+    "usphone": "sæd",
+    "ukphone": "sæd"
+  },
+  {
+    "name": "decide",
+    "trans": [
+      "- v. 决定"
+    ],
+    "usphone": "dɪ'saɪd",
+    "ukphone": "dɪ'saɪd"
+  },
+  {
+    "name": "high",
+    "trans": [
+      "- adj. 高的"
+    ],
+    "usphone": "haɪ",
+    "ukphone": "haɪ"
+  },
+  {
+    "name": "happy",
+    "trans": [
+      "- adj. 高兴的，快乐的；幸福的"
+    ],
+    "usphone": "'hæpi",
+    "ukphone": "'hæpi"
+  },
+  {
+    "name": "sixth",
+    "trans": [
+      "- num. 第六(的)；六分之一(的)"
+    ],
+    "usphone": "sɪksθ",
+    "ukphone": "sɪksθ"
+  },
+  {
+    "name": "seventh",
+    "trans": [
+      "- n. 第七(的)；七分之一(的)"
+    ],
+    "usphone": "'sevnθ",
+    "ukphone": "'sevnθ"
+  },
+  {
+    "name": "eighth",
+    "trans": [
+      "- num. 第八(的), 八分之一(的)"
+    ],
+    "usphone": "eɪtθ",
+    "ukphone": "eɪtθ"
+  },
+  {
+    "name": "ninth",
+    "trans": [
+      "- num. 第九(的)；九分之一(的)"
+    ],
+    "usphone": "naɪnθ",
+    "ukphone": "naɪnθ"
+  },
+  {
+    "name": "tenth",
+    "trans": [
+      "- n. 第十(的); 十分之一(的)"
+    ],
+    "usphone": "tenθ",
+    "ukphone": "tenθ"
+  },
+  {
+    "name": "birthday",
+    "trans": [
+      "- n. 生日"
+    ],
+    "usphone": "'bɜːrθdeɪ",
+    "ukphone": "'bɜːθdeɪ"
+  },
+  {
+    "name": "June",
+    "trans": [
+      "- n. 六月"
+    ],
+    "usphone": "dʒuːn",
+    "ukphone": "dʒuːn"
+  },
+  {
+    "name": "may",
+    "trans": [
+      "- aux. v. 可能；也许；可以"
+    ],
+    "usphone": "meɪ",
+    "ukphone": "meɪ"
+  },
+  {
+    "name": "September",
+    "trans": [
+      "- n. 九月"
+    ],
+    "usphone": "sep'tembər",
+    "ukphone": "sep'tembə(r)"
+  },
+  {
+    "name": "November",
+    "trans": [
+      "- n. 十一月"
+    ],
+    "usphone": "noʊ'vembər",
+    "ukphone": "nəʊ'vembə(r)"
+  },
+  {
+    "name": "July",
+    "trans": [
+      "- n. 七月"
+    ],
+    "usphone": "dʒu'laɪ",
+    "ukphone": "dʒu'laɪ"
+  },
+  {
+    "name": "spring",
+    "trans": [
+      "- n. 春天，春季；泉水，泉,- vi. 跳，跳跃；弹起"
+    ],
+    "usphone": "sprɪŋ",
+    "ukphone": "sprɪŋ"
+  },
+  {
+    "name": "march",
+    "trans": [
+      "- vi. 前进；行进,- n. （March）三月"
+    ],
+    "usphone": "mɑːrtʃ",
+    "ukphone": "mɑːtʃ"
+  },
+  {
+    "name": "check",
+    "trans": [
+      "- v. 检查；检验；抑制,- n. 检查，检验；支票"
+    ],
+    "usphone": "tʃek",
+    "ukphone": "tʃek"
+  },
+  {
+    "name": "autumn",
+    "trans": [
+      "- n. 秋天，秋季"
+    ],
+    "usphone": "ˈɔːtəm",
+    "ukphone": "ˈɔːtəm"
+  },
+  {
+    "name": "either",
+    "trans": [
+      "- adj. （两者之中）任一的,- adv. 也（用于否定句或否定词组后加强语气）,- conj. 或者；也,- pron. 任一；二者之一"
+    ],
+    "usphone": "ˈaɪðər; ˈiːðər",
+    "ukphone": "ˈaɪðə(r); ˈiːðə(r)"
+  },
+  {
+    "name": "call",
+    "trans": [
+      "- n. 通话；（一次）电话；打电话（给）,- vt. 喊，叫；打电话,- vt. 把……叫做；给……命名"
+    ],
+    "usphone": "kɔːl",
+    "ukphone": "kɔːl"
+  },
+  {
+    "name": "talk",
+    "trans": [
+      "- v. 谈话，讲话,- n. 演讲；讲座"
+    ],
+    "usphone": "tɔːk",
+    "ukphone": "tɔːk"
+  },
+  {
+    "name": "December",
+    "trans": [
+      "- n. 十二月"
+    ],
+    "usphone": "dɪ'sembər",
+    "ukphone": "dɪ'sembə(r)"
+  },
+  {
+    "name": "summer",
+    "trans": [
+      "- n. 夏天，夏季"
+    ],
+    "usphone": "'sʌmər",
+    "ukphone": "'sʌmə(r)"
+  },
+  {
+    "name": "October",
+    "trans": [
+      "- n. 十月"
+    ],
+    "usphone": "ɑːk'toʊbər",
+    "ukphone": "ɒk'təʊbə(r)"
+  },
+  {
+    "name": "January",
+    "trans": [
+      "- n. 一月"
+    ],
+    "usphone": "'dʒænjueri",
+    "ukphone": "'dʒænjuəri"
+  },
+  {
+    "name": "February",
+    "trans": [
+      "- n. 二月"
+    ],
+    "usphone": "'februeri",
+    "ukphone": "'februəri"
+  },
+  {
+    "name": "April",
+    "trans": [
+      "- n. 四月"
+    ],
+    "usphone": "'eɪprəl",
+    "ukphone": "'eɪprəl"
+  },
+  {
+    "name": "August",
+    "trans": [
+      "- n. 八月"
+    ],
+    "usphone": "'ɔːɡəst",
+    "ukphone": "'ɔːɡəst"
+  },
+  {
+    "name": "winter",
+    "trans": [
+      "- n. 冬天，冬季"
+    ],
+    "usphone": "'wɪntər",
+    "ukphone": "'wɪntə(r)"
+  },
+  {
+    "name": "season",
+    "trans": [
+      "- n. 季；季节"
+    ],
+    "usphone": "'siːzn",
+    "ukphone": "'siːzn"
+  },
+  {
+    "name": "height",
+    "trans": [
+      "- n. 高处，高地；高度；身高"
+    ],
+    "usphone": "haɪt",
+    "ukphone": "haɪt"
+  },
+  {
+    "name": "weight",
+    "trans": [
+      "- n. 体重；重量；杠铃片"
+    ],
+    "usphone": "weɪt",
+    "ukphone": "weɪt"
+  },
+  {
+    "name": "centimeter",
+    "trans": [
+      "- n. （同centimetre）厘米"
+    ],
+    "usphone": "'sentɪmiːtər",
+    "ukphone": "'sentɪmiːtə(r)"
+  },
+  {
+    "name": "weigh",
+    "trans": [
+      "- v. 权衡；称……重量；重量为……；具有重要性"
+    ],
+    "usphone": "weɪ",
+    "ukphone": "weɪ"
+  },
+  {
+    "name": "kilogram",
+    "trans": [
+      "- n. 千克，公斤"
+    ],
+    "usphone": "'kɪləɡræm",
+    "ukphone": "'kɪləɡræm"
+  },
+  {
+    "name": "take",
+    "trans": [
+      "- v. 拿走；吃，服用；花费,- n. 电影镜头；电视镜头"
+    ],
+    "usphone": "teɪk",
+    "ukphone": "teɪk"
+  },
+  {
+    "name": "took",
+    "trans": [
+      "- v. 拿、占有（take的过去式）"
+    ],
+    "usphone": "tʊk",
+    "ukphone": "tʊk"
+  },
+  {
+    "name": "center",
+    "trans": [
+      "- n. (=[英]centre) 中心, 中央, (活动、注意力等的)中心"
+    ],
+    "usphone": "'sentər",
+    "ukphone": "'sentə"
+  },
+  {
+    "name": "tall",
+    "trans": [
+      "- adj. 高的"
+    ],
+    "usphone": "tɔːl",
+    "ukphone": "tɔːl"
+  },
+  {
+    "name": "short",
+    "trans": [
+      "- adj. 短的；个子矮的,- n. 短裤；少量烈酒"
+    ],
+    "usphone": "ʃɔːrt",
+    "ukphone": "ʃɔːt"
+  },
+  {
+    "name": "than",
+    "trans": [
+      "- conj. （用于形容词、副词的比较级之后）比"
+    ],
+    "usphone": "ðæn",
+    "ukphone": "ðæn"
+  },
+  {
+    "name": "heavy",
+    "trans": [
+      "- adj. 重的，沉的；比重大的；过度的；大量耗用的；不堪负担的"
+    ],
+    "usphone": "'hevi",
+    "ukphone": "'hevi"
+  },
+  {
+    "name": "something",
+    "trans": [
+      "- pron. 某事；某物"
+    ],
+    "usphone": "'sʌmθɪŋ",
+    "ukphone": "'sʌmθɪŋ"
+  },
+  {
+    "name": "wrong",
+    "trans": [
+      "- adj. 错误的；有毛病的，不正常的,- adv. 错误地"
+    ],
+    "usphone": "rɔːŋ",
+    "ukphone": "rɒŋ"
+  },
+  {
+    "name": "big",
+    "trans": [
+      "- adj. 大的"
+    ],
+    "usphone": "bɪɡ",
+    "ukphone": "bɪɡ"
+  },
+  {
+    "name": "small",
+    "trans": [
+      "- adj. 小的"
+    ],
+    "usphone": "smɔːl",
+    "ukphone": "smɔːl"
+  },
+  {
+    "name": "long",
+    "trans": [
+      "- adj. 长的"
+    ],
+    "usphone": "lɑːŋ",
+    "ukphone": "lɒŋ"
+  },
+  {
+    "name": "young",
+    "trans": [
+      "- adj. 年轻的"
+    ],
+    "usphone": "jʌŋ",
+    "ukphone": "jʌŋ"
+  },
+  {
+    "name": "old",
+    "trans": [
+      "- adj. 老的；旧的"
+    ],
+    "usphone": "oʊld",
+    "ukphone": "əʊld"
+  },
+  {
+    "name": "thin",
+    "trans": [
+      "- adj. 瘦的；薄的,- v. （使）变稀，（使）变薄，（使）变淡；（使）变细"
+    ],
+    "usphone": "θɪn",
+    "ukphone": "θɪn"
+  },
+  {
+    "name": "date",
+    "trans": [
+      "- n. 日期；约会,- vt. 注明日期；始于…（某一日期）"
+    ],
+    "usphone": "deɪt",
+    "ukphone": "deɪt"
+  },
+  {
+    "name": "around",
+    "trans": [
+      "- prep. 在……周围；在……各处；大约,- adv. 在周围；在附近；迂回地"
+    ],
+    "usphone": "ə'raʊnd",
+    "ukphone": "ə'raʊnd"
+  },
+  {
+    "name": "planet",
+    "trans": [
+      "- n. 星球，行星"
+    ],
+    "usphone": "'plænɪt",
+    "ukphone": "'plænɪt"
+  },
+  {
+    "name": "sun",
+    "trans": [
+      "- n. 太阳；阳光"
+    ],
+    "usphone": "sʌn",
+    "ukphone": "sʌn"
+  },
+  {
+    "name": "American",
+    "trans": [
+      "- adj. 美国的；美国人的,- n. 美国人"
+    ],
+    "usphone": "ə'merɪkən",
+    "ukphone": "ə'merɪkən"
+  }
+]
