@@ -9,7 +9,7 @@ import WordDictationSwitcher from '../WordDictationSwitcher'
 import Tooltip from '@/components/Tooltip'
 import { isOpenDarkModeAtom } from '@/store'
 import { CTRL } from '@/utils'
-import { useAtom, useAtomValue } from 'jotai'
+import { useAtom } from 'jotai'
 import { useContext, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import IconMoon from '~icons/heroicons/moon-solid'
@@ -22,7 +22,7 @@ import IconLanguageOff from '~icons/tabler/language-off'
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
   const { state, dispatch } = useContext(TypingContext) ?? {}
-  const [isCollapsed, setIsCollapsed] = useState(false)
+  const [isCollapsed, setIsCollapsed] = useState(true)
 
   const changeDarkModeState = () => {
     setIsOpenDarkMode((old) => !old)
@@ -103,7 +103,8 @@ export default function Switcher() {
       )}
       <Tooltip content={isCollapsed ? '展开所有选项' : '收起所有选项'}>
         <button
-          className={`p-[2px] text-lg text-gray-500 focus:outline-none`}
+          className={`p-[2px] text-lg focus:outline-none ${isCollapsed ? 'text-white' : 'text-gray-500'}`}
+          style={{ backgroundColor: isCollapsed ? '#6366F1' : 'transparent' }}
           type="button"
           onClick={(e) => {
             setIsCollapsed((old) => !old)

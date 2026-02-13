@@ -7,6 +7,7 @@ export type DictionaryResource = {
   category: string
   tags: string[]
   url: string
+  icon_url?: string
   length: number
   language: LanguageType
   languageCategory: LanguageCategoryType
@@ -21,6 +22,7 @@ export type Dictionary = {
   category: string
   tags: string[]
   url: string
+  icon_url?: string
   length: number
   language: LanguageType
   languageCategory: LanguageCategoryType
