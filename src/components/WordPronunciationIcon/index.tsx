@@ -4,40 +4,45 @@ import type { Word } from '@/typings'
 import { useCallback, useEffect, useImperativeHandle } from 'react'
 import React from 'react'
 
-export const WordPronunciationIcon = React.forwardRef<WordPronunciationIconRef, { word: Word; className?: string; iconClassName?: string }>(
-  ({ word, className, iconClassName }, ref) => {
-    const currentWord = () => {
-      return word.name
-    }
-    const { play, stop, isPlaying } = usePronunciationSound(currentWord())
+type Props = {
+  word: Word
+  className?: string
+  iconClassName?: string
+}
 
-    const playSound = useCallback(() => {
-      stop()
-      play()
-    }, [play, stop])
+export const WordPronunciationIcon = React.forwardRef<WordPronunciationIconRef, Props>(({ word, className, iconClassName }, ref) => {
+  const currentWord = () => {
+    return word.name
+  }
 
-    useEffect(() => {
-      return stop
-    }, [word, stop])
+  const { play, stop, isPlaying } = usePronunciationSound(currentWord())
 
-    useImperativeHandle(
-      ref,
-      () => ({
-        play: playSound,
-      }),
-      [playSound],
-    )
+  const playSound = useCallback(() => {
+    stop()
+    play()
+  }, [play, stop])
 
-    return (
-      <SoundIcon
-        animated={isPlaying}
-        onClick={playSound}
-        className={`cursor-pointer text-gray-600 ${className}`}
-        iconClassName={iconClassName}
-      />
-    )
-  },
-)
+  useEffect(() => {
+    return stop
+  }, [word, stop])
+
+  useImperativeHandle(
+    ref,
+    () => ({
+      play: playSound,
+    }),
+    [playSound],
+  )
+
+  return (
+    <SoundIcon
+      animated={isPlaying}
+      onClick={playSound}
+      className={`cursor-pointer text-gray-600 ${className}`}
+      iconClassName={iconClassName}
+    />
+  )
+})
 
 WordPronunciationIcon.displayName = 'WordPronunciationIcon'
 

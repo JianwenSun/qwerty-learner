@@ -1,6 +1,6 @@
 import type { LanguageCategoryType, LanguageType, PronunciationType } from '.'
 
-export type DictionaryResource = {
+export interface DictionaryBase {
   id: string
   name: string
   description: string
@@ -11,21 +11,15 @@ export type DictionaryResource = {
   length: number
   language: LanguageType
   languageCategory: LanguageCategoryType
+  app?: string
+}
+
+export interface DictionaryResource extends DictionaryBase {
   //override default pronunciation when not undefined
   defaultPronIndex?: number
 }
 
-export type Dictionary = {
-  id: string
-  name: string
-  description: string
-  category: string
-  tags: string[]
-  url: string
-  icon_url?: string
-  length: number
-  language: LanguageType
-  languageCategory: LanguageCategoryType
+export interface Dictionary extends DictionaryBase {
   // calculated in the store
   chapterCount: number
   //override default pronunciation when not undefined

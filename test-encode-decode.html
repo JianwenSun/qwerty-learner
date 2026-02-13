@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>测试加密解密功能</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .container {
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .result {
+      background-color: #e8f4f8;
+      padding: 15px;
+      border-radius: 4px;
+      margin-top: 10px;
+      white-space: pre-wrap;
+      font-family: monospace;
+      font-size: 14px;
+    }
+    .success {
+      color: green;
+      font-weight: bold;
+    }
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+  <h1>测试加密解密功能</h1>
+  
+  <div class="container">
+    <h2>测试参数</h2>
+    <label for="key">密钥:</label>
+    <input type="text" id="key" value="test-md5-key">
+    
+    <label for="text">原始文本:</label>
+    <textarea id="text">Hello, this is a test message for encryption and decryption!</textarea>
+    
+    <button onclick="runTest()">运行测试</button>
+  </div>
+  
+  <div class="container">
+    <h2>测试结果</h2>
+    <div id="output"></div>
+  </div>
+  
+  <script type="module">
+    // 导入 encode 和 decode 函数
+    import { encode } from './src/encode/encode.js';
+    import { decode } from './src/encode/decode.js';
+    
+    async function runTest() {
+      const outputDiv = document.getElementById('output');
+      const key = document.getElementById('key').value;
+      const text = document.getElementById('text').value;
+      
+      outputDiv.innerHTML = '<p>测试中...</p>';
+      
+      try {
+        outputDiv.innerHTML = `
+          <p><strong>原始文本:</strong> ${text}</p>
+          <p><strong>使用的密钥:</strong> ${key}</p>
+        `;
+        
+        // 加密文本
+        const encryptedText = await encode(key, text);
+        outputDiv.innerHTML += `
+          <p><strong>加密后结果:</strong></p>
+          <div class="result">${encryptedText}</div>
+        `;
+        
+        // 解密文本
+        const decryptedText = await decode(key, encryptedText);
+        outputDiv.innerHTML += `
+          <p><strong>解密后结果:</strong></p>
+          <div class="result">${decryptedText}</div>
+        `;
+        
+        // 验证解密结果是否与原始文本一致
+        if (decryptedText === text) {
+          outputDiv.innerHTML += '<p class="success">✅ 测试成功: 解密结果与原始文本一致</p>';
+        } else {
+          outputDiv.innerHTML += '<p class="error">❌ 测试失败: 解密结果与原始文本不一致</p>';
+          outputDiv.innerHTML += `<p>原始文本长度: ${text.length}</p>`;
+          outputDiv.innerHTML += `<p>解密文本长度: ${decryptedText.length}</p>`;
+        }
+        
+      } catch (error) {
+        outputDiv.innerHTML += `<p class="error">❌ 测试过程中出现错误: ${error.message}</p>`;
+        console.error('测试错误:', error);
+      }
+    }
+  </script>
+</body>
+</html>

@@ -115,3 +115,7 @@ export const hasSeenEnhancedPromotionAtom = atomWithStorage('hasSeenEnhancedProm
 
 // for dev test
 //   dismissStartCardDateAtom = atom<Date | null>(new Date())
+
+// Authentication state
+export const isAuthenticatedAtom = atomWithStorage('isAuthenticated', false)
+export const userInfoAtom = atomWithStorage('userInfo', null)

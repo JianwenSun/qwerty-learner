@@ -3,9 +3,9 @@ import type { PronunciationType } from '@/typings'
 import { addHowlListener } from '@/utils'
 import { romajiToHiragana } from '@/utils/kana'
 import noop from '@/utils/noop'
-import type { Howl } from 'howler'
+import { Howl } from 'howler'
 import { useAtomValue } from 'jotai'
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import useSound from 'use-sound'
 import type { HookOptions } from 'use-sound/dist/types'
 
@@ -65,7 +65,7 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
     return () => {
       setIsPlaying(false)
       unListens.forEach((unListen) => unListen())
-      ;(sound as Howl).unload()
+        ; (sound as Howl).unload()
     }
   }, [sound])
 
@@ -100,4 +100,90 @@ export function usePrefetchPronunciationSound(word: string | undefined) {
       }
     }
   }, [pronunciationConfig.type, word])
+}
+
+export function useUrlPronunciationSound(soundUrl: string | undefined) {
+  const [howl, setHowl] = useState<Howl | null>(null)
+  const [isSupported, setIsSupported] = useState<boolean | null>(null)
+  const [isPlaying, setIsPlaying] = useState(false)
+
+  useEffect(() => {
+    if (!soundUrl || soundUrl === '') {
+      setHowl(null)
+      setIsSupported(false)
+      setIsPlaying(false)
+      return
+    }
+
+    // 使用Howler库创建音频实例
+    const sound = new Howl({
+      src: [soundUrl],
+      html5: true, // 强制使用HTML5 Audio，更好地支持不同格式
+      format: ['aac', 'mp4'], // 指定支持的格式
+      onload: () => {
+        console.log('Howler successfully loaded audio:', soundUrl)
+        setIsSupported(true)
+      },
+      onloaderror: (id, error) => {
+        console.error('Howler loading error:', error)
+        console.error('Audio URL:', soundUrl)
+        setIsSupported(false)
+      },
+      onplay: () => {
+        setIsPlaying(true)
+      },
+      onend: () => {
+        setIsPlaying(false)
+      },
+      onpause: () => {
+        setIsPlaying(false)
+      },
+      onplayerror: (id: number, error: unknown) => {
+        console.error('Howler playback error:', error)
+        console.error('Audio URL:', soundUrl)
+        setIsPlaying(false)
+      }
+    })
+
+    setHowl(sound)
+
+    // 清理函数
+    return () => {
+      sound.unload()
+      setHowl(null)
+      setIsSupported(null)
+      setIsPlaying(false)
+    }
+  }, [soundUrl])
+
+  const play = useCallback(() => {
+    if (!soundUrl || !howl) {
+      console.warn('No sound URL or Howl instance available')
+      return
+    }
+
+    try {
+      if (isSupported !== false) {
+        howl.play()
+        console.log('Playing audio with Howler:', soundUrl)
+      } else {
+        console.warn('Audio format not supported:', soundUrl)
+      }
+    } catch (error) {
+      console.error('Error playing audio with Howler:', error)
+      console.error('Audio URL:', soundUrl)
+    }
+  }, [soundUrl, howl, isSupported])
+
+  const stop = useCallback(() => {
+    if (howl) {
+      try {
+        howl.stop()
+      } catch (error) {
+        console.error('Error stopping audio with Howler:', error)
+      }
+    }
+  }, [howl, soundUrl])
+
+  return { play, stop, isSupported, isPlaying }
 }

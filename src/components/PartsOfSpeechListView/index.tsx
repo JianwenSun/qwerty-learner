@@ -1,5 +1,5 @@
 import PartsOfSpeechView from '../PartsOfSpeechView'
-import { Word, type Pos } from '@/typings'
+import { Word } from '@/typings'
 
 export type PartsOfSpeechListViewProps = {
   word: Word

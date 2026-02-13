@@ -22,7 +22,7 @@ import IconLanguageOff from '~icons/tabler/language-off'
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
   const { state, dispatch } = useContext(TypingContext) ?? {}
-  const [isCollapsed, setIsCollapsed] = useState(true)
+  const [isCollapsed, setIsCollapsed] = useState(false)
 
   const changeDarkModeState = () => {
     setIsOpenDarkMode((old) => !old)

@@ -61,6 +61,7 @@ export type Pos = {
 }
 
 export type Word = {
+  id: string
   name: string
   trans: string[]
   pos?: Pos[]

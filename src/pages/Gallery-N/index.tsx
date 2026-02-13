@@ -8,9 +8,9 @@ import type { Dictionary, LanguageCategoryType } from '@/typings'
 import groupBy, { groupByDictTags } from '@/utils/groupBy'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { useAtomValue } from 'jotai'
-import { createContext, useCallback, useEffect, useMemo } from 'react'
+import { createContext, useCallback, useEffect, useMemo, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import type { Updater } from 'use-immer'
 import { useImmer } from 'use-immer'
 import IconInfo from '~icons/ic/outline-info'
@@ -32,9 +32,18 @@ export const GalleryContext = createContext<{
 export default function GalleryPage() {
   const [galleryState, setGalleryState] = useImmer<GalleryState>(initialGalleryState)
   const navigate = useNavigate()
+  const location = useLocation()
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
+  const [forceUpdate, setForceUpdate] = useState(0)
+
+  // 确保每次路由变化时都重新计算数据
+  useEffect(() => {
+    // 强制重新渲染组件
+    setForceUpdate((prev) => prev + 1)
+  }, [location.key]) // 使用 location.key 而不是 pathname，确保每次导航都触发
 
   const { groupedByCategoryAndTag } = useMemo(() => {
+    // 为了确保数据重新计算，使用 forceUpdate 作为依赖
     const currentLanguageCategoryDicts = dictionaries.filter((dict) => dict.languageCategory === galleryState.currentLanguageTab)
     const groupedByCategory = Object.entries(groupBy(currentLanguageCategoryDicts, (dict) => dict.category))
     const groupedByCategoryAndTag = groupedByCategory.map(
@@ -44,7 +53,7 @@ export default function GalleryPage() {
     return {
       groupedByCategoryAndTag,
     }
-  }, [galleryState.currentLanguageTab])
+  }, [galleryState.currentLanguageTab, forceUpdate]) // 添加 forceUpdate 作为依赖
 
   const onBack = useCallback(() => {
     navigate('/')
@@ -60,14 +69,19 @@ export default function GalleryPage() {
     }
   }, [currentDictInfo, setGalleryState])
 
+  useEffect(() => {
+    // 当路由变化时，强制更新组件，确保页面内容正确刷新
+    setForceUpdate((prev) => prev + 1)
+  }, [location.pathname])
+
   return (
     <Layout>
       <GalleryContext.Provider value={{ state: galleryState, setState: setGalleryState }}>
-        <div className="relative mb-auto mt-auto flex w-full flex-1 flex-col overflow-y-auto pl-20">
+        <div className="relative mb-auto mt-auto flex w-full flex-1 flex-col overflow-y-auto px-5 pb-5">
           <IconX className="absolute right-20 top-10 h-7 w-7 cursor-pointer text-gray-400" onClick={onBack} />
           <div className="flex w-full flex-1 flex-col items-center justify-center overflow-y-auto">
             <div className="flex h-full flex-col overflow-y-auto">
-              <div className="flex h-20 w-full items-center justify-between pb-6 pr-20">
+              <div className="flex h-20 w-full items-center justify-between pb-6">
                 <LanguageTabSwitcher />
               </div>
               <ScrollArea.Root className="flex-1 overflow-y-auto">

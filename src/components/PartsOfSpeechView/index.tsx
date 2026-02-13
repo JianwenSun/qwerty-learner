@@ -23,14 +23,11 @@ function PartsOfSpeechView({ pos }: PartsOfSpeechViewProps) {
   const colorClassName = POS_TYPE_COLOR_MAP[pos.type] || defaultPosColor
 
   return (
-    <div
-      className={`relative inline-flex flex-row items-center justify-center pr-8 transition-colors ${isTextSelectable && 'select-text'}`}
-    >
+    <div className={`flex items-start transition-colors ${isTextSelectable && 'select-text'}`}>
       <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium ${colorClassName}`}>
         {posType.displayName} / {posType.name}
       </span>
-
-      <span className="ml-2">{pos.definition || ''}</span>
+      <span className="ml-2 flex-1">{pos.definition || ''}</span>
     </div>
   )
 }

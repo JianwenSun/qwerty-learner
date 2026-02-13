@@ -60,6 +60,10 @@ body,
     @apply h-5.5 w-5.5 focus:outline-none;
   }
 
+  .pb-safe {
+    padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+  }
+
   .word-chip {
     @apply flex h-10 w-auto cursor-pointer
       flex-row items-center

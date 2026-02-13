@@ -1,4 +1,4 @@
-import PartsOfSpeechListView from '../PartsOfSpeechListView'
+import PartsOfSpeechListView from '@/components/PartsOfSpeechListView'
 import type { WordPronunciationIconRef } from '@/components/WordPronunciationIcon'
 import { WordPronunciationIcon } from '@/components/WordPronunciationIcon'
 import { isOpenDarkModeAtom, phoneticConfigAtom } from '@/store'

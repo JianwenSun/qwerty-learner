@@ -10,6 +10,7 @@ import { calcChapterCount } from '@/utils'
 import * as Progress from '@radix-ui/react-progress'
 import { useAtomValue } from 'jotai'
 import { useMemo, useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 interface Props {
   dictionary: Dictionary
@@ -17,6 +18,7 @@ interface Props {
 
 export default function DictionaryComponent({ dictionary }: Props) {
   const currentDictID = useAtomValue(currentDictIdAtom)
+  const navigate = useNavigate()
 
   const divRef = useRef<HTMLDivElement>(null)
   const entry = useIntersectionObserver(divRef, {})
@@ -29,18 +31,23 @@ export default function DictionaryComponent({ dictionary }: Props) {
     [dictStats, chapterCount],
   )
 
+  const handleViewAllWords = (e: React.MouseEvent) => {
+    e.stopPropagation() // 阻止冒泡，避免触发打开详情对话框的事件
+    navigate(`/word-preview/${dictionary.id}`)
+  }
+
   return (
     <Dialog>
       <DialogTrigger asChild>
         <div
           ref={divRef}
-          className={`group flex  h-36 w-72 cursor-pointer items-center justify-center overflow-hidden rounded-lg p-4 text-left shadow-lg focus:outline-none ${
+          className={`group flex  h-36 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg p-4 text-left shadow-lg focus:outline-none ${
             isSelected ? 'bg-indigo-400' : 'bg-zinc-50 hover:bg-white dark:bg-gray-800 dark:hover:bg-gray-700'
           }`}
           role="button"
           // onClick={onClick}
         >
-          <div className="flex h-full w-full items-center gap-4">
+          <div className="relative flex h-full w-full items-center gap-4">
             {/* 左侧图片区域 */}
             <div className="flex-shrink-0">
               <img src={dictionary.icon_url || bookCover} className={`w-20 ${isSelected ? 'opacity-50' : 'opacity-100'}`} />
@@ -58,7 +65,7 @@ export default function DictionaryComponent({ dictionary }: Props) {
               <TooltipProvider>
                 <Tooltip delayDuration={400}>
                   <TooltipTrigger asChild>
-                    <p className={`mb-1 max-w-full text-xs ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>
+                    <p className={`mb-1 max-w-full text-xs ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-300'}`}>
                       {dictionary.description}
                     </p>
                   </TooltipTrigger>
@@ -86,6 +93,17 @@ export default function DictionaryComponent({ dictionary }: Props) {
                 )}
               </div>
             </div>
+
+            {/* 查看全部单词按钮 */}
+            <button
+              onClick={handleViewAllWords}
+              className={`absolute bottom-1 right-1 rounded-md px-3 py-1 text-xs ${
+                isSelected ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-indigo-500 text-white hover:bg-indigo-600'
+              }`}
+              title="词表"
+            >
+              词表
+            </button>
           </div>
         </div>
       </DialogTrigger>
