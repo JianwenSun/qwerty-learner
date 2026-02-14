@@ -22,7 +22,7 @@ import IconLanguageOff from '~icons/tabler/language-off'
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
   const { state, dispatch } = useContext(TypingContext) ?? {}
-  const [isCollapsed, setIsCollapsed] = useState(false)
+  const [isCollapsed, setIsCollapsed] = useState(true)
 
   const changeDarkModeState = () => {
     setIsOpenDarkMode((old) => !old)
@@ -76,9 +76,9 @@ export default function Switcher() {
             <ErrorBookButton />
           </Tooltip>
 
-          <Tooltip className="h-7 w-7" content="查看数据统计">
+          {/* <Tooltip className="h-7 w-7" content="查看数据统计">
             <AnalysisButton />
-          </Tooltip>
+          </Tooltip> */}
 
           <Tooltip className="h-7 w-7" content="开关深色模式">
             <button

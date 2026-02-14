@@ -75,7 +75,11 @@ export default function GalleryPage() {
   return (
     <Layout>
       <GalleryContext.Provider value={{ state: galleryState, setState: setGalleryState }}>
-        <div className="relative mb-auto mt-auto flex w-full flex-1 flex-col overflow-y-auto bg-white px-5 pb-5">
+        <div
+          className={`relative mb-auto mt-auto flex w-full flex-1 flex-col overflow-y-auto ${
+            !isOpenDarkMode ? 'bg-white px-5 pb-5' : 'bg-gray-900 px-5 pb-5'
+          }`}
+        >
           <button
             onClick={onBack}
             className={`absolute right-4 top-4 rounded-md bg-indigo-300 px-4 py-2 text-white shadow-sm hover:bg-indigo-400`}

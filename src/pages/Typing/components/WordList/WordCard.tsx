@@ -18,7 +18,7 @@ export default function WordCard({ word, isActive }: { word: Word; isActive: boo
   return (
     <div
       className={`mb-2 flex cursor-pointer select-none items-center rounded-xl p-4 shadow focus:outline-none ${
-        isActive ? 'bg-indigo-100 dark:bg-indigo-800 dark:bg-opacity-20' : 'bg-white dark:bg-gray-700 dark:bg-opacity-20'
+        isActive ? 'bg-gray-200 dark:bg-gray-700' : 'bg-white dark:bg-gray-700 dark:bg-opacity-20'
       }   `}
       key={word.name}
       onClick={handlePlay}
