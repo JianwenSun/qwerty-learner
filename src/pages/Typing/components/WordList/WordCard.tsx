@@ -17,14 +17,14 @@ export default function WordCard({ word, isActive }: { word: Word; isActive: boo
 
   return (
     <div
-      className={`mb-2 flex cursor-pointer select-text items-center rounded-xl p-4 shadow focus:outline-none ${
-        isActive ? 'bg-indigo-50 dark:bg-indigo-800 dark:bg-opacity-20' : 'bg-white dark:bg-gray-700 dark:bg-opacity-20'
+      className={`mb-2 flex cursor-pointer select-none items-center rounded-xl p-4 shadow focus:outline-none ${
+        isActive ? 'bg-indigo-100 dark:bg-indigo-800 dark:bg-opacity-20' : 'bg-white dark:bg-gray-700 dark:bg-opacity-20'
       }   `}
       key={word.name}
       onClick={handlePlay}
     >
       <div className="flex-1">
-        <p className={`select-all font-mono text-xl font-normal leading-6 ${isOpenDarkMode ? 'text-gray-50' : 'text-gray-800'}`}>
+        <p className={`font-mono text-xl font-normal leading-6 ${isOpenDarkMode ? 'text-gray-50' : 'text-gray-800'}`}>
           {word.name}
           {phoneticConfig.type === 'us' && word.usphone && word.usphone.length > 1 && (
             <span className="text-sm font-normal text-gray-600 dark:text-gray-400">{`     [${word.usphone}]`}</span>

@@ -75,8 +75,6 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     (updateAction: WordUpdateAction) => {
       switch (updateAction.type) {
         case 'add':
-          if (wordState.hasWrong) return
-
           if (updateAction.value === ' ') {
             updateAction.event.preventDefault()
             setWordState((state) => {
@@ -93,7 +91,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
           console.warn('unknown update type', updateAction)
       }
     },
-    [wordState.hasWrong, setWordState],
+    [setWordState],
   )
 
   const handleHoverWord = useCallback((checked: boolean) => {
@@ -177,12 +175,37 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
      * 目前不影响生产环境，猜测是因为开发环境下 react 会两次调用 useEffect 从而展示了这个 warning
      * 但这终究是一个 bug，需要修复
      */
-    if (wordState.hasWrong || inputLength === 0 || wordState.displayWord.length === 0) {
+    if (inputLength === 0 || wordState.displayWord.length === 0) {
       return
     }
 
+    // 找到当前第一个未正确输入的位置
+    const firstUncorrectIndex = wordState.letterStates.findIndex((state) => state !== 'correct')
+    // 如果所有字母都已正确输入，检查是否完成
+    if (firstUncorrectIndex === -1) {
+      if (inputLength >= wordState.displayWord.length) {
+        // 完成输入时
+        setWordState((state) => {
+          state.isFinished = true
+          state.endTime = getUtcStringForMixpanel()
+        })
+        playHintSound()
+        dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
+      }
+      return
+    }
+
+    // 只处理第一个未正确输入位置的输入
+    const targetIndex = firstUncorrectIndex
+
+    // 确保目标索引不超过单词长度
+    if (targetIndex >= wordState.displayWord.length) {
+      return
+    }
+
+    // 获取最新的输入字符（即最后输入的字符）
     const inputChar = wordState.inputWord[inputLength - 1]
-    const correctChar = wordState.displayWord[inputLength - 1]
+    const correctChar = wordState.displayWord[targetIndex]
     let isEqual = false
     if (inputChar != undefined && correctChar != undefined) {
       isEqual = isIgnoreCase ? inputChar.toLowerCase() === correctChar.toLowerCase() : inputChar === correctChar
@@ -193,20 +216,18 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
       setWordState((state) => {
         state.letterTimeArray.push(Date.now())
         state.correctCount += 1
+        state.letterStates[targetIndex] = 'correct'
       })
 
-      if (inputLength >= wordState.displayWord.length) {
+      // 检查是否完成输入
+      if (targetIndex >= wordState.displayWord.length - 1) {
         // 完成输入时
         setWordState((state) => {
-          state.letterStates[inputLength - 1] = 'correct'
           state.isFinished = true
           state.endTime = getUtcStringForMixpanel()
         })
         playHintSound()
       } else {
-        setWordState((state) => {
-          state.letterStates[inputLength - 1] = 'correct'
-        })
         playKeySound()
       }
 
@@ -215,15 +236,14 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
       // 出错时
       playBeepSound()
       const updatedMistake = JSON.parse(JSON.stringify(wordState.letterMistake))
-      if (updatedMistake[inputLength - 1]) {
-        updatedMistake[inputLength - 1].push(inputChar)
+      if (updatedMistake[targetIndex]) {
+        updatedMistake[targetIndex].push(inputChar)
       } else {
-        updatedMistake[inputLength - 1] = [inputChar]
+        updatedMistake[targetIndex] = [inputChar]
       }
 
       setWordState((state) => {
-        state.letterStates[inputLength - 1] = 'wrong'
-        state.hasWrong = true
+        state.letterStates[targetIndex] = 'wrong'
         state.hasMadeInputWrong = true
         state.wrongCount += 1
         state.letterTimeArray = []
@@ -238,22 +258,6 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.inputWord])
-
-  useEffect(() => {
-    if (wordState.hasWrong) {
-      const timer = setTimeout(() => {
-        setWordState((state) => {
-          state.inputWord = ''
-          state.letterStates = new Array(state.letterStates.length).fill('normal')
-          state.hasWrong = false
-        })
-      }, 300)
-
-      return () => {
-        clearTimeout(timer)
-      }
-    }
-  }, [wordState.hasWrong, setWordState])
 
   useEffect(() => {
     if (wordState.isFinished) {

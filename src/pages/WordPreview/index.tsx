@@ -3,7 +3,7 @@ import WordList from './components/WordList'
 import { isOpenDarkModeAtom } from '@/store'
 import { getWordList } from '@/typings/functions'
 import { useAtom } from 'jotai'
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
 export default function WordPreviewPage() {
@@ -38,10 +38,8 @@ export default function WordPreviewPage() {
         {/* 悬浮的返回按钮 */}
         <button
           onClick={handleBackToGallery}
-          className={`absolute right-4 top-4 rounded-md px-4 py-2 ${
-            !isOpenDarkMode
-              ? 'bg-white bg-opacity-80 shadow-sm hover:bg-opacity-100'
-              : 'bg-gray-800 bg-opacity-80 shadow-sm hover:bg-opacity-100'
+          className={`absolute right-4 top-4 rounded-md px-4 py-2 text-white ${
+            !isOpenDarkMode ? 'bg-indigo-300 shadow-sm hover:bg-indigo-200' : 'bg-indigo-700 bg-opacity-40 shadow-sm hover:bg-opacity-60'
           }`}
         >
           返回

@@ -1,6 +1,6 @@
-import { isOpenDarkModeAtom, isTextSelectableAtom } from '@/store'
+import { isTextSelectableAtom } from '@/store'
 import { POS_TYPE_COLOR_MAP, POS_TYPE_MAP, type Pos } from '@/typings'
-import { useAtom, useAtomValue } from 'jotai'
+import { useAtomValue } from 'jotai'
 
 export type PartsOfSpeechViewProps = {
   pos: Pos
@@ -11,7 +11,6 @@ const defaultPosColor = 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-bl
 
 function PartsOfSpeechView({ pos }: PartsOfSpeechViewProps) {
   const isTextSelectable = useAtomValue(isTextSelectableAtom)
-  const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
 
   // 防御性编程：确保 pos.type 存在
   if (!pos || !pos.type) {
@@ -24,11 +23,14 @@ function PartsOfSpeechView({ pos }: PartsOfSpeechViewProps) {
   const colorClassName = POS_TYPE_COLOR_MAP[pos.type] || defaultPosColor
 
   return (
-    <div className={`flex items-start transition-colors ${isTextSelectable && 'select-text'}`}>
+    <div
+      className={`relative inline-flex flex-row items-center justify-center pr-8 transition-colors ${isTextSelectable && 'select-text'}`}
+    >
       <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium ${colorClassName}`}>
         {posType.displayName} / {posType.name}
       </span>
-      <span className={`ml-2 flex-1 ${isOpenDarkMode ? 'text-gray-50' : 'text-gray-800'}`}>{pos.definition || ''}</span>
+
+      <span className="ml-2">{pos.definition || ''}</span>
     </div>
   )
 }

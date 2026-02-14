@@ -41,9 +41,10 @@ export default function DictionaryComponent({ dictionary }: Props) {
       <DialogTrigger asChild>
         <div
           ref={divRef}
-          className={`group flex  h-36 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg p-4 text-left shadow-lg focus:outline-none ${
+          className={`group relative  flex h-36 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg p-4 text-left shadow-lg focus:outline-none ${
             isSelected ? 'bg-indigo-400' : 'bg-zinc-50 hover:bg-white dark:bg-gray-800 dark:hover:bg-gray-700'
           }`}
+          style={{ boxShadow: '0 -4px 12px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.1)' }}
           role="button"
           // onClick={onClick}
         >
@@ -78,7 +79,7 @@ export default function DictionaryComponent({ dictionary }: Props) {
               <p className={`mb-0.5 text-sm font-bold  ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>
                 {dictionary.length} 词
               </p>
-              <div className=" flex w-full items-center pt-2">
+              <div className=" flex w-[calc(100%-60px)] items-center pt-2">
                 {progress > 0 && (
                   <Progress.Root
                     value={progress}

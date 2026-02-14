@@ -64,20 +64,6 @@ export default defineConfig(({ mode }) => {
           secure: true,
           rewrite: (path) => path.replace(/^\/upyun/, ''),
         },
-        '/shanbay': {
-          target: 'https://apiv3.shanbay.com',
-          changeOrigin: true,
-          secure: true,
-          rewrite: (path) => path.replace(/^\/shanbay/, ''),
-          configure: (proxy, options) => {
-            proxy.on('proxyReq', (proxyReq, req, res) => {
-              console.log('req.headers.cookie', req.headers.cookie)
-              if (req.headers.cookie) {
-                proxyReq.setHeader('cookie', req.headers.cookie);
-              }
-            });
-          },
-        },
       },
     },
   }

@@ -1,13 +1,25 @@
 import { decode } from "@/encode/decode";
-import { Examples, Exts, Senses } from "@/models/shanbei";
+import { Examples, Exts, Senses, Vocabulary } from "@/models/shanbei";
 import { UpyunClient } from "./upyun";
 
-const ShanbeiNamespace = "shanbei"
+const ShanbeiNamespace = "sb"
 //echo @ShaNBeI@ | base64
 const SecretKey = "QFNoYU5CZUlACg=="
 
 function getVocabKey(vocabId: string) {
-    return `${ShanbeiNamespace}/${vocabId}`
+    return `${ShanbeiNamespace}/vocabulary/id/${vocabId}`
+}
+
+function getVocabWorkKey(word: string) {
+    return `${ShanbeiNamespace}/vocabulary/word/${word}`
+}
+
+export async function getVocabWork(word: string): Promise<Vocabulary> {
+    var vocabWordKey = getVocabWorkKey(word) + '.json';
+    //const vocab = await UpyunS3Client.getText(vocabWordKey) as string;
+    const vocab = await UpyunClient.getFileInfo(vocabWordKey);
+    const decoded = await decode(SecretKey, vocab);
+    return JSON.parse(decoded) as Vocabulary
 }
 
 export async function getExtExamples(vocabId: string): Promise<Exts[]> {
