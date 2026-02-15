@@ -76,7 +76,7 @@ export default function GalleryPage() {
     <Layout>
       <GalleryContext.Provider value={{ state: galleryState, setState: setGalleryState }}>
         <div
-          className={`relative mb-auto mt-auto flex w-full flex-1 flex-col overflow-y-auto ${
+          className={`relative mb-auto mt-auto flex w-full flex-1 flex-col ${
             !isOpenDarkMode ? 'bg-white px-5 pb-5' : 'bg-gray-900 px-5 pb-5'
           }`}
         >
@@ -87,14 +87,14 @@ export default function GalleryPage() {
             返回
           </button>
 
-          <div className="flex w-full flex-1 flex-col items-center justify-center overflow-y-auto">
-            <div className="flex h-full flex-col overflow-y-auto">
+          <div className="flex w-full flex-1 flex-col items-center justify-center">
+            <div className="flex h-full flex-col">
               <div className="flex h-20 w-full items-center justify-between pb-6">
                 <LanguageTabSwitcher />
               </div>
               <ScrollArea.Root className="flex-1 overflow-y-auto">
                 <ScrollArea.Viewport className="h-full w-full">
-                  <div className="flex flex-1 flex-col items-start justify-start gap-14 overflow-y-auto">
+                  <div className="flex flex-1 flex-col items-start justify-start gap-14">
                     {groupedByCategoryAndTag.map(([category, groupeByTag]) => (
                       <DictionaryGroup key={category} groupedDictsByTag={groupeByTag} />
                     ))}

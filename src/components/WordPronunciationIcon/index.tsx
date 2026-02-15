@@ -18,8 +18,15 @@ export const WordPronunciationIcon = React.forwardRef<WordPronunciationIconRef, 
   const { play, stop, isPlaying } = usePronunciationSound(currentWord())
 
   const playSound = useCallback(() => {
+    // 打印播放音频的日志
+    console.log(`[${new Date().toISOString()}] [WordPronunciationIcon/index.tsx] 开始播放音频`)
     stop()
     play()
+    // 在播放音频后，确保窗口保持焦点，以解决 iPad 上键盘输入无响应的问题
+    setTimeout(() => {
+      console.log(`[${new Date().toISOString()}] [WordPronunciationIcon/index.tsx] 音频播放完成`)
+      //window.focus()
+    }, 1000)
   }, [play, stop])
 
   useEffect(() => {

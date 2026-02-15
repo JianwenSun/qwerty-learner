@@ -20,7 +20,7 @@ import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import type React from 'react'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useContext, useEffect, useRef, useState } from 'react'
 import { useImmerReducer } from 'use-immer'
 
 const App: React.FC = () => {
@@ -66,31 +66,37 @@ const App: React.FC = () => {
     const onBlur = () => {
       dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
     }
+    console.log('Blur event listener added in Typing/index.tsx')
     window.addEventListener('blur', onBlur)
 
     return () => {
+      console.log('Blur event listener removed in Typing/index.tsx')
       window.removeEventListener('blur', onBlur)
     }
   }, [dispatch])
+
+  // 存储上一个依赖项的值，用于比较变化
+  const prevDepsRef = useRef({ isTyping: state.isTyping, isLoading, dispatch })
 
   useEffect(() => {
     state.chapterData.words?.length > 0 ? setIsLoading(false) : setIsLoading(true)
   }, [state.chapterData.words])
 
   useEffect(() => {
-    if (!state.isTyping) {
-      const onKeyDown = (e: KeyboardEvent) => {
-        if (!isLoading && e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
-          e.preventDefault()
-          dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
-        }
-      }
-      window.addEventListener('keydown', onKeyDown)
-      return () => {
-        window.removeEventListener('keydown', onKeyDown)
+    const onKeyDown = (e: KeyboardEvent) => {
+      console.log('[Typing/index.tsx] keydown event:', e)
+      if (e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        e.preventDefault()
+        dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
       }
     }
-  }, [state.isTyping, isLoading, dispatch])
+    console.log('Keydown event listener added in Typing/index.tsx')
+    window.addEventListener('keydown', onKeyDown)
+    return () => {
+      console.log('Keydown event listener removed in Typing/index.tsx')
+      window.removeEventListener('keydown', onKeyDown)
+    }
+  }, [dispatch])
 
   useEffect(() => {
     if (words !== undefined) {

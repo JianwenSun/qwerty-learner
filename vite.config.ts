@@ -64,6 +64,11 @@ export default defineConfig(({ mode }) => {
           secure: true,
           rewrite: (path) => path.replace(/^\/upyun/, ''),
         },
+        '/dictvoice': {
+          target: 'https://dict.youdao.com',
+          changeOrigin: true,
+          secure: true,
+        },
       },
     },
   }

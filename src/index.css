@@ -11,6 +11,11 @@ body {
   background-color: #faf9ff;
   @apply transition-colors duration-300;
   user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html.dark body {
@@ -25,6 +30,15 @@ html,
 body,
 :global(#root) {
   height: 100%;
+  touch-action: none;
+}
+
+/* Allow touch action on scrollable elements */
+.customized-scrollbar,
+.listbox-options,
+[style*='overflow: auto'],
+[style*='overflow: scroll'] {
+  touch-action: auto;
 }
 
 .my-card {

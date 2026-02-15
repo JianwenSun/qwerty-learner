@@ -7,6 +7,7 @@ import TypingPage from './pages/Typing'
 import { isOpenDarkModeAtom, isAuthenticatedAtom } from '@/store'
 import { Analytics } from '@vercel/analytics/react'
 import 'animate.css'
+// 导入 Howler.js 并配置
 import { useAtomValue } from 'jotai'
 import mixpanel from 'mixpanel-browser'
 import process from 'process'
@@ -35,83 +36,10 @@ function Root() {
     darkMode ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark')
   }, [darkMode])
 
-  // Prevent pull-to-refresh on iOS Safari and main page scrolling
-  useEffect(() => {
-    let startY = 0
-    let startX = 0
-
-    const handleTouchStart = (e: TouchEvent) => {
-      startY = e.touches[0].pageY
-      startX = e.touches[0].pageX
-    }
-
-    const handleTouchMove = (e: TouchEvent) => {
-      const currentY = e.touches[0].pageY
-      const currentX = e.touches[0].pageX
-      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
-
-      // Calculate touch direction
-      const deltaY = currentY - startY
-      const deltaX = currentX - startX
-
-      // Check if the touch target is inside a scrollable element
-      let target = e.target as HTMLElement
-      let isInsideScrollable = false
-
-      while (target) {
-        const style = window.getComputedStyle(target)
-        if (style.overflow === 'auto' || style.overflow === 'scroll' || style.overflowY === 'auto' || style.overflowY === 'scroll') {
-          // Check if the element has scrollable content
-          if (target.scrollHeight > target.clientHeight) {
-            isInsideScrollable = true
-            break
-          }
-        }
-        target = target.parentElement as HTMLElement
-      }
-
-      // Only handle vertical scrolling
-      if (Math.abs(deltaY) > Math.abs(deltaX)) {
-        // Prevent pull-to-refresh when at top and not inside a scrollable element
-        if (scrollTop === 0 && deltaY > 0 && !isInsideScrollable) {
-          e.preventDefault()
-        }
-        // Prevent scrolling the main page when at bottom and not inside a scrollable element
-        const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight
-        const clientHeight = document.documentElement.clientHeight || window.innerHeight
-        if (scrollTop + clientHeight >= scrollHeight && deltaY < 0 && !isInsideScrollable) {
-          e.preventDefault()
-        }
-      }
-    }
-
-    window.addEventListener('touchstart', handleTouchStart, { passive: true })
-    window.addEventListener('touchmove', handleTouchMove, { passive: false })
-
-    return () => {
-      // Remove event listeners
-      window.removeEventListener('touchstart', handleTouchStart)
-      window.removeEventListener('touchmove', handleTouchMove)
-    }
-  }, [])
-
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600)
 
-  useEffect(() => {
-    const handleResize = () => {
-      const isMobile = window.innerWidth <= 600
-      if (!isMobile) {
-        window.location.href = '/'
-      }
-      setIsMobile(isMobile)
-    }
-
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-
   return (
-    <React.StrictMode>
+    <>
       <BrowserRouter basename={REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''}>
         <Suspense fallback={<Loading />}>
           <Routes>
@@ -134,7 +62,7 @@ function Root() {
         </Suspense>
       </BrowserRouter>
       <Analytics />
-    </React.StrictMode>
+    </>
   )
 }
 

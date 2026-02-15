@@ -9,7 +9,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import useSound from 'use-sound'
 import type { HookOptions } from 'use-sound/dist/types'
 
-const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
+const pronunciationApi = '/dictvoice?audio='
 export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
   switch (pronunciation) {
     case 'uk':
@@ -42,6 +42,7 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
   const [play, { stop, sound }] = useSound(generateWordSoundSrc(word, pronunciationConfig.type), {
     html5: true,
     format: ['mp3'],
+    pool: 20, // 增加HTML5音频池大小，避免音频池耗尽的警告
     loop,
     volume: pronunciationConfig.volume,
     rate: pronunciationConfig.rate,
@@ -120,6 +121,7 @@ export function useUrlPronunciationSound(soundUrl: string | undefined) {
       src: [soundUrl],
       html5: true, // 强制使用HTML5 Audio，更好地支持不同格式
       format: ['aac', 'mp4'], // 指定支持的格式
+      pool: 20, // 增加HTML5音频池大小，避免音频池耗尽的警告
       onload: () => {
         console.log('Howler successfully loaded audio:', soundUrl)
         setIsSupported(true)
@@ -165,13 +167,11 @@ export function useUrlPronunciationSound(soundUrl: string | undefined) {
     try {
       if (isSupported !== false) {
         howl.play()
-        console.log('Playing audio with Howler:', soundUrl)
       } else {
         console.warn('Audio format not supported:', soundUrl)
       }
     } catch (error) {
-      console.error('Error playing audio with Howler:', error)
-      console.error('Audio URL:', soundUrl)
+      console.error('Error playing audio with Howler, url:', soundUrl, error)
     }
   }, [soundUrl, howl, isSupported])
 
@@ -180,7 +180,7 @@ export function useUrlPronunciationSound(soundUrl: string | undefined) {
       try {
         howl.stop()
       } catch (error) {
-        console.error('Error stopping audio with Howler:', error)
+        console.error('Error stopping audio with Howler, url:', soundUrl, error)
       }
     }
   }, [howl, soundUrl])

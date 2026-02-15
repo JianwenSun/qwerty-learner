@@ -8,22 +8,24 @@ import { useMemo } from 'react'
 export default function InputHandler({ updateInput }: { updateInput: (updateObj: WordUpdateAction) => void }) {
   const dictInfo = useAtomValue(currentDictInfoAtom)
 
-  const handler = useMemo(() => {
+  // 只根据 dictInfo.language 来选择处理器，不依赖于 updateInput
+  // 这样可以确保 KeyEventHandler 组件不会因为 updateInput 函数的变化而重新挂载
+  const HandlerComponent = useMemo(() => {
     switch (dictInfo.language) {
       case 'en':
-        return <KeyEventHandler updateInput={updateInput} />
+        return KeyEventHandler
       case 'de':
-        return <KeyEventHandler updateInput={updateInput} />
+        return KeyEventHandler
       case 'romaji':
-        return <KeyEventHandler updateInput={updateInput} />
+        return KeyEventHandler
       case 'code':
-        return <TextAreaHandler updateInput={updateInput} />
+        return TextAreaHandler
       default:
-        return <TextAreaHandler updateInput={updateInput} />
+        return TextAreaHandler
     }
-  }, [dictInfo.language, updateInput])
+  }, [dictInfo.language])
 
-  return <>{handler}</>
+  return <HandlerComponent updateInput={updateInput} />
 }
 export type WordUpdateAction = WordAddAction | WordDeleteAction | WordCompositionAction
 

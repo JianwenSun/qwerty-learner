@@ -32,6 +32,9 @@ import { useImmer } from 'use-immer'
 const vowelLetters = ['A', 'E', 'I', 'O', 'U']
 
 export default function WordComponent({ word, onFinish }: { word: Word; onFinish: () => void }) {
+  // 打印组件初始化日志，包含时间戳和单词名称
+  console.log(`[${new Date().toISOString()}] WordComponent 初始化: 单词 "${word.name}"`)
+
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
@@ -48,6 +51,13 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const currentLanguage = useAtomValue(currentDictInfoAtom).language
   const currentLanguageCategory = useAtomValue(currentDictInfoAtom).languageCategory
   const currentChapter = useAtomValue(currentChapterAtom)
+
+  // 打印组件挂起日志，包含时间戳和单词名称
+  useEffect(() => {
+    return () => {
+      console.log(`[${new Date().toISOString()}] WordComponent 挂起: 单词 "${word.name}"`)
+    }
+  }, [word.name])
 
   const [showTipAlert, setShowTipAlert] = useState(false)
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
@@ -118,7 +128,10 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   useHotkeys(
     'ctrl+j',
     () => {
+      // 打印按下 Ctrl+J 快捷键的日志
+      console.log(`[${new Date().toISOString()}] [Word/index.tsx] 按下 Ctrl+J 快捷键，播放单词发音`)
       if (state.isTyping) {
+        console.log(`[${new Date().toISOString()}] [Word/index.tsx] 调用 wordPronunciationIconRef.current?.play()`)
         wordPronunciationIconRef.current?.play()
       }
     },
@@ -127,10 +140,17 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   )
 
   useEffect(() => {
+    // 打印自动播放单词发音的日志
+    console.log(
+      `[${new Date().toISOString()}] [Word/index.tsx] 自动播放单词发音检查: inputWord.length=${wordState.inputWord.length}, isTyping=${
+        state.isTyping
+      }`,
+    )
     if (wordState.inputWord.length === 0 && state.isTyping) {
+      console.log(`[${new Date().toISOString()}] [Word/index.tsx] 自动播放单词发音`)
       wordPronunciationIconRef.current?.play && wordPronunciationIconRef.current?.play()
     }
-  }, [state.isTyping, wordState.inputWord.length, wordPronunciationIconRef.current?.play])
+  }, [state.isTyping, wordState.inputWord.length])
 
   const getLetterVisible = useCallback(
     (index: number) => {
@@ -253,6 +273,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
       dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD, payload: { letterMistake: updatedMistake } })
 
       if (currentChapter === 0 && state.chapterData.index === 0 && wordState.wrongCount + 1 >= 3) {
+        console.log('show tip alert')
         setShowTipAlert(true)
       }
     }

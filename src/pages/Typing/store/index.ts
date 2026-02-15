@@ -108,11 +108,18 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       state.isShowSkip = action.payload
       break
     case TypingStateActionType.SET_IS_TYPING:
+      if (action.payload === false) {
+        console.log('Setting isTyping to false (SET_IS_TYPING)')
+      }
       state.isTyping = action.payload
       break
 
     case TypingStateActionType.TOGGLE_IS_TYPING:
-      state.isTyping = !state.isTyping
+      const newTypingState = !state.isTyping
+      if (newTypingState === false) {
+        console.log('Setting isTyping to false (TOGGLE_IS_TYPING)')
+      }
+      state.isTyping = newTypingState
       break
     case TypingStateActionType.REPORT_CORRECT_WORD: {
       state.chapterData.correctCount += 1
@@ -146,6 +153,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       break
     case TypingStateActionType.FINISH_CHAPTER:
       state.chapterData.wordCount += 1
+      console.log('Setting isTyping to false (FINISH_CHAPTER)')
       state.isTyping = false
       state.isFinished = true
       state.isShowSkip = false
@@ -153,6 +161,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     case TypingStateActionType.SKIP_WORD: {
       const newIndex = state.chapterData.index + 1
       if (newIndex >= state.chapterData.words.length) {
+        console.log('Setting isTyping to false (SKIP_WORD)')
         state.isTyping = false
         state.isFinished = true
       } else {
@@ -164,6 +173,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     case TypingStateActionType.SKIP_2_WORD_INDEX: {
       const newIndex = action.newIndex
       if (newIndex >= state.chapterData.words.length) {
+        console.log('Setting isTyping to false (SKIP_2_WORD_INDEX)')
         state.isTyping = false
         state.isFinished = true
       }
