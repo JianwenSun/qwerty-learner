@@ -1,4 +1,4 @@
-import DictTagSwitcher from './DictTagSwitcher'
+import DictTagDictionarySwitcher from './DictionaryTagSwitcher'
 import DictionaryComponent from './DictionaryWithoutCover'
 import { currentDictInfoAtom } from '@/store'
 import type { Dictionary } from '@/typings'
@@ -24,7 +24,7 @@ export default function DictionaryGroup({ groupedDictsByTag }: { groupedDictsByT
 
   return (
     <div>
-      <DictTagSwitcher tagList={tagList} currentTag={currentTag} onChangeCurrentTag={onChangeCurrentTag} />
+      <DictTagDictionarySwitcher tagList={tagList} currentTag={currentTag} onChangeCurrentTag={onChangeCurrentTag} />
       <div className="mt-8 grid gap-x-4 gap-y-8 px-1 pb-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {currentTag && groupedDictsByTag[currentTag] ? (
           groupedDictsByTag[currentTag].map((dict) => <DictionaryComponent key={dict.id} dictionary={dict} />)

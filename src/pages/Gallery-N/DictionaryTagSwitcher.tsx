@@ -6,7 +6,7 @@ type Props = {
   onChangeCurrentTag: (tag: string) => void
 }
 
-export default function DictTagSwitcher({ tagList, currentTag, onChangeCurrentTag }: Props) {
+export default function DictionaryTagSwitcher({ tagList, currentTag, onChangeCurrentTag }: Props) {
   const onChangeTag = useCallback(
     (tag: string) => {
       onChangeCurrentTag(tag)
