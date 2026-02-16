@@ -1,9 +1,9 @@
-import DictionaryGroup from './CategoryDicts'
-import { LanguageTabSwitcher } from './LanguageTabSwitcher'
+import DictionaryGroup from './DictionaryGroup'
+import { DictionaryTypeTabSwitcher } from './DictionaryTypeTabSwitcher'
 import Layout from '@/components/Layout'
 import { dictionaries } from '@/resources/dictionary'
 import { currentDictInfoAtom, isOpenDarkModeAtom } from '@/store'
-import type { Dictionary, LanguageCategoryType } from '@/typings'
+import type { Dictionary, DictionaryType } from '@/typings'
 import groupBy, { groupByDictTags } from '@/utils/groupBy'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { useAtom, useAtomValue } from 'jotai'
@@ -14,11 +14,11 @@ import type { Updater } from 'use-immer'
 import { useImmer } from 'use-immer'
 
 export type GalleryState = {
-  currentLanguageTab: LanguageCategoryType
+  currentTypeTab: DictionaryType
 }
 
 const initialGalleryState: GalleryState = {
-  currentLanguageTab: 'en',
+  currentTypeTab: 'word',
 }
 
 export const GalleryContext = createContext<{
@@ -42,8 +42,8 @@ export default function GalleryPage() {
 
   const { groupedByCategoryAndTag } = useMemo(() => {
     // 为了确保数据重新计算，使用 forceUpdate 作为依赖
-    const currentLanguageCategoryDicts = dictionaries.filter((dict) => dict.languageCategory === galleryState.currentLanguageTab)
-    const groupedByCategory = Object.entries(groupBy(currentLanguageCategoryDicts, (dict) => dict.category))
+    const currentDictionaryTypes = dictionaries.filter((dict) => dict.type === galleryState.currentTypeTab)
+    const groupedByCategory = Object.entries(groupBy(currentDictionaryTypes, (dict) => dict.category))
     const groupedByCategoryAndTag = groupedByCategory.map(
       ([category, dicts]) => [category, groupByDictTags(dicts)] as [string, Record<string, Dictionary[]>],
     )
@@ -51,7 +51,7 @@ export default function GalleryPage() {
     return {
       groupedByCategoryAndTag,
     }
-  }, [galleryState.currentLanguageTab, forceUpdate]) // 添加 forceUpdate 作为依赖
+  }, [galleryState.currentTypeTab, forceUpdate]) // 添加 forceUpdate 作为依赖
 
   const onBack = useCallback(() => {
     navigate('/')
@@ -62,7 +62,7 @@ export default function GalleryPage() {
   useEffect(() => {
     if (currentDictInfo) {
       setGalleryState((state) => {
-        state.currentLanguageTab = currentDictInfo.languageCategory
+        state.currentTypeTab = currentDictInfo.type
       })
     }
   }, [currentDictInfo, setGalleryState])
@@ -87,12 +87,12 @@ export default function GalleryPage() {
             返回
           </button>
 
-          <div className="flex w-full flex-1 flex-col items-center justify-center">
+          <div className="flex w-full flex-1 flex-col items-start justify-start">
             <div className="flex h-full flex-col">
-              <div className="flex h-20 w-full items-center justify-between pb-6">
-                <LanguageTabSwitcher />
+              <div className="flex h-20 w-full items-start justify-between pb-6 pt-4">
+                <DictionaryTypeTabSwitcher />
               </div>
-              <ScrollArea.Root className="flex-1 overflow-y-auto">
+              <ScrollArea.Root className="flex-1 overflow-y-auto overflow-x-hidden">
                 <ScrollArea.Viewport className="h-full w-full">
                   <div className="flex flex-1 flex-col items-start justify-start gap-14">
                     {groupedByCategoryAndTag.map(([category, groupeByTag]) => (
@@ -102,10 +102,6 @@ export default function GalleryPage() {
                 </ScrollArea.Viewport>
                 <ScrollArea.Scrollbar className="flex touch-none select-none bg-transparent " orientation="vertical"></ScrollArea.Scrollbar>
               </ScrollArea.Root>
-              {/* todo: 增加导航 */}
-              {/* <div className="mt-20 h-40 w-40 text-center ">
-                <CategoryNavigation />
-              </div> */}
             </div>
           </div>
         </div>

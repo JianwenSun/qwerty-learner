@@ -1,22 +1,14 @@
 export * from './resource'
 
-export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk' | 'id'
-export type PhoneticType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk' | 'id'
-export type LanguageType = 'en' | 'romaji' | 'zh' | 'ja' | 'code' | 'de' | 'kk' | 'hapin' | 'id'
-export type LanguageCategoryType = 'en' | 'ja' | 'de' | 'code' | 'kk' | 'id'
+export type PronunciationType = 'us' | 'uk'
+export type PhoneticType = 'us' | 'uk'
+export type LanguageType = 'en'
 
 type Pronunciation2PhoneticMap = Record<PronunciationType, PhoneticType>
 
 export const PRONUNCIATION_PHONETIC_MAP: Pronunciation2PhoneticMap = {
   us: 'us',
-  uk: 'uk',
-  romaji: 'romaji',
-  zh: 'zh',
-  ja: 'ja',
-  de: 'de',
-  hapin: 'hapin',
-  kk: 'kk',
-  id: 'id',
+  uk: 'uk'
 }
 
 
@@ -30,7 +22,6 @@ export const PRONUNCIATION_PHONETIC_MAP: Pronunciation2PhoneticMap = {
 //   icon_url?: string
 //   length: number
 //   language: LanguageType
-//   languageCategory: LanguageCategoryType
 //   app?: string
 // }
 

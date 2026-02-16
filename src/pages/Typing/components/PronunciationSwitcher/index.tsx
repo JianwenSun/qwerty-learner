@@ -1,24 +1,22 @@
 import Tooltip from '@/components/Tooltip'
-import { LANG_PRON_MAP } from '@/resources/soundResource'
-import { currentDictInfoAtom, isOpenDarkModeAtom, phoneticConfigAtom, pronunciationConfigAtom } from '@/store'
+import { pronunciationList } from '@/resources/soundResource'
+import { isOpenDarkModeAtom, phoneticConfigAtom, pronunciationConfigAtom } from '@/store'
 import type { PronunciationType } from '@/typings'
 import { PRONUNCIATION_PHONETIC_MAP } from '@/typings'
 import { CTRL } from '@/utils'
 import { Listbox, Popover, Switch, Transition } from '@headlessui/react'
-import { useAtom, useAtomValue } from 'jotai'
+import { useAtom } from 'jotai'
 import { Fragment, useCallback, useEffect, useMemo } from 'react'
 import IconCheck from '~icons/tabler/check'
 import IconChevronDown from '~icons/tabler/chevron-down'
 
 const PronunciationSwitcher = () => {
-  const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [pronunciationConfig, setPronunciationConfig] = useAtom(pronunciationConfigAtom)
   const [phoneticConfig, setPhoneticConfig] = useAtom(phoneticConfigAtom)
-  const pronunciationList = useMemo(() => LANG_PRON_MAP[currentDictInfo.language].pronunciation, [currentDictInfo.language])
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
 
   useEffect(() => {
-    const defaultPronIndex = currentDictInfo.defaultPronIndex || LANG_PRON_MAP[currentDictInfo.language].defaultPronIndex
+    const defaultPronIndex = 0
     const defaultPron = pronunciationList[defaultPronIndex]
 
     // if the current pronunciation is not in the pronunciation list, reset the pronunciation config to default
@@ -31,7 +29,7 @@ const PronunciationSwitcher = () => {
         name: defaultPron.name,
       }))
     }
-  }, [currentDictInfo.defaultPronIndex, currentDictInfo.language, setPronunciationConfig, pronunciationList, pronunciationConfig.type])
+  }, [setPronunciationConfig, pronunciationList, pronunciationConfig.type])
 
   useEffect(() => {
     const phoneticType = PRONUNCIATION_PHONETIC_MAP[pronunciationConfig.type]

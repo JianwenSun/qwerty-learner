@@ -1,4 +1,3 @@
-import { RadioGroup } from '@headlessui/react'
 import { useCallback } from 'react'
 
 type Props = {
@@ -16,22 +15,19 @@ export default function DictTagSwitcher({ tagList, currentTag, onChangeCurrentTa
   )
 
   return (
-    <RadioGroup value={currentTag} onChange={onChangeTag}>
-      <div className="flex items-center space-x-4">
-        {tagList.map((option) => (
-          <RadioGroup.Option
-            key={option}
-            value={option}
-            className={({ checked }) =>
-              `cursor-pointer whitespace-nowrap rounded-[3rem] px-4 py-2 ${
-                checked ? 'bg-indigo-400 text-white' : 'bg-white text-gray-600 dark:bg-gray-800 dark:text-gray-200'
-              } ${!checked && 'hover:bg-indigo-100 dark:hover:bg-gray-600'}`
-            }
-          >
-            <p className={`font-normal `}>{option}</p>
-          </RadioGroup.Option>
-        ))}
-      </div>
-    </RadioGroup>
+    <div className="flex flex-wrap gap-2">
+      {tagList.map((option) => (
+        <button
+          key={option}
+          type="button"
+          onClick={() => onChangeTag(option)}
+          className={`flex min-h-[36px] cursor-pointer items-center justify-center whitespace-nowrap rounded-[3rem] px-4 py-2 ${
+            currentTag === option ? 'bg-indigo-400 text-white' : 'bg-white text-gray-600 dark:bg-gray-800 dark:text-gray-200'
+          } ${currentTag !== option && 'hover:bg-indigo-100 dark:hover:bg-gray-600'}`}
+        >
+          <span>{option}</span>
+        </button>
+      ))}
+    </div>
   )
 }

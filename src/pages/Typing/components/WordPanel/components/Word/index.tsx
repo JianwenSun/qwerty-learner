@@ -1,7 +1,6 @@
 import type { WordUpdateAction } from '../InputHandler'
 import InputHandler from '../InputHandler'
 import Letter from './Letter'
-import Notation from './Notation'
 import { TipAlert } from './TipAlert'
 import style from './index.module.css'
 import { initialWordState } from './type'
@@ -43,12 +42,9 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const isIgnoreCase = useAtomValue(isIgnoreCaseAtom)
   const isShowAnswerOnHover = useAtomValue(isShowAnswerOnHoverAtom)
   const saveWordRecord = useSaveWordRecord()
-  // const wordLogUploader = useMixPanelWordLogUploader(state)
   const [playKeySound, playBeepSound, playHintSound] = useKeySounds()
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
   const [isHoveringWord, setIsHoveringWord] = useState(false)
-  const currentLanguage = useAtomValue(currentDictInfoAtom).language
-  const currentLanguageCategory = useAtomValue(currentDictInfoAtom).languageCategory
   const currentChapter = useAtomValue(currentChapterAtom)
 
   // 打印组件挂起日志，包含时间戳和单词名称
@@ -327,11 +323,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   return (
     <>
       <InputHandler updateInput={updateInput} />
-      <div
-        lang={currentLanguageCategory !== 'code' ? currentLanguageCategory : 'en'}
-        className="flex flex-col items-center justify-center pb-1 pt-4"
-      >
-        {['romaji', 'hapin'].includes(currentLanguage) && word.notation && <Notation notation={word.notation} />}
+      <div lang={'en'} className="flex flex-col items-center justify-center pb-1 pt-4">
         <div
           className={`tooltip-info relative w-fit bg-transparent p-0 leading-normal shadow-none dark:bg-transparent ${
             wordDictationConfig.isOpen ? 'tooltip' : ''
