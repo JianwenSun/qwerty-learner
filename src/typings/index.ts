@@ -19,6 +19,21 @@ export const PRONUNCIATION_PHONETIC_MAP: Pronunciation2PhoneticMap = {
   id: 'id',
 }
 
+
+// export type Dictionary = {
+//   id: string
+//   name: string
+//   description: string
+//   category: string
+//   tags: string[]
+//   url: string
+//   icon_url?: string
+//   length: number
+//   language: LanguageType
+//   languageCategory: LanguageCategoryType
+//   app?: string
+// }
+
 // 词性类型颜色映射表
 export const POS_TYPE_COLOR_MAP: Record<string, string> = {
   'v.': 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200', // 动词
@@ -60,10 +75,15 @@ export type Pos = {
   definition: string
 }
 
+export type Sound = {
+  us_url: string
+  uk_url: string
+}
+
 export type Word = {
   id: string
   name: string
-  trans: string[]
+  sound: Sound
   pos?: Pos[]
   usphone: string
   ukphone: string
@@ -73,6 +93,16 @@ export type Word = {
 export type WordWithIndex = Word & {
   // 在 chapter 中的原始索引
   index: number
+}
+
+export type Sentence = {
+  id: string
+  name: string
+  sound: Sound
+  pos?: Pos[]
+  usphone: string
+  ukphone: string
+  notation?: string
 }
 
 export type InfoPanelType = 'donate' | 'vsc' | 'community' | 'redBook'

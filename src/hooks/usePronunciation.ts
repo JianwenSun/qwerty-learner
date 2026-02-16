@@ -36,41 +36,44 @@ export function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronun
 
 export default function usePronunciationSound(word: string, isLoop?: boolean) {
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
-  const loop = useMemo(() => (typeof isLoop === 'boolean' ? isLoop : pronunciationConfig.isLoop), [isLoop, pronunciationConfig.isLoop])
-  const [isPlaying, setIsPlaying] = useState(false)
+  const url = generateWordSoundSrc(word, pronunciationConfig.type)
 
-  const [play, { stop, sound }] = useSound(generateWordSoundSrc(word, pronunciationConfig.type), {
-    html5: true,
-    format: ['mp3'],
-    pool: 20, // 增加HTML5音频池大小，避免音频池耗尽的警告
-    loop,
-    volume: pronunciationConfig.volume,
-    rate: pronunciationConfig.rate,
-  } as HookOptions)
+  return useUrlPronunciationSound(url)
+  // const loop = useMemo(() => (typeof isLoop === 'boolean' ? isLoop : pronunciationConfig.isLoop), [isLoop, pronunciationConfig.isLoop])
+  // const [isPlaying, setIsPlaying] = useState(false)
 
-  useEffect(() => {
-    if (!sound) return
-    sound.loop(loop)
-    return noop
-  }, [loop, sound])
+  // const [play, { stop, sound }] = useSound(generateWordSoundSrc(word, pronunciationConfig.type), {
+  //   html5: true,
+  //   format: ['mp3'],
+  //   pool: 20, // 增加HTML5音频池大小，避免音频池耗尽的警告
+  //   loop,
+  //   volume: pronunciationConfig.volume,
+  //   rate: pronunciationConfig.rate,
+  // } as HookOptions)
 
-  useEffect(() => {
-    if (!sound) return
-    const unListens: Array<() => void> = []
+  // useEffect(() => {
+  //   if (!sound) return
+  //   sound.loop(loop)
+  //   return noop
+  // }, [loop, sound])
 
-    unListens.push(addHowlListener(sound, 'play', () => setIsPlaying(true)))
-    unListens.push(addHowlListener(sound, 'end', () => setIsPlaying(false)))
-    unListens.push(addHowlListener(sound, 'pause', () => setIsPlaying(false)))
-    unListens.push(addHowlListener(sound, 'playerror', () => setIsPlaying(false)))
+  // useEffect(() => {
+  //   if (!sound) return
+  //   const unListens: Array<() => void> = []
 
-    return () => {
-      setIsPlaying(false)
-      unListens.forEach((unListen) => unListen())
-        ; (sound as Howl).unload()
-    }
-  }, [sound])
+  //   unListens.push(addHowlListener(sound, 'play', () => setIsPlaying(true)))
+  //   unListens.push(addHowlListener(sound, 'end', () => setIsPlaying(false)))
+  //   unListens.push(addHowlListener(sound, 'pause', () => setIsPlaying(false)))
+  //   unListens.push(addHowlListener(sound, 'playerror', () => setIsPlaying(false)))
 
-  return { play, stop, isPlaying }
+  //   return () => {
+  //     setIsPlaying(false)
+  //     unListens.forEach((unListen) => unListen())
+  //       ; (sound as Howl).unload()
+  //   }
+  // }, [sound])
+
+  // return { play, stop, isPlaying }
 }
 
 export function usePrefetchPronunciationSound(word: string | undefined) {

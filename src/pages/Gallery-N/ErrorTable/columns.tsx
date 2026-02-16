@@ -7,7 +7,7 @@ import DeleteIcon from '~icons/weui/delete-filled'
 
 export type ErrorColumn = {
   word: string
-  trans: string
+  translation: string
   errorCount: number
   errorChar: string[]
 }
@@ -86,7 +86,7 @@ export function getRowsFromErrorWordData(data: TErrorWordData[]): ErrorColumn[] 
   return data.map((item) => {
     return {
       word: item.word,
-      trans: item.originData.pos?.map((pos) => pos.definition).join('，') ?? '',
+      translation: item.originData.pos?.map((pos) => pos.definition).join('，') ?? '',
       errorCount: item.errorCount,
       errorChar: item.errorChar,
     }

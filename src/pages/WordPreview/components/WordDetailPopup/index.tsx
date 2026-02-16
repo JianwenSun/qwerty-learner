@@ -1,7 +1,7 @@
 import { UrlPronunciationIcon } from '@/components/UrlPronunciationIcon'
 import type { UrlPronunciationIconRef } from '@/components/UrlPronunciationIcon'
-import { Vocabulary } from '@/models/shanbei'
-import { getVocabWork } from '@/storage/shanbeiStroageApi'
+import { Vocabulary } from '@/plugins/sb/sb'
+import { getVocabWordIgnoreUpper } from '@/storage/shanbeiStroageApi'
 import { useState, useEffect, useRef } from 'react'
 
 interface WordDetailPopupProps {
@@ -31,7 +31,7 @@ export default function WordDetailPopup({ selectedWord, isVisible, onClose }: Wo
       setLoading(true)
       setError(null)
       try {
-        const vocabulary = await getVocabWork(selectedWord)
+        const vocabulary = await getVocabWordIgnoreUpper(selectedWord)
         setVocabulary(vocabulary)
       } catch (err) {
         setError('查询单词详情失败，请稍后重试')

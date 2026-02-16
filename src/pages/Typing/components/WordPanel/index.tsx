@@ -13,6 +13,9 @@ import { useCallback, useContext, useMemo, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export default function WordPanel() {
+  // 打印组件初始化日志，包含时间戳和单词名称
+  console.log(`[${new Date().toISOString()}] WordPanel 初始化`)
+
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
@@ -35,7 +38,7 @@ export default function WordPanel() {
     return newIndex > state.chapterData.words.length - 1 ? state.chapterData.words.length - 1 : newIndex
   }, [state.chapterData.index, state.chapterData.words.length])
 
-  usePrefetchPronunciationSound(nextWord?.name)
+  //usePrefetchPronunciationSound(nextWord?.name)
 
   const reloadCurrentWordComponent = useCallback(() => {
     setWordComponentKey((old) => old + 1)

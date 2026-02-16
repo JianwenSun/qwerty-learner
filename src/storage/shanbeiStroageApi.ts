@@ -1,5 +1,5 @@
 import { decode } from "@/encode/decode";
-import { Examples, Exts, Senses, Vocabulary } from "@/models/shanbei";
+import { Examples, Exts, Senses, Vocabulary } from "@/plugins/sb/sb";
 import { UpyunClient } from "./upyun";
 
 const ShanbeiNamespace = "sb"
@@ -12,6 +12,33 @@ function getVocabKey(vocabId: string) {
 
 function getVocabWorkKey(word: string) {
     return `${ShanbeiNamespace}/vocabulary/word/${word}`
+}
+
+export async function getVocabWordIgnoreUpper(word: string): Promise<Vocabulary> {
+    // 检查单词的首字母是否为大写
+    const firstChar = word.charAt(0);
+    const isFirstCharUpper = firstChar === firstChar.toUpperCase();
+
+    // 先尝试使用原始单词查询
+    var vocabWordKey = getVocabWorkKey(word) + '.json';
+    try {
+        //const vocab = await UpyunS3Client.getText(vocabWordKey) as string;
+        const vocab = await UpyunClient.getFileInfo(vocabWordKey);
+        const decoded = await decode(SecretKey, vocab);
+        return JSON.parse(decoded) as Vocabulary
+    } catch (error) {
+        // 如果首字母为大写且查询失败，尝试将首字母转换为小写后重新查询
+        if (isFirstCharUpper) {
+            const lowercaseWord = word.charAt(0).toLowerCase() + word.slice(1);
+            var lowercaseVocabWordKey = getVocabWorkKey(lowercaseWord) + '.json';
+            //const lowercaseVocab = await UpyunS3Client.getText(lowercaseVocabWordKey) as string;
+            const lowercaseVocab = await UpyunClient.getFileInfo(lowercaseVocabWordKey);
+            const decoded = await decode(SecretKey, lowercaseVocab);
+            return JSON.parse(decoded) as Vocabulary
+        }
+        // 如果首字母不是大写或重新查询也失败，抛出错误
+        throw error;
+    }
 }
 
 export async function getVocabWork(word: string): Promise<Vocabulary> {

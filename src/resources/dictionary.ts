@@ -1,14 +1,13 @@
 import type { Dictionary, DictionaryResource } from '@/typings/index'
 import { calcChapterCount } from '@/utils'
-import { xiaoxueDictionary } from './xiaoxuedictionary'
-
+import { vocabularyDictionaryResources } from './vocabularyDictionary'
 
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
  */
 export const dictionaryResources: DictionaryResource[] = [
-  ...xiaoxueDictionary
+  ...vocabularyDictionaryResources
 ]
 
 export const dictionaries: Dictionary[] = dictionaryResources.map((resource) => ({

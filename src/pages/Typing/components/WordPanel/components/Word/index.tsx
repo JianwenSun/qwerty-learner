@@ -7,8 +7,7 @@ import style from './index.module.css'
 import { initialWordState } from './type'
 import type { WordState } from './type'
 import Tooltip from '@/components/Tooltip'
-import type { WordPronunciationIconRef } from '@/components/WordPronunciationIcon'
-import { WordPronunciationIcon } from '@/components/WordPronunciationIcon'
+import { WordPronunciationIcon, WordPronunciationIconRef } from '@/components/WordPronunciationIcon'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
@@ -59,8 +58,16 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     }
   }, [word.name])
 
+  // 添加状态，用于跟踪是否已经自动播放过单词发音
+  const [hasAutoPlayed, setHasAutoPlayed] = useState(false)
   const [showTipAlert, setShowTipAlert] = useState(false)
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
+
+  // 当单词变化时，重置自动播放标志
+  useEffect(() => {
+    console.log(`[${new Date().toISOString()}] [Word/index.tsx] 单词变化，重置自动播放标志: ${word.name}`)
+    setHasAutoPlayed(false)
+  }, [word.name])
 
   useEffect(() => {
     // run only when word changes
@@ -144,13 +151,20 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     console.log(
       `[${new Date().toISOString()}] [Word/index.tsx] 自动播放单词发音检查: inputWord.length=${wordState.inputWord.length}, isTyping=${
         state.isTyping
-      }`,
+      }, hasAutoPlayed=${hasAutoPlayed}`,
     )
-    if (wordState.inputWord.length === 0 && state.isTyping) {
+    if (wordState.inputWord.length === 0 && state.isTyping && !hasAutoPlayed) {
       console.log(`[${new Date().toISOString()}] [Word/index.tsx] 自动播放单词发音`)
-      wordPronunciationIconRef.current?.play && wordPronunciationIconRef.current?.play()
+      const playAudio = async () => {
+        if (wordPronunciationIconRef.current?.play) {
+          await wordPronunciationIconRef.current.play()
+          // 设置标志，防止再次自动播放
+          setHasAutoPlayed(true)
+        }
+      }
+      playAudio()
     }
-  }, [state.isTyping, wordState.inputWord.length])
+  }, [state.isTyping, wordState.inputWord.length, hasAutoPlayed])
 
   const getLetterVisible = useCallback(
     (index: number) => {

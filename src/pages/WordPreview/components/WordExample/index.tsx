@@ -1,6 +1,6 @@
 import WordExampleItem from '../WordExampleItem'
 import { UrlPronunciationIconRef } from '@/components/UrlPronunciationIcon'
-import { Examples } from '@/models/shanbei'
+import { Examples } from '@/plugins/sb/sb'
 import { getVocabExamples } from '@/storage/shanbeiStroageApi'
 import { Word } from '@/typings'
 import { useState, useEffect, useCallback, useRef } from 'react'

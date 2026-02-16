@@ -61,7 +61,7 @@
     "xlsx": "^0.18.5"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 192.168.1.4",
     "start": "vite",
     "build": "cross-env CI=false vite build --base=./",
     "test": "echo \"No tests\"",

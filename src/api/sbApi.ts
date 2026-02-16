@@ -1,4 +1,4 @@
-import { WordDetail } from "@/models/shanbei";
+import { WordDetail } from "@/plugins/sb/sb";
 
 const authToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjY5NjExOTE5LCJleHAiOjE3Nzg0NjIyNTIsImV4cF92MiI6MTc3ODQ2MjI1MiwiZGV2aWNlIjoiIiwidXNlcm5hbWUiOiJXZWNoYXRfYTc4Y2Q0YTJmNTgyMDBjMSIsImlzX3N0YWZmIjowLCJzZXNzaW9uX2lkIjoiOGQ4MGM5MzIwMTdmMTFmMWI5OWI3MmI3MTRiMTBhNDAifQ.VpqAyE6QDGCxu6wI0J2yL-PJ4mSIuzJjE8jQAxwKGaQ";
 

@@ -1,5 +1,5 @@
 import WordExampleItem from '../WordExampleItem'
-import { Exts } from '@/models/shanbei'
+import { Exts } from '@/plugins/sb/sb'
 import { getExtExamples } from '@/storage/shanbeiStroageApi'
 import { Word } from '@/typings'
 import { useState, useEffect, useCallback } from 'react'

@@ -1,0 +1,1902 @@
+[
+  {
+    "id": "bctxhq",
+    "name": "weather",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/495cd70666f0e2b761f79c82ef83c27f.6b18c5bda35d19787e8d5a82a327f3e8.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/55b482967934c97434647ac3ada1e32b.060a1369e2552a50e65e49376f73d805.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "天气"
+      }
+    ],
+    "usphone": "'weðər",
+    "ukphone": "'weðə(r)"
+  },
+  {
+    "id": "gwbbl",
+    "name": "like",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/d1be1c7bf33ff45a7190e1178cdfdff2.0db3297f2d79dbddb128c9e814f8ab2c.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/4f94d6a6f049f63042bb24e14900deba.de8549dc7523d551c469615023abfa18.mp3"
+    },
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "喜欢"
+      },
+      {
+        "type": "prep.",
+        "definition": "像，像……一样"
+      }
+    ],
+    "usphone": "laɪk",
+    "ukphone": "laɪk"
+  },
+  {
+    "id": "qtmwu",
+    "name": "sunny",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/4a6e70091583d44020f876bd622ec6bf.63bec75e033d55661af6ce0f7e793b97.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/4ffb54a2400a7b124a59f72b266e4745.fb97eb5b905b79d6c30b9077d67333ab.mp3"
+    },
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "晴朗的；阳光充足的"
+      }
+    ],
+    "usphone": "'sʌni",
+    "ukphone": "'sʌni"
+  },
+  {
+    "id": "btdpx",
+    "name": "windy",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/b373533c10c6c80833c6fb15e07131d8.e5373d20f14928a88e8a3a71d6ab3b38.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/0842cd4b7b773a14cc36d3b90f909805.a3dc7ae66a4b800916fa7be14e13cba4.mp3"
+    },
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有风的；多风的"
+      }
+    ],
+    "usphone": "'wɪndi",
+    "ukphone": "'wɪndi"
+  },
+  {
+    "id": "jipvq",
+    "name": "take",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/85f036c91bca1e182fd9efcc3b167462.bfb813ce6557c5845fc8644872c89320.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/8090a4612720ef0406485b8cecf38e11.3a9a274b728f1414b0af5b6640c4cca1.mp3"
+    },
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "拿走；吃，服用；花费"
+      },
+      {
+        "type": "n.",
+        "definition": "电影镜头；电视镜头"
+      }
+    ],
+    "usphone": "teɪk",
+    "ukphone": "teɪk"
+  },
+  {
+    "id": "mjfsn",
+    "name": "cap",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/7004a1bcb82491c46023f979f817c26a.0157b16dc5b43258b19071bb32c2d14a.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/fc6ba180817a17e4b16c14e3c53eec55.274d2682206fd4539f86d9308c715254.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "便帽"
+      }
+    ],
+    "usphone": "kæp",
+    "ukphone": "kæp"
+  },
+  {
+    "id": "zkssa",
+    "name": "sofa",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/8a84dc48a8fbfd4f2a4a51d81772769e.f84a53ad02f0cdd4110eb862728ffc47.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/bdba744cb293463c34d37afd40af3d6c.6dbe5110819cd3bdd3279e11d7bb4e29.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "（长）沙发"
+      }
+    ],
+    "usphone": "'soʊfə",
+    "ukphone": "'səʊfə"
+  },
+  {
+    "id": "vyrpx",
+    "name": "street",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/f7c212ee3988443a6479b6a39c536072.d24051d21d949516ec6e0a7009791635.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/242cb8ca0994996c07386d8ff93a3429.012eab20aee8231deae2d3bb844514b2.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "街，街道"
+      }
+    ],
+    "usphone": "striːt",
+    "ukphone": "striːt"
+  },
+  {
+    "id": "ineyg",
+    "name": "rain",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/fdba78ac96638d5852dd52a8d0221fa3.e889a833fe7d2df2db8ce60debad81f2.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/fd1ebe25235f05824845cda9689bc928.fcab47d3af15815e1f45dfc655f5a254.mp3"
+    },
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "下雨"
+      },
+      {
+        "type": "n.",
+        "definition": "雨，雨水"
+      }
+    ],
+    "usphone": "reɪn",
+    "ukphone": "reɪn"
+  },
+  {
+    "id": "jdhqc",
+    "name": "snow",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/d12c8df457fbd25c6ad773ef6c752109.0baf9efc9b774359099735cc44c54037.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/f438193baa7779f7e762fbcc0617feca.e8435dfaec9b38dad9fddf12fa1be77a.mp3"
+    },
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "下雪"
+      },
+      {
+        "type": "n.",
+        "definition": "雪"
+      }
+    ],
+    "usphone": "snoʊ",
+    "ukphone": "snəʊ"
+  },
+  {
+    "id": "ymxsx",
+    "name": "ski",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/1d0d2698f16b7f78bd3557b14359c728.f68dd16400851875912ca97aee0b91e7.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/bedba08b34e5382f02c7fd48c778d435.fb6f471ba15e5507a9f6406a5cfb0363.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "滑雪板"
+      },
+      {
+        "type": "vi.",
+        "definition": "滑雪"
+      },
+      {
+        "type": "adj.",
+        "definition": "滑雪的"
+      }
+    ],
+    "usphone": "skiː",
+    "ukphone": "skiː"
+  },
+  {
+    "id": "mgykz",
+    "name": "radio",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/8ed9f8a41b894fafa95398aa992f0ac8.5f8153fea6841e476742b06dc8f514ad.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/cb048f005eb070320fba5360ad7c321e.be068c2105b0d3cabee92b9b97cc01b7.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "无线电；收音机"
+      }
+    ],
+    "usphone": "'reɪdioʊ",
+    "ukphone": "'reɪdiəʊ"
+  },
+  {
+    "id": "ywvwg",
+    "name": "photo",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/9723008278b7e3b7932a028e9729663b.59fd961e661f3d40abeb3dcbd74d0db2.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/a68da95cd96955a5d88e9add853c05ad.e935808285985824367366a3ab868f22.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "照片（=photograph）"
+      }
+    ],
+    "usphone": "'foʊtoʊ",
+    "ukphone": "'fəʊtəʊ"
+  },
+  {
+    "id": "msige",
+    "name": "newspaper",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/ef7639e68705b5ca332fa19ebe58dcf9.cc7af72cb23020988d39e95f5ff88268.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/6733eb7f1a1e687d52429f2460fdb639.e744c37f8f828518127eb9b359cafac1.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "报纸"
+      }
+    ],
+    "usphone": "'nuːzpeɪpər",
+    "ukphone": "'njuːzpeɪpə(r)"
+  },
+  {
+    "id": "wlwzx",
+    "name": "little",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/a81ae99e7cf37e89c068e7cb4c472117.f7195acb21347646fa5025b230921b15.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/b6fb637187fdb30a38f73ec7b17caf48.2e8f862192a5ed0ff22fbd6b192603e2.mp3"
+    },
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "年幼的；小的；少的"
+      }
+    ],
+    "usphone": "'lɪtl",
+    "ukphone": "'lɪtl"
+  },
+  {
+    "id": "ihlkg",
+    "name": "camera",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/d0c88d3be50c3cf4b0b4872f06a02a4a.9d721e0e3323949ff62f0253134d9c29.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/6944fb89472b6eb94316ca3503f67a45.7b8aabb944d9bb7a62ddd5b8ec5adfc4.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "照相机"
+      }
+    ],
+    "usphone": "'kæmərə",
+    "ukphone": "'kæmərə"
+  },
+  {
+    "id": "hntin",
+    "name": "smile",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/243fb11bb8a280881913732ef8586af2.ff952aeb6d7683b389fb4aa160db1454.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/65785b37ef9f42bb0de9b81f7fd52652.60bc450372cfc3b7f20b2cae1508f910.mp3"
+    },
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "微笑"
+      },
+      {
+        "type": "n.",
+        "definition": "微笑"
+      }
+    ],
+    "usphone": "smaɪl",
+    "ukphone": "smaɪl"
+  },
+  {
+    "id": "dqrjl",
+    "name": "draw",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/8d4533f9cb9a6ae9bff84d405516cac4.f44405ef518c97a9516cf170e1a0e365.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/6ca57b53490fe6330dd95ad4034b5b1d.8c73a72d5004bb134d4217a5bd70daba.mp3"
+    },
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "描画; 拖(动), 拉(动), 牵引; 取出; 抽出; 提取; 取得; 推断出; 引起; 吸引"
+      }
+    ],
+    "usphone": "drɔː",
+    "ukphone": "drɔː"
+  },
+  {
+    "id": "yunge",
+    "name": "picture",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/tkdghk/2e341dd550da4134f8f2d2c204c1abe9.842c8d6ab65d546adacce661de88b18f.aac",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/4a5c1e828bb4754d0f9f5aa6a1e1be2a.7309cf0b44ab740c752e2b933e9f155f.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "图画；照片"
+      },
+      {
+        "type": "v.",
+        "definition": "想象；描述"
+      }
+    ],
+    "usphone": "'pɪktʃər",
+    "ukphone": "'pɪktʃə(r)"
+  },
+  {
+    "id": "sxwxs",
+    "name": "write",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/6655602959a72c7d5d3c8dfadf3fa22b.32b3b597ac89cb28ad09e5b7bae21916.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/3ba571a4c73a862e3ac374c59e8eb005.1a6e2a4ce640a79d37fba214290111f5.mp3"
+    },
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "写"
+      }
+    ],
+    "usphone": "raɪt",
+    "ukphone": "raɪt"
+  },
+  {
+    "id": "cuskg",
+    "name": "letter",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/88447026af3b32b2f629113e47d0d481.5fe1afd04add7f0ce4dd0e5144a62ab7.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/adf31ed23389cd4b66f3766005051f8e.f40bdfa85b7a8c1914635238dd538052.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "信；字母"
+      }
+    ],
+    "usphone": "'letər",
+    "ukphone": "'letə(r)"
+  },
+  {
+    "id": "btvlax",
+    "name": "colour",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/3a0f2a4e67db4083050d3a2e35bf9f1a.f4cc6deef791effb9b74e866f031bb8a.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/fe88ce230e1e79a6e134a48abe2c9db9.e4f5cf2c2fd1176135577c473a5ff274.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "颜色"
+      },
+      {
+        "type": "vt.",
+        "definition": "给……着色，涂色"
+      }
+    ],
+    "usphone": "'kʌlər",
+    "ukphone": "'kʌlə(r)"
+  },
+  {
+    "id": "spjtl",
+    "name": "tidy",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/63d88a84bbe164f26a1fe983e85ab73c.522298536f58aa52d6fb7281de0d9d28.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/8e8571635a02a23b0e627a63c3dcfce4.d21219aec885056b47ca12cd5d40d019.mp3"
+    },
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "整洁的"
+      },
+      {
+        "type": "vt.",
+        "definition": "使整洁，使整齐"
+      },
+      {
+        "type": "vi.",
+        "definition": "整理；收拾"
+      }
+    ],
+    "usphone": "'taɪdi",
+    "ukphone": "'taɪdi"
+  },
+  {
+    "id": "dfree",
+    "name": "room",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/9e96c9d6f7924de285eb26afd273f69b.4ba328c3a377c7f4d745349f8ab2d187.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/9c726da59b4d31640c48f2a98d88544a.82b771d87f861623f6432607270ce3ce.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "房间，室；空间"
+      }
+    ],
+    "usphone": "ruːm",
+    "ukphone": "ruːm"
+  },
+  {
+    "id": "baqgkp",
+    "name": "do",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/b0de96074a39e625e1d4d3f1dfe625a9.468617a05f6b7d1aa9581f3758c902e6.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/761e04aa3c9658b647eca183d2cee976.d772fe61c7073b4c9dd0fe999339431f.mp3"
+    },
+    "pos": [
+      {
+        "type": "aux. v.",
+        "definition": "（构成否定句及疑问句的助动词，无词义）"
+      },
+      {
+        "type": "v.",
+        "definition": "做，干"
+      }
+    ],
+    "usphone": "duː",
+    "ukphone": "duː"
+  },
+  {
+    "id": "buaadz",
+    "name": "homework",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/216942babcaddb83b1b387629aa716b2.e91bd29a6271aa619d8f8d032e3bfee9.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/f2ee3f70e1a4a058b74b0f0b77c9544a.5b5e7aaa997b9e74f1148b17e5eabbac.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "家庭作业"
+      }
+    ],
+    "usphone": "'hoʊmwɜːrk",
+    "ukphone": "'həʊmwɜːk"
+  },
+  {
+    "id": "nvlqn",
+    "name": "sleep",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/11cc331eea12823b393b7e442e0f8681.4562c633032f6ea10694cb3a7637f272.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/7a940c669b5e1a79ac42d9f20b1c364c.ff848a660fb55528a644c09fc663d944.mp3"
+    },
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "睡觉"
+      }
+    ],
+    "usphone": "sliːp",
+    "ukphone": "sliːp"
+  },
+  {
+    "id": "wkpmz",
+    "name": "secret",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/ad467d071ca062fa3a6a3e1fdc12c6cc.92c4b64403b0e7dd95c0a3887d19f7f2.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/verskb/5da2d5741b2a72b278f77166451fd19a.e85268eaad99d453cfd71a75d02dbc27.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "秘密"
+      },
+      {
+        "type": "adj.",
+        "definition": "秘密的"
+      }
+    ],
+    "usphone": "'siːkrət",
+    "ukphone": "'siːkrət"
+  },
+  {
+    "id": "brtuec",
+    "name": "card",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/3d26dd28d15bce122906ac1ac37f284a.071704d8d77f77140f496c08222b3c2c.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/b006f90be4d6e9fb6d4972308aec11cd.2ae330ba2d6e0ad3972c7bc378d6ddb4.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "贺卡；卡片；纸牌"
+      }
+    ],
+    "usphone": "kɑːrd",
+    "ukphone": "kɑːd"
+  },
+  {
+    "id": "muarz",
+    "name": "flower",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/edc956e9d8b961eccb9ff0486494db5e.0984ed19e8392468005545f9ca883014.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/bcdd30a0169d9002fd39273a3bb9ca81.7ee1885586f786fbc9cae67a2d5a60be.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "花"
+      },
+      {
+        "type": "v.",
+        "definition": "开花"
+      }
+    ],
+    "usphone": "'flaʊər",
+    "ukphone": "'flaʊə(r)"
+  },
+  {
+    "id": "yiyne",
+    "name": "science",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/504e763f298efa3869de21dc7cf8dd07.796a8b990f73c24c08ee257055ecfbbf.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/363c02b3a4775ff4c0958037d6347dbb.b3cda30f213e3d2566d3c3e0c693b869.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "科学，自然科学"
+      }
+    ],
+    "usphone": "'saɪəns",
+    "ukphone": "'saɪəns"
+  },
+  {
+    "id": "rmffq",
+    "name": "today",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/e258088fd75a5359af12b19a29d45b1b.c86fa44ddb00574e28f9b2cf3b3404a8.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/e90d6ccabd92bc75b814b247965bdaa2.a87f158766ff28527b4490e66c7b6fb7.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "今天；现在，当前"
+      },
+      {
+        "type": "adv.",
+        "definition": "在今天"
+      }
+    ],
+    "usphone": "tə'deɪ",
+    "ukphone": "tə'deɪ"
+  },
+  {
+    "id": "rqxnc",
+    "name": "call",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/6fabf4ab7849bf46be5441934ab2f931.9b295584b45b046c17547086cf62d538.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/aea3798426941d48cdac73698d2cb6ab.fa2991113ec181e80cbed4ba733ed6f6.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "通话；（一次）电话；打电话（给）"
+      },
+      {
+        "type": "vt.",
+        "definition": "喊，叫；打电话"
+      },
+      {
+        "type": "vt.",
+        "definition": "把……叫做；给……命名"
+      }
+    ],
+    "usphone": "kɔːl",
+    "ukphone": "kɔːl"
+  },
+  {
+    "id": "bcpdtq",
+    "name": "noise",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/3d412f0e19c16f7a9b762fbf80171561.24829f02e0a9532ed02152ce793cbf15.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/138ce7eaad84af2ea65a824906b3e41d.c88b5c640feed2a6d29b35ae88e75dfc.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "声音，响声；噪音"
+      }
+    ],
+    "usphone": "nɔɪz",
+    "ukphone": "nɔɪz"
+  },
+  {
+    "id": "bvjiml",
+    "name": "drink",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/399c90383d3f6e5de8dd76c6c350436b.6f5fe06d611c84d53d6aba6cac4fb5e0.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/bb55486ec424c9ff7d100b03a05d9a65.a02ea85620c13b9f16c6eb3d1aa78365.mp3"
+    },
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "喝，饮；喝酒"
+      },
+      {
+        "type": "n.",
+        "definition": "饮料；酒"
+      }
+    ],
+    "usphone": "drɪŋk",
+    "ukphone": "drɪŋk"
+  },
+  {
+    "id": "bqoycs",
+    "name": "talk",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/f18753bcd26b0794070da1170d8d4132.f2e9d4d1b1e5005c581ed0fd3dd71cbb.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/8320be629fae8b698c72e2d514fe9066.235299c7e7aad33a642921d856052288.mp3"
+    },
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "谈话，讲话"
+      },
+      {
+        "type": "n.",
+        "definition": "演讲；讲座"
+      }
+    ],
+    "usphone": "tɔːk",
+    "ukphone": "tɔːk"
+  },
+  {
+    "id": "bqgjyz",
+    "name": "stone",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/e506f587cf8772348c68ca2b37bcbc98.9b18f7e04946ac26fea7bbe7564b56ba.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/b9cd0773d2547b3535888c4551a3091e.495314b6fbdf4582b5ecb8217e4a125f.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "石，石头"
+      }
+    ],
+    "usphone": "stoʊn",
+    "ukphone": "stəʊn"
+  },
+  {
+    "id": "brhmlc",
+    "name": "behind",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/c21b45337f221460ae91f08bec69f93e.b54aa3f496f371c07575850677f102f5.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/dc38c54a155256d0032d7396adf6dc3a.c4dba3c4dc4aab6b7bedf1bf6d2a1460.mp3"
+    },
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……后面"
+      },
+      {
+        "type": "adv.",
+        "definition": "在……后面"
+      }
+    ],
+    "usphone": "bɪ'haɪnd",
+    "ukphone": "bɪ'haɪnd"
+  },
+  {
+    "id": "bmjxe",
+    "name": "hide",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/2ad47b9463044a47a6f350d7d3bc9f67.36da4d0060b58b7cc39f51db5f5c59f4.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/df52b65cd466254e21cbd62712491b25.224bfc772074371f67cc7a93462a7d0f.mp3"
+    },
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "藏，隐藏"
+      }
+    ],
+    "usphone": "haɪd",
+    "ukphone": "haɪd"
+  },
+  {
+    "id": "pexyu",
+    "name": "seek",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/7e6a8907a8be8891827ea16e257cb835.58fa4f8d2ab2a48b3ef2a4427c2b1e38.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/abd50f2ece9e6e285727ae0cb78487bb.3682f70a7191ae7b3dfb8e7d37a1de7f.mp3"
+    },
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "征求，寻求；探索，探寻"
+      }
+    ],
+    "usphone": "siːk",
+    "ukphone": "siːk"
+  },
+  {
+    "id": "urffz",
+    "name": "hide-and-seek",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/67d873dffea2fe63173a50ec75770014.dd7d27156986b605a7373b6f926ae29d.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/e7473c6d6e3df0dd49b34f1a80e1f791.fab02c58933148842a03659002845f55.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "捉迷藏游戏"
+      }
+    ],
+    "usphone": "ˌhaɪdn'siːk",
+    "ukphone": "ˌhaɪdn'siːk"
+  },
+  {
+    "id": "phymu",
+    "name": "skip",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/3056896498458b099988527ccd6130e4.70f91b2bdf4d59942c456d7daf2fbf08.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/1b763bb625fd2bb7774967255416d934.b646f964ec307bf7a7af0f20a84c0da0.mp3"
+    },
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "跳过；略过；蹦；跳绳"
+      }
+    ],
+    "usphone": "skɪp",
+    "ukphone": "skɪp"
+  },
+  {
+    "id": "fjtae",
+    "name": "hurry up",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/11fad079d602a374fc293c71be78367a.11fad079d602a374fc293c71be78367a.aac",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/489ee49eb11355ffed6258d2a3fcd78d.489ee49eb11355ffed6258d2a3fcd78d.aac"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "赶紧，快点"
+      }
+    ],
+    "usphone": "'hɜːri ʌp",
+    "ukphone": "'hʌri ʌp"
+  },
+  {
+    "id": "lypnc",
+    "name": "late",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/6a8f3036cda77f027ff6db6e2de55ec1.89e5d70fc314deb430ead8a20cb09d28.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/e560d3fae6ec97a712ff395d897faaa1.462e17cb6d1ce161b5848c4494490146.mp3"
+    },
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "迟的；晚的"
+      },
+      {
+        "type": "adv.",
+        "definition": "迟（地）；晚（地）"
+      }
+    ],
+    "usphone": "leɪt",
+    "ukphone": "leɪt"
+  },
+  {
+    "id": "mxwfz",
+    "name": "sad",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/21a039017e49e2ed7169d111ac4ab336.e5a712d05bde93b26c8da4111f38ec69.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/17d2a52a29743f88bca4fefcfadbbdc7.8dd1c31f64ebbb62629bcd57680e1ac1.mp3"
+    },
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "可惜；令人伤心的"
+      }
+    ],
+    "usphone": "sæd",
+    "ukphone": "sæd"
+  },
+  {
+    "id": "blmtoq",
+    "name": "no",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/dd4fe23ada8b2182e4d1bb9b05e1081f.f374a687600dea7c8d404f81ef703a73.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/943e991f379f592f0b3c543c3d34834b.3f3b9db8363beeb21b2f72410bea28cb.mp3"
+    },
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "不；不是"
+      }
+    ],
+    "usphone": "noʊ",
+    "ukphone": "nəʊ"
+  },
+  {
+    "id": "gkcwz",
+    "name": "those",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/4097cd5a13f566c88b6a8e53b555e29c.b7da254cec0a2d5660e94f335e7ad187.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/23b39e584cc7aec44af1aa51e0656152.9d1d1046c19453bc56ead937e7b5562b.mp3"
+    },
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "那些"
+      },
+      {
+        "type": "adj.",
+        "definition": "那些"
+      }
+    ],
+    "usphone": "ðoʊz",
+    "ukphone": "ðəʊz"
+  },
+  {
+    "id": "bvwhhu",
+    "name": "clap",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/15891b926ba3e4ae120269249d35ed0b.226e8c1ff614e9ebdc66427efa9c2e84.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/ef89665ce227adf3211315bf97d69c3d.94acb0f3ef04eb46f5cd04f7dc2877ed.mp3"
+    },
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "鼓掌，拍手"
+      }
+    ],
+    "usphone": "klæp",
+    "ukphone": "klæp"
+  },
+  {
+    "id": "sndxe",
+    "name": "game",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/c79e4d7656d69044e645fbdfaf5b1d45.0cb6503fdf366153e295299478423d9d.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/9e161756367c95bb09c27969de7507cf.7bf64e6d36223f40e06a2e7d254232c2.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "游戏，比赛"
+      }
+    ],
+    "usphone": "ɡeɪm",
+    "ukphone": "ɡeɪm"
+  },
+  {
+    "id": "eggfg",
+    "name": "well",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/75db76b4ca3f55bdf78aad0ac8b87ee1.cf5de29aa0e0ab2fa24631edc1c62717.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/a06ef671f5905c1968241d83010ae45e.4e90d8ca54338170a54cf53dce92a2ee.mp3"
+    },
+    "pos": [
+      {
+        "type": "int.",
+        "definition": "(用于接话语或表示犹豫、惊讶或同意等)嗯; 好吧; 哎呀; 好啦"
+      },
+      {
+        "type": "adv.",
+        "definition": "好; 妥善地; 完全地; 恰当地; 友善地; 举止得体地; 对; 令人满意地"
+      },
+      {
+        "type": "adj.",
+        "definition": "健康的; 良好的"
+      },
+      {
+        "type": "n.",
+        "definition": "井, 水井, 气井, 油井; 来源, 源泉"
+      }
+    ],
+    "usphone": "wel",
+    "ukphone": "wel"
+  },
+  {
+    "id": "bamzxa",
+    "name": "kid",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/adf62ad64ab4fcb6252d83757c677011.1d43a5830455e30aa0a618f3f19fd7ea.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/ac515c1378d36236e3ab54f0c04a734b.7c5907ba5bf8aca271d26501789c69ef.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小孩"
+      }
+    ],
+    "usphone": "kɪd",
+    "ukphone": "kɪd"
+  },
+  {
+    "id": "brespe",
+    "name": "catch",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/591ff65c898a815767442a28d1c2aba1.80e8c54dae30eb524b39d2a826052f3d.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/067a8c6db731b3e8274e84947da77611.59e1b802de684d0f4ace5ae1647adb7d.mp3"
+    },
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "捉住；接住；赶上；染上（疾病）"
+      }
+    ],
+    "usphone": "kætʃ",
+    "ukphone": "kætʃ"
+  },
+  {
+    "id": "batyq",
+    "name": "of course",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/7b1c8b4b8996645ef5c3a51dee5b9c72.7b1c8b4b8996645ef5c3a51dee5b9c72.aac",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/f653146d0984208fa35aecfa31c71b4c.f653146d0984208fa35aecfa31c71b4c.aac"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "当然"
+      }
+    ],
+    "usphone": "əv kɔːrs",
+    "ukphone": "əv kɔːs"
+  },
+  {
+    "id": "btjgtp",
+    "name": "usually",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/51254b7f67eba8914b4fca149c59f9c0.6ba672128c3dc57fdcf312262aa4a1a7.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/0af18276c77a5a62d6229fb6ee732f46.ded368198bff8c89a9b00968134cacc4.mp3"
+    },
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "通常, 一般, 常常"
+      }
+    ],
+    "usphone": "'juːʒuəli",
+    "ukphone": "'juːʒuəli"
+  },
+  {
+    "id": "eopnc",
+    "name": "us",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/clfugc/2bbd861d108997d1bb4925f845f508b5.3c730ed81cc219610df662c843884698.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/clfugc/cb6632dca86bf0ce6023eaefa227cc76.580078bd2d4acf21d34e64e668583986.mp3"
+    },
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "（用作宾格）我们"
+      }
+    ],
+    "usphone": "əs；ʌs",
+    "ukphone": "əs；ʌs"
+  },
+  {
+    "id": "tsfua",
+    "name": "ride",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/ef54f6071dc88a7bac74a1916109f6c5.d40435d143fb30db3b45bf5590457fa8.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/02ed5dc13433c367fdf3ef9c972ca516.00e7578271438fe76eb15d2ebcd4de45.mp3"
+    },
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "骑（马、自行车等）"
+      },
+      {
+        "type": "n.",
+        "definition": "供乘骑的游乐设施；短途旅程；便车"
+      }
+    ],
+    "usphone": "raɪd",
+    "ukphone": "raɪd"
+  },
+  {
+    "id": "hossx",
+    "name": "thing",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/484eb895a2bddf8e63620b6f13878e05.3124c6937faae21a2c14e0267c3a6402.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/df534c1b110b25bdd49632b542960a3f.7c845bfe4d030aa27911b14ef295ad91.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "东西；物品"
+      }
+    ],
+    "usphone": "θɪŋ",
+    "ukphone": "θɪŋ"
+  },
+  {
+    "id": "xeiix",
+    "name": "ill",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/06e4d0e1398ab7e94675d18e7a9646f9.2f73acee3b9370175676fa7a7c6be389.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/7489641b2ea903a875b46edec09c48df.ec64cdb21196dcef432fd03bbaeeef3f.mp3"
+    },
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "有病的；不健康的；邪恶的"
+      }
+    ],
+    "usphone": "ɪl",
+    "ukphone": "ɪl"
+  },
+  {
+    "id": "bvjuue",
+    "name": "cook",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/2e27bc61465b20b54034dbf7f4e5a6ac.e6e1ea7a791d6ce557a9a881b0d951c5.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/6119f4e19575bbab9ba0110aedcf0ded.21209ba0a687515d81ba1223c2549860.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "炊事员，厨师"
+      },
+      {
+        "type": "v.",
+        "definition": "烹调，做饭"
+      }
+    ],
+    "usphone": "kʊk",
+    "ukphone": "kʊk"
+  },
+  {
+    "id": "shnkp",
+    "name": "her",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/a9d1f67fa259a2c9ccd9770ca1a964b3.1b7698f3917cda1b27288c94c316f1b8.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/186baa1b77bdc3437d42e82d579c56b7.1c4470d937c00f5a4340712f8fbe9aca.mp3"
+    },
+    "pos": [
+      {
+        "type": "pron.",
+        "definition": "她的；（用作宾语）她"
+      }
+    ],
+    "usphone": "hɜːr",
+    "ukphone": "hɜː(r)"
+  },
+  {
+    "id": "bbuvoz",
+    "name": "go shopping",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/bc0e6a384f15e4f3bd10061ac7b8224d.bc0e6a384f15e4f3bd10061ac7b8224d.aac",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/3d1680d0a67ef94881c5d13ddb43480d.3d1680d0a67ef94881c5d13ddb43480d.aac"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "去购物"
+      }
+    ],
+    "usphone": "ɡoʊ 'ʃɑːpɪŋ",
+    "ukphone": "ɡəʊ 'ʃɒpɪŋ"
+  },
+  {
+    "id": "qitkq",
+    "name": "kitchen",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/bbe137404f9c4517c117307ffd9d152e.6be2241e465ec416dd60fadb76952ac4.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/85b078dddfac1dc39e50d6f3d70225b4.1cb00914af6b704c68b4f7c233f2f854.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "厨房"
+      }
+    ],
+    "usphone": "'kɪtʃɪn",
+    "ukphone": "'kɪtʃɪn"
+  },
+  {
+    "id": "ilyqi",
+    "name": "Children's Day",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/vwpqcw/f4d74103160ab45514916cb907f94d6a.6eec94ad2b4b2384b97f8f402dfb7c51.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/vwpqcw/e8189884054caf781aae5db7fc8471c9.49f064d80e4efaa0594bcf3e4e714dba.mp3"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "儿童节"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "id": "fethu",
+    "name": "TV",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/fd968e92dcc1e9d3f85f0361f1f3b953.cac7b643408b89035e1e47e457a8b7f7.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/5d67dd0090a1e5df879a4b8557c0cf05.d49d6523aa0425295035670d4c47fa6d.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "电视机，电视（=television）"
+      }
+    ],
+    "usphone": "ˌtiː'viː",
+    "ukphone": "ˌtiː'viː"
+  },
+  {
+    "id": "kordp",
+    "name": "play",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/25f58e92ab0db21d88f0cf8083bf54e8.1d5c918d9b7398b118a49d60870311d6.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/a52b0808ed2bf6d7b17f7ce791f4ecc5.ab9e7b4185a574a8f06fba242f3a54eb.mp3"
+    },
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "玩；演奏；播放；参加（体育活动，比赛等）；扮演, 演出；装扮；尽…本分"
+      },
+      {
+        "type": "n.",
+        "definition": "游戏；玩耍；戏剧；比赛；作用；（戏剧的）演出"
+      }
+    ],
+    "usphone": "pleɪ",
+    "ukphone": "pleɪ"
+  },
+  {
+    "id": "vxtcn",
+    "name": "say",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/da1234f1c9e1b0ff18bd1e58ef773104.7481ffdee27de5663ae2289cacae4143.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/1175db9d3b2c70aff791fd44fe0b704a.1afccdbfd84825ed41a28425a4453ae2.mp3"
+    },
+    "pos": [
+      {
+        "type": "vt.",
+        "definition": "说，讲"
+      }
+    ],
+    "usphone": "seɪ",
+    "ukphone": "seɪ"
+  },
+  {
+    "id": "wuvxs",
+    "name": "poem",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/b8b585dac16b132303a2e87e5f122468.fc77fa861c1ee15dee852939ea6a0cac.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/79a0b5d7f4d1eda81c4ecd9e246f8269.05b2d70c343e390ee4a6f9ed8dd4a5ef.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "诗，诗歌"
+      }
+    ],
+    "usphone": "'poʊəm",
+    "ukphone": "'pəʊɪm"
+  },
+  {
+    "id": "yklxa",
+    "name": "dragon",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/813a5e36fed6ce7099f6d05c5ae00971.4357aa1e4cc52392928d6412a615a3a5.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/21e32a7dede8521e019101bbde919394.6e268498711356a3ba4a453fced4656f.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "龙"
+      }
+    ],
+    "usphone": "'dræɡən",
+    "ukphone": "'dræɡən"
+  },
+  {
+    "id": "ddwvu",
+    "name": "dragon dance",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/377b09c7ea1405975c85af80a4ee48eb.a52cfe24faad712d3096cb0e6476ba68.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/08592fcfa61b7d2d2cfc12f6f5eda582.30d4871ddd9da6b5ba1614fc884211c3.mp3"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "舞龙"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "id": "bamrns",
+    "name": "picnic",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/e0cd9431f156ed265d262cf65b0f3cd5.3730c786f2cf1d055af8c784fa320d2b.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/5127612d12cf53eef852ce5f44550b74.ec44c5f72f630c73f32850e8d5f3953d.mp3"
+    },
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "参加野餐，去野餐"
+      },
+      {
+        "type": "n.",
+        "definition": "野餐"
+      }
+    ],
+    "usphone": "'pɪknɪk",
+    "ukphone": "'pɪknɪk"
+  },
+  {
+    "id": "brdiou",
+    "name": "family",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/4bce942ff29228e97fd039f7061675da.13656b52bd2c990f4269654e6406c509.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/8bccb693c73cffd26c436f209f913feb.63673d69daf51b5f3aab06f3f7aa282b.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "家庭；家庭成员"
+      }
+    ],
+    "usphone": "'fæməli",
+    "ukphone": "'fæməli"
+  },
+  {
+    "id": "dqlai",
+    "name": "beach",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/20dd345ec484f203690908d09932a4d0.9c38e0e951e6be345b56ac63bcd42a20.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/37012caaaa16a0246f232bdd4f816b17.c4f1e52487d61c1a59b5781f54f877ae.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "海滩"
+      }
+    ],
+    "usphone": "biːtʃ",
+    "ukphone": "biːtʃ"
+  },
+  {
+    "id": "ubvin",
+    "name": "hill",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/05223a4f0e2379a3ca62cbc44ab17400.18f2d8aa3f75a86d67c4b0dd988a419e.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/ce45ee8fd444a4ca4f262ecbef191bd1.3790da019bd1211e698cf3fc4a55366e.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "小山"
+      }
+    ],
+    "usphone": "hɪl",
+    "ukphone": "hɪl"
+  },
+  {
+    "id": "mjnqs",
+    "name": "past",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/e5cc9f87280cf85bfd612b21d6573c47.dd738336327333d859777b07f44406e1.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/58c8d18730b84b41ddfb31a5a1081db0.cd137b2a45ad940343c5cc76f78e31d7.mp3"
+    },
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "过"
+      },
+      {
+        "type": "n.",
+        "definition": "过去；往事"
+      },
+      {
+        "type": "prep.",
+        "definition": "过……；走过（某处）"
+      },
+      {
+        "type": "adj.",
+        "definition": "过去的"
+      }
+    ],
+    "usphone": "pæst",
+    "ukphone": "pɑːst"
+  },
+  {
+    "id": "eljfl",
+    "name": "station",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/faa8013bbe74cbf6594b2cdefeeeb64f.11e8bde603ea6f957e2384053ed710d0.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/7eb30127b84a5c47f2f0ee4adae25909.8a0670d9ded5081cc7c09303510735a3.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "局；所；站"
+      }
+    ],
+    "usphone": "'steɪʃn",
+    "ukphone": "'steɪʃn"
+  },
+  {
+    "id": "zozca",
+    "name": "hospital",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/c8ee2539b0e0203872eef926cb50fd71.66a2c3865c4bc09e512293b45c5daf63.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/96690a59827216ad8ba9236486797739.8dceba2382f21011491c7cf6cb478f9a.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "医院"
+      }
+    ],
+    "usphone": "'hɑːspɪtl",
+    "ukphone": "'hɒspɪtl"
+  },
+  {
+    "id": "bvnvjl",
+    "name": "stop",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/d4d0e1e66c4e8dcb3765a77616c99249.1bc98fb6838771b511a123260982f573.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/f72df6ae6b142e2c423c37c6f127ec23.f50f194de6385b95668eb1742df40950.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "停，（停车）站"
+      },
+      {
+        "type": "vt.",
+        "definition": "停，停止，阻止"
+      }
+    ],
+    "usphone": "stɑːp",
+    "ukphone": "stɒp"
+  },
+  {
+    "id": "oiaia",
+    "name": "turn",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/4b4e7b952b8a01a6c2f0f6609f7c6350.4456d7d0e4a2e41659a0c6a73d59c3d3.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/356dfbc1b620017403d54a180e415ef5.11540159ee4607207d3cd5433a16591f.mp3"
+    },
+    "pos": [
+      {
+        "type": "v.",
+        "definition": "转；旋转"
+      },
+      {
+        "type": "n.",
+        "definition": "轮次，轮流，（轮流的）顺序"
+      }
+    ],
+    "usphone": "tɜːrn",
+    "ukphone": "tɜːn"
+  },
+  {
+    "id": "yxxmz",
+    "name": "around",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/7351b2de114e44e7c0d193941a66c578.80eb9372878845e3ddbc687315b68b7d.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/3958ed20579cd84f74ba3caffda57b12.7044cafa41c1c9fad4e76f145d037b92.mp3"
+    },
+    "pos": [
+      {
+        "type": "prep.",
+        "definition": "在……周围；在……各处；大约"
+      },
+      {
+        "type": "adv.",
+        "definition": "在周围；在附近；迂回地"
+      }
+    ],
+    "usphone": "ə'raʊnd",
+    "ukphone": "ə'raʊnd"
+  },
+  {
+    "id": "kbfru",
+    "name": "turn around",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/uk/719f929b38700ad285d64d9bc004a1e3.mp3",
+      "us_url": "https://media-audio1.baydn.com/us/719f929b38700ad285d64d9bc004a1e3.mp3"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "（使） 转身；（使） 好转；转变"
+      }
+    ],
+    "usphone": "tɜːrn ə'raʊnd",
+    "ukphone": "tɜːn ə'raʊnd"
+  },
+  {
+    "id": "zbrqi",
+    "name": "ground",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/bc396fcc389d3ed6c15cd07ab70a1a04.e1310ca3eb0cf49aa971c633c7af0616.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/ae21fa893d8586c1e171d286f4488448.1bf52499b39196a30a6934fc634a1b87.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "地面"
+      }
+    ],
+    "usphone": "ɡraʊnd",
+    "ukphone": "ɡraʊnd"
+  },
+  {
+    "id": "bkzmdu",
+    "name": "again",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/08a3356bc65b1479292d9e43e169aaf4.dabfc76957584008fb1aa2b3c0ed2aa0.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/d1cae8c56e9c4ae1b315719184dc95be.6a052d78b1913e3f66c00ed2f36b6677.mp3"
+    },
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "又，再"
+      }
+    ],
+    "usphone": "ə'ɡen",
+    "ukphone": "ə'ɡen"
+  },
+  {
+    "id": "fdwwg",
+    "name": "jump",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/fd6f6a098aa89fa261054919ee4078e0.263ae5cdac674f4a197ff276ccc99742.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/546d4aed50936ad90571cf497bdccac4.12ad3d95522b71d644f96031ac6f0f0c.mp3"
+    },
+    "pos": [
+      {
+        "type": "vi.",
+        "definition": "跳，蹦"
+      }
+    ],
+    "usphone": "dʒʌmp",
+    "ukphone": "dʒʌmp"
+  },
+  {
+    "id": "abgnc",
+    "name": "back",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/d5073f7c651c02cfd310d54d908acc5b.0beda6a37c28017938eba187177ab58e.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/d60226acb215cb63a93fcf51be1b8d26.bd4ecd4073479721f1a6d9befcf270f7.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "背；后部；背后"
+      },
+      {
+        "type": "adv.",
+        "definition": "向后，回原处"
+      }
+    ],
+    "usphone": "bæk",
+    "ukphone": "bæk"
+  },
+  {
+    "id": "jarie",
+    "name": "come back",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/c3616e3294b2161c7d2935c713fecd24.c3616e3294b2161c7d2935c713fecd24.aac",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/9a09b498ba5956d66ce09bee5fa5e502.9a09b498ba5956d66ce09bee5fa5e502.aac"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "回来，被回想起"
+      }
+    ],
+    "usphone": "kʌm bæk",
+    "ukphone": "kʌm bæk"
+  },
+  {
+    "id": "qoaou",
+    "name": "left",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/589ec708d8e8599e14878fdcb94b21be.cf1085924ad1c60257168f3be28fa126.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/6ecb1aa09c3d01bae7e8bfbf804bb99b.42c3101f25082c43b57630c9f316a66d.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "左，左边"
+      },
+      {
+        "type": "adj.",
+        "definition": "左边的"
+      },
+      {
+        "type": "adv.",
+        "definition": "向左"
+      }
+    ],
+    "usphone": "left",
+    "ukphone": "left"
+  },
+  {
+    "id": "pydgx",
+    "name": "turn left",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/6d529ffb24ec2dcced9b769b6313c5bf.d6e34394914d30252fd762e1b8c63207.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/9f29c8b2ca53c5a912e7c956d164d48b.45e3e4a0fd6b70753dfa73273f3a19fc.mp3"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "向左转"
+      }
+    ],
+    "usphone": "tɜːrn left",
+    "ukphone": "tɜːn left"
+  },
+  {
+    "id": "jfdpx",
+    "name": "right",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/1a6609b6e36bdaf25e188c39465a25e4.c1d09d9a724ad182efe8ef6c2b7fe3b4.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/f3f958f4e68c9976c8acc15ffbe222fd.5b9cc380db7376beb5505fa303a836d5.mp3"
+    },
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "对的，正确的；适当的；右边的"
+      },
+      {
+        "type": "adv.",
+        "definition": "对，不错；向右；（加强语气）恰恰，正好，立即，马上；完全"
+      },
+      {
+        "type": "n.",
+        "definition": "正确，对；正当，公正，正义；权利（复）"
+      }
+    ],
+    "usphone": "raɪt",
+    "ukphone": "raɪt"
+  },
+  {
+    "id": "bqmzdz",
+    "name": "turn right",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/954a9311513a367391da3f52720d041c.ead570c23ebbd8e0468c899993ba7757.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/6d04b66894f3a1a7ef7dd233f28d8fac.54d0ddb703d7d83d0d8792754089efec.mp3"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "转往右面，向右转"
+      }
+    ],
+    "usphone": "tɜːrn raɪt",
+    "ukphone": "tɜːn raɪt"
+  },
+  {
+    "id": "btphmu",
+    "name": "road",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/29a1b31c9e17d723515f484e1c21f674.ba0ec97a01b6059eff0fd28df19f3639.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/9a69f98b4563e10ba0be1b9a51b15787.f94f22f70efebc72425ec67e47372fdb.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "路；道路"
+      }
+    ],
+    "usphone": "roʊd",
+    "ukphone": "rəʊd"
+  },
+  {
+    "id": "dsjfl",
+    "name": "excuse me",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/e6ffd3ac6e1359b03b0796e8123bbf1f.e6ffd3ac6e1359b03b0796e8123bbf1f.aac",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/ad64130ec2412ce3269a37a6641544ce.ad64130ec2412ce3269a37a6641544ce.aac"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "打扰一下，请原谅"
+      }
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "id": "kiezn",
+    "name": "straight",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/6a3d6fc3dbd7670c7939d7c254017da9.bc99be36b41f61f131a993cb641cd6a2.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/bd001fa73210e0d70132c7a89cf077d3.7683bc10e4f4fc2a1ad943035d0a9608.mp3"
+    },
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "一直地，径直"
+      },
+      {
+        "type": "adj.",
+        "definition": "直的，笔直的"
+      }
+    ],
+    "usphone": "streɪt",
+    "ukphone": "streɪt"
+  },
+  {
+    "id": "zxrsn",
+    "name": "go straight",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/33a580b8c9f04778c89207145a5f285b.03bc752f1f06bd0693e51a7e985f9ede.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/d93a10741c6ad73b929050d59501b900.522af3471d15466eb7d24e24b683cad2.mp3"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "直走"
+      }
+    ],
+    "usphone": "ɡoʊ streɪt",
+    "ukphone": "ɡəʊ streɪt"
+  },
+  {
+    "id": "jrzdq",
+    "name": "lost",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/0c3f64c80bebd27c4263af1fb5af77f0.3489a2d587e1553e0a8fe6a54da630fc.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/2e7c1fbc13d58bbe3edfc69838484fd8.49c6d303d7d34f9647827588d7f228b7.mp3"
+    },
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "丢失的；迷路的"
+      }
+    ],
+    "usphone": "lɔːst",
+    "ukphone": "lɒst"
+  },
+  {
+    "id": "aikse",
+    "name": "out",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/00aeaffec8125c1e402cf42e8dc271fd.68c3521cafc77754bd4a6864bc376e03.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/59bf8ae7bb54005fe3a9a34814f874a2.89cefc72290549e2d3fe7436ef7820d8.mp3"
+    },
+    "pos": [
+      {
+        "type": "adv.",
+        "definition": "在外面"
+      }
+    ],
+    "usphone": "aʊt",
+    "ukphone": "aʊt"
+  },
+  {
+    "id": "wmbfz",
+    "name": "factory",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/0470f4fbeb89d4e2297c4024a3318277.d16b3fe48dd18b80a1ae42120c7eebb2.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/0874a3e233769cbdbad7aec7a2ede98c.99104dd4b36222f5fd05cc5ff18d49b1.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "工厂"
+      }
+    ],
+    "usphone": "ˈfæktəri",
+    "ukphone": "ˈfæktəri"
+  },
+  {
+    "id": "kpmmg",
+    "name": "next to",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/717c86f51b9449ca3a955d3d5bed3140.717c86f51b9449ca3a955d3d5bed3140.aac",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/578cd4087063c9dca35eae690da99b8e.578cd4087063c9dca35eae690da99b8e.aac"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "紧邻, 在…近旁, 仅次于, 紧接"
+      }
+    ],
+    "usphone": "nekst tu",
+    "ukphone": "nekst tu"
+  },
+  {
+    "id": "baeeia",
+    "name": "cousin",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/516a5eb0bf0459dd639eaf1ace4490f3.5443c085dba6bc1411a202acc161c8ef.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/aa97e2cc1040eba9f633bd0c82044e09.3eb325b53c607b4206d327c59c54cc47.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "堂（表）兄弟；堂（表）姐妹"
+      }
+    ],
+    "usphone": "'kʌzn",
+    "ukphone": "'kʌzn"
+  },
+  {
+    "id": "bccyyq",
+    "name": "supermarket",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/853730e438a5e14540185040e76f2047.c07cbd56cc9a57e7460a17b512e9a74c.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/c95a836de0a6d4ff0d460db03ab282f9.97ead753e281c74b89b80fd98b882ede.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "超级市场，超市"
+      }
+    ],
+    "usphone": "ˈsuːpərmɑːrkɪt",
+    "ukphone": "'suːpəmɑːkɪt"
+  },
+  {
+    "id": "brggun",
+    "name": "wrong",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/f64b9631963433d49ec1e506aedc2fcc.a2bf2012364271ee6c9bd1a330fae0e7.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/e7441d38de6c85855c75535295fb2515.2672a862625492f89b10e81d7f86c3ee.mp3"
+    },
+    "pos": [
+      {
+        "type": "adj.",
+        "definition": "错误的；有毛病的，不正常的"
+      },
+      {
+        "type": "adv.",
+        "definition": "错误地"
+      }
+    ],
+    "usphone": "rɔːŋ",
+    "ukphone": "rɒŋ"
+  },
+  {
+    "id": "bsessc",
+    "name": "way",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/7ab8cb3606752c95b22a45331f874a78.14125aa96bec152a787ce463bccdf347.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/c494336f22cf085bc8ba9b3d25272608.2796900b86e3e7cf4a5047ca2b5a95a0.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "方式，方法；路；路线"
+      },
+      {
+        "type": "adv.",
+        "definition": "非常"
+      }
+    ],
+    "usphone": "weɪ",
+    "ukphone": "weɪ"
+  },
+  {
+    "id": "zrkbl",
+    "name": "turn back",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/e806f71599820e81e0f08c195fb34202.654b7670aedac7aff3c7e6bcecb1031b.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/060a6adedf89a6bc1864278d3b6eec32.b545ada11e52b992610418a60b3fa6e0.mp3"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "(使) 停止向前;(使) 折回,(使) 往回走"
+      },
+      {
+        "type": "phrase.",
+        "definition": "重新翻到,翻回到"
+      },
+      {
+        "type": "phrase.",
+        "definition": "翻起;折转"
+      },
+      {
+        "type": "phrase.",
+        "definition": "改变做法,扭转做法"
+      }
+    ],
+    "usphone": "tɜːrn bæk",
+    "ukphone": "tɜːn bæk"
+  },
+  {
+    "id": "yyedl",
+    "name": "front",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/32511517345ff59dbb8ee835b535d586.d0058d3a86d766e08c0833a438a9d624.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/6e2762019a49e0a4f5cb8290caf23c18.552188e441953f972a01d62e0cba4d71.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "前面；前部；前线"
+      },
+      {
+        "type": "adj.",
+        "definition": "前面的；前部的"
+      }
+    ],
+    "usphone": "frʌnt",
+    "ukphone": "frʌnt"
+  },
+  {
+    "id": "udiyp",
+    "name": "in front of",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/b9bfa30859bec7b4a374227cfe40a90f.b9bfa30859bec7b4a374227cfe40a90f.aac",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/22781561a247e3e8d65922e3f2335073.22781561a247e3e8d65922e3f2335073.aac"
+    },
+    "pos": [
+      {
+        "type": "phrase.",
+        "definition": "在…前面；在…面前"
+      }
+    ],
+    "usphone": "ɪn frʌnt ʌv",
+    "ukphone": "in frʌnt ɔv"
+  },
+  {
+    "id": "brynhq",
+    "name": "taxi",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/26d3f1d9bc4b5a0d76912530f6bfae62.0420a0a1933613141e95b91e7c782193.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/9ec4401ed454c66e48437b061aad6c6d.e6bd9b9ec2bc7f9946179c366b78c97d.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "出租车"
+      }
+    ],
+    "usphone": "'tæksi",
+    "ukphone": "'tæksi"
+  },
+  {
+    "id": "fpape",
+    "name": "Mrs",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/ddc32c02a6598b36d4d677aeda6bb7de.61097509bfb99dd9c6e528fbc131e8ca.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/b705bfefbd4492c6cb25cb57c26691ad.7875c10fefdf35b0db3e2c717ebe5d36.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "太太；夫人"
+      }
+    ],
+    "usphone": "'mɪsɪz",
+    "ukphone": "'mɪsɪz"
+  },
+  {
+    "id": "mfrjz",
+    "name": "cinema",
+    "sound": {
+      "uk_url": "https://media-audio1.baydn.com/abc_pub_audio/4f99ec0e46c1f8103a7489e40add60c9.bbffbcc42d618a06bd6b1622d5f8159a.mp3",
+      "us_url": "https://media-audio1.baydn.com/abc_pub_audio/286ac5ead2d475a656e977231c8d0fda.896bc76a331fda2630b83967995c20ef.mp3"
+    },
+    "pos": [
+      {
+        "type": "n.",
+        "definition": "电影院"
+      }
+    ],
+    "usphone": "'sɪnəmə",
+    "ukphone": "'sɪnəmə"
+  }
+]
