@@ -6,16 +6,11 @@ import PartsOfSpeechLine from './components/PartsOfSpeechLine'
 import Phonetic from './components/Phonetic'
 import WordComponent from './components/Word'
 import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
-import type { Word } from '@/typings'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useMemo, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export default function WordPanel() {
-  // 打印组件初始化日志，包含时间戳和单词名称
-  console.log(`[${new Date().toISOString()}] WordPanel 初始化`)
-
-  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
@@ -23,7 +18,6 @@ export default function WordPanel() {
   const [currentWordExerciseCount, setCurrentWordExerciseCount] = useState(0)
   const { times: loopWordTimes } = useAtomValue(loopWordConfigAtom)
   const currentWord = state.chapterData.words[state.chapterData.index]
-  const nextWord = state.chapterData.words[state.chapterData.index + 1] as Word | undefined
 
   const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
@@ -37,7 +31,41 @@ export default function WordPanel() {
     return newIndex > state.chapterData.words.length - 1 ? state.chapterData.words.length - 1 : newIndex
   }, [state.chapterData.index, state.chapterData.words.length])
 
-  //usePrefetchPronunciationSound(nextWord?.name)
+  useHotkeys(
+    'Ctrl + Shift + ArrowLeft',
+    (e) => {
+      e.preventDefault()
+      onSkipWord('prev')
+    },
+    { preventDefault: true },
+  )
+
+  useHotkeys(
+    'Ctrl + Shift + ArrowRight',
+    (e) => {
+      e.preventDefault()
+      onSkipWord('next')
+    },
+    { preventDefault: true },
+  )
+
+  useHotkeys(
+    'tab',
+    () => {
+      handleShowTranslation(true)
+    },
+    { enableOnFormTags: true, preventDefault: true },
+    [],
+  )
+
+  useHotkeys(
+    'tab',
+    () => {
+      handleShowTranslation(false)
+    },
+    { enableOnFormTags: true, keyup: true, preventDefault: true },
+    [],
+  )
 
   const reloadCurrentWordComponent = useCallback(() => {
     setWordComponentKey((old) => old + 1)
@@ -105,46 +133,11 @@ export default function WordPanel() {
     [dispatch, prevIndex, nextIndex],
   )
 
-  useHotkeys(
-    'Ctrl + Shift + ArrowLeft',
-    (e) => {
-      e.preventDefault()
-      onSkipWord('prev')
-    },
-    { preventDefault: true },
-  )
-
-  useHotkeys(
-    'Ctrl + Shift + ArrowRight',
-    (e) => {
-      e.preventDefault()
-      onSkipWord('next')
-    },
-    { preventDefault: true },
-  )
   const [isShowTranslation, setIsHoveringTranslation] = useState(false)
 
   const handleShowTranslation = useCallback((checked: boolean) => {
     setIsHoveringTranslation(checked)
   }, [])
-
-  useHotkeys(
-    'tab',
-    () => {
-      handleShowTranslation(true)
-    },
-    { enableOnFormTags: true, preventDefault: true },
-    [],
-  )
-
-  useHotkeys(
-    'tab',
-    () => {
-      handleShowTranslation(false)
-    },
-    { enableOnFormTags: true, keyup: true, preventDefault: true },
-    [],
-  )
 
   const shouldShowTranslation = useMemo(() => {
     return isShowTranslation || state.isTransVisible

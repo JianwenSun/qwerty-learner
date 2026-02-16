@@ -1,5 +1,5 @@
 import type { WordUpdateAction } from '../InputHandler'
-import InputHandler from '../InputHandler'
+import KeyEventHandler from '../KeyEventHandler'
 import Letter from './Letter'
 import { TipAlert } from './TipAlert'
 import style from './index.module.css'
@@ -46,69 +46,10 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const [isHoveringWord, setIsHoveringWord] = useState(false)
   const currentChapter = useAtomValue(currentChapterAtom)
 
-  // 打印组件挂起日志，包含时间戳和单词名称
-  useEffect(() => {
-    return () => {
-      console.log(`[${new Date().toISOString()}] WordComponent 挂起: 单词 "${word.name}"`)
-    }
-  }, [word.name])
-
   // 添加状态，用于跟踪是否已经自动播放过单词发音
   const [hasAutoPlayed, setHasAutoPlayed] = useState(false)
   const [showTipAlert, setShowTipAlert] = useState(false)
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
-
-  // 当单词变化时，重置自动播放标志
-  useEffect(() => {
-    console.log(`[${new Date().toISOString()}] [Word/index.tsx] 单词变化，重置自动播放标志: ${word.name}`)
-    setHasAutoPlayed(false)
-  }, [word.name])
-
-  useEffect(() => {
-    // run only when word changes
-    let headword = ''
-    try {
-      headword = word.name.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
-      headword = headword.replace(new RegExp('…', 'g'), '..')
-    } catch (e) {
-      console.error('word.name is not a string', word)
-      headword = ''
-    }
-
-    const newWordState = structuredClone(initialWordState)
-    newWordState.displayWord = headword
-    newWordState.letterStates = new Array(headword.length).fill('normal')
-    newWordState.startTime = getUtcStringForMixpanel()
-    newWordState.randomLetterVisible = headword.split('').map(() => Math.random() > 0.4)
-    setWordState(newWordState)
-  }, [word, setWordState])
-
-  const updateInput = useCallback(
-    (updateAction: WordUpdateAction) => {
-      switch (updateAction.type) {
-        case 'add':
-          if (updateAction.value === ' ') {
-            updateAction.event.preventDefault()
-            setWordState((state) => {
-              state.inputWord = state.inputWord + EXPLICIT_SPACE
-            })
-          } else {
-            setWordState((state) => {
-              state.inputWord = state.inputWord + updateAction.value
-            })
-          }
-          break
-
-        default:
-          console.warn('unknown update type', updateAction)
-      }
-    },
-    [setWordState],
-  )
-
-  const handleHoverWord = useCallback((checked: boolean) => {
-    setIsHoveringWord(checked)
-  }, [])
 
   useHotkeys(
     'tab',
@@ -140,6 +81,64 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     [state.isTyping],
     { enableOnFormTags: true, preventDefault: true },
   )
+
+  // 当单词变化时，重置自动播放标志
+  useEffect(() => {
+    console.log(`[${new Date().toISOString()}] [Word/index.tsx] 单词变化，重置自动播放标志: ${word.name}`)
+    setHasAutoPlayed(false)
+  }, [word.name])
+
+  useEffect(() => {
+    if (wordState.wrongCount >= 4) {
+      dispatch({ type: TypingStateActionType.SET_IS_SKIP, payload: true })
+    }
+  }, [wordState.wrongCount, dispatch])
+
+  useEffect(() => {
+    // run only when word changes
+    let headword = ''
+    try {
+      headword = word.name.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
+      headword = headword.replace(new RegExp('…', 'g'), '..')
+    } catch (e) {
+      console.error('word.name is not a string', word)
+      headword = ''
+    }
+
+    const newWordState = structuredClone(initialWordState)
+    newWordState.displayWord = headword
+    newWordState.letterStates = new Array(headword.length).fill('normal')
+    newWordState.startTime = getUtcStringForMixpanel()
+    newWordState.randomLetterVisible = headword.split('').map(() => Math.random() > 0.4)
+    setWordState(newWordState)
+  }, [word])
+
+  const updateInput = useCallback(
+    (updateAction: WordUpdateAction) => {
+      switch (updateAction.type) {
+        case 'add':
+          if (updateAction.value === ' ') {
+            updateAction.event.preventDefault()
+            setWordState((state) => {
+              state.inputWord = state.inputWord + EXPLICIT_SPACE
+            })
+          } else {
+            setWordState((state) => {
+              state.inputWord = state.inputWord + updateAction.value
+            })
+          }
+          break
+
+        default:
+          console.warn('unknown update type', updateAction)
+      }
+    },
+    [setWordState],
+  )
+
+  const handleHoverWord = useCallback((checked: boolean) => {
+    setIsHoveringWord(checked)
+  }, [])
 
   useEffect(() => {
     // 打印自动播放单词发音的日志
@@ -273,7 +272,6 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
       setWordState((state) => {
         state.letterStates[targetIndex] = 'wrong'
-        state.hasMadeInputWrong = true
         state.wrongCount += 1
         state.letterTimeArray = []
         state.letterMistake = updatedMistake
@@ -292,36 +290,20 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   useEffect(() => {
     if (wordState.isFinished) {
       dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
-
-      // wordLogUploader({
-      //   headword: word.name,
-      //   timeStart: wordState.startTime,
-      //   timeEnd: wordState.endTime,
-      //   countInput: wordState.correctCount + wordState.wrongCount,
-      //   countCorrect: wordState.correctCount,
-      //   countTypo: wordState.wrongCount,
-      // })
       saveWordRecord({
         word: word.name,
         wrongCount: wordState.wrongCount,
         letterTimeArray: wordState.letterTimeArray,
         letterMistake: wordState.letterMistake,
       })
-
       onFinish()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.isFinished])
 
-  useEffect(() => {
-    if (wordState.wrongCount >= 4) {
-      dispatch({ type: TypingStateActionType.SET_IS_SKIP, payload: true })
-    }
-  }, [wordState.wrongCount, dispatch])
-
   return (
     <>
-      <InputHandler updateInput={updateInput} />
+      <KeyEventHandler updateInput={updateInput} />
       <div lang={'en'} className="flex flex-col items-center justify-center pb-1 pt-4">
         <div
           className={`tooltip-info relative w-fit bg-transparent p-0 leading-normal shadow-none dark:bg-transparent ${

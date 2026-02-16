@@ -13,22 +13,14 @@ import { TypingContext, TypingStateActionType, initialState, typingReducer } fro
 import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import Tooltip from '@/components/Tooltip'
-import { WordPronunciationIcon } from '@/components/WordPronunciationIcon'
 import { idDictionaryMap } from '@/resources/dictionary'
-import {
-  currentChapterAtom,
-  currentDictIdAtom,
-  isReviewModeAtom,
-  pronunciationIsOpenAtom,
-  randomConfigAtom,
-  reviewModeInfoAtom,
-} from '@/store'
+import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom } from '@/store'
 import { isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import type React from 'react'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useImmerReducer } from 'use-immer'
 
 const App: React.FC = () => {
@@ -47,14 +39,10 @@ const App: React.FC = () => {
   const reviewModeInfo = useAtomValue(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
 
-  const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
-
   // 在组件挂载和currentDictId改变时，检查当前字典是否存在，如果不存在，则将其重置为默认值
   useEffect(() => {
     const id = currentDictId
     if (!(id in idDictionaryMap)) {
-      //setCurrentDictId('cet4')
-      //setCurrentChapter(0)
       return
     }
   }, [currentDictId, setCurrentChapter, setCurrentDictId])
@@ -75,9 +63,6 @@ const App: React.FC = () => {
       window.removeEventListener('blur', onBlur)
     }
   }, [dispatch])
-
-  // 存储上一个依赖项的值，用于比较变化
-  const prevDepsRef = useRef({ isTyping: state.isTyping, isLoading, dispatch })
 
   useEffect(() => {
     state.chapterData.words?.length > 0 ? setIsLoading(false) : setIsLoading(true)

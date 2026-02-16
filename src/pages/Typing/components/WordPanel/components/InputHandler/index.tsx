@@ -1,9 +1,4 @@
-import KeyEventHandler from '../KeyEventHandler'
 import type { FormEvent } from 'react'
-
-export default function InputHandler({ updateInput }: { updateInput: (updateObj: WordUpdateAction) => void }) {
-  return <KeyEventHandler updateInput={updateInput} />
-}
 
 export type WordUpdateAction = WordAddAction | WordDeleteAction | WordCompositionAction
 
