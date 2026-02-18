@@ -2,6 +2,7 @@ import { getUTCUnixTimestamp } from '../index'
 import type { Word } from '@/typings'
 
 export interface IWordRecord {
+  id: string
   word: string
   timeStamp: number
   // 正常章节为 dictKey, 其他功能则为对应的类型
@@ -22,6 +23,7 @@ export interface LetterMistakes {
 }
 
 export class WordRecord implements IWordRecord {
+  id: string
   word: string
   timeStamp: number
   dict: string
@@ -30,7 +32,8 @@ export class WordRecord implements IWordRecord {
   wrongCount: number
   mistakes: LetterMistakes
 
-  constructor(word: string, dict: string, chapter: number | null, timing: number[], wrongCount: number, mistakes: LetterMistakes) {
+  constructor(id: string, word: string, dict: string, chapter: number | null, timing: number[], wrongCount: number, mistakes: LetterMistakes) {
+    this.id = id
     this.word = word
     this.timeStamp = getUTCUnixTimestamp()
     this.dict = dict
@@ -64,7 +67,7 @@ export interface IChapterRecord {
   // 章节总单词数
   wordNumber: number
   // 单词 record 的 id 列表
-  wordRecordIds: number[]
+  wordRecordIds: string[]
 }
 
 export class ChapterRecord implements IChapterRecord {
@@ -77,7 +80,7 @@ export class ChapterRecord implements IChapterRecord {
   wordCount: number
   correctWordIndexes: number[]
   wordNumber: number
-  wordRecordIds: number[]
+  wordRecordIds: string[]
 
   constructor(
     dict: string,
@@ -88,7 +91,7 @@ export class ChapterRecord implements IChapterRecord {
     wordCount: number,
     correctWordIndexes: number[],
     wordNumber: number,
-    wordRecordIds: number[],
+    wordRecordIds: string[],
   ) {
     this.dict = dict
     this.chapter = chapter

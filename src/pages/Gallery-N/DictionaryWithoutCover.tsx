@@ -1,4 +1,4 @@
-import DictDetail from './DictDetail'
+import DictionaryDetail from './DictionaryDetail'
 import { useDictStats } from './hooks/useDictStats'
 import bookCover from '@/assets/book-cover.png'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
@@ -109,7 +109,7 @@ export default function DictionaryComponent({ dictionary }: Props) {
         </div>
       </DialogTrigger>
       <DialogContent className="w-[60rem] max-w-none !rounded-[20px]">
-        <DictDetail dictionary={dictionary} />
+        <DictionaryDetail dictionary={dictionary} />
       </DialogContent>
     </Dialog>
   )

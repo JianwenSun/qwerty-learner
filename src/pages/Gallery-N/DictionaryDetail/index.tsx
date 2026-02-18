@@ -23,7 +23,7 @@ enum Tab {
   Review = 'review',
 }
 
-export default function DictDetail({ dictionary: dict }: { dictionary: Dictionary }) {
+export default function DictionaryDetail({ dictionary: dict }: { dictionary: Dictionary }) {
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
   const [curTab, setCurTab] = useState<Tab>(Tab.Chapters)

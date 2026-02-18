@@ -1,4 +1,4 @@
-import type { IChapterRecord, IReviewRecord, IRevisionDictRecord, IWordRecord, LetterMistakes } from './record'
+import type { IChapterRecord, IReviewRecord, IWordRecord, LetterMistakes } from './record'
 import { ChapterRecord, ReviewRecord, WordRecord } from './record'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import type { TypingState } from '@/pages/Typing/store/type'
@@ -7,25 +7,15 @@ import type { Table } from 'dexie'
 import Dexie from 'dexie'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext } from 'react'
+import { Word } from '@/typings'
 
 class RecordDB extends Dexie {
-  wordRecords!: Table<IWordRecord, number>
+  wordRecords!: Table<IWordRecord, string>
   chapterRecords!: Table<IChapterRecord, number>
   reviewRecords!: Table<IReviewRecord, number>
 
-  revisionDictRecords!: Table<IRevisionDictRecord, number>
-  revisionWordRecords!: Table<IWordRecord, number>
-
   constructor() {
     super('RecordDB')
-    this.version(1).stores({
-      wordRecords: '++id,word,timeStamp,dict,chapter,errorCount,[dict+chapter]',
-      chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
-    })
-    this.version(2).stores({
-      wordRecords: '++id,word,timeStamp,dict,chapter,wrongCount,[dict+chapter]',
-      chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
-    })
     this.version(3).stores({
       wordRecords: '++id,word,timeStamp,dict,chapter,wrongCount,[dict+chapter]',
       chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
@@ -91,7 +81,7 @@ export function useSaveWordRecord() {
       letterTimeArray,
       letterMistake,
     }: {
-      word: string
+      word: Word
       wrongCount: number
       letterTimeArray: number[]
       letterMistake: LetterMistakes
@@ -102,17 +92,17 @@ export function useSaveWordRecord() {
         timing.push(diff)
       }
 
-      const wordRecord = new WordRecord(word, dictID, isRevision ? -1 : currentChapter, timing, wrongCount, letterMistake)
+      const wordRecord = new WordRecord(word.id, word.name, dictID, isRevision ? -1 : currentChapter, timing, wrongCount, letterMistake)
 
-      let dbID = -1
+      let dbID: string = ''
       try {
         dbID = await db.wordRecords.add(wordRecord)
+        if (dispatch) {
+          dispatch({ type: TypingStateActionType.ADD_WORD_RECORD_ID, payload: dbID })
+          dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: false })
+        }
       } catch (e) {
         console.error(e)
-      }
-      if (dispatch) {
-        dbID > 0 && dispatch({ type: TypingStateActionType.ADD_WORD_RECORD_ID, payload: dbID })
-        dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: false })
       }
     },
     [currentChapter, dictID, dispatch, isRevision],

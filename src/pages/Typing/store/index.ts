@@ -82,7 +82,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.NEXT_CHAPTER }
   | { type: TypingStateActionType.TOGGLE_TRANS_VISIBLE }
   | { type: TypingStateActionType.TICK_TIMER; addTime?: number }
-  | { type: TypingStateActionType.ADD_WORD_RECORD_ID; payload: number }
+  | { type: TypingStateActionType.ADD_WORD_RECORD_ID; payload: string }
   | { type: TypingStateActionType.SET_IS_SAVING_RECORD; payload: boolean }
   | { type: TypingStateActionType.SET_IS_LOOP_SINGLE_WORD; payload: boolean }
   | { type: TypingStateActionType.TOGGLE_IS_LOOP_SINGLE_WORD }
