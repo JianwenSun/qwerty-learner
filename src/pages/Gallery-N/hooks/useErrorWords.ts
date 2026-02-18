@@ -1,4 +1,4 @@
-import type { Dictionary, Word } from '@/typings'
+import type { Word, WordDictionary } from '@/typings'
 import { db } from '@/utils/db'
 import type { WordRecord } from '@/utils/db/record'
 import { wordListFetcher } from '@/utils/wordListFetcher'
@@ -19,8 +19,8 @@ export type TErrorWordData = {
   latestErrorTime: number
 }
 
-export default function useErrorWordData(dict: Dictionary, reload: boolean) {
-  const { data: wordList, error, isLoading } = useSWR(dict?.url, wordListFetcher)
+export default function useErrorWordData(wordDictionary: WordDictionary, reload: boolean) {
+  const { data: wordList, error, isLoading } = useSWR(wordDictionary?.url, wordListFetcher)
 
   const [errorWordData, setErrorData] = useState<TErrorWordData[]>([])
 
@@ -30,7 +30,7 @@ export default function useErrorWordData(dict: Dictionary, reload: boolean) {
     db.wordRecords
       .where('wrongCount')
       .above(0)
-      .filter((record) => record.dict === dict.id)
+      .filter((record) => record.dict === wordDictionary.id)
       .toArray()
       .then((records) => {
         const groupRecords: groupRecord[] = []
@@ -82,7 +82,7 @@ export default function useErrorWordData(dict: Dictionary, reload: boolean) {
 
         setErrorData(res)
       })
-  }, [dict.id, wordList, reload])
+  }, [wordDictionary.id, wordList, reload])
 
   return { errorWordData, isLoading, error }
 }

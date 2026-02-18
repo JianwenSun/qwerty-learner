@@ -1,4 +1,4 @@
-import { TypingContext, TypingStateActionType } from '../../store'
+import { TypingContext, WordTypingStateActionType } from '../../store'
 import WordCard from './WordCard'
 import Drawer from '@/components/Drawer'
 import Tooltip from '@/components/Tooltip'
@@ -33,7 +33,7 @@ export default function WordList() {
 
   function openModal() {
     setIsOpen(true)
-    dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
+    dispatch({ type: WordTypingStateActionType.SET_IS_TYPING, payload: false })
   }
 
   return (

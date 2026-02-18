@@ -1,5 +1,5 @@
 import type { WordUpdateAction } from '../InputHandler'
-import { TypingContext } from '@/pages/Typing/store'
+import { TypingContext } from '@/pages/Typing/WordTyping/store'
 import { isChineseSymbol, isLegal } from '@/utils'
 import { useCallback, useContext, useEffect, useRef } from 'react'
 

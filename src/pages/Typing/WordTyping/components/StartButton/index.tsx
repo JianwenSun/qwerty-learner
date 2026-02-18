@@ -1,4 +1,4 @@
-import { TypingContext, TypingStateActionType } from '../../store'
+import { TypingContext, WordTypingStateActionType } from '../../store'
 import Tooltip from '@/components/Tooltip'
 import { randomConfigAtom } from '@/store'
 import { autoUpdate, offset, useFloating, useHover, useInteractions } from '@floating-ui/react'
@@ -12,11 +12,11 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
   const randomConfig = useAtomValue(randomConfigAtom)
 
   const onToggleIsTyping = useCallback(() => {
-    !isLoading && dispatch({ type: TypingStateActionType.TOGGLE_IS_TYPING })
+    !isLoading && dispatch({ type: WordTypingStateActionType.TOGGLE_IS_TYPING })
   }, [isLoading, dispatch])
 
   const onClickRestart = useCallback(() => {
-    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
+    dispatch({ type: WordTypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
   }, [dispatch, randomConfig.isOpen])
 
   useHotkeys('enter', onToggleIsTyping, { enableOnFormTags: true, preventDefault: true }, [onToggleIsTyping])

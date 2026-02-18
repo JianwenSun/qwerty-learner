@@ -9,7 +9,7 @@ import Tooltip from '@/components/Tooltip'
 import { WordPronunciationIcon, WordPronunciationIconRef } from '@/components/WordPronunciationIcon'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
-import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
+import { TypingContext, WordTypingStateActionType } from '@/pages/Typing/WordTyping/store'
 import {
   currentChapterAtom,
   isIgnoreCaseAtom,
@@ -90,7 +90,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
   useEffect(() => {
     if (wordState.wrongCount >= 4) {
-      dispatch({ type: TypingStateActionType.SET_IS_SKIP, payload: true })
+      dispatch({ type: WordTypingStateActionType.SET_IS_SKIP, payload: true })
     }
   }, [wordState.wrongCount, dispatch])
 
@@ -218,7 +218,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
           state.endTime = getUtcStringForMixpanel()
         })
         playHintSound()
-        dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
+        dispatch({ type: WordTypingStateActionType.REPORT_CORRECT_WORD })
       }
       return
     }
@@ -259,7 +259,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
         playKeySound()
       }
 
-      dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
+      dispatch({ type: WordTypingStateActionType.REPORT_CORRECT_WORD })
     } else {
       // 出错时
       playBeepSound()
@@ -277,7 +277,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
         state.letterMistake = updatedMistake
       })
 
-      dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD, payload: { letterMistake: updatedMistake } })
+      dispatch({ type: WordTypingStateActionType.REPORT_WRONG_WORD, payload: { letterMistake: updatedMistake } })
 
       if (currentChapter === 0 && state.chapterData.index === 0 && wordState.wrongCount + 1 >= 3) {
         console.log('show tip alert')
@@ -289,7 +289,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
   useEffect(() => {
     if (wordState.isFinished) {
-      dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
+      dispatch({ type: WordTypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
       saveWordRecord({
         word: word,
         wrongCount: wordState.wrongCount,

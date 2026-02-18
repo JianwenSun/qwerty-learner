@@ -1,4 +1,4 @@
-import { TypingContext, TypingStateActionType } from '../../store'
+import { TypingContext, WordTypingStateActionType } from '../../store'
 import Tooltip from '@/components/Tooltip'
 import { currentDictInfoAtom, wordDictationConfigAtom } from '@/store'
 import { CTRL } from '@/utils'
@@ -19,8 +19,8 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
   const onClickWord = useCallback(() => {
     if (!word) return
 
-    if (type === 'prev') dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex })
-    if (type === 'next') dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex })
+    if (type === 'prev') dispatch({ type: WordTypingStateActionType.SKIP_2_WORD_INDEX, newIndex })
+    if (type === 'next') dispatch({ type: WordTypingStateActionType.SKIP_2_WORD_INDEX, newIndex })
   }, [type, dispatch, newIndex, word])
 
   const headWord = useMemo(() => {

@@ -1,5 +1,5 @@
 import DictionaryCard from './DictionaryCard'
-import type { Dictionary } from '@/typings'
+import type { WordDictionary } from '@/typings'
 import type React from 'react'
 
 const DictionaryGroup: React.FC<DictionaryGroupProps> = ({ title, dictionaries }) => {
@@ -10,7 +10,7 @@ const DictionaryGroup: React.FC<DictionaryGroupProps> = ({ title, dictionaries }
       </h3>
       <main className="grid gap-4 rounded-md sm:grid-cols-1 md:grid-cols-2">
         {dictionaries.map((dict) => (
-          <DictionaryCard key={dict.id} dictionary={dict} />
+          <DictionaryCard key={dict.id} wordDictionary={dict} />
         ))}
       </main>
     </section>
@@ -19,4 +19,4 @@ const DictionaryGroup: React.FC<DictionaryGroupProps> = ({ title, dictionaries }
 
 export default DictionaryGroup
 
-export type DictionaryGroupProps = { title: string; dictionaries: Dictionary[] }
+export type DictionaryGroupProps = { title: string; dictionaries: WordDictionary[] }

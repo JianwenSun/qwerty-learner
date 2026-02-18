@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import useIntersectionObserver from '@/hooks/useIntersectionObserver'
 import { currentDictIdAtom } from '@/store'
-import type { Dictionary } from '@/typings'
+import type { WordDictionary } from '@/typings'
 import { calcChapterCount } from '@/utils'
 import * as Progress from '@radix-ui/react-progress'
 import { useAtomValue } from 'jotai'
@@ -13,19 +13,19 @@ import { useMemo, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 interface Props {
-  dictionary: Dictionary
+  wordDictionary: WordDictionary
 }
 
-export default function DictionaryComponent({ dictionary }: Props) {
+export default function DictionaryComponent({ wordDictionary }: Props) {
   const currentDictID = useAtomValue(currentDictIdAtom)
   const navigate = useNavigate()
 
   const divRef = useRef<HTMLDivElement>(null)
   const entry = useIntersectionObserver(divRef, {})
   const isVisible = !!entry?.isIntersecting
-  const dictStats = useDictStats(dictionary.id, isVisible)
-  const chapterCount = useMemo(() => calcChapterCount(dictionary.length), [dictionary.length])
-  const isSelected = currentDictID === dictionary.id
+  const dictStats = useDictStats(wordDictionary.id, isVisible)
+  const chapterCount = useMemo(() => calcChapterCount(wordDictionary.length), [wordDictionary.length])
+  const isSelected = currentDictID === wordDictionary.id
   const progress = useMemo(
     () => (dictStats ? Math.ceil((dictStats.exercisedChapterCount / chapterCount) * 100) : 0),
     [dictStats, chapterCount],
@@ -33,7 +33,7 @@ export default function DictionaryComponent({ dictionary }: Props) {
 
   const handleViewAllWords = (e: React.MouseEvent) => {
     e.stopPropagation() // 阻止冒泡，避免触发打开详情对话框的事件
-    navigate(`/word-preview/${dictionary.id}`)
+    navigate(`/word-preview/${wordDictionary.id}`)
   }
 
   return (
@@ -44,14 +44,14 @@ export default function DictionaryComponent({ dictionary }: Props) {
           className={`group flex  h-36 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg p-4 text-left shadow-lg focus:outline-none ${
             isSelected ? 'bg-indigo-400' : 'bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700'
           }   `}
-          key={dictionary.name}
+          key={wordDictionary.name}
           role="button"
           // onClick={onClick}
         >
           <div className="relative flex h-full w-full items-center gap-4">
             {/* 左侧图片区域 */}
             <div className="flex-shrink-0">
-              <img src={dictionary.icon_url || bookCover} className={`w-20 ${isSelected ? 'opacity-50' : 'opacity-100'}`} />
+              <img src={wordDictionary.icon_url || bookCover} className={`w-20 ${isSelected ? 'opacity-50' : 'opacity-100'}`} />
             </div>
 
             {/* 右侧文本区域 */}
@@ -61,23 +61,23 @@ export default function DictionaryComponent({ dictionary }: Props) {
                   isSelected ? 'text-white' : 'text-gray-800 group-hover:text-indigo-400 dark:text-gray-200'
                 }`}
               >
-                {dictionary.name}
+                {wordDictionary.name}
               </h1>
               <TooltipProvider>
                 <Tooltip delayDuration={400}>
                   <TooltipTrigger asChild>
                     <p className={`mb-1 max-w-full text-xs ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-300'}`}>
-                      {dictionary.description}
+                      {wordDictionary.description}
                     </p>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p className="text-xs">{`${dictionary.description}`}</p>
+                    <p className="text-xs">{`${wordDictionary.description}`}</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
 
               <p className={`mb-0.5 text-sm font-bold  ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>
-                {dictionary.length} 词
+                {wordDictionary.length} 词
               </p>
               <div className=" flex w-[calc(100%-60px)] items-center pt-2">
                 {progress > 0 && (
@@ -109,7 +109,7 @@ export default function DictionaryComponent({ dictionary }: Props) {
         </div>
       </DialogTrigger>
       <DialogContent className="w-[60rem] max-w-none !rounded-[20px]">
-        <DictionaryDetail dictionary={dictionary} />
+        <DictionaryDetail wordDictionary={wordDictionary} />
       </DialogContent>
     </Dialog>
   )

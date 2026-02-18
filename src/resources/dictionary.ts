@@ -1,4 +1,4 @@
-import type { Dictionary, DictionaryResource } from '@/typings/index'
+import type { WordDictionary, DictionaryResource } from '@/typings/index'
 import { calcChapterCount } from '@/utils'
 import { vocabularyDictionaryResources } from './vocabularyDictionary'
 
@@ -10,7 +10,7 @@ export const dictionaryResources: DictionaryResource[] = [
   ...vocabularyDictionaryResources
 ]
 
-export const dictionaries: Dictionary[] = dictionaryResources.map((resource) => ({
+export const dictionaries: WordDictionary[] = dictionaryResources.map((resource) => ({
   ...resource,
   chapterCount: calcChapterCount(resource.length),
 }))
@@ -18,4 +18,4 @@ export const dictionaries: Dictionary[] = dictionaryResources.map((resource) => 
 /**
  * An object-map from dictionary IDs to dictionary themselves.
  */
-export const idDictionaryMap: Record<string, Dictionary> = Object.fromEntries(dictionaries.map((dict) => [dict.id, dict]))
+export const idDictionaryMap: Record<string, WordDictionary> = Object.fromEntries(dictionaries.map((dict) => [dict.id, dict]))

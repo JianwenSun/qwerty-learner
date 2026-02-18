@@ -1,4 +1,4 @@
-import { TypingContext, TypingStateActionType } from '../../store'
+import { TypingContext, WordTypingStateActionType } from '../../WordTyping/store'
 import AdvancedSetting from './AdvancedSetting'
 import DataSetting from './DataSetting'
 import SoundSetting from './SoundSetting'
@@ -24,7 +24,7 @@ export default function Setting() {
   function openModal() {
     setIsOpen(true)
     if (dispatch) {
-      dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
+      dispatch({ type: WordTypingStateActionType.SET_IS_TYPING, payload: false })
     }
   }
 

@@ -1,7 +1,7 @@
 import type { IChapterRecord, IReviewRecord, IWordRecord, LetterMistakes } from './record'
 import { ChapterRecord, ReviewRecord, WordRecord } from './record'
-import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
-import type { TypingState } from '@/pages/Typing/store/type'
+import { TypingContext, WordTypingStateActionType } from '@/pages/Typing/WordTyping/store'
+import type { WordTypingState } from '@/pages/Typing/WordTyping/store/type'
 import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom } from '@/store'
 import type { Table } from 'dexie'
 import Dexie from 'dexie'
@@ -36,7 +36,7 @@ export function useSaveChapterRecord() {
   const dictID = useAtomValue(currentDictIdAtom)
 
   const saveChapterRecord = useCallback(
-    (typingState: TypingState) => {
+    (typingState: WordTypingState) => {
       const {
         chapterData: { correctCount, wrongCount, userInputLogs, wordCount, words, wordRecordIds },
         timerData: { time },
@@ -98,8 +98,8 @@ export function useSaveWordRecord() {
       try {
         dbID = await db.wordRecords.add(wordRecord)
         if (dispatch) {
-          dispatch({ type: TypingStateActionType.ADD_WORD_RECORD_ID, payload: dbID })
-          dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: false })
+          dispatch({ type: WordTypingStateActionType.ADD_WORD_RECORD_ID, payload: dbID })
+          dispatch({ type: WordTypingStateActionType.SET_IS_SAVING_RECORD, payload: false })
         }
       } catch (e) {
         console.error(e)

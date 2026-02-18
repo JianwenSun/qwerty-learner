@@ -11,34 +11,47 @@ export const PRONUNCIATION_PHONETIC_MAP: Pronunciation2PhoneticMap = {
   uk: 'uk'
 }
 
+export type DictionaryType = 'word' | 'sentence'
 
-// export type Dictionary = {
-//   id: string
-//   name: string
-//   description: string
-//   category: string
-//   tags: string[]
-//   url: string
-//   icon_url?: string
-//   length: number
-//   language: LanguageType
-//   app?: string
-// }
+export interface Dictionary {
+  id: string
+  name: string
+  description: string
+  category: string
+  tags: string[]
+  url: string
+  icon_url?: string
+  length: number
+  type: DictionaryType
+  app?: string
+}
 
-// 词性类型颜色映射表
-export const POS_TYPE_COLOR_MAP: Record<string, string> = {
-  'v.': 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200', // 动词
-  'vt.': 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200', // 及物动词
-  'vi.': 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200', // 不及物动词
-  'n.': 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200', // 名词
-  'adj.': 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200', // 形容词
-  'adv.': 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200', // 副词
-  'prep.': 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200', // 介词
-  'conj.': 'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200', // 连词
-  'pron.': 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200', // 代词
-  'phrase.': 'bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-200', // 短语
-  'num.': 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200', // 数词
-  'int.': 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200', // 感叹词
+export interface WordDictionary extends Dictionary {
+  // calculated in the store
+  chapterCount: number
+}
+export type Word = {
+  id: string
+  name: string
+  sound: Sound
+  pos?: Pos[]
+  usphone: string
+  ukphone: string
+  notation?: string
+}
+
+export type Sound = {
+  us_url: string
+  uk_url: string
+}
+export type Pos = {
+  type: string
+  definition: string
+}
+
+export type WordWithIndex = Word & {
+  // 在 chapter 中的原始索引
+  index: number
 }
 
 export const POS_TYPE_MAP: Record<string, PosType> = {
@@ -61,45 +74,56 @@ export type PosType = {
   displayName: string
 }
 
-export type Pos = {
-  type: string
-  definition: string
-}
-
-export type Sound = {
-  us_url: string
-  uk_url: string
-}
-
-export type Word = {
-  id: string
-  name: string
-  sound: Sound
-  pos?: Pos[]
-  usphone: string
-  ukphone: string
-  notation?: string
-}
-
-export type WordWithIndex = Word & {
-  // 在 chapter 中的原始索引
-  index: number
-}
-
 export type Sentence = {
-  id: string
-  name: string
-  sound: Sound
-  pos?: Pos[]
-  usphone: string
-  ukphone: string
-  notation?: string
+  id: string;
+  dictionaryId: string;
+  content: string;
+  chinese: string;
+  explanation: string;
+  tokens: SentenceToken[];
+  words: Word[] | null;
+  chunks: SentenceChunk[];
+  clauses: SentenceClause[];
+  practices: SentencePractice[];
 }
 
-export type InfoPanelType = 'donate' | 'vsc' | 'community' | 'redBook'
+export interface SentenceToken {
+  id: number;
+  text: string;
+  pos: string;
+  dep: string;
+  head: number;
+}
 
-export type InfoPanelState = {
-  [key in InfoPanelType]: boolean
+export interface SentenceChunk {
+  chunkIndex: number;
+  chunkKey: string;
+  content: string;
+  chinese: string;
+  clauseIndex: number;
+  sentenceFunction: string;
+  wordIndexes: number[];
+  grammarType?: string;
+  explanation?: string;
+}
+
+export interface SentenceClause {
+  clauseIndex: number;
+  type: string;
+  explanation: string;
+  chunkIndexes: number[];
+}
+
+export interface SentencePractice {
+  id: number;
+  kind: string;
+  sort: number;
+  content: string;
+  chinese: string;
+  alignTokenIds: number[];
+  phonetic_uk: string;
+  phonetic_us: string;
+  part_of_speech: string;
 }
 
 export type LoopWordTimesOption = 1 | 3 | 5 | 8 | typeof Number.MAX_SAFE_INTEGER

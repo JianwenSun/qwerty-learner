@@ -1,16 +1,16 @@
 import WordCard from './WordCard'
-import { Dictionary, Word } from '@/typings'
+import { Word, WordDictionary } from '@/typings'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { useState, useMemo } from 'react'
 
 type Props = {
   words: Word[]
-  dictionary: Dictionary
+  wordDictionary: WordDictionary
   onWordClick: (word: Word) => void
   isActive: (word: Word) => boolean
 }
 
-export default function WordList({ words, dictionary, onWordClick, isActive }: Props) {
+export default function WordList({ words, wordDictionary, onWordClick, isActive }: Props) {
   const [currentPage, setCurrentPage] = useState(1)
   const [pageSize, setPageSize] = useState(20)
   const [searchTerm, setSearchTerm] = useState('')
@@ -76,7 +76,7 @@ export default function WordList({ words, dictionary, onWordClick, isActive }: P
                   return (
                     <WordCard
                       word={word}
-                      dictionary={dictionary}
+                      wordDictionary={wordDictionary}
                       key={`${word.name}_${index}`}
                       isActive={isActive(word)}
                       onClick={() => onWordClick(word)}

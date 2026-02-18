@@ -1,4 +1,4 @@
-import type { TypingState } from '@/pages/Typing/store/type'
+import type { WordTypingState } from '@/pages/Typing/WordTyping/store/type'
 import {
   currentChapterAtom,
   currentDictInfoAtom,
@@ -8,7 +8,6 @@ import {
   pronunciationConfigAtom,
   randomConfigAtom,
 } from '@/store'
-import type { InfoPanelType } from '@/typings'
 import type { PronunciationType } from '@/typings'
 import { useAtomValue } from 'jotai'
 import mixpanel from 'mixpanel-browser'
@@ -24,13 +23,6 @@ export function recordStarAction(action: starAction) {
 }
 
 export type openInfoPanelLocation = 'footer' | 'resultScreen'
-export function recordOpenInfoPanelAction(type: InfoPanelType, location: openInfoPanelLocation) {
-  const props = {
-    type,
-    location,
-  }
-  mixpanel.track('openInfoPanel', props)
-}
 
 export type shareType = 'open' | 'download'
 export function recordShareAction(type: shareType) {
@@ -77,7 +69,6 @@ export function reportDonateCard(info: donateCardInfo) {
  * mixpanel 单词和章节统计事件
  */
 export type ModeInfo = {
-  modeDictation: boolean
   modeDark: boolean
   modeShuffle: boolean
 
@@ -111,7 +102,7 @@ export type ChapterLogUpload = ModeInfo & {
   countTypo: number
 }
 
-export function useMixPanelWordLogUploader(typingState: TypingState) {
+export function useMixPanelWordLogUploader(typingState: WordTypingState) {
   const currentChapter = useAtomValue(currentChapterAtom)
   const { name: dictName } = useAtomValue(currentDictInfoAtom)
   const isDarkMode = useAtomValue(isOpenDarkModeAtom)
@@ -127,7 +118,6 @@ export function useMixPanelWordLogUploader(typingState: TypingState) {
         order: typingState.chapterData.index + 1,
         chapter: (currentChapter + 1).toString(),
         wordlist: dictName,
-        modeDictation: !typingState.isWordVisible,
         modeDark: isDarkMode,
         modeShuffle: randomConfig.isOpen,
         enabledKeyboardSound: keySoundsConfig.isOpen,
@@ -154,7 +144,7 @@ export function useMixPanelWordLogUploader(typingState: TypingState) {
   return wordLogUploader
 }
 
-export function useMixPanelChapterLogUploader(typingState: TypingState) {
+export function useMixPanelChapterLogUploader(typingState: WordTypingState) {
   const currentChapter = useAtomValue(currentChapterAtom)
   const { name: dictName } = useAtomValue(currentDictInfoAtom)
   const isDarkMode = useAtomValue(isOpenDarkModeAtom)
@@ -172,7 +162,6 @@ export function useMixPanelChapterLogUploader(typingState: TypingState) {
       countCorrect: typingState.chapterData.correctCount,
       chapter: (currentChapter + 1).toString(),
       wordlist: dictName,
-      modeDictation: !typingState.isWordVisible,
       modeDark: isDarkMode,
       modeShuffle: randomConfig.isOpen,
       enabledKeyboardSound: keySoundsConfig.isOpen,

@@ -2,18 +2,18 @@ import PartsOfSpeechListView from '@/components/PartsOfSpeechListView'
 import type { WordPronunciationIconRef } from '@/components/WordPronunciationIcon'
 import { WordPronunciationIcon } from '@/components/WordPronunciationIcon'
 import { isOpenDarkModeAtom, phoneticConfigAtom } from '@/store'
-import type { Dictionary, Word } from '@/typings'
+import type { WordDictionary, Word } from '@/typings'
 import { useAtom, useAtomValue } from 'jotai'
 import { useCallback, useRef } from 'react'
 
 type Props = {
   word: Word
-  dictionary: Dictionary
+  wordDictionary: WordDictionary
   isActive: boolean
   onClick?: () => void
 }
 
-export default function WordCard({ word, dictionary, isActive, onClick }: Props) {
+export default function WordCard({ word, wordDictionary, isActive, onClick }: Props) {
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)

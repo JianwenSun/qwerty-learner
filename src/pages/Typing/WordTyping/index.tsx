@@ -1,15 +1,15 @@
-import Layout from '../../components/Layout'
-import { DictChapterButton } from './components/DictChapterButton'
-import PronunciationSwitcher from './components/PronunciationSwitcher'
+import Layout from '../../../components/Layout'
+import PronunciationSwitcher from '../components/PronunciationSwitcher'
 import ResultScreen from './components/ResultScreen'
 import Speed from './components/Speed'
 import StartButton from './components/StartButton'
 import Switcher from './components/Switcher'
+import { WordDictionaryChapterButton } from './components/WordDictionaryChapterButton'
 import WordList from './components/WordList'
 import WordPanel from './components/WordPanel'
 import { useConfetti } from './hooks/useConfetti'
 import { useWordList } from './hooks/useWordList'
-import { TypingContext, TypingStateActionType, initialState, typingReducer } from './store'
+import { TypingContext, WordTypingStateActionType, initialState, typingReducer } from './store'
 import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import Tooltip from '@/components/Tooltip'
@@ -48,12 +48,12 @@ const App: React.FC = () => {
   }, [currentDictId, setCurrentChapter, setCurrentDictId])
 
   const skipWord = useCallback(() => {
-    dispatch({ type: TypingStateActionType.SKIP_WORD })
+    dispatch({ type: WordTypingStateActionType.SKIP_WORD })
   }, [dispatch])
 
   useEffect(() => {
     const onBlur = () => {
-      dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
+      dispatch({ type: WordTypingStateActionType.SET_IS_TYPING, payload: false })
     }
     console.log('Blur event listener added in Typing/index.tsx')
     window.addEventListener('blur', onBlur)
@@ -73,7 +73,7 @@ const App: React.FC = () => {
       console.log('[Typing/index.tsx] keydown event:', e)
       if (e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
         e.preventDefault()
-        dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
+        dispatch({ type: WordTypingStateActionType.SET_IS_TYPING, payload: true })
       }
     }
     console.log('Keydown event listener added in Typing/index.tsx')
@@ -89,7 +89,7 @@ const App: React.FC = () => {
       const initialIndex = isReviewMode && reviewModeInfo.reviewRecord?.index ? reviewModeInfo.reviewRecord.index : 0
 
       dispatch({
-        type: TypingStateActionType.SETUP_CHAPTER,
+        type: WordTypingStateActionType.SETUP_CHAPTER,
         payload: { words, shouldShuffle: randomConfig.isOpen, initialIndex },
       })
     }
@@ -111,7 +111,7 @@ const App: React.FC = () => {
     let intervalId: number
     if (state.isTyping) {
       intervalId = window.setInterval(() => {
-        dispatch({ type: TypingStateActionType.TICK_TIMER })
+        dispatch({ type: WordTypingStateActionType.TICK_TIMER })
       }, 1000)
     }
     return () => clearInterval(intervalId)
@@ -125,7 +125,7 @@ const App: React.FC = () => {
       {state.isFinished && <ResultScreen />}
       <Layout>
         <Header>
-          <DictChapterButton />
+          <WordDictionaryChapterButton />
           <PronunciationSwitcher />
           <Switcher />
           <StartButton isLoading={isLoading} />

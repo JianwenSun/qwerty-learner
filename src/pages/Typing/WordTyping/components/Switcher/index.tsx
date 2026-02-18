@@ -1,10 +1,10 @@
-import { TypingContext, TypingStateActionType } from '../../store'
+import Setting from '../../../components/Setting'
+import SoundSwitcher from '../../../components/SoundSwitcher'
+import { TypingContext, WordTypingStateActionType } from '../../store'
 import AnalysisButton from '../AnalysisButton'
 import ErrorBookButton from '../ErrorBookButton'
 import HandPositionIllustration from '../HandPositionIllustration'
 import LoopWordSwitcher from '../LoopWordSwitcher'
-import Setting from '../Setting'
-import SoundSwitcher from '../SoundSwitcher'
 import WordDictationSwitcher from '../WordDictationSwitcher'
 import Tooltip from '@/components/Tooltip'
 import { isOpenDarkModeAtom } from '@/store'
@@ -30,7 +30,7 @@ export default function Switcher() {
 
   const changeTransVisibleState = () => {
     if (dispatch) {
-      dispatch({ type: TypingStateActionType.TOGGLE_TRANS_VISIBLE })
+      dispatch({ type: WordTypingStateActionType.TOGGLE_TRANS_VISIBLE })
     }
   }
 

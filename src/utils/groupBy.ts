@@ -1,4 +1,4 @@
-import type { Dictionary } from '@/typings'
+import type { WordDictionary } from '@/typings'
 
 export default function groupBy<T>(elements: T[], iteratee: (value: T) => string) {
   return elements.reduce<Record<string, T[]>>((result, value) => {
@@ -12,8 +12,8 @@ export default function groupBy<T>(elements: T[], iteratee: (value: T) => string
   }, {})
 }
 
-export function groupByDictTags(dicts: Dictionary[]) {
-  return dicts.reduce<Record<string, Dictionary[]>>((result, dict) => {
+export function groupByDictTags(dicts: WordDictionary[]) {
+  return dicts.reduce<Record<string, WordDictionary[]>>((result, dict) => {
     dict.tags.forEach((tag) => {
       if (Object.prototype.hasOwnProperty.call(result, tag)) {
         result[tag].push(dict)

@@ -4,8 +4,7 @@ import { DISMISS_START_CARD_DATE_KEY, defaultFontSizeConfig } from '@/constants'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { correctSoundResources, keySoundResources, wrongSoundResources } from '@/resources/soundResource'
 import type {
-  Dictionary,
-  InfoPanelState,
+  WordDictionary,
   LoopWordTimesOption,
   PhoneticType,
   PronunciationType,
@@ -17,7 +16,7 @@ import { atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 
 export const currentDictIdAtom = atomWithStorage('currentDict', 'cet4')
-export const currentDictInfoAtom = atom<Dictionary>((get) => {
+export const currentDictInfoAtom = atom<WordDictionary>((get) => {
   const id = get(currentDictIdAtom)
   let dict = idDictionaryMap[id]
   // 如果 dict 不存在，则返回 idDictionaryMap 中的第一个元素
@@ -94,13 +93,6 @@ export const isOpenDarkModeAtom = atomWithStorage('isOpenDarkModeAtom', window.m
 export const isShowSkipAtom = atom(false)
 
 export const isInDevModeAtom = atom(false)
-
-export const infoPanelStateAtom = atom<InfoPanelState>({
-  donate: false,
-  vsc: false,
-  community: false,
-  redBook: false,
-})
 
 export const wordDictationConfigAtom = atomForConfig('wordDictationConfig', {
   isOpen: false,

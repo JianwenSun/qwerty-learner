@@ -1,8 +1,9 @@
+import { POS_TYPE_COLOR_MAP } from '@/color'
 import Tooltip from '@/components/Tooltip'
 import { SoundIcon } from '@/components/WordPronunciationIcon/SoundIcon'
 import useSpeech from '@/hooks/useSpeech'
 import { isTextSelectableAtom, pronunciationConfigAtom } from '@/store'
-import { POS_TYPE_COLOR_MAP, POS_TYPE_MAP, type Pos } from '@/typings'
+import { POS_TYPE_MAP, type Pos } from '@/typings'
 import { useAtomValue } from 'jotai'
 import { useCallback, useMemo } from 'react'
 

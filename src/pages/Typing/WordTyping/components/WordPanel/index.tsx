@@ -1,5 +1,5 @@
-import { TypingContext, TypingStateActionType } from '../../store'
-import type { TypingState } from '../../store/type'
+import { TypingContext, WordTypingStateActionType } from '../../store'
+import type { WordTypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
 import Progress from '../Progress'
 import PartsOfSpeechLine from './components/PartsOfSpeechLine'
@@ -72,7 +72,7 @@ export default function WordPanel() {
   }, [])
 
   const updateReviewRecord = useCallback(
-    (state: TypingState) => {
+    (state: WordTypingState) => {
       setReviewModeInfo((old) => ({
         ...old,
         reviewRecord: old.reviewRecord ? { ...old.reviewRecord, index: state.chapterData.index } : undefined,
@@ -86,24 +86,24 @@ export default function WordPanel() {
       // 用户完成当前单词
       if (currentWordExerciseCount < loopWordTimes - 1) {
         setCurrentWordExerciseCount((old) => old + 1)
-        dispatch({ type: TypingStateActionType.LOOP_CURRENT_WORD })
+        dispatch({ type: WordTypingStateActionType.LOOP_CURRENT_WORD })
         reloadCurrentWordComponent()
       } else {
         setCurrentWordExerciseCount(0)
         if (isReviewMode) {
           dispatch({
-            type: TypingStateActionType.NEXT_WORD,
+            type: WordTypingStateActionType.NEXT_WORD,
             payload: {
               updateReviewRecord,
             },
           })
         } else {
-          dispatch({ type: TypingStateActionType.NEXT_WORD })
+          dispatch({ type: WordTypingStateActionType.NEXT_WORD })
         }
       }
     } else {
       // 用户完成当前章节
-      dispatch({ type: TypingStateActionType.FINISH_CHAPTER })
+      dispatch({ type: WordTypingStateActionType.FINISH_CHAPTER })
       if (isReviewMode) {
         setReviewModeInfo((old) => ({ ...old, reviewRecord: old.reviewRecord ? { ...old.reviewRecord, isFinished: true } : undefined }))
       }
@@ -123,11 +123,11 @@ export default function WordPanel() {
   const onSkipWord = useCallback(
     (type: 'prev' | 'next') => {
       if (type === 'prev') {
-        dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex: prevIndex })
+        dispatch({ type: WordTypingStateActionType.SKIP_2_WORD_INDEX, newIndex: prevIndex })
       }
 
       if (type === 'next') {
-        dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex: nextIndex })
+        dispatch({ type: WordTypingStateActionType.SKIP_2_WORD_INDEX, newIndex: nextIndex })
       }
     },
     [dispatch, prevIndex, nextIndex],

@@ -1,5 +1,6 @@
+import { POS_TYPE_COLOR_MAP } from '@/color'
 import { isOpenDarkModeAtom, isTextSelectableAtom } from '@/store'
-import { POS_TYPE_COLOR_MAP, POS_TYPE_MAP, type Pos } from '@/typings'
+import { POS_TYPE_MAP, type Pos } from '@/typings'
 import { useAtom, useAtomValue } from 'jotai'
 
 export type PartsOfSpeechViewProps = {

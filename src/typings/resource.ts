@@ -1,28 +1,8 @@
-import type { LanguageType, PronunciationType } from '.'
+import type { Dictionary, LanguageType, PronunciationType } from '.'
 
-export type DictionaryType = 'word' | 'sentence'
-
-export interface DictionaryBase {
-  id: string
-  name: string
-  description: string
-  category: string
-  tags: string[]
-  url: string
-  icon_url?: string
-  length: number
-  type: DictionaryType
-  app?: string
-}
-
-export interface DictionaryResource extends DictionaryBase {
+export interface DictionaryResource extends Dictionary {
   //override default pronunciation when not undefined
   defaultPronIndex?: number
-}
-
-export interface Dictionary extends DictionaryBase {
-  // calculated in the store
-  chapterCount: number
 }
 
 export type PronunciationConfig = {

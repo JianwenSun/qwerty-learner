@@ -18,7 +18,7 @@ export default function WordPreviewPage() {
     navigate('/gallery')
   }
 
-  const { words = [], dictionary } = getWordList(dictionaryId!) || {}
+  const { words = [], wordDictionary } = getWordList(dictionaryId!) || {}
 
   useEffect(() => {
     // 如果没有选择单词且有单词列表，则默认选择第一个单词
@@ -54,7 +54,7 @@ export default function WordPreviewPage() {
             <div className="h-full">
               <WordList
                 words={words}
-                dictionary={dictionary}
+                wordDictionary={wordDictionary}
                 onWordClick={handleWordSelect}
                 isActive={(word) => selectedWord?.name === word.name}
               />

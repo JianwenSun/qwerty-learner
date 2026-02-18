@@ -3,7 +3,7 @@ import { DictionaryTypeTabSwitcher } from './DictionaryTypeTabSwitcher'
 import Layout from '@/components/Layout'
 import { dictionaries } from '@/resources/dictionary'
 import { currentDictInfoAtom, isOpenDarkModeAtom } from '@/store'
-import type { Dictionary, DictionaryType } from '@/typings'
+import type { WordDictionary, DictionaryType } from '@/typings'
 import groupBy, { groupByDictTags } from '@/utils/groupBy'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { useAtom, useAtomValue } from 'jotai'
@@ -45,9 +45,8 @@ export default function GalleryPage() {
     const currentDictionaryTypes = dictionaries.filter((dict) => dict.type === galleryState.currentTypeTab)
     const groupedByCategory = Object.entries(groupBy(currentDictionaryTypes, (dict) => dict.category))
     const groupedByCategoryAndTag = groupedByCategory.map(
-      ([category, dicts]) => [category, groupByDictTags(dicts)] as [string, Record<string, Dictionary[]>],
+      ([category, dicts]) => [category, groupByDictTags(dicts)] as [string, Record<string, WordDictionary[]>],
     )
-
     return {
       groupedByCategoryAndTag,
     }
