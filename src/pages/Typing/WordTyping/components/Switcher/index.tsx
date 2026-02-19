@@ -1,6 +1,6 @@
 import Setting from '../../../components/Setting'
 import SoundSwitcher from '../../../components/SoundSwitcher'
-import { TypingContext, WordTypingStateActionType } from '../../store'
+import { WordTypingContext, WordTypingStateActionType } from '../../store'
 import AnalysisButton from '../AnalysisButton'
 import ErrorBookButton from '../ErrorBookButton'
 import HandPositionIllustration from '../HandPositionIllustration'
@@ -21,7 +21,7 @@ import IconLanguageOff from '~icons/tabler/language-off'
 
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
-  const { state, dispatch } = useContext(TypingContext) ?? {}
+  const { state, dispatch } = useContext(WordTypingContext) ?? {}
   const [isCollapsed, setIsCollapsed] = useState(true)
 
   const changeDarkModeState = () => {

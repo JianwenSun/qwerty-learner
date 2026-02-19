@@ -7,7 +7,7 @@ export function useChapterNumber() {
 
   useEffect(() => {
     const fetchChapterNumber = async () => {
-      const number = await db.chapterRecords.count()
+      const number = await db.wordChapterRecords.count()
       setChapterNumber(number)
     }
 
@@ -58,7 +58,7 @@ export function useSumWrongCount() {
     const fetchSumWrongCount = async () => {
       let totalWrongCount = 0
 
-      await db.chapterRecords.each((record) => {
+      await db.wordChapterRecords.each((record) => {
         totalWrongCount += record.wrongCount || 0
       })
       setSumWrongCount(totalWrongCount)

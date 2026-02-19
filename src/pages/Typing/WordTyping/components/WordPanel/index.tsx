@@ -1,17 +1,17 @@
-import { TypingContext, WordTypingStateActionType } from '../../store'
+import { WordTypingContext, WordTypingStateActionType } from '../../store'
 import type { WordTypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
 import Progress from '../Progress'
 import PartsOfSpeechLine from './components/PartsOfSpeechLine'
 import Phonetic from './components/Phonetic'
 import WordComponent from './components/Word'
-import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
+import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, wordReviewModeInfoAtom } from '@/store'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useMemo, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export default function WordPanel() {
-  const { state, dispatch } = useContext(TypingContext)!
+  const { state, dispatch } = useContext(WordTypingContext)!
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
   const [wordComponentKey, setWordComponentKey] = useState(0)
@@ -19,7 +19,7 @@ export default function WordPanel() {
   const { times: loopWordTimes } = useAtomValue(loopWordConfigAtom)
   const currentWord = state.chapterData.words[state.chapterData.index]
 
-  const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
+  const setWordReviewModeInfo = useSetAtom(wordReviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
 
   const prevIndex = useMemo(() => {
@@ -73,12 +73,12 @@ export default function WordPanel() {
 
   const updateReviewRecord = useCallback(
     (state: WordTypingState) => {
-      setReviewModeInfo((old) => ({
+      setWordReviewModeInfo((old) => ({
         ...old,
         reviewRecord: old.reviewRecord ? { ...old.reviewRecord, index: state.chapterData.index } : undefined,
       }))
     },
-    [setReviewModeInfo],
+    [setWordReviewModeInfo],
   )
 
   const onFinish = useCallback(() => {
@@ -105,7 +105,7 @@ export default function WordPanel() {
       // 用户完成当前章节
       dispatch({ type: WordTypingStateActionType.FINISH_CHAPTER })
       if (isReviewMode) {
-        setReviewModeInfo((old) => ({ ...old, reviewRecord: old.reviewRecord ? { ...old.reviewRecord, isFinished: true } : undefined }))
+        setWordReviewModeInfo((old) => ({ ...old, reviewRecord: old.reviewRecord ? { ...old.reviewRecord, isFinished: true } : undefined }))
       }
     }
   }, [
@@ -117,7 +117,7 @@ export default function WordPanel() {
     reloadCurrentWordComponent,
     isReviewMode,
     updateReviewRecord,
-    setReviewModeInfo,
+    setWordReviewModeInfo,
   ])
 
   const onSkipWord = useCallback(

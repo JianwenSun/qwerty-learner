@@ -1,5 +1,5 @@
 import { db } from '@/utils/db'
-import type { IWordRecord } from '@/utils/db/record'
+import type { IWordRecord } from '@/utils/db/wordRecord'
 import dayjs from 'dayjs'
 import { useEffect, useState } from 'react'
 import type { Activity } from 'react-activity-calendar'

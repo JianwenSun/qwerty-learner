@@ -1,14 +1,14 @@
 import { db } from '.'
-import { ReviewRecord } from './record'
+import { WordReviewRecord } from './wordRecord'
 import type { TErrorWordData } from '@/pages/Gallery-N/hooks/useErrorWords'
 import type { Word } from '@/typings'
 import { useEffect, useState } from 'react'
 
-export function useGetLatestReviewRecord(dictID: string) {
-  const [wordReviewRecord, setWordReviewRecord] = useState<ReviewRecord | undefined>(undefined)
+export function useGetLatestWordReviewRecord(dictID: string) {
+  const [wordReviewRecord, setWordReviewRecord] = useState<WordReviewRecord | undefined>(undefined)
   useEffect(() => {
     const fetchWordReviewRecords = async () => {
-      const record = await getReviewRecords(dictID)
+      const record = await getWordReviewRecords(dictID)
       setWordReviewRecord(record)
     }
     if (dictID) {
@@ -18,8 +18,8 @@ export function useGetLatestReviewRecord(dictID: string) {
   return wordReviewRecord
 }
 
-async function getReviewRecords(dictID: string): Promise<ReviewRecord | undefined> {
-  const records = await db.reviewRecords.where('dict').equals(dictID).toArray()
+async function getWordReviewRecords(dictID: string): Promise<WordReviewRecord | undefined> {
+  const records = await db.wordReviewRecords.where('dict').equals(dictID).toArray()
 
   const latestRecord = records.sort((a, b) => a.createTime - b.createTime).pop()
 
@@ -57,12 +57,12 @@ export async function generateNewWordReviewRecord(dictID: string, errorData: TEr
     })
     .map((item) => item.originData)
 
-  const record = new ReviewRecord(dictID, sortedWords)
+  const record = new WordReviewRecord(dictID, sortedWords)
 
-  await db.reviewRecords.put(record)
+  await db.wordReviewRecords.put(record)
   return record
 }
 
-export async function putWordReviewRecord(record: ReviewRecord) {
-  db.reviewRecords.put(record)
+export async function putWordReviewRecord(record: WordReviewRecord) {
+  db.wordReviewRecords.put(record)
 }

@@ -1,37 +1,23 @@
 import DictionaryGroup from './DictionaryGroup'
 import { DictionaryTypeTabSwitcher } from './DictionaryTypeTabSwitcher'
 import Layout from '@/components/Layout'
-import { dictionaries } from '@/resources/dictionary'
-import { currentDictInfoAtom, isOpenDarkModeAtom } from '@/store'
-import type { WordDictionary, DictionaryType } from '@/typings'
+import { wordDictionaries } from '@/resources/dictionary'
+import { currentWordDictionaryInfoAtom, isOpenDarkModeAtom } from '@/store'
+import type { WordDictionary } from '@/typings'
 import groupBy, { groupByDictTags } from '@/utils/groupBy'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { useAtom, useAtomValue } from 'jotai'
 import { createContext, useCallback, useEffect, useMemo, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useLocation, useNavigate } from 'react-router-dom'
-import type { Updater } from 'use-immer'
-import { useImmer } from 'use-immer'
 
-export type GalleryState = {
-  currentTypeTab: DictionaryType
-}
-
-const initialGalleryState: GalleryState = {
-  currentTypeTab: 'word',
-}
-
-export const GalleryContext = createContext<{
-  state: GalleryState
-  setState: Updater<GalleryState>
-} | null>(null)
+export const GalleryContext = createContext<{} | null>(null)
 
 export default function GalleryPage() {
-  const [galleryState, setGalleryState] = useImmer<GalleryState>(initialGalleryState)
   const navigate = useNavigate()
   const location = useLocation()
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
-  const currentDictInfo = useAtomValue(currentDictInfoAtom)
+  const currentWordDictionaryInfo = useAtomValue(currentWordDictionaryInfoAtom)
   const [forceUpdate, setForceUpdate] = useState(0)
 
   // 确保每次路由变化时都重新计算数据
@@ -42,15 +28,14 @@ export default function GalleryPage() {
 
   const { groupedByCategoryAndTag } = useMemo(() => {
     // 为了确保数据重新计算，使用 forceUpdate 作为依赖
-    const currentDictionaryTypes = dictionaries.filter((dict) => dict.type === galleryState.currentTypeTab)
-    const groupedByCategory = Object.entries(groupBy(currentDictionaryTypes, (dict) => dict.category))
+    const groupedByCategory = Object.entries(groupBy(wordDictionaries, (dict) => dict.category))
     const groupedByCategoryAndTag = groupedByCategory.map(
       ([category, dicts]) => [category, groupByDictTags(dicts)] as [string, Record<string, WordDictionary[]>],
     )
     return {
       groupedByCategoryAndTag,
     }
-  }, [galleryState.currentTypeTab, forceUpdate]) // 添加 forceUpdate 作为依赖
+  }, [forceUpdate]) // 添加 forceUpdate 作为依赖
 
   const onBack = useCallback(() => {
     navigate('/')
@@ -59,21 +44,13 @@ export default function GalleryPage() {
   useHotkeys('enter,esc', onBack, { preventDefault: true })
 
   useEffect(() => {
-    if (currentDictInfo) {
-      setGalleryState((state) => {
-        state.currentTypeTab = currentDictInfo.type
-      })
-    }
-  }, [currentDictInfo, setGalleryState])
-
-  useEffect(() => {
     // 当路由变化时，强制更新组件，确保页面内容正确刷新
     setForceUpdate((prev) => prev + 1)
   }, [location.pathname])
 
   return (
     <Layout>
-      <GalleryContext.Provider value={{ state: galleryState, setState: setGalleryState }}>
+      <GalleryContext.Provider value={{}}>
         <div
           className={`relative mb-auto mt-auto flex w-full flex-1 flex-col ${
             !isOpenDarkMode ? 'bg-white px-5 pb-5' : 'bg-gray-900 px-5 pb-5'

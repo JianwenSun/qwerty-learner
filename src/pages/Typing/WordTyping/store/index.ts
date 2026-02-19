@@ -1,16 +1,16 @@
-import type { WordTypingState, UserInputLog } from './type'
+import type { WordTypingState, UserWordInputLog } from './type'
 import type { WordWithIndex } from '@/typings'
-import type { LetterMistakes } from '@/utils/db/record'
-import '@/utils/db/review-record'
+import type { WordLetterMistakes } from '@/utils/db/wordRecord'
+import '@/utils/db/wordReviewRecord'
 import { mergeLetterMistake } from '@/utils/db/utils'
 import shuffle from '@/utils/shuffle'
 import { createContext } from 'react'
 
-export const initialState: WordTypingState = {
+export const initialWordTypingState: WordTypingState = {
   chapterData: {
     words: [],
     index: 0,
-    wordCount: 0,
+    inputCount: 0,
     correctCount: 0,
     wrongCount: 0,
     wordRecordIds: [],
@@ -29,11 +29,11 @@ export const initialState: WordTypingState = {
   isSavingRecord: false,
 }
 
-export const initialUserInputLog: UserInputLog = {
+export const initialUserWordInputLog: UserWordInputLog = {
   index: 0,
   correctCount: 0,
   wrongCount: 0,
-  LetterMistakes: {},
+  letterMistakes: {},
 }
 
 export enum WordTypingStateActionType {
@@ -66,7 +66,7 @@ export type WordTypingStateAction =
   | { type: WordTypingStateActionType.SET_IS_SKIP; payload: boolean }
   | { type: WordTypingStateActionType.SET_IS_TYPING; payload: boolean }
   | { type: WordTypingStateActionType.TOGGLE_IS_TYPING }
-  | { type: WordTypingStateActionType.REPORT_WRONG_WORD; payload: { letterMistake: LetterMistakes } }
+  | { type: WordTypingStateActionType.REPORT_WRONG_WORD; payload: { letterMistake: WordLetterMistakes } }
   | { type: WordTypingStateActionType.REPORT_CORRECT_WORD }
   | {
     type: WordTypingStateActionType.NEXT_WORD
@@ -87,12 +87,12 @@ export type WordTypingStateAction =
   | { type: WordTypingStateActionType.SET_IS_LOOP_SINGLE_WORD; payload: boolean }
   | { type: WordTypingStateActionType.TOGGLE_IS_LOOP_SINGLE_WORD }
 
-type Dispatch = (action: WordTypingStateAction) => void
+type WordDispatch = (action: WordTypingStateAction) => void
 
-export const typingReducer = (state: WordTypingState, action: WordTypingStateAction) => {
+export const wordTypingReducer = (state: WordTypingState, action: WordTypingStateAction) => {
   switch (action.type) {
     case WordTypingStateActionType.SETUP_CHAPTER: {
-      const newState = structuredClone(initialState)
+      const newState = structuredClone(initialWordTypingState)
       const words = action.payload.shouldShuffle ? shuffle(action.payload.words) : action.payload.words
       let initialIndex = action.payload.initialIndex ?? 0
       if (initialIndex >= words.length) {
@@ -100,7 +100,7 @@ export const typingReducer = (state: WordTypingState, action: WordTypingStateAct
       }
       newState.chapterData.index = initialIndex
       newState.chapterData.words = words
-      newState.chapterData.userInputLogs = words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
+      newState.chapterData.userInputLogs = words.map((_, index) => ({ ...structuredClone(initialUserWordInputLog), index }))
 
       return newState
     }
@@ -134,12 +134,12 @@ export const typingReducer = (state: WordTypingState, action: WordTypingStateAct
       const letterMistake = action.payload.letterMistake
       const wordLog = state.chapterData.userInputLogs[state.chapterData.index]
       wordLog.wrongCount += 1
-      wordLog.LetterMistakes = mergeLetterMistake(wordLog.LetterMistakes, letterMistake)
+      wordLog.letterMistakes = mergeLetterMistake(wordLog.letterMistakes, letterMistake)
       break
     }
     case WordTypingStateActionType.NEXT_WORD: {
       state.chapterData.index += 1
-      state.chapterData.wordCount += 1
+      state.chapterData.inputCount += 1
       state.isShowSkip = false
 
       if (action?.payload?.updateReviewRecord) {
@@ -149,10 +149,10 @@ export const typingReducer = (state: WordTypingState, action: WordTypingStateAct
     }
     case WordTypingStateActionType.LOOP_CURRENT_WORD:
       state.isShowSkip = false
-      state.chapterData.wordCount += 1
+      state.chapterData.inputCount += 1
       break
     case WordTypingStateActionType.FINISH_CHAPTER:
-      state.chapterData.wordCount += 1
+      state.chapterData.inputCount += 1
       console.log('Setting isTyping to false (FINISH_CHAPTER)')
       state.isTyping = false
       state.isFinished = true
@@ -181,16 +181,16 @@ export const typingReducer = (state: WordTypingState, action: WordTypingStateAct
       break
     }
     case WordTypingStateActionType.REPEAT_CHAPTER: {
-      const newState = structuredClone(initialState)
-      newState.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
+      const newState = structuredClone(initialWordTypingState)
+      newState.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({ ...structuredClone(initialUserWordInputLog), index }))
       newState.isTyping = true
       newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
       newState.isTransVisible = state.isTransVisible
       return newState
     }
     case WordTypingStateActionType.NEXT_CHAPTER: {
-      const newState = structuredClone(initialState)
-      newState.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
+      const newState = structuredClone(initialWordTypingState)
+      newState.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({ ...structuredClone(initialUserWordInputLog), index }))
       newState.isTyping = true
       newState.isTransVisible = state.isTransVisible
       return newState
@@ -208,7 +208,7 @@ export const typingReducer = (state: WordTypingState, action: WordTypingStateAct
 
       state.timerData.time = newTime
       state.timerData.accuracy = Math.round((state.chapterData.correctCount / inputSum) * 100)
-      state.timerData.wpm = Math.round((state.chapterData.wordCount / newTime) * 60)
+      state.timerData.wpm = Math.round((state.chapterData.inputCount / newTime) * 60)
       break
     }
     case WordTypingStateActionType.ADD_WORD_RECORD_ID: {
@@ -233,4 +233,4 @@ export const typingReducer = (state: WordTypingState, action: WordTypingStateAct
   }
 }
 
-export const TypingContext = createContext<{ state: WordTypingState; dispatch: Dispatch } | null>(null)
+export const WordTypingContext = createContext<{ state: WordTypingState; dispatch: WordDispatch } | null>(null)

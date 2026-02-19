@@ -1,4 +1,4 @@
-import { TypingContext } from '../../store'
+import { WordTypingContext } from '../../store'
 import shareImage1 from '@/assets/sharePic/image-1.png'
 import shareImage2 from '@/assets/sharePic/image-2.png'
 import shareImage3 from '@/assets/sharePic/image-3.png'
@@ -9,7 +9,7 @@ import shareImage7 from '@/assets/sharePic/image-7.png'
 import shareImage8 from '@/assets/sharePic/image-8.png'
 import shareImage9 from '@/assets/sharePic/image-9.png'
 import keyboardSvg from '@/assets/sharePic/keyBackground.svg'
-import { currentChapterAtom, currentDictInfoAtom } from '@/store'
+import { currentWordChapterAtom, currentWordDictionaryInfoAtom } from '@/store'
 import { recordShareAction } from '@/utils'
 import { Dialog, Transition } from '@headlessui/react'
 import { useAtomValue } from 'jotai'
@@ -50,11 +50,11 @@ export type SharePicDialogProps = {
 
 export default function SharePicDialog({ showState, setShowState, randomChoose }: SharePicDialogProps) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state } = useContext(TypingContext)!
+  const { state } = useContext(WordTypingContext)!
   const imageRef = useRef<HTMLDivElement>(null)
   const [imageURL, setImageURL] = useState<string | null>(null)
-  const currentDictInfo = useAtomValue(currentDictInfoAtom)
-  const currentChapter = useAtomValue(currentChapterAtom)
+  const currentWordDictionaryInfo = useAtomValue(currentWordDictionaryInfoAtom)
+  const currentWordChapter = useAtomValue(currentWordChapterAtom)
 
   const dialogFocusRef = useRef<HTMLButtonElement>(null)
 
@@ -174,8 +174,10 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                 <DataBox data={state.timerData.accuracy + '%'} description="正确率" />
                 <DataBox data={state.timerData.wpm + ''} description="WPM" />
               </div>
-              <div className="ml-5 mt-4 self-start text-base text-gray-800">{currentDictInfo.name}</div>
-              <div className="ml-5 mt-2 self-start text-xs text-gray-600">{`第 ${currentChapter + 1} 章`}</div>
+              <div className="ml-5 mt-4 self-start text-base text-gray-800">{currentWordDictionaryInfo.name}</div>
+              <div className="ml-5 mt-2 self-start text-xs text-gray-600">{`第 ${
+                currentWordChapter !== undefined ? currentWordChapter + 1 : ''
+              } 章`}</div>
             </div>
             <div className="mb-3 ml-5 mt-auto">
               <div className="text-xs">Qwerty.kaiyi.cool</div>

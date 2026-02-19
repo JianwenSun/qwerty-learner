@@ -1,11 +1,11 @@
 import type { WordUpdateAction } from '../InputHandler'
-import { TypingContext } from '@/pages/Typing/WordTyping/store'
+import { WordTypingContext } from '@/pages/Typing/WordTyping/store'
 import { isChineseSymbol, isLegal } from '@/utils'
 import { useCallback, useContext, useEffect, useRef } from 'react'
 
 export default function KeyEventHandler({ updateInput }: { updateInput: (updateObj: WordUpdateAction) => void }) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state } = useContext(TypingContext)!
+  const { state } = useContext(WordTypingContext)!
 
   // 使用 useRef 来存储 updateInput 函数，避免因为 updateInput 变化而导致事件监听器被移除并重新添加
   const updateInputRef = useRef(updateInput)

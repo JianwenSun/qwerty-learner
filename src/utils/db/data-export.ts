@@ -21,7 +21,7 @@ export async function exportDatabase(callback: (exportProgress: ExportProgress) 
       return callback({ totalRows, completedRows, done })
     },
   })
-  const [wordCount, chapterCount] = await Promise.all([db.wordRecords.count(), db.chapterRecords.count()])
+  const [wordCount, chapterCount] = await Promise.all([db.wordRecords.count(), db.wordChapterRecords.count()])
 
   const json = await blob.text()
   const compressed = pako.gzip(json)
@@ -59,7 +59,7 @@ export async function importDatabase(onStart: () => void, callback: (importProgr
       },
     })
 
-    const [wordCount, chapterCount] = await Promise.all([db.wordRecords.count(), db.chapterRecords.count()])
+    const [wordCount, chapterCount] = await Promise.all([db.wordRecords.count(), db.wordChapterRecords.count()])
     recordDataAction({ type: 'import', size: file.size, wordCount, chapterCount })
   })
 

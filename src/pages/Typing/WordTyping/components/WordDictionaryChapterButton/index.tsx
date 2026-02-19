@@ -1,5 +1,5 @@
 import Tooltip from '@/components/Tooltip'
-import { currentChapterAtom, currentDictInfoAtom, isOpenDarkModeAtom, isReviewModeAtom } from '@/store'
+import { currentWordChapterAtom, currentWordDictionaryInfoAtom, isOpenDarkModeAtom, isReviewModeAtom } from '@/store'
 import range from '@/utils/range'
 import { Listbox, Transition } from '@headlessui/react'
 import { useAtom, useAtomValue } from 'jotai'
@@ -8,9 +8,9 @@ import { NavLink } from 'react-router-dom'
 import IconCheck from '~icons/tabler/check'
 
 export const WordDictionaryChapterButton = () => {
-  const currentDictInfo = useAtomValue(currentDictInfoAtom)
-  const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
-  const chapterCount = currentDictInfo.chapterCount
+  const currentWordDictionaryInfo = useAtomValue(currentWordDictionaryInfoAtom)
+  const [currentWordChapter, setCurrentWordChapter] = useAtom(currentWordChapterAtom)
+  const chapterCount = currentWordDictionaryInfo.chapterCount
   const isReviewMode = useAtomValue(isReviewModeAtom)
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
 
@@ -28,19 +28,19 @@ export const WordDictionaryChapterButton = () => {
           }`}
           to="/gallery"
         >
-          {currentDictInfo.name} {isReviewMode && '错题复习'}
+          {currentWordDictionaryInfo.name} {isReviewMode && '错题复习'}
         </NavLink>
       </Tooltip>
       {!isReviewMode && (
         <Tooltip content="章节切换">
-          <Listbox value={currentChapter} onChange={setCurrentChapter}>
+          <Listbox value={currentWordChapter} onChange={setCurrentWordChapter}>
             <Listbox.Button
               onKeyDown={handleKeyDown}
               className={`rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none ${
                 isOpenDarkMode ? 'text-white text-opacity-60 hover:text-opacity-100' : 'text-gray-800 hover:text-white'
               }`}
             >
-              第 {currentChapter + 1} 章
+              第 {currentWordChapter !== undefined ? currentWordChapter + 1 : ''} 章
             </Listbox.Button>
             <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
               <Listbox.Options className="listbox-options z-10 w-32">

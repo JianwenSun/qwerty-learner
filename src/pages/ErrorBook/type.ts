@@ -1,4 +1,4 @@
-import type { WordRecord } from '@/utils/db/record'
+import type { WordRecord } from '@/utils/db/wordRecord'
 
 export type groupedWordRecords = {
   word: string

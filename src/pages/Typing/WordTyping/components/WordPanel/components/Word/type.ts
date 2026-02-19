@@ -1,5 +1,5 @@
 import type { LetterState } from './Letter'
-import type { LetterMistakes } from '@/utils/db/record'
+import type { WordLetterMistakes } from '@/utils/db/wordRecord'
 
 export type WordState = {
   displayWord: string
@@ -15,7 +15,7 @@ export type WordState = {
   inputCount: number
   correctCount: number
   letterTimeArray: number[]
-  letterMistake: LetterMistakes
+  letterMistake: WordLetterMistakes
   // 用于随机隐藏字母功能
   randomLetterVisible: boolean[]
 }

@@ -1,7 +1,7 @@
 import { UrlPronunciationIcon } from '@/components/UrlPronunciationIcon'
 import type { UrlPronunciationIconRef } from '@/components/UrlPronunciationIcon'
 import { Vocabulary } from '@/plugins/sb/sb'
-import { getVocabWordIgnoreUpper } from '@/storage/shanbeiStroageApi'
+import { getVocabWordIgnoreUpper } from '@/plugins/sb/sbApi'
 import { useState, useEffect, useRef } from 'react'
 
 interface WordDetailPopupProps {

@@ -11,25 +11,26 @@ export const PRONUNCIATION_PHONETIC_MAP: Pronunciation2PhoneticMap = {
   uk: 'uk'
 }
 
-export type DictionaryType = 'word' | 'sentence'
-
 export interface Dictionary {
   id: string
   name: string
   description: string
   category: string
   tags: string[]
-  url: string
   icon_url?: string
-  length: number
-  type: DictionaryType
-  app?: string
+}
+
+export interface SentenceDictionary extends Dictionary {
+
 }
 
 export interface WordDictionary extends Dictionary {
+  url: string
+  length: number
   // calculated in the store
   chapterCount: number
 }
+
 export type Word = {
   id: string
   name: string
@@ -127,6 +128,7 @@ export interface SentencePractice {
 }
 
 export type LoopWordTimesOption = 1 | 3 | 5 | 8 | typeof Number.MAX_SAFE_INTEGER
+export type LoopSentenceTimesOption = 1 | 3 | 5 | 8 | typeof Number.MAX_SAFE_INTEGER
 
 export type WordDictationType = 'hideAll' | 'hideVowel' | 'hideConsonant' | 'randomHide'
 /**

@@ -1,8 +1,8 @@
-import { TypingContext, WordTypingStateActionType } from '../../store'
+import { WordTypingContext, WordTypingStateActionType } from '../../store'
 import WordCard from './WordCard'
 import Drawer from '@/components/Drawer'
 import Tooltip from '@/components/Tooltip'
-import { currentChapterAtom, currentDictInfoAtom, isReviewModeAtom } from '@/store'
+import { currentWordChapterAtom, currentWordDictionaryInfoAtom, isReviewModeAtom } from '@/store'
 import { Dialog } from '@headlessui/react'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { atom, useAtomValue } from 'jotai'
@@ -14,15 +14,17 @@ const currentDictTitle = atom((get) => {
   const isReviewMode = get(isReviewModeAtom)
 
   if (isReviewMode) {
-    return `${get(currentDictInfoAtom).name} 错题复习`
+    return `${get(currentWordDictionaryInfoAtom).name} 错题复习`
   } else {
-    return `${get(currentDictInfoAtom).name} 第 ${get(currentChapterAtom) + 1} 章`
+    return `${get(currentWordDictionaryInfoAtom).name} 第 ${
+      get(currentWordChapterAtom) !== undefined ? (get(currentWordChapterAtom) !== null ? get(currentWordChapterAtom)!! + 1 : '') : ''
+    } 章`
   }
 })
 
 export default function WordList() {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state, dispatch } = useContext(TypingContext)!
+  const { state, dispatch } = useContext(WordTypingContext)!
 
   const [isOpen, setIsOpen] = useState(false)
   const currentDictTitleValue = useAtomValue(currentDictTitle)

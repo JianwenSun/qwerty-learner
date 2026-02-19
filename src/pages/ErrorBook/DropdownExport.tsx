@@ -1,5 +1,5 @@
-import { idDictionaryMap } from '@/resources/dictionary'
-import { wordListFetcher } from '@/utils/wordListFetcher'
+import { wordDictionaryMap } from '@/resources/dictionary'
+import { wordListFetcher } from '@/utils/resourceListFetcher'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import { saveAs } from 'file-saver'
 import type { FC } from 'react'
@@ -31,7 +31,7 @@ const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
       // 获取所有需要的词典数据
       const dictUrls: string[] = []
       renderRecords.forEach((item: any) => {
-        const dictInfo = idDictionaryMap[item.dict]
+        const dictInfo = wordDictionaryMap[item.dict]
         if (dictInfo?.url && !dictUrls.includes(dictInfo.url)) {
           dictUrls.push(dictInfo.url)
         }
@@ -54,7 +54,7 @@ const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
       const ExportData: Array<{ 单词: string; 释义: string; 错误次数: number; 词典: string }> = []
 
       renderRecords.forEach((item: any) => {
-        const dictInfo = idDictionaryMap[item.dict]
+        const dictInfo = wordDictionaryMap[item.dict]
         let translation: string | undefined = undefined
 
         if (dictInfo?.url && dictDataMap.has(dictInfo.url)) {

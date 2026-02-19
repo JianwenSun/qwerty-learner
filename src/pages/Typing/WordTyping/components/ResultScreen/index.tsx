@@ -1,4 +1,4 @@
-import { TypingContext, WordTypingStateActionType } from '../../store'
+import { WordTypingContext, WordTypingStateActionType } from '../../store'
 import ShareButton from '../ShareButton'
 import { AuthorButton } from './AuthorButton'
 import ConclusionBar from './ConclusionBar'
@@ -6,11 +6,11 @@ import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
 import Tooltip from '@/components/Tooltip'
 import {
-  currentChapterAtom,
-  currentDictInfoAtom,
+  currentWordChapterAtom,
+  currentWordDictionaryInfoAtom,
   isReviewModeAtom,
   randomConfigAtom,
-  reviewModeInfoAtom,
+  wordReviewModeInfoAtom,
   wordDictationConfigAtom,
 } from '@/store'
 import { Transition } from '@headlessui/react'
@@ -23,15 +23,15 @@ import IconX from '~icons/tabler/x'
 
 const ResultScreen = () => {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state, dispatch } = useContext(TypingContext)!
+  const { state, dispatch } = useContext(WordTypingContext)!
 
   const setWordDictationConfig = useSetAtom(wordDictationConfigAtom)
-  const currentDictInfo = useAtomValue(currentDictInfoAtom)
-  const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
+  const currentWordDictionaryInfo = useAtomValue(currentWordDictionaryInfoAtom)
+  const [currentWordChapter, setCurrentWordChapter] = useAtom(currentWordChapterAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
   const navigate = useNavigate()
 
-  const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
+  const setWordReviewModeInfo = useSetAtom(wordReviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const ResultScreen = () => {
         ...word,
         correctCount: log.correctCount,
         wrongCount: log.wrongCount,
-        wrongLetters: Object.entries(log.LetterMistakes)
+        wrongLetters: Object.entries(log.letterMistakes)
           .map(([key, mistakes]) => `${wordName[Number(key)]}:${mistakes.length}`)
           .join(';'),
       }
@@ -59,12 +59,12 @@ const ResultScreen = () => {
         const ws = utils.json_to_sheet(exportData)
         const wb = utils.book_new()
         utils.book_append_sheet(wb, ws, 'Data')
-        writeFileXLSX(wb, `${currentDictInfo.name}第${currentChapter + 1}章.xlsx`)
+        writeFileXLSX(wb, `${currentWordDictionaryInfo.name}第${currentWordChapter !== undefined ? currentWordChapter + 1 : ''}章.xlsx`)
       })
       .catch(() => {
         console.log('写入 xlsx 模块导入失败')
       })
-  }, [currentChapter, currentDictInfo.name, state.chapterData])
+  }, [currentWordChapter, currentWordDictionaryInfo.name, state.chapterData])
 
   const wrongWords = useMemo(() => {
     return state.chapterData.userInputLogs
@@ -74,8 +74,8 @@ const ResultScreen = () => {
   }, [state.chapterData.userInputLogs, state.chapterData.words])
 
   const isLastChapter = useMemo(() => {
-    return currentChapter >= currentDictInfo.chapterCount - 1
-  }, [currentChapter, currentDictInfo])
+    return currentWordChapter !== undefined && currentWordChapter >= currentWordDictionaryInfo.chapterCount - 1
+  }, [currentWordChapter, currentWordDictionaryInfo])
 
   const correctRate = useMemo(() => {
     const chapterLength = state.chapterData.words.length
@@ -141,25 +141,25 @@ const ResultScreen = () => {
       return old
     })
     if (!isLastChapter) {
-      setCurrentChapter((old) => old + 1)
+      setCurrentWordChapter((old) => (old !== undefined ? old + 1 : 0))
       dispatch({ type: WordTypingStateActionType.NEXT_CHAPTER })
     }
-  }, [dispatch, isLastChapter, isReviewMode, setCurrentChapter, setWordDictationConfig])
+  }, [dispatch, isLastChapter, isReviewMode, setCurrentWordChapter, setWordDictationConfig])
 
   const exitButtonHandler = useCallback(() => {
     if (isReviewMode) {
-      setCurrentChapter(0)
-      setReviewModeInfo((old) => ({ ...old, isReviewMode: false }))
+      setCurrentWordChapter(0)
+      setWordReviewModeInfo((old) => ({ ...old, isReviewMode: false }))
     } else {
       dispatch({ type: WordTypingStateActionType.REPEAT_CHAPTER, shouldShuffle: false })
     }
-  }, [dispatch, isReviewMode, setCurrentChapter, setReviewModeInfo])
+  }, [dispatch, isReviewMode, setCurrentWordChapter, setWordReviewModeInfo])
 
   const onNavigateToGallery = useCallback(() => {
-    setCurrentChapter(0)
-    setReviewModeInfo((old) => ({ ...old, isReviewMode: false }))
+    setCurrentWordChapter(0)
+    setWordReviewModeInfo((old) => ({ ...old, isReviewMode: false }))
     navigate('/gallery')
-  }, [navigate, setCurrentChapter, setReviewModeInfo])
+  }, [navigate, setCurrentWordChapter, setWordReviewModeInfo])
 
   useHotkeys(
     'enter',
@@ -202,7 +202,9 @@ const ResultScreen = () => {
         <div className="flex h-screen items-center justify-center">
           <div className="my-card fixed flex w-[90vw] max-w-6xl flex-col overflow-hidden rounded-3xl bg-white pb-14 pl-10 pr-5 pt-10 shadow-lg dark:bg-gray-800 md:w-4/5 lg:w-3/5">
             <div className="text-center font-sans text-xl font-normal text-gray-900 dark:text-gray-400 md:text-2xl">
-              {`${currentDictInfo.name} ${isReviewMode ? '错题复习' : '第' + (currentChapter + 1) + '章'}`}
+              {`${currentWordDictionaryInfo.name} ${
+                isReviewMode ? '错题复习' : '第' + (currentWordChapter !== undefined ? currentWordChapter + 1 : '') + '章'
+              }`}
             </div>
             <button className="absolute right-7 top-5" onClick={exitButtonHandler}>
               <IconX className="text-gray-400" />

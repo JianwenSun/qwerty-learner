@@ -4,7 +4,7 @@ import bookCover from '@/assets/book-cover.png'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import useIntersectionObserver from '@/hooks/useIntersectionObserver'
-import { currentDictIdAtom } from '@/store'
+import { currentWordDictionaryIdAtom } from '@/store'
 import type { WordDictionary } from '@/typings'
 import { calcChapterCount } from '@/utils'
 import * as Progress from '@radix-ui/react-progress'
@@ -17,7 +17,7 @@ interface Props {
 }
 
 export default function DictionaryComponent({ wordDictionary }: Props) {
-  const currentDictID = useAtomValue(currentDictIdAtom)
+  const currentWordDictionaryId = useAtomValue(currentWordDictionaryIdAtom)
   const navigate = useNavigate()
 
   const divRef = useRef<HTMLDivElement>(null)
@@ -25,7 +25,7 @@ export default function DictionaryComponent({ wordDictionary }: Props) {
   const isVisible = !!entry?.isIntersecting
   const dictStats = useDictStats(wordDictionary.id, isVisible)
   const chapterCount = useMemo(() => calcChapterCount(wordDictionary.length), [wordDictionary.length])
-  const isSelected = currentDictID === wordDictionary.id
+  const isSelected = currentWordDictionaryId === wordDictionary.id
   const progress = useMemo(
     () => (dictStats ? Math.ceil((dictStats.exercisedChapterCount / chapterCount) * 100) : 0),
     [dictStats, chapterCount],

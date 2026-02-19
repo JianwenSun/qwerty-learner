@@ -1,7 +1,7 @@
 import atomForConfig from './atomForConfig'
-import { reviewInfoAtom } from './reviewInfoAtom'
+import { wordReviewInfoAtom } from './wordReviewInfoAtom'
 import { DISMISS_START_CARD_DATE_KEY, defaultFontSizeConfig } from '@/constants'
-import { idDictionaryMap } from '@/resources/dictionary'
+import { wordDictionaryMap, sentenceDictionaryMap } from '@/resources/dictionary'
 import { correctSoundResources, keySoundResources, wrongSoundResources } from '@/resources/soundResource'
 import type {
   WordDictionary,
@@ -10,27 +10,53 @@ import type {
   PronunciationType,
   WordDictationOpenBy,
   WordDictationType,
+  LoopSentenceTimesOption,
+  SentenceDictionary,
 } from '@/typings'
-import type { ReviewRecord } from '@/utils/db/record'
+import type { WordReviewRecord } from '@/utils/db/wordRecord'
 import { atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
+import { sentenceReviewInfoAtom } from './sentenceReviewInfoAtom'
+import { SentenceReviewRecord } from '@/utils/db/sentenceRecord'
 
-export const currentDictIdAtom = atomWithStorage('currentDict', 'cet4')
-export const currentDictInfoAtom = atom<WordDictionary>((get) => {
-  const id = get(currentDictIdAtom)
-  let dict = idDictionaryMap[id]
-  // 如果 dict 不存在，则返回 idDictionaryMap 中的第一个元素
-  if (!dict) {
-    dict = Object.values(idDictionaryMap)[0]
+export const currentWordDictionaryIdAtom = atomWithStorage('currentWordDictionaryId', undefined as string | undefined)
+export const currentWordDictionaryInfoAtom = atom<WordDictionary>((get) => {
+  const id = get(currentWordDictionaryIdAtom)
+  if (!id) {
+    return Object.values(wordDictionaryMap)[0]
   }
-  return dict
+  return wordDictionaryMap[id]
 })
 
-export const currentChapterAtom = atomWithStorage('currentChapter', 0)
+export const currentWordChapterAtom = atomWithStorage('currentWordChapter', undefined as number | undefined)
 
 export const loopWordConfigAtom = atomForConfig<{ times: LoopWordTimesOption }>('loopWordConfig', {
   times: 1,
 })
+
+export const sentenceReviewModeInfoAtom = sentenceReviewInfoAtom({
+  isReviewMode: false,
+  reviewRecord: undefined as SentenceReviewRecord | undefined,
+})
+
+
+export const currentSentenceDictionaryIdAtom = atomWithStorage('currentSentenceDictionaryId', undefined as string | undefined)
+export const currentSentenceChapterIdAtom = atomWithStorage('currentSentenceChapter', undefined as number | undefined)
+
+export const currentSentenceDictionaryInfoAtom = atom<SentenceDictionary>((get) => {
+  const id = get(currentSentenceDictionaryIdAtom)
+  if (!id) {
+    return Object.values(sentenceDictionaryMap)[0]
+  }
+  return sentenceDictionaryMap[id]
+})
+
+export const currentSentenceChapterAtom = atomWithStorage('currentSentenceChapter', undefined as number | undefined)
+
+export const loopSentenceConfigAtom = atomForConfig<{ times: LoopSentenceTimesOption }>('loopSentenceConfig', {
+  times: 1,
+})
+
 
 export const keySoundsConfigAtom = atomForConfig('keySoundsConfig', {
   isOpen: true,
@@ -77,11 +103,12 @@ export const isShowAnswerOnHoverAtom = atomWithStorage('isShowAnswerOnHover', tr
 
 export const isTextSelectableAtom = atomWithStorage('isTextSelectable', false)
 
-export const reviewModeInfoAtom = reviewInfoAtom({
+export const wordReviewModeInfoAtom = wordReviewInfoAtom({
   isReviewMode: false,
-  reviewRecord: undefined as ReviewRecord | undefined,
+  reviewRecord: undefined as WordReviewRecord | undefined,
 })
-export const isReviewModeAtom = atom((get) => get(reviewModeInfoAtom).isReviewMode)
+
+export const isReviewModeAtom = atom((get) => get(wordReviewModeInfoAtom).isReviewMode)
 
 export const phoneticConfigAtom = atomForConfig('phoneticConfig', {
   isOpen: true,

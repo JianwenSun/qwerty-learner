@@ -1,7 +1,7 @@
 import useSWR from 'swr'
 import { WordDictionary, Word } from '.'
-import { idDictionaryMap } from '@/resources/dictionary'
-import { wordListFetcher } from '@/utils/wordListFetcher'
+import { wordDictionaryMap } from '@/resources/dictionary'
+import { wordListFetcher } from '@/utils/resourceListFetcher'
 import { useMemo } from 'react'
 
 export * from './resource'
@@ -12,7 +12,7 @@ export type WordListResult = {
 }
 
 export function getWordList(dictionaryId: string): WordListResult {
-    const wordDictionary = idDictionaryMap[dictionaryId]
+    const wordDictionary = wordDictionaryMap[dictionaryId]
     const { data: wordList } = useSWR(wordDictionary.url, wordListFetcher)
 
     const words: Word[] = useMemo(() => {

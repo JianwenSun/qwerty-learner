@@ -1,7 +1,7 @@
 import type { WordTypingState } from '@/pages/Typing/WordTyping/store/type'
 import {
-  currentChapterAtom,
-  currentDictInfoAtom,
+  currentWordChapterAtom,
+  currentWordDictionaryInfoAtom,
   isOpenDarkModeAtom,
   keySoundsConfigAtom,
   phoneticConfigAtom,
@@ -102,9 +102,9 @@ export type ChapterLogUpload = ModeInfo & {
   countTypo: number
 }
 
-export function useMixPanelWordLogUploader(typingState: WordTypingState) {
-  const currentChapter = useAtomValue(currentChapterAtom)
-  const { name: dictName } = useAtomValue(currentDictInfoAtom)
+export function useMixPanelWordLogUploader(wordTypingState: WordTypingState) {
+  const currentWordChapter = useAtomValue(currentWordChapterAtom)
+  const { name: dictName } = useAtomValue(currentWordDictionaryInfoAtom)
   const isDarkMode = useAtomValue(isOpenDarkModeAtom)
   const keySoundsConfig = useAtomValue(keySoundsConfigAtom)
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
@@ -115,22 +115,22 @@ export function useMixPanelWordLogUploader(typingState: WordTypingState) {
     (wordLog: { headword: string; timeStart: string; timeEnd: string; countInput: number; countCorrect: number; countTypo: number }) => {
       const props: WordLogUpload = {
         ...wordLog,
-        order: typingState.chapterData.index + 1,
-        chapter: (currentChapter + 1).toString(),
+        order: wordTypingState.chapterData.index + 1,
+        chapter: (currentWordChapter!! + 1).toString(),
         wordlist: dictName,
         modeDark: isDarkMode,
         modeShuffle: randomConfig.isOpen,
         enabledKeyboardSound: keySoundsConfig.isOpen,
         enabledPhotonicsSymbol: phoneticConfig.isOpen,
-        enabledSingleWordLoop: typingState.isLoopSingleWord,
+        enabledSingleWordLoop: wordTypingState.isLoopSingleWord,
         pronunciationAuto: pronunciationConfig.isOpen,
         pronunciationOption: pronunciationConfig.isOpen === false ? 'none' : pronunciationConfig.type,
       }
       mixpanel.track('Word', props)
     },
     [
-      typingState,
-      currentChapter,
+      wordTypingState,
+      currentWordChapter,
       dictName,
       isDarkMode,
       keySoundsConfig.isOpen,
@@ -144,9 +144,9 @@ export function useMixPanelWordLogUploader(typingState: WordTypingState) {
   return wordLogUploader
 }
 
-export function useMixPanelChapterLogUploader(typingState: WordTypingState) {
-  const currentChapter = useAtomValue(currentChapterAtom)
-  const { name: dictName } = useAtomValue(currentDictInfoAtom)
+export function useMixPanelChapterLogUploader(wordTypingState: WordTypingState) {
+  const currentWordChapter = useAtomValue(currentWordChapterAtom)
+  const { name: dictName } = useAtomValue(currentWordDictionaryInfoAtom)
   const isDarkMode = useAtomValue(isOpenDarkModeAtom)
   const keySoundsConfig = useAtomValue(keySoundsConfigAtom)
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
@@ -156,24 +156,24 @@ export function useMixPanelChapterLogUploader(typingState: WordTypingState) {
   const chapterLogUploader = useCallback(() => {
     const props: ChapterLogUpload = {
       timeEnd: getUtcStringForMixpanel(),
-      duration: typingState.timerData.time,
-      countInput: typingState.chapterData.correctCount + typingState.chapterData.wrongCount,
-      countTypo: typingState.chapterData.wrongCount,
-      countCorrect: typingState.chapterData.correctCount,
-      chapter: (currentChapter + 1).toString(),
+      duration: wordTypingState.timerData.time,
+      countInput: wordTypingState.chapterData.correctCount + wordTypingState.chapterData.wrongCount,
+      countTypo: wordTypingState.chapterData.wrongCount,
+      countCorrect: wordTypingState.chapterData.correctCount,
+      chapter: (currentWordChapter!! + 1).toString(),
       wordlist: dictName,
       modeDark: isDarkMode,
       modeShuffle: randomConfig.isOpen,
       enabledKeyboardSound: keySoundsConfig.isOpen,
       enabledPhotonicsSymbol: phoneticConfig.isOpen,
-      enabledSingleWordLoop: typingState.isLoopSingleWord,
+      enabledSingleWordLoop: wordTypingState.isLoopSingleWord,
       pronunciationAuto: pronunciationConfig.isOpen,
       pronunciationOption: pronunciationConfig.isOpen === false ? 'none' : pronunciationConfig.type,
     }
     mixpanel.track('Chapter', props)
   }, [
-    typingState,
-    currentChapter,
+    wordTypingState,
+    currentWordChapter,
     dictName,
     isDarkMode,
     keySoundsConfig.isOpen,

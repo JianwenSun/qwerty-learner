@@ -1,6 +1,6 @@
 import { WordPronunciationIcon, WordPronunciationIconRef } from '@/components/WordPronunciationIcon'
 import { Senses } from '@/plugins/sb/sb'
-import { getVocabSenses } from '@/storage/shanbeiStroageApi'
+import { getVocabSenses } from '@/plugins/sb/sbApi'
 import { Word } from '@/typings'
 import { useState, useEffect, useCallback, useRef } from 'react'
 

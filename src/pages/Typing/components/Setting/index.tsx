@@ -1,4 +1,4 @@
-import { TypingContext, WordTypingStateActionType } from '../../WordTyping/store'
+import { WordTypingContext, WordTypingStateActionType } from '../../WordTyping/store'
 import AdvancedSetting from './AdvancedSetting'
 import DataSetting from './DataSetting'
 import SoundSetting from './SoundSetting'
@@ -15,7 +15,7 @@ import IconX from '~icons/tabler/x'
 
 export default function Setting() {
   const [isOpen, setIsOpen] = useState(false)
-  const { dispatch } = useContext(TypingContext) ?? {}
+  const { dispatch } = useContext(WordTypingContext) ?? {}
 
   function closeModal() {
     setIsOpen(false)

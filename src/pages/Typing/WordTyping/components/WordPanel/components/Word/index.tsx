@@ -9,9 +9,9 @@ import Tooltip from '@/components/Tooltip'
 import { WordPronunciationIcon, WordPronunciationIconRef } from '@/components/WordPronunciationIcon'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
-import { TypingContext, WordTypingStateActionType } from '@/pages/Typing/WordTyping/store'
+import { WordTypingContext, WordTypingStateActionType } from '@/pages/Typing/WordTyping/store'
 import {
-  currentChapterAtom,
+  currentWordChapterAtom,
   isIgnoreCaseAtom,
   isShowAnswerOnHoverAtom,
   isTextSelectableAtom,
@@ -33,7 +33,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   console.log(`[${new Date().toISOString()}] WordComponent 初始化: 单词 "${word.name}"`)
 
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state, dispatch } = useContext(TypingContext)!
+  const { state, dispatch } = useContext(WordTypingContext)!
   const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
 
   const wordDictationConfig = useAtomValue(wordDictationConfigAtom)
@@ -44,7 +44,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const [playKeySound, playBeepSound, playHintSound] = useKeySounds()
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
   const [isHoveringWord, setIsHoveringWord] = useState(false)
-  const currentChapter = useAtomValue(currentChapterAtom)
+  const currentWordChapter = useAtomValue(currentWordChapterAtom)
 
   // 添加状态，用于跟踪是否已经自动播放过单词发音
   const [hasAutoPlayed, setHasAutoPlayed] = useState(false)
@@ -279,7 +279,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
       dispatch({ type: WordTypingStateActionType.REPORT_WRONG_WORD, payload: { letterMistake: updatedMistake } })
 
-      if (currentChapter === 0 && state.chapterData.index === 0 && wordState.wrongCount + 1 >= 3) {
+      if (currentWordChapter === 0 && state.chapterData.index === 0 && wordState.wrongCount + 1 >= 3) {
         console.log('show tip alert')
         setShowTipAlert(true)
       }

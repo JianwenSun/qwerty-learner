@@ -1,6 +1,6 @@
 import { decode } from "@/encode/decode";
 import { Examples, Exts, Senses, Vocabulary } from "@/plugins/sb/sb";
-import { UpyunClient } from "./upyun";
+import { UpyunClient } from "../../storage/upyun";
 
 const ShanbeiNamespace = "sb"
 //echo @ShaNBeI@ | base64

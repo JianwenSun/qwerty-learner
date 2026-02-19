@@ -3,7 +3,8 @@ import './index.css'
 import { ErrorBook } from './pages/ErrorBook'
 import { FriendLinks } from './pages/FriendLinks'
 import MobilePage from './pages/Mobile'
-import TypingPage from './pages/Typing/WordTyping'
+import SentenceTypingPage from './pages/Typing/SentenceTyping'
+import WordTypingPage from './pages/Typing/WordTyping'
 import { isOpenDarkModeAtom, isAuthenticatedAtom } from '@/store'
 import { Analytics } from '@vercel/analytics/react'
 import 'animate.css'
@@ -32,6 +33,10 @@ if (process.env.NODE_ENV === 'production') {
 function Root() {
   const darkMode = useAtomValue(isOpenDarkModeAtom)
   const isAuthenticated = useAtomValue(isAuthenticatedAtom)
+
+  // 添加日志验证 isAuthenticated 的值
+  console.log('[index.tsx] isAuthenticated:', isAuthenticated)
+
   useEffect(() => {
     darkMode ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark')
   }, [darkMode])
@@ -48,13 +53,14 @@ function Root() {
               <Route path="/*" element={<Navigate to="/mobile" />} />
             ) : (
               <>
-                <Route index element={isAuthenticated ? <TypingPage /> : <Navigate to="/login" />} />
+                <Route path="/word-typing" element={isAuthenticated ? <WordTypingPage /> : <Navigate to="/login" />} />
+                <Route path="/sentence-typing" element={isAuthenticated ? <SentenceTypingPage /> : <Navigate to="/login" />} />
                 <Route path="/gallery" element={isAuthenticated ? <GalleryPage /> : <Navigate to="/login" />} />
                 <Route path="/analysis" element={isAuthenticated ? <AnalysisPage /> : <Navigate to="/login" />} />
                 <Route path="/error-book" element={isAuthenticated ? <ErrorBook /> : <Navigate to="/login" />} />
                 <Route path="/friend-links" element={isAuthenticated ? <FriendLinks /> : <Navigate to="/login" />} />
                 <Route path="/word-preview/:dictionaryId" element={isAuthenticated ? <WordPreviewPage /> : <Navigate to="/login" />} />
-                <Route path="/*" element={<Navigate to="/" />} />
+                <Route path="/*" element={<Navigate to="/word-typing" />} />
               </>
             )}
             <Route path="/mobile" element={<MobilePage />} />

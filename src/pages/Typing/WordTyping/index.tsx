@@ -9,14 +9,14 @@ import WordList from './components/WordList'
 import WordPanel from './components/WordPanel'
 import { useConfetti } from './hooks/useConfetti'
 import { useWordList } from './hooks/useWordList'
-import { TypingContext, WordTypingStateActionType, initialState, typingReducer } from './store'
+import { WordTypingContext, WordTypingStateActionType, initialWordTypingState, wordTypingReducer } from './store'
 import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import Tooltip from '@/components/Tooltip'
-import { idDictionaryMap } from '@/resources/dictionary'
-import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom } from '@/store'
+import { wordDictionaryMap } from '@/resources/dictionary'
+import { currentWordChapterAtom, currentWordDictionaryIdAtom, isReviewModeAtom, randomConfigAtom, wordReviewModeInfoAtom } from '@/store'
 import { isLegal } from '@/utils'
-import { useSaveChapterRecord } from '@/utils/db'
+import { useSaveWordChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import type React from 'react'
@@ -26,26 +26,30 @@ import { useImmerReducer } from 'use-immer'
 const App: React.FC = () => {
   console.log(`[${new Date().toISOString()}] App 初始化`)
 
-  const [state, dispatch] = useImmerReducer(typingReducer, structuredClone(initialState))
+  const [state, dispatch] = useImmerReducer(wordTypingReducer, structuredClone(initialWordTypingState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const { words } = useWordList()
 
-  const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
-  const setCurrentChapter = useSetAtom(currentChapterAtom)
+  // 添加日志验证 words 的值
+  console.log('[WordTypingPage] words:', words)
+  console.log('[WordTypingPage] words length:', words?.length)
+
+  const [currentWordDictionaryId, setCurrentWordDictionaryId] = useAtom(currentWordDictionaryIdAtom)
+  const setCurrentWordChapter = useSetAtom(currentWordChapterAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
   const chapterLogUploader = useMixPanelChapterLogUploader(state)
-  const saveChapterRecord = useSaveChapterRecord()
+  const saveWordChapterRecord = useSaveWordChapterRecord()
 
-  const reviewModeInfo = useAtomValue(reviewModeInfoAtom)
+  const reviewModeInfo = useAtomValue(wordReviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
 
-  // 在组件挂载和currentDictId改变时，检查当前字典是否存在，如果不存在，则将其重置为默认值
+  // 在组件挂载和currentWordDictionaryId改变时，检查当前字典是否存在，如果不存在，则将其重置为默认值
   useEffect(() => {
-    const id = currentDictId
-    if (!(id in idDictionaryMap)) {
+    const id = currentWordDictionaryId
+    if (!(id!! in wordDictionaryMap)) {
       return
     }
-  }, [currentDictId, setCurrentChapter, setCurrentDictId])
+  }, [currentWordDictionaryId, setCurrentWordChapter, setCurrentWordDictionaryId])
 
   const skipWord = useCallback(() => {
     dispatch({ type: WordTypingStateActionType.SKIP_WORD })
@@ -100,7 +104,7 @@ const App: React.FC = () => {
     // 当用户完成章节后且完成 word Record 数据保存，记录 chapter Record 数据,
     if (state.isFinished && !state.isSavingRecord) {
       chapterLogUploader()
-      saveChapterRecord(state)
+      saveWordChapterRecord(state)
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -120,7 +124,7 @@ const App: React.FC = () => {
   useConfetti(state.isFinished)
 
   return (
-    <TypingContext.Provider value={{ state: state, dispatch }}>
+    <WordTypingContext.Provider value={{ state: state, dispatch }}>
       {state.isFinished && <DonateCard />}
       {state.isFinished && <ResultScreen />}
       <Layout>
@@ -159,7 +163,7 @@ const App: React.FC = () => {
         </div>
       </Layout>
       <WordList />
-    </TypingContext.Provider>
+    </WordTypingContext.Provider>
   )
 }
 

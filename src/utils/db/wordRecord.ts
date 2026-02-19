@@ -14,10 +14,10 @@ export interface IWordRecord {
   // 出错的次数
   wrongCount: number
   // 每个字母被错误输入成什么, index 为字母的索引, 数组内为错误的 e.key
-  mistakes: LetterMistakes
+  mistakes: WordLetterMistakes
 }
 
-export interface LetterMistakes {
+export interface WordLetterMistakes {
   // 每个字母被错误输入成什么, index 为字母的索引, 数组内为错误的 e.key
   [index: number]: string[]
 }
@@ -30,9 +30,9 @@ export class WordRecord implements IWordRecord {
   chapter: number | null
   timing: number[]
   wrongCount: number
-  mistakes: LetterMistakes
+  mistakes: WordLetterMistakes
 
-  constructor(id: string, word: string, dict: string, chapter: number | null, timing: number[], wrongCount: number, mistakes: LetterMistakes) {
+  constructor(id: string, word: string, dict: string, chapter: number | null, timing: number[], wrongCount: number, mistakes: WordLetterMistakes) {
     this.id = id
     this.word = word
     this.timeStamp = getUTCUnixTimestamp()
@@ -48,11 +48,11 @@ export class WordRecord implements IWordRecord {
   }
 }
 
-export interface IChapterRecord {
+export interface IWordChapterRecord {
   // 正常章节为 dictKey, 其他功能则为对应的类型
   dict: string
   // 在错题场景中为 -1
-  chapter: number | null
+  chapter: number | undefined
   timeStamp: number
   // 单位为 s，章节的记录没必要到毫秒级
   time: number
@@ -61,7 +61,7 @@ export interface IChapterRecord {
   // 错误的按键次数。 出错会清空整个输入，但只记录一次错误
   wrongCount: number
   // 用户输入的单词总数，可能会使用循环等功能使输入总数大于 20
-  wordCount: number
+  inputCount: number
   // 一次打对未犯错的单词列表, 可以和 wordNumber 对比得出出错的单词 indexes
   correctWordIndexes: number[]
   // 章节总单词数
@@ -70,25 +70,25 @@ export interface IChapterRecord {
   wordRecordIds: string[]
 }
 
-export class ChapterRecord implements IChapterRecord {
+export class WordChapterRecord implements IWordChapterRecord {
   dict: string
-  chapter: number | null
+  chapter: number | undefined
   timeStamp: number
   time: number
   correctCount: number
   wrongCount: number
-  wordCount: number
+  inputCount: number
   correctWordIndexes: number[]
   wordNumber: number
   wordRecordIds: string[]
 
   constructor(
     dict: string,
-    chapter: number | null,
+    chapter: number | undefined,
     time: number,
     correctCount: number,
     wrongCount: number,
-    wordCount: number,
+    inputCount: number,
     correctWordIndexes: number[],
     wordNumber: number,
     wordRecordIds: string[],
@@ -99,14 +99,14 @@ export class ChapterRecord implements IChapterRecord {
     this.time = time
     this.correctCount = correctCount
     this.wrongCount = wrongCount
-    this.wordCount = wordCount
+    this.inputCount = inputCount
     this.correctWordIndexes = correctWordIndexes
     this.wordNumber = wordNumber
     this.wordRecordIds = wordRecordIds
   }
 
   get wpm() {
-    return Math.round((this.wordCount / this.time) * 60)
+    return Math.round((this.inputCount / this.time) * 60)
   }
 
   get inputAccuracy() {
@@ -118,7 +118,7 @@ export class ChapterRecord implements IChapterRecord {
   }
 }
 
-export interface IReviewRecord {
+export interface IWordReviewRecord {
   id?: number
   dict: string
   // 当前练习进度
@@ -131,7 +131,7 @@ export interface IReviewRecord {
   words: Word[]
 }
 
-export class ReviewRecord implements IReviewRecord {
+export class WordReviewRecord implements IWordReviewRecord {
   id?: number
   dict: string
   index: number
@@ -148,13 +148,13 @@ export class ReviewRecord implements IReviewRecord {
   }
 }
 
-export interface IRevisionDictRecord {
+export interface IWordRevisionDictionaryRecord {
   dict: string
   revisionIndex: number
   createdTime: number
 }
 
-export class RevisionDictRecord implements IRevisionDictRecord {
+export class WordRevisionDictionaryRecord implements IWordRevisionDictionaryRecord {
   dict: string
   revisionIndex: number
   createdTime: number
@@ -166,14 +166,14 @@ export class RevisionDictRecord implements IRevisionDictRecord {
   }
 }
 
-export interface IRevisionWordRecord {
+export interface IWordRevisionRecord {
   word: string
   timeStamp: number
   dict: string
   errorCount: number
 }
 
-export class RevisionWordRecord implements IRevisionWordRecord {
+export class WordRevisionRecord implements IWordRevisionRecord {
   word: string
   timeStamp: number
   dict: string

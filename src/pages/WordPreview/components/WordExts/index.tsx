@@ -1,6 +1,6 @@
 import WordExampleItem from '../WordExampleItem'
 import { Exts } from '@/plugins/sb/sb'
-import { getExtExamples } from '@/storage/shanbeiStroageApi'
+import { getExtExamples } from '@/plugins/sb/sbApi'
 import { Word } from '@/typings'
 import { useState, useEffect, useCallback } from 'react'
 

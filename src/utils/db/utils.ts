@@ -1,7 +1,7 @@
-import type { LetterMistakes } from './record'
+import type { WordLetterMistakes } from './wordRecord'
 
-export function mergeLetterMistake(letterMistake1: LetterMistakes, letterMistake2: LetterMistakes): LetterMistakes {
-  const result: LetterMistakes = {}
+export function mergeLetterMistake(letterMistake1: WordLetterMistakes, letterMistake2: WordLetterMistakes): WordLetterMistakes {
+  const result: WordLetterMistakes = {}
 
   for (const mistakes of [letterMistake1, letterMistake2]) {
     for (const key in mistakes) {

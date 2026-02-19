@@ -1,5 +1,5 @@
 import { db } from '@/utils/db'
-import type { IChapterRecord } from '@/utils/db/record'
+import type { IWordChapterRecord } from '@/utils/db/wordRecord'
 import { useEffect, useState } from 'react'
 
 export function useDictStats(dictID: string, isStartLoad: boolean) {
@@ -25,7 +25,7 @@ interface IDictStats {
 }
 
 async function getDictStats(dict: string): Promise<IDictStats> {
-  const records: IChapterRecord[] = await db.chapterRecords.where({ dict }).toArray()
+  const records: IWordChapterRecord[] = await db.wordChapterRecords.where({ dict }).toArray()
   const allChapter = records.map(({ chapter }) => chapter).filter((item) => item !== null) as number[]
   const uniqueChapter = allChapter.filter((value, index, self) => {
     return self.indexOf(value) === index

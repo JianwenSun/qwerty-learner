@@ -7,7 +7,7 @@ import useErrorWordData from '../hooks/useErrorWords'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Tabs, TabsContent } from '@/components/ui/tabs'
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
-import { currentChapterAtom, currentDictIdAtom, reviewModeInfoAtom } from '@/store'
+import { currentWordChapterAtom, currentWordDictionaryIdAtom, wordReviewModeInfoAtom } from '@/store'
 import type { WordDictionary } from '@/typings'
 import range from '@/utils/range'
 import { useAtom, useSetAtom } from 'jotai'
@@ -24,17 +24,17 @@ enum Tab {
 }
 
 export default function DictionaryDetail({ wordDictionary }: { wordDictionary: WordDictionary }) {
-  const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
-  const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
+  const [currentChapter, setCurrentChapter] = useAtom(currentWordChapterAtom)
+  const [currentWordDictionaryId, setCurrentWordDictionaryId] = useAtom(currentWordDictionaryIdAtom)
   const [curTab, setCurTab] = useState<Tab>(Tab.Chapters)
-  const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
+  const setWordReviewModeInfo = useSetAtom(wordReviewModeInfoAtom)
   const navigate = useNavigate()
   const { deleteWordRecord } = useDeleteWordRecord()
   const [reload, setReload] = useState(false)
 
   const chapter = useMemo(
-    () => (wordDictionary.id === currentDictId ? currentChapter : 0),
-    [currentChapter, currentDictId, wordDictionary.id],
+    () => (wordDictionary.id === currentWordDictionaryId ? currentChapter : 0),
+    [currentChapter, currentWordDictionaryId, wordDictionary.id],
   )
   const { errorWordData, isLoading, error } = useErrorWordData(wordDictionary, reload)
 
@@ -52,12 +52,12 @@ export default function DictionaryDetail({ wordDictionary }: { wordDictionary: W
 
   const onChangeChapter = useCallback(
     (index: number) => {
-      setCurrentDictId(wordDictionary.id)
+      setCurrentWordDictionaryId(wordDictionary.id)
       setCurrentChapter(index)
-      setReviewModeInfo((old) => ({ ...old, isReviewMode: false }))
+      setWordReviewModeInfo((old) => ({ ...old, isReviewMode: false }))
       navigate('/')
     },
-    [wordDictionary.id, navigate, setCurrentChapter, setCurrentDictId, setReviewModeInfo],
+    [wordDictionary.id, navigate, setCurrentChapter, setCurrentWordDictionaryId, setWordReviewModeInfo],
   )
 
   const handleTabChange = useCallback(

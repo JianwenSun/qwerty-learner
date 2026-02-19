@@ -1,35 +1,35 @@
 import type { TErrorWordData } from '../hooks/useErrorWords'
 import { Button } from '@/components/ui/button'
-import { currentChapterAtom, currentDictIdAtom, reviewModeInfoAtom } from '@/store'
+import { currentWordChapterAtom, currentWordDictionaryIdAtom, wordReviewModeInfoAtom } from '@/store'
 import type { WordDictionary } from '@/typings'
 import { timeStamp2String } from '@/utils'
-import { generateNewWordReviewRecord, useGetLatestReviewRecord } from '@/utils/db/review-record'
+import { generateNewWordReviewRecord, useGetLatestWordReviewRecord } from '@/utils/db/wordReviewRecord'
 import * as Progress from '@radix-ui/react-progress'
 import { useSetAtom } from 'jotai'
 import { useNavigate } from 'react-router-dom'
 import MdiRobotAngry from '~icons/mdi/robot-angry'
 
 export function ReviewDetail({ errorData, wordDictionary }: { errorData: TErrorWordData[]; wordDictionary: WordDictionary }) {
-  const latestReviewRecord = useGetLatestReviewRecord(wordDictionary.id)
-  const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
-  const setCurrentDictId = useSetAtom(currentDictIdAtom)
+  const latestReviewRecord = useGetLatestWordReviewRecord(wordDictionary.id)
+  const setWordReviewModeInfo = useSetAtom(wordReviewModeInfoAtom)
+  const setCurrentWordDictionaryId = useSetAtom(currentWordDictionaryIdAtom)
   const navigate = useNavigate()
-  const setCurrentChapter = useSetAtom(currentChapterAtom)
+  const setCurrentWordChapter = useSetAtom(currentWordChapterAtom)
 
   const startReview = async () => {
-    setCurrentDictId(wordDictionary.id)
-    setCurrentChapter(-1)
+    setCurrentWordDictionaryId(wordDictionary.id)
+    setCurrentWordChapter(-1)
 
     const record = await generateNewWordReviewRecord(wordDictionary.id, errorData)
-    setReviewModeInfo({ isReviewMode: true, reviewRecord: record })
+    setWordReviewModeInfo({ isReviewMode: true, reviewRecord: record })
     navigate('/')
   }
 
   const continueReview = () => {
-    setCurrentDictId(wordDictionary.id)
-    setCurrentChapter(-1)
+    setCurrentWordDictionaryId(wordDictionary.id)
+    setCurrentWordChapter(-1)
 
-    setReviewModeInfo({ isReviewMode: true, reviewRecord: latestReviewRecord })
+    setWordReviewModeInfo({ isReviewMode: true, reviewRecord: latestReviewRecord })
     navigate('/')
   }
 
