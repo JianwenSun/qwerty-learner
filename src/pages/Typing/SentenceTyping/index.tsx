@@ -7,6 +7,9 @@ import Switcher from './components/Switcher'
 import { useSentenceList } from './hooks/useSentenceList'
 import { initialSentenceTypingState, SentenceTypingContext, sentenceTypingReducer, SentenceTypingStateActionType } from './store'
 import Header from '@/components/Header'
+import { isReviewModeAtom, randomConfigAtom, sentenceReviewModeInfoAtom } from '@/store'
+import { isLegal } from '@/utils'
+import { useAtomValue } from 'jotai'
 import type React from 'react'
 import { useCallback, useEffect, useState } from 'react'
 import { Tooltip } from 'react-tooltip'
@@ -18,6 +21,41 @@ const App: React.FC = () => {
   const [state, dispatch] = useImmerReducer(sentenceTypingReducer, structuredClone(initialSentenceTypingState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const { sentences } = useSentenceList()
+
+  const randomConfig = useAtomValue(randomConfigAtom)
+  const reviewModeInfo = useAtomValue(sentenceReviewModeInfoAtom)
+
+  // 添加日志验证 words 的值
+  console.log('[SentenceTypingPage] sentences:', sentences)
+  console.log('[SentenceTypingPage] sentences length:', sentences?.length)
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      console.log('[Typing/index.tsx] keydown event:', e)
+      if (e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        e.preventDefault()
+        dispatch({ type: SentenceTypingStateActionType.SET_IS_TYPING, payload: true })
+      }
+    }
+    console.log('Keydown event listener added in Typing/index.tsx')
+    window.addEventListener('keydown', onKeyDown)
+    return () => {
+      console.log('Keydown event listener removed in Typing/index.tsx')
+      window.removeEventListener('keydown', onKeyDown)
+    }
+  }, [dispatch])
+
+  useEffect(() => {
+    if (sentences !== undefined) {
+      const initialIndex = reviewModeInfo.isReviewMode && reviewModeInfo.reviewRecord?.index ? reviewModeInfo.reviewRecord.index : 0
+
+      dispatch({
+        type: SentenceTypingStateActionType.SETUP_CHAPTER,
+        payload: { sentences, shouldShuffle: randomConfig.isOpen, initialIndex },
+      })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sentences])
 
   const skipSentence = useCallback(() => {
     dispatch({ type: SentenceTypingStateActionType.SKIP_SENTENCE })

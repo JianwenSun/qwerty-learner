@@ -26,7 +26,7 @@ export const SentenceDictionaryChapterButton = () => {
           className={`block rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none ${
             isOpenDarkMode ? 'text-white text-opacity-60 hover:text-opacity-100' : 'text-gray-800 hover:text-white'
           }`}
-          to="/gallery"
+          to="/sentence-typing/gallery"
         >
           {currentWordDictionaryInfo.name} {isReviewMode && '错题复习'}
         </NavLink>

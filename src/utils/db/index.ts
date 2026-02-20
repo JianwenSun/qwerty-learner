@@ -8,13 +8,14 @@ import Dexie from 'dexie'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext } from 'react'
 import { Word } from '@/typings'
-import { ISentenceReviewRecord, SentenceReviewRecord } from './sentenceRecord'
+import { ISentenceChapterRecord, ISentenceReviewRecord, SentenceChapterRecord, SentenceReviewRecord } from './sentenceRecord'
 
 class RecordDB extends Dexie {
   wordRecords!: Table<IWordRecord, string>
   wordChapterRecords!: Table<IWordChapterRecord, number>
   wordReviewRecords!: Table<IWordReviewRecord, number>
   sentenceReviewRecords!: Table<ISentenceReviewRecord, number>
+  sentenceChapterRecords!: Table<ISentenceChapterRecord, number>
 
   constructor() {
     super('RecordDB')
@@ -23,6 +24,7 @@ class RecordDB extends Dexie {
       wordChapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
       wordReviewRecords: '++id,dict,createTime,isFinished',
       sentenceReviewRecords: '++id,dict,createTime,isFinished',
+      sentenceChapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
     })
   }
 }
@@ -33,6 +35,7 @@ db.wordRecords.mapToClass(WordRecord)
 db.wordChapterRecords.mapToClass(WordChapterRecord)
 db.wordReviewRecords.mapToClass(WordReviewRecord)
 db.sentenceReviewRecords.mapToClass(SentenceReviewRecord)
+db.sentenceChapterRecords.mapToClass(SentenceChapterRecord)
 
 export function useSaveWordChapterRecord() {
   const currentWordChapter = useAtomValue(currentWordChapterAtom)

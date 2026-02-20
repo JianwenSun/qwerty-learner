@@ -1,4 +1,5 @@
 import { sentenceDictionaryResourcesPromise } from '@/plugins/sb/adepter'
+import { updateWordDictionaryMap } from '@/store';
 import type { WordDictionary, SentenceDictionary } from '@/typings/index'
 import { calcChapterCount } from '@/utils'
 import { wordDictionaryResources } from './wordDictionary'
@@ -21,6 +22,9 @@ export function updateWordDictionaries() {
 
   console.log('[dictionary.ts] wordDictionaries updated:', wordDictionaries.length);
   console.log('[dictionary.ts] wordDictionaryMap updated:', Object.keys(wordDictionaryMap).length);
+
+  // 通知依赖的 atom 重新计算
+  updateWordDictionaryMap();
 }
 
 // 初始调用一次

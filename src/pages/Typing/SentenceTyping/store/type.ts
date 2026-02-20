@@ -1,5 +1,4 @@
-import { Sentence } from "@/typings";
-
+import { Sentence } from "@/plugins/wxs/wxs"
 
 export type SentenceChapterData = {
     // warning: 因为有章节内随机的存在，所有记录 index 的场景都应该使用 WordWithIndex.index
@@ -29,5 +28,6 @@ export type SentenceTypingState = {
     isTyping: boolean,
     isFinished: boolean,
     isTransVisible: boolean,
-    isShowSkip: boolean
+    isShowSkip: boolean,
+    isSavingRecord: boolean
 }

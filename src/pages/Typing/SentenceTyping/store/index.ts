@@ -1,4 +1,5 @@
-import { Sentence } from "@/typings";
+import { Sentence } from "@/plugins/wxs/wxs";
+import { SentenceLetterMistakes } from "@/utils/db/sentenceRecord";
 import shuffle from "@/utils/shuffle";
 import { createContext } from "react";
 import { SentenceTypingState } from "./type";
@@ -22,6 +23,7 @@ export const initialSentenceTypingState: SentenceTypingState = {
     isFinished: false,
     isTransVisible: false,
     isShowSkip: false,
+    isSavingRecord: false,
 }
 
 type SentenceDispatch = (action: SentenceTypingStateAction) => void
@@ -40,6 +42,12 @@ export type SentenceTypingStateAction =
     | { type: SentenceTypingStateActionType.FINISH_CHAPTER }
     | { type: SentenceTypingStateActionType.LOOP_CURRENT_SENTENCE }
     | { type: SentenceTypingStateActionType.SKIP_SENTENCE_INDEX; newIndex: number }
+    | { type: SentenceTypingStateActionType.SET_IS_SKIP; payload: boolean }
+    | { type: SentenceTypingStateActionType.REPORT_CORRECT_SENTENCE }
+    | { type: SentenceTypingStateActionType.REPORT_WRONG_SENTENCE, payload: { letterMistake: SentenceLetterMistakes } }
+    | { type: SentenceTypingStateActionType.SET_IS_SAVING_RECORD; payload: boolean }
+    | { type: SentenceTypingStateActionType.SET_IS_TYPING; payload: boolean }
+
 
 
 export enum SentenceTypingStateActionType {
@@ -52,6 +60,11 @@ export enum SentenceTypingStateActionType {
     SKIP_SENTENCE_INDEX = 'SKIP_SENTENCE_INDEX',
     FINISH_CHAPTER = 'FINISH_CHAPTER',
     LOOP_CURRENT_SENTENCE = 'LOOP_CURRENT_SENTENCE',
+    SET_IS_SKIP = 'SET_IS_SKIP',
+    REPORT_CORRECT_SENTENCE = 'REPORT_CORRECT_SENTENCE',
+    REPORT_WRONG_SENTENCE = 'REPORT_WRONG_SENTENCE',
+    SET_IS_SAVING_RECORD = 'SET_IS_SAVING_RECORD',
+    SET_IS_TYPING = 'SET_IS_TYPING',
 }
 
 export const sentenceTypingReducer = (state: SentenceTypingState, action: SentenceTypingStateAction) => {
@@ -125,6 +138,27 @@ export const sentenceTypingReducer = (state: SentenceTypingState, action: Senten
         case SentenceTypingStateActionType.LOOP_CURRENT_SENTENCE: {
             state.isShowSkip = false
             state.chapterData.inputCount += 1
+            break
+        }
+        case SentenceTypingStateActionType.SET_IS_SKIP: {
+            state.isShowSkip = action.payload
+            break
+        }
+        case SentenceTypingStateActionType.REPORT_CORRECT_SENTENCE: {
+            state.chapterData.correctCount += 1
+            break
+        }
+        case SentenceTypingStateActionType.REPORT_WRONG_SENTENCE: {
+            state.chapterData.wrongCount += 1
+            break
+        }
+        case SentenceTypingStateActionType.SET_IS_SAVING_RECORD: {
+            state.isSavingRecord = action.payload
+            break
+        }
+        case SentenceTypingStateActionType.SET_IS_TYPING: {
+            console.log('Setting isTyping to ', action.payload, ' (SET_IS_TYPING)')
+            state.isTyping = action.payload
             break
         }
         default: {

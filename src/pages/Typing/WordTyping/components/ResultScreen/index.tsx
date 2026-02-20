@@ -158,7 +158,7 @@ const ResultScreen = () => {
   const onNavigateToGallery = useCallback(() => {
     setCurrentWordChapter(0)
     setWordReviewModeInfo((old) => ({ ...old, isReviewMode: false }))
-    navigate('/gallery')
+    navigate('/word-typing/gallery')
   }, [navigate, setCurrentWordChapter, setWordReviewModeInfo])
 
   useHotkeys(

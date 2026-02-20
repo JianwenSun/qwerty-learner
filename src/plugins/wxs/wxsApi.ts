@@ -1,6 +1,6 @@
 import { decode } from "@/encode/decode";
 import { UpyunClient } from "../../storage/upyun";
-import { Lesson } from "./wxs";
+import { Lesson, LessonDetail, Sentence } from "./wxs";
 
 const ShanbeiNamespaceNew = "wxz"
 //echo @ShaNBeI@ | base64
@@ -43,4 +43,25 @@ export async function getLessons(): Promise<Lesson[]> {
     const value = await UpyunClient.getFileInfo(lessonsKey);
     const decoded = await decode(SecretKey, value);
     return JSON.parse(decoded) as Lesson[]
+}
+
+export async function getLessonDetail(lessonId: number): Promise<LessonDetail> {
+    var lessonDetailKey = getLessonDetailKey(lessonId);
+    const value = await UpyunClient.getFileInfo(lessonDetailKey);
+    const decoded = await decode(SecretKey, value);
+    return JSON.parse(decoded) as LessonDetail
+}
+
+export async function getSentenceList(lessonId: number, courseId: number): Promise<Sentence[]> {
+    var key = getCourseSentencesKey(lessonId, courseId);
+    const value = await UpyunClient.getFileInfo(key);
+    const decoded = await decode(SecretKey, value);
+    return JSON.parse(decoded) as Sentence[]
+}
+
+export async function getSentenceSound(sentenceId: number): Promise<string> {
+    var key = getSentenceSoundNewKey(sentenceId);
+    const value = await UpyunClient.getFileInfo(key);
+    const decoded = await decode(SecretKey, value);
+    return JSON.parse(decoded) as string
 }

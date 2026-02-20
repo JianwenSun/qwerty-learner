@@ -6,6 +6,7 @@ import style from './index.module.css'
 import { initialWordState } from './type'
 import type { WordState } from './type'
 import Tooltip from '@/components/Tooltip'
+import { UrlPronunciationIcon } from '@/components/UrlPronunciationIcon'
 import { WordPronunciationIcon, WordPronunciationIconRef } from '@/components/WordPronunciationIcon'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
@@ -15,6 +16,7 @@ import {
   isIgnoreCaseAtom,
   isShowAnswerOnHoverAtom,
   isTextSelectableAtom,
+  phoneticConfigAtom,
   pronunciationIsOpenAtom,
   wordDictationConfigAtom,
 } from '@/store'
@@ -45,7 +47,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
   const [isHoveringWord, setIsHoveringWord] = useState(false)
   const currentWordChapter = useAtomValue(currentWordChapterAtom)
-
+  const phoneticConfig = useAtomValue(phoneticConfigAtom)
   // 添加状态，用于跟踪是否已经自动播放过单词发音
   const [hasAutoPlayed, setHasAutoPlayed] = useState(false)
   const [showTipAlert, setShowTipAlert] = useState(false)
@@ -150,15 +152,13 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     if (wordState.inputWord.length === 0 && state.isTyping && !hasAutoPlayed) {
       console.log(`[${new Date().toISOString()}] [Word/index.tsx] 自动播放单词发音`)
       const playAudio = async () => {
-        if (wordPronunciationIconRef.current?.play) {
-          await wordPronunciationIconRef.current.play()
-          // 设置标志，防止再次自动播放
-          setHasAutoPlayed(true)
-        }
+        await wordPronunciationIconRef.current?.play()
+        // 设置标志，防止再次自动播放
+        setHasAutoPlayed(true)
       }
       playAudio()
     }
-  }, [state.isTyping, wordState.inputWord.length, hasAutoPlayed])
+  }, [state.isTyping, hasAutoPlayed])
 
   const getLetterVisible = useCallback(
     (index: number) => {
@@ -323,7 +323,11 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
           {pronunciationIsOpen && (
             <div className="absolute -right-12 top-1/2 h-9 w-9 -translate-y-1/2 transform ">
               <Tooltip content={`快捷键${CTRL} + J`}>
-                <WordPronunciationIcon word={word} ref={wordPronunciationIconRef} className="h-full w-full" />
+                <UrlPronunciationIcon
+                  url={phoneticConfig.type === 'us' ? word.sound.us_url : word.sound.uk_url}
+                  ref={wordPronunciationIconRef}
+                  className="h-full w-full"
+                />
               </Tooltip>
             </div>
           )}

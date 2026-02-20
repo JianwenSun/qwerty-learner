@@ -12,6 +12,7 @@ import type {
   WordDictationType,
   LoopSentenceTimesOption,
   SentenceDictionary,
+  SentenceDictationType,
 } from '@/typings'
 import type { WordReviewRecord } from '@/utils/db/wordRecord'
 import { atom } from 'jotai'
@@ -19,13 +20,81 @@ import { atomWithStorage } from 'jotai/utils'
 import { sentenceReviewInfoAtom } from './sentenceReviewInfoAtom'
 import { SentenceReviewRecord } from '@/utils/db/sentenceRecord'
 
+// 导出一个变量来存储当前的更新计数
+export let wordDictionaryMapUpdateCount = 0;
+
+// 导出一个函数来更新 wordDictionaryMap 并通知依赖的 atom
+export function updateWordDictionaryMap() {
+  // 增加更新计数
+  wordDictionaryMapUpdateCount++;
+}
+
+// 创建一个 atom 来跟踪 wordDictionaryMap 的更新
+export const wordDictionaryMapUpdateAtom = atom(() => wordDictionaryMapUpdateCount);
+
 export const currentWordDictionaryIdAtom = atomWithStorage('currentWordDictionaryId', undefined as string | undefined)
 export const currentWordDictionaryInfoAtom = atom<WordDictionary>((get) => {
-  const id = get(currentWordDictionaryIdAtom)
-  if (!id) {
-    return Object.values(wordDictionaryMap)[0]
+  // 依赖于 wordDictionaryMapUpdateAtom，这样当 wordDictionaryMap 更新时，会自动重新计算
+  get(wordDictionaryMapUpdateAtom);
+
+  const id = get(currentWordDictionaryIdAtom);
+
+  // 检查 wordDictionaryMap 是否为空
+  const wordDictionaryMapKeys = Object.keys(wordDictionaryMap);
+  if (wordDictionaryMapKeys.length === 0) {
+    // 如果 wordDictionaryMap 为空，返回一个临时的空字典对象
+    return {
+      id: '',
+      name: '加载中...',
+      description: '',
+      category: '',
+      tags: [],
+      url: '',
+      length: 0,
+      chapterCount: 0
+    };
   }
-  return wordDictionaryMap[id]
+
+  if (!id) {
+    const defaultDict = Object.values(wordDictionaryMap)[0];
+    if (defaultDict) {
+      return defaultDict;
+    }
+    // 如果没有默认字典，返回一个空字典对象
+    return {
+      id: '',
+      name: '',
+      description: '',
+      category: '',
+      tags: [],
+      url: '',
+      length: 0,
+      chapterCount: 0
+    };
+  }
+
+  const dict = wordDictionaryMap[id];
+  if (dict) {
+    return dict;
+  }
+
+  // 如果找不到指定的字典，返回默认字典
+  const defaultDict = Object.values(wordDictionaryMap)[0];
+  if (defaultDict) {
+    return defaultDict;
+  }
+
+  // 如果没有默认字典，返回一个空字典对象
+  return {
+    id: '',
+    name: '',
+    description: '',
+    category: '',
+    tags: [],
+    url: '',
+    length: 0,
+    chapterCount: 0
+  };
 })
 
 export const currentWordChapterAtom = atomWithStorage('currentWordChapter', undefined as number | undefined)
@@ -56,6 +125,12 @@ export const currentSentenceChapterAtom = atomWithStorage('currentSentenceChapte
 export const loopSentenceConfigAtom = atomForConfig<{ times: LoopSentenceTimesOption }>('loopSentenceConfig', {
   times: 1,
 })
+
+export const sentenceDictationConfigAtom = atomForConfig('sentenceDictationConfig', {
+  isOpen: false,
+  type: 'hideAll' as SentenceDictationType,
+})
+
 
 
 export const keySoundsConfigAtom = atomForConfig('keySoundsConfig', {

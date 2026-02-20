@@ -4,6 +4,7 @@ import { ErrorBook } from './pages/ErrorBook'
 import { FriendLinks } from './pages/FriendLinks'
 import MobilePage from './pages/Mobile'
 import SentenceTypingPage from './pages/Typing/SentenceTyping'
+import SentenceGalleryPage from './pages/Typing/SentenceTyping/pages/Gallery'
 import WordTypingPage from './pages/Typing/WordTyping'
 import { isOpenDarkModeAtom, isAuthenticatedAtom } from '@/store'
 import { Analytics } from '@vercel/analytics/react'
@@ -18,7 +19,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
 const AnalysisPage = lazy(() => import('./pages/Analysis'))
-const GalleryPage = lazy(() => import('./pages/Gallery-N'))
+const WordGalleryPage = lazy(() => import('./pages/Typing/WordTyping/pages/Gallery'))
 const LoginPage = lazy(() => import('./pages/Login'))
 const WordPreviewPage = lazy(() => import('./pages/WordPreview'))
 
@@ -54,13 +55,14 @@ function Root() {
             ) : (
               <>
                 <Route path="/word-typing" element={isAuthenticated ? <WordTypingPage /> : <Navigate to="/login" />} />
+                <Route path="/word-typing/gallery" element={isAuthenticated ? <WordGalleryPage /> : <Navigate to="/login" />} />
                 <Route path="/sentence-typing" element={isAuthenticated ? <SentenceTypingPage /> : <Navigate to="/login" />} />
-                <Route path="/gallery" element={isAuthenticated ? <GalleryPage /> : <Navigate to="/login" />} />
+                <Route path="/sentence-typing/gallery" element={isAuthenticated ? <SentenceGalleryPage /> : <Navigate to="/login" />} />
                 <Route path="/analysis" element={isAuthenticated ? <AnalysisPage /> : <Navigate to="/login" />} />
                 <Route path="/error-book" element={isAuthenticated ? <ErrorBook /> : <Navigate to="/login" />} />
                 <Route path="/friend-links" element={isAuthenticated ? <FriendLinks /> : <Navigate to="/login" />} />
                 <Route path="/word-preview/:dictionaryId" element={isAuthenticated ? <WordPreviewPage /> : <Navigate to="/login" />} />
-                <Route path="/*" element={<Navigate to="/word-typing" />} />
+                <Route path="/*" element={<Navigate to="/sentence-typing" />} />
               </>
             )}
             <Route path="/mobile" element={<MobilePage />} />

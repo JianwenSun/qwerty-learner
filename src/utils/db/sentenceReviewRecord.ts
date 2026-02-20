@@ -1,5 +1,5 @@
 import { db } from '.'
-import type { TErrorWordData } from '@/pages/Gallery-N/hooks/useErrorWords'
+import type { TErrorWordData } from '@/pages/Typing/WordTyping/pages/Gallery/hooks/useErrorWords'
 import type { Sentence } from '@/typings'
 import { useEffect, useState } from 'react'
 import { SentenceReviewRecord } from './sentenceRecord'

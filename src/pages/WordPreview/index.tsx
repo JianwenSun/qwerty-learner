@@ -15,7 +15,7 @@ export default function WordPreviewPage() {
 
   const handleBackToGallery = () => {
     // 直接导航回画廊页面，而不是使用浏览器的回退功能
-    navigate('/gallery')
+    navigate('/word-typing/gallery')
   }
 
   const { words = [], wordDictionary } = getWordList(dictionaryId!) || {}

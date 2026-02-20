@@ -18,6 +18,7 @@ export interface Dictionary {
   category: string
   tags: string[]
   icon_url?: string
+  length: number
 }
 
 export interface SentenceDictionary extends Dictionary {
@@ -26,7 +27,6 @@ export interface SentenceDictionary extends Dictionary {
 
 export interface WordDictionary extends Dictionary {
   url: string
-  length: number
   // calculated in the store
   chapterCount: number
 }
@@ -75,62 +75,13 @@ export type PosType = {
   displayName: string
 }
 
-export type Sentence = {
-  id: string;
-  dictionaryId: string;
-  content: string;
-  chinese: string;
-  explanation: string;
-  tokens: SentenceToken[];
-  words: Word[] | null;
-  chunks: SentenceChunk[];
-  clauses: SentenceClause[];
-  practices: SentencePractice[];
-}
-
-export interface SentenceToken {
-  id: number;
-  text: string;
-  pos: string;
-  dep: string;
-  head: number;
-}
-
-export interface SentenceChunk {
-  chunkIndex: number;
-  chunkKey: string;
-  content: string;
-  chinese: string;
-  clauseIndex: number;
-  sentenceFunction: string;
-  wordIndexes: number[];
-  grammarType?: string;
-  explanation?: string;
-}
-
-export interface SentenceClause {
-  clauseIndex: number;
-  type: string;
-  explanation: string;
-  chunkIndexes: number[];
-}
-
-export interface SentencePractice {
-  id: number;
-  kind: string;
-  sort: number;
-  content: string;
-  chinese: string;
-  alignTokenIds: number[];
-  phonetic_uk: string;
-  phonetic_us: string;
-  part_of_speech: string;
-}
-
 export type LoopWordTimesOption = 1 | 3 | 5 | 8 | typeof Number.MAX_SAFE_INTEGER
 export type LoopSentenceTimesOption = 1 | 3 | 5 | 8 | typeof Number.MAX_SAFE_INTEGER
 
 export type WordDictationType = 'hideAll' | 'hideVowel' | 'hideConsonant' | 'randomHide'
+
+export type SentenceDictationType = 'hideAll' | 'hideVowel' | 'hideConsonant' | 'randomHide'
+
 /**
  * 标记用户是手动打开默写模式，还是通过点击 resultScreen 中的默写本章按钮打开的
  *

@@ -1,21 +1,56 @@
 import { SentenceTypingContext, SentenceTypingStateActionType } from '../../store'
 import type { SentenceTypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
-import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopSentenceConfigAtom, phoneticConfigAtom, wordReviewModeInfoAtom } from '@/store'
+import SentenceComponent from './Sentence'
+import { getSentenceSoundUrl, SentenceAndSound } from '@/plugins/wxs/wxs'
+import { getSentenceSound } from '@/plugins/wxs/wxsApi'
+import {
+  isReviewModeAtom,
+  isShowPrevAndNextWordAtom,
+  loopSentenceConfigAtom,
+  pronunciationConfigAtom,
+  sentenceReviewModeInfoAtom,
+} from '@/store'
 import { useAtomValue, useSetAtom } from 'jotai'
-import { useCallback, useContext, useMemo, useState } from 'react'
+import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export default function SentencePanel() {
   const { state, dispatch } = useContext(SentenceTypingContext)!
-  const phoneticConfig = useAtomValue(phoneticConfigAtom)
+  console.log(
+    `[${new Date().toISOString()}] [SentencePanel/index.tsx] 组件重新渲染，index: ${state?.chapterData?.index}, sentences length: ${
+      state?.chapterData?.sentences?.length
+    }`,
+  )
+
+  // 监听组件挂载和卸载
+  useEffect(() => {
+    console.log(`[${new Date().toISOString()}] [SentencePanel/index.tsx] 组件挂载`)
+    return () => {
+      console.log(`[${new Date().toISOString()}] [SentencePanel/index.tsx] 组件卸载`)
+    }
+  }, [])
   const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
   const [currentSentenceExerciseCount, setCurrentSentenceExerciseCount] = useState(0)
   const { times: loopSentenceTimes } = useAtomValue(loopSentenceConfigAtom)
-  const currentSentence = state.chapterData.sentences[state.chapterData.index]
+  const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
+
+  const [currentSentence, setCurrentSentence] = useState<SentenceAndSound>()
+
+  useEffect(() => {
+    const loadCurrentSentence = async () => {
+      console.log(`[${new Date().toISOString()}] [SentencePanel/index.tsx] 计算 currentSentence，index: ${state.chapterData.index}`)
+      const sentence = state.chapterData.sentences[state.chapterData.index]
+      const sentenceSoundId = await getSentenceSound(sentence.sentenceId)
+      const sentenceSoundUrl = getSentenceSoundUrl(sentenceSoundId, pronunciationConfig.type)
+      setCurrentSentence({ ...sentence, soundUrl: sentenceSoundUrl } as SentenceAndSound)
+    }
+    loadCurrentSentence()
+  }, [state.chapterData.index, state.chapterData.sentences, pronunciationConfig.type])
+
   const [sentenceComponentKey, setSentenceComponentKey] = useState(0)
 
-  const setSentenceReviewModeInfo = useSetAtom(wordReviewModeInfoAtom)
+  const setSentenceReviewModeInfo = useSetAtom(sentenceReviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
 
   const prevIndex = useMemo(() => {
@@ -31,7 +66,7 @@ export default function SentencePanel() {
     'Ctrl + Shift + ArrowLeft',
     (e) => {
       e.preventDefault()
-      onSkipWord('prev')
+      onSkipSentence('prev')
     },
     { preventDefault: true },
   )
@@ -40,7 +75,7 @@ export default function SentencePanel() {
     'Ctrl + Shift + ArrowRight',
     (e) => {
       e.preventDefault()
-      onSkipWord('next')
+      onSkipSentence('next')
     },
     { preventDefault: true },
   )
@@ -64,6 +99,7 @@ export default function SentencePanel() {
   )
 
   const reloadCurrentSentenceComponent = useCallback(() => {
+    console.log('Reload current sentence component')
     setSentenceComponentKey((old) => old + 1)
   }, [])
 
@@ -119,7 +155,7 @@ export default function SentencePanel() {
     setSentenceReviewModeInfo,
   ])
 
-  const onSkipWord = useCallback(
+  const onSkipSentence = useCallback(
     (type: 'prev' | 'next') => {
       if (type === 'prev') {
         dispatch({ type: SentenceTypingStateActionType.SKIP_SENTENCE_INDEX, newIndex: prevIndex })
@@ -164,7 +200,9 @@ export default function SentencePanel() {
                 </div>
               </div>
             )}
-            <div className="relative" style={{ margin: '0 0 60px 0' }}></div>
+            <div className="relative" style={{ margin: '0 0 60px 0' }}>
+              <SentenceComponent sentenceAndSound={currentSentence} />
+            </div>
           </div>
         )}
       </div>

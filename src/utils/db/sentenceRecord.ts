@@ -1,5 +1,5 @@
+import { Sentence } from '@/plugins/wxs/wxs'
 import { getUTCUnixTimestamp } from '../index'
-import type { Sentence, Word } from '@/typings'
 
 export interface ISentenceRecord {
   id: string
@@ -14,10 +14,10 @@ export interface ISentenceRecord {
   // 出错的次数
   wrongCount: number
   // 每个字母被错误输入成什么, index 为字母的索引, 数组内为错误的 e.key
-  mistakes: WordLetterMistakes
+  mistakes: SentenceLetterMistakes
 }
 
-export interface WordLetterMistakes {
+export interface SentenceLetterMistakes {
   // 每个字母被错误输入成什么, index 为字母的索引, 数组内为错误的 e.key
   [index: number]: string[]
 }
@@ -30,9 +30,9 @@ export class SentenceRecord implements ISentenceRecord {
   chapter: number | null
   timing: number[]
   wrongCount: number
-  mistakes: WordLetterMistakes
+  mistakes: SentenceLetterMistakes
 
-  constructor(id: string, word: string, dict: string, chapter: number | null, timing: number[], wrongCount: number, mistakes: WordLetterMistakes) {
+  constructor(id: string, word: string, dict: string, chapter: number | null, timing: number[], wrongCount: number, mistakes: SentenceLetterMistakes) {
     this.id = id
     this.word = word
     this.timeStamp = getUTCUnixTimestamp()
@@ -75,5 +75,75 @@ export class SentenceReviewRecord implements ISentenceReviewRecord {
     this.createTime = getUTCUnixTimestamp()
     this.sentences = sentences
     this.isFinished = false
+  }
+}
+
+export interface ISentenceChapterRecord {
+  // 正常章节为 dictKey, 其他功能则为对应的类型
+  dict: string
+  // 在错题场景中为 -1
+  chapter: number | undefined
+  timeStamp: number
+  // 单位为 s，章节的记录没必要到毫秒级
+  time: number
+  // 正确按键次数，输对一个字母即记录
+  correctCount: number
+  // 错误的按键次数。 出错会清空整个输入，但只记录一次错误
+  wrongCount: number
+  // 用户输入的单词总数，可能会使用循环等功能使输入总数大于 20
+  inputCount: number
+  // 一次打对未犯错的单词列表, 可以和 wordNumber 对比得出出错的单词 indexes
+  correctWordIndexes: number[]
+  // 章节总单词数
+  wordNumber: number
+  // 单词 record 的 id 列表
+  wordRecordIds: string[]
+}
+
+export class SentenceChapterRecord implements ISentenceChapterRecord {
+  dict: string
+  chapter: number | undefined
+  timeStamp: number
+  time: number
+  correctCount: number
+  wrongCount: number
+  inputCount: number
+  correctWordIndexes: number[]
+  wordNumber: number
+  wordRecordIds: string[]
+
+  constructor(
+    dict: string,
+    chapter: number | undefined,
+    time: number,
+    correctCount: number,
+    wrongCount: number,
+    inputCount: number,
+    correctWordIndexes: number[],
+    wordNumber: number,
+    wordRecordIds: string[],
+  ) {
+    this.dict = dict
+    this.chapter = chapter
+    this.timeStamp = getUTCUnixTimestamp()
+    this.time = time
+    this.correctCount = correctCount
+    this.wrongCount = wrongCount
+    this.inputCount = inputCount
+    this.correctWordIndexes = correctWordIndexes
+    this.wordNumber = wordNumber
+    this.wordRecordIds = wordRecordIds
+  }
+
+  get wpm() {
+    return Math.round((this.inputCount / this.time) * 60)
+  }
+
+  get inputAccuracy() {
+    return Math.round((this.correctCount / this.correctCount + this.wrongCount) * 100)
+  }
+
+  get wordAccuracy() {
+    return Math.round((this.correctWordIndexes.length / this.wordNumber) * 100)
   }
 }

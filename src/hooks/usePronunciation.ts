@@ -16,19 +16,6 @@ export function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronun
       return `${pronunciationApi}${word}&type=1`
     case 'us':
       return `${pronunciationApi}${word}&type=2`
-    case 'romaji':
-      return `${pronunciationApi}${romajiToHiragana(word)}&le=jap`
-    case 'zh':
-      return `${pronunciationApi}${word}&le=zh`
-    case 'ja':
-      return `${pronunciationApi}${word}&le=jap`
-    case 'de':
-      return `${pronunciationApi}${word}&le=de`
-    case 'hapin':
-    case 'kk':
-      return `${pronunciationApi}${word}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
-    case 'id':
-      return `${pronunciationApi}${word}&le=id`
     default:
       return ''
   }
@@ -111,7 +98,10 @@ export function useUrlPronunciationSound(soundUrl: string | undefined) {
   const [isSupported, setIsSupported] = useState<boolean | null>(null)
   const [isPlaying, setIsPlaying] = useState(false)
 
+  console.log('useUrlPronunciationSound 实例化:', soundUrl)
+
   useEffect(() => {
+    console.log('useUrlPronunciationSound 挂起:', soundUrl)
     if (!soundUrl || soundUrl === '') {
       setHowl(null)
       setIsSupported(false)
@@ -151,6 +141,9 @@ export function useUrlPronunciationSound(soundUrl: string | undefined) {
     })
 
     setHowl(sound)
+    if (howl) {
+      console.log('useUrlPronunciationSound 播放:', soundUrl)
+    }
 
     // 清理函数
     return () => {
