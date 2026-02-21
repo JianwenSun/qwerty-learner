@@ -35,9 +35,6 @@ function Root() {
   const darkMode = useAtomValue(isOpenDarkModeAtom)
   const isAuthenticated = useAtomValue(isAuthenticatedAtom)
 
-  // 添加日志验证 isAuthenticated 的值
-  console.log('[index.tsx] isAuthenticated:', isAuthenticated)
-
   useEffect(() => {
     darkMode ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark')
   }, [darkMode])

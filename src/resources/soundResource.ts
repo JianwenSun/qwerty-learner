@@ -37,6 +37,10 @@ export const wrongSoundResources: SoundResource[] = [{ key: '1', name: '声音1'
 
 export const correctSoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'correct.wav' }]
 
+export const sentenceWrongSoundResources: SoundResource[] = [{ key: '1', name: '句子错误声音1', filename: 'sentence-beep.mp3' }]
+
+export const sentenceCorrectSoundResources: SoundResource[] = [{ key: '1', name: '句子正确声音1', filename: 'sentence-correct.mp3' }]
+
 
 export const pronunciationList: PronunciationConfig[] = [
   {

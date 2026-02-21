@@ -19,10 +19,6 @@ export function updateWordDictionaries() {
   }));
 
   wordDictionaryMap = Object.fromEntries(wordDictionaries.map((dict) => [dict.id, dict]));
-
-  console.log('[dictionary.ts] wordDictionaries updated:', wordDictionaries.length);
-  console.log('[dictionary.ts] wordDictionaryMap updated:', Object.keys(wordDictionaryMap).length);
-
   // 通知依赖的 atom 重新计算
   updateWordDictionaryMap();
 }

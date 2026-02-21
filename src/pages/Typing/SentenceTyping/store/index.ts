@@ -157,7 +157,6 @@ export const sentenceTypingReducer = (state: SentenceTypingState, action: Senten
             break
         }
         case SentenceTypingStateActionType.SET_IS_TYPING: {
-            console.log('Setting isTyping to ', action.payload, ' (SET_IS_TYPING)')
             state.isTyping = action.payload
             break
         }

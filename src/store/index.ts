@@ -2,7 +2,7 @@ import atomForConfig from './atomForConfig'
 import { wordReviewInfoAtom } from './wordReviewInfoAtom'
 import { DISMISS_START_CARD_DATE_KEY, defaultFontSizeConfig } from '@/constants'
 import { wordDictionaryMap, sentenceDictionaryMap } from '@/resources/dictionary'
-import { correctSoundResources, keySoundResources, wrongSoundResources } from '@/resources/soundResource'
+import { correctSoundResources, keySoundResources, sentenceCorrectSoundResources, sentenceWrongSoundResources, wrongSoundResources } from '@/resources/soundResource'
 import type {
   WordDictionary,
   LoopWordTimesOption,
@@ -131,8 +131,6 @@ export const sentenceDictationConfigAtom = atomForConfig('sentenceDictationConfi
   type: 'hideAll' as SentenceDictationType,
 })
 
-
-
 export const keySoundsConfigAtom = atomForConfig('keySoundsConfig', {
   isOpen: true,
   isOpenClickSound: true,
@@ -147,6 +145,15 @@ export const hintSoundsConfigAtom = atomForConfig('hintSoundsConfig', {
   isOpenCorrectSound: true,
   wrongResource: wrongSoundResources[0],
   correctResource: correctSoundResources[0],
+})
+
+export const hintSentenceSoundsConfigAtom = atomForConfig('sentenceHintSoundsConfig', {
+  isOpen: true,
+  volume: 1,
+  isOpenWrongSound: true,
+  isOpenCorrectSound: true,
+  wrongResource: sentenceWrongSoundResources[0],
+  correctResource: sentenceCorrectSoundResources[0],
 })
 
 export const pronunciationConfigAtom = atomForConfig('pronunciation', {

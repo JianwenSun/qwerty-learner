@@ -9,7 +9,6 @@ fetch('/dicts/vocabulary/dictionary.json')
   .then(response => response.json())
   .then(data => {
     wordDictionaryResources = data as UrlDictionaryResource[];
-    console.log('[wordDictionary.ts] wordDictionaryResources loaded:', wordDictionaryResources.length);
     // 加载完成后更新 wordDictionaries 和 wordDictionaryMap
     updateWordDictionaries();
   })

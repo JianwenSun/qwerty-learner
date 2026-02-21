@@ -1,6 +1,12 @@
-import type { SentenceUpdateAction } from '../InputHandler'
+import {
+  SentenceAddAction,
+  SentenceDeleteAction,
+  SentenceSpaceAction,
+  SentenceUpdateAction,
+  SentenceUpdateActionType,
+} from '../InputHandler'
 import { SentenceTypingContext } from '@/pages/Typing/SentenceTyping/store'
-import { isChineseSymbol, isLegal } from '@/utils'
+import { isChineseSymbol, isSentenceLegalKey } from '@/utils'
 import { useCallback, useContext, useEffect, useRef } from 'react'
 
 export default function KeyEventHandler({ updateInput }: { updateInput: (updateObj: SentenceUpdateAction) => void }) {
@@ -17,7 +23,6 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
 
   const onKeydown = useCallback(
     (e: KeyboardEvent) => {
-      console.log('[KeyEventHandler/index.tsx] keydown event:', e)
       const char = e.key
 
       if (isChineseSymbol(char)) {
@@ -25,8 +30,14 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
         return
       }
 
-      if (state.isTyping && isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
-        updateInputRef.current({ type: 'add', value: char, event: e })
+      if (state.isTyping && isSentenceLegalKey(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        if (e.key === 'Backspace') {
+          updateInputRef.current({ type: SentenceUpdateActionType.Delete } as SentenceDeleteAction)
+        } else if (e.key === ' ') {
+          updateInputRef.current({ type: SentenceUpdateActionType.Space, event: e } as SentenceSpaceAction)
+        } else {
+          updateInputRef.current({ type: SentenceUpdateActionType.Add, value: char } as SentenceAddAction)
+        }
       }
     },
     [state.isTyping],
@@ -34,11 +45,9 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
 
   useEffect(() => {
     // 打印添加键盘事件监听器的日志
-    console.log(`[${new Date().toISOString()}] 添加键盘事件监听器`)
     window.addEventListener('keydown', onKeydown)
     return () => {
       // 打印移除键盘事件监听器的日志
-      console.log(`[${new Date().toISOString()}] 移除键盘事件监听器`)
       window.removeEventListener('keydown', onKeydown)
     }
   }, [onKeydown])

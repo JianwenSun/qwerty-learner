@@ -17,19 +17,6 @@ import { useHotkeys } from 'react-hotkeys-hook'
 
 export default function SentencePanel() {
   const { state, dispatch } = useContext(SentenceTypingContext)!
-  console.log(
-    `[${new Date().toISOString()}] [SentencePanel/index.tsx] 组件重新渲染，index: ${state?.chapterData?.index}, sentences length: ${
-      state?.chapterData?.sentences?.length
-    }`,
-  )
-
-  // 监听组件挂载和卸载
-  useEffect(() => {
-    console.log(`[${new Date().toISOString()}] [SentencePanel/index.tsx] 组件挂载`)
-    return () => {
-      console.log(`[${new Date().toISOString()}] [SentencePanel/index.tsx] 组件卸载`)
-    }
-  }, [])
   const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
   const [currentSentenceExerciseCount, setCurrentSentenceExerciseCount] = useState(0)
   const { times: loopSentenceTimes } = useAtomValue(loopSentenceConfigAtom)
@@ -49,6 +36,7 @@ export default function SentencePanel() {
   }, [state.chapterData.index, state.chapterData.sentences, pronunciationConfig.type])
 
   const [sentenceComponentKey, setSentenceComponentKey] = useState(0)
+  const [showFinishView, setShowFinishView] = useState(false)
 
   const setSentenceReviewModeInfo = useSetAtom(sentenceReviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
@@ -114,6 +102,10 @@ export default function SentencePanel() {
   )
 
   const onFinish = useCallback(() => {
+    setShowFinishView(true)
+  }, [showFinishView])
+
+  const onShowNextSentence = useCallback(() => {
     if (state.chapterData.index < state.chapterData.sentences.length - 1 || currentSentenceExerciseCount < loopSentenceTimes - 1) {
       // 用户完成当前单词
       if (currentSentenceExerciseCount < loopSentenceTimes - 1) {
@@ -201,7 +193,7 @@ export default function SentencePanel() {
               </div>
             )}
             <div className="relative" style={{ margin: '0 0 60px 0' }}>
-              <SentenceComponent sentenceAndSound={currentSentence} />
+              <SentenceComponent sentenceAndSound={currentSentence} onShowNextSentence={onShowNextSentence} onFinish={onFinish} />
             </div>
           </div>
         )}

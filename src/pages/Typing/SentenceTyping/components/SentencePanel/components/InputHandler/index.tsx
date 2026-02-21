@@ -1,20 +1,23 @@
 import type { FormEvent } from 'react'
 
-export type SentenceUpdateAction = SentenceAddAction | SentenceDeleteAction | SentenceCompositionAction
+export type SentenceUpdateAction = SentenceAddAction | SentenceDeleteAction | SentenceSpaceAction
+
+export enum SentenceUpdateActionType {
+  Add = 'add',
+  Delete = 'delete',
+  Space = 'space',
+}
 
 export type SentenceAddAction = {
-  type: 'add'
+  type: SentenceUpdateActionType.Add
   value: string
-  event: FormEvent<HTMLTextAreaElement> | KeyboardEvent
 }
 
 export type SentenceDeleteAction = {
-  type: 'delete'
-  length: number
+  type: SentenceUpdateActionType.Delete
 }
 
-// composition api is not ready yet
-export type SentenceCompositionAction = {
-  type: 'composition'
-  value: string
+export type SentenceSpaceAction = {
+  type: SentenceUpdateActionType.Space
+  event: FormEvent<HTMLTextAreaElement> | KeyboardEvent
 }

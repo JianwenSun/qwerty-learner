@@ -1,5 +1,5 @@
 import { KEY_SOUND_URL_PREFIX, SOUND_URL_PREFIX, keySoundResources } from '@/resources/soundResource'
-import { hintSoundsConfigAtom, keySoundsConfigAtom } from '@/store'
+import { hintSentenceSoundsConfigAtom, keySoundsConfigAtom } from '@/store'
 import noop from '@/utils/noop'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { useEffect, useState } from 'react'
@@ -7,7 +7,7 @@ import useSound from 'use-sound'
 
 export type PlayFunction = ReturnType<typeof useSound>[0]
 
-export default function useKeySound(): [PlayFunction, PlayFunction, PlayFunction] {
+export default function useSentenceKeySound(): [PlayFunction, PlayFunction, PlayFunction] {
   const { isOpen: isKeyOpen, isOpenClickSound, volume: keyVolume, resource: keyResource } = useAtomValue(keySoundsConfigAtom)
   const setKeySoundsConfig = useSetAtom(keySoundsConfigAtom)
   const {
@@ -15,9 +15,9 @@ export default function useKeySound(): [PlayFunction, PlayFunction, PlayFunction
     isOpenWrongSound,
     isOpenCorrectSound,
     volume: hintVolume,
-    wrongResource,
-    correctResource,
-  } = useAtomValue(hintSoundsConfigAtom)
+    wrongResource: sentenceWrongResource,
+    correctResource: sentenceCorrectResource,
+  } = useAtomValue(hintSentenceSoundsConfigAtom)
 
   const [keySoundUrl, setKeySoundUrl] = useState(`${KEY_SOUND_URL_PREFIX}${keyResource.filename}`)
 
@@ -34,11 +34,11 @@ export default function useKeySound(): [PlayFunction, PlayFunction, PlayFunction
     volume: keyVolume,
     interrupt: true,
   })
-  const [playWrongSound] = useSound(`${SOUND_URL_PREFIX}${wrongResource.filename}`, {
+  const [playWrongSound] = useSound(`${SOUND_URL_PREFIX}${sentenceWrongResource.filename}`, {
     volume: hintVolume,
     interrupt: true,
   })
-  const [playCorrectSound] = useSound(`${SOUND_URL_PREFIX}${correctResource.filename}`, {
+  const [playCorrectSound] = useSound(`${SOUND_URL_PREFIX}${sentenceCorrectResource.filename}`, {
     volume: hintVolume,
     interrupt: true,
   })

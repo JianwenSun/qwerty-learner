@@ -98,10 +98,7 @@ export function useUrlPronunciationSound(soundUrl: string | undefined) {
   const [isSupported, setIsSupported] = useState<boolean | null>(null)
   const [isPlaying, setIsPlaying] = useState(false)
 
-  console.log('useUrlPronunciationSound 实例化:', soundUrl)
-
   useEffect(() => {
-    console.log('useUrlPronunciationSound 挂起:', soundUrl)
     if (!soundUrl || soundUrl === '') {
       setHowl(null)
       setIsSupported(false)
@@ -116,7 +113,6 @@ export function useUrlPronunciationSound(soundUrl: string | undefined) {
       format: ['aac', 'mp4'], // 指定支持的格式
       pool: 20, // 增加HTML5音频池大小，避免音频池耗尽的警告
       onload: () => {
-        console.log('Howler successfully loaded audio:', soundUrl)
         setIsSupported(true)
       },
       onloaderror: (id, error) => {
