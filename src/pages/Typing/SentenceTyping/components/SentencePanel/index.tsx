@@ -2,6 +2,8 @@ import { SentenceTypingContext, SentenceTypingStateActionType } from '../../stor
 import type { SentenceTypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
 import SentenceComponent from './Sentence'
+import Detail from './components/Detail'
+import Translation from './components/Translation'
 import { getSentenceSoundUrl, SentenceAndSound } from '@/plugins/wxs/wxs'
 import { getSentenceSound } from '@/plugins/wxs/wxsApi'
 import {
@@ -11,8 +13,10 @@ import {
   pronunciationConfigAtom,
   sentenceReviewModeInfoAtom,
 } from '@/store'
+import { PronunciationConfig } from '@/typings'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
+import React from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export default function SentencePanel() {
@@ -20,20 +24,19 @@ export default function SentencePanel() {
   const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
   const [currentSentenceExerciseCount, setCurrentSentenceExerciseCount] = useState(0)
   const { times: loopSentenceTimes } = useAtomValue(loopSentenceConfigAtom)
-  const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
 
   const [currentSentence, setCurrentSentence] = useState<SentenceAndSound>()
+  const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
 
   useEffect(() => {
     const loadCurrentSentence = async () => {
-      console.log(`[${new Date().toISOString()}] [SentencePanel/index.tsx] 计算 currentSentence，index: ${state.chapterData.index}`)
       const sentence = state.chapterData.sentences[state.chapterData.index]
       const sentenceSoundId = await getSentenceSound(sentence.sentenceId)
-      const sentenceSoundUrl = getSentenceSoundUrl(sentenceSoundId, pronunciationConfig.type)
+      const sentenceSoundUrl = getSentenceSoundUrl(sentenceSoundId, pronunciationConfig)
       setCurrentSentence({ ...sentence, soundUrl: sentenceSoundUrl } as SentenceAndSound)
     }
     loadCurrentSentence()
-  }, [state.chapterData.index, state.chapterData.sentences, pronunciationConfig.type])
+  }, [state.chapterData.index, state.chapterData.sentences, pronunciationConfig])
 
   const [sentenceComponentKey, setSentenceComponentKey] = useState(0)
   const [showFinishView, setShowFinishView] = useState(false)
@@ -51,7 +54,7 @@ export default function SentencePanel() {
   }, [state.chapterData.index, state.chapterData.sentences.length])
 
   useHotkeys(
-    'Ctrl + Shift + ArrowLeft',
+    'ArrowLeft',
     (e) => {
       e.preventDefault()
       onSkipSentence('prev')
@@ -60,7 +63,7 @@ export default function SentencePanel() {
   )
 
   useHotkeys(
-    'Ctrl + Shift + ArrowRight',
+    'ArrowRight',
     (e) => {
       e.preventDefault()
       onSkipSentence('next')
@@ -86,6 +89,25 @@ export default function SentencePanel() {
     [],
   )
 
+  // 添加上下箭头热键控制 Translation 显示/隐藏
+  useHotkeys(
+    'ArrowDown',
+    (e) => {
+      e.preventDefault()
+      setIsShowTranslation(true)
+    },
+    { preventDefault: true },
+  )
+
+  useHotkeys(
+    'ArrowUp',
+    (e) => {
+      e.preventDefault()
+      setIsShowTranslation(false)
+    },
+    { preventDefault: true },
+  )
+
   const reloadCurrentSentenceComponent = useCallback(() => {
     console.log('Reload current sentence component')
     setSentenceComponentKey((old) => old + 1)
@@ -101,11 +123,12 @@ export default function SentencePanel() {
     [setSentenceReviewModeInfo],
   )
 
-  const onFinish = useCallback(() => {
+  const onShowFinishView = useCallback(() => {
     setShowFinishView(true)
   }, [showFinishView])
 
   const onShowNextSentence = useCallback(() => {
+    setShowFinishView(false)
     if (state.chapterData.index < state.chapterData.sentences.length - 1 || currentSentenceExerciseCount < loopSentenceTimes - 1) {
       // 用户完成当前单词
       if (currentSentenceExerciseCount < loopSentenceTimes - 1) {
@@ -160,11 +183,47 @@ export default function SentencePanel() {
     [dispatch, prevIndex, nextIndex],
   )
 
-  const [isShowTranslation, setIsHoveringTranslation] = useState(false)
+  const [isShowTranslation, setIsShowTranslation] = useState(false)
+  const translationRef = React.useRef<HTMLDivElement>(null)
 
   const handleShowTranslation = useCallback((checked: boolean) => {
-    setIsHoveringTranslation(checked)
+    setIsShowTranslation(checked)
   }, [])
+
+  // 添加点击事件监听，点击视图外区域时收起 Translation
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      // 确保 translationRef 存在且事件目标是有效的 Node
+      if (translationRef.current && event.target) {
+        const target = event.target as Node
+        // 检查目标是否在 translationRef 内部
+        let isInside = false
+        let currentTarget: Node | null = target
+
+        // 遍历 DOM 树，检查目标是否在 translationRef 内部
+        while (currentTarget) {
+          if (currentTarget === translationRef.current) {
+            isInside = true
+            break
+          }
+          currentTarget = currentTarget.parentNode
+        }
+
+        // 如果不在内部，收起 Translation
+        if (!isInside) {
+          setIsShowTranslation(false)
+        }
+      }
+    }
+
+    if (isShowTranslation) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isShowTranslation])
 
   const shouldShowTranslation = useMemo(() => {
     return isShowTranslation || state.isTransVisible
@@ -180,20 +239,37 @@ export default function SentencePanel() {
           </>
         )}
       </div>
+      {/* Translation 组件 - 带动画效果 */}
+      {currentSentence && (
+        <div
+          ref={translationRef}
+          className={`fixed left-0 right-0 top-0 z-40 flex justify-center transition-transform duration-500 ease-in-out ${
+            isShowTranslation ? 'translate-y-40' : '-translate-y-full'
+          }`}
+        >
+          <div className="rounded-lg bg-white shadow-lg">
+            <Translation sentence={currentSentence} />
+          </div>
+        </div>
+      )}
+
       <div className="container flex flex-grow flex-col items-center justify-center">
         {currentSentence && (
           <div className="relative flex w-full justify-center" style={{ margin: '0 0 60px 0' }}>
             {!state.isTyping && (
-              <div className="justify absolute flex h-full w-full">
-                <div className="z-10 flex w-full items-center backdrop-blur-sm">
-                  <p className="w-full select-none text-center text-xl text-gray-600 dark:text-gray-50">
-                    按任意键{state.timerData.time ? '继续' : '开始'}
-                  </p>
-                </div>
+              <div className="justify fixed inset-0 z-50 flex h-full w-full items-center justify-center bg-black/30 backdrop-blur-sm">
+                <p className="w-full select-none text-center text-xl text-gray-600 dark:text-gray-50">
+                  按任意键{state.timerData.time ? '继续' : '开始'}
+                </p>
               </div>
             )}
             <div className="relative" style={{ margin: '0 0 60px 0' }}>
-              <SentenceComponent sentenceAndSound={currentSentence} onShowNextSentence={onShowNextSentence} onFinish={onFinish} />
+              <SentenceComponent
+                sentenceAndSound={currentSentence}
+                onShowNextSentence={onShowNextSentence}
+                onShowFinishView={onShowFinishView}
+              />
+              {showFinishView && <Detail sentence={currentSentence} />}
             </div>
           </div>
         )}

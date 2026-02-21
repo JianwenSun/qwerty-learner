@@ -11,7 +11,7 @@ export default function Word({ word, visible = true }: { word: WordContent; visi
   const wordLength = Math.max(content.length, inputWord.length)
 
   // 计算每个字母的宽度，基于单词总长度
-  const charWidth = 16 // 每个字母的固定宽度
+  const charWidth = fontSizeConfig.sentenceFont // 每个字母的固定宽度
   const totalWidth = wordLength * (charWidth + 4) // 4px 是 marginRight
 
   const renderBorderColor = () => {

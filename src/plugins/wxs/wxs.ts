@@ -1,4 +1,4 @@
-import { PronunciationType } from "@/typings";
+import { PronunciationConfig, PronunciationType } from "@/typings";
 
 export interface Founder {
     name: string;
@@ -117,14 +117,38 @@ export interface SentenceAndSound extends Sentence {
     soundUrl: string;
 }
 
-export function getSentenceSoundUrl(sentenceSoundId?: string, pronunciationType: PronunciationType = 'us') {
+export function getSentenceSoundUrl(sentenceSoundId: string, pronunciationConfig: any) {
     if (!sentenceSoundId) {
         return ''
     }
-    switch (pronunciationType) {
-        case 'us':
-            return `https://res.waxueshe.com/data/audio/new/us_female/${sentenceSoundId}.mp3`
-        case 'uk':
-            return `https://res.waxueshe.com/data/audio/new/uk_female/${sentenceSoundId}.mp3`
-    }
+    return `https://res.waxueshe.com/data/audio/new/${pronunciationConfig.type}_${pronunciationConfig.human}/${sentenceSoundId}.mp3`
 }
+
+export const ChunkSentenceFunctions = [
+    "不定式标记",
+    "不定式补语",
+    "主句",
+    "主语",
+    "从句",
+    "伴随状语",
+    "原因状语从句",
+    "地点状语",
+    "宾语",
+    "宾语从句",
+    "宾语补足语",
+    "形式主语",
+    "方式状语",
+    "时间状语从句",
+    "状语",
+    "状语从句",
+    "目的状语",
+    "简单句",
+    "系动词",
+    "补语",
+    "表语",
+    "谓语",
+    "谓语动词（非限定形式）",
+    "连接词",
+    "限制性定语从句",
+    "非限制性定语从句"
+];

@@ -59,7 +59,7 @@ function Root() {
                 <Route path="/error-book" element={isAuthenticated ? <ErrorBook /> : <Navigate to="/login" />} />
                 <Route path="/friend-links" element={isAuthenticated ? <FriendLinks /> : <Navigate to="/login" />} />
                 <Route path="/word-preview/:dictionaryId" element={isAuthenticated ? <WordPreviewPage /> : <Navigate to="/login" />} />
-                <Route path="/*" element={<Navigate to="/sentence-typing" />} />
+                <Route path="/*" element={<Navigate to="/word-typing" />} />
               </>
             )}
             <Route path="/mobile" element={<MobilePage />} />

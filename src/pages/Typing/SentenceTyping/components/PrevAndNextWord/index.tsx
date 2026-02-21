@@ -23,7 +23,7 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
   const headSentence = useMemo(() => {
     if (!sentence) return ''
 
-    const showSentence = sentence.content
+    const showSentence = sentence.chinese
 
     if (type === 'prev') return showSentence
 

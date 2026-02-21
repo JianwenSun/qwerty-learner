@@ -1,4 +1,5 @@
 import Layout from '../../../components/Layout'
+import PracticeModeSwitcher from '../components/PracticeModeSwitcher'
 import PronunciationSwitcher from '../components/PronunciationSwitcher'
 import { SentenceDictionaryChapterButton } from './components/SentenceDictionaryChapterButton'
 import SentencePanel from './components/SentencePanel'
@@ -60,6 +61,7 @@ const App: React.FC = () => {
     <SentenceTypingContext.Provider value={{ state, dispatch }}>
       <Layout>
         <Header>
+          <PracticeModeSwitcher />
           <SentenceDictionaryChapterButton />
           <PronunciationSwitcher />
           <Switcher />
@@ -86,7 +88,7 @@ const App: React.FC = () => {
                   ></div>
                 </div>
               ) : (
-                !state.isFinished && <SentencePanel />
+                <SentencePanel />
               )}
             </div>
           </div>

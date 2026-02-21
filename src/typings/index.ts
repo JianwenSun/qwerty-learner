@@ -1,6 +1,7 @@
 export * from './resource'
 
 export type PronunciationType = 'us' | 'uk'
+export type PronunciationHumanType = 'male' | 'female'
 export type PhoneticType = 'us' | 'uk'
 export type LanguageType = 'en'
 

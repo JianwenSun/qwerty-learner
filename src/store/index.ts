@@ -2,7 +2,7 @@ import atomForConfig from './atomForConfig'
 import { wordReviewInfoAtom } from './wordReviewInfoAtom'
 import { DISMISS_START_CARD_DATE_KEY, defaultFontSizeConfig } from '@/constants'
 import { wordDictionaryMap, sentenceDictionaryMap } from '@/resources/dictionary'
-import { correctSoundResources, keySoundResources, sentenceCorrectSoundResources, sentenceWrongSoundResources, wrongSoundResources } from '@/resources/soundResource'
+import { correctSoundResources, DEFAULT_PRONUNCIATION_MALE, keySoundResources, sentenceCorrectSoundResources, sentenceWrongSoundResources, wrongSoundResources } from '@/resources/soundResource'
 import type {
   WordDictionary,
   LoopWordTimesOption,
@@ -13,6 +13,7 @@ import type {
   LoopSentenceTimesOption,
   SentenceDictionary,
   SentenceDictationType,
+  PronunciationHumanType,
 } from '@/typings'
 import type { WordReviewRecord } from '@/utils/db/wordRecord'
 import { atom } from 'jotai'
@@ -160,7 +161,8 @@ export const pronunciationConfigAtom = atomForConfig('pronunciation', {
   isOpen: true,
   volume: 1,
   type: 'us' as PronunciationType,
-  name: '美音',
+  human: 'male' as PronunciationHumanType,
+  name: '美音' + DEFAULT_PRONUNCIATION_MALE,
   isLoop: false,
   isTransRead: false,
   transVolume: 1,

@@ -6,7 +6,6 @@ import { generateSentenceDisplayContent, initialSentenceState, JustifyType } fro
 import { SentenceState } from './type'
 import Tooltip from '@/components/Tooltip'
 import { UrlPronunciationIcon, UrlPronunciationIconRef } from '@/components/UrlPronunciationIcon'
-import { EXPLICIT_SPACE } from '@/constants'
 import useSentenceKeySounds from '@/hooks/useSentenceKeySounds'
 import { SentenceTypingContext, SentenceTypingStateActionType } from '@/pages/Typing/SentenceTyping/store'
 import { SentenceAndSound } from '@/plugins/wxs/wxs'
@@ -27,11 +26,11 @@ import { useImmer } from 'use-immer'
 const SentenceComponent = React.memo(function SentenceComponent({
   sentenceAndSound,
   onShowNextSentence,
-  onFinish,
+  onShowFinishView,
 }: {
   sentenceAndSound: SentenceAndSound
   onShowNextSentence: () => void
-  onFinish: () => void
+  onShowFinishView: () => void
 }) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(SentenceTypingContext)!
@@ -114,7 +113,7 @@ const SentenceComponent = React.memo(function SentenceComponent({
         case SentenceUpdateActionType.Space: {
           updateAction.event.preventDefault()
 
-          if (sentenceState.isFinished) {
+          if (showFinishView && sentenceState.isFinished) {
             setShowNextSentence(true)
             break
           }
@@ -164,9 +163,18 @@ const SentenceComponent = React.memo(function SentenceComponent({
   }, [state.isTyping, hasAutoPlayed])
 
   useEffect(() => {
-    if (sentenceState.isFinished) {
+    if (showFinishView) {
       // dispatch({ type: SentenceTypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
-      onFinish()
+      onShowFinishView()
+      setShowFinishView(false)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showFinishView])
+
+  useEffect(() => {
+    if (showNextSentence) {
+      onShowNextSentence()
+      setShowNextSentence(false)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showNextSentence])

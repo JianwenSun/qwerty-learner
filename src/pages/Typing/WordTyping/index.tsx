@@ -1,4 +1,5 @@
 import Layout from '../../../components/Layout'
+import PracticeModeSwitcher from '../components/PracticeModeSwitcher'
 import PronunciationSwitcher from '../components/PronunciationSwitcher'
 import ResultScreen from './components/ResultScreen'
 import Speed from './components/Speed'
@@ -129,6 +130,7 @@ const App: React.FC = () => {
       {state.isFinished && <ResultScreen />}
       <Layout>
         <Header>
+          <PracticeModeSwitcher />
           <WordDictionaryChapterButton />
           <PronunciationSwitcher />
           <Switcher />

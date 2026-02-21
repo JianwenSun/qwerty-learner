@@ -1,4 +1,4 @@
-import type { LanguagePronunciationMap, PronunciationConfig, SoundResource } from '@/typings'
+import type { PronunciationConfig, SoundResource } from '@/typings'
 
 export const SOUND_URL_PREFIX = REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner/sounds/' : './sounds/'
 export const KEY_SOUND_URL_PREFIX = SOUND_URL_PREFIX + 'key-sound/'
@@ -42,13 +42,28 @@ export const sentenceWrongSoundResources: SoundResource[] = [{ key: '1', name: '
 export const sentenceCorrectSoundResources: SoundResource[] = [{ key: '1', name: '句子正确声音1', filename: 'sentence-correct.mp3' }]
 
 
+export const DEFAULT_PRONUNCIATION_MALE = '(男)'
+export const DEFAULT_PRONUNCIATION_FEMALE = '(女)'
+
 export const pronunciationList: PronunciationConfig[] = [
   {
-    name: '美音',
+    name: '美音' + DEFAULT_PRONUNCIATION_MALE,
     pron: 'us',
+    human: 'male',
   },
   {
-    name: '英音',
+    name: '美音' + DEFAULT_PRONUNCIATION_FEMALE,
+    pron: 'us',
+    human: 'female',
+  },
+  {
+    name: '英音' + DEFAULT_PRONUNCIATION_MALE,
     pron: 'uk',
+    human: 'male',
+  },
+  {
+    name: '英音' + DEFAULT_PRONUNCIATION_FEMALE,
+    pron: 'uk',
+    human: 'female',
   },
 ]

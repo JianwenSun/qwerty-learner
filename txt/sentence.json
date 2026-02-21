@@ -1,136 +1,133 @@
 {
-    "sentenceId": 121955,
+    "sentenceId": 121989,
     "lessonId": 604,
-    "lessonCourseId": 5260,
-    "content": "I’m fine, thank you!",
-    "chinese": "我很好，谢谢你！",
-    "explanation": "本句由两个并列的主句构成，通过逗号连接，第二个主句在语用上作为对对方关心的回应，体现英语中常见的情感附加结构。",
+    "lessonCourseId": 5263,
+    "content": "This is my head.",
+    "chinese": "这是我的头。",
+    "explanation": "本句为典型的主系表结构，主语由指示代词充当，系动词连接主语与表语名词短语，表语前可带限定词修饰，整体构成对等关系的陈述句。",
     "tokens": [
         {
             "id": 0,
-            "text": "I",
+            "text": "This",
             "pos": "PRON",
             "dep": "nsubj",
             "head": 1
         },
         {
             "id": 1,
-            "text": "'m",
+            "text": "is",
             "pos": "AUX",
-            "dep": "ccomp",
-            "head": 4
-        },
-        {
-            "id": 2,
-            "text": "fine",
-            "pos": "ADJ",
-            "dep": "acomp",
+            "dep": "ROOT",
             "head": 1
         },
         {
+            "id": 2,
+            "text": "my",
+            "pos": "PRON",
+            "dep": "poss",
+            "head": 3
+        },
+        {
             "id": 3,
-            "text": ",",
-            "pos": "PUNCT",
-            "dep": "punct",
-            "head": 4
+            "text": "head",
+            "pos": "NOUN",
+            "dep": "attr",
+            "head": 1
         },
         {
             "id": 4,
-            "text": "thank",
-            "pos": "VERB",
-            "dep": "ROOT",
-            "head": 4
-        },
-        {
-            "id": 5,
-            "text": "you",
-            "pos": "PRON",
-            "dep": "dobj",
-            "head": 4
-        },
-        {
-            "id": 6,
-            "text": "!",
+            "text": ".",
             "pos": "PUNCT",
             "dep": "punct",
-            "head": 4
+            "head": 1
         }
     ],
     "words": [
         {
-            "surface": "I'm",
-            "display": "I'm",
+            "surface": "This",
+            "display": "This",
             "tokenIds": [
-                0,
-                1
+                0
             ],
             "pos": "PRON",
             "posZh": "代词",
-            "chinese": "abbr. 我是（缩写）",
-            "phonetic_uk": "/aɪm/",
-            "phonetic_us": "/aɪm/"
+            "chinese": "这, 本, 这么",
+            "phonetic_uk": "/ðɪs/",
+            "phonetic_us": "/ðɪs/"
         },
         {
-            "surface": "fine",
-            "display": "fine",
+            "surface": "is",
+            "display": "is",
+            "tokenIds": [
+                1
+            ],
+            "pos": "AUX",
+            "posZh": "助动词",
+            "chinese": "be的现在式第三人称",
+            "phonetic_uk": "/ɪz/",
+            "phonetic_us": "/ɪz/"
+        },
+        {
+            "surface": "my",
+            "display": "my",
             "tokenIds": [
                 2
             ],
-            "pos": "ADJ",
-            "posZh": "形容词",
-            "chinese": "罚款, 罚金, 晴天, 精细, 好的, 晴朗的, 健康的, 细小的, 精细的, 精炼, 澄清, 变清, 变细, 很好",
-            "phonetic_uk": "/ˈfiːneɪ/",
-            "phonetic_us": "/ˈfiːneɪ/"
-        },
-        {
-            "surface": "thank",
-            "display": "thank",
-            "tokenIds": [
-                4
-            ],
-            "pos": "VERB",
-            "posZh": "动词",
-            "chinese": "谢意, 感谢, 谢谢",
-            "phonetic_uk": "/θæŋk/",
-            "phonetic_us": "/θæŋk/"
-        },
-        {
-            "surface": "you",
-            "display": "you",
-            "tokenIds": [
-                5
-            ],
             "pos": "PRON",
             "posZh": "代词",
-            "chinese": "你, 你们",
-            "phonetic_uk": "/juː/",
-            "phonetic_us": "/juː/"
+            "chinese": "我的",
+            "phonetic_uk": "/maɪ/",
+            "phonetic_us": "/maɪ/"
+        },
+        {
+            "surface": "head",
+            "display": "head",
+            "tokenIds": [
+                3
+            ],
+            "pos": "NOUN",
+            "posZh": "名词",
+            "chinese": "头, 头脑, 领袖, 脑袋, 最前的部分, 为首, 朝向, 前进, 用头顶, 朝特定方向行进, (作物)结穗, 头的, 在顶端的, 主要的",
+            "phonetic_uk": "/ˈhed/",
+            "phonetic_us": "/ˈhɛd/"
         }
     ],
     "chunks": [
         {
             "chunkIndex": 0,
-            "chunkKey": "121955:0",
-            "content": "I'm fine",
-            "chinese": "我很好",
+            "chunkKey": "121989:0",
+            "content": "This",
+            "chinese": "这",
             "clauseIndex": 0,
-            "sentenceFunction": "主句",
-            "grammarType": "从句",
-            "explanation": "该成分在句法上独立存在，承担主句功能，表达说话人的状态。",
+            "sentenceFunction": "主语",
+            "grammarType": "名词短语",
+            "explanation": "由指示代词充当主语，指代近处事物，在句中作主语成分。",
             "wordIndexes": [
-                0,
-                1
+                0
             ]
         },
         {
             "chunkIndex": 1,
-            "chunkKey": "121955:1",
-            "content": "thank you",
-            "chinese": "谢谢你",
-            "clauseIndex": 1,
-            "sentenceFunction": "主句",
-            "grammarType": "从句",
-            "explanation": "该成分形式上为独立主句，句法上不依附于前句，但语义上承接前句语境，起礼貌回应作用。",
+            "chunkKey": "121989:1",
+            "content": "is",
+            "chinese": "是",
+            "clauseIndex": 0,
+            "sentenceFunction": "系动词",
+            "grammarType": "系动词",
+            "explanation": "作为系动词连接主语与表语，表达等同或归属关系。",
+            "wordIndexes": [
+                1
+            ]
+        },
+        {
+            "chunkIndex": 2,
+            "chunkKey": "121989:2",
+            "content": "my head.",
+            "chinese": "我的头。",
+            "clauseIndex": 0,
+            "sentenceFunction": "表语",
+            "grammarType": "名词短语",
+            "explanation": "名词短语作表语，说明主语的身份或内容，前有物主代词修饰中心词。",
             "wordIndexes": [
                 2,
                 3
@@ -140,65 +137,69 @@
     "clauses": [
         {
             "clauseIndex": 0,
-            "type": "主句",
-            "explanation": "该从句为句子的第一个主句，独立表达完整意义，充当全句的陈述主体。",
+            "type": "简单句",
+            "explanation": "本句为典型的主系表结构，主语由指示代词充当，系动词连接主语与表语名词短语，表语前可带限定词修饰，整体构成对等关系的陈述句。",
             "chunkIndexes": [
-                0
-            ]
-        },
-        {
-            "clauseIndex": 1,
-            "type": "主句",
-            "explanation": "该从句为第二个主句，在语法上与前一句并列，但在语用上起补充回应作用，属于独立主句中的致谢表达。",
-            "chunkIndexes": [
-                1
+                0,
+                1,
+                2
             ]
         }
     ],
     "practices": [
         {
-            "id": 611412,
+            "id": 611370,
             "kind": "chunk",
             "sort": 1,
-            "content": "I'm fine",
-            "chinese": "我很好",
+            "content": "This",
+            "chinese": "这",
             "alignTokenIds": [
-                0,
-                1,
-                2
+                0
             ],
-            "phonetic_uk": "/aɪm/ /ˈfiːneɪ/",
-            "phonetic_us": "/a(ɪ)m/ /ˈfiːneɪ/",
-            "part_of_speech": "主句"
+            "phonetic_uk": "/ðɪs/",
+            "phonetic_us": "/ðɪs/",
+            "part_of_speech": "主语"
         },
         {
-            "id": 611413,
+            "id": 611371,
             "kind": "chunk",
             "sort": 2,
-            "content": "thank you",
-            "chinese": "谢谢你",
+            "content": "is",
+            "chinese": "是",
             "alignTokenIds": [
-                4,
-                5
+                1
             ],
-            "phonetic_uk": "/θæŋk/ /ju/",
-            "phonetic_us": "/θæŋk/ /jə/",
-            "part_of_speech": "主句"
+            "phonetic_uk": "/ɪz/",
+            "phonetic_us": "/ɪz/",
+            "part_of_speech": "系动词"
         },
         {
-            "id": 611414,
-            "kind": "sentence",
+            "id": 611372,
+            "kind": "chunk",
             "sort": 3,
-            "content": "I’m fine, thank you!",
-            "chinese": "我很好，谢谢你！",
+            "content": "my head.",
+            "chinese": "我的头。",
+            "alignTokenIds": [
+                2,
+                3
+            ],
+            "phonetic_uk": "/maɪ/ /ˈhɛd/",
+            "phonetic_us": "/maɪ/ /ˈhɛd/",
+            "part_of_speech": "表语"
+        },
+        {
+            "id": 611373,
+            "kind": "sentence",
+            "sort": 4,
+            "content": "This is my head.",
+            "chinese": "这是我的头。",
             "alignTokenIds": [
                 0,
                 1,
                 2,
-                4,
-                5
+                3
             ],
-            "part_of_speech": "主句 + 主句"
+            "part_of_speech": "主语 + 系动词 + 表语"
         }
     ]
 }

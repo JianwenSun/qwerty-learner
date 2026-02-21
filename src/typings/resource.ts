@@ -1,4 +1,4 @@
-import type { Dictionary, LanguageType, PronunciationType } from '.'
+import type { Dictionary, LanguageType, PronunciationHumanType, PronunciationType } from '.'
 
 export interface DictionaryResource extends Dictionary {
   //override default pronunciation when not undefined
@@ -13,6 +13,7 @@ export interface UrlDictionaryResource extends DictionaryResource {
 export type PronunciationConfig = {
   name: string
   pron: PronunciationType
+  human: PronunciationHumanType
 }
 
 export type LanguagePronunciationMapConfig = {

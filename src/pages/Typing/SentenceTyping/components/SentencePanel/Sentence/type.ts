@@ -1,4 +1,3 @@
-import type { LetterState } from './Letter'
 import { Sentence } from '@/plugins/wxs/wxs'
 import { immerable } from 'immer'
 
@@ -11,7 +10,6 @@ export class WordContent {
   [immerable] = true
   content: string
   //letter展示样式
-  letterStates: LetterState[]
   //用户输入的单词
   inputWord: string | undefined
   hasWrong: boolean | undefined
@@ -21,7 +19,6 @@ export class WordContent {
 
   constructor(content: string) {
     this.content = content
-    this.letterStates = new Array(content.length).fill('normal')
     this.inputWord = undefined
     this.hasWrong = undefined
     this.isCurrent = false
@@ -29,10 +26,10 @@ export class WordContent {
   }
 
   static copy(from: WordContent, to: WordContent) {
-    to.letterStates = [...from.letterStates]
-    to.inputWord = from.inputWord
     to.hasWrong = from.hasWrong
     to.isCurrent = from.isCurrent
+    to.inputWord = from.inputWord
+    to.content = from.content
     to.randomLetterVisible = [...from.randomLetterVisible]
   }
 
@@ -115,7 +112,7 @@ export class SentenceDisplayContent {
     let wordIndex = undefined
 
     for (let i = state.currentWordIndex + 1; num > 0; i++, num--) {
-      if (state. words[i % state.wordCount].inputWord === undefined) {
+      if (state.words[i % state.wordCount].inputWord === undefined) {
         hasEmpty = true
         wordIndex = i % state.wordCount
         break

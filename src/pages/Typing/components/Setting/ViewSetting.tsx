@@ -29,6 +29,16 @@ export default function ViewSetting() {
     [setFontsizeConfig],
   )
 
+  const onChangeSentenceFontSize = useCallback(
+    (value: [number]) => {
+      setFontsizeConfig((prev) => ({
+        ...prev,
+        sentenceFont: value[0],
+      }))
+    },
+    [setFontsizeConfig],
+  )
+
   const onResetFontSize = useCallback(() => {
     setFontsizeConfig({ ...defaultFontSizeConfig })
   }, [setFontsizeConfig])
@@ -37,8 +47,9 @@ export default function ViewSetting() {
     <ScrollArea.Root className="flex-1 select-none overflow-y-auto ">
       <ScrollArea.Viewport className="h-full w-full px-3">
         <div className={styles.tabContent}>
+          {/* 单词练习字体设置 */}
           <div className={styles.section}>
-            <span className={styles.sectionLabel}>字体设置</span>
+            <span className={styles.sectionLabel}>单词练习</span>
             <div className={styles.block}>
               <span className={styles.blockLabel}>外语字体</span>
               <div className="flex h-5 w-full items-center justify-between">
@@ -79,6 +90,31 @@ export default function ViewSetting() {
               </div>
             </div>
           </div>
+
+          {/* 句子练习字体设置 */}
+          <div className={styles.section}>
+            <span className={styles.sectionLabel}>句子练习</span>
+            <div className={styles.block}>
+              <span className={styles.blockLabel}>句子字体</span>
+              <div className="flex h-5 w-full items-center justify-between">
+                <Slider.Root
+                  value={[fontSizeConfig.sentenceFont]}
+                  min={20}
+                  max={60}
+                  step={4}
+                  className="slider"
+                  onValueChange={onChangeSentenceFontSize}
+                >
+                  <Slider.Track>
+                    <Slider.Range />
+                  </Slider.Track>
+                  <Slider.Thumb />
+                </Slider.Root>
+                <span className="ml-4 w-10 text-xs font-normal text-gray-600">{fontSizeConfig.sentenceFont}px</span>
+              </div>
+            </div>
+          </div>
+
           <button className="my-btn-primary ml-4 disabled:bg-gray-300" type="button" onClick={onResetFontSize} title="重置字体设置">
             重置字体设置
           </button>
