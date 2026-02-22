@@ -2,17 +2,39 @@ import style from './index.module.css'
 import { WordContent } from './type'
 import { fontSizeConfigAtom } from '@/store'
 import { useAtomValue } from 'jotai'
+import { useMemo } from 'react'
+
+// 计算文本宽度的工具函数
+const calculateTextWidth = (text: string, fontSize: number, font: string = 'monospace') => {
+  // 创建一个隐藏的 canvas 元素
+  const canvas = document.createElement('canvas')
+  const context = canvas.getContext('2d')
+
+  if (!context) {
+    // 如果无法获取 context，返回一个默认值
+    return text.length * (fontSize * 0.6)
+  }
+
+  // 设置字体样式
+  context.font = `${fontSize}px ${font}`
+
+  // 测量文本宽度
+  const metrics = context.measureText(text)
+  return metrics.width
+}
 
 export default function Word({ word, visible = true }: { word: WordContent; visible?: boolean }) {
   const fontSizeConfig = useAtomValue(fontSizeConfigAtom)
 
   const content = word.content || ''
   const inputWord = word.inputWord || ''
-  const wordLength = Math.max(content.length, inputWord.length)
 
-  // 计算每个字母的宽度，基于单词总长度
-  const charWidth = fontSizeConfig.sentenceFont // 每个字母的固定宽度
-  const totalWidth = wordLength * (charWidth + 4) // 4px 是 marginRight
+  // 使用 Canvas API 精确计算文本宽度
+  const textWidth = useMemo(() => {
+    const baseWidth = calculateTextWidth(content, fontSizeConfig.sentenceFont)
+    // 添加一些内边距
+    return Math.max(20, baseWidth + 8) // 8px 是左右内边距之和
+  }, [content, fontSizeConfig.sentenceFont])
 
   const renderBorderColor = () => {
     if (word.hasWrong) {
@@ -49,15 +71,20 @@ export default function Word({ word, visible = true }: { word: WordContent; visi
     <span
       className={`m-0 border-b-2 font-mono font-normal duration-0 ${word.hasWrong ? style.wrong : ''} ${renderBorderColor()}`}
       style={{
-        width: `${totalWidth}px`,
         height: '40px',
         fontSize: fontSizeConfig.sentenceFont.toString() + 'px',
-        display: 'inline-block',
+        display: 'inline-flex',
+        alignItems: 'center',
         marginRight: '8px',
         verticalAlign: 'bottom',
         lineHeight: '28px',
         textAlign: 'center',
         paddingBottom: '5px',
+        minWidth: `${textWidth}px`,
+        paddingLeft: '4px',
+        paddingRight: '4px',
+        maxWidth: '100%',
+        wordBreak: 'break-all',
       }}
     >
       {renderContent()}

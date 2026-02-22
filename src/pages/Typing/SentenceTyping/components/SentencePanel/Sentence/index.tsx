@@ -10,6 +10,7 @@ import useSentenceKeySounds from '@/hooks/useSentenceKeySounds'
 import { SentenceTypingContext, SentenceTypingStateActionType } from '@/pages/Typing/SentenceTyping/store'
 import { SentenceAndSound } from '@/plugins/wxs/wxs'
 import {
+  fontSizeConfigAtom,
   isIgnoreCaseAtom,
   isShowAnswerOnHoverAtom,
   isTextSelectableAtom,
@@ -50,6 +51,7 @@ const SentenceComponent = React.memo(function SentenceComponent({
   // 添加状态，用于跟踪是否已经自动播放过单词发音
   const [hasAutoPlayed, setHasAutoPlayed] = useState(false)
   const [showTipAlert, setShowTipAlert] = useState(false)
+  const fontSizeConfig = useAtomValue(fontSizeConfigAtom)
 
   // 用于跟踪依赖项变化的 ref
   const sentencePronunciationIconRef = useRef<UrlPronunciationIconRef>(null)
@@ -192,11 +194,43 @@ const SentenceComponent = React.memo(function SentenceComponent({
           <div
             onMouseEnter={() => handleHoverSentence(true)}
             onMouseLeave={() => handleHoverSentence(false)}
-            className={`flex items-center ${isTextSelectable && 'select-all'} justify-center`}
+            style={{}}
+            className={`flex flex-wrap items-center ${isTextSelectable && 'select-all'} max-w-full justify-center`}
           >
-            {sentenceState.displayContent.words.map((t, index) => {
-              return <Word key={`word-${index}`} word={t} visible={isHoveringSentence} />
-            })}
+            {(() => {
+              // 聚合 words 和 symbols
+              const combined = [...sentenceState.displayContent.words, ...sentenceState.displayContent.symbols]
+              // 按照 index 排序
+              combined.sort((a, b) => a.index - b.index)
+
+              // 渲染聚合后的数据
+              return combined.map((item, index) => {
+                // 检查是否是 WordContent
+                if ('content' in item) {
+                  // 是 WordContent，渲染 Word 组件
+                  return <Word key={`word-${index}`} word={item} visible={isHoveringSentence} />
+                } else {
+                  // 是 SentenceSymbol，直接展示 symbol
+                  return (
+                    <span
+                      key={`symbol-${index}`}
+                      className="font-mono font-bold text-gray-300 dark:text-gray-400"
+                      style={{
+                        fontSize: fontSizeConfig.sentenceFont.toString() + 'px',
+                        marginRight: '8px',
+                        verticalAlign: 'bottom',
+                        lineHeight: '28px',
+                        textAlign: 'center',
+                        paddingBottom: '5px',
+                        fontWeight: 'bold',
+                      }}
+                    >
+                      {item.symbol}
+                    </span>
+                  )
+                }
+              })
+            })()}
           </div>
           {pronunciationIsOpen && (
             <div className="absolute -right-12 top-1/2 h-9 w-9 -translate-y-1/2 transform ">

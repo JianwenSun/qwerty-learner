@@ -6,7 +6,7 @@ export enum JustifyType {
   JUSTIFY = 'JUSTIFY',
 }
 
-export class WordContent {
+export class WordContent implements ChuckIndex {
   [immerable] = true
   content: string
   //letter展示样式
@@ -16,13 +16,19 @@ export class WordContent {
   //随机字母展示
   randomLetterVisible: boolean[]
   isCurrent: boolean
+  index: number
 
-  constructor(content: string) {
+  constructor(content: string, index: number) {
+    this.index = index
     this.content = content
     this.inputWord = undefined
     this.hasWrong = undefined
     this.isCurrent = false
     this.randomLetterVisible = content.split('').map(() => Math.random() > 0.4)
+  }
+
+  static newContent(content: WordContent): WordContent {
+    return new WordContent(content.content, content.index)
   }
 
   static copy(from: WordContent, to: WordContent) {
@@ -35,7 +41,7 @@ export class WordContent {
 
   static input(state: WordContent, letter: string): WordContent {
     // 创建一个新的 WordContent 对象
-    const newState = new WordContent(state.content)
+    const newState = WordContent.newContent(state)
     WordContent.copy(state, newState)
     if (newState.hasWrong) {
       newState.inputWord = letter
@@ -48,7 +54,7 @@ export class WordContent {
   }
 
   static delete(state: WordContent): [WordContent, boolean] {
-    const newState = new WordContent(state.content)
+    const newState = WordContent.newContent(state)
     WordContent.copy(state, newState)
 
     if (newState.inputWord === undefined) {
@@ -76,7 +82,7 @@ export class WordContent {
   }
 
   static calculate(state: WordContent): WordContent {
-    const newState = new WordContent(state.content)
+    const newState = WordContent.newContent(state)
     WordContent.copy(state, newState)
     // 去除末尾的 '.' 后比较
     const cleanInput = newState.inputWord?.replace(/\.$/, '') || ''
@@ -86,16 +92,30 @@ export class WordContent {
   }
 }
 
+export interface ChuckIndex {
+  index: number
+}
+
+export type SentenceSymbols = ',' | '.' | ';' | ':' | '!' | '?' | '(' | ')' | '[' | ']' | '{' | '}' | '"' | '\'' | '-' | '...'
+
+export interface SentenceSymbol extends ChuckIndex {
+  symbol: SentenceSymbols
+}
+
 export class SentenceDisplayContent {
   [immerable] = true
   wordCount: number
   words: WordContent[]
   //当前正在输入的单词
   currentWordIndex: number
+  content: string
+  symbols: SentenceSymbol[]
 
-  constructor(words: WordContent[]) {
+  constructor(content: string, words: WordContent[], symbols: SentenceSymbol[] = []) {
+    this.content = content
     this.wordCount = words.length
     this.words = words
+    this.symbols = symbols
     this.currentWordIndex = words.length > 0 ? 0 : -1
 
     words.forEach((word, index) => {
@@ -103,6 +123,10 @@ export class SentenceDisplayContent {
         this.currentWordIndex = index
       }
     });
+  }
+
+  static newContent(state: SentenceDisplayContent): SentenceDisplayContent {
+    return new SentenceDisplayContent(state.content, state.words, state.symbols)
   }
 
   static moveToNextWord(state: SentenceDisplayContent) {
@@ -231,7 +255,7 @@ export class SentenceState {
 
   public static moveToPreviousWord(state: SentenceState): SentenceState {
     // 创建一个新的 SentenceDisplayContent 对象
-    const newDisplayContent = new SentenceDisplayContent(state.displayContent.words)
+    const newDisplayContent = SentenceDisplayContent.newContent(state.displayContent)
     newDisplayContent.currentWordIndex = state.displayContent.currentWordIndex
     SentenceDisplayContent.moveToPreviousWord(newDisplayContent)
     // 创建一个新的 SentenceState 对象
@@ -243,7 +267,7 @@ export class SentenceState {
 
   public static moveToNextWord(state: SentenceState): SentenceState {
     // 创建一个新的 SentenceDisplayContent 对象
-    const newDisplayContent = new SentenceDisplayContent(state.displayContent.words)
+    const newDisplayContent = SentenceDisplayContent.newContent(state.displayContent)
     newDisplayContent.currentWordIndex = state.displayContent.currentWordIndex
     SentenceDisplayContent.moveToNextWord(newDisplayContent)
     // 创建一个新的 SentenceState 对象
@@ -256,7 +280,7 @@ export class SentenceState {
 
   public static inputCurrentWord(state: SentenceState, letter: string): SentenceState {
     // 创建一个新的 SentenceDisplayContent 对象
-    const newDisplayContent = new SentenceDisplayContent(state.displayContent.words)
+    const newDisplayContent = SentenceDisplayContent.newContent(state.displayContent)
     newDisplayContent.currentWordIndex = state.displayContent.currentWordIndex
     SentenceDisplayContent.inputCurrentWord(newDisplayContent, letter)
 
@@ -269,7 +293,7 @@ export class SentenceState {
 
   public static deleteCurrentWord(state: SentenceState): SentenceState {
     // 创建一个新的 SentenceDisplayContent 对象
-    const newDisplayContent = new SentenceDisplayContent(state.displayContent.words)
+    const newDisplayContent = SentenceDisplayContent.newContent(state.displayContent)
     newDisplayContent.currentWordIndex = state.displayContent.currentWordIndex
     const [, isDeleted] = SentenceDisplayContent.deleteCurrentWord(newDisplayContent)
 
@@ -286,12 +310,48 @@ export class SentenceState {
   }
 }
 
-export const initialSentenceState: SentenceState = new SentenceState(new SentenceDisplayContent([]));
+export const initialSentenceState: SentenceState = new SentenceState(new SentenceDisplayContent('', []));
 
 export function generateSentenceDisplayContent(sentence: Sentence): SentenceDisplayContent {
-  const words = sentence.content.split(' ').map((word) => new WordContent(word));
+  // 按照空格拆分句子，并过滤掉空字符串
+  const wordsWithSpaces = sentence.content.split(' ').filter(word => word.trim() !== '');
+
+  // 提取符号及其在句子中的索引（忽略空格，按照元素顺序编号）
+  const symbols: SentenceSymbol[] = [];
+
+  // 生成单词列表，记录每个单词在句子中的索引（忽略空格，按照元素顺序编号）
+  const words: WordContent[] = [];
+
+  // 索引计数器
+  let currentIndex = 0;
+
+  // 遍历所有单词
+  for (const wordWithSpace of wordsWithSpaces) {
+    // 按照标点符号拆分每个单词
+    const parts = wordWithSpace
+      .split(/([,.;:!?()\[\]{}'"-]|\.\.\.)/)
+      .filter(part => part.trim() !== '');
+
+    // 遍历拆分后的部分
+    for (const part of parts) {
+      // 检查是否是符号
+      if (/[,.;:!?()\[\]{}'"-]|\.\.\./.test(part)) {
+        // 是符号，添加到 symbols 数组
+        symbols.push({
+          symbol: part as SentenceSymbols,
+          index: currentIndex
+        });
+      } else {
+        // 是单词，添加到 words 数组
+        words.push(new WordContent(part, currentIndex));
+      }
+      // 增加索引计数器
+      currentIndex++;
+    }
+  }
+
   if (words.length > 0) {
     words[0].isCurrent = true
   }
-  return new SentenceDisplayContent(words)
+  return new SentenceDisplayContent(sentence.content, words, symbols)
 }
