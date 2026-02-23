@@ -3,9 +3,10 @@ import PracticeModeSwitcher from '../components/PracticeModeSwitcher'
 import PronunciationSwitcher from '../components/PronunciationSwitcher'
 import { SentenceDictionaryChapterButton } from './components/SentenceDictionaryChapterButton'
 import SentencePanel from './components/SentencePanel'
+import Speed from './components/SentencePanel/components/Speed'
 import StartButton from './components/StartButton'
 import Switcher from './components/Switcher'
-import { useSentenceList } from './hooks/useSentenceList'
+import { useSentenceList } from './hooks/useSentenceHooks'
 import { initialSentenceTypingState, SentenceTypingContext, sentenceTypingReducer, SentenceTypingStateActionType } from './store'
 import Header from '@/components/Header'
 import { randomConfigAtom, sentenceReviewModeInfoAtom } from '@/store'
@@ -19,7 +20,7 @@ import { useImmerReducer } from 'use-immer'
 const App: React.FC = () => {
   const [state, dispatch] = useImmerReducer(sentenceTypingReducer, structuredClone(initialSentenceTypingState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
-  const { sentences } = useSentenceList()
+  const { data: sentences } = useSentenceList()
 
   const randomConfig = useAtomValue(randomConfigAtom)
   const reviewModeInfo = useAtomValue(sentenceReviewModeInfoAtom)
@@ -40,10 +41,9 @@ const App: React.FC = () => {
   useEffect(() => {
     if (sentences !== undefined) {
       const initialIndex = reviewModeInfo.isReviewMode && reviewModeInfo.reviewRecord?.index ? reviewModeInfo.reviewRecord.index : 0
-
       dispatch({
         type: SentenceTypingStateActionType.SETUP_CHAPTER,
-        payload: { sentences, shouldShuffle: randomConfig.isOpen, initialIndex },
+        payload: { sentences: sentences, shouldShuffle: randomConfig.isOpen, initialIndex },
       })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -91,6 +91,7 @@ const App: React.FC = () => {
                 <SentencePanel />
               )}
             </div>
+            <Speed />
           </div>
         </div>
       </Layout>

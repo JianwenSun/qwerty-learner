@@ -3,7 +3,7 @@ import { immerable } from 'immer'
 
 export enum JustifyType {
   MOVE_TO_NEXT_WORD = 'MOVE_TO_NEXT_WORD',
-  JUSTIFY = 'JUSTIFY',
+  COMPLETE = 'COMPLETE',
 }
 
 export class WordContent implements ChuckIndex {
@@ -246,7 +246,7 @@ export class SentenceState {
     const hasJustify = state.displayContent.words.some(word => word.hasWrong === true)
 
     if (!hasJustify && isAllWordsInputted) {
-      return [JustifyType.JUSTIFY, SentenceState.calculate(state)]
+      return [JustifyType.COMPLETE, SentenceState.calculate(state)]
     }
     else {
       return [JustifyType.MOVE_TO_NEXT_WORD, SentenceState.moveToNextWord(state)]

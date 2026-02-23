@@ -1,26 +1,26 @@
+import { useCurrentSentenceDictionaryInfo } from '../../hooks/useSentenceHooks'
 import SentenceDictionaryComponent from './SentenceDictionaryComponent'
 import SentenceDictionaryTagSwitcher from './SentenceDictionaryTagSwitcher'
-import { currentSentenceDictionaryInfoAtom } from '@/store'
 import { Dictionary } from '@/typings'
 import { findCommonValues } from '@/utils'
-import { useAtomValue } from 'jotai'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 
 export default function SentenceDictionaryGroup({ groupedDictsByTag }: { groupedDictsByTag: Record<string, Dictionary[]> }) {
   const tagList = useMemo(() => Object.keys(groupedDictsByTag), [groupedDictsByTag])
   const [currentTag, setCurrentTag] = useState(tagList.length > 0 ? tagList[0] : '')
-  const currentSentenceDictionaryInfo = useAtomValue(currentSentenceDictionaryInfoAtom)
+
+  const { data: currentSentenceDictionary } = useCurrentSentenceDictionaryInfo()
 
   const onChangeCurrentTag = useCallback((tag: string) => {
     setCurrentTag(tag)
   }, [])
 
   useEffect(() => {
-    const commonTags = findCommonValues(tagList, currentSentenceDictionaryInfo.tags)
+    const commonTags = findCommonValues(tagList, currentSentenceDictionary?.tags || [])
     if (commonTags.length > 0) {
       setCurrentTag(commonTags[0])
     }
-  }, [currentSentenceDictionaryInfo.tags, tagList])
+  }, [currentSentenceDictionary?.tags, tagList])
 
   return (
     <div>

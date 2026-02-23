@@ -184,7 +184,6 @@ export class Upyun {
 
         const uri = `/${this.service}${remotePath}`;
         const date = new Date().toUTCString();
-
         const response = await fetch(`${this.endpoint}${uri}`, {
           method: 'GET',
           headers: {
@@ -202,7 +201,7 @@ export class Upyun {
             reject('Error reading response body');
           }
         } else {
-          const errorMessage = `Failed to get file info: ${response.status} ${response.statusText}`;
+          const errorMessage = 'Failed to get file info for ' + remotePath + ': ' + response.status + ' ' + response.statusText;
           console.error(errorMessage);
           reject(errorMessage);
         }

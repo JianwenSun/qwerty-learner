@@ -34,10 +34,10 @@ async function getChapterStats(dictionaryId: string, chapterId: number | null): 
     // 根据 chapter 是否为 null 构建不同的查询条件
     if (chapterId === null) {
       // 如果 chapter 为 null，查询所有 dict 匹配的记录
-      records = await db.sentenceChapterRecords.where({ dictionaryId }).toArray()
+      records = await db.sentenceChapterRecords.where({ dict: dictionaryId }).toArray()
     } else {
       // 如果 chapter 不为 null，查询 dict 和 chapter 都匹配的记录
-      records = await db.sentenceChapterRecords.where({ dictionaryId, chapterId }).toArray()
+      records = await db.sentenceChapterRecords.where({ dict: dictionaryId, chapter: chapterId }).toArray()
     }
 
     const exerciseCount = records.length

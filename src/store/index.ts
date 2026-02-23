@@ -1,7 +1,7 @@
 import atomForConfig from './atomForConfig'
 import { wordReviewInfoAtom } from './wordReviewInfoAtom'
 import { DISMISS_START_CARD_DATE_KEY, defaultFontSizeConfig } from '@/constants'
-import { wordDictionaryMap, sentenceDictionaryMap } from '@/resources/dictionary'
+import { wordDictionaryMap } from '@/resources/dictionary'
 import { correctSoundResources, DEFAULT_PRONUNCIATION_MALE, keySoundResources, sentenceCorrectSoundResources, sentenceWrongSoundResources, wrongSoundResources } from '@/resources/soundResource'
 import type {
   WordDictionary,
@@ -11,7 +11,6 @@ import type {
   WordDictationOpenBy,
   WordDictationType,
   LoopSentenceTimesOption,
-  SentenceDictionary,
   SentenceDictationType,
   PronunciationHumanType,
 } from '@/typings'
@@ -20,7 +19,6 @@ import { atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 import { sentenceReviewInfoAtom } from './sentenceReviewInfoAtom'
 import { SentenceReviewRecord } from '@/utils/db/sentenceRecord'
-
 // 导出一个变量来存储当前的更新计数
 export let wordDictionaryMapUpdateCount = 0;
 
@@ -109,19 +107,9 @@ export const sentenceReviewModeInfoAtom = sentenceReviewInfoAtom({
   reviewRecord: undefined as SentenceReviewRecord | undefined,
 })
 
-
 export const currentSentenceDictionaryIdAtom = atomWithStorage('currentSentenceDictionaryId', undefined as string | undefined)
-export const currentSentenceChapterIdAtom = atomWithStorage('currentSentenceChapter', undefined as number | undefined)
 
-export const currentSentenceDictionaryInfoAtom = atom<SentenceDictionary>((get) => {
-  const id = get(currentSentenceDictionaryIdAtom)
-  if (!id) {
-    return Object.values(sentenceDictionaryMap)[0]
-  }
-  return sentenceDictionaryMap[id]
-})
-
-export const currentSentenceChapterAtom = atomWithStorage('currentSentenceChapter', undefined as number | undefined)
+export const currentSentenceChapterIdAtom = atomWithStorage('currentSentenceChapterId', undefined as string | undefined)
 
 export const loopSentenceConfigAtom = atomForConfig<{ times: LoopSentenceTimesOption }>('loopSentenceConfig', {
   times: 1,
@@ -155,6 +143,10 @@ export const hintSentenceSoundsConfigAtom = atomForConfig('sentenceHintSoundsCon
   isOpenCorrectSound: true,
   wrongResource: sentenceWrongSoundResources[0],
   correctResource: sentenceCorrectSoundResources[0],
+})
+
+export const practiceConfigAtom = atomForConfig('practice', {
+  model: 'word',
 })
 
 export const pronunciationConfigAtom = atomForConfig('pronunciation', {

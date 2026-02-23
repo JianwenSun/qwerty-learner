@@ -2,7 +2,9 @@ import { SentenceTypingContext, SentenceTypingStateActionType } from '../../stor
 import type { SentenceTypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
 import SentenceComponent from './Sentence'
-import Detail from './components/Detail'
+import ChuckDetail from './components/ChuckDetail'
+import CustomDetail from './components/CustomDetail'
+import Progress from './components/Progress'
 import Translation from './components/Translation'
 import { getSentenceSoundUrl, SentenceAndSound } from '@/plugins/wxs/wxs'
 import { getSentenceSound } from '@/plugins/wxs/wxsApi'
@@ -13,7 +15,6 @@ import {
   pronunciationConfigAtom,
   sentenceReviewModeInfoAtom,
 } from '@/store'
-import { PronunciationConfig } from '@/typings'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import React from 'react'
@@ -30,16 +31,26 @@ export default function SentencePanel() {
 
   useEffect(() => {
     const loadCurrentSentence = async () => {
+      if (!state.chapterData.sentences || state.chapterData.sentences.length === 0) {
+        return
+      }
+
       const sentence = state.chapterData.sentences[state.chapterData.index]
-      const sentenceSoundId = await getSentenceSound(sentence.sentenceId)
-      const sentenceSoundUrl = getSentenceSoundUrl(sentenceSoundId, pronunciationConfig)
-      setCurrentSentence({ ...sentence, soundUrl: sentenceSoundUrl } as SentenceAndSound)
+
+      try {
+        const sentenceSoundId = await getSentenceSound(sentence.sentenceId)
+        const sentenceSoundUrl = getSentenceSoundUrl(sentenceSoundId, pronunciationConfig)
+        setCurrentSentence({ ...sentence, soundUrl: sentenceSoundUrl } as SentenceAndSound)
+      } catch (error) {
+        console.error('Error loading sentence:', error)
+      }
     }
+
     loadCurrentSentence()
   }, [state.chapterData.index, state.chapterData.sentences, pronunciationConfig])
 
-  const [sentenceComponentKey, setSentenceComponentKey] = useState(0)
-  const [showFinishView, setShowFinishView] = useState(false)
+  const [, setSentenceComponentKey] = useState(0)
+  const [showResultView, setShowResultView] = useState(false)
 
   const setSentenceReviewModeInfo = useSetAtom(sentenceReviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
@@ -123,12 +134,14 @@ export default function SentencePanel() {
     [setSentenceReviewModeInfo],
   )
 
-  const onShowFinishView = useCallback(() => {
-    setShowFinishView(true)
-  }, [showFinishView])
+  const onShowResultView = useCallback(
+    (shouldShow: boolean) => {
+      setShowResultView(shouldShow)
+    },
+    [setShowResultView],
+  )
 
   const onShowNextSentence = useCallback(() => {
-    setShowFinishView(false)
     if (state.chapterData.index < state.chapterData.sentences.length - 1 || currentSentenceExerciseCount < loopSentenceTimes - 1) {
       // 用户完成当前单词
       if (currentSentenceExerciseCount < loopSentenceTimes - 1) {
@@ -253,27 +266,32 @@ export default function SentencePanel() {
         </div>
       )}
 
-      <div className="container flex flex-grow flex-col items-center justify-center">
+      <div className="container flex h-full w-full flex-col items-center justify-center">
         {currentSentence && (
-          <div className="relative flex w-full justify-center" style={{ margin: '0 0 60px 0' }}>
+          <div className="relative flex w-full justify-center">
             {!state.isTyping && (
-              <div className="justify fixed inset-0 z-50 flex h-full w-full items-center justify-center bg-black/30 backdrop-blur-sm">
-                <p className="w-full select-none text-center text-xl text-gray-600 dark:text-gray-50">
-                  按任意键{state.timerData.time ? '继续' : '开始'}
-                </p>
+              <div className="justify absolute flex h-full w-full">
+                <div className="z-10 flex w-full items-center backdrop-blur-sm">
+                  <p className="w-full select-none text-center text-xl text-gray-600 dark:text-gray-50">
+                    按任意键{state.timerData.time ? '继续' : '开始'}
+                  </p>
+                </div>
               </div>
             )}
             <div className="relative" style={{ margin: '0 0 60px 0' }}>
               <SentenceComponent
                 sentenceAndSound={currentSentence}
+                isShowResultView={showResultView}
                 onShowNextSentence={onShowNextSentence}
-                onShowFinishView={onShowFinishView}
+                onShowResultView={onShowResultView}
               />
-              {showFinishView && <Detail sentence={currentSentence} />}
+              {showResultView &&
+                (currentSentence?.words ? <ChuckDetail sentence={currentSentence} /> : <CustomDetail sentence={currentSentence} />)}
             </div>
           </div>
         )}
       </div>
+      <Progress className={`mb-10 mt-auto ${state.isTyping ? 'opacity-100' : 'opacity-0'}`} />
     </div>
   )
 }

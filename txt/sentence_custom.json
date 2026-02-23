@@ -1,0 +1,90 @@
+{
+    "sentenceId": 145638,
+    "lessonId": 814,
+    "lessonCourseId": 6912,
+    "content": "I want to book a seat to New York.",
+    "chinese": "我想预定一张去纽约的机票。",
+    "explanation": "",
+    "tokens": [],
+    "words": null,
+    "chunks": [
+        {
+            "chunkIndex": 0,
+            "chunkKey": "145638:0",
+            "content": "I want to book a seat to New York.",
+            "chinese": "我想预定一张去纽约的机票。",
+            "clauseIndex": 0,
+            "sentenceFunction": "补充成分",
+            "wordIndexes": [
+                0
+            ]
+        }
+    ],
+    "clauses": [
+        {
+            "clauseIndex": 0,
+            "type": "主句",
+            "explanation": "",
+            "chunkIndexes": [
+                0
+            ]
+        }
+    ],
+    "practices": [
+        {
+            "id": 457782,
+            "kind": "custom",
+            "sort": 0,
+            "content": "I",
+            "chinese": "我",
+            "alignTokenIds": [],
+            "phonetic_uk": "/aɪ/",
+            "phonetic_us": "/aɪ/",
+            "part_of_speech": "主语（代词）"
+        },
+        {
+            "id": 457783,
+            "kind": "custom",
+            "sort": 0,
+            "content": "want to book",
+            "chinese": "想要预订",
+            "alignTokenIds": [],
+            "phonetic_uk": "/wɒnt/ /tuː/ /bʊk/",
+            "phonetic_us": "/wɑːnt/ /tuː/ /bʊk/",
+            "part_of_speech": "谓语（动词短语）"
+        },
+        {
+            "id": 457784,
+            "kind": "custom",
+            "sort": 0,
+            "content": "a seat",
+            "chinese": "一个座位",
+            "alignTokenIds": [],
+            "phonetic_uk": "/ə/ /siːt/",
+            "phonetic_us": "/ə/ /siːt/",
+            "part_of_speech": "宾语（名词短语）"
+        },
+        {
+            "id": 457785,
+            "kind": "custom",
+            "sort": 0,
+            "content": "to New York.",
+            "chinese": "去纽约的",
+            "alignTokenIds": [],
+            "phonetic_uk": "/tuː/ /njuː/ /jɔːk/",
+            "phonetic_us": "/tuː/ /nuː/ /jɔːrk/",
+            "part_of_speech": "后置定语（介词短语）"
+        },
+        {
+            "id": 457786,
+            "kind": "custom",
+            "sort": 0,
+            "content": "I want to book a seat to New York.",
+            "chinese": "我想预订一个去纽约的座位。",
+            "alignTokenIds": [],
+            "phonetic_uk": "/aɪ/ /wɒnt/ /tuː/ /bʊk/ /ə/ /siːt/ /tuː/ /njuː/ /jɔːk/",
+            "phonetic_us": "/aɪ/ /wɑːnt/ /tuː/ /bʊk/ /ə/ /siːt/ /tuː/ /nuː/ /jɔːrk/",
+            "part_of_speech": "主语 + 谓语 + 宾语 + 后置定语"
+        }
+    ]
+}

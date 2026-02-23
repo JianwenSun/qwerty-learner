@@ -34,11 +34,9 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
 
   useEffect(() => {
     // 打印添加键盘事件监听器的日志
-    console.log(`[${new Date().toISOString()}] 添加键盘事件监听器`)
     window.addEventListener('keydown', onKeydown)
     return () => {
       // 打印移除键盘事件监听器的日志
-      console.log(`[${new Date().toISOString()}] 移除键盘事件监听器`)
       window.removeEventListener('keydown', onKeydown)
     }
   }, [onKeydown])

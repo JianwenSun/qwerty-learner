@@ -1,0 +1,259 @@
+{
+    "sentenceId": 173414,
+    "lessonId": 914,
+    "lessonCourseId": 8486,
+    "content": "My mother's favorite food is fish.",
+    "chinese": "我妈妈最喜爱的食物是鱼。",
+    "explanation": "该句为典型的主系表结构，主语由名词短语充当，系动词连接表语，表语说明主语的性质或身份，整体构成一个完整的判断句，体现英语中be动词的基本用法。",
+    "tokens": [
+        {
+            "id": 0,
+            "text": "My",
+            "pos": "PRON",
+            "dep": "poss",
+            "head": 1
+        },
+        {
+            "id": 1,
+            "text": "mother",
+            "pos": "NOUN",
+            "dep": "poss",
+            "head": 4
+        },
+        {
+            "id": 2,
+            "text": "'s",
+            "pos": "PART",
+            "dep": "case",
+            "head": 1
+        },
+        {
+            "id": 3,
+            "text": "favorite",
+            "pos": "ADJ",
+            "dep": "amod",
+            "head": 4
+        },
+        {
+            "id": 4,
+            "text": "food",
+            "pos": "NOUN",
+            "dep": "nsubj",
+            "head": 5
+        },
+        {
+            "id": 5,
+            "text": "is",
+            "pos": "AUX",
+            "dep": "ROOT",
+            "head": 5
+        },
+        {
+            "id": 6,
+            "text": "fish",
+            "pos": "NOUN",
+            "dep": "attr",
+            "head": 5
+        },
+        {
+            "id": 7,
+            "text": ".",
+            "pos": "PUNCT",
+            "dep": "punct",
+            "head": 5
+        }
+    ],
+    "words": [
+        {
+            "surface": "My",
+            "display": "My",
+            "tokenIds": [
+                0
+            ],
+            "pos": "PRON",
+            "posZh": "代词",
+            "chinese": "我的",
+            "phonetic_uk": "/maɪ/",
+            "phonetic_us": "/maɪ/"
+        },
+        {
+            "surface": "mother's",
+            "display": "mother's",
+            "tokenIds": [
+                1,
+                2
+            ],
+            "pos": "NOUN",
+            "posZh": "名词",
+            "chinese": "noun 母亲的；妈妈的",
+            "phonetic_uk": "/ˈmʌðəz/",
+            "phonetic_us": "/ˈmʌðɚz/"
+        },
+        {
+            "surface": "favorite",
+            "display": "favorite",
+            "tokenIds": [
+                3
+            ],
+            "pos": "ADJ",
+            "posZh": "形容词",
+            "chinese": "喜欢的事物, 幸运儿, 特别受喜爱的, 喜爱的, 宠爱的, 中意的",
+            "phonetic_uk": "/ˈfeɪv.ɹɪt/",
+            "phonetic_us": "/ˈfeɪv.ɹɪt/"
+        },
+        {
+            "surface": "food",
+            "display": "food",
+            "tokenIds": [
+                4
+            ],
+            "pos": "NOUN",
+            "posZh": "名词",
+            "chinese": "食物, 养料",
+            "phonetic_uk": "/fuːd/",
+            "phonetic_us": "/fud/"
+        },
+        {
+            "surface": "is",
+            "display": "is",
+            "tokenIds": [
+                5
+            ],
+            "pos": "AUX",
+            "posZh": "助动词",
+            "chinese": "be的现在式第三人称",
+            "phonetic_uk": "/ɪz/",
+            "phonetic_us": "/ɪz/"
+        },
+        {
+            "surface": "fish",
+            "display": "fish",
+            "tokenIds": [
+                6
+            ],
+            "pos": "NOUN",
+            "posZh": "名词",
+            "chinese": "鱼, 鱼肉, 鱼类, 接合板, 钓, 钓鱼, 查出, 用接合板连接, 捕鱼, 用钩捞取, 摸索寻找",
+            "phonetic_uk": "/fɪʃ/",
+            "phonetic_us": "/fɪʃ/"
+        }
+    ],
+    "chunks": [
+        {
+            "chunkIndex": 0,
+            "chunkKey": "173414:0",
+            "content": "My mother's favorite food",
+            "chinese": "我妈妈最喜爱的食物",
+            "clauseIndex": 0,
+            "sentenceFunction": "主语",
+            "grammarType": "名词短语",
+            "explanation": "在句中作主语，指明句子所述的主体，由所有格、形容词和名词共同构成复合名词短语。",
+            "wordIndexes": [
+                0,
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "chunkIndex": 1,
+            "chunkKey": "173414:1",
+            "content": "is",
+            "chinese": "是",
+            "clauseIndex": 0,
+            "sentenceFunction": "系动词",
+            "grammarType": "系动词",
+            "explanation": "连接主语与表语，表示等同或属性关系，用于构成谓语部分，体现主语的状态或特征。",
+            "wordIndexes": [
+                4
+            ]
+        },
+        {
+            "chunkIndex": 2,
+            "chunkKey": "173414:2",
+            "content": "fish.",
+            "chinese": "鱼。",
+            "clauseIndex": 0,
+            "sentenceFunction": "表语",
+            "grammarType": "名词短语",
+            "explanation": "作为表语，位于系动词之后，用来说明主语的身份或类别，与主语形成语义上的等同关系。",
+            "wordIndexes": [
+                5
+            ]
+        }
+    ],
+    "clauses": [
+        {
+            "clauseIndex": 0,
+            "type": "简单句",
+            "explanation": "该句为典型的主系表结构，主语由名词短语充当，系动词连接表语，表语说明主语的性质或身份，整体构成一个完整的判断句，体现英语中be动词的基本用法。",
+            "chunkIndexes": [
+                0,
+                1,
+                2
+            ]
+        }
+    ],
+    "practices": [
+        {
+            "id": 708506,
+            "kind": "chunk",
+            "sort": 1,
+            "content": "My mother's favorite food",
+            "chinese": "我妈妈最喜爱的食物",
+            "alignTokenIds": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "phonetic_uk": "/maɪ/ /ˈmʌðəz/ /ˈfeɪv.ɹɪt/ /fuːd/",
+            "phonetic_us": "/maɪ/ /ˈmʌðərz/ /ˈfeɪv.ɹɪt/ [fu̟(ː)d]",
+            "part_of_speech": "主语"
+        },
+        {
+            "id": 708507,
+            "kind": "chunk",
+            "sort": 2,
+            "content": "is",
+            "chinese": "是",
+            "alignTokenIds": [
+                2
+            ],
+            "phonetic_uk": "/ɪz/",
+            "phonetic_us": "/ɪz/",
+            "part_of_speech": "系动词"
+        },
+        {
+            "id": 708508,
+            "kind": "chunk",
+            "sort": 3,
+            "content": "fish.",
+            "chinese": "鱼。",
+            "alignTokenIds": [
+                6
+            ],
+            "phonetic_uk": "/fɪʃ/",
+            "phonetic_us": "/fɪʃ/",
+            "part_of_speech": "表语"
+        },
+        {
+            "id": 708509,
+            "kind": "sentence",
+            "sort": 4,
+            "content": "My mother's favorite food is fish.",
+            "chinese": "我妈妈最喜爱的食物是鱼。",
+            "alignTokenIds": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "part_of_speech": "主语 + 系动词 + 表语"
+        }
+    ]
+}

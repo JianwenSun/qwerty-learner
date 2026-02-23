@@ -1,4 +1,4 @@
-import { getPosTypeColor, SENTENCE_FUNCTION_COLOR_MAP } from '@/color'
+import { getFunctionTypeColor, getPosTypeColor } from '@/color'
 import type { Sentence } from '@/plugins/wxs/wxs'
 import type React from 'react'
 import { useState } from 'react'
@@ -7,7 +7,7 @@ interface DetailProps {
   sentence: Sentence
 }
 
-const Detail: React.FC<DetailProps> = ({ sentence }) => {
+const ChuckDetail: React.FC<DetailProps> = ({ sentence }) => {
   // 提取单词和对应的词性、音标
   const words = sentence.words || []
   const chunks = sentence.chunks || []
@@ -44,9 +44,9 @@ const Detail: React.FC<DetailProps> = ({ sentence }) => {
 
                 {/* 短语块 */}
                 <div
-                  className={`flex min-w-[60px] max-w-[400px] flex-col items-center justify-center rounded-lg ${
-                    SENTENCE_FUNCTION_COLOR_MAP[chunk.sentenceFunction] || 'bg-gray-900'
-                  } p-4`}
+                  className={`flex min-w-[60px] max-w-[400px] flex-col items-center justify-center rounded-lg ${getFunctionTypeColor(
+                    chunk.sentenceFunction,
+                  )} p-4`}
                 >
                   <h3 className="mb-2 text-center text-2xl font-bold text-white">{chunk.content}</h3>
                   <div className="mb-2 h-1 w-3/4 bg-white/50"></div>
@@ -100,4 +100,4 @@ const Detail: React.FC<DetailProps> = ({ sentence }) => {
   )
 }
 
-export default Detail
+export default ChuckDetail

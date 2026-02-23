@@ -2,6 +2,7 @@
 // 词性类型颜色映射表
 export const POS_TYPE_COLOR_MAP: Record<string, string> = {
     'v.': 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200', // 动词
+    'verb.': 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200', // 动词
     'vt.': 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200', // 及物动词
     'vi.': 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200', // 不及物动词
     'n.': 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200', // 名词
@@ -14,6 +15,7 @@ export const POS_TYPE_COLOR_MAP: Record<string, string> = {
     'phrase.': 'bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-200', // 短语
     'num.': 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200', // 数词
     'int.': 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200', // 感叹词
+    'intj.': 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200', // 感叹词
     'aux.': 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200', // 助动词
 }
 
@@ -29,13 +31,14 @@ export const getPosTypeColor = (pos: string): string => {
 }
 
 // 根据句子成分获取颜色
-export const SENTENCE_FUNCTION_COLOR_MAP: Record<string, string> = {
+const SENTENCE_FUNCTION_COLOR_MAP: Record<string, string> = {
     不定式标记: 'bg-blue-900',
     不定式补语: 'bg-blue-800',
     主句: 'bg-red-900',
     主语: 'bg-red-800',
     从句: 'bg-orange-900',
     伴随状语: 'bg-orange-800',
+    应答状语: 'bg-orange-700',
     原因状语从句: 'bg-yellow-900',
     地点状语: 'bg-yellow-800',
     宾语: 'bg-green-900',
@@ -56,4 +59,15 @@ export const SENTENCE_FUNCTION_COLOR_MAP: Record<string, string> = {
     连接词: 'bg-rose-800',
     限制性定语从句: 'bg-gray-900',
     非限制性定语从句: 'bg-gray-800',
+}
+
+export const getFunctionTypeColor = (fun: string): string => {
+    // 遍历 SENTENCE_FUNCTION_COLOR_MAP，检查 key 是否包含 fun
+    for (const [key, color] of Object.entries(SENTENCE_FUNCTION_COLOR_MAP)) {
+        if (key.includes(fun.toLowerCase())) {
+            return color
+        }
+    }
+    // 如果没有找到匹配的，返回默认颜色
+    return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200'
 }

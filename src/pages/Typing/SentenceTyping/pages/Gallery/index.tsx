@@ -1,7 +1,7 @@
+import { useSentenceDictionaries } from '../../hooks/useSentenceHooks'
 import SentenceDictionaryGroup from './SentenceDictionaryGroup'
 import { SentenceDictionaryTypeTabSwitcher } from './WordDictionaryTypeTabSwitcher'
 import Layout from '@/components/Layout'
-import { sentenceDictionaries } from '@/resources/dictionary'
 import { isOpenDarkModeAtom } from '@/store'
 import type { Dictionary } from '@/typings'
 import groupBy, { groupByDictTags } from '@/utils/groupBy'
@@ -19,6 +19,8 @@ export default function SentenceGalleryPage() {
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
   const [forceUpdate, setForceUpdate] = useState(0)
 
+  const { data: sentenceDictionaries, loading } = useSentenceDictionaries()
+
   // 确保每次路由变化时都重新计算数据
   useEffect(() => {
     // 强制重新渲染组件
@@ -27,14 +29,14 @@ export default function SentenceGalleryPage() {
 
   const { groupedByCategoryAndTag } = useMemo(() => {
     // 为了确保数据重新计算，使用 forceUpdate 作为依赖
-    const groupedByCategory = Object.entries(groupBy(sentenceDictionaries, (dict) => dict.category))
+    const groupedByCategory = Object.entries(groupBy(sentenceDictionaries || [], (dict) => dict.category))
     const groupedByCategoryAndTag = groupedByCategory.map(
       ([category, dicts]) => [category, groupByDictTags(dicts)] as [string, Record<string, Dictionary[]>],
     )
     return {
       groupedByCategoryAndTag,
     }
-  }, [forceUpdate]) // 添加 forceUpdate 作为依赖
+  }, [forceUpdate, sentenceDictionaries]) // 添加 forceUpdate 作为依赖
 
   const onBack = useCallback(() => {
     navigate('/')

@@ -26,12 +26,14 @@ import { useImmer } from 'use-immer'
 
 const SentenceComponent = React.memo(function SentenceComponent({
   sentenceAndSound,
+  isShowResultView,
   onShowNextSentence,
-  onShowFinishView,
+  onShowResultView,
 }: {
   sentenceAndSound: SentenceAndSound
+  isShowResultView: boolean
   onShowNextSentence: () => void
-  onShowFinishView: () => void
+  onShowResultView: (shouldShow: boolean) => void
 }) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(SentenceTypingContext)!
@@ -45,7 +47,6 @@ const SentenceComponent = React.memo(function SentenceComponent({
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
   const [isHoveringSentence, setIsHoveringSentence] = useState(false)
 
-  const [showFinishView, setShowFinishView] = useState(false)
   const [showNextSentence, setShowNextSentence] = useState(false)
 
   // 添加状态，用于跟踪是否已经自动播放过单词发音
@@ -115,17 +116,23 @@ const SentenceComponent = React.memo(function SentenceComponent({
         case SentenceUpdateActionType.Space: {
           updateAction.event.preventDefault()
 
-          if (showFinishView && sentenceState.isFinished) {
+          if (isShowResultView && !sentenceState.isFinished) {
+            onShowResultView(false)
+            break
+          }
+
+          if (isShowResultView && sentenceState.isFinished) {
+            onShowResultView(false)
             setShowNextSentence(true)
             break
           }
 
           const [justifyType, newState] = SentenceState.justifyOrMoveToNext(sentenceState)
-          if (justifyType === JustifyType.JUSTIFY) {
+          if (justifyType === JustifyType.COMPLETE) {
             if (newState.hasWrong) {
               playBeepSound()
             } else {
-              setShowFinishView(true)
+              onShowResultView(true)
               playHintSound()
             }
           }
@@ -163,15 +170,6 @@ const SentenceComponent = React.memo(function SentenceComponent({
       playAudio()
     }
   }, [state.isTyping, hasAutoPlayed])
-
-  useEffect(() => {
-    if (showFinishView) {
-      // dispatch({ type: SentenceTypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
-      onShowFinishView()
-      setShowFinishView(false)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [showFinishView])
 
   useEffect(() => {
     if (showNextSentence) {

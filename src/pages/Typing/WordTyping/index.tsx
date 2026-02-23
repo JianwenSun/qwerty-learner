@@ -25,15 +25,9 @@ import { useCallback, useEffect, useState } from 'react'
 import { useImmerReducer } from 'use-immer'
 
 const App: React.FC = () => {
-  console.log(`[${new Date().toISOString()}] App 初始化`)
-
   const [state, dispatch] = useImmerReducer(wordTypingReducer, structuredClone(initialWordTypingState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const { words } = useWordList()
-
-  // 添加日志验证 words 的值
-  console.log('[WordTypingPage] words:', words)
-  console.log('[WordTypingPage] words length:', words?.length)
 
   const [currentWordDictionaryId, setCurrentWordDictionaryId] = useAtom(currentWordDictionaryIdAtom)
   const setCurrentWordChapter = useSetAtom(currentWordChapterAtom)
@@ -60,11 +54,9 @@ const App: React.FC = () => {
     const onBlur = () => {
       dispatch({ type: WordTypingStateActionType.SET_IS_TYPING, payload: false })
     }
-    console.log('Blur event listener added in Typing/index.tsx')
     window.addEventListener('blur', onBlur)
 
     return () => {
-      console.log('Blur event listener removed in Typing/index.tsx')
       window.removeEventListener('blur', onBlur)
     }
   }, [dispatch])
@@ -75,16 +67,13 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
-      console.log('[Typing/index.tsx] keydown event:', e)
       if (e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
         e.preventDefault()
         dispatch({ type: WordTypingStateActionType.SET_IS_TYPING, payload: true })
       }
     }
-    console.log('Keydown event listener added in Typing/index.tsx')
     window.addEventListener('keydown', onKeyDown)
     return () => {
-      console.log('Keydown event listener removed in Typing/index.tsx')
       window.removeEventListener('keydown', onKeyDown)
     }
   }, [dispatch])

@@ -12,7 +12,7 @@ const CATEGORY_MAP: Record<string, string> = {
     '172': '其他',
 }
 
-function sentenceDictionaryConverter(lesson: Lesson): SentenceDictionary {
+export function sentenceDictionaryConverter(lesson: Lesson): SentenceDictionary {
     return {
         id: lesson.id.toString(),
         name: lesson.name,
@@ -27,3 +27,5 @@ function sentenceDictionaryConverter(lesson: Lesson): SentenceDictionary {
 export async function sentenceDictionaryResourcesPromise(): Promise<SentenceDictionary[]> {
     return getLessons().then((lessons) => lessons.map(sentenceDictionaryConverter));
 }
+
+

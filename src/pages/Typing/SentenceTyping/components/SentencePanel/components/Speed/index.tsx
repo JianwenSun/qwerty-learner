@@ -1,10 +1,10 @@
-import { WordTypingContext } from '../../store'
 import InfoBox from './InfoBox'
+import { SentenceTypingContext } from '@/pages/Typing/SentenceTyping/store'
 import { useContext } from 'react'
 
 export default function Speed() {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state } = useContext(WordTypingContext)!
+  const { state } = useContext(SentenceTypingContext)!
   const seconds = state.timerData.time % 60
   const minutes = Math.floor(state.timerData.time / 60)
   const secondsString = seconds < 10 ? '0' + seconds : seconds + ''

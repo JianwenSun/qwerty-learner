@@ -178,7 +178,7 @@ export default function WordPanel() {
           </div>
         )}
       </div>
-      <Progress className={`mb-10 mt-auto ${state.isTyping ? 'opacity-100' : 'opacity-0'}`} />
+      <Progress className={`mb-10 ${state.isTyping ? 'opacity-100' : 'opacity-0'}`} />
     </div>
   )
 }

@@ -1,4 +1,5 @@
-import { sentenceDictionaryResourcesPromise } from '@/plugins/sb/adepter'
+import { sentenceDictionaryConverter } from '@/plugins/sb/adepter'
+import { getLessons } from '@/plugins/wxs/wxsApi';
 import { updateWordDictionaryMap } from '@/store';
 import type { WordDictionary, SentenceDictionary } from '@/typings/index'
 import { calcChapterCount } from '@/utils'
@@ -25,23 +26,3 @@ export function updateWordDictionaries() {
 
 // 初始调用一次
 updateWordDictionaries();
-
-// 初始化为空数组
-export const sentenceDictionaries: SentenceDictionary[] = [];
-
-// 异步初始化 sentenceDictionaries
-sentenceDictionaryResourcesPromise().then((result) => {
-  // 清空数组并添加结果
-  sentenceDictionaries.length = 0;
-  sentenceDictionaries.push(...result);
-});
-
-// 初始化为空对象
-export const sentenceDictionaryMap: Record<string, SentenceDictionary> = {};
-
-// 异步初始化 sentenceDictionaryMap
-sentenceDictionaryResourcesPromise().then((result) => {
-  // 清空对象并添加结果
-  Object.keys(sentenceDictionaryMap).forEach(key => delete sentenceDictionaryMap[key]);
-  Object.assign(sentenceDictionaryMap, Object.fromEntries(result.map((dict) => [dict.id, dict])));
-});

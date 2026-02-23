@@ -31,9 +31,6 @@ import { useImmer } from 'use-immer'
 const vowelLetters = ['A', 'E', 'I', 'O', 'U']
 
 export default function WordComponent({ word, onFinish }: { word: Word; onFinish: () => void }) {
-  // 打印组件初始化日志，包含时间戳和单词名称
-  console.log(`[${new Date().toISOString()}] WordComponent 初始化: 单词 "${word.name}"`)
-
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(WordTypingContext)!
   const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
@@ -86,7 +83,6 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
   // 当单词变化时，重置自动播放标志
   useEffect(() => {
-    console.log(`[${new Date().toISOString()}] [Word/index.tsx] 单词变化，重置自动播放标志: ${word.name}`)
     setHasAutoPlayed(false)
   }, [word.name])
 
@@ -143,12 +139,6 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   }, [])
 
   useEffect(() => {
-    // 打印自动播放单词发音的日志
-    console.log(
-      `[${new Date().toISOString()}] [Word/index.tsx] 自动播放单词发音检查: inputWord.length=${wordState.inputWord.length}, isTyping=${
-        state.isTyping
-      }, hasAutoPlayed=${hasAutoPlayed}`,
-    )
     if (wordState.inputWord.length === 0 && state.isTyping && !hasAutoPlayed) {
       console.log(`[${new Date().toISOString()}] [Word/index.tsx] 自动播放单词发音`)
       const playAudio = async () => {

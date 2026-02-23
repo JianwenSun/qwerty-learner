@@ -122,6 +122,8 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                     <button className="absolute right-7 top-5" type="button" onClick={handleClose} title="关闭对话框">
                       <IconXMark className="h-6 w-6 text-gray-400" />
                     </button>
+                    <Dialog.Title className="sr-only">分享图片</Dialog.Title>
+                    <Dialog.Description className="sr-only">保存你的打字练习成果图片</Dialog.Description>
                     <div className="h-152 w-116">
                       {imageURL ? (
                         <img src={imageURL} className="h-auto w-full" />

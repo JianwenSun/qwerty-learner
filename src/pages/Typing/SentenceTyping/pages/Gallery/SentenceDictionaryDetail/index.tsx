@@ -1,14 +1,12 @@
-import { useDeleteWordRecord } from '../../../../../../utils/db'
+import { useCurrentSentenceChapterList, useSentenceChapterList } from '../../../hooks/useSentenceHooks'
 import SentenceChapter from '../SentenceChapter'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Tabs, TabsContent } from '@/components/ui/tabs'
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
-import { LessonCourse } from '@/plugins/wxs/wxs'
-import { getLessonDetail } from '@/plugins/wxs/wxsApi'
-import { currentSentenceChapterAtom, currentSentenceDictionaryIdAtom, sentenceReviewModeInfoAtom } from '@/store'
+import { currentSentenceChapterIdAtom, currentSentenceDictionaryIdAtom, sentenceReviewModeInfoAtom } from '@/store'
 import type { SentenceDictionary } from '@/typings'
 import { useAtom, useSetAtom } from 'jotai'
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import MajesticonsPaperFoldTextLine from '~icons/majesticons/paper-fold-text-line'
 
@@ -19,55 +17,22 @@ enum Tab {
 }
 
 export default function SentenceDictionaryDetail({ dictionary }: { dictionary: SentenceDictionary }) {
-  const [currentChapter, setCurrentChapter] = useAtom(currentSentenceChapterAtom)
-  const [currentSentenceDictionaryId, setCurrentSentenceDictionaryId] = useAtom(currentSentenceDictionaryIdAtom)
+  const [currentSentenceChapterId, setCurrentSentenceChapterId] = useAtom(currentSentenceChapterIdAtom)
+  const [, setCurrentSentenceDictionaryId] = useAtom(currentSentenceDictionaryIdAtom)
   const [curTab, setCurTab] = useState<Tab>(Tab.Chapters)
   const setSentenceReviewModeInfo = useSetAtom(sentenceReviewModeInfoAtom)
   const navigate = useNavigate()
-  const { deleteWordRecord } = useDeleteWordRecord()
-  const [reload, setReload] = useState(false)
 
-  const chapter = useMemo(
-    () => (dictionary.id === currentSentenceDictionaryId ? currentChapter : 0),
-    [currentChapter, currentSentenceDictionaryId, dictionary.id],
-  )
-
-  const [chapterDetail, setChapterDetail] = useState<LessonCourse[]>([])
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    const loadChapterDetail = async () => {
-      try {
-        setIsLoading(true)
-        let detail = await getLessonDetail(Number(dictionary.id))
-        setChapterDetail(detail.lesson_courses)
-      } catch (error) {
-        console.error('Error loading chapter detail:', error)
-        setChapterDetail([])
-      } finally {
-        setIsLoading(false)
-      }
-    }
-
-    loadChapterDetail()
-  }, [dictionary.id, chapter])
-
-  const onDelete = useCallback(
-    async (word: string) => {
-      await deleteWordRecord(word, dictionary.id)
-      setReload((old) => !old)
-    },
-    [deleteWordRecord, dictionary.id],
-  )
+  const { data: chapters, loading: isLoading } = useSentenceChapterList(dictionary.id)
 
   const onChangeChapter = useCallback(
     (chapterId: number) => {
       setCurrentSentenceDictionaryId(dictionary.id)
-      setCurrentChapter(chapterId)
+      setCurrentSentenceChapterId(chapterId.toString())
       setSentenceReviewModeInfo((old) => ({ ...old, isReviewMode: false }))
       navigate(`/sentence-typing`)
     },
-    [dictionary.id, navigate, setCurrentChapter, setCurrentSentenceDictionaryId, setSentenceReviewModeInfo],
+    [dictionary.id, navigate, currentSentenceChapterId, setCurrentSentenceDictionaryId, setSentenceReviewModeInfo],
   )
 
   const handleTabChange = useCallback(
@@ -108,15 +73,15 @@ export default function SentenceDictionaryDetail({ dictionary }: { dictionary: S
                     <div className="h-8 w-8 animate-spin rounded-full border-b-2 border-primary"></div>
                   </div>
                 ) : (
-                  chapterDetail.map((chapter) => (
+                  chapters?.map((chapter) => (
                     <SentenceChapter
                       key={`${chapter.id}`}
                       chapter={chapter}
-                      checked={chapter.id === currentChapter}
+                      checked={chapter.id.toString() === currentSentenceChapterId}
                       dictionaryId={dictionary.id}
                       onChange={onChangeChapter}
                     />
-                  ))
+                  )) || []
                 )}
               </div>
             </ScrollArea>

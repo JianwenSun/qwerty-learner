@@ -1,8 +1,7 @@
 import { db } from '.'
-import type { TErrorWordData } from '@/pages/Typing/WordTyping/pages/Gallery/hooks/useErrorWords'
-import type { Sentence } from '@/typings'
 import { useEffect, useState } from 'react'
 import { SentenceReviewRecord } from './sentenceRecord'
+import { Sentence } from '@/plugins/wxs/wxs'
 
 export function useGetLatestSentenceReviewRecord(dictID: string) {
   const [sentenceReviewRecord, setSentenceReviewRecord] = useState<SentenceReviewRecord | undefined>(undefined)

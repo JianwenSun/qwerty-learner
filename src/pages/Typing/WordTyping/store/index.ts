@@ -108,9 +108,6 @@ export const wordTypingReducer = (state: WordTypingState, action: WordTypingStat
       state.isShowSkip = action.payload
       break
     case WordTypingStateActionType.SET_IS_TYPING:
-      if (action.payload === false) {
-        console.log('Setting isTyping to false (SET_IS_TYPING)')
-      }
       state.isTyping = action.payload
       break
 

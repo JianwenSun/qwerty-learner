@@ -1,39 +1,85 @@
-import Tooltip from '@/components/Tooltip'
-import { Link, useLocation } from 'react-router-dom'
+import { practiceConfigAtom } from '@/store'
+import { Listbox, Transition } from '@headlessui/react'
+import { useAtom } from 'jotai'
+import { Fragment, useCallback, useEffect } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
+import IconCheck from '~icons/tabler/check'
+import IconChevronDown from '~icons/tabler/chevron-down'
 
-const PracticeModeSwitcher = () => {
+const PracticeSwitcher = () => {
+  const [practiceConfig, setPracticeConfig] = useAtom(practiceConfigAtom)
+
   const location = useLocation()
+  const navigate = useNavigate()
+
   const isWordTyping = location.pathname.startsWith('/word-typing')
   const isSentenceTyping = location.pathname.startsWith('/sentence-typing')
 
+  const onChangePracticeModel = useCallback(
+    (value: string) => {
+      setPracticeConfig((old) => ({
+        ...old,
+        model: value,
+      }))
+      if (value === 'word') {
+        if (!isWordTyping) navigate('/word-typing')
+      } else if (value === 'sentence') {
+        if (!isSentenceTyping) navigate('/sentence-typing')
+      }
+    },
+    [setPracticeConfig, isWordTyping, isSentenceTyping, navigate],
+  )
+
+  // 在组件初始化时，根据 practiceConfig.model 的值自动跳转页面
+  useEffect(() => {
+    if (practiceConfig.model === 'word') {
+      if (!isWordTyping) navigate('/word-typing')
+    } else if (practiceConfig.model === 'sentence') {
+      if (!isSentenceTyping) navigate('/sentence-typing')
+    }
+  }, [practiceConfig.model, isWordTyping, isSentenceTyping, navigate])
+
+  // 模式选项
+  const modeOptions = [
+    { value: 'word', label: '单词' },
+    { value: 'sentence', label: '句子' },
+  ]
+
+  // 确保 practiceConfig.model 始终有一个定义的值
+  const modelValue = practiceConfig.model || 'word'
+
   return (
-    <div className="flex space-x-2">
-      <Tooltip content="单词练习">
-        <Link
-          to="/word-typing"
-          className={`rounded-md px-3 py-1 text-sm font-medium transition-colors duration-300 ${
-            isWordTyping
-              ? 'bg-indigo-500 text-white'
-              : 'bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600'
-          }`}
-        >
-          单词
-        </Link>
-      </Tooltip>
-      <Tooltip content="句子练习">
-        <Link
-          to="/sentence-typing"
-          className={`rounded-md px-3 py-1 text-sm font-medium transition-colors duration-300 ${
-            isSentenceTyping
-              ? 'bg-indigo-500 text-white'
-              : 'bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600'
-          }`}
-        >
-          句子
-        </Link>
-      </Tooltip>
+    <div className="relative">
+      <Listbox value={modelValue} onChange={onChangePracticeModel}>
+        <div className="relative">
+          <Listbox.Button className="listbox-button w-[100px]">
+            <span>{modeOptions.find((option) => option.value === modelValue)?.label || '单词'}</span>
+            <span>
+              <IconChevronDown className="focus:outline-none" />
+            </span>
+          </Listbox.Button>
+          <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
+            <Listbox.Options className="listbox-options">
+              {modeOptions.map((option) => (
+                <Listbox.Option key={option.value} value={option.value}>
+                  {({ selected }) => (
+                    <>
+                      <span>{option.label}</span>
+                      {selected ? (
+                        <span className="listbox-options-icon">
+                          <IconCheck className="focus:outline-none" />
+                        </span>
+                      ) : null}
+                    </>
+                  )}
+                </Listbox.Option>
+              ))}
+            </Listbox.Options>
+          </Transition>
+        </div>
+      </Listbox>
     </div>
   )
 }
 
-export default PracticeModeSwitcher
+export default PracticeSwitcher

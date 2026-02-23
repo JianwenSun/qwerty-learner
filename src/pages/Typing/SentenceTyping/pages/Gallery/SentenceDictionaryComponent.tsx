@@ -1,7 +1,7 @@
 import SentenceDictionaryDetail from './SentenceDictionaryDetail'
 import { useDictionaryStats } from './hooks/useDictionaryStats'
 import bookCover from '@/assets/book-cover.png'
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
+import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import useIntersectionObserver from '@/hooks/useIntersectionObserver'
 import { currentSentenceDictionaryIdAtom } from '@/store'
@@ -69,7 +69,7 @@ export default function SentenceDictionaryComponent({ dictionary }: Props) {
               </TooltipProvider>
 
               <p className={`mb-0.5 text-sm font-bold  ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>
-                {dictionary.length} 句
+                {dictionary.length} 章
               </p>
               <div className=" flex w-[calc(100%-60px)] items-center pt-2">
                 {progress > 0 && (
