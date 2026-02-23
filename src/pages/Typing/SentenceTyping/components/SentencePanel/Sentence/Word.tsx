@@ -92,7 +92,11 @@ export default function Word({ word, visible = true, onSelect }: Props) {
         maxWidth: '100%',
         wordBreak: 'break-all',
         cursor: onSelect ? 'pointer' : 'text',
-        userSelect: 'text',
+        userSelect: 'none',
+        WebkitUserSelect: 'none',
+        MozUserSelect: 'none',
+        msUserSelect: 'none',
+        WebkitTouchCallout: 'none',
       }}
       onClick={() => onSelect?.(word)}
     >
