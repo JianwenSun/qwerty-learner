@@ -213,6 +213,12 @@ export default function SentencePanel() {
     return () => clearInterval(intervalId)
   }, [state.isTyping, dispatch])
 
+  useEffect(() => {
+    if (state.isFinished) {
+      setIsShowTranslation(false)
+    }
+  }, [state.isFinished, setIsShowTranslation])
+
   // 添加点击事件监听，点击视图外区域时收起 Translation
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -262,7 +268,6 @@ export default function SentencePanel() {
           </>
         )}
       </div>
-      {/* Translation 组件 - 带动画效果 */}
       {currentSentence && (
         <div
           ref={translationRef}
