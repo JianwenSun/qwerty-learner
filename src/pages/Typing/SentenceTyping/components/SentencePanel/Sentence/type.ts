@@ -1,5 +1,6 @@
 import { Sentence } from '@/plugins/wxs/wxs'
 import { immerable } from 'immer'
+import { ChuckIndex, SentenceSymbol, SentenceSymbols } from '../../../store/type'
 
 export enum JustifyType {
   MOVE_TO_NEXT_WORD = 'MOVE_TO_NEXT_WORD',
@@ -92,16 +93,6 @@ export class WordContent implements ChuckIndex {
   }
 }
 
-export interface ChuckIndex {
-  index: number
-}
-
-export type SentenceSymbols = ',' | '.' | ';' | ':' | '!' | '?' | '(' | ')' | '[' | ']' | '{' | '}' | '"' | '\'' | '-' | '...'
-
-export interface SentenceSymbol extends ChuckIndex {
-  symbol: SentenceSymbols
-}
-
 export class SentenceDisplayContent {
   [immerable] = true
   wordCount: number
@@ -180,6 +171,12 @@ export class SentenceDisplayContent {
     state.words[state.currentWordIndex].isCurrent = true
   }
 
+  static moveToIndexWord(state: SentenceDisplayContent, index: number) {
+    state.words[state.currentWordIndex].isCurrent = false
+    state.currentWordIndex = index
+    state.words[index].isCurrent = true
+  }
+
   static inputCurrentWord(state: SentenceDisplayContent, letter: string): SentenceDisplayContent {
     // 更新当前单词
     const currentWord = state.words[state.currentWordIndex]
@@ -246,7 +243,17 @@ export class SentenceState {
     const hasJustify = state.displayContent.words.some(word => word.hasWrong === true)
 
     if (!hasJustify && isAllWordsInputted) {
-      return [JustifyType.COMPLETE, SentenceState.calculate(state)]
+      let result = SentenceState.calculate(state)
+      if (result.hasWrong) {
+        const currentWord = result.displayContent.words[result.displayContent.currentWordIndex]
+        if (!currentWord.hasWrong) {
+          result = SentenceState.moveToNextWord(result)
+        }
+        return [JustifyType.COMPLETE, result]
+      }
+      else {
+        return [JustifyType.COMPLETE, result]
+      }
     }
     else {
       return [JustifyType.MOVE_TO_NEXT_WORD, SentenceState.moveToNextWord(state)]
@@ -275,6 +282,19 @@ export class SentenceState {
     SentenceState.copy(state, newState)
     newState.hasChanged = true
 
+    return newState
+  }
+
+  public static moveToIndexWord(state: SentenceState, index: number): SentenceState {
+    // 创建一个新的 SentenceDisplayContent 对象
+    const newDisplayContent = SentenceDisplayContent.newContent(state.displayContent)
+    SentenceDisplayContent.moveToIndexWord(newDisplayContent, index)
+    newDisplayContent.currentWordIndex = index
+
+    // 创建一个新的 SentenceState 对象
+    const newState = new SentenceState(newDisplayContent)
+    SentenceState.copy(state, newState)
+    newState.hasChanged = true
     return newState
   }
 

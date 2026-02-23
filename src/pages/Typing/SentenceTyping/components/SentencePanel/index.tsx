@@ -203,6 +203,17 @@ export default function SentencePanel() {
     setIsShowTranslation(checked)
   }, [])
 
+  useEffect(() => {
+    // 启动计时器
+    let intervalId: number
+    if (state.isTyping) {
+      intervalId = window.setInterval(() => {
+        dispatch({ type: SentenceTypingStateActionType.TICK_TIMER })
+      }, 1000)
+    }
+    return () => clearInterval(intervalId)
+  }, [state.isTyping, dispatch])
+
   // 添加点击事件监听，点击视图外区域时收起 Translation
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -278,7 +289,7 @@ export default function SentencePanel() {
                 </div>
               </div>
             )}
-            <div className="relative" style={{ margin: '0 0 60px 0' }}>
+            <div className="relative">
               <SentenceComponent
                 sentenceAndSound={currentSentence}
                 isShowResultView={showResultView}
@@ -291,7 +302,6 @@ export default function SentencePanel() {
           </div>
         )}
       </div>
-      <Progress className={`mb-10 mt-auto ${state.isTyping ? 'opacity-100' : 'opacity-0'}`} />
     </div>
   )
 }

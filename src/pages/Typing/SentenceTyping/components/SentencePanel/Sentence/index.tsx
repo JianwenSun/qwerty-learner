@@ -2,12 +2,13 @@ import { SentenceUpdateAction, SentenceUpdateActionType } from '../components/In
 import KeyEventHandler from '../components/KeyEventHandler'
 import { TipAlert } from './TipAlert'
 import Word from './Word'
-import { generateSentenceDisplayContent, initialSentenceState, JustifyType } from './type'
+import { generateSentenceDisplayContent, initialSentenceState, JustifyType, WordContent } from './type'
 import { SentenceState } from './type'
 import Tooltip from '@/components/Tooltip'
 import { UrlPronunciationIcon, UrlPronunciationIconRef } from '@/components/UrlPronunciationIcon'
 import useSentenceKeySounds from '@/hooks/useSentenceKeySounds'
 import { SentenceTypingContext, SentenceTypingStateActionType } from '@/pages/Typing/SentenceTyping/store'
+import { useConfetti } from '@/pages/Typing/WordTyping/hooks/useConfetti'
 import { SentenceAndSound } from '@/plugins/wxs/wxs'
 import {
   fontSizeConfigAtom,
@@ -17,7 +18,7 @@ import {
   pronunciationIsOpenAtom,
   sentenceDictationConfigAtom,
 } from '@/store'
-import { CTRL, getUtcStringForMixpanel } from '@/utils'
+import { CTRL, getUtcStringForMixpanel, SHIFT } from '@/utils'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useEffect, useRef, useState } from 'react'
 import React from 'react'
@@ -54,6 +55,8 @@ const SentenceComponent = React.memo(function SentenceComponent({
   const [showTipAlert, setShowTipAlert] = useState(false)
   const fontSizeConfig = useAtomValue(fontSizeConfigAtom)
 
+  const [finishCurrentSentence, setFinishCurrentSentence] = useState(false)
+
   // 用于跟踪依赖项变化的 ref
   const sentencePronunciationIconRef = useRef<UrlPronunciationIconRef>(null)
 
@@ -75,9 +78,8 @@ const SentenceComponent = React.memo(function SentenceComponent({
     [],
   )
   useHotkeys(
-    'ctrl+j',
+    `${SHIFT}`,
     () => {
-      // 打印按下 Ctrl+J 快捷键的日志
       if (state.isTyping) {
         sentencePronunciationIconRef.current?.play()
       }
@@ -89,6 +91,7 @@ const SentenceComponent = React.memo(function SentenceComponent({
   //当句子变化时，重置自动播放标志
   useEffect(() => {
     setHasAutoPlayed(false)
+    setFinishCurrentSentence(false)
   }, [sentenceAndSound])
 
   useEffect(() => {
@@ -103,6 +106,16 @@ const SentenceComponent = React.memo(function SentenceComponent({
     newSentenceState.startTime = getUtcStringForMixpanel()
     setSentenceState(newSentenceState)
   }, [sentenceAndSound])
+
+  useConfetti(finishCurrentSentence)
+
+  const onWordSelected = useCallback(
+    (word: WordContent) => {
+      const newState = SentenceState.moveToIndexWord(sentenceState, word.index)
+      setSentenceState(newState)
+    },
+    [sentenceState],
+  )
 
   const updateInput = useCallback(
     (updateAction: SentenceUpdateAction) => {
@@ -131,9 +144,18 @@ const SentenceComponent = React.memo(function SentenceComponent({
           if (justifyType === JustifyType.COMPLETE) {
             if (newState.hasWrong) {
               playBeepSound()
+              dispatch({
+                type: SentenceTypingStateActionType.REPORT_WRONG_SENTENCE,
+                payload: {
+                  sentenceAndSound: sentenceAndSound,
+                  sentenceContent: newState.displayContent,
+                },
+              })
             } else {
               onShowResultView(true)
+              setFinishCurrentSentence(true)
               playHintSound()
+              dispatch({ type: SentenceTypingStateActionType.REPORT_CORRECT_SENTENCE })
             }
           }
           setSentenceState(newState)
@@ -206,7 +228,7 @@ const SentenceComponent = React.memo(function SentenceComponent({
                 // 检查是否是 WordContent
                 if ('content' in item) {
                   // 是 WordContent，渲染 Word 组件
-                  return <Word key={`word-${index}`} word={item} visible={isHoveringSentence} />
+                  return <Word key={`word-${index}`} word={item} visible={isHoveringSentence} onSelect={onWordSelected} />
                 } else {
                   // 是 SentenceSymbol，直接展示 symbol
                   return (
@@ -232,7 +254,7 @@ const SentenceComponent = React.memo(function SentenceComponent({
           </div>
           {pronunciationIsOpen && (
             <div className="absolute -right-12 top-1/2 h-9 w-9 -translate-y-1/2 transform ">
-              <Tooltip content={`快捷键${CTRL} + J`}>
+              <Tooltip content={`快捷键${SHIFT}`}>
                 <UrlPronunciationIcon url={sentenceAndSound.soundUrl} ref={sentencePronunciationIconRef} className="h-full w-full" />
               </Tooltip>
             </div>

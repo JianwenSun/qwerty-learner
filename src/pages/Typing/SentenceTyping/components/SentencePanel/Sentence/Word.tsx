@@ -23,7 +23,13 @@ const calculateTextWidth = (text: string, fontSize: number, font: string = 'mono
   return metrics.width
 }
 
-export default function Word({ word, visible = true }: { word: WordContent; visible?: boolean }) {
+type Props = {
+  word: WordContent
+  visible?: boolean
+  onSelect?: (word: WordContent) => void
+}
+
+export default function Word({ word, visible = true, onSelect }: Props) {
   const fontSizeConfig = useAtomValue(fontSizeConfigAtom)
 
   const content = word.content || ''
@@ -85,7 +91,10 @@ export default function Word({ word, visible = true }: { word: WordContent; visi
         paddingRight: '4px',
         maxWidth: '100%',
         wordBreak: 'break-all',
+        cursor: onSelect ? 'pointer' : 'text',
+        userSelect: 'text',
       }}
+      onClick={() => onSelect?.(word)}
     >
       {renderContent()}
     </span>

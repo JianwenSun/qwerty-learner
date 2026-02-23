@@ -11,7 +11,7 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
 
   const newIndex = useMemo(() => state.chapterData.index + (type === 'prev' ? -1 : 1), [state.chapterData.index, type])
   const sentence = state.chapterData.sentences[newIndex]
-  const shortCutKey = useMemo(() => (type === 'prev' ? `${CTRL} + Shift + ArrowLeft` : `${CTRL} + Shift + ArrowRight`), [type])
+  const shortCutKey = useMemo(() => (type === 'prev' ? `ArrowLeft` : `ArrowRight`), [type])
 
   const onClickWord = useCallback(() => {
     if (!sentence) return

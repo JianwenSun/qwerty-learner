@@ -50,7 +50,7 @@ export const SentenceDictionaryChapterButton = () => {
               {currentSentenceChapter?.name || '选择章节'}
             </Listbox.Button>
             <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
-              <Listbox.Options className="listbox-options z-10 w-32">
+              <Listbox.Options className="listbox-options z-50 w-auto whitespace-nowrap">
                 {sentenceChapters?.map((chapter, index) => (
                   <Listbox.Option key={chapter.id} value={chapter.id}>
                     {({ selected }) => (

@@ -34,11 +34,11 @@ export const keySoundResources: SoundResource[] = Object.keys(videoList)
   })
 
 export const wrongSoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'beep.wav' }]
-
 export const correctSoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'correct.wav' }]
 
-export const sentenceWrongSoundResources: SoundResource[] = [{ key: '1', name: '句子错误声音1', filename: 'sentence-beep.mp3' }]
 
+export const sentenceClickSoundResources: SoundResource[] = [{ key: '1', name: '句子点击声音1', filename: 'sentence-click.mp3' }]
+export const sentenceWrongSoundResources: SoundResource[] = [{ key: '1', name: '句子错误声音1', filename: 'sentence-beep.mp3' }]
 export const sentenceCorrectSoundResources: SoundResource[] = [{ key: '1', name: '句子正确声音1', filename: 'sentence-correct.mp3' }]
 
 

@@ -1,6 +1,7 @@
 import Layout from '../../../components/Layout'
 import PracticeModeSwitcher from '../components/PracticeModeSwitcher'
 import PronunciationSwitcher from '../components/PronunciationSwitcher'
+import Progress from './components/Progress'
 import ResultScreen from './components/ResultScreen'
 import Speed from './components/Speed'
 import StartButton from './components/StartButton'
@@ -115,42 +116,54 @@ const App: React.FC = () => {
 
   return (
     <WordTypingContext.Provider value={{ state: state, dispatch }}>
-      {state.isFinished && <DonateCard />}
       {state.isFinished && <ResultScreen />}
       <Layout>
-        <Header>
-          <PracticeModeSwitcher />
-          <WordDictionaryChapterButton />
-          <PronunciationSwitcher />
-          <Switcher />
-          <StartButton isLoading={isLoading} />
-          <Tooltip content="跳过该词">
-            <button
-              className={`${
-                state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
-              } my-btn-primary transition-all duration-300 `}
-              onClick={skipWord}
-            >
-              Skip
-            </button>
-          </Tooltip>
-        </Header>
-        <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center">
-          <div className="container relative mx-auto flex h-full flex-col items-center">
-            <div className="container flex flex-grow items-center justify-center">
-              {isLoading ? (
-                <div className="flex flex-col items-center justify-center ">
-                  <div
-                    className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid  border-indigo-400 border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-                    role="status"
-                  ></div>
-                </div>
-              ) : (
-                !state.isFinished && <WordPanel />
-              )}
+        {/* 第一行：Header */}
+        <div className="row-span-1">
+          <Header>
+            <PracticeModeSwitcher />
+            <WordDictionaryChapterButton />
+            <PronunciationSwitcher />
+            <Switcher />
+            <StartButton isLoading={isLoading} />
+            <Tooltip content="跳过该词">
+              <button
+                className={`${
+                  state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
+                } my-btn-primary transition-all duration-300 `}
+                onClick={skipWord}
+              >
+                Skip
+              </button>
+            </Tooltip>
+          </Header>
+        </div>
+
+        {/* 第二行：主要内容 */}
+        <div className="row-span-1 h-full w-full">
+          <div className="h-full w-full">
+            <div className="container relative mx-auto flex h-full w-full flex-col items-center">
+              <div className="container flex flex-grow items-center justify-center">
+                {isLoading ? (
+                  <div className="flex flex-col items-center justify-center ">
+                    <div
+                      className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid  border-indigo-400 border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+                      role="status"
+                    >
+                      加载中...
+                    </div>
+                  </div>
+                ) : (
+                  <WordPanel />
+                )}
+              </div>
             </div>
-            <Speed />
           </div>
+        </div>
+        {/* 第三行：空行 */}
+        <div className="row-span-1 flex h-full w-full flex-col items-center justify-center">
+          <Progress />
+          <Speed />
         </div>
       </Layout>
       <WordList />

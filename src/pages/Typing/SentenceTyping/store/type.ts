@@ -1,5 +1,27 @@
 import { Sentence } from "@/plugins/wxs/wxs"
 
+export interface ChuckIndex {
+    index: number
+}
+
+export type SentenceSymbols = ',' | '.' | ';' | ':' | '!' | '?' | '(' | ')' | '[' | ']' | '{' | '}' | '"' | '\'' | '-' | '...'
+
+export interface SentenceSymbol extends ChuckIndex {
+    symbol: SentenceSymbols
+}
+
+export interface SentenceWord extends ChuckIndex {
+    content: string
+    input: string
+    hasWrong: boolean
+}
+
+export type UserSentenceInputLog = {
+    sentenceIndex: number
+    soundUrl: string
+    hasWrong: boolean
+}
+
 export type SentenceChapterData = {
     // warning: 因为有章节内随机的存在，所有记录 index 的场景都应该使用 WordWithIndex.index
     sentences: Sentence[]
@@ -11,8 +33,7 @@ export type SentenceChapterData = {
     correctCount: number
     // 输入错误的单词数
     wrongCount: number
-    // 本章节用户输入的单词的 record id 列表
-    sentenceRecordIds: string[]
+    userInputLogs: UserSentenceInputLog[]
 }
 
 export type TimerData = {
@@ -20,7 +41,6 @@ export type TimerData = {
     accuracy: number
     wpm: number
 }
-
 
 export type SentenceTypingState = {
     chapterData: SentenceChapterData,

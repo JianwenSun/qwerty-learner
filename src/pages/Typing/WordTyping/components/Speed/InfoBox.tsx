@@ -8,7 +8,7 @@ const InfoBox: React.FC<InfoBoxProps> = ({ info, description }) => {
   return (
     <div className="flex flex-1 flex-col items-center justify-center">
       <span
-        className={`w-4/5 border-b pb-2 text-center text-xl font-bold ${
+        className={`w-4/5 border-b text-center text-xl font-bold ${
           isOpenDarkMode ? 'border-gray-400 text-gray-50' : 'border-gray-800 text-gray-800'
         } transition-colors duration-300`}
       >

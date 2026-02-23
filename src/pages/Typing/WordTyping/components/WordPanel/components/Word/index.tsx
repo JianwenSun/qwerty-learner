@@ -71,9 +71,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     'ctrl+j',
     () => {
       // 打印按下 Ctrl+J 快捷键的日志
-      console.log(`[${new Date().toISOString()}] [Word/index.tsx] 按下 Ctrl+J 快捷键，播放单词发音`)
       if (state.isTyping) {
-        console.log(`[${new Date().toISOString()}] [Word/index.tsx] 调用 wordPronunciationIconRef.current?.play()`)
         wordPronunciationIconRef.current?.play()
       }
     },

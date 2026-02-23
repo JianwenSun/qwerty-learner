@@ -59,7 +59,7 @@ const PracticeSwitcher = () => {
             </span>
           </Listbox.Button>
           <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
-            <Listbox.Options className="listbox-options">
+            <Listbox.Options className="listbox-options z-50">
               {modeOptions.map((option) => (
                 <Listbox.Option key={option.value} value={option.value}>
                   {({ selected }) => (

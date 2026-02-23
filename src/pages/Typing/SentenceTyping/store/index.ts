@@ -1,8 +1,8 @@
-import { Sentence } from "@/plugins/wxs/wxs";
-import { SentenceLetterMistakes } from "@/utils/db/sentenceRecord";
+import { Sentence, SentenceAndSound } from "@/plugins/wxs/wxs";
 import shuffle from "@/utils/shuffle";
 import { createContext } from "react";
-import { SentenceTypingState } from "./type";
+import { SentenceDisplayContent } from "../components/SentencePanel/Sentence/type";
+import { SentenceTypingState, UserSentenceInputLog } from "./type";
 
 
 export const initialSentenceTypingState: SentenceTypingState = {
@@ -12,7 +12,7 @@ export const initialSentenceTypingState: SentenceTypingState = {
         inputCount: 0,
         correctCount: 0,
         wrongCount: 0,
-        sentenceRecordIds: [],
+        userInputLogs: [],
     },
     timerData: {
         time: 0,
@@ -44,11 +44,10 @@ export type SentenceTypingStateAction =
     | { type: SentenceTypingStateActionType.SKIP_SENTENCE_INDEX; newIndex: number }
     | { type: SentenceTypingStateActionType.SET_IS_SKIP; payload: boolean }
     | { type: SentenceTypingStateActionType.REPORT_CORRECT_SENTENCE }
-    | { type: SentenceTypingStateActionType.REPORT_WRONG_SENTENCE, payload: { letterMistake: SentenceLetterMistakes } }
+    | { type: SentenceTypingStateActionType.REPORT_WRONG_SENTENCE, payload: { sentenceAndSound: SentenceAndSound, sentenceContent: SentenceDisplayContent } }
     | { type: SentenceTypingStateActionType.SET_IS_SAVING_RECORD; payload: boolean }
     | { type: SentenceTypingStateActionType.SET_IS_TYPING; payload: boolean }
-
-
+    | { type: SentenceTypingStateActionType.TICK_TIMER; addTime?: number }
 
 export enum SentenceTypingStateActionType {
     SETUP_CHAPTER = 'SETUP_CHAPTER',
@@ -65,6 +64,7 @@ export enum SentenceTypingStateActionType {
     REPORT_WRONG_SENTENCE = 'REPORT_WRONG_SENTENCE',
     SET_IS_SAVING_RECORD = 'SET_IS_SAVING_RECORD',
     SET_IS_TYPING = 'SET_IS_TYPING',
+    TICK_TIMER = 'TICK_TIMER',
 }
 
 export const sentenceTypingReducer = (state: SentenceTypingState, action: SentenceTypingStateAction) => {
@@ -105,6 +105,7 @@ export const sentenceTypingReducer = (state: SentenceTypingState, action: Senten
             newState.isTyping = true
             newState.chapterData.sentences = action.shouldShuffle ? shuffle(state.chapterData.sentences) : state.chapterData.sentences
             newState.isTransVisible = state.isTransVisible
+            newState.chapterData.index = 0
             return newState
         }
         case SentenceTypingStateActionType.SKIP_SENTENCE: {
@@ -149,6 +150,12 @@ export const sentenceTypingReducer = (state: SentenceTypingState, action: Senten
             break
         }
         case SentenceTypingStateActionType.REPORT_WRONG_SENTENCE: {
+            const { sentenceAndSound, sentenceContent } = action.payload
+            state.chapterData.userInputLogs.push({
+                sentenceIndex: state.chapterData.index,
+                soundUrl: sentenceAndSound.soundUrl,
+                hasWrong: true,
+            } as UserSentenceInputLog)
             state.chapterData.wrongCount += 1
             break
         }
@@ -158,6 +165,19 @@ export const sentenceTypingReducer = (state: SentenceTypingState, action: Senten
         }
         case SentenceTypingStateActionType.SET_IS_TYPING: {
             state.isTyping = action.payload
+            break
+        }
+        case SentenceTypingStateActionType.TICK_TIMER: {
+            const increment = action.addTime === undefined ? 1 : action.addTime
+            const newTime = state.timerData.time + increment
+            const inputSum =
+                state.chapterData.correctCount + state.chapterData.wrongCount === 0
+                    ? 1
+                    : state.chapterData.correctCount + state.chapterData.wrongCount
+
+            state.timerData.time = newTime
+            state.timerData.accuracy = Math.round((state.chapterData.correctCount / inputSum) * 100)
+            state.timerData.wpm = Math.round((state.chapterData.inputCount / newTime) * 60)
             break
         }
         default: {
