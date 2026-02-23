@@ -166,6 +166,16 @@ const SentenceComponent = React.memo(function SentenceComponent({
           setSentenceState(newState)
           break
         }
+        case SentenceUpdateActionType.ArrowLeft: {
+          const newState = SentenceState.moveToPreviousWord(sentenceState)
+          setSentenceState(newState)
+          break
+        }
+        case SentenceUpdateActionType.ArrowRight: {
+          const newState = SentenceState.moveToNextWord(sentenceState)
+          setSentenceState(newState)
+          break
+        }
         default:
           console.warn('unknown update type', updateAction)
       }

@@ -1,5 +1,7 @@
 import {
   SentenceAddAction,
+  SentenceArrowLeftAction,
+  SentenceArrowRightAction,
   SentenceDeleteAction,
   SentenceSpaceAction,
   SentenceUpdateAction,
@@ -35,6 +37,10 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
           updateInputRef.current({ type: SentenceUpdateActionType.Delete } as SentenceDeleteAction)
         } else if (e.key === ' ') {
           updateInputRef.current({ type: SentenceUpdateActionType.Space, event: e } as SentenceSpaceAction)
+        } else if (e.key === 'ArrowLeft') {
+          updateInputRef.current({ type: SentenceUpdateActionType.ArrowLeft, event: e } as SentenceArrowLeftAction)
+        } else if (e.key === 'ArrowRight') {
+          updateInputRef.current({ type: SentenceUpdateActionType.ArrowRight, event: e } as SentenceArrowRightAction)
         } else {
           updateInputRef.current({ type: SentenceUpdateActionType.Add, value: char } as SentenceAddAction)
         }

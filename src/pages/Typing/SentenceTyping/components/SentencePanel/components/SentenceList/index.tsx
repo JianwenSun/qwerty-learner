@@ -1,42 +1,30 @@
-import { WordTypingContext, WordTypingStateActionType } from '../../store'
-import WordCard from './WordCard'
+import SentenceCard from './SentenceCard'
 import Drawer from '@/components/Drawer'
 import Tooltip from '@/components/Tooltip'
-import { currentWordChapterAtom, currentWordDictionaryInfoAtom, isReviewModeAtom } from '@/store'
-import { Word } from '@/typings'
+import { useCurrentSentenceChapterInfo, useCurrentSentenceDictionaryInfo } from '@/pages/Typing/SentenceTyping/hooks/useSentenceHooks'
+import { SentenceTypingContext, SentenceTypingStateActionType } from '@/pages/Typing/SentenceTyping/store'
+import { isReviewModeAtom } from '@/store'
 import { Dialog } from '@headlessui/react'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
-import { atom, useAtomValue } from 'jotai'
+import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useState } from 'react'
 import ListIcon from '~icons/tabler/list'
 import IconX from '~icons/tabler/x'
 
-const currentDictTitle = atom((get) => {
-  const isReviewMode = get(isReviewModeAtom)
-
-  if (isReviewMode) {
-    return `${get(currentWordDictionaryInfoAtom).name} 错题复习`
-  } else {
-    return `${get(currentWordDictionaryInfoAtom).name} 第 ${
-      get(currentWordChapterAtom) !== undefined ? (get(currentWordChapterAtom) !== null ? get(currentWordChapterAtom)!! + 1 : '') : ''
-    } 章`
-  }
-})
-
-export default function WordList() {
+export default function SentenceList() {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state, dispatch } = useContext(WordTypingContext)!
+  const { state, dispatch } = useContext(SentenceTypingContext)!
 
   const [isOpen, setIsOpen] = useState(false)
-  const currentDictTitleValue = useAtomValue(currentDictTitle)
+  const isReviewMode = useAtomValue(isReviewModeAtom)
+  const currentSentenceDictionaryInfo = useCurrentSentenceDictionaryInfo()
+  const currentSentenceChapterInfo = useCurrentSentenceChapterInfo()
 
-  const onSelected = useCallback(
-    (word: Word) => {
-      const newIndex = state.chapterData.words?.findIndex((s) => s.id === word.id) || 0
-      dispatch({ type: WordTypingStateActionType.SKIP_2_WORD_INDEX, newIndex })
-    },
-    [state.chapterData.words, dispatch],
-  )
+  const currentDictTitleValue = isReviewMode
+    ? `${(currentSentenceDictionaryInfo?.data ?? {}).name} 错题复习`
+    : `${(currentSentenceDictionaryInfo?.data ?? {}).name} - ${
+        currentSentenceChapterInfo.data !== undefined ? currentSentenceChapterInfo.data?.name || '' : ''
+      }`
 
   function closeModal() {
     setIsOpen(false)
@@ -44,8 +32,16 @@ export default function WordList() {
 
   function openModal() {
     setIsOpen(true)
-    dispatch({ type: WordTypingStateActionType.SET_IS_TYPING, payload: false })
+    dispatch({ type: SentenceTypingStateActionType.SET_IS_TYPING, payload: false })
   }
+
+  const onSelected = useCallback(
+    (sentenceId: number) => {
+      const newIndex = state.chapterData.sentences?.findIndex((s) => s.sentenceId === sentenceId) || 0
+      dispatch({ type: SentenceTypingStateActionType.SKIP_SENTENCE_INDEX, newIndex })
+    },
+    [state.chapterData.sentences, dispatch],
+  )
 
   return (
     <>
@@ -67,11 +63,11 @@ export default function WordList() {
         <ScrollArea.Root className="flex-1 select-none overflow-y-auto ">
           <ScrollArea.Viewport className="h-full w-full px-3">
             <div className="flex flex-col gap-1">
-              {state.chapterData.words?.map((word, index) => {
+              {state.chapterData.sentences?.map((sentence, index) => {
                 return (
-                  <WordCard
-                    word={word}
-                    key={`${word.name}_${index}`}
+                  <SentenceCard
+                    sentence={sentence}
+                    key={`${sentence.sentenceId}`}
                     isActive={state.chapterData.index === index}
                     onSelected={onSelected}
                   />

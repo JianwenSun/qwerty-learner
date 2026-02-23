@@ -11,7 +11,7 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
 
   const newIndex = useMemo(() => state.chapterData.index + (type === 'prev' ? -1 : 1), [state.chapterData.index, type])
   const sentence = state.chapterData.sentences[newIndex]
-  const shortCutKey = useMemo(() => (type === 'prev' ? `ArrowLeft` : `ArrowRight`), [type])
+  const shortCutKey = useMemo(() => (type === 'prev' ? `Shift+ArrowLeft` : `Shift+ArrowRight`), [type])
 
   const onClickWord = useCallback(() => {
     if (!sentence) return
@@ -22,11 +22,15 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
 
   const headSentence = useMemo(() => {
     if (!sentence) return ''
-
-    const showSentence = sentence.chinese
-
+    const showSentence = sentence.content
     if (type === 'prev') return showSentence
+    if (type === 'next') return showSentence
+  }, [sentence, type])
 
+  const headSentenceTranslation = useMemo(() => {
+    if (!sentence) return ''
+    const showSentence = sentence.chinese
+    if (type === 'prev') return showSentence
     if (type === 'next') return showSentence
   }, [sentence, type])
 
@@ -41,7 +45,9 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
             {type === 'prev' && <IconPrev className="mr-4 shrink-0 grow-0 text-2xl" />}
 
             <div className={`grow-1 flex w-full flex-col ${type === 'next' ? 'items-end text-right' : ''}`}>
-              <p className={`line-clamp-1 max-w-full text-lg font-normal text-gray-600 dark:text-gray-500`}>{headSentence}</p>
+              <p className={`line-clamp-1 max-w-full text-lg font-normal text-gray-600 dark:text-gray-500`}>
+                （{newIndex}/{state.chapterData.sentences.length}）{headSentenceTranslation}
+              </p>
               {state.isTransVisible && (
                 <p className="line-clamp-1 max-w-full text-sm font-normal text-gray-600 dark:text-gray-500">{headSentence}</p>
               )}

@@ -6,14 +6,21 @@ import type { Word } from '@/typings'
 import { useAtom, useAtomValue } from 'jotai'
 import { useCallback, useRef } from 'react'
 
-export default function WordCard({ word, isActive }: { word: Word; isActive: boolean }) {
+type Prop = {
+  word: Word
+  isActive: boolean
+  onSelected: (word: Word) => void
+}
+
+export default function WordCard({ word, isActive, onSelected }: Prop) {
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
 
-  const handlePlay = useCallback(() => {
+  const handleClick = useCallback(() => {
     wordPronunciationIconRef.current?.play()
-  }, [])
+    onSelected(word)
+  }, [onSelected, word])
 
   return (
     <div
@@ -21,7 +28,7 @@ export default function WordCard({ word, isActive }: { word: Word; isActive: boo
         isActive ? 'bg-gray-200 dark:bg-gray-700' : 'bg-white dark:bg-gray-700 dark:bg-opacity-20'
       }   `}
       key={word.name}
-      onClick={handlePlay}
+      onClick={handleClick}
     >
       <div className="flex-1">
         <p className={`font-mono text-xl font-normal leading-6 ${isOpenDarkMode ? 'text-gray-50' : 'text-gray-800'}`}>

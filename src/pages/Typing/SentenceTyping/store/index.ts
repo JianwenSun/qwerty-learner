@@ -121,8 +121,7 @@ export const sentenceTypingReducer = (state: SentenceTypingState, action: Senten
         }
         case SentenceTypingStateActionType.SKIP_SENTENCE_INDEX: {
             const newIndex = action.newIndex
-            if (newIndex >= state.chapterData.sentences.length) {
-                console.log('Setting isTyping to false (SKIP_SENTENCE_INDEX)')
+            if (newIndex >= (state.chapterData.sentences?.length || 0)) {
                 state.isTyping = false
                 state.isFinished = true
             }

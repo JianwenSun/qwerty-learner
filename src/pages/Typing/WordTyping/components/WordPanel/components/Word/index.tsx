@@ -21,7 +21,7 @@ import {
   wordDictationConfigAtom,
 } from '@/store'
 import type { Word } from '@/typings'
-import { CTRL, getUtcStringForMixpanel } from '@/utils'
+import { CTRL, getUtcStringForMixpanel, SHIFT } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useEffect, useRef, useState } from 'react'
@@ -68,9 +68,8 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     [],
   )
   useHotkeys(
-    'ctrl+j',
+    `${SHIFT}`,
     () => {
-      // 打印按下 Ctrl+J 快捷键的日志
       if (state.isTyping) {
         wordPronunciationIconRef.current?.play()
       }

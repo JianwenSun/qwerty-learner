@@ -4,7 +4,6 @@ import PrevAndNextWord from '../PrevAndNextWord'
 import SentenceComponent from './Sentence'
 import ChuckDetail from './components/ChuckDetail'
 import CustomDetail from './components/CustomDetail'
-import Progress from './components/Progress'
 import Translation from './components/Translation'
 import { getSentenceSoundUrl, SentenceAndSound } from '@/plugins/wxs/wxs'
 import { getSentenceSound } from '@/plugins/wxs/wxsApi'
@@ -65,7 +64,7 @@ export default function SentencePanel() {
   }, [state.chapterData.index, state.chapterData.sentences.length])
 
   useHotkeys(
-    'ArrowLeft',
+    'Shift+ArrowLeft',
     (e) => {
       e.preventDefault()
       onSkipSentence('prev')
@@ -74,7 +73,7 @@ export default function SentencePanel() {
   )
 
   useHotkeys(
-    'ArrowRight',
+    'Shift+ArrowRight',
     (e) => {
       e.preventDefault()
       onSkipSentence('next')

@@ -1,7 +1,6 @@
 import { WordTypingContext, WordTypingStateActionType } from '../../store'
 import type { WordTypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
-import Progress from '../Progress'
 import PartsOfSpeechLine from './components/PartsOfSpeechLine'
 import Phonetic from './components/Phonetic'
 import WordComponent from './components/Word'
@@ -32,7 +31,7 @@ export default function WordPanel() {
   }, [state.chapterData.index, state.chapterData.words.length])
 
   useHotkeys(
-    'Ctrl + Shift + ArrowLeft',
+    'ArrowLeft',
     (e) => {
       e.preventDefault()
       onSkipWord('prev')
@@ -41,7 +40,7 @@ export default function WordPanel() {
   )
 
   useHotkeys(
-    'Ctrl + Shift + ArrowRight',
+    'ArrowRight',
     (e) => {
       e.preventDefault()
       onSkipWord('next')

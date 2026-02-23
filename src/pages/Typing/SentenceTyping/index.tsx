@@ -5,6 +5,7 @@ import ResultScreen from './components/ResultScreen'
 import { SentenceDictionaryChapterButton } from './components/SentenceDictionaryChapterButton'
 import SentencePanel from './components/SentencePanel'
 import Progress from './components/SentencePanel/components/Progress'
+import SentenceList from './components/SentencePanel/components/SentenceList'
 import Speed from './components/SentencePanel/components/Speed'
 import StartButton from './components/StartButton'
 import Switcher from './components/Switcher'
@@ -107,6 +108,7 @@ const App: React.FC = () => {
           <Speed />
         </div>
       </Layout>
+      <SentenceList />
     </SentenceTypingContext.Provider>
   )
 }

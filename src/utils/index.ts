@@ -20,8 +20,6 @@ const sentenceBannedKeys = [
   // Up, down, left and right keys
   'ArrowUp',
   'ArrowDown',
-  'ArrowLeft',
-  'ArrowRight',
   // volume keys
   'AudioVolumeUp',
   'AudioVolumeDown',
