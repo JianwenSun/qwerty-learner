@@ -6,7 +6,7 @@ import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
 import Tooltip from '@/components/Tooltip'
 import {
-  currentWordChapterAtom,
+  currentWordChapterIdAtom,
   currentWordDictionaryInfoAtom,
   isReviewModeAtom,
   randomConfigAtom,
@@ -27,7 +27,7 @@ const ResultScreen = () => {
 
   const setWordDictationConfig = useSetAtom(wordDictationConfigAtom)
   const currentWordDictionaryInfo = useAtomValue(currentWordDictionaryInfoAtom)
-  const [currentWordChapter, setCurrentWordChapter] = useAtom(currentWordChapterAtom)
+  const [currentWordChapterId, setCurrentWordChapterId] = useAtom(currentWordChapterIdAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
   const navigate = useNavigate()
 
@@ -59,12 +59,12 @@ const ResultScreen = () => {
         const ws = utils.json_to_sheet(exportData)
         const wb = utils.book_new()
         utils.book_append_sheet(wb, ws, 'Data')
-        writeFileXLSX(wb, `${currentWordDictionaryInfo.name}第${currentWordChapter !== undefined ? currentWordChapter + 1 : ''}章.xlsx`)
+        writeFileXLSX(wb, `${currentWordDictionaryInfo.name}第${currentWordChapterId !== undefined ? currentWordChapterId + 1 : ''}章.xlsx`)
       })
       .catch(() => {
         console.log('写入 xlsx 模块导入失败')
       })
-  }, [currentWordChapter, currentWordDictionaryInfo.name, state.chapterData])
+  }, [currentWordChapterId, currentWordDictionaryInfo.name, state.chapterData])
 
   const wrongWords = useMemo(() => {
     return state.chapterData.userInputLogs
@@ -74,8 +74,8 @@ const ResultScreen = () => {
   }, [state.chapterData.userInputLogs, state.chapterData.words])
 
   const isLastChapter = useMemo(() => {
-    return currentWordChapter !== undefined && currentWordChapter >= currentWordDictionaryInfo.chapterCount - 1
-  }, [currentWordChapter, currentWordDictionaryInfo])
+    return currentWordChapterId !== undefined && currentWordChapterId >= currentWordDictionaryInfo.chapterCount - 1
+  }, [currentWordChapterId, currentWordDictionaryInfo])
 
   const correctRate = useMemo(() => {
     const chapterLength = state.chapterData.words.length
@@ -141,25 +141,25 @@ const ResultScreen = () => {
       return old
     })
     if (!isLastChapter) {
-      setCurrentWordChapter((old) => (old !== undefined ? old + 1 : 0))
+      setCurrentWordChapterId((old) => (old !== undefined ? old + 1 : 0))
       dispatch({ type: WordTypingStateActionType.NEXT_CHAPTER })
     }
-  }, [dispatch, isLastChapter, isReviewMode, setCurrentWordChapter, setWordDictationConfig])
+  }, [dispatch, isLastChapter, isReviewMode, setCurrentWordChapterId, setWordDictationConfig])
 
   const exitButtonHandler = useCallback(() => {
     if (isReviewMode) {
-      setCurrentWordChapter(0)
+      setCurrentWordChapterId(0)
       setWordReviewModeInfo((old) => ({ ...old, isReviewMode: false }))
     } else {
       dispatch({ type: WordTypingStateActionType.REPEAT_CHAPTER, shouldShuffle: false })
     }
-  }, [dispatch, isReviewMode, setCurrentWordChapter, setWordReviewModeInfo])
+  }, [dispatch, isReviewMode, setCurrentWordChapterId, setWordReviewModeInfo])
 
   const onNavigateToGallery = useCallback(() => {
-    setCurrentWordChapter(0)
+    setCurrentWordChapterId(0)
     setWordReviewModeInfo((old) => ({ ...old, isReviewMode: false }))
     navigate('/word-typing/gallery')
-  }, [navigate, setCurrentWordChapter, setWordReviewModeInfo])
+  }, [navigate, setCurrentWordChapterId, setWordReviewModeInfo])
 
   useHotkeys(
     'enter',
@@ -203,7 +203,7 @@ const ResultScreen = () => {
           <div className="my-card fixed flex w-[90vw] max-w-6xl flex-col overflow-hidden rounded-3xl bg-white pb-14 pl-10 pr-5 pt-10 shadow-lg dark:bg-gray-800 md:w-4/5 lg:w-3/5">
             <div className="text-center font-sans text-xl font-normal text-gray-900 dark:text-gray-400 md:text-2xl">
               {`${currentWordDictionaryInfo.name} ${
-                isReviewMode ? '错题复习' : '第' + (currentWordChapter !== undefined ? currentWordChapter + 1 : '') + '章'
+                isReviewMode ? '错题复习' : '第' + (currentWordChapterId !== undefined ? currentWordChapterId + 1 : '') + '章'
               }`}
             </div>
             <button className="absolute right-7 top-5" onClick={exitButtonHandler}>

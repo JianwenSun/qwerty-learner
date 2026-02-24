@@ -18,7 +18,7 @@ export const SentenceDictionaryChapterButton = () => {
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
 
   const { data: currentSentenceDictionary } = useCurrentSentenceDictionaryInfo()
-  const { data: currentSentenceChapter } = useCurrentSentenceChapterInfo()
+  const { data: currentSentenceChapterInfo } = useCurrentSentenceChapterInfo()
   const { data: sentenceChapters } = useCurrentSentenceChapterList()
 
   const handleKeyDown: React.KeyboardEventHandler<HTMLButtonElement> = (event) => {
@@ -47,12 +47,12 @@ export const SentenceDictionaryChapterButton = () => {
                 isOpenDarkMode ? 'text-white text-opacity-60 hover:text-opacity-100' : 'text-gray-800 hover:text-white'
               }`}
             >
-              {currentSentenceChapter?.name || '选择章节'}
+              {currentSentenceChapterInfo?.name || '选择章节'}
             </Listbox.Button>
             <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
               <Listbox.Options className="listbox-options z-50 w-auto whitespace-nowrap">
                 {sentenceChapters?.map((chapter, index) => (
-                  <Listbox.Option key={chapter.id} value={chapter.id}>
+                  <Listbox.Option key={chapter.id.toString()} value={chapter.id.toString()}>
                     {({ selected }) => (
                       <div className="group flex cursor-pointer items-center justify-between">
                         {selected ? (

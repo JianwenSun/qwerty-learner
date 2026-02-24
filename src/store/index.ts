@@ -83,7 +83,7 @@ export const currentWordDictionaryInfoAtom = atom<WordDictionary>((get) => {
   };
 })
 
-export const currentWordChapterAtom = atomWithStorage('currentWordChapter', undefined as number | undefined)
+export const currentWordChapterIdAtom = atomWithStorage('currentWordChapterId', undefined as number | undefined)
 
 export const loopWordConfigAtom = atomForConfig<{ times: LoopWordTimesOption }>('loopWordConfig', {
   times: 1,

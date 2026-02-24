@@ -1,5 +1,5 @@
 import Tooltip from '@/components/Tooltip'
-import { currentWordChapterAtom, currentWordDictionaryInfoAtom, isOpenDarkModeAtom, isReviewModeAtom } from '@/store'
+import { currentWordChapterIdAtom, currentWordDictionaryInfoAtom, isOpenDarkModeAtom, isReviewModeAtom } from '@/store'
 import range from '@/utils/range'
 import { Listbox, Transition } from '@headlessui/react'
 import { useAtom, useAtomValue } from 'jotai'
@@ -9,7 +9,7 @@ import IconCheck from '~icons/tabler/check'
 
 export const WordDictionaryChapterButton = () => {
   const currentWordDictionaryInfo = useAtomValue(currentWordDictionaryInfoAtom)
-  const [currentWordChapter, setCurrentWordChapter] = useAtom(currentWordChapterAtom)
+  const [currentWordChapterId, setCurrentWordChapterId] = useAtom(currentWordChapterIdAtom)
   const chapterCount = currentWordDictionaryInfo.chapterCount
   const isReviewMode = useAtomValue(isReviewModeAtom)
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
@@ -33,14 +33,14 @@ export const WordDictionaryChapterButton = () => {
       </Tooltip>
       {!isReviewMode && (
         <Tooltip content="章节切换">
-          <Listbox value={currentWordChapter} onChange={setCurrentWordChapter}>
+          <Listbox value={currentWordChapterId} onChange={setCurrentWordChapterId}>
             <Listbox.Button
               onKeyDown={handleKeyDown}
               className={`rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none ${
                 isOpenDarkMode ? 'text-white text-opacity-60 hover:text-opacity-100' : 'text-gray-800 hover:text-white'
               }`}
             >
-              第 {currentWordChapter !== undefined ? currentWordChapter + 1 : ''} 章
+              第 {currentWordChapterId !== undefined ? currentWordChapterId + 1 : ''} 章
             </Listbox.Button>
             <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
               <Listbox.Options className="listbox-options z-50 w-auto whitespace-nowrap">

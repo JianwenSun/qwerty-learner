@@ -58,13 +58,20 @@ export function useCurrentSentenceChapterList(): AsyncResult<LessonCourse[]> {
 
 export function useCurrentSentenceChapterInfo(): AsyncResult<LessonCourse> {
     const [currentSentenceDictionaryId] = useAtom(currentSentenceDictionaryIdAtom)
-    const [currentSentenceChapterId] = useAtom(currentSentenceChapterIdAtom)
+    const [currentSentenceChapterId, setCurrentSentenceChapterId] = useAtom(currentSentenceChapterIdAtom)
+    const sentenceChapters = useCurrentSentenceChapterList()
+
     const currentSentenceChapterInfo = useAsyncData(async () => {
         if (currentSentenceChapterId && currentSentenceDictionaryId) {
             return getSentenceChapterInfo(currentSentenceDictionaryId, currentSentenceChapterId)
         }
-        return undefined
-    }, [currentSentenceDictionaryId, currentSentenceChapterId])
+        else if (currentSentenceDictionaryId) {
+            if (sentenceChapters.data && sentenceChapters.data.length > 0) {
+                setCurrentSentenceChapterId(sentenceChapters.data[0].id.toString())
+                return sentenceChapters.data[0]
+            }
+        }
+    }, [currentSentenceDictionaryId, currentSentenceChapterId, sentenceChapters.data])
     return currentSentenceChapterInfo
 }
 

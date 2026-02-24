@@ -2,7 +2,7 @@ import { WordTypingContext, WordTypingStateActionType } from '../../store'
 import WordCard from './WordCard'
 import Drawer from '@/components/Drawer'
 import Tooltip from '@/components/Tooltip'
-import { currentWordChapterAtom, currentWordDictionaryInfoAtom, isReviewModeAtom } from '@/store'
+import { currentWordChapterIdAtom, currentWordDictionaryInfoAtom, isReviewModeAtom } from '@/store'
 import { Word } from '@/typings'
 import { Dialog } from '@headlessui/react'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
@@ -18,7 +18,7 @@ const currentDictTitle = atom((get) => {
     return `${get(currentWordDictionaryInfoAtom).name} 错题复习`
   } else {
     return `${get(currentWordDictionaryInfoAtom).name} 第 ${
-      get(currentWordChapterAtom) !== undefined ? (get(currentWordChapterAtom) !== null ? get(currentWordChapterAtom)!! + 1 : '') : ''
+      get(currentWordChapterIdAtom) !== undefined ? (get(currentWordChapterIdAtom) !== null ? get(currentWordChapterIdAtom)!! + 1 : '') : ''
     } 章`
   }
 })

@@ -12,7 +12,7 @@ import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
 import { WordTypingContext, WordTypingStateActionType } from '@/pages/Typing/WordTyping/store'
 import {
-  currentWordChapterAtom,
+  currentWordChapterIdAtom,
   isIgnoreCaseAtom,
   isShowAnswerOnHoverAtom,
   isTextSelectableAtom,
@@ -43,7 +43,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const [playKeySound, playBeepSound, playHintSound] = useKeySounds()
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
   const [isHoveringWord, setIsHoveringWord] = useState(false)
-  const currentWordChapter = useAtomValue(currentWordChapterAtom)
+  const currentWordChapterId = useAtomValue(currentWordChapterIdAtom)
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   // 添加状态，用于跟踪是否已经自动播放过单词发音
   const [hasAutoPlayed, setHasAutoPlayed] = useState(false)
@@ -266,7 +266,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
       dispatch({ type: WordTypingStateActionType.REPORT_WRONG_WORD, payload: { letterMistake: updatedMistake } })
 
-      if (currentWordChapter === 0 && state.chapterData.index === 0 && wordState.wrongCount + 1 >= 3) {
+      if (currentWordChapterId === 0 && state.chapterData.index === 0 && wordState.wrongCount + 1 >= 3) {
         console.log('show tip alert')
         setShowTipAlert(true)
       }

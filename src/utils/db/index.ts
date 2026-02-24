@@ -2,7 +2,7 @@ import type { IWordChapterRecord, IWordReviewRecord, IWordRecord, WordLetterMist
 import { WordChapterRecord, WordReviewRecord, WordRecord } from './wordRecord'
 import { WordTypingContext, WordTypingStateActionType } from '@/pages/Typing/WordTyping/store'
 import type { WordTypingState } from '@/pages/Typing/WordTyping/store/type'
-import { currentWordChapterAtom, currentWordDictionaryIdAtom, isReviewModeAtom } from '@/store'
+import { currentWordChapterIdAtom, currentWordDictionaryIdAtom, isReviewModeAtom } from '@/store'
 import type { Table } from 'dexie'
 import Dexie from 'dexie'
 import { useAtomValue } from 'jotai'
@@ -38,7 +38,7 @@ db.sentenceReviewRecords.mapToClass(SentenceReviewRecord)
 db.sentenceChapterRecords.mapToClass(SentenceChapterRecord)
 
 export function useSaveWordChapterRecord() {
-  const currentWordChapter = useAtomValue(currentWordChapterAtom)
+  const currentWordChapterId = useAtomValue(currentWordChapterIdAtom)
   const isRevision = useAtomValue(isReviewModeAtom)
   const currentWordDictionaryId = useAtomValue(currentWordDictionaryIdAtom)
 
@@ -57,7 +57,7 @@ export function useSaveWordChapterRecord() {
 
       const chapterRecord = new WordChapterRecord(
         currentWordDictionaryId,
-        isRevision ? -1 : currentWordChapter,
+        isRevision ? -1 : currentWordChapterId,
         time,
         correctCount,
         wrongCount,
@@ -68,7 +68,7 @@ export function useSaveWordChapterRecord() {
       )
       db.wordChapterRecords.add(chapterRecord)
     },
-    [currentWordChapter, currentWordDictionaryId, isRevision],
+    [currentWordChapterId, currentWordDictionaryId, isRevision],
   )
 
   return saveWordChapterRecord
@@ -81,7 +81,7 @@ export type WordKeyLogger = {
 
 export function useSaveWordRecord() {
   const isRevision = useAtomValue(isReviewModeAtom)
-  const currentWordChapter = useAtomValue(currentWordChapterAtom)
+  const currentWordChapterId = useAtomValue(currentWordChapterIdAtom)
   const currentWordDictionaryId = useAtomValue(currentWordDictionaryIdAtom)
 
   const { dispatch } = useContext(WordTypingContext) ?? {}
@@ -103,11 +103,11 @@ export function useSaveWordRecord() {
         const diff = letterTimeArray[i] - letterTimeArray[i - 1]
         timing.push(diff)
       }
-      if (!currentWordDictionaryId || !currentWordChapter) {
+      if (!currentWordDictionaryId || !currentWordChapterId) {
         return
       }
 
-      const wordRecord = new WordRecord(word.id, word.name, currentWordDictionaryId, isRevision ? -1 : currentWordChapter, timing, wrongCount, letterMistake)
+      const wordRecord = new WordRecord(word.id, word.name, currentWordDictionaryId, isRevision ? -1 : currentWordChapterId, timing, wrongCount, letterMistake)
 
       let dbID: string = ''
       try {
@@ -120,7 +120,7 @@ export function useSaveWordRecord() {
         console.error(e)
       }
     },
-    [currentWordChapter, currentWordDictionaryId, dispatch, isRevision],
+    [currentWordChapterId, currentWordDictionaryId, dispatch, isRevision],
   )
 
   return saveWordRecord

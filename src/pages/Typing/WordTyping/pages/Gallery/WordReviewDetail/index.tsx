@@ -1,6 +1,6 @@
 import type { TErrorWordData } from '../hooks/useErrorWords'
 import { Button } from '@/components/ui/button'
-import { currentWordChapterAtom, currentWordDictionaryIdAtom, wordReviewModeInfoAtom } from '@/store'
+import { currentWordChapterIdAtom, currentWordDictionaryIdAtom, wordReviewModeInfoAtom } from '@/store'
 import type { WordDictionary } from '@/typings'
 import { timeStamp2String } from '@/utils'
 import { generateNewWordReviewRecord, useGetLatestWordReviewRecord } from '@/utils/db/wordReviewRecord'
@@ -14,11 +14,11 @@ export function WordReviewDetail({ errorData, wordDictionary }: { errorData: TEr
   const setWordReviewModeInfo = useSetAtom(wordReviewModeInfoAtom)
   const setCurrentWordDictionaryId = useSetAtom(currentWordDictionaryIdAtom)
   const navigate = useNavigate()
-  const setCurrentWordChapter = useSetAtom(currentWordChapterAtom)
+  const setCurrentWordChapterId = useSetAtom(currentWordChapterIdAtom)
 
   const startReview = async () => {
     setCurrentWordDictionaryId(wordDictionary.id)
-    setCurrentWordChapter(-1)
+    setCurrentWordChapterId(-1)
 
     const record = await generateNewWordReviewRecord(wordDictionary.id, errorData)
     setWordReviewModeInfo({ isReviewMode: true, reviewRecord: record })
@@ -27,7 +27,7 @@ export function WordReviewDetail({ errorData, wordDictionary }: { errorData: TEr
 
   const continueReview = () => {
     setCurrentWordDictionaryId(wordDictionary.id)
-    setCurrentWordChapter(-1)
+    setCurrentWordChapterId(-1)
 
     setWordReviewModeInfo({ isReviewMode: true, reviewRecord: latestReviewRecord })
     navigate('/')

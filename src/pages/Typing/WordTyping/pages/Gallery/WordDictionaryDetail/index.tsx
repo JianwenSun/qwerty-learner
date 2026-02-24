@@ -7,7 +7,7 @@ import useErrorWordData from '../hooks/useErrorWords'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Tabs, TabsContent } from '@/components/ui/tabs'
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
-import { currentWordChapterAtom, currentWordDictionaryIdAtom, wordReviewModeInfoAtom } from '@/store'
+import { currentWordChapterIdAtom, currentWordDictionaryIdAtom, wordReviewModeInfoAtom } from '@/store'
 import type { WordDictionary } from '@/typings'
 import range from '@/utils/range'
 import { useAtom, useSetAtom } from 'jotai'
@@ -24,7 +24,7 @@ enum Tab {
 }
 
 export default function WordDictionaryDetail({ wordDictionary }: { wordDictionary: WordDictionary }) {
-  const [currentChapter, setCurrentChapter] = useAtom(currentWordChapterAtom)
+  const [currentChapter, setCurrentChapter] = useAtom(currentWordChapterIdAtom)
   const [currentWordDictionaryId, setCurrentWordDictionaryId] = useAtom(currentWordDictionaryIdAtom)
   const [curTab, setCurTab] = useState<Tab>(Tab.Chapters)
   const setWordReviewModeInfo = useSetAtom(wordReviewModeInfoAtom)

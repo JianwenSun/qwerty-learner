@@ -1,5 +1,5 @@
 import { CHAPTER_LENGTH } from '@/constants'
-import { currentWordChapterAtom, currentWordDictionaryInfoAtom, wordReviewModeInfoAtom } from '@/store'
+import { currentWordChapterIdAtom, currentWordDictionaryInfoAtom, wordReviewModeInfoAtom } from '@/store'
 import type { Word, WordWithIndex } from '@/typings/index'
 import { wordListFetcher } from '@/utils/resourceListFetcher'
 import { useAtom, useAtomValue } from 'jotai'
@@ -17,15 +17,15 @@ export type UseWordListResult = {
  */
 export function useWordList(): UseWordListResult {
   const currentWordDictionaryInfo = useAtomValue(currentWordDictionaryInfoAtom)
-  const [currentWordChapter, setCurrentWordChapter] = useAtom(currentWordChapterAtom)
+  const [currentWordChapterId, setCurrentWordChapterId] = useAtom(currentWordChapterIdAtom)
   const { isReviewMode, reviewRecord } = useAtomValue(wordReviewModeInfoAtom)
 
   // Reset current chapter to 0, when currentChapter is greater than chapterCount.
-  if (currentWordChapter === undefined || currentWordChapter !== undefined && currentWordChapter >= currentWordDictionaryInfo.chapterCount) {
-    setCurrentWordChapter(0)
+  if (currentWordChapterId === undefined || currentWordChapterId !== undefined && currentWordChapterId >= currentWordDictionaryInfo.chapterCount) {
+    setCurrentWordChapterId(0)
   }
 
-  const isFirstChapter = !isReviewMode && currentWordChapter === 0
+  const isFirstChapter = !isReviewMode && currentWordChapterId === 0
   const { data: wordList, error, isLoading } = useSWR(currentWordDictionaryInfo.url, wordListFetcher)
 
   const words: WordWithIndex[] = useMemo(() => {
@@ -34,8 +34,8 @@ export function useWordList(): UseWordListResult {
       newWords = reviewRecord?.words ?? []
     } else if (wordList) {
       newWords = wordList.slice(
-        currentWordChapter !== undefined ? currentWordChapter * CHAPTER_LENGTH : 0,
-        (currentWordChapter !== undefined ? currentWordChapter + 1 : 0) * CHAPTER_LENGTH
+        currentWordChapterId !== undefined ? currentWordChapterId * CHAPTER_LENGTH : 0,
+        (currentWordChapterId !== undefined ? currentWordChapterId + 1 : 0) * CHAPTER_LENGTH
       )
     } else {
       newWords = []
@@ -47,7 +47,7 @@ export function useWordList(): UseWordListResult {
         index,
       }
     })
-  }, [isFirstChapter, isReviewMode, wordList, reviewRecord?.words, currentWordChapter])
+  }, [isFirstChapter, isReviewMode, wordList, reviewRecord?.words, currentWordChapterId])
 
   return { words, isLoading, error }
 }

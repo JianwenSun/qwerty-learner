@@ -1,6 +1,6 @@
 import type { WordTypingState } from '@/pages/Typing/WordTyping/store/type'
 import {
-  currentWordChapterAtom,
+  currentWordChapterIdAtom,
   currentWordDictionaryInfoAtom,
   isOpenDarkModeAtom,
   keySoundsConfigAtom,
@@ -103,7 +103,7 @@ export type ChapterLogUpload = ModeInfo & {
 }
 
 export function useMixPanelWordLogUploader(wordTypingState: WordTypingState) {
-  const currentWordChapter = useAtomValue(currentWordChapterAtom)
+  const currentWordChapterId = useAtomValue(currentWordChapterIdAtom)
   const { name: dictName } = useAtomValue(currentWordDictionaryInfoAtom)
   const isDarkMode = useAtomValue(isOpenDarkModeAtom)
   const keySoundsConfig = useAtomValue(keySoundsConfigAtom)
@@ -116,7 +116,7 @@ export function useMixPanelWordLogUploader(wordTypingState: WordTypingState) {
       const props: WordLogUpload = {
         ...wordLog,
         order: wordTypingState.chapterData.index + 1,
-        chapter: (currentWordChapter!! + 1).toString(),
+        chapter: (currentWordChapterId!! + 1).toString(),
         wordlist: dictName,
         modeDark: isDarkMode,
         modeShuffle: randomConfig.isOpen,
@@ -130,7 +130,7 @@ export function useMixPanelWordLogUploader(wordTypingState: WordTypingState) {
     },
     [
       wordTypingState,
-      currentWordChapter,
+      currentWordChapterId,
       dictName,
       isDarkMode,
       keySoundsConfig.isOpen,
@@ -145,7 +145,7 @@ export function useMixPanelWordLogUploader(wordTypingState: WordTypingState) {
 }
 
 export function useMixPanelChapterLogUploader(wordTypingState: WordTypingState) {
-  const currentWordChapter = useAtomValue(currentWordChapterAtom)
+  const currentWordChapterId = useAtomValue(currentWordChapterIdAtom)
   const { name: dictName } = useAtomValue(currentWordDictionaryInfoAtom)
   const isDarkMode = useAtomValue(isOpenDarkModeAtom)
   const keySoundsConfig = useAtomValue(keySoundsConfigAtom)
@@ -160,7 +160,7 @@ export function useMixPanelChapterLogUploader(wordTypingState: WordTypingState) 
       countInput: wordTypingState.chapterData.correctCount + wordTypingState.chapterData.wrongCount,
       countTypo: wordTypingState.chapterData.wrongCount,
       countCorrect: wordTypingState.chapterData.correctCount,
-      chapter: (currentWordChapter!! + 1).toString(),
+      chapter: (currentWordChapterId!! + 1).toString(),
       wordlist: dictName,
       modeDark: isDarkMode,
       modeShuffle: randomConfig.isOpen,
@@ -173,7 +173,7 @@ export function useMixPanelChapterLogUploader(wordTypingState: WordTypingState) 
     mixpanel.track('Chapter', props)
   }, [
     wordTypingState,
-    currentWordChapter,
+    currentWordChapterId,
     dictName,
     isDarkMode,
     keySoundsConfig.isOpen,

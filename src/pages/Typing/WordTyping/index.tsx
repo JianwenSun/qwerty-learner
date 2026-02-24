@@ -12,11 +12,10 @@ import WordPanel from './components/WordPanel'
 import { useConfetti } from './hooks/useConfetti'
 import { useWordList } from './hooks/useWordList'
 import { WordTypingContext, WordTypingStateActionType, initialWordTypingState, wordTypingReducer } from './store'
-import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import Tooltip from '@/components/Tooltip'
 import { wordDictionaryMap } from '@/resources/dictionary'
-import { currentWordChapterAtom, currentWordDictionaryIdAtom, isReviewModeAtom, randomConfigAtom, wordReviewModeInfoAtom } from '@/store'
+import { currentWordChapterIdAtom, currentWordDictionaryIdAtom, isReviewModeAtom, randomConfigAtom, wordReviewModeInfoAtom } from '@/store'
 import { isLegal } from '@/utils'
 import { useSaveWordChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
@@ -31,7 +30,7 @@ const App: React.FC = () => {
   const { words } = useWordList()
 
   const [currentWordDictionaryId, setCurrentWordDictionaryId] = useAtom(currentWordDictionaryIdAtom)
-  const setCurrentWordChapter = useSetAtom(currentWordChapterAtom)
+  const setCurrentWordChapterId = useSetAtom(currentWordChapterIdAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
   const chapterLogUploader = useMixPanelChapterLogUploader(state)
   const saveWordChapterRecord = useSaveWordChapterRecord()
@@ -45,7 +44,7 @@ const App: React.FC = () => {
     if (!(id!! in wordDictionaryMap)) {
       return
     }
-  }, [currentWordDictionaryId, setCurrentWordChapter, setCurrentWordDictionaryId])
+  }, [currentWordDictionaryId, setCurrentWordChapterId, setCurrentWordDictionaryId])
 
   const skipWord = useCallback(() => {
     dispatch({ type: WordTypingStateActionType.SKIP_WORD })
