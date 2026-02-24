@@ -1,0 +1,11 @@
+# 静态文件例外规则
+/*\.css /:splat 200
+/*\.js /:splat 200
+/*\.png /:splat 200
+/*\.jpg /:splat 200
+/*\.svg /:splat 200
+/*\.ico /:splat 200
+/*\.json /:splat 200
+
+# 通配符路由 - 让所有路由都返回根路径的 index.html
+/* /index.html 200

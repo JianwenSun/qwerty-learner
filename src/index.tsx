@@ -39,30 +39,34 @@ function Root() {
     darkMode ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark')
   }, [darkMode])
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600)
-
   return (
     <>
       <BrowserRouter basename={REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''}>
         <Suspense fallback={<Loading />}>
           <Routes>
+            <Route path="/" element={isAuthenticated ? <Navigate to="/word-typing" /> : <Navigate to="/login?from=/" />} />
             <Route path="/login" element={<LoginPage />} />
-            {isMobile ? (
-              <Route path="/*" element={<Navigate to="/mobile" />} />
-            ) : (
-              <>
-                <Route path="/word-typing" element={isAuthenticated ? <WordTypingPage /> : <Navigate to="/login" />} />
-                <Route path="/word-typing/gallery" element={isAuthenticated ? <WordGalleryPage /> : <Navigate to="/login" />} />
-                <Route path="/sentence-typing" element={isAuthenticated ? <SentenceTypingPage /> : <Navigate to="/login" />} />
-                <Route path="/sentence-typing/gallery" element={isAuthenticated ? <SentenceGalleryPage /> : <Navigate to="/login" />} />
-                <Route path="/analysis" element={isAuthenticated ? <AnalysisPage /> : <Navigate to="/login" />} />
-                <Route path="/error-book" element={isAuthenticated ? <ErrorBook /> : <Navigate to="/login" />} />
-                <Route path="/friend-links" element={isAuthenticated ? <FriendLinks /> : <Navigate to="/login" />} />
-                <Route path="/word-preview/:dictionaryId" element={isAuthenticated ? <WordPreviewPage /> : <Navigate to="/login" />} />
-                <Route path="/*" element={<Navigate to="/word-typing" />} />
-              </>
-            )}
-            <Route path="/mobile" element={<MobilePage />} />
+            <Route path="/word-typing" element={isAuthenticated ? <WordTypingPage /> : <Navigate to="/login?from=/word-typing" />} />
+            <Route
+              path="/word-typing/gallery"
+              element={isAuthenticated ? <WordGalleryPage /> : <Navigate to="/login?from=/word-typing/gallery" />}
+            />
+            <Route
+              path="/sentence-typing"
+              element={isAuthenticated ? <SentenceTypingPage /> : <Navigate to="/login?from=/sentence-typing" />}
+            />
+            <Route
+              path="/sentence-typing/gallery"
+              element={isAuthenticated ? <SentenceGalleryPage /> : <Navigate to="/login?from=/sentence-typing/gallery" />}
+            />
+            <Route path="/analysis" element={isAuthenticated ? <AnalysisPage /> : <Navigate to="/login?from=/analysis" />} />
+            <Route path="/error-book" element={isAuthenticated ? <ErrorBook /> : <Navigate to="/login?from=/error-book" />} />
+            <Route path="/friend-links" element={isAuthenticated ? <FriendLinks /> : <Navigate to="/login?from=/friend-links" />} />
+            <Route
+              path="/word-preview/:dictionaryId"
+              element={isAuthenticated ? <WordPreviewPage /> : <Navigate to={`/login?from=${window.location.pathname}`} />}
+            />
+            <Route path="/*" element={<Navigate to="/word-typing" />} />
           </Routes>
         </Suspense>
       </BrowserRouter>

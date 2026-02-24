@@ -1,7 +1,7 @@
 import { isAuthenticatedAtom } from '@/store'
 import { useAtom } from 'jotai'
 import { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 
 export default function LoginPage() {
   const [isAuthenticated, setIsAuth] = useAtom(isAuthenticatedAtom)
@@ -15,12 +15,15 @@ export default function LoginPage() {
     remember: false,
   })
   const navigate = useNavigate()
+  const location = useLocation()
 
   useEffect(() => {
     if (isAuthenticated) {
-      navigate('/')
+      const urlParams = new URLSearchParams(location.search)
+      const from = urlParams.get('from') || '/word-typing'
+      navigate(from)
     }
-  }, [isAuthenticated, navigate])
+  }, [isAuthenticated, navigate, location.search])
 
   useEffect(() => {
     if (loginMethod === 'wechat') {
@@ -90,7 +93,9 @@ export default function LoginPage() {
     // 验证 token 并设置认证状态
     setIsAuth(true)
     //localStorage.setItem('auth_token', token)
-    navigate('/')
+    const urlParams = new URLSearchParams(location.search)
+    const from = urlParams.get('from') || '/word-typing'
+    navigate(from)
   }
 
   return (

@@ -1,7 +1,4 @@
-import { sentenceDictionaryConverter } from '@/plugins/sb/adepter'
-import { getLessons } from '@/plugins/wxs/wxsApi';
-import { updateWordDictionaryMap } from '@/store';
-import type { WordDictionary, SentenceDictionary } from '@/typings/index'
+import type { WordDictionary } from '@/typings/index'
 import { calcChapterCount } from '@/utils'
 import { wordDictionaryResources } from './wordDictionary'
 
@@ -20,8 +17,6 @@ export function updateWordDictionaries() {
   }));
 
   wordDictionaryMap = Object.fromEntries(wordDictionaries.map((dict) => [dict.id, dict]));
-  // 通知依赖的 atom 重新计算
-  updateWordDictionaryMap();
 }
 
 // 初始调用一次

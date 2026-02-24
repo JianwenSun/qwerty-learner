@@ -1,7 +1,7 @@
 import WordDictionaryDetail from './WordDictionaryDetail'
 import { useDictionaryStats } from './hooks/useDictionaryStats'
 import bookCover from '@/assets/book-cover.png'
-import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import useIntersectionObserver from '@/hooks/useIntersectionObserver'
 import { currentWordDictionaryIdAtom } from '@/store'
@@ -108,9 +108,7 @@ export default function WordDictionaryComponent({ wordDictionary }: Props) {
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="w-[60rem] max-w-none !rounded-[20px]">
-        <DialogTitle>{wordDictionary.name}</DialogTitle>
-        <DialogDescription>{wordDictionary.description}</DialogDescription>
+      <DialogContent className="w-[80%] max-w-none !rounded-[20px]">
         <WordDictionaryDetail wordDictionary={wordDictionary} />
       </DialogContent>
     </Dialog>

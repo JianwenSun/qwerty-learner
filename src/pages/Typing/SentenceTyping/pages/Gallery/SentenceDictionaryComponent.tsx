@@ -89,7 +89,7 @@ export default function SentenceDictionaryComponent({ dictionary }: Props) {
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="w-[60rem] max-w-none !rounded-[20px]">
+      <DialogContent className="w-[80%] max-w-none !rounded-[20px]">
         <SentenceDictionaryDetail dictionary={dictionary} />
       </DialogContent>
     </Dialog>

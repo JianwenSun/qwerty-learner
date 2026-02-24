@@ -61,7 +61,7 @@
     "xlsx": "^0.18.5"
   },
   "scripts": {
-    "dev": "vite --host 192.168.1.4",
+    "dev": "vite --host 10.129.104.26 --port 8080",
     "start": "vite",
     "build": "cross-env CI=false vite build --base=./",
     "test": "echo \"No tests\"",
@@ -98,7 +98,6 @@
     "@types/canvas-confetti": "^1.6.0",
     "@types/echarts": "^4.9.18",
     "@types/file-saver": "^2.0.5",
-    "@types/gtag.js": "^0.0.20",
     "@types/howler": "^2.2.3",
     "@types/mixpanel-browser": "^2.38.1",
     "@types/node": "18.14.6",

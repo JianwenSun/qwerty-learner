@@ -43,7 +43,7 @@ export default defineConfig(({ mode }) => {
       drop: mode === 'development' ? [] : ['console', 'debugger'],
     },
     define: {
-      REACT_APP_DEPLOY_ENV: JSON.stringify(process.env.REACT_APP_DEPLOY_ENV),
+      REACT_APP_DEPLOY_ENV: JSON.stringify(process.env.REACT_APP_DEPLOY_ENV || ''),
       LATEST_COMMIT_HASH: JSON.stringify(latestCommitHash + (process.env.NODE_ENV === 'production' ? '' : ' (dev)')),
     },
     resolve: {
@@ -57,6 +57,9 @@ export default defineConfig(({ mode }) => {
       },
     },
     server: {
+      host: '10.129.104.26',
+      port: 8080,
+      allowedHosts: ['sunjw.zzz'],
       proxy: {
         '/upyun': {
           target: 'https://v0.api.upyun.com',
