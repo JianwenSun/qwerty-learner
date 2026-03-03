@@ -9,7 +9,7 @@ import SentenceList from './components/SentencePanel/components/SentenceList'
 import Speed from './components/SentencePanel/components/Speed'
 import StartButton from './components/StartButton'
 import Switcher from './components/Switcher'
-import { useSentenceList } from './hooks/useSentenceHooks'
+import { useCurrentSentenceChapterInfo, useCurrentSentenceDictionaryInfo, useSentenceList } from './hooks/useSentenceHooks'
 import { initialSentenceTypingState, SentenceTypingContext, sentenceTypingReducer, SentenceTypingStateActionType } from './store'
 import Header from '@/components/Header'
 import { randomConfigAtom, sentenceReviewModeInfoAtom } from '@/store'
@@ -26,6 +26,9 @@ const App: React.FC = () => {
 
   const randomConfig = useAtomValue(randomConfigAtom)
   const reviewModeInfo = useAtomValue(sentenceReviewModeInfoAtom)
+
+  const { data: currentSentenceDictionary } = useCurrentSentenceDictionaryInfo()
+  const { data: currentSentenceChapterInfo } = useCurrentSentenceChapterInfo()
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
@@ -67,7 +70,10 @@ const App: React.FC = () => {
         <div className="row-span-1 w-full">
           <Header>
             <PracticeModeSwitcher />
-            <SentenceDictionaryChapterButton />
+            <SentenceDictionaryChapterButton
+              currentSentenceDictionary={currentSentenceDictionary}
+              currentSentenceChapter={currentSentenceChapterInfo}
+            />
             <PronunciationSwitcher />
             <Switcher />
             <StartButton isLoading={isLoading} />
@@ -108,7 +114,7 @@ const App: React.FC = () => {
           <Speed />
         </div>
       </Layout>
-      <SentenceList />
+      <SentenceList currentSentenceDictionary={currentSentenceDictionary} currentSentenceChapter={currentSentenceChapterInfo} />
     </SentenceTypingContext.Provider>
   )
 }

@@ -5,7 +5,7 @@ import SentenceComponent from './Sentence'
 import ChuckDetail from './components/ChuckDetail'
 import CustomDetail from './components/CustomDetail'
 import Translation from './components/Translation'
-import { getSentenceSoundUrl, SentenceAndSound } from '@/plugins/wxs/wxs'
+import { getSentenceSoundUrl, LessonCourse, SentenceAndSound } from '@/plugins/wxs/wxs'
 import { getSentenceSound } from '@/plugins/wxs/wxsApi'
 import {
   isReviewModeAtom,
@@ -19,7 +19,7 @@ import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import React from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
-export default function SentencePanel() {
+export default function SentencePanel({}: {}) {
   const { state, dispatch } = useContext(SentenceTypingContext)!
   const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
   const [currentSentenceExerciseCount, setCurrentSentenceExerciseCount] = useState(0)

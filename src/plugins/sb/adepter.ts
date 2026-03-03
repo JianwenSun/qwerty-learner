@@ -24,8 +24,3 @@ export function sentenceDictionaryConverter(lesson: Lesson): SentenceDictionary 
     }
 }
 
-export async function sentenceDictionaryResourcesPromise(): Promise<SentenceDictionary[]> {
-    return getLessons().then((lessons) => lessons.map(sentenceDictionaryConverter));
-}
-
-

@@ -18,7 +18,7 @@ import {
   pronunciationIsOpenAtom,
   sentenceDictationConfigAtom,
 } from '@/store'
-import { CTRL, getUtcStringForMixpanel, SHIFT } from '@/utils'
+import { getUtcStringForMixpanel, SHIFT } from '@/utils'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useEffect, useRef, useState } from 'react'
 import React from 'react'

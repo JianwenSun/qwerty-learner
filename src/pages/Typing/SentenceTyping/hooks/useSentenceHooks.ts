@@ -1,10 +1,10 @@
+import { lessonsAtom, lessonsErrorAtom, lessonsLoadingAtom, loadLessonsAtom, lessonDetailAtom, sentenceListAtom } from '@/cache'
 import { sentenceDictionaryConverter } from '@/plugins/sb/adepter'
 import { LessonCourse, Sentence } from '@/plugins/wxs/wxs'
-import { getLessonDetail, getLessons, getSentenceChapterInfo, getSentenceDictionaryInfo, getSentenceList } from '@/plugins/wxs/wxsApi'
 import { currentSentenceChapterIdAtom, currentSentenceDictionaryIdAtom } from '@/store'
 import { SentenceDictionary } from '@/typings'
-import { useAsyncData } from '@/utils/async'
 import { useAtom } from 'jotai'
+import { useEffect, useState } from 'react'
 
 export type AsyncResult<T> = {
     data: T | undefined
@@ -16,44 +16,80 @@ export function useCurrentSentenceDictionaryInfo(): AsyncResult<SentenceDictiona
     const [currentSentenceDictionaryId, setCurrentSentenceDictionaryId] = useAtom(currentSentenceDictionaryIdAtom)
     const dictionaries = useSentenceDictionaries()
 
-    const currentSentenceDictionaryInfo = useAsyncData(async () => {
-        if (currentSentenceDictionaryId) {
-            return getSentenceDictionaryInfo(currentSentenceDictionaryId)
-        }
-        else if (dictionaries.data && dictionaries.data.length > 0) {
+    // 当 dictionaries.data 加载完成且没有选择字典时，设置默认字典
+    useEffect(() => {
+        if (!currentSentenceDictionaryId && dictionaries.data && dictionaries.data.length > 0) {
             setCurrentSentenceDictionaryId(dictionaries.data[0].id)
-            return dictionaries.data[0]
         }
-    }, [currentSentenceDictionaryId, dictionaries.data])
-    return currentSentenceDictionaryInfo
+    }, [currentSentenceDictionaryId, dictionaries.data, setCurrentSentenceDictionaryId])
+
+    // 查找当前字典信息
+    const currentDictionary = currentSentenceDictionaryId && dictionaries.data
+        ? dictionaries.data.find((dict) => dict.id === currentSentenceDictionaryId)
+        : (dictionaries.data && dictionaries.data.length > 0 ? dictionaries.data[0] : undefined)
+
+    return {
+        data: currentDictionary,
+        loading: dictionaries.loading,
+        error: dictionaries.error
+    }
 }
 
 export function useSentenceDictionaries(): AsyncResult<SentenceDictionary[]> {
-    const sentenceDictionaries = useAsyncData(async () => {
-        return getLessons().then((lessons) => lessons.map(sentenceDictionaryConverter))
-    }, [])
-    return sentenceDictionaries
+    const [lessons] = useAtom(lessonsAtom)
+    const [loading] = useAtom(lessonsLoadingAtom)
+    const [error] = useAtom(lessonsErrorAtom)
+    const [, loadLessons] = useAtom(loadLessonsAtom)
+
+    // 当 lessons 为 undefined 时，触发加载
+    useEffect(() => {
+        const fetchLessons = async () => {
+            if (!lessons) {
+                await loadLessons()
+            }
+        }
+        fetchLessons()
+    }, [lessons, loadLessons])
+
+    // 将 lessons 转换为 SentenceDictionary[]
+    const dictionaries = lessons ? lessons.map(sentenceDictionaryConverter) : undefined
+
+    return { data: dictionaries, loading, error }
 }
 
 export function useSentenceChapterList(dictionaryId: string): AsyncResult<LessonCourse[]> {
-    const sentenceChapters = useAsyncData(async () => {
-        if (dictionaryId) {
-            return getLessonDetail(Number(dictionaryId)).then((detail) => detail.lesson_courses || ([] as LessonCourse[]))
+    const [data, setData] = useState<LessonCourse[] | undefined>(undefined)
+    const [loading, setLoading] = useState<boolean>(false)
+    const [error, setError] = useState<Error | undefined>(undefined)
+    const [, getLessonDetail] = useAtom(lessonDetailAtom)
+
+    useEffect(() => {
+        const fetchChapters = async () => {
+            if (dictionaryId) {
+                setLoading(true)
+                setError(undefined)
+                try {
+                    const detail = await getLessonDetail(Number(dictionaryId))
+                    setData(detail?.lesson_courses || [])
+                } catch (err) {
+                    setError(err as Error)
+                    setData([])
+                } finally {
+                    setLoading(false)
+                }
+            } else {
+                setData([])
+            }
         }
-        return []
-    }, [dictionaryId])
-    return sentenceChapters
+        fetchChapters()
+    }, [dictionaryId, getLessonDetail])
+
+    return { data, loading, error }
 }
 
 export function useCurrentSentenceChapterList(): AsyncResult<LessonCourse[]> {
     const [currentSentenceDictionaryId] = useAtom(currentSentenceDictionaryIdAtom)
-    const sentenceChapters = useAsyncData(async () => {
-        if (currentSentenceDictionaryId) {
-            return getLessonDetail(Number(currentSentenceDictionaryId)).then((detail) => detail.lesson_courses || ([] as LessonCourse[]))
-        }
-        return []
-    }, [currentSentenceDictionaryId])
-    return sentenceChapters
+    return useSentenceChapterList(currentSentenceDictionaryId ?? '')
 }
 
 export function useCurrentSentenceChapterInfo(): AsyncResult<LessonCourse> {
@@ -61,34 +97,56 @@ export function useCurrentSentenceChapterInfo(): AsyncResult<LessonCourse> {
     const [currentSentenceChapterId, setCurrentSentenceChapterId] = useAtom(currentSentenceChapterIdAtom)
     const sentenceChapters = useCurrentSentenceChapterList()
 
-    const currentSentenceChapterInfo = useAsyncData(async () => {
-        if (currentSentenceChapterId && currentSentenceDictionaryId) {
-            return getSentenceChapterInfo(currentSentenceDictionaryId, currentSentenceChapterId)
+    // 当 sentenceChapters.data 加载完成且没有选择章节时，设置默认章节
+    useEffect(() => {
+        if (currentSentenceDictionaryId && !currentSentenceChapterId && sentenceChapters.data && sentenceChapters.data.length > 0) {
+            setCurrentSentenceChapterId(sentenceChapters.data[0].id.toString())
         }
-        else if (currentSentenceDictionaryId) {
-            if (sentenceChapters.data && sentenceChapters.data.length > 0) {
-                setCurrentSentenceChapterId(sentenceChapters.data[0].id.toString())
-                return sentenceChapters.data[0]
-            }
-        }
-    }, [currentSentenceDictionaryId, currentSentenceChapterId, sentenceChapters.data])
-    return currentSentenceChapterInfo
+    }, [currentSentenceDictionaryId, currentSentenceChapterId, sentenceChapters.data, setCurrentSentenceChapterId])
+
+    // 获取当前章节信息
+    const currentChapter = currentSentenceChapterId && sentenceChapters.data
+        ? sentenceChapters.data.find((chapter) => chapter.id.toString() === currentSentenceChapterId)
+        : (sentenceChapters.data && sentenceChapters.data.length > 0 ? sentenceChapters.data[0] : undefined)
+
+    return {
+        data: currentChapter,
+        loading: sentenceChapters.loading,
+        error: sentenceChapters.error
+    }
 }
 
 /**
  * Use sentence lists from the current selected dictionary. 
  */
 export function useSentenceList(): AsyncResult<Sentence[]> {
-
     const [currentSentenceDictionaryId] = useAtom(currentSentenceDictionaryIdAtom)
     const [currentSentenceChapterId] = useAtom(currentSentenceChapterIdAtom)
+    const [data, setData] = useState<Sentence[] | undefined>(undefined)
+    const [loading, setLoading] = useState<boolean>(false)
+    const [error, setError] = useState<Error | undefined>(undefined)
+    const [, getSentenceList] = useAtom(sentenceListAtom)
 
-    const sentenceList = useAsyncData(async () => {
-        if (currentSentenceChapterId && currentSentenceDictionaryId) {
-            return getSentenceList(Number(currentSentenceDictionaryId), Number(currentSentenceChapterId))
+    useEffect(() => {
+        const fetchSentences = async () => {
+            if (currentSentenceChapterId && currentSentenceDictionaryId) {
+                setLoading(true)
+                setError(undefined)
+                try {
+                    const sentences = await getSentenceList(Number(currentSentenceDictionaryId), Number(currentSentenceChapterId))
+                    setData(sentences)
+                } catch (err) {
+                    setError(err as Error)
+                    setData([])
+                } finally {
+                    setLoading(false)
+                }
+            } else {
+                setData([])
+            }
         }
-        return []
-    }, [currentSentenceDictionaryId, currentSentenceChapterId])
+        fetchSentences()
+    }, [currentSentenceDictionaryId, currentSentenceChapterId, getSentenceList])
 
-    return sentenceList
+    return { data, loading, error }
 }

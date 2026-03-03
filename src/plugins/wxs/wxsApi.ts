@@ -1,10 +1,6 @@
 import { decode } from "@/encode/decode";
-import { currentSentenceChapterIdAtom, currentSentenceDictionaryIdAtom } from "@/store";
-import { SentenceDictionary } from "@/typings";
-import { useAtom } from "jotai";
 import { UpyunClient } from "../../storage/upyun";
-import { sentenceDictionaryConverter } from "../sb/adepter";
-import { Lesson, LessonCourse, LessonDetail, Sentence } from "./wxs";
+import { Lesson, LessonDetail, Sentence } from "./wxs";
 
 const ShanbeiNamespaceNew = "wxz"
 //echo @ShaNBeI@ | base64
@@ -70,11 +66,11 @@ export async function getSentenceSound(sentenceId: number): Promise<string> {
     return JSON.parse(decoded) as string
 }
 
-export async function getSentenceDictionaryInfo(dictionaryId: string): Promise<SentenceDictionary | undefined> {
-    const dicts = getLessons().then((lessons) => lessons.map(sentenceDictionaryConverter))
-    return dicts.then(d => d.find((dict) => dict.id === dictionaryId) || undefined)
-}
+// export async function getSentenceDictionaryInfo(dictionaryId: string): Promise<SentenceDictionary | undefined> {
+//     const dicts = getLessons().then((lessons) => lessons.map(sentenceDictionaryConverter))
+//     return dicts.then(d => d.find((dict) => dict.id === dictionaryId) || undefined)
+// }
 
-export async function getSentenceChapterInfo(dictionaryId: string, chapterId: string): Promise<LessonCourse | undefined> {
-    return getLessonDetail(Number(dictionaryId)).then((detail) => detail.lesson_courses.find((chapter) => chapter.id === Number(chapterId)) || undefined)
-}
+// export async function getSentenceChapterInfo(dictionaryId: string, chapterId: string): Promise<LessonCourse | undefined> {
+//     return getLessonDetail(Number(dictionaryId)).then((detail) => detail.lesson_courses.find((chapter) => chapter.id === Number(chapterId)) || undefined)
+// }

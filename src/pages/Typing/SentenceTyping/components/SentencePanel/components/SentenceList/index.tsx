@@ -1,9 +1,10 @@
 import SentenceCard from './SentenceCard'
 import Drawer from '@/components/Drawer'
 import Tooltip from '@/components/Tooltip'
-import { useCurrentSentenceChapterInfo, useCurrentSentenceDictionaryInfo } from '@/pages/Typing/SentenceTyping/hooks/useSentenceHooks'
 import { SentenceTypingContext, SentenceTypingStateActionType } from '@/pages/Typing/SentenceTyping/store'
+import { LessonCourse } from '@/plugins/wxs/wxs'
 import { isReviewModeAtom } from '@/store'
+import { SentenceDictionary } from '@/typings'
 import { Dialog } from '@headlessui/react'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { useAtomValue } from 'jotai'
@@ -11,20 +12,22 @@ import { useCallback, useContext, useState } from 'react'
 import ListIcon from '~icons/tabler/list'
 import IconX from '~icons/tabler/x'
 
-export default function SentenceList() {
+export default function SentenceList({
+  currentSentenceDictionary,
+  currentSentenceChapter,
+}: {
+  currentSentenceDictionary: SentenceDictionary | undefined
+  currentSentenceChapter: LessonCourse | undefined
+}) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(SentenceTypingContext)!
 
   const [isOpen, setIsOpen] = useState(false)
   const isReviewMode = useAtomValue(isReviewModeAtom)
-  const currentSentenceDictionaryInfo = useCurrentSentenceDictionaryInfo()
-  const currentSentenceChapterInfo = useCurrentSentenceChapterInfo()
 
   const currentDictTitleValue = isReviewMode
-    ? `${(currentSentenceDictionaryInfo?.data ?? {}).name} 错题复习`
-    : `${(currentSentenceDictionaryInfo?.data ?? {}).name} - ${
-        currentSentenceChapterInfo.data !== undefined ? currentSentenceChapterInfo.data?.name || '' : ''
-      }`
+    ? `${currentSentenceDictionary?.name ?? ''} 错题复习`
+    : `${currentSentenceDictionary?.name ?? ''} - ${currentSentenceChapter !== undefined ? currentSentenceChapter?.name || '' : ''}`
 
   function closeModal() {
     setIsOpen(false)

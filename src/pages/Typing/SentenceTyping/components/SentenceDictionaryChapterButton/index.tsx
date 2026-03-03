@@ -1,24 +1,26 @@
-import {
-  useCurrentSentenceChapterInfo,
-  useCurrentSentenceDictionaryInfo,
-  useCurrentSentenceChapterList,
-} from '../../hooks/useSentenceHooks'
+import { useCurrentSentenceChapterList } from '../../hooks/useSentenceHooks'
 import Tooltip from '@/components/Tooltip'
+import { LessonCourse } from '@/plugins/wxs/wxs'
 import { currentSentenceChapterIdAtom, isOpenDarkModeAtom, isReviewModeAtom } from '@/store'
+import { SentenceDictionary } from '@/typings'
 import { Listbox, Transition } from '@headlessui/react'
 import { useAtom, useAtomValue } from 'jotai'
 import { Fragment } from 'react'
 import { NavLink } from 'react-router-dom'
 import IconCheck from '~icons/tabler/check'
 
-export const SentenceDictionaryChapterButton = () => {
+export const SentenceDictionaryChapterButton = ({
+  currentSentenceDictionary,
+  currentSentenceChapter,
+}: {
+  currentSentenceDictionary: SentenceDictionary | undefined
+  currentSentenceChapter: LessonCourse | undefined
+}) => {
   const [currentSentenceChapterId, setCurrentSentenceChapterId] = useAtom(currentSentenceChapterIdAtom)
 
   const isReviewMode = useAtomValue(isReviewModeAtom)
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
 
-  const { data: currentSentenceDictionary } = useCurrentSentenceDictionaryInfo()
-  const { data: currentSentenceChapterInfo } = useCurrentSentenceChapterInfo()
   const { data: sentenceChapters } = useCurrentSentenceChapterList()
 
   const handleKeyDown: React.KeyboardEventHandler<HTMLButtonElement> = (event) => {
@@ -40,14 +42,18 @@ export const SentenceDictionaryChapterButton = () => {
       </Tooltip>
       {!isReviewMode && (
         <Tooltip content="章节切换">
-          <Listbox value={currentSentenceChapterId} onChange={setCurrentSentenceChapterId}>
+          <Listbox
+          value={currentSentenceChapterId || ''}
+          onChange={setCurrentSentenceChapterId}
+          disabled={!currentSentenceChapterId && !sentenceChapters?.length}
+        >
             <Listbox.Button
               onKeyDown={handleKeyDown}
               className={`rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none ${
                 isOpenDarkMode ? 'text-white text-opacity-60 hover:text-opacity-100' : 'text-gray-800 hover:text-white'
               }`}
             >
-              {currentSentenceChapterInfo?.name || '选择章节'}
+              {currentSentenceChapter?.name || '选择章节'}
             </Listbox.Button>
             <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
               <Listbox.Options className="listbox-options z-50 w-auto whitespace-nowrap">

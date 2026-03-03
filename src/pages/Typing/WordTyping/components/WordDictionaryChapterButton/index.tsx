@@ -33,14 +33,17 @@ export const WordDictionaryChapterButton = () => {
       </Tooltip>
       {!isReviewMode && (
         <Tooltip content="章节切换">
-          <Listbox value={currentWordChapterId} onChange={setCurrentWordChapterId}>
+          <Listbox
+            value={currentWordChapterId !== undefined ? currentWordChapterId : 0}
+            onChange={setCurrentWordChapterId}
+          >
             <Listbox.Button
               onKeyDown={handleKeyDown}
               className={`rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none ${
                 isOpenDarkMode ? 'text-white text-opacity-60 hover:text-opacity-100' : 'text-gray-800 hover:text-white'
               }`}
             >
-              第 {currentWordChapterId !== undefined ? currentWordChapterId + 1 : ''} 章
+              第 {currentWordChapterId !== undefined ? currentWordChapterId + 1 : 1} 章
             </Listbox.Button>
             <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
               <Listbox.Options className="listbox-options z-50 w-auto whitespace-nowrap">
