@@ -1,0 +1,42 @@
+{
+  "created_at": 1772766729,
+  "id": "resp_0217727667287113b744fffeb88c418a31726ba8a0f731c15864b",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"sentences\": [\"Remember this: practice makes perfect.\", \"Study hard; you'll succeed.\"]}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177276672901800000000000000000000ffffac15da90807ddb"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 197,
+    "output_tokens": 21,
+    "total_tokens": 218,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773025928
+}

@@ -1,0 +1,42 @@
+{
+  "created_at": 1772774973,
+  "id": "resp_0217727749713918f2bceb731b8edfa7b9ded3d81aaad9d51dadc",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"sentences\": [\"Hello world.\", \"This is a test.\"]}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177277497356200000000000000000000ffffac155560f4db74"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 207,
+    "output_tokens": 15,
+    "total_tokens": 222,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773034171
+}

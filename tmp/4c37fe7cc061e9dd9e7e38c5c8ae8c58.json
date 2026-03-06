@@ -1,0 +1,42 @@
+{
+  "created_at": 1772766719,
+  "id": "resp_0217727667180653b744fffeb88c418a31726ba8a0f731ce0c432",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"sentences\": [\"The teacher said.\", \"Please open your books.\", \"The students obeyed.\"]}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177276671967900000000000000000000ffffac157885110632"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 22,
+    "total_tokens": 217,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773025918
+}

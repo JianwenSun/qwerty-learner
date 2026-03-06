@@ -1,0 +1,42 @@
+{
+  "created_at": 1772712750,
+  "id": "resp_021772712750064919ad815e17f571de59b303c4259686b443018",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"It was a little firefly.\",\n    \"contentCn\": \"那是一只小萤火虫。\",\n    \"tokens\": [\n        {\n            \"content\": \"It\",\n            \"words\": [],\n            \"explain\": \"代词，作句子主语\"\n        },\n        {\n            \"content\": \"was\",\n            \"words\": [],\n            \"explain\": \"be动词is的过去式，作系动词\"\n        },\n        {\n            \"content\": \"a\",\n            \"words\": [],\n            \"explain\": \"不定冠词，修饰可数名词单数\"\n        },\n        {\n            \"content\": \"little\",\n            \"words\": [],\n            \"explain\": \"形容词，意为“小的”，修饰名词\"\n        },\n        {\n            \"content\": \"firefly\",\n            \"words\": [],\n            \"explain\": \"名词，意为“萤火虫”，作表语\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"It was\",\n            \"contentCn\": \"那是\",\n            \"function\": \"主系结构部分\",\n            \"tokenIndexes\": [0, 1]\n        },\n        {\n            \"content\": \"a little firefly.\",\n            \"contentCn\": \"一只小萤火虫。\",\n            \"function\": \"表语部分\",\n            \"tokenIndexes\": [2, 3, 4, 5]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177271275060600000000000000000000ffffac151a02903e91"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 366,
+    "total_tokens": 1300,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1772971950
+}

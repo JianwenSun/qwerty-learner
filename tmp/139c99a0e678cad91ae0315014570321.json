@@ -1,0 +1,42 @@
+{
+  "created_at": 1772712750,
+  "id": "resp_0217727127500603637ff96f701bcfa7e2aa5f02834aee9e225cf",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"Even the gentlest kindness or the weakest effort can brighten someone’s dark moment.\",\n    \"contentCn\": \"即使是最温和的善意，或是最微小的努力，都能照亮某人的黑暗时刻。\",\n    \"tokens\": [\n        {\n            \"content\": \"Even\",\n            \"words\": [],\n            \"explain\": \"副词，意为“即使”\"\n        },\n        {\n            \"content\": \"the\",\n            \"words\": [],\n            \"explain\": \"定冠词，表特指\"\n        },\n        {\n            \"content\": \"gentlest\",\n            \"words\": [],\n            \"explain\": \"形容词gentle的最高级，意为“最温和的”\"\n        },\n        {\n            \"content\": \"kindness\",\n            \"words\": [],\n            \"explain\": \"名词，意为“善意”\"\n        },\n        {\n            \"content\": \"or\",\n            \"words\": [],\n            \"explain\": \"连词，意为“或者”\"\n        },\n        {\n            \"content\": \"the\",\n            \"words\": [],\n            \"explain\": \"定冠词，表特指\"\n        },\n        {\n            \"content\": \"weakest\",\n            \"words\": [],\n            \"explain\": \"形容词weak的最高级，意为“最微弱的，最微小的”\"\n        },\n        {\n            \"content\": \"effort\",\n            \"words\": [],\n            \"explain\": \"名词，意为“努力”\"\n        },\n        {\n            \"content\": \"can\",\n            \"words\": [],\n            \"explain\": \"情态动词，意为“能够，可以”\"\n        },\n        {\n            \"content\": \"brighten\",\n            \"words\": [],\n            \"explain\": \"动词，意为“照亮，使明亮”\"\n        },\n        {\n            \"content\": \"someone’s\",\n            \"words\": [\"someone\"],\n            \"explain\": \"s格，表示归属，意为“某人的”\"\n        },\n        {\n            \"content\": \"dark\",\n            \"words\": [],\n            \"explain\": \"形容词，意为“黑暗的”\"\n        },\n        {\n            \"content\": \"moment\",\n            \"words\": [],\n            \"explain\": \"名词，意为“时刻”\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"Even the gentlest kindness or the weakest effort\",\n            \"contentCn\": \"即使是最温和的善意，或是最微小的努力\",\n            \"function\": \"主语部分\",\n            \"tokenIndexes\": [0, 1, 2, 3, 4, 5, 6, 7]\n        },\n        {\n            \"content\": \"can brighten\",\n            \"contentCn\": \"能够照亮\",\n            \"function\": \"谓语部分\",\n            \"tokenIndexes\": [8, 9]\n        },\n        {\n            \"content\": \"someone’s dark moment.\",\n            \"contentCn\": \"某人的黑暗时刻。\",\n            \"function\": \"宾语部分\",\n            \"tokenIndexes\": [10, 11, 12, 13]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177271275090500000000000000000000ffffac15cec31a5098"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 944,
+    "output_tokens": 768,
+    "total_tokens": 1712,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1772971950
+}

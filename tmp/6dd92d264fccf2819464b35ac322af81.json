@@ -1,0 +1,42 @@
+{
+  "created_at": 1772712751,
+  "id": "resp_021772712750063bf18d587e2f99cd9673501e40cd28894ca2106",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"She felt a little afraid.\",\n    \"contentCn\": \"她感到有点害怕。\",\n    \"tokens\": [\n        {\n            \"content\": \"She\",\n            \"words\": [],\n            \"explain\": \"人称代词主格\"\n        },\n        {\n            \"content\": \"felt\",\n            \"words\": [],\n            \"explain\": \"动词feel的过去式，意为'感觉，感到'\"\n        },\n        {\n            \"content\": \"a\",\n            \"words\": [],\n            \"explain\": \"不定冠词\"\n        },\n        {\n            \"content\": \"little\",\n            \"words\": [],\n            \"explain\": \"形容词，此处表示'少量的，稍微'\"\n        },\n        {\n            \"content\": \"afraid\",\n            \"words\": [],\n            \"explain\": \"形容词，意为'害怕的，恐惧的'\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"She\",\n            \"contentCn\": \"她\",\n            \"function\": \"主语\",\n            \"tokenIndexes\": [0]\n        },\n        {\n            \"content\": \"felt a little afraid.\",\n            \"contentCn\": \"感到有点害怕。\",\n            \"function\": \"系表结构作谓语\",\n            \"tokenIndexes\": [1, 2, 3, 4, 5]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177271275119600000000000000000000ffffac15fd738d1f5c"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 933,
+    "output_tokens": 354,
+    "total_tokens": 1287,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1772971950
+}

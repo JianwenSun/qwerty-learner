@@ -1,0 +1,42 @@
+{
+  "created_at": 1772712750,
+  "id": "resp_021772712750056b840dd7b9652efdc537cb0c7fa5f038f3d27b0",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"One evening, Lily was walking home through the woods.\",\n    \"contentCn\": \"一天晚上，莉莉正穿过树林步行回家。\",\n    \"tokens\": [\n        {\n            \"content\": \"One\",\n            \"words\": [],\n            \"explain\": \"限定词\"\n        },\n        {\n            \"content\": \"evening\",\n            \"words\": [],\n            \"explain\": \"名词\"\n        },\n        {\n            \"content\": \",\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"Lily\",\n            \"words\": [],\n            \"explain\": \"专有名词，人名\"\n        },\n        {\n            \"content\": \"was\",\n            \"words\": [],\n            \"explain\": \"be动词is的过去式，构成过去进行时\"\n        },\n        {\n            \"content\": \"walking\",\n            \"words\": [],\n            \"explain\": \"动词walk的现在分词形式\"\n        },\n        {\n            \"content\": \"home\",\n            \"words\": [],\n            \"explain\": \"副词，意为“回家”\"\n        },\n        {\n            \"content\": \"through\",\n            \"words\": [],\n            \"explain\": \"介词，意为“穿过”\"\n        },\n        {\n            \"content\": \"the\",\n            \"words\": [],\n            \"explain\": \"定冠词\"\n        },\n        {\n            \"content\": \"woods\",\n            \"words\": [],\n            \"explain\": \"名词，意为“树林”\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"One evening,\",\n            \"contentCn\": \"一天晚上，\",\n            \"function\": \"时间状语\",\n            \"tokenIndexes\": [0, 1, 2]\n        },\n        {\n            \"content\": \"Lily was walking home\",\n            \"contentCn\": \"莉莉正步行回家\",\n            \"function\": \"主句主谓部分\",\n            \"tokenIndexes\": [3, 4, 5, 6]\n        },\n        {\n            \"content\": \"through the woods.\",\n            \"contentCn\": \"穿过树林。\",\n            \"function\": \"方式状语\",\n            \"tokenIndexes\": [7, 8, 9, 10]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177271275079600000000000000000000ffffac15f45cc400da"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 938,
+    "output_tokens": 574,
+    "total_tokens": 1512,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1772971950
+}

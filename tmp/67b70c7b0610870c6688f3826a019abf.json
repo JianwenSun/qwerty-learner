@@ -1,0 +1,42 @@
+{
+  "created_at": 1772712750,
+  "id": "resp_021772712750063c74f56d5c7946375a459cfa18fafa096b76e89",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"Soon, she reached her home safely.\",\n    \"contentCn\": \"很快，她安全地抵达了家。\",\n    \"tokens\": [\n        {\n            \"content\": \"Soon\",\n            \"words\": [],\n            \"explain\": \"副词\"\n        },\n        {\n            \"content\": \",\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"she\",\n            \"words\": [],\n            \"explain\": \"代词\"\n        },\n        {\n            \"content\": \"reached\",\n            \"words\": [],\n            \"explain\": \"动词过去式\"\n        },\n        {\n            \"content\": \"her\",\n            \"words\": [],\n            \"explain\": \"形容词性物主代词\"\n        },\n        {\n            \"content\": \"home\",\n            \"words\": [],\n            \"explain\": \"名词\"\n        },\n        {\n            \"content\": \"safely\",\n            \"words\": [],\n            \"explain\": \"副词\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"Soon,\",\n            \"contentCn\": \"很快，\",\n            \"function\": \"时间状语\",\n            \"tokenIndexes\": [0, 1]\n        },\n        {\n            \"content\": \"she reached her home\",\n            \"contentCn\": \"她抵达了家\",\n            \"function\": \"主谓宾主干部分\",\n            \"tokenIndexes\": [2, 3, 4, 5]\n        },\n        {\n            \"content\": \"safely.\",\n            \"contentCn\": \"安全地。\",\n            \"function\": \"方式状语\",\n            \"tokenIndexes\": [6, 7]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177271275054100000000000000000000ffffac15750273b038"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 935,
+    "output_tokens": 443,
+    "total_tokens": 1378,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1772971950
+}

@@ -1,0 +1,42 @@
+{
+  "created_at": 1772712750,
+  "id": "resp_02177271275007177ab73ca6276a7676e42a209e4d4de5e95c108",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"I don’t need to be big.\",\n    \"contentCn\": \"我不需要变得高大。\",\n    \"tokens\": [\n        {\n            \"content\": \"I\",\n            \"words\": [\"I\"],\n            \"explain\": \"人称代词主格，第一人称单数，作主语\"\n        },\n        {\n            \"content\": \"do\",\n            \"words\": [\"do\"],\n            \"explain\": \"助动词，用于构成否定句\"\n        },\n        {\n            \"content\": \"n’t\",\n            \"words\": [\"not\"],\n            \"explain\": \"否定缩写，是not的缩略形式\"\n        },\n        {\n            \"content\": \"need\",\n            \"words\": [\"need\"],\n            \"explain\": \"实义动词，意为“需要”\"\n        },\n        {\n            \"content\": \"to\",\n            \"words\": [\"to\"],\n            \"explain\": \"动词不定式符号，后接动词原形\"\n        },\n        {\n            \"content\": \"be\",\n            \"words\": [\"be\"],\n            \"explain\": \"系动词原形，此处表示“变得”\"\n        },\n        {\n            \"content\": \"big\",\n            \"words\": [\"big\"],\n            \"explain\": \"形容词，意为“高大的，大的”\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"I don’t need\",\n            \"contentCn\": \"我不需要\",\n            \"function\": \"主语+谓语部分\",\n            \"tokenIndexes\": [0, 1, 2, 3]\n        },\n        {\n            \"content\": \"to be big.\",\n            \"contentCn\": \"变得高大。\",\n            \"function\": \"宾语部分（动词不定式短语作need的宾语）\",\n            \"tokenIndexes\": [4, 5, 6, 7]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177271275083300000000000000000000ffffac1514f618ba0d"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 935,
+    "output_tokens": 469,
+    "total_tokens": 1404,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1772971950
+}

@@ -1,0 +1,42 @@
+{
+  "created_at": 1772775531,
+  "id": "resp_021772775531334b13991408299847dfa58bbf178e8376793b503",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"Finally, the fourth sentence concludes the passage.\",\n    \"contentCn\": \"最后，第四句话总结了这篇文章。\",\n    \"tokens\": [\n        {\n            \"content\": \"Finally\",\n            \"words\": [],\n            \"explain\": \"副词，意为“最后，最终”\"\n        },\n        {\n            \"content\": \",\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"the\",\n            \"words\": [],\n            \"explain\": \"定冠词，表特指\"\n        },\n        {\n            \"content\": \"fourth\",\n            \"words\": [],\n            \"explain\": \"序数词，意为“第四的”\"\n        },\n        {\n            \"content\": \"sentence\",\n            \"words\": [],\n            \"explain\": \"名词，意为“句子”\"\n        },\n        {\n            \"content\": \"concludes\",\n            \"words\": [],\n            \"explain\": \"动词第三人称单数形式，意为“总结，结束”\"\n        },\n        {\n            \"content\": \"the\",\n            \"words\": [],\n            \"explain\": \"定冠词，表特指\"\n        },\n        {\n            \"content\": \"passage\",\n            \"words\": [],\n            \"explain\": \"名词，意为“文章，段落”\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"Finally,\",\n            \"contentCn\": \"最后，\",\n            \"function\": \"句首状语，表顺序\",\n            \"tokenIndexes\": [0, 1]\n        },\n        {\n            \"content\": \"the fourth sentence\",\n            \"contentCn\": \"第四句话\",\n            \"function\": \"句子主语部分\",\n            \"tokenIndexes\": [2, 3, 4]\n        },\n        {\n            \"content\": \"concludes the passage.\",\n            \"contentCn\": \"总结了这篇文章。\",\n            \"function\": \"谓语+宾语部分\",\n            \"tokenIndexes\": [5, 6, 7, 8]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177277553175900000000000000000000ffffac15556082749b"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 936,
+    "output_tokens": 523,
+    "total_tokens": 1459,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773034731
+}

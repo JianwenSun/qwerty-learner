@@ -1,0 +1,42 @@
+{
+  "created_at": 1772775531,
+  "id": "resp_0217727755312865e45075bb6934efb4c3a267db809af1dd6e1f8",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"Here's the second one!\",\n    \"contentCn\": \"这是第二个！\",\n    \"tokens\": [\n        {\n            \"content\": \"Here\",\n            \"words\": [\"Here\"],\n            \"explain\": \"副词，意为“在这里”\"\n        },\n        {\n            \"content\": \"'s\",\n            \"words\": [\"is\"],\n            \"explain\": \"缩写，表示'is'\"\n        },\n        {\n            \"content\": \"the\",\n            \"words\": [\"the\"],\n            \"explain\": \"定冠词，表特指\"\n        },\n        {\n            \"content\": \"second\",\n            \"words\": [\"second\"],\n            \"explain\": \"序数词，意为“第二的”\"\n        },\n        {\n            \"content\": \"one\",\n            \"words\": [\"one\"],\n            \"explain\": \"代词，指代前文提到的同类事物\"\n        },\n        {\n            \"content\": \"!\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"Here's\",\n            \"contentCn\": \"这是\",\n            \"function\": \"主语+系动词部分\",\n            \"tokenIndexes\": [0, 1]\n        },\n        {\n            \"content\": \"the second one!\",\n            \"contentCn\": \"第二个！\",\n            \"function\": \"表语部分\",\n            \"tokenIndexes\": [2, 3, 4, 5]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177277553199200000000000000000000ffffac1507de5c46f9"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 933,
+    "output_tokens": 358,
+    "total_tokens": 1291,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773034731
+}

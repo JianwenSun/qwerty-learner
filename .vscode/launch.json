@@ -9,6 +9,39 @@
       "webRoot": "${workspaceFolder}",
       "sourceMaps": true,
       "preLaunchTask": "npm: dev"
+    },
+    {
+      "name": "Debug sentence_analyzer.ts",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/backend/analyzer/SentenceAnalyzer.ts",
+      "cwd": "${workspaceFolder}",
+      "runtimeArgs": ["--loader", "ts-node/esm"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Debug Backend (TS)",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["ts-node", "--project", "src/backend/tsconfig.json", "src/backend/index.ts"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Sentence Test",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["ts-node", "--project", "src/backend/tsconfig.json", "src/backend/test/SentenceAnalyzerTest.ts"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"]
     }
   ],
   "compounds": []

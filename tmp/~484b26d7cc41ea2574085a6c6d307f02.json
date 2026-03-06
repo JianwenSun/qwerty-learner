@@ -1,0 +1,42 @@
+{
+  "created_at": 1772712750,
+  "id": "resp_0217727127500555b348a82794b5725a30214ab58731f4363ba71",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"“Why do you glow even though you’re so small?” Lily asked.\",\n    \"contentCn\": \"“你这么小，为什么还会发光呢？”莉莉问道。\",\n    \"tokens\": [\n        {\"content\": \"“\", \"words\": [], \"explain\": \"\"},\n        {\"content\": \"Why\", \"words\": [\"Why\"], \"explain\": \"疑问副词，用于引导特殊疑问句，询问原因\"},\n        {\"content\": \"do\", \"words\": [\"do\"], \"explain\": \"助动词，无实义，用于构成一般现在时的疑问句结构\"},\n        {\"content\": \"you\", \"words\": [\"you\"], \"explain\": \"第二人称代词，主格，在句中作主语\"},\n        {\"content\": \"glow\", \"words\": [\"glow\"], \"explain\": \"动词，意为“发光，发亮”\"},\n        {\"content:\": \"even\", \"words\": [\"even\"], \"explain\": \"副词，意为“即使，甚至”，用于加强语气\"},\n        {\"content\": \"though\", \"words\": [\"though\"], \"explain\": \"连词，引导让步状语从句，意为“虽然，尽管”\"},\n        {\"content\": \"you\", \"words\": [\"you\"], \"explain\": \"第二人称代词，主格，作让步状语从句的主语\"},\n        {\"content\": \"'re\", \"words\": [\"are\"], \"explain\": \"缩写，是be动词are的缩略形式\"},\n        {\"content\": \"so\", \"words\": [\"so\"], \"explain\": \"副词，意为“如此，这么”，用于修饰形容词表示程度\"},\n        {\"content\": \"small\", \"words\": [\"small\"], \"explain\": \"形容词，意为“小的”\"},\n        {\"content\": \"?\", \"words\": [], \"explain\": \"\"},\n        {\"content\": \"”\", \"words\": [], \"explain\": \"\"},\n        {\"content\": \"Lily\", \"words\": [\"Lily\"], \"explain\": \"人名，名词，作句子的主语\"},\n        {\"content\": \"asked\", \"words\": [\"ask\"], \"explain\": \"动词，是ask的过去式，意为“问，询问”\"},\n        {\"content\": \".\", \"words\": [], \"explain\": \"\"}\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"“Why do you glow\",\n            \"contentCn\": \"“为什么你会发光\",\n            \"function\": \"主句疑问部分\",\n            \"tokenIndexes\": [0, 1, 2, 3, 4]\n        },\n        {\n            \"content\": \"even though you’re so small?”\",\n            \"contentCn\": \"即使你这么小？”\",\n            \"function\": \"让步状语从句\",\n            \"tokenIndexes\": [5, 6, 7, 8, 9, 10, 11, 12]\n        },\n        {\n            \"content\": \"Lily asked.\",\n            \"contentCn\": \"莉莉问道。\",\n            \"function\": \"主句主谓部分，说明话语的发出者和动作\",\n            \"tokenIndexes\": [13, 14, 15]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177271275075300000000000000000000ffffac15cec3487d6d"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 942,
+    "output_tokens": 722,
+    "total_tokens": 1664,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1772971950
+}

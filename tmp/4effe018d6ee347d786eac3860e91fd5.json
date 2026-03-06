@@ -1,0 +1,42 @@
+{
+  "created_at": 1772766724,
+  "id": "resp_0217727667234243b744fffeb88c418a31726ba8a0f731cf15fb8",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"sentences\": [\"Wait a minute!\", \"Is that true?\", \"Yes, it is.\", \"I can't believe it!\"]}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177276672428200000000000000000000ffffac15c1685e43e4"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 201,
+    "output_tokens": 29,
+    "total_tokens": 230,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773025923
+}

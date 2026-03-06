@@ -1,0 +1,42 @@
+{
+  "created_at": 1772775527,
+  "id": "resp_0217727755244118169098a6a466e6b6fa87183e14d19478ec33d",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"Single sentence test.\",\n    \"contentCn\": \"单句测试。\",\n    \"tokens\": [\n        {\n            \"content\": \"Single\",\n            \"words\": [],\n            \"explain\": \"形容词\"\n        },\n        {\n            \"content\": \"sentence\",\n            \"words\": [],\n            \"explain\": \"名词\"\n        },\n        {\n            \"content\": \"test\",\n            \"words\": [],\n            \"explain\": \"名词\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"Single sentence test.\",\n            \"contentCn\": \"单句测试。\",\n            \"function\": \"整句核心表述\",\n            \"tokenIndexes\": [0, 1, 2, 3]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177277552788700000000000000000000ffffac151c769ae0b9"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 931,
+    "output_tokens": 217,
+    "total_tokens": 1148,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773034724
+}

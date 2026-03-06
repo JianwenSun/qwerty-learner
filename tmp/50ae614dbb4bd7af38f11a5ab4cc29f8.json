@@ -1,0 +1,42 @@
+{
+  "created_at": 1772766727,
+  "id": "resp_0217727667252513b744fffeb88c418a31726ba8a0f731ce5cd1d",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"sentences\": [\"The firefly said.\", \"Even a small light can help someone not feel scared.\", \"I don't need to be big.\", \"I just need to keep shining.\"]}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177276672701100000000000000000000ffffac15c21e66e65c"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 213,
+    "output_tokens": 40,
+    "total_tokens": 253,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773025925
+}

@@ -1,0 +1,42 @@
+{
+  "created_at": 1772713273,
+  "id": "resp_021772713272203a5ae025408c8a3dccfebed8030c7a4c71805c6",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"“Why do you glow even though you’re so small?” Lily asked.\",\n    \"contentCn\": \"“为什么你这么小却还会发光呢？”莉莉问道。\",\n    \"tokens\": [\n        {\n            \"content\": \"“\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"Why\",\n            \"words\": [],\n            \"explain\": \"疑问副词，用于引导特殊疑问句，询问原因\"\n        },\n        {\n            \"content\": \"do\",\n            \"words\": [],\n            \"explain\": \"助动词，无实义，用于构成一般现在时的疑问句结构\"\n        },\n        {\n            \"content\": \"you\",\n            \"words\": [],\n            \"explain\": \"代词，第二人称主格，指代谈话的对方\"\n        },\n        {\n            \"content\": \"glow\",\n            \"words\": [],\n            \"explain\": \"动词，意为“发光，发亮”\"\n        },\n        {\n            \"content\": \"even\",\n            \"words\": [],\n            \"explain\": \"副词，与though搭配构成连词短语，表让步\"\n        },\n        {\n            \"content\": \"though\",\n            \"words\": [],\n            \"explain\": \"连词，与even搭配构成\"even though\"，意为“尽管，虽然”\"\n        },\n        {\n            \"content\": \"you\",\n            \"words\": [],\n            \"explain\": \"代词，第二人称主格，指代谈话的对方\"\n        },\n        {\n            \"content\": \"’re\",\n            \"words\": [\"are\"],\n            \"explain\": \"缩写，表示be动词are，与you搭配构成一般现在时的系表结构\"\n        },\n        {\n            \"content\": \"so\",\n            \"words\": [],\n            \"explain\": \"副词，意为“如此，这么”，用于修饰形容词表示程度\"\n        },\n        {\n            \"content\": \"small\",\n            \"words\": [],\n            \"explain\": \"形容词，意为“小的”\"\n        },\n        {\n            \"content\": \"?\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"”\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"Lily\",\n            \"words\": [],\n            \"explain\": \"名词，女性名字，此处是说话人\"\n        },\n        {\n            \"content\": \"asked\",\n            \"words\": [],\n            \"explain\": \"动词，是ask的过去式，意为“询问，问”\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"“Why do you glow\",\n            \"contentCn\": \"“为什么你会发光\",\n            \"function\": \"主句疑问部分，表达核心提问内容\",\n            \"tokenIndexes\": [0, 1, 2, 3, 4]\n        },\n        {\n            \"content\": \"even though you’re so small?”\",\n            \"contentCn\": \"尽管你这么小呢？”\",\n            \"function\": \"让步状语从句，补充说明提问的前提条件\",\n            \"tokenIndexes\": [5, 6, 7, 8, 9, 10, 11, 12]\n        },\n        {\n            \"content\": \"Lily asked.\",\n            \"contentCn\": \"莉莉问道。\",\n            \"function\": \"主句陈述部分，说明说话人和动作\",\n            \"tokenIndexes\": [13, 14, 15]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177271327313100000000000000000000ffffac15152d8e5faa"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 942,
+    "output_tokens": 873,
+    "total_tokens": 1815,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1772972472
+}

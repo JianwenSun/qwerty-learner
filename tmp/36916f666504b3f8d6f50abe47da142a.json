@@ -1,0 +1,42 @@
+{
+  "created_at": 1772712752,
+  "id": "resp_021772712750056648e514952b19fa53f92620ea054095a704611",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"She followed the little firefly.\",\n    \"contentCn\": \"她跟着那只小萤火虫。\",\n    \"tokens\": [\n        {\n            \"content\": \"She\",\n            \"words\": [],\n            \"explain\": \"代词\"\n        },\n        {\n            \"content\": \"followed\",\n            \"words\": [],\n            \"explain\": \"动词过去式\"\n        },\n        {\n            \"content\": \"the\",\n            \"words\": [],\n            \"explain\": \"定冠词\"\n        },\n        {\n            \"content\": \"little\",\n            \"words\": [],\n            \"explain\": \"形容词\"\n        },\n        {\n            \"content\": \"firefly\",\n            \"words\": [],\n            \"explain\": \"名词\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"She\",\n            \"contentCn\": \"她\",\n            \"function\": \"主语\",\n            \"tokenIndexes\": [0]\n        },\n        {\n            \"content\": \"followed\",\n            \"contentCn\": \"跟着\",\n            \"function\": \"谓语\",\n            \"tokenIndexes\": [1]\n        },\n        {\n            \"content\": \"the little firefly.\",\n            \"contentCn\": \"那只小萤火虫。\",\n            \"function\": \"宾语\",\n            \"tokenIndexes\": [2, 3, 4, 5]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177271275215800000000000000000000ffffac154998dc0ef8"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 367,
+    "total_tokens": 1301,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1772971950
+}

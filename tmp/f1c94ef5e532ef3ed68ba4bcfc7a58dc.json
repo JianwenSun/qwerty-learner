@@ -1,0 +1,42 @@
+{
+  "created_at": 1772767222,
+  "id": "resp_02177276722067016b9207fa63b06ee2291b1c6ec38d3d7d7c633",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"sentences\": [\"The winner is—drumroll please—John!\", \"He won by a landslide.\"]}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177276722219400000000000000000000ffffac154e664dc242"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 200,
+    "output_tokens": 25,
+    "total_tokens": 225,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773026420
+}

@@ -1,0 +1,42 @@
+{
+  "created_at": 1772775532,
+  "id": "resp_0217727755312804c3037ecb6c582bac7afd4473087e54193d26a",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"This is the first sentence.\",\n    \"contentCn\": \"这是第一个句子。\",\n    \"tokens\": [\n        {\n            \"content\": \"This\",\n            \"words\": [],\n            \"explain\": \"指示代词\"\n        },\n        {\n            \"content\": \"is\",\n            \"words\": [],\n            \"explain\": \"be动词第三人称单数现在时形式\"\n        },\n        {\n            \"content\": \"the\",\n            \"words\": [],\n            \"explain\": \"定冠词\"\n        },\n        {\n            \"content\": \"first\",\n            \"words\": [],\n            \"explain\": \"序数词\"\n        },\n        {\n            \"content\": \"sentence\",\n            \"words\": [],\n            \"explain\": \"名词\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"This\",\n            \"contentCn\": \"这\",\n            \"function\": \"主语\",\n            \"tokenIndexes\": [0]\n        },\n        {\n            \"content\": \"is the first sentence.\",\n            \"contentCn\": \"是第一个句子。\",\n            \"function\": \"系表结构谓语部分\",\n            \"tokenIndexes\": [1, 2, 3, 4, 5]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177277553235600000000000000000000ffffac15d029593b02"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 933,
+    "output_tokens": 334,
+    "total_tokens": 1267,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773034731
+}
