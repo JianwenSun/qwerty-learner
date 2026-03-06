@@ -1,0 +1,182 @@
+import { WordTypingContext, WordTypingStateActionType } from '../../store'
+import type { WordTypingState } from '../../store/type'
+import PrevAndNextWord from '../PrevAndNextWord'
+import PartsOfSpeechLine from './components/PartsOfSpeechLine'
+import Phonetic from './components/Phonetic'
+import WordComponent from './components/Word'
+import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, wordReviewModeInfoAtom } from '@/store'
+import { useAtomValue, useSetAtom } from 'jotai'
+import { useCallback, useContext, useMemo, useState } from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
+
+export default function WordPanel() {
+  const { state, dispatch } = useContext(WordTypingContext)!
+  const phoneticConfig = useAtomValue(phoneticConfigAtom)
+  const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
+  const [wordComponentKey, setWordComponentKey] = useState(0)
+  const [currentWordExerciseCount, setCurrentWordExerciseCount] = useState(0)
+  const { times: loopWordTimes } = useAtomValue(loopWordConfigAtom)
+  const currentWord = state.chapterData.words[state.chapterData.index]
+
+  const setWordReviewModeInfo = useSetAtom(wordReviewModeInfoAtom)
+  const isReviewMode = useAtomValue(isReviewModeAtom)
+
+  const prevIndex = useMemo(() => {
+    const newIndex = state.chapterData.index - 1
+    return newIndex < 0 ? 0 : newIndex
+  }, [state.chapterData.index])
+  const nextIndex = useMemo(() => {
+    const newIndex = state.chapterData.index + 1
+    return newIndex > state.chapterData.words.length - 1 ? state.chapterData.words.length - 1 : newIndex
+  }, [state.chapterData.index, state.chapterData.words.length])
+
+  useHotkeys(
+    'ArrowLeft',
+    (e) => {
+      e.preventDefault()
+      onSkipWord('prev')
+    },
+    { preventDefault: true },
+  )
+
+  useHotkeys(
+    'ArrowRight',
+    (e) => {
+      e.preventDefault()
+      onSkipWord('next')
+    },
+    { preventDefault: true },
+  )
+
+  useHotkeys(
+    'tab',
+    () => {
+      handleShowTranslation(true)
+    },
+    { enableOnFormTags: true, preventDefault: true },
+    [],
+  )
+
+  useHotkeys(
+    'tab',
+    () => {
+      handleShowTranslation(false)
+    },
+    { enableOnFormTags: true, keyup: true, preventDefault: true },
+    [],
+  )
+
+  const reloadCurrentWordComponent = useCallback(() => {
+    setWordComponentKey((old) => old + 1)
+  }, [])
+
+  const updateReviewRecord = useCallback(
+    (state: WordTypingState) => {
+      setWordReviewModeInfo((old) => ({
+        ...old,
+        reviewRecord: old.reviewRecord ? { ...old.reviewRecord, index: state.chapterData.index } : undefined,
+      }))
+    },
+    [setWordReviewModeInfo],
+  )
+
+  const onFinish = useCallback(() => {
+    if (state.chapterData.index < state.chapterData.words.length - 1 || currentWordExerciseCount < loopWordTimes - 1) {
+      // 用户完成当前单词
+      if (currentWordExerciseCount < loopWordTimes - 1) {
+        setCurrentWordExerciseCount((old) => old + 1)
+        dispatch({ type: WordTypingStateActionType.LOOP_CURRENT_WORD })
+        reloadCurrentWordComponent()
+      } else {
+        setCurrentWordExerciseCount(0)
+        if (isReviewMode) {
+          dispatch({
+            type: WordTypingStateActionType.NEXT_WORD,
+            payload: {
+              updateReviewRecord,
+            },
+          })
+        } else {
+          dispatch({ type: WordTypingStateActionType.NEXT_WORD })
+        }
+      }
+    } else {
+      // 用户完成当前章节
+      dispatch({ type: WordTypingStateActionType.FINISH_CHAPTER })
+      if (isReviewMode) {
+        setWordReviewModeInfo((old) => ({ ...old, reviewRecord: old.reviewRecord ? { ...old.reviewRecord, isFinished: true } : undefined }))
+      }
+    }
+  }, [
+    state.chapterData.index,
+    state.chapterData.words.length,
+    currentWordExerciseCount,
+    loopWordTimes,
+    dispatch,
+    reloadCurrentWordComponent,
+    isReviewMode,
+    updateReviewRecord,
+    setWordReviewModeInfo,
+  ])
+
+  const onSkipWord = useCallback(
+    (type: 'prev' | 'next') => {
+      if (type === 'prev') {
+        dispatch({ type: WordTypingStateActionType.SKIP_2_WORD_INDEX, newIndex: prevIndex })
+      }
+
+      if (type === 'next') {
+        dispatch({ type: WordTypingStateActionType.SKIP_2_WORD_INDEX, newIndex: nextIndex })
+      }
+    },
+    [dispatch, prevIndex, nextIndex],
+  )
+
+  const [isShowTranslation, setIsHoveringTranslation] = useState(false)
+
+  const handleShowTranslation = useCallback((checked: boolean) => {
+    setIsHoveringTranslation(checked)
+  }, [])
+
+  const shouldShowTranslation = useMemo(() => {
+    return isShowTranslation || state.isTransVisible
+  }, [isShowTranslation, state.isTransVisible])
+
+  return (
+    <div className="container flex h-full w-full flex-col items-center justify-center">
+      <div className="container flex h-24 w-full shrink-0 grow-0 justify-between px-12 pt-10">
+        {isShowPrevAndNextWord && state.isTyping && (
+          <>
+            <PrevAndNextWord type="prev" />
+            <PrevAndNextWord type="next" />
+          </>
+        )}
+      </div>
+      <div className="container flex flex-grow flex-col items-center justify-center">
+        {currentWord && (
+          <div className="relative flex w-full justify-center" style={{ margin: '0 0 60px 0' }}>
+            {!state.isTyping && (
+              <div className="justify absolute flex h-full w-full">
+                <div className="z-10 flex w-full items-center backdrop-blur-sm">
+                  <p className="w-full select-none text-center text-xl text-gray-600 dark:text-gray-50">
+                    按任意键{state.timerData.time ? '继续' : '开始'}
+                  </p>
+                </div>
+              </div>
+            )}
+            <div className="relative" style={{ margin: '0 0 60px 0' }}>
+              <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} />
+              {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
+              <PartsOfSpeechLine
+                word={currentWord}
+                showTrans={shouldShowTranslation}
+                onMouseEnter={() => handleShowTranslation(true)}
+                onMouseLeave={() => handleShowTranslation(false)}
+              />
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2022",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -15,10 +15,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["node", "unplugin-icons/types/react"],
+    "types": ["node", "unplugin-icons/types/react", "jest"],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/public": ["public"],
+      "@/*": ["src/frontend/*"]
       // "@/assets/*": ["assets/*"],
       // "@/components/*": ["components/*"],
       // "@/hooks/*": ["hooks/*"],
@@ -36,5 +37,5 @@
       }
     ]
   },
-  "include": ["src"]
+  "include": ["src/frontend/**/*", "src/backend/**/*"]
 }

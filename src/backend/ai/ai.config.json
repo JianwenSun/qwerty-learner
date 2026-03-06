@@ -1,0 +1,29 @@
+{
+  "modelGroup": "remote",
+  "modelGroups": {
+    "local": [
+      {
+        "name": "local",
+        "url": "http://localhost:11434/api/chat",
+        "apiKey": "",
+        "model": {
+          "type": "qwen2",
+          "name": "qwen2:1.5b"
+        },
+        "provider": "ollama"
+      }
+    ],
+    "remote": [
+      {
+        "name": "hs",
+        "url": "https://ark.cn-beijing.volces.com/api/v3/responses",
+        "apiKey": "2a2d04f8-e818-4fcc-b732-b5a891a82088",
+        "model": {
+          "type": "speedv2",
+          "name": "ep-20260305102818-2f56f"
+        },
+        "provider": "openapi"
+      }
+    ]
+  }
+}

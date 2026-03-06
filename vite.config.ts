@@ -29,7 +29,7 @@ export default defineConfig(({ mode }) => {
         jsx: 'react',
         customCollections: {
           'my-icons': {
-            xiaohongshu: () => fs.readFile('./src/assets/xiaohongshu.svg', 'utf-8'),
+            xiaohongshu: () => fs.readFile('./src/frontend/assets/xiaohongshu.svg', 'utf-8')
           },
         },
       }),
@@ -48,7 +48,8 @@ export default defineConfig(({ mode }) => {
     },
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, 'src'),
+        '@/public': path.resolve(__dirname, 'public'),
+        '@': path.resolve(__dirname, 'src/frontend'),
       },
     },
     css: {
@@ -59,7 +60,6 @@ export default defineConfig(({ mode }) => {
     server: {
       host: '10.129.104.26',
       port: 8080,
-      allowedHosts: ['sunjw.zzz'],
       proxy: {
         '/upyun': {
           target: 'https://v0.api.upyun.com',
