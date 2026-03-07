@@ -14,7 +14,7 @@ print("开始批量推理...")
 start_time = time.time()
 
 wavs, sr = model.generate_custom_voice(
-    text=["Suddenly, she saw a small light moving in the dark."],
+    text=["Use this skill when the user asks to build web components, pages, or applications."],
     language=["English"],
     speaker=["Vivian"],
     instruct=[""]

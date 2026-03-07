@@ -37,17 +37,25 @@ export class SentenceStorage {
       await this.saveWordsWithPrisma(sentence.tokens, this.prisma);
 
       // 存储句子
+      const sentenceData: any = {
+        content: sentence.content,
+        contentCn: sentence.contentCn,
+        tokens: JSON.stringify(sentence.tokens),
+        words: JSON.stringify(sentence.tokens.map(token => token.content)),
+        explanation: '', // 可以根据需要添加解释
+        soundId: 1, // 默认为1，实际应该根据情况设置
+        chapterId: chapterId || null,
+      };
+
+      // 如果提供了passageId，添加多对多关联
+      if (passageId) {
+        sentenceData.passages = {
+          connect: [{ id: passageId }]
+        };
+      }
+
       return await this.prisma.sentence.create({
-        data: {
-          content: sentence.content,
-          contentCn: sentence.contentCn,
-          tokens: JSON.stringify(sentence.tokens),
-          words: JSON.stringify(sentence.tokens.map(token => token.content)),
-          explanation: '', // 可以根据需要添加解释
-          soundId: 1, // 默认为1，实际应该根据情况设置
-          passageId: passageId,
-          chapterId: chapterId || null,
-        }
+        data: sentenceData
       });
     } catch (error) {
       console.error('存储句子失败:', error);

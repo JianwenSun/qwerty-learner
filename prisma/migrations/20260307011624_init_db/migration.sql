@@ -8,7 +8,6 @@ CREATE TABLE `categories` (
     `delete_at` DATETIME(3) NULL,
     `is_deleted` BOOLEAN NOT NULL DEFAULT false,
 
-    UNIQUE INDEX `categories_create_at_is_deleted_key`(`create_at`, `is_deleted`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -24,7 +23,6 @@ CREATE TABLE `chapters` (
     `delete_at` DATETIME(3) NULL,
     `is_deleted` BOOLEAN NOT NULL DEFAULT false,
 
-    UNIQUE INDEX `chapters_create_at_is_deleted_key`(`create_at`, `is_deleted`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -41,7 +39,6 @@ CREATE TABLE `words` (
 
     UNIQUE INDEX `words_content_key`(`content`),
     INDEX `words_content_idx`(`content`),
-    UNIQUE INDEX `words_create_at_is_deleted_key`(`create_at`, `is_deleted`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -58,7 +55,6 @@ CREATE TABLE `clauses` (
     `delete_at` DATETIME(3) NULL,
     `is_deleted` BOOLEAN NOT NULL DEFAULT false,
 
-    UNIQUE INDEX `clauses_create_at_is_deleted_key`(`create_at`, `is_deleted`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -66,7 +62,6 @@ CREATE TABLE `clauses` (
 CREATE TABLE `sentences` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `chapter_id` INTEGER NULL,
-    `passage_id` INTEGER NULL,
     `content` VARCHAR(191) NOT NULL,
     `content_cn` VARCHAR(191) NOT NULL,
     `explanation` VARCHAR(191) NOT NULL,
@@ -79,7 +74,6 @@ CREATE TABLE `sentences` (
     `is_deleted` BOOLEAN NOT NULL DEFAULT false,
 
     INDEX `sentences_content_idx`(`content`),
-    UNIQUE INDEX `sentences_create_at_is_deleted_key`(`create_at`, `is_deleted`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -96,7 +90,6 @@ CREATE TABLE `dictionaries` (
     `delete_at` DATETIME(3) NULL,
     `is_deleted` BOOLEAN NOT NULL DEFAULT false,
 
-    UNIQUE INDEX `dictionaries_create_at_is_deleted_key`(`create_at`, `is_deleted`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -109,7 +102,6 @@ CREATE TABLE `sounds` (
     `delete_at` DATETIME(3) NULL,
     `is_deleted` BOOLEAN NOT NULL DEFAULT false,
 
-    UNIQUE INDEX `sounds_create_at_is_deleted_key`(`create_at`, `is_deleted`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -123,7 +115,6 @@ CREATE TABLE `practices` (
     `is_deleted` BOOLEAN NOT NULL DEFAULT false,
 
     INDEX `practices_name_idx`(`name`),
-    UNIQUE INDEX `practices_create_at_is_deleted_key`(`create_at`, `is_deleted`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -144,7 +135,6 @@ CREATE TABLE `passages` (
     `chapter_id` INTEGER NULL,
 
     INDEX `passages_title_idx`(`title`),
-    UNIQUE INDEX `passages_create_at_is_deleted_key`(`create_at`, `is_deleted`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -157,14 +147,20 @@ CREATE TABLE `_SentencePractice` (
     INDEX `_SentencePractice_B_index`(`B`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
+-- CreateTable
+CREATE TABLE `_PassageSentence` (
+    `A` INTEGER NOT NULL,
+    `B` INTEGER NOT NULL,
+
+    UNIQUE INDEX `_PassageSentence_AB_unique`(`A`, `B`),
+    INDEX `_PassageSentence_B_index`(`B`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
 -- AddForeignKey
 ALTER TABLE `chapters` ADD CONSTRAINT `chapters_dictionary_id_fkey` FOREIGN KEY (`dictionary_id`) REFERENCES `dictionaries`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE `clauses` ADD CONSTRAINT `clauses_sentence_id_fkey` FOREIGN KEY (`sentence_id`) REFERENCES `sentences`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
--- AddForeignKey
-ALTER TABLE `sentences` ADD CONSTRAINT `sentences_passage_id_fkey` FOREIGN KEY (`passage_id`) REFERENCES `passages`(`id`) ON DELETE SET NULL ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE `sentences` ADD CONSTRAINT `sentences_chapter_id_fkey` FOREIGN KEY (`chapter_id`) REFERENCES `chapters`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
@@ -177,3 +173,9 @@ ALTER TABLE `_SentencePractice` ADD CONSTRAINT `_SentencePractice_A_fkey` FOREIG
 
 -- AddForeignKey
 ALTER TABLE `_SentencePractice` ADD CONSTRAINT `_SentencePractice_B_fkey` FOREIGN KEY (`B`) REFERENCES `sentences`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE `_PassageSentence` ADD CONSTRAINT `_PassageSentence_A_fkey` FOREIGN KEY (`A`) REFERENCES `passages`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE `_PassageSentence` ADD CONSTRAINT `_PassageSentence_B_fkey` FOREIGN KEY (`B`) REFERENCES `sentences`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;

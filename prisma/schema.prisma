@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -10,27 +7,18 @@ datasource db {
   url      = "mysql://root:root@127.0.0.1:3306/qwerty_learner"
 }
 
-// 分类模型
 model Category {
-  id        Int      @id @default(autoincrement())
+  id        Int       @id @default(autoincrement())
   name      String
   describe  String
-  createAt  DateTime @default(now()) @map("create_at")
+  createAt  DateTime  @default(now()) @map("create_at")
   modifyAt  DateTime? @map("modify_at")
   deleteAt  DateTime? @map("delete_at")
-  isDeleted Boolean  @default(false) @map("is_deleted")
-  
+  isDeleted Boolean   @default(false) @map("is_deleted")
+
   @@map("categories")
 }
 
-// 章节类型枚举
-enum ChapterType {
-  Word
-  Sentence
-  Passage
-}
-
-// 章节模型
 model Chapter {
   id           Int         @id @default(autoincrement())
   name         String
@@ -41,146 +29,137 @@ model Chapter {
   modifyAt     DateTime?   @map("modify_at")
   deleteAt     DateTime?   @map("delete_at")
   isDeleted    Boolean     @default(false) @map("is_deleted")
-  
-  dictionary   Dictionary @relation(fields: [dictionaryId], references: [id], onDelete: Cascade)
+  dictionary   Dictionary  @relation(fields: [dictionaryId], references: [id], onDelete: Cascade)
   passages     Passage[]
   sentences    Sentence[]
-  
+
+  @@index([dictionaryId], map: "chapters_dictionary_id_fkey")
   @@map("chapters")
 }
 
-// 单词模型
 model Word {
-  id           Int         @id @default(autoincrement())
-  content      String      @unique
-  tokenIndexes String      @map("token_indexes")
-  senseIds     String      @map("sense_ids")
-  createAt     DateTime    @default(now()) @map("create_at")
-  modifyAt     DateTime?   @map("modify_at")
-  deleteAt     DateTime?   @map("delete_at")
-  isDeleted    Boolean     @default(false) @map("is_deleted")
-  
-  @@map("words")
+  id           Int       @id @default(autoincrement())
+  content      String    @unique
+  tokenIndexes String    @map("token_indexes")
+  senseIds     String    @map("sense_ids")
+  createAt     DateTime  @default(now()) @map("create_at")
+  modifyAt     DateTime? @map("modify_at")
+  deleteAt     DateTime? @map("delete_at")
+  isDeleted    Boolean   @default(false) @map("is_deleted")
+
   @@index([content])
+  @@map("words")
 }
 
-// 子句类型枚举
+model Clause {
+  id           Int        @id @default(autoincrement())
+  sentenceId   Int        @map("sentence_id")
+  index        Int
+  type         ClauseType
+  explanation  String
+  chunkIndexes String     @map("chunk_indexes")
+  createAt     DateTime   @default(now()) @map("create_at")
+  modifyAt     DateTime?  @map("modify_at")
+  deleteAt     DateTime?  @map("delete_at")
+  isDeleted    Boolean    @default(false) @map("is_deleted")
+  sentence     Sentence   @relation(fields: [sentenceId], references: [id], onDelete: Cascade)
+
+  @@index([sentenceId], map: "clauses_sentence_id_fkey")
+  @@map("clauses")
+}
+
+model Sentence {
+  id          Int        @id @default(autoincrement())
+  chapterId   Int?       @map("chapter_id")
+  content     String
+  contentCn   String     @map("content_cn")
+  explanation String
+  tokens      String     @map("tokens") @db.Text
+  words       String     @map("words") @db.Text
+  soundId     Int        @map("sound_id")
+  createAt    DateTime   @default(now()) @map("create_at")
+  modifyAt    DateTime?  @map("modify_at")
+  deleteAt    DateTime?  @map("delete_at")
+  isDeleted   Boolean    @default(false) @map("is_deleted")
+  clauses     Clause[]
+  chapter     Chapter?   @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  passages    Passage[]  @relation("PassageSentence")
+  practices   Practice[] @relation("SentencePractice")
+
+  @@index([content])
+  @@index([chapterId], map: "sentences_chapter_id_fkey")
+  @@map("sentences")
+}
+
+model Dictionary {
+  id         Int       @id @default(autoincrement())
+  name       String
+  describe   String
+  imageUrl   String    @map("image_url")
+  categoryId Int       @map("category_id")
+  chapterNum Int       @map("chapter_num")
+  createAt   DateTime  @default(now()) @map("create_at")
+  modifyAt   DateTime? @map("modify_at")
+  deleteAt   DateTime? @map("delete_at")
+  isDeleted  Boolean   @default(false) @map("is_deleted")
+  chapters   Chapter[]
+
+  @@map("dictionaries")
+}
+
+model Sound {
+  id        Int       @id @default(autoincrement())
+  path      String
+  createAt  DateTime  @default(now()) @map("create_at")
+  modifyAt  DateTime? @map("modify_at")
+  deleteAt  DateTime? @map("delete_at")
+  isDeleted Boolean   @default(false) @map("is_deleted")
+
+  @@map("sounds")
+}
+
+model Practice {
+  id        Int        @id @default(autoincrement())
+  name      String
+  createAt  DateTime   @default(now()) @map("create_at")
+  modifyAt  DateTime?  @map("modify_at")
+  deleteAt  DateTime?  @map("delete_at")
+  isDeleted Boolean    @default(false) @map("is_deleted")
+  sentences Sentence[] @relation("SentencePractice")
+
+  @@index([name])
+  @@map("practices")
+}
+
+model Passage {
+  id            Int        @id @default(autoincrement())
+  title         String
+  content       String
+  contentCn     String     @map("content_cn")
+  author        String?
+  source        String
+  wordCount     Int        @map("word_count")
+  sentenceCount Int        @map("sentence_count")
+  createAt      DateTime   @default(now()) @map("create_at")
+  modifyAt      DateTime?  @map("modify_at")
+  deleteAt      DateTime?  @map("delete_at")
+  isDeleted     Boolean    @default(false) @map("is_deleted")
+  chapterId     Int?       @map("chapter_id")
+  chapter       Chapter?   @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  sentences     Sentence[] @relation("PassageSentence")
+
+  @@index([title])
+  @@index([chapterId], map: "passages_chapter_id_fkey")
+  @@map("passages")
+}
+
+enum ChapterType {
+  Word
+  Sentence
+  Passage
+}
+
 enum ClauseType {
   Simple
   Complex
 }
-
-// 子句模型
-model Clause {
-  id           Int     @id @default(autoincrement())
-  sentenceId   Int     @map("sentence_id")
-  index        Int
-  type         ClauseType
-  explanation  String
-  chunkIndexes String   @map("chunk_indexes")
-  createAt     DateTime @default(now()) @map("create_at")
-  modifyAt     DateTime? @map("modify_at")
-  deleteAt     DateTime? @map("delete_at")
-  isDeleted    Boolean @default(false) @map("is_deleted")
-  
-  sentence     Sentence   @relation(fields: [sentenceId], references: [id], onDelete: Cascade)
-  
-  @@map("clauses")
-}
-
-// 句子模型
-model Sentence {
-  id           Int   @id @default(autoincrement())
-  chapterId    Int?  @map("chapter_id")
-  passageId    Int?  @map("passage_id")
-  content      String
-  contentCn    String   @map("content_cn")
-  explanation  String
-  tokens       String   @map("tokens") @db.Text
-  words        String   @map("words") @db.Text
-  soundId      Int      @map("sound_id")
-  createAt     DateTime @default(now()) @map("create_at")
-  modifyAt     DateTime? @map("modify_at")
-  deleteAt     DateTime? @map("delete_at")
-  isDeleted    Boolean  @default(false) @map("is_deleted")
-  
-  clauses      Clause[]
-  practices    Practice[] @relation("SentencePractice")
-
-  passage      Passage?  @relation(fields: [passageId], references: [id])
-  chapter      Chapter? @relation(fields: [chapterId], references: [id], onDelete: Cascade)
-
-  @@map("sentences")
-  @@index([content])
-}
-
-// 字典模型
-model Dictionary {
-  id          Int   @id @default(autoincrement())
-  name        String
-  describe    String
-  imageUrl    String   @map("image_url")
-  categoryId  Int      @map("category_id")
-  chapterNum  Int      @map("chapter_num")
-  createAt    DateTime @default(now()) @map("create_at")
-  modifyAt    DateTime? @map("modify_at")
-  deleteAt    DateTime? @map("delete_at")
-  isDeleted   Boolean  @default(false) @map("is_deleted")
-  
-  chapters    Chapter[]
-  
-  @@map("dictionaries")
-}
-
-// 声音模型
-model Sound {
-  id        Int   @id @default(autoincrement())
-  path      String
-  createAt  DateTime @default(now()) @map("create_at")
-  modifyAt  DateTime? @map("modify_at")
-  deleteAt  DateTime? @map("delete_at")
-  isDeleted Boolean @default(false) @map("is_deleted")
-  
-  @@map("sounds")
-}
-
-// 练习模型
-model Practice {
-  id        Int   @id @default(autoincrement())
-  name      String
-  createAt  DateTime @default(now()) @map("create_at")
-  modifyAt  DateTime? @map("modify_at")
-  deleteAt  DateTime? @map("delete_at")
-  isDeleted Boolean @default(false) @map("is_deleted")
-  
-  sentences Sentence[] @relation("SentencePractice")
-  
-  @@map("practices")
-  @@index([name])
-}
-
-// 英文短文模型
-model Passage {
-  id           Int   @id @default(autoincrement())
-  title        String
-  content      String
-  contentCn   String   @map("content_cn")
-  author       String?
-  source       String
-  wordCount    Int      @map("word_count")
-  sentenceCount Int     @map("sentence_count")
-  createAt     DateTime @default(now()) @map("create_at")
-  modifyAt     DateTime? @map("modify_at")
-  deleteAt     DateTime? @map("delete_at")
-  isDeleted    Boolean  @default(false) @map("is_deleted")
-  
-  chapterId Int?      @map("chapter_id")
-  chapter   Chapter? @relation(fields: [chapterId], references: [id], onDelete: Cascade)
-  
-  sentences    Sentence[]
-  
-  @@map("passages")
-  @@index([title])
-}
-
-
