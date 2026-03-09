@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962368,
+  "id": "resp_021772962366842afd8a45cd617ef9c890e825ed50ba4e550f630",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"Even a small light can help someone not feel scared.\",\n    \"contentCn\": \"即使是一盏小小的灯也能帮助人不再感到害怕。\",\n    \"tokens\": [\n        {\n            \"content\": \"Even\",\n            \"words\": [\"Even\"],\n            \"explain\": \"副词，意为“即使，甚至”\"\n        },\n        {\n            \"content\": \"a\",\n            \"words\": [\"a\"],\n            \"explain\": \"不定冠词\"\n        },\n        {\n            \"content\": \"small\",\n            \"words\": [\"small\"],\n            \"explain\": \"形容词，意为“小的”\"\n        },\n        {\n            \"content\": \"light\",\n            \"words\": [\"light\"],\n            \"explain\": \"名词，意为“灯，光线”\"\n        },\n        {\n            \"content\": \"can\",\n            \"words\": [\"can\"],\n            \"explain\": \"情态动词，意为“能够，可以”\"\n        },\n        {\n            \"content\": \"help\",\n            \"words\": [\"help\"],\n            \"explain\": \"动词，意为“帮助”\"\n        },\n        {\n            \"content\": \"someone\",\n            \"words\": [\"someone\"],\n            \"explain\": \"不定代词，意为“某人，有人”\"\n        },\n        {\n            \"content\": \"not\",\n            \"words\": [\"not\"],\n            \"explain\": \"副词，构成否定，意为“不”\"\n        },\n        {\n            \"content\": \"feel\",\n            \"words\": [\"feel\"],\n            \"explain\": \"系动词，意为“感到，感觉”\"\n        },\n        {\n            \"content\": \"scared\",\n            \"words\": [\"scared\"],\n            \"explain\": \"形容词，意为“害怕的，恐惧的”\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"Even a small light\",\n            \"contentCn\": \"即使是一盏小小的灯\",\n            \"function\": \"句子主语部分\",\n            \"tokenIndexes\": [0, 1, 2, 3]\n        },\n        {\n            \"content\": \"can help someone not feel scared.\",\n            \"contentCn\": \"也能帮助人不再感到害怕。\",\n            \"function\": \"谓语+宾语+宾语补足语部分\",\n            \"tokenIndexes\": [4, 5, 6, 7, 8, 9, 10]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296236847500000000000000000000ffffac1504873dc441"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 931,
+    "output_tokens": 603,
+    "total_tokens": 1534,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

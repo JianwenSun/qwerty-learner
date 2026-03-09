@@ -1,16 +1,16 @@
 import { PrismaClient } from '@prisma/client';
 import { PassageInput, Sentence } from '../analyzer/model';
-import { SentenceStorage } from '../storage/SentenceStorage';
+import { SentenceDao } from '../dao/SentenceDao';
 import { ITXClientDenyList } from '@prisma/client/runtime/library';
 
 // 文章服务类
 export class PassageService {
-  private sentenceService: SentenceStorage;
+  private sentenceDao: SentenceDao;
   private prisma: PrismaClient | Omit<PrismaClient, ITXClientDenyList>;
 
   constructor(prisma?: PrismaClient | Omit<PrismaClient, ITXClientDenyList>) {
     this.prisma = prisma || new PrismaClient();
-    this.sentenceService = new SentenceStorage(prisma);
+    this.sentenceDao = new SentenceDao(prisma);
   }
 
   /**
@@ -32,7 +32,7 @@ export class PassageService {
         console.log(`文章已存在: ${input.title}`);
         // 即使文章已存在，也存储句子
         for (const sentence of sentences) {
-          await this.sentenceService.saveSentence(sentence, existingPassage.id, null);
+          await this.sentenceDao.saveSentence(sentence, existingPassage.id, null);
         }
         // 更新sentenceCount
         const updatedPassage = await this.prisma.passage.update({
@@ -66,7 +66,7 @@ export class PassageService {
 
       // 存储句子
       for (const sentence of sentences) {
-        await this.sentenceService.saveSentence(sentence, passage.id, null); // 默认为null，实际应该根据情况设置
+        await this.sentenceDao.saveSentence(sentence, passage.id, null); // 默认为null，实际应该根据情况设置
       }
 
       return passage;

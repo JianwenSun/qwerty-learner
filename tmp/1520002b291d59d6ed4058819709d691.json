@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962367,
+  "id": "resp_021772962366819987c84bcd2cf8ff80a3b8e4538a0ada7419f62",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"What’s that?\",\n    \"contentCn\": \"那是什么？\",\n    \"tokens\": [\n        {\n            \"content\": \"What\",\n            \"words\": [\"What\"],\n            \"explain\": \"疑问代词\"\n        },\n        {\n            \"content\": \"’s\",\n            \"words\": [\"is\"],\n            \"explain\": \"缩写，表示'is'\"\n        },\n        {\n            \"content\": \"that\",\n            \"words\": [\"that\"],\n            \"explain\": \"指示代词\"\n        },\n        {\n            \"content\": \"?\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"What’s\",\n            \"contentCn\": \"是什么\",\n            \"function\": \"疑问系动词部分\",\n            \"tokenIndexes\": [0, 1]\n        },\n        {\n            \"content\": \"that?\",\n            \"contentCn\": \"那？\",\n            \"function\": \"主语部分\",\n            \"tokenIndexes\": [2, 3]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296236749000000000000000000000ffffac151044702431"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 924,
+    "output_tokens": 262,
+    "total_tokens": 1186,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

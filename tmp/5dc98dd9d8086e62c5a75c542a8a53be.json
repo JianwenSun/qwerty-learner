@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962367,
+  "id": "resp_021772962366837919d2f4c503f400d3489abb50e21b2c7c56855",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"Why do you glow even though you’re so small?\",\n    \"contentCn\": \"你这么小，为什么还会发光？\",\n    \"tokens\": [\n        {\n            \"content\": \"Why\",\n            \"words\": [\"Why\"],\n            \"explain\": \"疑问副词，用于引导特殊疑问句，询问原因\"\n        },\n        {\n            \"content\": \"do\",\n            \"words\": [\"do\"],\n            \"explain\": \"助动词，无实际词义，用于构成一般现在时的疑问句结构\"\n        },\n        {\n            \"content\": \"you\",\n            \"words\": [\"you\"],\n            \"explain\": \"第二人称代词，句中作主语\"\n        },\n        {\n            \"content\": \"glow\",\n            \"words\": [\"glow\"],\n            \"explain\": \"动词，意为“发光，发热”\"\n        },\n        {\n            \"content\": \"even\",\n            \"words\": [\"even\"],\n            \"explain\": \"副词，意为“即使，甚至”，用于加强语气\"\n        },\n        {\n            \"content\": \"though\",\n            \"words\": [\"though\"],\n            \"explain\": \"连词，意为“虽然，尽管”，引导让步状语从句\"\n        },\n        {\n            \"content\": \"you\",\n            \"words\": [\"you\"],\n            \"explain\": \"第二人称代词，从句中作主语\"\n        },\n        {\n            \"content\": \"’re\",\n            \"words\": [\"are\"],\n            \"explain\": \"缩写，表示be动词的第二人称现在时形式'are'\"\n        },\n        {\n            \"content\": \"so\",\n            \"words\": [\"so\"],\n            \"explain\": \"副词，意为“如此，这么”，用于修饰形容词\"\n        },\n        {\n            \"content\": \"small\",\n            \"words\": [\"small\"],\n            \"explain\": \"形容词，意为“小的”，在从句中作表语\"\n        },\n        {\n            \"content\": \"?\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"Why do you glow\",\n            \"contentCn\": \"你为什么会发光\",\n            \"function\": \"主句疑问部分，句子核心表意结构\",\n            \"tokenIndexes\": [0, 1, 2, 3]\n        },\n        {\n            \"content\": \"even though you’re so small?\",\n            \"contentCn\": \"尽管你这么小？\",\n            \"function\": \"让步状语从句，补充说明主句动作发生的反差条件\",\n            \"tokenIndexes\": [4, 5, 6, 7, 8, 9, 10]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296236791000000000000000000000ffffac151af6dbbd4f"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 931,
+    "output_tokens": 641,
+    "total_tokens": 1572,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

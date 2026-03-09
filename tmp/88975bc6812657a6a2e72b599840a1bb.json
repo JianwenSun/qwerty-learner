@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962369,
+  "id": "resp_021772962366816b4c7dc41d8e0aa292bda4569b24ec25a416b10",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"She felt a little afraid.\",\n    \"contentCn\": \"她感到有点害怕。\",\n    \"tokens\": [\n        {\n            \"content\": \"She\",\n            \"words\": [\"She\"],\n            \"explain\": \"人称代词主格，作主语\"\n        },\n        {\n            \"content\": \"felt\",\n            \"words\": [\"felt\"],\n            \"explain\": \"动词feel的过去式，意为‘感到’\"\n        },\n        {\n            \"content\": \"a\",\n            \"words\": [\"a\"],\n            \"explain\": \"不定冠词\"\n        },\n        {\n            \"content\": \"little\",\n            \"words\": [\"little\"],\n            \"explain\": \"形容词，此处表示程度，意为‘一点儿’\"\n        },\n        {\n            \"content\": \"afraid\",\n            \"words\": [\"afraid\"],\n            \"explain\": \"形容词，意为‘害怕的’\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"She\",\n            \"contentCn\": \"她\",\n            \"function\": \"主语\",\n            \"tokenIndexes\": [0]\n        },\n        {\n            \"content\": \"felt a little afraid.\",\n            \"contentCn\": \"感到有点害怕。\",\n            \"function\": \"系表结构作谓语部分\",\n            \"tokenIndexes\": [1, 2, 3, 4, 5]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296236966200000000000000000000ffffac15c20c67db21"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 926,
+    "output_tokens": 367,
+    "total_tokens": 1293,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962367,
+  "id": "resp_021772962366845dac4614a2f538267182526681eb598f1f3050e",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"Its light guided her step by step.\",\n    \"contentCn\": \"它的光一步一步地指引着她。\",\n    \"tokens\": [\n        {\n            \"content\": \"Its\",\n            \"words\": [\"It\"],\n            \"explain\": \"形容词性物主代词，it的所有格形式，表示“它的”\"\n        },\n        {\n            \"content\": \"light\",\n            \"words\": [\"light\"],\n            \"explain\": \"名词，意为“光，光线”\"\n        },\n        {\n            \"content\": \"guided\",\n            \"words\": [\"guide\"],\n            \"explain\": \"动词过去式，意为“指引，引导”\"\n        },\n        {\n            \"content\": \"her\",\n            \"words\": [\"her\"],\n            \"explain\": \"人称代词宾格，意为“她”\"\n        },\n        {\n            \"content\": \"step\",\n            \"words\": [\"step\"],\n            \"explain\": \"名词，意为“步，脚步”\"\n        },\n        {\n            \"content\": \"by\",\n            \"words\": [\"by\"],\n            \"explain\": \"介词，此处构成固定搭配step by step\"\n        },\n        {\n            \"content\": \"step\",\n            \"words\": [\"step\"],\n            \"explain\": \"名词，意为“步，脚步”\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"Its light\",\n            \"contentCn\": \"它的光\",\n            \"function\": \"主语部分\",\n            \"tokenIndexes\": [0, 1]\n        },\n        {\n            \"content\": \"guided her\",\n            \"contentCn\": \"指引着她\",\n            \"function\": \"谓语+宾语部分\",\n            \"tokenIndexes\": [2, 3]\n        },\n        {\n            \"content\": \"step by step.\",\n            \"contentCn\": \"一步一步地。\",\n            \"function\": \"方式状语\",\n            \"tokenIndexes\": [4, 5, 6, 7]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296236753800000000000000000000ffffac15cec3d6ef60"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 928,
+    "output_tokens": 513,
+    "total_tokens": 1441,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

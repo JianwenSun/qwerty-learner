@@ -1,5 +1,10 @@
+import express from 'express';
+import cors from 'cors';
 import { PassageAnalyzer } from './analyzer/PassageAnalyzer';
 import { SentenceService } from './service/SentenceService';
+import { SchedulerManager } from './scheduler';
+import ttsRoutes from './routes/tts';
+console.log('TTS routes loaded:', ttsRoutes);
 
 // 主函数
 async function main() {
@@ -14,7 +19,7 @@ Lily smiled. She followed the little firefly. Its light guided her step by step.
 From that day on, Lily learned a valuable lesson: everyone can make a difference, no matter how small they are. Even the gentlest kindness or the weakest effort can brighten someone’s dark moment.
 That night, Lily closed her eyes with warmth in her heart. She knew she would never forget her little shining friend—the firefly.`;
 
-  content = 'The firefly said, “Even a small light can help someone not feel scared. I don’t need to be big. I just need to keep shining.”';
+  //content = 'The firefly said, “Even a small light can help someone not feel scared. I don’t need to be big. I just need to keep shining.”';
 
   const testInput = {
     title: 'The Firefly’s Light',
@@ -33,6 +38,37 @@ That night, Lily closed her eyes with warmth in her heart. She knew she would ne
     const sentenceService = new SentenceService();
     const storedPassage = await sentenceService.analyzeAndStorePassage(testInput);
     console.log('Passage stored successfully:', JSON.stringify(storedPassage, null, 2));
+
+    // 启动定时服务
+    console.log('\nStarting scheduled services...');
+    const schedulerManager = new SchedulerManager();
+
+    // 启动所有定时服务
+    //schedulerManager.startAll();
+
+    // 创建Express应用
+    const app = express();
+    const port = 3001;
+
+    // 配置中间件
+    app.use(cors());
+    app.use(express.json());
+    app.use(express.urlencoded({ extended: true }));
+
+    // 注册路由
+    app.use('/api/tts', ttsRoutes);
+
+    // 提供静态文件服务
+    app.use(express.static(__dirname));
+
+    // 启动服务器
+    app.listen(port, () => {
+      console.log(`\nExpress server running on port ${port}`);
+      console.log('TTS API endpoints:');
+      console.log('  GET  /api/tts/status - Get TTS generation status for all sentences');
+      console.log('  POST /api/tts/generate/:sentenceId - Manually generate TTS for a sentence');
+      console.log('  GET  /api/tts/sound/:sentenceId/:voiceType - Get audio file for a sentence');
+    });
 
     console.log('\nBackend service started successfully!');
   } catch (error) {

@@ -1,16 +1,16 @@
-import { WordStorage } from '../../storage/WordStorage';
+import { WordDao } from '../../dao/WordDao';
 import { PrismaClient } from '@prisma/client';
 import { describe, expect, it } from '@jest/globals';
 
-describe('WordStorageTest', () => {
+describe('WordDaoTest', () => {
   describe('saveWord', () => {
     it('should save a new word successfully', async () => {
       const prisma = new PrismaClient();
 
       try {
         await prisma.$transaction(async (prisma) => {
-          const wordStorage = new WordStorage(prisma);
-          const savedWord = await wordStorage.saveWord('test');
+          const wordDao = new WordDao(prisma);
+          const savedWord = await wordDao.saveWord('test');
           expect(savedWord).toBeDefined();
           expect(savedWord.content).toBe('test');
 
@@ -31,11 +31,11 @@ describe('WordStorageTest', () => {
 
       try {
         await prisma.$transaction(async (prisma) => {
-          const wordStorage = new WordStorage(prisma);
+          const wordDao = new WordDao(prisma);
           // 先存储一次
-          await wordStorage.saveWord('test');
+          await wordDao.saveWord('test');
           // 再次存储相同的单词
-          const savedWord = await wordStorage.saveWord('test');
+          const savedWord = await wordDao.saveWord('test');
           expect(savedWord).toBeDefined();
           expect(savedWord.content).toBe('test');
 
@@ -58,9 +58,9 @@ describe('WordStorageTest', () => {
 
       try {
         await prisma.$transaction(async (prisma) => {
-          const wordStorage = new WordStorage(prisma);
+          const wordDao = new WordDao(prisma);
           const words = ['hello', 'world', 'test'];
-          const savedWords = await wordStorage.saveWords(words);
+          const savedWords = await wordDao.saveWords(words);
           expect(savedWords).toBeDefined();
           expect(savedWords.length).toBe(words.length);
 
@@ -81,12 +81,12 @@ describe('WordStorageTest', () => {
 
       try {
         await prisma.$transaction(async (prisma) => {
-          const wordStorage = new WordStorage(prisma);
+          const wordDao = new WordDao(prisma);
           // 先存储一个单词
-          await wordStorage.saveWord('test');
+          await wordDao.saveWord('test');
           // 批量存储包含已存在单词的列表
           const words = ['test', 'new', 'word'];
-          const savedWords = await wordStorage.saveWords(words);
+          const savedWords = await wordDao.saveWords(words);
           expect(savedWords).toBeDefined();
           expect(savedWords.length).toBe(words.length);
 

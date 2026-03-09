@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962370,
+  "id": "resp_021772962366846aafb70253f86f133b2b849e439c96064f33ea1",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"She knew she would never forget her little shining friend—the firefly.\",\n    \"contentCn\": \"她知道自己永远不会忘记她那闪闪发光的小伙伴——那只萤火虫。\",\n    \"tokens\": [\n        {\n            \"content\": \"She\",\n            \"words\": [\"She\"],\n            \"explain\": \"人称代词主格\"\n        },\n        {\n            \"content\": \"knew\",\n            \"words\": [\"know\"],\n            \"explain\": \"动词过去式，意为‘知道、了解’\"\n        },\n        {\n            \"content\": \"she\",\n            \"words\": [\"she\"],\n            \"explain\": \"人称代词主格\"\n        },\n        {\n            \"content\": \"would\",\n            \"words\": [\"would\"],\n            \"explain\": \"情态动词will的过去式，表过去将来\"\n        },\n        {\n            \"content\": \"never\",\n            \"words\": [\"never\"],\n            \"explain\": \"副词，意为‘永不、绝不’\"\n        },\n        {\n            \"content\": \"forget\",\n            \"words\": [\"forget\"],\n            \"explain\": \"动词，意为‘忘记’\"\n        },\n        {\n            \"content\": \"her\",\n            \"words\": [\"her\"],\n            \"explain\": \"形容词性物主代词，意为‘她的’\"\n        },\n        {\n            \"content\": \"little\",\n            \"words\": [\"little\"],\n            \"explain\": \"形容词，意为‘小的’\"\n        },\n        {\n            \"content\": \"shining\",\n            \"words\": [\"shining\"],\n            \"explain\": \"形容词，意为‘闪闪发光的’\"\n        },\n        {\n            \"content\": \"friend\",\n            \"words\": [\"friend\"],\n            \"explain\": \"名词，意为‘朋友’\"\n        },\n        {\n            \"content\": \"—\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"the\",\n            \"words\": [\"the\"],\n            \"explain\": \"定冠词，表特指\"\n        },\n        {\n            \"content\": \"firefly\",\n            \"words\": [\"firefly\"],\n            \"explain\": \"名词，意为‘萤火虫’\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"She knew\",\n            \"contentCn\": \"她知道\",\n            \"function\": \"主句主谓部分\",\n            \"tokenIndexes\": [0, 1]\n        },\n        {\n            \"content\": \"she would never forget her little shining friend\",\n            \"contentCn\": \"自己永远不会忘记她那闪闪发光的小伙伴\",\n            \"function\": \"宾语从句主体部分\",\n            \"tokenIndexes\": [2, 3, 4, 5, 6, 7, 8, 9]\n        },\n        {\n            \"content\": \"—the firefly.\",\n            \"contentCn\": \"——那只萤火虫。\",\n            \"function\": \"同位语，解释说明前文的friend\",\n            \"tokenIndexes\": [10, 11, 12, 13]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296237098600000000000000000000ffffac15dab7d38ec2"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 765,
+    "total_tokens": 1699,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

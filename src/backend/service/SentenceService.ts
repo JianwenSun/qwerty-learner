@@ -1,17 +1,17 @@
 import { PassageAnalyzer } from './../analyzer/PassageAnalyzer';
 import { PassageInput } from '../analyzer/model';
-import { PassageService as PassageStorage } from '../storage/PassageStorage';
+import { PassageDao } from '../dao/PassageDao';
 import { WordService } from './WordService';
 
 // 句子服务类
 export class SentenceService {
   private passageAnalyzer: PassageAnalyzer;
-  private passageStorage: PassageStorage;
+  private passageDao: PassageDao;
   private wordService: WordService;
 
   constructor() {
     this.passageAnalyzer = new PassageAnalyzer();
-    this.passageStorage = new PassageStorage();
+    this.passageDao = new PassageDao();
     this.wordService = new WordService();
   }
 
@@ -30,9 +30,9 @@ export class SentenceService {
       await this.wordService.processAndStoreWords(analysisResult.words);
       console.log('Words stored successfully');
 
-      // 3. 使用 PassageStorage 存储分析结果
+      // 3. 使用 PassageDao 存储分析结果
       console.log('Storing passage...');
-      const storedPassage = await this.passageStorage.savePassage({
+      const storedPassage = await this.passageDao.savePassage({
         title: input.title,
         content: input.content,
         author: input.author
@@ -47,7 +47,7 @@ export class SentenceService {
     } finally {
       // 断开连接
       await this.wordService.disconnect();
-      await this.passageStorage.disconnect();
+      await this.passageDao.disconnect();
     }
   }
 }

@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962370,
+  "id": "resp_0217729623668214acec6226078eafffb431763a23ccdf0448111",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"Suddenly, she saw a small light moving in the dark.\",\n    \"contentCn\": \"突然，她看见一道微弱的光在黑暗中移动。\",\n    \"tokens\": [\n        {\n            \"content\": \"Suddenly\",\n            \"words\": [\"Suddenly\"],\n            \"explain\": \"副词，作状语，表示“突然”\"\n        },\n        {\n            \"content\": \",\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"she\",\n            \"words\": [\"she\"],\n            \"explain\": \"人称代词主格，作主语\"\n        },\n        {\n            \"content\": \"saw\",\n            \"words\": [\"see\"],\n            \"explain\": \"动词see的过去式，作谓语，表示“看见”\"\n        },\n        {\n            \"content\": \"a\",\n            \"words\": [\"a\"],\n            \"explain\": \"不定冠词，表示泛指“一（个）”\"\n        },\n        {\n            \"content\": \"small\",\n            \"words\": [\"small\"],\n            \"explain\": \"形容词，修饰名词light，表示“微弱的，小的”\"\n        },\n        {\n            \"content\": \"light\",\n            \"words\": [\"light\"],\n            \"explain\": \"名词，作saw的宾语，表示“光”\"\n        },\n        {\n            \"content\": \"moving\",\n            \"words\": [\"move\"],\n            \"explain\": \"动词move的现在分词，作宾语补足语，表示“正在移动”\"\n        },\n        {\n            \"content\": \"in\",\n            \"words\": [\"in\"],\n            \"explain\": \"介词，表示“在……里面”\"\n        },\n        {\n            \"content\": \"the\",\n            \"words\": [\"the\"],\n            \"explain\": \"定冠词，表特指\"\n        },\n        {\n            \"content\": \"dark\",\n            \"words\": [\"dark\"],\n            \"explain\": \"名词，作介词in的宾语，表示“黑暗”\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"Suddenly,\",\n            \"contentCn\": \"突然，\",\n            \"function\": \"句首状语，说明动作发生的状态\",\n            \"tokenIndexes\": [0, 1]\n        },\n        {\n            \"content\": \"she saw a small light\",\n            \"contentCn\": \"她看见一道微弱的光\",\n            \"function\": \"句子主谓宾主干部分\",\n            \"tokenIndexes\": [2, 3, 4, 5, 6]\n        },\n        {\n            \"content\": \"moving in the dark.\",\n            \"contentCn\": \"在黑暗中移动。\",\n            \"function\": \"宾语补足语+地点状语，补充说明宾语的动作和发生位置\",\n            \"tokenIndexes\": [7, 8, 9, 10, 11]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296237055700000000000000000000ffffac1554a570d5de"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 932,
+    "output_tokens": 707,
+    "total_tokens": 1639,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

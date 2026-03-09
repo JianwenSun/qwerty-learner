@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962368,
+  "id": "resp_02177296236681298a941fd3b1c6e321c170880bc52c931f2ec7b",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"The sun had set, and everything was dark.\",\n    \"contentCn\": \"太阳已经落山了，一切都很黑。\",\n    \"tokens\": [\n        {\n            \"content\": \"The\",\n            \"words\": [\"The\"],\n            \"explain\": \"定冠词，特指独一无二的事物\"\n        },\n        {\n            \"content\": \"sun\",\n            \"words\": [\"sun\"],\n            \"explain\": \"名词，意为太阳\"\n        },\n        {\n            \"content\": \"had\",\n            \"words\": [\"had\"],\n            \"explain\": \"助动词，过去完成时的标志\"\n        },\n        {\n            \"content\": \"set\",\n            \"words\": [\"set\"],\n            \"explain\": \"动词，意为（太阳）落山、落下\"\n        },\n        {\n            \"content\": \",\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"and\",\n            \"words\": [\"and\"],\n            \"explain\": \"连词，表并列关系\"\n        },\n        {\n            \"content\": \"everything\",\n            \"words\": [\"everything\"],\n            \"explain\": \"不定代词，意为一切、所有事物\"\n        },\n        {\n            \"content\": \"was\",\n            \"words\": [\"was\"],\n            \"explain\": \"be动词is的过去式，意为是\"\n        },\n        {\n            \"content\": \"dark\",\n            \"words\": [\"dark\"],\n            \"explain\": \"形容词，意为黑暗的\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"The sun had set,\",\n            \"contentCn\": \"太阳已经落山了，\",\n            \"function\": \"第一个并列分句，描述前序事件\",\n            \"tokenIndexes\": [0, 1, 2, 3, 4]\n        },\n        {\n            \"content\": \"and everything was dark.\",\n            \"contentCn\": \"一切都很黑。\",\n            \"function\": \"第二个并列分句，描述事件发生后的状态\",\n            \"tokenIndexes\": [5, 6, 7, 8, 9]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296236863100000000000000000000ffffac15c168a24768"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 930,
+    "output_tokens": 537,
+    "total_tokens": 1467,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

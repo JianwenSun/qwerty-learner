@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962361,
+  "id": "resp_0217729623611739c33e9c339b2fbf9ef6ce2d7c2f130ab4b76c1",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"sentences\": [\"One evening, Lily was walking home through the woods.\", \"The sun had set, and everything was dark.\", \"She felt a little afraid.\", \"Suddenly, she saw a small light moving in the dark.\", \"What’s that?\", \"She asked softly.\", \"It was a little firefly.\", \"His light was not bright, but he kept trying his best to shine.\", \"Why do you glow even though you’re so small?\", \"Lily asked.\", \"The firefly said.\", \"Even a small light can help someone not feel scared.\", \"I don’t need to be big.\", \"I just need to keep shining.\", \"Lily smiled.\", \"She followed the little firefly.\", \"Its light guided her step by step.\", \"Soon, she reached her home safely.\", \"From that day on, Lily learned a valuable lesson: everyone can make a difference, no matter how small they are.\", \"Even the gentlest kindness or the weakest effort can brighten someone’s dark moment.\", \"That night, Lily closed her eyes with warmth in her heart.\", \"She knew she would never forget her little shining friend—the firefly.\"]}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296236185100000000000000000000ffffac1554111ceb1e"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 414,
+    "output_tokens": 237,
+    "total_tokens": 651,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221561
+}

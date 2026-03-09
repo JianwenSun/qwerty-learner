@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTS 句子生成状态</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #2c3e50;
+      }
+
+      .stats-container {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 30px;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .stat-card {
+        background-color: #f8f9fa;
+        border-radius: 6px;
+        padding: 15px;
+        text-align: center;
+        border-left: 4px solid #3498db;
+      }
+
+      .stat-card h3 {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      .stat-card .value {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2c3e50;
+      }
+
+      .sentences-container {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .sentence-item {
+        border-bottom: 1px solid #e0e0e0;
+        padding: 15px 0;
+      }
+
+      .sentence-item:last-child {
+        border-bottom: none;
+      }
+
+      .sentence-content {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .sentence-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .audio-player {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .audio-player button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .audio-player button:hover {
+        background-color: #2980b9;
+      }
+
+      .status-badge {
+        display: inline-block;
+        padding: 3px 8px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: bold;
+        margin-right: 5px;
+      }
+
+      .status-generated {
+        background-color: #d4edda;
+        color: #155724;
+      }
+
+      .status-pending {
+        background-color: #fff3cd;
+        color: #856404;
+      }
+
+      .filter-container {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+
+      .filter-container select {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      .loading {
+        text-align: center;
+        padding: 50px;
+        font-size: 18px;
+        color: #666;
+      }
+
+      .error {
+        text-align: center;
+        padding: 50px;
+        font-size: 18px;
+        color: #e74c3c;
+      }
+
+      @media (max-width: 768px) {
+        .stats-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .sentence-actions {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TTS 句子生成状态</h1>
+
+      <div class="stats-container">
+        <h2>统计信息</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>总句子数</h3>
+            <div class="value" id="totalSentences">0</div>
+          </div>
+          <div class="stat-card">
+            <h3>已生成男声</h3>
+            <div class="value" id="generatedMale">0</div>
+          </div>
+          <div class="stat-card">
+            <h3>已生成女声</h3>
+            <div class="value" id="generatedFemale">0</div>
+          </div>
+          <div class="stat-card">
+            <h3>未生成</h3>
+            <div class="value" id="pendingSentences">0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sentences-container">
+        <h2>句子列表</h2>
+        <div class="filter-container">
+          <select id="voiceFilter">
+            <option value="all">全部声音类型</option>
+            <option value="Male">男声</option>
+            <option value="Female">女声</option>
+          </select>
+          <select id="statusFilter">
+            <option value="all">全部状态</option>
+            <option value="generated">已生成</option>
+            <option value="pending">未生成</option>
+          </select>
+        </div>
+        <div id="sentencesList" class="loading">加载中...</div>
+      </div>
+    </div>
+
+    <script>
+      // API 基础 URL
+      const API_BASE = '/api/tts'
+
+      // 页面加载完成后初始化
+      document.addEventListener('DOMContentLoaded', async () => {
+        try {
+          await loadTTSStatus()
+          setupFilters()
+        } catch (error) {
+          console.error('加载失败:', error)
+          document.getElementById('sentencesList').innerHTML = '<div class="error">加载失败，请刷新页面重试</div>'
+        }
+      })
+
+      // 加载 TTS 状态数据
+      async function loadTTSStatus() {
+        const response = await fetch(`${API_BASE}/status`)
+        if (!response.ok) {
+          throw new Error('Failed to fetch TTS status')
+        }
+        const data = await response.json()
+
+        if (data.success) {
+          updateStats(data.data)
+          renderSentences(data.data)
+        } else {
+          throw new Error(data.error || 'Failed to load TTS status')
+        }
+      }
+
+      // 更新统计信息
+      function updateStats(sentences) {
+        const totalSentences = sentences.length
+        let generatedMale = 0
+        let generatedFemale = 0
+        let pendingSentences = 0
+
+        sentences.forEach((sentence) => {
+          const maleGenerated = sentence.soundStatus.some((status) => status.voiceType === 'Male' && status.generated)
+          const femaleGenerated = sentence.soundStatus.some((status) => status.voiceType === 'Female' && status.generated)
+
+          if (maleGenerated) generatedMale++
+          if (femaleGenerated) generatedFemale++
+          if (!maleGenerated || !femaleGenerated) pendingSentences++
+        })
+
+        document.getElementById('totalSentences').textContent = totalSentences
+        document.getElementById('generatedMale').textContent = generatedMale
+        document.getElementById('generatedFemale').textContent = generatedFemale
+        document.getElementById('pendingSentences').textContent = pendingSentences
+      }
+
+      // 渲染句子列表
+      function renderSentences(sentences) {
+        const sentencesList = document.getElementById('sentencesList')
+        sentencesList.innerHTML = ''
+
+        if (sentences.length === 0) {
+          sentencesList.innerHTML = '<div class="error">暂无句子数据</div>'
+          return
+        }
+
+        sentences.forEach((sentence) => {
+          const sentenceItem = document.createElement('div')
+          sentenceItem.className = 'sentence-item'
+
+          // 句子内容
+          const contentDiv = document.createElement('div')
+          contentDiv.className = 'sentence-content'
+          contentDiv.textContent = sentence.content
+          sentenceItem.appendChild(contentDiv)
+
+          // 状态信息
+          const statusDiv = document.createElement('div')
+          statusDiv.className = 'sentence-status'
+
+          sentence.soundStatus.forEach((status) => {
+            const badge = document.createElement('span')
+            badge.className = `status-badge ${status.generated ? 'status-generated' : 'status-pending'}`
+            badge.textContent = `${status.voiceType}: ${status.generated ? '已生成' : '未生成'}`
+            statusDiv.appendChild(badge)
+          })
+          sentenceItem.appendChild(statusDiv)
+
+          // 操作按钮
+          const actionsDiv = document.createElement('div')
+          actionsDiv.className = 'sentence-actions'
+
+          // 音频播放器和生成按钮
+          sentence.soundStatus.forEach((status) => {
+            const audioPlayer = document.createElement('div')
+            audioPlayer.className = 'audio-player'
+
+            if (status.generated) {
+              const audio = document.createElement('audio')
+              audio.src = `${API_BASE}/sound/${sentence.id}/${status.voiceType}`
+              audio.preload = 'none'
+
+              const playButton = document.createElement('button')
+              playButton.textContent = `播放 ${status.voiceType}`
+              playButton.addEventListener('click', async () => {
+                try {
+                  if (audio.paused) {
+                    await audio.play()
+                    playButton.textContent = `暂停 ${status.voiceType}`
+                  } else {
+                    audio.pause()
+                    playButton.textContent = `播放 ${status.voiceType}`
+                  }
+                } catch (error) {
+                  console.error('播放失败:', error)
+                  alert('播放失败，请检查音频文件是否存在')
+                }
+              })
+
+              // 重新生成按钮
+              const regenerateButton = document.createElement('button')
+              regenerateButton.textContent = `重新生成 ${status.voiceType}`
+              regenerateButton.style.backgroundColor = '#f39c12'
+              regenerateButton.addEventListener('click', async () => {
+                try {
+                  const response = await fetch(`${API_BASE}/generate/${sentence.id}`, {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ voiceType: status.voiceType }),
+                  })
+
+                  if (!response.ok) {
+                    throw new Error('重新生成失败')
+                  }
+
+                  const data = await response.json()
+                  if (data.success) {
+                    alert('重新生成成功')
+                    // 重新加载页面以更新状态
+                    await loadTTSStatus()
+                  } else {
+                    alert('重新生成失败: ' + (data.error || '未知错误'))
+                  }
+                } catch (error) {
+                  console.error('重新生成失败:', error)
+                  alert('重新生成失败，请稍后重试')
+                }
+              })
+
+              // 删除按钮
+              const deleteButton = document.createElement('button')
+              deleteButton.textContent = `删除 ${status.voiceType}`
+              deleteButton.style.backgroundColor = '#e74c3c'
+              deleteButton.addEventListener('click', async () => {
+                if (confirm(`确定要删除 ${status.voiceType} 语音吗？`)) {
+                  try {
+                    const response = await fetch(`${API_BASE}/sound/${sentence.id}/${status.voiceType}`, {
+                      method: 'DELETE',
+                    })
+
+                    if (!response.ok) {
+                      throw new Error('删除失败')
+                    }
+
+                    const data = await response.json()
+                    if (data.success) {
+                      alert('删除成功')
+                      // 重新加载页面以更新状态
+                      await loadTTSStatus()
+                    } else {
+                      alert('删除失败: ' + (data.error || '未知错误'))
+                    }
+                  } catch (error) {
+                    console.error('删除失败:', error)
+                    alert('删除失败，请稍后重试')
+                  }
+                }
+              })
+
+              audio.addEventListener('ended', () => {
+                playButton.textContent = `播放 ${status.voiceType}`
+              })
+
+              // 确保音频元素的paused状态正确
+              audio.addEventListener('canplay', () => {
+                if (!audio.paused) {
+                  audio.pause()
+                  playButton.textContent = `播放 ${status.voiceType}`
+                }
+              })
+
+              audioPlayer.appendChild(playButton)
+              audioPlayer.appendChild(regenerateButton)
+              audioPlayer.appendChild(deleteButton)
+              audioPlayer.appendChild(audio)
+            } else {
+              // 生成按钮（未生成时显示）
+              const generateButton = document.createElement('button')
+              generateButton.textContent = `生成 ${status.voiceType}`
+              generateButton.style.backgroundColor = '#27ae60'
+              generateButton.addEventListener('click', async () => {
+                try {
+                  const response = await fetch(`${API_BASE}/generate/${sentence.id}`, {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ voiceType: status.voiceType }),
+                  })
+
+                  if (!response.ok) {
+                    throw new Error('生成失败')
+                  }
+
+                  const data = await response.json()
+                  if (data.success) {
+                    alert('生成成功')
+                    // 重新加载页面以更新状态
+                    await loadTTSStatus()
+                  } else {
+                    alert('生成失败: ' + (data.error || '未知错误'))
+                  }
+                } catch (error) {
+                  console.error('生成失败:', error)
+                  alert('生成失败，请稍后重试')
+                }
+              })
+
+              audioPlayer.appendChild(generateButton)
+            }
+
+            actionsDiv.appendChild(audioPlayer)
+          })
+
+          sentenceItem.appendChild(actionsDiv)
+          sentencesList.appendChild(sentenceItem)
+        })
+      }
+
+      // 设置过滤器
+      function setupFilters() {
+        const voiceFilter = document.getElementById('voiceFilter')
+        const statusFilter = document.getElementById('statusFilter')
+
+        voiceFilter.addEventListener('change', filterSentences)
+        statusFilter.addEventListener('change', filterSentences)
+      }
+
+      // 过滤句子
+      async function filterSentences() {
+        const voiceFilter = document.getElementById('voiceFilter').value
+        const statusFilter = document.getElementById('statusFilter').value
+
+        try {
+          const response = await fetch(`${API_BASE}/status`)
+          if (!response.ok) {
+            throw new Error('Failed to fetch TTS status')
+          }
+          const data = await response.json()
+
+          if (data.success) {
+            let filteredSentences = data.data
+
+            // 按声音类型过滤
+            if (voiceFilter !== 'all') {
+              filteredSentences = filteredSentences.filter((sentence) => {
+                return sentence.soundStatus.some((status) => status.voiceType === voiceFilter)
+              })
+            }
+
+            // 按状态过滤
+            if (statusFilter !== 'all') {
+              filteredSentences = filteredSentences.filter((sentence) => {
+                if (statusFilter === 'generated') {
+                  return sentence.soundStatus.some((status) => status.generated)
+                } else {
+                  return sentence.soundStatus.some((status) => !status.generated)
+                }
+              })
+            }
+
+            renderSentences(filteredSentences)
+          }
+        } catch (error) {
+          console.error('过滤失败:', error)
+        }
+      }
+    </script>
+  </body>
+</html>

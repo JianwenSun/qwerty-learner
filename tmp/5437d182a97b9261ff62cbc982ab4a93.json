@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962367,
+  "id": "resp_021772962366852571e879a7e0eb1247cfcaaab487786a142978a",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"That night, Lily closed her eyes with warmth in her heart.\",\n    \"contentCn\": \"那天晚上，莉莉心里暖暖的，闭上了眼睛。\",\n    \"tokens\": [\n        {\n            \"content\": \"That\",\n            \"words\": [\"That\"],\n            \"explain\": \"指示代词\"\n        },\n        {\n            \"content\": \"night\",\n            \"words\": [\"night\"],\n            \"explain\": \"名词\"\n        },\n        {\n            \"content\": \",\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"Lily\",\n            \"words\": [\"Lily\"],\n            \"explain\": \"人名，作主语\"\n        },\n        {\n            \"content\": \"closed\",\n            \"words\": [\"closed\"],\n            \"explain\": \"动词过去式，作谓语\"\n        },\n        {\n            \"content\": \"her\",\n            \"words\": [\"her\"],\n            \"explain\": \"形容词性物主代词\"\n        },\n        {\n            \"content\": \"eyes\",\n            \"words\": [\"eyes\"],\n            \"explain\": \"名词复数，作宾语\"\n        },\n        {\n            \"content\": \"with\",\n            \"words\": [\"with\"],\n            \"explain\": \"介词\"\n        },\n        {\n            \"content\": \"warmth\",\n            \"words\": [\"warmth\"],\n            \"explain\": \"名词\"\n        },\n        {\n            \"content\": \"in\",\n            \"words\": [\"in\"],\n            \"explain\": \"介词\"\n        },\n        {\n            \"content\": \"her\",\n            \"words\": [\"her\"],\n            \"explain\": \"形容词性物主代词\"\n        },\n        {\n            \"content\": \"heart\",\n            \"words\": [\"heart\"],\n            \"explain\": \"名词\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"That night,\",\n            \"contentCn\": \"那天晚上，\",\n            \"function\": \"时间状语\",\n            \"tokenIndexes\": [0, 1, 2]\n        },\n        {\n            \"content\": \"Lily closed her eyes\",\n            \"contentCn\": \"莉莉闭上了眼睛\",\n            \"function\": \"句子主干（主谓宾结构）\",\n            \"tokenIndexes\": [3, 4, 5, 6]\n        },\n        {\n            \"content\": \"with warmth in her heart.\",\n            \"contentCn\": \"心里暖暖的。\",\n            \"function\": \"伴随状语\",\n            \"tokenIndexes\": [7, 8, 9, 10, 11, 12]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296236791100000000000000000000ffffac15104470bbbb"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 933,
+    "output_tokens": 659,
+    "total_tokens": 1592,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962369,
+  "id": "resp_0217729623668255bab3eccb0e59942edbe17ea88d60bc6e762a5",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"The firefly said.\",\n    \"contentCn\": \"萤火虫说道。\",\n    \"tokens\": [\n        {\n            \"content\": \"The\",\n            \"words\": [\"The\"],\n            \"explain\": \"定冠词，特指说话的萤火虫\"\n        },\n        {\n            \"content\": \"firefly\",\n            \"words\": [\"firefly\"],\n            \"explain\": \"名词，意为萤火虫\"\n        },\n        {\n            \"content\": \"said\",\n            \"words\": [\"said\"],\n            \"explain\": \"动词say的过去式，意为说、说道\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"The firefly\",\n            \"contentCn\": \"萤火虫\",\n            \"function\": \"主语部分\",\n            \"tokenIndexes\": [0, 1]\n        },\n        {\n            \"content\": \"said.\",\n            \"contentCn\": \"说道。\",\n            \"function\": \"谓语部分\",\n            \"tokenIndexes\": [2, 3]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296236904500000000000000000000ffffac1507dee933b5"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 925,
+    "output_tokens": 277,
+    "total_tokens": 1202,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

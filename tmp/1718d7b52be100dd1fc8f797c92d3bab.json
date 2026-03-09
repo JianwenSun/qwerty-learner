@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962373,
+  "id": "resp_021772962366828d38ab4615ab463b4b1139db3a04e853bb3ab6d",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"Lily asked.\",\n    \"contentCn\": \"莉莉问。\",\n    \"tokens\": [\n        {\n            \"content\": \"Lily\",\n            \"words\": [\"Lily\"],\n            \"explain\": \"专有名词，人名\"\n        },\n        {\n            \"content\": \"asked\",\n            \"words\": [\"ask\"],\n            \"explain\": \"动词过去式，意为‘询问、提问’\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"Lily asked.\",\n            \"contentCn\": \"莉莉问。\",\n            \"function\": \"主谓结构完整句子\",\n            \"tokenIndexes\": [0, 1, 2]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296237328500000000000000000000ffffac15558740b29d"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 924,
+    "output_tokens": 200,
+    "total_tokens": 1124,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

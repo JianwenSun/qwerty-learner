@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962367,
+  "id": "resp_021772962366849f916f2e250264480d9a70ca8038cd15f661e4c",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"Lily smiled.\",\n    \"contentCn\": \"莉莉笑了。\",\n    \"tokens\": [\n        {\n            \"content\": \"Lily\",\n            \"words\": [\"Lily\"],\n            \"explain\": \"专有名词，人名\"\n        },\n        {\n            \"content\": \"smiled\",\n            \"words\": [\"smile\"],\n            \"explain\": \"动词smile的过去式，意为“微笑，笑”\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"Lily\",\n            \"contentCn\": \"莉莉\",\n            \"function\": \"主语\",\n            \"tokenIndexes\": [0]\n        },\n        {\n            \"content\": \"smiled.\",\n            \"contentCn\": \"笑了。\",\n            \"function\": \"谓语\",\n            \"tokenIndexes\": [1, 2]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296236794500000000000000000000ffffac15520d84a600"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 924,
+    "output_tokens": 241,
+    "total_tokens": 1165,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

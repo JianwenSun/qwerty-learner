@@ -1,16 +1,16 @@
-import { SentenceStorage } from '../../storage/SentenceStorage';
+import { SentenceDao } from '../../dao/SentenceDao';
 import { Sentence } from '../../analyzer/model';
 import { PrismaClient } from '@prisma/client';
 import { describe, expect, it } from '@jest/globals';
 
-describe('SentenceStorageTest', () => {
+describe('SentenceDaoTest', () => {
   describe('saveSentence', () => {
     it('should save a new sentence successfully', async () => {
       const prisma = new PrismaClient();
 
       try {
         await prisma.$transaction(async (prisma) => {
-          const sentenceStorage = new SentenceStorage(prisma);
+          const sentenceDao = new SentenceDao(prisma);
 
           // 测试用例：存储新句子
           const testSentence: Sentence = {
@@ -27,11 +27,11 @@ describe('SentenceStorageTest', () => {
             ]
           };
 
-          const savedSentence = await sentenceStorage.saveSentence(testSentence);
+          const savedSentence = await sentenceDao.saveSentence(testSentence);
           expect(savedSentence).toBeDefined();
 
           // 验证查询回来的数据是否正确
-          const queriedSentence = await sentenceStorage.findSentenceByContent(testSentence.content);
+          const queriedSentence = await sentenceDao.findSentenceByContent(testSentence.content);
           expect(queriedSentence).toBeDefined();
           expect(queriedSentence?.content).toBe(testSentence.content);
           expect(queriedSentence?.contentCn).toBe(testSentence.contentCn);
@@ -53,7 +53,7 @@ describe('SentenceStorageTest', () => {
 
       try {
         await prisma.$transaction(async (prisma) => {
-          const sentenceStorage = new SentenceStorage(prisma);
+          const sentenceDao = new SentenceDao(prisma);
 
           // 测试用例：存储带文章ID的句子
           const testSentenceWithPassage: Sentence = {
@@ -72,7 +72,7 @@ describe('SentenceStorageTest', () => {
             ]
           };
 
-          const savedSentence = await sentenceStorage.saveSentence(testSentenceWithPassage);
+          const savedSentence = await sentenceDao.saveSentence(testSentenceWithPassage);
           expect(savedSentence).toBeDefined();
 
           // 验证单词是否被保存
@@ -80,9 +80,8 @@ describe('SentenceStorageTest', () => {
           expect(savedWord).toBeDefined();
 
           // 验证查询回来的数据是否正确
-          const queriedSentence = await sentenceStorage.findSentenceByContent(testSentenceWithPassage.content);
+          const queriedSentence = await sentenceDao.findSentenceByContent(testSentenceWithPassage.content);
           expect(queriedSentence).toBeDefined();
-          expect(queriedSentence?.passageId).toBeNull();
 
           // 测试成功后故意抛出错误触发回滚
           throw new Error('Test rollback');
@@ -101,7 +100,7 @@ describe('SentenceStorageTest', () => {
 
       try {
         await prisma.$transaction(async (prisma) => {
-          const sentenceStorage = new SentenceStorage(prisma);
+          const sentenceDao = new SentenceDao(prisma);
 
           // 测试用例：存储带自定义字典ID的句子
           const testSentenceWithDictionary: Sentence = {
@@ -119,9 +118,8 @@ describe('SentenceStorageTest', () => {
             ]
           };
 
-          const savedSentence = await sentenceStorage.saveSentence(testSentenceWithDictionary, null, null);
+          const savedSentence = await sentenceDao.saveSentence(testSentenceWithDictionary, null, null);
           expect(savedSentence).toBeDefined();
-          expect(savedSentence.passageId).toBeNull();
           expect(savedSentence.chapterId).toBeNull();
 
           // 验证单词是否被保存
@@ -129,11 +127,10 @@ describe('SentenceStorageTest', () => {
           expect(savedWord).toBeDefined();
 
           // 验证查询回来的数据是否正确
-          const queriedSentence = await sentenceStorage.findSentenceByContent(testSentenceWithDictionary.content);
+          const queriedSentence = await sentenceDao.findSentenceByContent(testSentenceWithDictionary.content);
           expect(queriedSentence).toBeDefined();
           expect(queriedSentence?.content).toBe(testSentenceWithDictionary.content);
           expect(queriedSentence?.contentCn).toBe(testSentenceWithDictionary.contentCn);
-          expect(queriedSentence?.passageId).toBeNull();
           expect(queriedSentence?.chapterId).toBeNull();
 
           // 验证tokens
@@ -145,14 +142,14 @@ describe('SentenceStorageTest', () => {
 
           // 测试根据ID查询句子
           if (queriedSentence) {
-            const sentenceById = await sentenceStorage.findSentenceById(queriedSentence.id);
+            const sentenceById = await sentenceDao.findSentenceById(queriedSentence.id);
             expect(sentenceById).toBeDefined();
             expect(sentenceById?.content).toBe(testSentenceWithDictionary.content);
             expect(sentenceById?.contentCn).toBe(testSentenceWithDictionary.contentCn);
           }
 
           // 测试查询所有句子
-          const allSentences = await sentenceStorage.findAllSentences();
+          const allSentences = await sentenceDao.findAllSentences();
           expect(Array.isArray(allSentences)).toBe(true);
           expect(allSentences.length).toBeGreaterThan(0);
 
@@ -173,7 +170,7 @@ describe('SentenceStorageTest', () => {
 
       try {
         await prisma.$transaction(async (prisma) => {
-          const sentenceStorage = new SentenceStorage(prisma);
+          const sentenceDao = new SentenceDao(prisma);
 
           // 测试用例：存储字典ID为null的句子
           const testSentenceWithNullDictionary: Sentence = {
@@ -192,13 +189,12 @@ describe('SentenceStorageTest', () => {
             ]
           };
 
-          const savedSentence = await sentenceStorage.saveSentence(testSentenceWithNullDictionary, null, null);
+          const savedSentence = await sentenceDao.saveSentence(testSentenceWithNullDictionary, null, null);
           expect(savedSentence).toBeDefined();
-          expect(savedSentence.passageId).toBeNull();
           expect(savedSentence.chapterId).toBeNull();
 
           // 验证查询回来的数据是否正确
-          const queriedSentence = await sentenceStorage.findSentenceByContent(testSentenceWithNullDictionary.content);
+          const queriedSentence = await sentenceDao.findSentenceByContent(testSentenceWithNullDictionary.content);
           expect(queriedSentence).toBeDefined();
           expect(queriedSentence?.chapterId).toBeNull();
 

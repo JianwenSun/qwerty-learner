@@ -76,7 +76,7 @@ model Sentence {
   explanation String
   tokens      String     @map("tokens") @db.Text
   words       String     @map("words") @db.Text
-  soundId     Int        @map("sound_id")
+  soundId     Int?       @map("sound_id")
   createAt    DateTime   @default(now()) @map("create_at")
   modifyAt    DateTime?  @map("modify_at")
   deleteAt    DateTime?  @map("delete_at")
@@ -85,6 +85,7 @@ model Sentence {
   chapter     Chapter?   @relation(fields: [chapterId], references: [id], onDelete: Cascade)
   passages    Passage[]  @relation("PassageSentence")
   practices   Practice[] @relation("SentencePractice")
+  sentenceSounds SentenceSound[]
 
   @@index([content])
   @@index([chapterId], map: "sentences_chapter_id_fkey")
@@ -134,8 +135,8 @@ model Practice {
 model Passage {
   id            Int        @id @default(autoincrement())
   title         String
-  content       String
-  contentCn     String     @map("content_cn")
+  content       String     @db.Text
+  contentCn     String     @map("content_cn") @db.Text
   author        String?
   source        String
   wordCount     Int        @map("word_count")
@@ -162,4 +163,24 @@ enum ChapterType {
 enum ClauseType {
   Simple
   Complex
+}
+
+enum VoiceType {
+  Male
+  Female
+}
+
+model SentenceSound {
+  id         Int       @id @default(autoincrement())
+  sentenceId Int       @map("sentence_id")
+  voiceType  VoiceType @map("voice_type")
+  hash       String    @db.VarChar(64)
+  mp3Data    Bytes     @map("mp3_data")
+  createAt   DateTime  @default(now()) @map("create_at")
+  modifyAt   DateTime? @map("modify_at")
+  sentence   Sentence  @relation(fields: [sentenceId], references: [id], onDelete: Cascade)
+
+  @@unique([sentenceId, voiceType])
+  @@index([sentenceId], map: "sentence_sounds_sentence_id_fkey")
+  @@map("sentence_sounds")
 }

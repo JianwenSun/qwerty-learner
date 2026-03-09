@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962372,
+  "id": "resp_021772962366848ba1bdc7661816f1fcacaaa7f52b55edafb6176",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"From that day on, Lily learned a valuable lesson: everyone can make a difference, no matter how small they are.\",\n    \"contentCn\": \"从那天起，莉莉学到了宝贵的一课：每个人都能有所作为，无论他们多么渺小。\",\n    \"tokens\": [\n        {\n            \"content\": \"From\",\n            \"words\": [\"From\"],\n            \"explain\": \"介词\"\n        },\n        {\n            \"content\": \"that\",\n            \"words\": [\"that\"],\n            \"explain\": \"指示代词\"\n        },\n        {\n            \"content\": \"day\",\n            \"words\": [\"day\"],\n            \"explain\": \"名词\"\n        },\n        {\n            \"content\": \"on\",\n            \"words\": [\"on\"],\n            \"explain\": \"副词\"\n        },\n        {\n            \"content\": \",\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"Lily\",\n            \"words\": [\"Lily\"],\n            \"explain\": \"专有名词\"\n        },\n        {\n            \"content\": \"learned\",\n            \"words\": [\"learned\"],\n            \"explain\": \"动词过去式\"\n        },\n        {\n            \"content\": \"a\",\n            \"words\": [\"a\"],\n            \"explain\": \"不定冠词\"\n        },\n        {\n            \"content\": \"valuable\",\n            \"words\": [\"valuable\"],\n            \"explain\": \"形容词\"\n        },\n        {\n            \"content\": \"lesson\",\n            \"words\": [\"lesson\"],\n            \"explain\": \"名词\"\n        },\n        {\n            \"content\": \":\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"everyone\",\n            \"words\": [\"everyone\"],\n            \"explain\": \"不定代词\"\n        },\n        {\n            \"content\": \"can\",\n            \"words\": [\"can\"],\n            \"explain\": \"情态动词\"\n        },\n        {\n            \"content\": \"make\",\n            \"words\": [\"make\"],\n            \"explain\": \"动词\"\n        },\n        {\n            \"content\": \"a\",\n            \"words\": [\"a\"],\n            \"explain\": \"不定冠词\"\n        },\n        {\n            \"content\": \"difference\",\n            \"words\": [\"difference\"],\n            \"explain\": \"名词\"\n        },\n        {\n            \"content\": \",\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"no\",\n            \"words\": [\"no\"],\n            \"explain\": \"副词\"\n        },\n        {\n            \"content\": \"matter\",\n            \"words\": [\"matter\"],\n            \"explain\": \"连词\"\n        },\n        {\n            \"content\": \"how\",\n            \"words\": [\"how\"],\n            \"explain\": \"副词\"\n        },\n        {\n            \"content\": \"small\",\n            \"words\": [\"small\"],\n            \"explain\": \"形容词\"\n        },\n        {\n            \"content\": \"they\",\n            \"words\": [\"they\"],\n            \"explain\": \"代词\"\n        },\n        {\n            \"content\": \"are\",\n            \"words\": [\"are\"],\n            \"explain\": \"be动词\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"From that day on,\",\n            \"contentCn\": \"从那天起，\",\n            \"function\": \"时间状语\",\n            \"tokenIndexes\": [0, 1, 2, 3, 4]\n        },\n        {\n            \"content\": \"Lily learned a valuable lesson:\",\n            \"contentCn\": \"莉莉学到了宝贵的一课：\",\n            \"function\": \"主句部分\",\n            \"tokenIndexes\": [5, 6, 7, 8, 9, 10]\n        },\n        {\n            \"content\": \"everyone can make a difference,\",\n            \"contentCn\": \"每个人都能有所作为，\",\n            \"function\": \"lesson的同位语从句主句\",\n            \"tokenIndexes\": [11, 12, 13, 14, 15, 16]\n        },\n        {\n            \"content\": \"no matter how small they are.\",\n            \"contentCn\": \"无论他们多么渺小。\",\n            \"function\": \"让步状语从句\",\n            \"tokenIndexes\": [17, 18, 19, 20, 21, 22, 23]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296237249500000000000000000000ffffac15550ddf27dd"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 944,
+    "output_tokens": 1104,
+    "total_tokens": 2048,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

@@ -1,10 +1,10 @@
-import { WordStorage } from '../storage/WordStorage';
+import { WordDao } from '../dao/WordDao';
 
 export class WordService {
-  private wordStorage: WordStorage;
+  private wordDao: WordDao;
 
   constructor() {
-    this.wordStorage = new WordStorage();
+    this.wordDao = new WordDao();
   }
 
   async processAndStoreWords(words: string[]): Promise<void> {
@@ -15,7 +15,7 @@ export class WordService {
       const validWords = this.validateWords(words);
 
       // 存储单词
-      await this.wordStorage.saveWords(validWords);
+      await this.wordDao.saveWords(validWords);
 
       console.log(`成功存储 ${validWords.length} 个单词`);
     } catch (error) {
@@ -44,6 +44,6 @@ export class WordService {
   }
 
   async disconnect() {
-    await this.wordStorage.disconnect();
+    await this.wordDao.disconnect();
   }
 }

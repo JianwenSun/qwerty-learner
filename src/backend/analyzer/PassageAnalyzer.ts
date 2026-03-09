@@ -29,8 +29,20 @@ export class PassageAnalyzer {
         const analysisResult = await sentenceAnalyzer.analysis(sentenceStr);
         // 提取单词到集合中
         for (const token of analysisResult.tokens) {
+          // 从words数组中提取单词
           for (const word of token.words) {
             wordsSet.add(word.toLowerCase());
+          }
+          
+          // 如果words数组为空，且content是一个有效的单词，则从content中提取
+          if (token.words.length === 0 && token.content) {
+            // 去除首尾空格
+            const trimmedContent = token.content.trim();
+            // 只允许字母、数字和连字符（如face-to-face）
+            const isValid = /^[a-zA-Z0-9-]+$/.test(trimmedContent);
+            if (isValid && trimmedContent) {
+              wordsSet.add(trimmedContent.toLowerCase());
+            }
           }
         }
         return analysisResult;

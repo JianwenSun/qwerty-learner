@@ -28,6 +28,7 @@ export interface PassageInput {
     title: string;
     author?: string;
     content: string;
+    source?: string;
 }
 
 // 句子切分输出接口

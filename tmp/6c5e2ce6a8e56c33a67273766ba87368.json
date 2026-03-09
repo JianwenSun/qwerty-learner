@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962367,
+  "id": "resp_021772962366851641eeff61d3ee2fcea48be1db3eef9071a9512",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"She followed the little firefly.\",\n    \"contentCn\": \"她跟着那只小萤火虫。\",\n    \"tokens\": [\n        {\n            \"content\": \"She\",\n            \"words\": [\"She\"],\n            \"explain\": \"代词，第三人称单数主格，指代女性\"\n        },\n        {\n            \"content\": \"followed\",\n            \"words\": [\"follow\"],\n            \"explain\": \"动词过去式，意为跟随、跟着\"\n        },\n        {\n            \"content\": \"the\",\n            \"words\": [\"the\"],\n            \"explain\": \"定冠词，表特指\"\n        },\n        {\n            \"content\": \"little\",\n            \"words\": [\"little\"],\n            \"explain\": \"形容词，意为小的\"\n        },\n        {\n            \"content\": \"firefly\",\n            \"words\": [\"firefly\"],\n            \"explain\": \"名词，意为萤火虫\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"She\",\n            \"contentCn\": \"她\",\n            \"function\": \"主语\",\n            \"tokenIndexes\": [0]\n        },\n        {\n            \"content\": \"followed the little firefly.\",\n            \"contentCn\": \"跟着那只小萤火虫。\",\n            \"function\": \"谓语+宾语部分\",\n            \"tokenIndexes\": [1, 2, 3, 4, 5]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296236791200000000000000000000ffffac15520dd2d118"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 369,
+    "total_tokens": 1296,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

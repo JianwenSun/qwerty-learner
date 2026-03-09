@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962367,
+  "id": "resp_021772962366822dd742fe08f96381a9e3cd447cf1b9ac3a1323e",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"She asked softly.\",\n    \"contentCn\": \"她轻声问道。\",\n    \"tokens\": [\n        {\n            \"content\": \"She\",\n            \"words\": [\"She\"],\n            \"explain\": \"代词，人称代词主格，作主语\"\n        },\n        {\n            \"content\": \"asked\",\n            \"words\": [\"ask\"],\n            \"explain\": \"动词，ask的过去式，作谓语\"\n        },\n        {\n            \"content\": \"softly\",\n            \"words\": [\"softly\"],\n            \"explain\": \"副词，修饰动词asked，作方式状语\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"She\",\n            \"contentCn\": \"她\",\n            \"function\": \"主语\",\n            \"tokenIndexes\": [0]\n        },\n        {\n            \"content\": \"asked softly.\",\n            \"contentCn\": \"轻声问道。\",\n            \"function\": \"谓语+状语部分\",\n            \"tokenIndexes\": [1, 2, 3]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296236748200000000000000000000ffffac157a86f57632"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 924,
+    "output_tokens": 284,
+    "total_tokens": 1208,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

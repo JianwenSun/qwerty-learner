@@ -1,6 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import { Sentence } from '../analyzer/model';
-import { SentenceStorage } from '../storage/SentenceStorage';
+import { SentenceStorage } from '../dao/SentenceDao';
 import { describe, expect, it, beforeEach, afterEach } from '@jest/globals';
 
 describe('TransactionTest', () => {

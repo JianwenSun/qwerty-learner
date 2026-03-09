@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962368,
+  "id": "resp_0217729623668325de161b16d50149cbf4122a430bab0f0ae3088",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"His light was not bright, but he kept trying his best to shine.\",\n    \"contentCn\": \"他的光不亮，但他一直尽自己最大的努力发光。\",\n    \"tokens\": [\n        {\n            \"content\": \"His\",\n            \"words\": [\"His\"],\n            \"explain\": \"形容词性物主代词\"\n        },\n        {\n            \"content\": \"light\",\n            \"words\": [\"light\"],\n            \"explain\": \"名词，意为“光，光线”\"\n        },\n        {\n            \"content\": \"was\",\n            \"words\": [\"was\"],\n            \"explain\": \"be动词is的过去式，作系动词\"\n        },\n        {\n            \"content\": \"not\",\n            \"words\": [\"not\"],\n            \"explain\": \"副词，表否定\"\n        },\n        {\n            \"content\": \"bright\",\n            \"words\": [\"bright\"],\n            \"explain\": \"形容词，意为“明亮的”\"\n        },\n        {\n            \"content\": \",\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"but\",\n            \"words\": [\"but\"],\n            \"explain\": \"连词，表转折，意为“但是”\"\n        },\n        {\n            \"content\": \"he\",\n            \"words\": [\"he\"],\n            \"explain\": \"人称代词主格\"\n        },\n        {\n            \"content\": \"kept\",\n            \"words\": [\"kept\"],\n            \"explain\": \"动词keep的过去式，意为“持续，一直”\"\n        },\n        {\n            \"content\": \"trying\",\n            \"words\": [\"trying\"],\n            \"explain\": \"动词try的现在分词形式，意为“尝试，努力”\"\n        },\n        {\n            \"content\": \"his\",\n            \"words\": [\"his\"],\n            \"explain\": \"形容词性物主代词\"\n        },\n        {\n            \"content\": \"best\",\n            \"words\": [\"best\"],\n            \"explain\": \"名词，意为“最好的状态，最大努力”\"\n        },\n        {\n            \"content\": \"to\",\n            \"words\": [\"to\"],\n            \"explain\": \"动词不定式符号，无实义\"\n        },\n        {\n            \"content\": \"shine\",\n            \"words\": [\"shine\"],\n            \"explain\": \"动词，意为“发光”\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"His light was not bright,\",\n            \"contentCn\": \"他的光不亮，\",\n            \"function\": \"转折前的分句，描述基础事实\",\n            \"tokenIndexes\": [0, 1, 2, 3, 4, 5]\n        },\n        {\n            \"content\": \"but he kept trying his best to shine.\",\n            \"contentCn\": \"但他一直尽自己最大的努力发光。\",\n            \"function\": \"转折后的分句，说明主语的行为\",\n            \"tokenIndexes\": [6, 7, 8, 9, 10, 11, 12, 13, 14]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296236828500000000000000000000ffffac15525824d78b"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 935,
+    "output_tokens": 777,
+    "total_tokens": 1712,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}

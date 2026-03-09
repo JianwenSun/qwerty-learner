@@ -1,0 +1,42 @@
+{
+  "created_at": 1772962370,
+  "id": "resp_021772962366840aafb70253f86f133b2b849e439c960649fd6d0",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"I just need to keep shining.\",\n    \"contentCn\": \"我只需要继续发光。\",\n    \"tokens\": [\n        {\n            \"content\": \"I\",\n            \"words\": [\"I\"],\n            \"explain\": \"代词\"\n        },\n        {\n            \"content\": \"just\",\n            \"words\": [\"just\"],\n            \"explain\": \"副词，意为“只是、仅仅”\"\n        },\n        {\n            \"content\": \"need\",\n            \"words\": [\"need\"],\n            \"explain\": \"动词，意为“需要”\"\n        },\n        {\n            \"content\": \"to\",\n            \"words\": [\"to\"],\n            \"explain\": \"动词不定式符号，无实义\"\n        },\n        {\n            \"content\": \"keep\",\n            \"words\": [\"keep\"],\n            \"explain\": \"动词，意为“保持、继续”\"\n        },\n        {\n            \"content\": \"shining\",\n            \"words\": [\"shining\"],\n            \"explain\": \"动名词，意为“发光、闪耀”\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"I\",\n            \"contentCn\": \"我\",\n            \"function\": \"主语\",\n            \"tokenIndexes\": [0]\n        },\n        {\n            \"content\": \"just need to keep shining.\",\n            \"contentCn\": \"只需要继续发光。\",\n            \"function\": \"谓语部分\",\n            \"tokenIndexes\": [1, 2, 3, 4, 5, 6]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177296237045000000000000000000000ffffac15bc59ffe13f"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 403,
+    "total_tokens": 1330,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773221566
+}
