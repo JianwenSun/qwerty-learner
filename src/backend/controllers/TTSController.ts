@@ -149,11 +149,13 @@ router.get('/sound/:sentenceId/:voiceType',
         if (!sentenceSound.mp3Data) {
           throw new Error('Audio data is missing');
         }
-        // 确保 mp3Data 是 Buffer 或 Uint8Array 类型
-        const mp3Data = sentenceSound.mp3Data instanceof Buffer
+        // 确保 mp3Data 是正确的类型
+        const mp3Data = Buffer.isBuffer(sentenceSound.mp3Data)
           ? sentenceSound.mp3Data
           : Buffer.from(sentenceSound.mp3Data);
-        const decompressedBuffer = zlib.gunzipSync(mp3Data);
+        // 转换为 Uint8Array 以兼容 zlib.gunzipSync
+        const uint8Array = new Uint8Array(mp3Data);
+        const decompressedBuffer = zlib.gunzipSync(uint8Array);
         // 发送解压后的音频数据
         res.send(decompressedBuffer);
       } catch (error) {
