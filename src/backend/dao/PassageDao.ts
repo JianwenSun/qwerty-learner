@@ -1,8 +1,8 @@
 import { PrismaClient } from '@prisma/client';
-import { Sentence } from '../analyzer/model';
 import { SentenceDao } from './SentenceDao';
 import { DbConnection } from './DbConnection';
 import { ITXClientDenyList } from '@prisma/client/runtime/library';
+import { SentenceDto } from '../dto/SentenceDto';
 
 // 文章存储类
 export class PassageDao {
@@ -28,7 +28,7 @@ export class PassageDao {
     author?: string;
     source?: string;
     chapterId?: number;
-  }, sentences: Sentence[]) {
+  }, sentences: SentenceDto[]) {
     try {
       // 检查文章是否已存在
       let existingPassage = await this.prisma.passage.findFirst({
@@ -80,13 +80,13 @@ export class PassageDao {
    * @param sentences 句子数组
    * @returns 单词数
    */
-  private calculateWordCount(sentences: Sentence[]): number {
+  private calculateWordCount(sentences: SentenceDto[]): number {
     const wordSet = new Set<string>();
 
     for (const sentence of sentences) {
       for (const token of sentence.tokens) {
-        for (const word of token.words) {
-          wordSet.add(word.toLowerCase());
+        for (const wordPos of token.words) {
+          wordSet.add(wordPos.word.toLowerCase());
         }
       }
     }

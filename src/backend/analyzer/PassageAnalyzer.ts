@@ -31,9 +31,9 @@ export class PassageAnalyzer {
         for (const token of analysisResult.tokens) {
           // 从words数组中提取单词
           for (const word of token.words) {
-            wordsSet.add(word.toLowerCase());
+            wordsSet.add(word.word.toLowerCase());
           }
-          
+
           // 如果words数组为空，且content是一个有效的单词，则从content中提取
           if (token.words.length === 0 && token.content) {
             // 去除首尾空格

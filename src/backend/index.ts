@@ -4,7 +4,9 @@ import { PassageAnalyzer } from './analyzer/PassageAnalyzer';
 import { SentenceService } from './service/SentenceService';
 import { SchedulerManager } from './scheduler';
 import ttsRoutes from './routes/tts';
+import senseRoutes from './routes/sense';
 console.log('TTS routes loaded:', ttsRoutes);
+console.log('Sense routes loaded:', senseRoutes);
 
 // 主函数
 async function main() {
@@ -57,6 +59,7 @@ That night, Lily closed her eyes with warmth in her heart. She knew she would ne
 
     // 注册路由
     app.use('/api/tts', ttsRoutes);
+    app.use('/api/sense', senseRoutes);
 
     // 提供静态文件服务
     app.use(express.static(__dirname));
@@ -68,6 +71,13 @@ That night, Lily closed her eyes with warmth in her heart. She knew she would ne
       console.log('  GET  /api/tts/status - Get TTS generation status for all sentences');
       console.log('  POST /api/tts/generate/:sentenceId - Manually generate TTS for a sentence');
       console.log('  GET  /api/tts/sound/:sentenceId/:voiceType - Get audio file for a sentence');
+      console.log('Sense API endpoints:');
+      console.log('  POST /api/sense - Create a new sense');
+      console.log('  GET  /api/sense/:id - Get a sense by ID');
+      console.log('  GET  /api/sense/word/:wordId - Get senses by word ID');
+      console.log('  GET  /api/sense - Get all senses');
+      console.log('  PUT  /api/sense/:id - Update a sense');
+      console.log('  DELETE /api/sense/:id - Delete a sense');
     });
 
     console.log('\nBackend service started successfully!');

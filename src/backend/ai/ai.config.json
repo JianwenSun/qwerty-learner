@@ -1,16 +1,16 @@
 {
-  "modelGroup": "remote",
+  "modelGroup": "local",
   "modelGroups": {
     "local": [
       {
-        "name": "local",
-        "url": "http://localhost:11434/api/chat",
-        "apiKey": "",
+        "name": "omlx",
+        "url": "http://localhost:8000/v1/completions",
+        "apiKey": "root",
         "model": {
-          "type": "qwen2",
-          "name": "qwen2:1.5b"
+          "type": "qwen3.5",
+          "name": "Qwen3.5-2B-6bit"
         },
-        "provider": "ollama"
+        "provider": "openapi"
       }
     ],
     "remote": [

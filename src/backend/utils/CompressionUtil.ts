@@ -11,7 +11,7 @@ export class CompressionUtil {
    * @returns 压缩后的数据
    */
   static compress(data: Buffer | Uint8Array): Buffer {
-    return zlib.gzipSync(data);
+    return zlib.gzipSync(data as any);
   }
 
   /**
@@ -20,7 +20,7 @@ export class CompressionUtil {
    * @returns 解压后的数据
    */
   static decompress(compressedData: Buffer | Uint8Array): Buffer {
-    return zlib.gunzipSync(compressedData);
+    return zlib.gunzipSync(compressedData as any);
   }
 
   /**

@@ -1,8 +1,13 @@
 
+export interface WordPos {
+    word: string; // 必选：单词
+    pos: string; // 必选：词性
+}
+
 // 单词标记接口
 export interface Token {
     content: string; // 必选：内容
-    words: string[]; // 必选：拆分后的单词
+    words: WordPos[]; // 必选：拆分后的单词 （每个单词都有其词性）
     explain: string; // 必选：解释
 }
 
@@ -41,4 +46,21 @@ export interface PassageAnalysisOutput {
     input: PassageInput;
     sentences: Sentence[]
     words: string[],
+}
+
+// 单词输入接口
+export interface WordInput {
+    id: number;
+    content: string;
+}
+
+// 单词释义接口
+export interface Sense {
+    content: string; // 中文释义
+    pos: string; // 词性
+}
+
+// 单词分析输出接口
+export interface WordOutput {
+    senses: Sense[];
 }

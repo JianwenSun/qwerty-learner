@@ -1,0 +1,42 @@
+{
+  "created_at": 1773057550,
+  "id": "resp_0217730575481244c820fca0bf6a1c3132c1d42bdd0dd3f2158dc",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"\\\"What's that?\\\" she asked softly.\",\n    \"contentCn\": \"“那是什么？”她轻声问道。\",\n    \"tokens\": [\n        {\n            \"content\": \"\\\"\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"What\",\n            \"words\": [\n                {\n                    \"word\": \"What\",\n                    \"pos\": \"pron.\"\n                }\n            ],\n            \"explain\": \"代词，疑问代词\"\n        },\n        {\n            \"content\": \"'s\",\n            \"words\": [\n                {\n                    \"word\": \"is\",\n                    \"pos\": \"aux.v.\"\n                }\n            ],\n            \"explain\": \"缩写，表示 'is'\"\n        },\n        {\n            \"content\": \"that\",\n            \"words\": [\n                {\n                    \"word\": \"that\",\n                    \"pos\": \"pron.\"\n                }\n            ],\n            \"explain\": \"代词，指示代词\"\n        },\n        {\n            \"content\": \"?\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"\\\"\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"she\",\n            \"words\": [\n                {\n                    \"word\": \"she\",\n                    \"pos\": \"pron.\"\n                }\n            ],\n            \"explain\": \"代词，人称代词主格\"\n        },\n        {\n            \"content\": \"asked\",\n            \"words\": [\n                {\n                    \"word\": \"asked\",\n                    \"pos\": \"v.\"\n                }\n            ],\n            \"explain\": \"动词，ask的过去式\"\n        },\n        {\n            \"content\": \"softly\",\n            \"words\": [\n                {\n                    \"word\": \"softly\",\n                    \"pos\": \"adv.\"\n                }\n            ],\n            \"explain\": \"副词，修饰动词\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"\\\"What's that?\\\"\",\n            \"contentCn\": \"“那是什么？”\",\n            \"function\": \"直接引语，宾语\",\n            \"tokenIndexes\": [0, 1, 2, 3, 4, 5]\n        },\n        {\n            \"content\": \"she asked softly.\",\n            \"contentCn\": \"她轻声问道。\",\n            \"function\": \"主句，包含主语、谓语和方式状语\",\n            \"tokenIndexes\": [6, 7, 8, 9]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177305755019400000000000000000000ffffac151517e4f873"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 1277,
+    "output_tokens": 639,
+    "total_tokens": 1916,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773316748
+}

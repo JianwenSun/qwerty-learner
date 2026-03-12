@@ -1,8 +1,9 @@
 import { Router, Request, Response } from 'express';
+import { param, body, validationResult } from 'express-validator';
 import { TTSService } from '../service/tts/TTSService';
 import { VoiceType } from '../types/VoiceType';
-import { SentenceStatus } from '../storage/dao/SentenceSoundDAO';
-import zlib from 'zlib';
+import { SentenceStatus } from '../dao/SoundDao';
+import * as zlib from 'zlib';
 
 const router = Router();
 const ttsService = new TTSService();
@@ -27,108 +28,146 @@ router.get('/status', async (req: Request, res: Response) => {
 });
 
 // 手动触发句子的TTS生成
-router.post('/generate/:sentenceId', async (req: Request, res: Response) => {
-  try {
-    const sentenceId = req.params.sentenceId as string;
-    const voiceType = req.body.voiceType as VoiceType;
+router.post('/generate/:sentenceId',
+  param('sentenceId').notEmpty().isNumeric().withMessage('句子ID不能为空且必须是数字'),
+  body('voiceType').notEmpty().withMessage('语音类型不能为空'),
+  async (req: Request, res: Response) => {
+    try {
+      // 检查验证结果
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({
+          success: false,
+          errors: errors.array().map(e => e.msg)
+        });
+      }
 
-    // 验证参数
-    if (!sentenceId || !voiceType) {
-      return res.status(400).json({
-        success: false,
-        error: 'Missing required parameters'
-      });
-    }
+      const sentenceId = parseInt(req.params.sentenceId as string);
+      const voiceType = req.body.voiceType as VoiceType;
 
-    // 生成并保存TTS
-    await ttsService.generateAndSaveTTS(parseInt(sentenceId), voiceType);
+      // 生成并保存TTS
+      await ttsService.generateAndSaveTTS(sentenceId, voiceType);
 
-    res.json({
-      success: true,
-      message: 'TTS generated successfully'
-    });
-  } catch (error) {
-    console.error('Error generating TTS:', error);
-    if (error instanceof Error && error.message === 'Sentence not found') {
-      res.status(404).json({
-        success: false,
-        error: 'Sentence not found'
+      res.json({
+        success: true,
+        message: 'TTS generated successfully'
       });
-    } else {
-      res.status(500).json({
-        success: false,
-        error: 'Failed to generate TTS'
-      });
+    } catch (error) {
+      console.error('Error generating TTS:', error);
+      if (error instanceof Error && error.message === 'Sentence not found') {
+        res.status(404).json({
+          success: false,
+          error: 'Sentence not found'
+        });
+      } else {
+        res.status(500).json({
+          success: false,
+          error: 'Failed to generate TTS'
+        });
+      }
     }
   }
-});
+);
 
 // 删除句子的音频文件
 console.log('Registering delete endpoint');
-router.delete('/sound/:sentenceId/:voiceType', async (req: Request, res: Response) => {
-  try {
-    const sentenceId = req.params.sentenceId as string;
-    const voiceType = req.params.voiceType as VoiceType;
+router.delete('/sound/:sentenceId/:voiceType',
+  param('sentenceId').notEmpty().isNumeric().withMessage('句子ID不能为空且必须是数字'),
+  param('voiceType').notEmpty().withMessage('语音类型不能为空'),
+  async (req: Request, res: Response) => {
+    try {
+      // 检查验证结果
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({
+          success: false,
+          errors: errors.array().map(e => e.msg)
+        });
+      }
 
-    // 删除音频
-    await ttsService.deleteTTS(parseInt(sentenceId), voiceType);
+      const sentenceId = parseInt(req.params.sentenceId as string);
+      const voiceType = req.params.voiceType as VoiceType;
 
-    res.json({
-      success: true,
-      message: 'Audio deleted successfully'
-    });
-  } catch (error) {
-    console.error('Error deleting audio:', error);
-    if (error instanceof Error && error.message === 'Audio not found') {
-      res.status(404).json({
-        success: false,
-        error: 'Audio not found'
+      // 删除音频
+      await ttsService.deleteTTS(sentenceId, voiceType);
+
+      res.json({
+        success: true,
+        message: 'Audio deleted successfully'
       });
-    } else {
-      res.status(500).json({
-        success: false,
-        error: 'Failed to delete audio'
-      });
+    } catch (error) {
+      console.error('Error deleting audio:', error);
+      if (error instanceof Error && error.message === 'Audio not found') {
+        res.status(404).json({
+          success: false,
+          error: 'Audio not found'
+        });
+      } else {
+        res.status(500).json({
+          success: false,
+          error: 'Failed to delete audio'
+        });
+      }
     }
   }
-});
+);
 
 // 获取句子的音频文件
-router.get('/sound/:sentenceId/:voiceType', async (req: Request, res: Response) => {
-  try {
-    const sentenceId = req.params.sentenceId as string;
-    const voiceType = req.params.voiceType as VoiceType;
+router.get('/sound/:sentenceId/:voiceType',
+  param('sentenceId').notEmpty().isNumeric().withMessage('句子ID不能为空且必须是数字'),
+  param('voiceType').notEmpty().withMessage('语音类型不能为空'),
+  async (req: Request, res: Response) => {
+    try {
+      // 检查验证结果
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({
+          success: false,
+          errors: errors.array().map(e => e.msg)
+        });
+      }
 
-    // 查找音频记录
-    const sentenceSound = await ttsService.getTTS(parseInt(sentenceId), voiceType);
+      const sentenceId = parseInt(req.params.sentenceId as string);
+      const voiceType = req.params.voiceType as VoiceType;
 
-    if (!sentenceSound) {
-      return res.status(404).json({
+      // 查找音频记录
+      const sentenceSound = await ttsService.getTTS(sentenceId, voiceType);
+
+      if (!sentenceSound) {
+        return res.status(404).json({
+          success: false,
+          error: 'Audio not found'
+        });
+      }
+
+      // 设置响应头
+      res.setHeader('Content-Type', 'audio/mpeg');
+      res.setHeader('Content-Disposition', `inline; filename="sentence-${sentenceId}-${voiceType}.mp3"`);
+
+      // 解压音频数据
+      try {
+        if (!sentenceSound.mp3Data) {
+          throw new Error('Audio data is missing');
+        }
+        // 确保 mp3Data 是 Buffer 或 Uint8Array 类型
+        const mp3Data = sentenceSound.mp3Data instanceof Buffer
+          ? sentenceSound.mp3Data
+          : Buffer.from(sentenceSound.mp3Data);
+        const decompressedBuffer = zlib.gunzipSync(mp3Data);
+        // 发送解压后的音频数据
+        res.send(decompressedBuffer);
+      } catch (error) {
+        console.error('Error decompressing audio:', error);
+        throw error;
+      }
+    } catch (error) {
+      console.error('Error getting audio:', error);
+      res.status(500).json({
         success: false,
-        error: 'Audio not found'
+        error: 'Failed to get audio'
       });
     }
-
-    // 设置响应头
-    res.setHeader('Content-Type', 'audio/mpeg');
-    res.setHeader('Content-Disposition', `inline; filename="sentence-${sentenceId}-${voiceType}.mp3"`);
-
-    // 解压音频数据
-    try {
-      const decompressedBuffer = zlib.gunzipSync(sentenceSound.mp3Data);
-      // 发送解压后的音频数据
-      res.send(decompressedBuffer);
-    } catch (error) {
-      console.error('Error decompressing audio:', error);
-      throw error;
-    }
-  } catch (error) {
-    console.error('Error getting audio:', error);
-    res.status(500).json({
-      success: false,
-      error: 'Failed to get audio'
-    });
   }
-});
+);
 
 export default router;

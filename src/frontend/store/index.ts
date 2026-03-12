@@ -13,7 +13,6 @@ import type {
   LoopSentenceTimesOption,
   SentenceDictationType,
   PronunciationHumanType,
-  SentenceDictionary,
 } from '@/typings'
 import type { WordReviewRecord } from '@/utils/db/wordRecord'
 import { atom } from 'jotai'

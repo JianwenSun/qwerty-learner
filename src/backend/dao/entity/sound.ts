@@ -1,6 +1,28 @@
-// 推荐：声音接口
-export interface Sound {
-  id: number; // 必选：主键字段
-  path: string; // 必选：声音文件路径
-  createdAt?: number; // 可选：创建时间
+// Sound 实体类
+export class SoundEntity {
+  constructor(
+    public id: string,
+    public voiceType: string,
+    public gender: string,
+    public url: string | null,
+    public mp3Data: Uint8Array | null,
+    public isDeleted: boolean
+  ) {}
+}
+
+// 句子实体类
+export class SentenceEntity {
+  constructor(
+    public id: number,
+    public content: string,
+    public isDeleted: boolean
+  ) {}
+}
+
+// 句子声音关联实体类
+export class SentenceSoundEntity {
+  constructor(
+    public sentenceId: number,
+    public soundId: string
+  ) {}
 }

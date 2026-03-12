@@ -1,5 +1,4 @@
 import { AIChat } from "./chat";
-import * as http from 'http';
 import * as https from 'https';
 import { ModelConfig } from "../config";
 import { RequestOptions } from "http";

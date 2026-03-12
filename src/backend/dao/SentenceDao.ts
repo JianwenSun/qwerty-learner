@@ -1,7 +1,9 @@
 import { PrismaClient } from '@prisma/client';
-import { Sentence, Token } from '../analyzer/model';
 import { DbConnection } from './DbConnection';
 import { ITXClientDenyList } from '@prisma/client/runtime/library';
+import { SentenceEntity } from './entity/sentence';
+import { SentenceDto } from '../dto/SentenceDto';
+import { TokenDto } from '../dto/TokenDto';
 
 // 句子存储类
 export class SentenceDao {
@@ -16,7 +18,7 @@ export class SentenceDao {
    * @param passageId 文章ID
    * @returns 存储的句子
    */
-  async saveSentence(sentence: Sentence, passageId?: number | null, chapterId?: number | null) {
+  async saveSentence(sentence: SentenceDto, passageId?: number | null, chapterId?: number | null): Promise<SentenceEntity> {
     try {
 
       // 检查句子是否已存在
@@ -24,12 +26,31 @@ export class SentenceDao {
         where: {
           content: sentence.content,
           isDeleted: false
+        },
+        select: {
+          id: true,
+          content: true,
+          contentCn: true,
+          tokens: true,
+          words: true,
+          explanation: true,
+          chapterId: true,
+          isDeleted: true
         }
       });
 
       if (existingSentence) {
         console.log(`句子已存在: ${sentence.content}`);
-        return existingSentence;
+        return new SentenceEntity(
+          existingSentence.id,
+          existingSentence.content,
+          existingSentence.contentCn,
+          existingSentence.tokens,
+          existingSentence.words,
+          existingSentence.explanation,
+          existingSentence.chapterId,
+          existingSentence.isDeleted
+        );
       }
 
       // 直接执行，因为我们已经在测试中使用了事务
@@ -37,26 +58,46 @@ export class SentenceDao {
       await this.saveWordsWithPrisma(sentence.tokens, this.prisma);
 
       // 存储句子
-      const sentenceData: any = {
+      const sentenceData = {
         content: sentence.content,
         contentCn: sentence.contentCn,
         tokens: JSON.stringify(sentence.tokens),
         words: JSON.stringify(sentence.tokens.map(token => token.content)),
         explanation: '', // 可以根据需要添加解释
-        soundId: 1, // 默认为1，实际应该根据情况设置
         chapterId: chapterId || null,
       };
 
       // 如果提供了passageId，添加多对多关联
       if (passageId) {
-        sentenceData.passages = {
+        (sentenceData as any).passages = {
           connect: [{ id: passageId }]
         };
       }
 
-      return await this.prisma.sentence.create({
-        data: sentenceData
+      const createdSentence = await this.prisma.sentence.create({
+        data: sentenceData,
+        select: {
+          id: true,
+          content: true,
+          contentCn: true,
+          tokens: true,
+          words: true,
+          explanation: true,
+          chapterId: true,
+          isDeleted: true
+        }
       });
+
+      return new SentenceEntity(
+        createdSentence.id,
+        createdSentence.content,
+        createdSentence.contentCn,
+        createdSentence.tokens,
+        createdSentence.words,
+        createdSentence.explanation,
+        createdSentence.chapterId,
+        createdSentence.isDeleted
+      );
     } catch (error) {
       console.error('存储句子失败:', error);
       throw error;
@@ -68,14 +109,14 @@ export class SentenceDao {
    * @param tokens 单词标记数组
    * @param prisma Prisma实例
    */
-  async saveWordsWithPrisma(tokens: Token[], prisma: PrismaClient | Omit<PrismaClient, ITXClientDenyList>) {
+  async saveWordsWithPrisma(tokens: TokenDto[], prisma: PrismaClient | Omit<PrismaClient, ITXClientDenyList>): Promise<void> {
     try {
       for (const token of tokens) {
-        for (const word of token.words) {
+        for (const wordPos of token.words) {
           // 检查单词是否已存在
           const existingWord = await prisma.word.findFirst({
             where: {
-              content: word,
+              content: wordPos.word,
               isDeleted: false
             }
           });
@@ -83,9 +124,9 @@ export class SentenceDao {
           if (!existingWord) {
             await prisma.word.create({
               data: {
-                content: word,
-                tokenIndexes: '', // 可以根据需要添加索引
-                senseIds: '' // 可以根据需要添加语义ID
+                content: wordPos.word,
+                ukphone: '', // 默认空值，实际应用中应该从API获取
+                usphone: '' // 默认空值，实际应用中应该从API获取
               }
             });
           }
@@ -98,7 +139,7 @@ export class SentenceDao {
   }
 
 
-  async disconnect() {
+  async disconnect(): Promise<void> {
     // 调用DbConnection的disconnect方法
     await DbConnection.getInstance().disconnect();
   }
@@ -108,14 +149,39 @@ export class SentenceDao {
    * @param content 句子内容
    * @returns 句子对象
    */
-  async findSentenceByContent(content: string) {
+  async findSentenceByContent(content: string): Promise<SentenceEntity | null> {
     try {
-      return await this.prisma.sentence.findFirst({
+      const sentence = await this.prisma.sentence.findFirst({
         where: {
           content: content,
           isDeleted: false
+        },
+        select: {
+          id: true,
+          content: true,
+          contentCn: true,
+          tokens: true,
+          words: true,
+          explanation: true,
+          chapterId: true,
+          isDeleted: true
         }
       });
+
+      if (!sentence) {
+        return null;
+      }
+
+      return new SentenceEntity(
+        sentence.id,
+        sentence.content,
+        sentence.contentCn,
+        sentence.tokens,
+        sentence.words,
+        sentence.explanation,
+        sentence.chapterId,
+        sentence.isDeleted
+      );
     } catch (error) {
       console.error('查询句子失败:', error);
       throw error;
@@ -127,13 +193,38 @@ export class SentenceDao {
    * @param id 句子ID
    * @returns 句子对象
    */
-  async findSentenceById(id: number) {
+  async findSentenceById(id: number): Promise<SentenceEntity | null> {
     try {
-      return await this.prisma.sentence.findUnique({
+      const sentence = await this.prisma.sentence.findUnique({
         where: {
           id: id
+        },
+        select: {
+          id: true,
+          content: true,
+          contentCn: true,
+          tokens: true,
+          words: true,
+          explanation: true,
+          chapterId: true,
+          isDeleted: true
         }
       });
+
+      if (!sentence) {
+        return null;
+      }
+
+      return new SentenceEntity(
+        sentence.id,
+        sentence.content,
+        sentence.contentCn,
+        sentence.tokens,
+        sentence.words,
+        sentence.explanation,
+        sentence.chapterId,
+        sentence.isDeleted
+      );
     } catch (error) {
       console.error('查询句子失败:', error);
       throw error;
@@ -144,13 +235,34 @@ export class SentenceDao {
    * 查询所有句子
    * @returns 句子数组
    */
-  async findAllSentences() {
+  async findAllSentences(): Promise<SentenceEntity[]> {
     try {
-      return await this.prisma.sentence.findMany({
+      const sentences = await this.prisma.sentence.findMany({
         where: {
           isDeleted: false
+        },
+        select: {
+          id: true,
+          content: true,
+          contentCn: true,
+          tokens: true,
+          words: true,
+          explanation: true,
+          chapterId: true,
+          isDeleted: true
         }
       });
+
+      return sentences.map(sentence => new SentenceEntity(
+        sentence.id,
+        sentence.content,
+        sentence.contentCn,
+        sentence.tokens,
+        sentence.words,
+        sentence.explanation,
+        sentence.chapterId,
+        sentence.isDeleted
+      ));
     } catch (error) {
       console.error('查询所有句子失败:', error);
       throw error;

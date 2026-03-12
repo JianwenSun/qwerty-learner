@@ -14,14 +14,33 @@ export class SentenceAnalyzer {
                   - 特别注意处理缩写、所有格等非独立单词形式
                   - 对每个标记必须提供以下信息：
                     - content: 标记的原始内容（如 "I", "'m", "mother's"）
-                    - words: 拆分后的完整单词数组（如 ["I"], ["am"], ["mother"])
+                    - words: 是一个数组，记录单词及其词性（如 [{ "word": "I", "pos": "pron."}, { "word": "am", "pos": "aux.v."}]）
+                      词性必须符合下表 
+                          { name: 'n.', cnName: '名词' },
+                          { name: 'v.', cnName: '动词' },
+                          { name: 'vt.', cnName: '及物动词' },
+                          { name: 'vi.', cnName: '不及物动词' },
+                          { name: 'adj.', cnName: '形容词' },
+                          { name: 'adv.', cnName: '副词' },
+                          { name: 'prep.', cnName: '介词' },
+                          { name: 'conj.', cnName: '连词' },
+                          { name: 'pron.', cnName: '代词' },
+                          { name: 'phrase.', cnName: '短语' },
+                          { name: 'num.', cnName: '数词' },
+                          { name: 'int.', cnName: '感叹词' },
+                          { name: 'art.', cnName: '冠词' },
+                          { name: 'aux.v.', cnName: '助动词' },
+                          { name: 'modal.v.', cnName: '情态动词' },
+                          { name: 'det.', cnName: '限定词' },
+                          { name: 'pl.', cnName: '复数' },
+                          { name: 'abbr.', cnName: '缩写' },
                     - explain: 对标记的解释说明（如 "代词"，"缩写，表示 'am'"，"s格，表示归属"）
                   - 重要示例：
                     - 对于 "I'm"，必须拆分为两个标记：
-                      - { content: "I", words: ["I"], explain: "代词" }
-                      - { content: "'m", words: ["am"], explain: "缩写，表示 'am'" }
+                      - { content: "I", words: [{ "word": "I", "pos": "pron."}], explain: "代词" }
+                      - { content: "'m", words: [{ "word": "am", "pos": "aux.v."}], explain: "缩写，表示 'am'" }
                     - 对于 "mother's"，应该拆分为一个标记：
-                      - { content: "mother's", words: ["mother"], explain: "s格，表示归属" }
+                      - { content: "mother's", words: [{ "word": "mother", "pos": "n."}], explain: "s格，表示归属" }
                   - 注意：
                     - 所有token的content加起来，正好是完整的句子内容
                     - 缩写部分必须作为单独的标记，如 "'m", "'s", "'re" 等

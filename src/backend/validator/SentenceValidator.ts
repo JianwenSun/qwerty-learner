@@ -48,12 +48,12 @@ export class SentenceValidator {
 
         // 只验证非标点符号的token是否都被包含
         const nonPunctuationTokens = sentence.tokens.filter(token => {
-          return !/^[\p{P}\p{S}]+$/u.test(token.content);
+          return !/^[^\w\s]+$/.test(token.content);
         });
 
         const nonPunctuationTokenIndexes = Array.from(tokenIndexesSet).filter(index => {
           const token = sentence.tokens![index];
-          return !/^[\p{P}\p{S}]+$/u.test(token.content);
+          return !/^[^\w\s]+$/.test(token.content);
         });
 
         if (nonPunctuationTokenIndexes.length !== nonPunctuationTokens.length) {

@@ -1,7 +1,7 @@
 import { VoiceType } from '../../types/VoiceType';
 import config from '../../config/config';
 import { spawnSync } from 'child_process';
-import path from 'path';
+import * as path from 'path';
 
 // 调用 gTTS 脚本并返回 MP3 数据
 export async function streamGTTS(text: string, voiceType: VoiceType): Promise<Buffer> {

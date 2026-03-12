@@ -57,6 +57,7 @@ export type WordWithIndex = Word & {
 }
 
 export const POS_TYPE_MAP: Record<string, PosType> = {
+  // 原有核心词性
   'n.': { name: 'n.', displayName: '名词' },
   'v.': { name: 'v.', displayName: '动词' },
   'vt.': { name: 'vt.', displayName: '及物动词' },
@@ -69,7 +70,21 @@ export const POS_TYPE_MAP: Record<string, PosType> = {
   'phrase.': { name: 'phrase.', displayName: '短语' },
   'num.': { name: 'num.', displayName: '数词' },
   'int.': { name: 'int.', displayName: '感叹词' },
-}
+
+  // 补充高频词性（按学习优先级）
+  'art.': { name: 'art.', displayName: '冠词' },
+  'aux.v.': { name: 'aux.v.', displayName: '助动词' },
+  'modal.v.': { name: 'modal.v.', displayName: '情态动词' },
+  'det.': { name: 'det.', displayName: '限定词' },
+  'pl.': { name: 'pl.', displayName: '复数' },
+  'abbr.': { name: 'abbr.', displayName: '缩写' },
+
+  // 可选补充（动词变形/语法标注）
+  'poss.': { name: 'poss.', displayName: '所有格' },
+  'past.': { name: 'past.', displayName: '过去式' },
+  'pp.': { name: 'pp.', displayName: '过去分词' },
+  'ing.': { name: 'ing.', displayName: '现在分词/动名词' },
+};
 
 export type PosType = {
   name: string

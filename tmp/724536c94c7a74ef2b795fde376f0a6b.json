@@ -1,0 +1,42 @@
+{
+  "created_at": 1773056560,
+  "id": "resp_02177305655806678a562a5d1f9d83a31bddf8475539eafef36bf",
+  "max_output_tokens": 32768,
+  "model": "doubao-seed-2-0-pro-260215",
+  "object": "response",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\n    \"content\": \"\\\"What's that?\\\" she asked softly.\",\n    \"contentCn\": \"“那是什么？”她轻声问道。\",\n    \"tokens\": [\n        {\n            \"content\": \"\\\"\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"What\",\n            \"words\": [\"What\"],\n            \"explain\": \"疑问代词\"\n        },\n        {\n            \"content\": \"'s\",\n            \"words\": [\"is\"],\n            \"explain\": \"缩写，表示 'is'\"\n        },\n        {\n            \"content\": \"that\",\n            \"words\": [\"that\"],\n            \"explain\": \"代词\"\n        },\n        {\n            \"content\": \"?\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"\\\"\",\n            \"words\": [],\n            \"explain\": \"\"\n        },\n        {\n            \"content\": \"she\",\n            \"words\": [\"she\"],\n            \"explain\": \"代词\"\n        },\n        {\n            \"content\": \"asked\",\n            \"words\": [\"asked\"],\n            \"explain\": \"动词，ask的过去式\"\n        },\n        {\n            \"content\": \"softly\",\n            \"words\": [\"softly\"],\n            \"explain\": \"副词\"\n        },\n        {\n            \"content\": \".\",\n            \"words\": [],\n            \"explain\": \"\"\n        }\n    ],\n    \"chunks\": [\n        {\n            \"content\": \"\\\"What's that?\\\"\",\n            \"contentCn\": \"“那是什么？”\",\n            \"function\": \"直接引语，作为asked的宾语\",\n            \"tokenIndexes\": [0, 1, 2, 3, 4, 5]\n        },\n        {\n            \"content\": \"she asked softly.\",\n            \"contentCn\": \"她轻声问道。\",\n            \"function\": \"主句，说明说话的主体和状态\",\n            \"tokenIndexes\": [6, 7, 8, 9]\n        }\n    ]\n}"
+        }
+      ],
+      "status": "completed",
+      "id": "msg_02177305656029300000000000000000000ffffac15f823d10b9e"
+    }
+  ],
+  "thinking": {
+    "type": "disabled"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 928,
+    "output_tokens": 489,
+    "total_tokens": 1417,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "caching": {
+    "type": "disabled"
+  },
+  "store": true,
+  "expire_at": 1773315758
+}

@@ -4,7 +4,7 @@ import { describe, expect, it } from '@jest/globals';
 describe('SentenceAnalyzer', () => {
   describe('analysis', () => {
     it('should analyze sentence successfully', async () => {
-      const testSentence = 'What\'s that?" she asked softly.';
+      const testSentence = '"What\'s that?" she asked softly.';
 
       const sentenceAnalyzer = new SentenceAnalyzer();
       const result = await sentenceAnalyzer.analysis(testSentence);

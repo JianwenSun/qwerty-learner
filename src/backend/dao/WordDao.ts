@@ -1,7 +1,9 @@
-import { PrismaClient, Word } from '@prisma/client';
+import { PrismaClient } from '@prisma/client';
 import { DbConnection } from './DbConnection';
 import { ITXClientDenyList } from '@prisma/client/runtime/library';
+import { WordEntity } from './entity/word';
 
+// 单词存储类
 export class WordDao {
   private prisma: PrismaClient | Omit<PrismaClient, ITXClientDenyList>; // 兼容事务中的prisma实例
 
@@ -9,7 +11,7 @@ export class WordDao {
     this.prisma = prisma || new PrismaClient();
   }
 
-  async saveWord(word: string): Promise<Word> {
+  async saveWord(word: string, ukphone: string, usphone: string): Promise<WordEntity> {
     try {
       // 检查单词是否已存在
       const existingWord = await this.prisma.word.findFirst({
@@ -20,31 +22,43 @@ export class WordDao {
       });
 
       if (existingWord) {
-        return existingWord;
+        return new WordEntity(
+          existingWord.id,
+          existingWord.content,
+          existingWord.ukphone,
+          existingWord.usphone,
+          existingWord.isDeleted
+        );
       }
 
       // 创建新单词
       const newWord = await this.prisma.word.create({
         data: {
           content: word,
-          tokenIndexes: '',
-          senseIds: ''
+          ukphone: ukphone,
+          usphone: usphone
         }
       });
 
-      return newWord;
+      return new WordEntity(
+        newWord.id,
+        newWord.content,
+        newWord.ukphone,
+        newWord.usphone,
+        newWord.isDeleted
+      );
     } catch (error) {
       console.error('存储单词失败:', error);
       throw error;
     }
   }
 
-  async saveWords(words: string[]): Promise<Word[]> {
+  async saveWords(words: Array<{ content: string; ukphone: string; usphone: string }>): Promise<WordEntity[]> {
     try {
-      const savedWords: Word[] = [];
+      const savedWords: WordEntity[] = [];
 
       for (const word of words) {
-        const savedWord = await this.saveWord(word);
+        const savedWord = await this.saveWord(word.content, word.ukphone, word.usphone);
         savedWords.push(savedWord);
       }
 
@@ -55,14 +69,26 @@ export class WordDao {
     }
   }
 
-  async findWord(word: string): Promise<Word | null> {
+  async findWord(word: string): Promise<WordEntity | null> {
     try {
-      return await this.prisma.word.findFirst({
+      const foundWord = await this.prisma.word.findFirst({
         where: {
           content: word,
           isDeleted: false
         }
       });
+
+      if (!foundWord) {
+        return null;
+      }
+
+      return new WordEntity(
+        foundWord.id,
+        foundWord.content,
+        foundWord.ukphone,
+        foundWord.usphone,
+        foundWord.isDeleted
+      );
     } catch (error) {
       console.error('查找单词失败:', error);
       throw error;

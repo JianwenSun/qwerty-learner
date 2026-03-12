@@ -20,8 +20,17 @@ export class SentenceTokenValidator {
     } else {
       // 验证words数组中的每个元素（如果数组非空）
       token.words.forEach((word, index) => {
-        if (!word || typeof word !== 'string') {
-          errors.push(`Token words[${index}] must be a non-empty string`);
+        // 支持两种格式：字符串数组或WordPos对象数组
+        if (typeof word === 'object' && word !== null) {
+          // 验证WordPos对象
+          if (!word.word || typeof word.word !== 'string') {
+            errors.push(`Token words[${index}].word must be a non-empty string`);
+          }
+          if (!word.pos || typeof word.pos !== 'string') {
+            errors.push(`Token words[${index}].pos must be a non-empty string`);
+          }
+        } else {
+          errors.push(`Token words[${index}] must be a WordPos object`);
         }
       });
     }

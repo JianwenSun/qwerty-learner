@@ -1,19 +1,19 @@
 import { VoiceType } from '../../types/VoiceType';
 import { streamQwen3TTS } from './QWen3TTS';
 import { streamGTTS } from './GTTS';
-import fs from 'fs';
-import path from 'path';
-import zlib from 'zlib';
-import crypto from 'crypto';
-import { SentenceSoundDAO, SentenceStatus, SoundStatus, RawSentenceStatus, RawSoundStatus } from '../../storage/dao/SentenceSoundDAO';
+import * as fs from 'fs';
+import * as path from 'path';
+import * as zlib from 'zlib';
+import * as crypto from 'crypto';
+import { SoundDao, SentenceStatus, RawSentenceStatus, SoundStatus, RawSoundStatus } from '../../dao/SoundDao';
 import config from '../../config/config';
 
 // TTS 服务
 export class TTSService {
-  private sentenceSoundDAO: SentenceSoundDAO;
+  private soundDao: SoundDao;
 
   constructor() {
-    this.sentenceSoundDAO = new SentenceSoundDAO();
+    this.soundDao = new SoundDao();
   }
 
   /**
@@ -79,7 +79,7 @@ export class TTSService {
    * 获取所有句子的TTS生成状态
    */
   async getTTSStatus(): Promise<SentenceStatus[]> {
-    const rawResults = await this.sentenceSoundDAO.getAllSentencesWithSoundStatus();
+    const rawResults = await this.soundDao.getAllSentencesWithSoundStatus();
 
     // 处理返回的数据格式，确保包含所有声音类型的状态
     const voiceTypes = Object.values(VoiceType);
@@ -119,7 +119,7 @@ export class TTSService {
    * @param sentenceId 句子ID
    */
   async findSentenceById(sentenceId: number) {
-    return this.sentenceSoundDAO.findSentenceById(sentenceId);
+    return this.soundDao.findSentenceById(sentenceId);
   }
 
   /**
@@ -129,7 +129,7 @@ export class TTSService {
    */
   async generateAndSaveTTS(sentenceId: number, voiceType: VoiceType) {
     // 查找句子
-    const sentence = await this.sentenceSoundDAO.findSentenceById(sentenceId);
+    const sentence = await this.soundDao.findSentenceById(sentenceId);
     if (!sentence) {
       throw new Error('Sentence not found');
     }
@@ -138,22 +138,23 @@ export class TTSService {
     const mp3Data = await this.generateSpeech(sentence.content, voiceType);
 
     // 检查是否已存在对应声音类型的音频
-    const existingSentenceSound = await this.sentenceSoundDAO.findSentenceSound(sentence.id, voiceType);
+    const existingSounds = await this.soundDao.findSoundBySentenceAndVoiceType(sentence.id, voiceType);
 
-    if (existingSentenceSound) {
+    if (existingSounds && existingSounds.length > 0) {
       // 更新现有音频
-      await this.sentenceSoundDAO.updateSentenceSound(
-        existingSentenceSound.id,
+      await this.soundDao.updateSound(
+        existingSounds[0].id,
         this.generateHash(`${sentence.content}-${voiceType}`),
         new Uint8Array(mp3Data)
       );
     } else {
-      // 创建新音频记录
-      await this.sentenceSoundDAO.createSentenceSound(
-        sentence.id,
+      // 创建新音频记录并关联到句子
+      await this.soundDao.createSoundAndAssociateWithSentence(
         voiceType,
+        voiceType === VoiceType.Male ? 'Male' : 'Female',
         this.generateHash(`${sentence.content}-${voiceType}`),
-        new Uint8Array(mp3Data)
+        new Uint8Array(mp3Data),
+        sentence.id
       );
     }
   }
@@ -165,13 +166,18 @@ export class TTSService {
    */
   async deleteTTS(sentenceId: number, voiceType: VoiceType) {
     // 查找音频记录
-    const sentenceSound = await this.sentenceSoundDAO.findSentenceSound(sentenceId, voiceType);
-    if (!sentenceSound) {
+    const existingSounds = await this.soundDao.findSoundBySentenceAndVoiceType(sentenceId, voiceType);
+    if (!existingSounds || existingSounds.length === 0) {
       throw new Error('Audio not found');
     }
 
+    const soundId = existingSounds[0].id;
+
+    // 断开音频与句子的关联
+    await this.soundDao.disconnectSoundFromSentence(sentenceId, soundId);
+
     // 删除音频记录
-    await this.sentenceSoundDAO.deleteSentenceSound(sentenceSound.id);
+    await this.soundDao.deleteSound(soundId);
   }
 
   /**
@@ -180,6 +186,7 @@ export class TTSService {
    * @param voiceType 声音类型
    */
   async getTTS(sentenceId: number, voiceType: VoiceType) {
-    return this.sentenceSoundDAO.findSentenceSound(sentenceId, voiceType);
+    const sounds = await this.soundDao.findSoundBySentenceAndVoiceType(sentenceId, voiceType);
+    return sounds && sounds.length > 0 ? sounds[0] : null;
   }
 }

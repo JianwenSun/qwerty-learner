@@ -40,12 +40,13 @@ model Chapter {
 model Word {
   id           Int       @id @default(autoincrement())
   content      String    @unique
-  tokenIndexes String    @map("token_indexes")
-  senseIds     String    @map("sense_ids")
+  ukphone      String
+  usphone      String
   createAt     DateTime  @default(now()) @map("create_at")
   modifyAt     DateTime? @map("modify_at")
   deleteAt     DateTime? @map("delete_at")
   isDeleted    Boolean   @default(false) @map("is_deleted")
+  senses       Senses?
 
   @@index([content])
   @@map("words")
@@ -73,10 +74,9 @@ model Sentence {
   chapterId   Int?       @map("chapter_id")
   content     String
   contentCn   String     @map("content_cn")
-  explanation String
+  explanation String?
   tokens      String     @map("tokens") @db.Text
   words       String     @map("words") @db.Text
-  soundId     Int?       @map("sound_id")
   createAt    DateTime   @default(now()) @map("create_at")
   modifyAt    DateTime?  @map("modify_at")
   deleteAt    DateTime?  @map("delete_at")
@@ -108,16 +108,7 @@ model Dictionary {
   @@map("dictionaries")
 }
 
-model Sound {
-  id        Int       @id @default(autoincrement())
-  path      String
-  createAt  DateTime  @default(now()) @map("create_at")
-  modifyAt  DateTime? @map("modify_at")
-  deleteAt  DateTime? @map("delete_at")
-  isDeleted Boolean   @default(false) @map("is_deleted")
-
-  @@map("sounds")
-}
+// Sound 表已被重新定义，原表已删除
 
 model Practice {
   id        Int        @id @default(autoincrement())
@@ -170,17 +161,86 @@ enum VoiceType {
   Female
 }
 
-model SentenceSound {
-  id         Int       @id @default(autoincrement())
-  sentenceId Int       @map("sentence_id")
+model Sound {
+  id         String    @id @default(cuid())
   voiceType  VoiceType @map("voice_type")
-  hash       String    @db.VarChar(64)
-  mp3Data    Bytes     @map("mp3_data")
+  gender     String    @map("gender")
+  url        String?   @map("url")
+  mp3Data    Bytes?    @map("mp3_data")
   createAt   DateTime  @default(now()) @map("create_at")
   modifyAt   DateTime? @map("modify_at")
-  sentence   Sentence  @relation(fields: [sentenceId], references: [id], onDelete: Cascade)
+  isDeleted  Boolean   @default(false) @map("is_deleted")
+  sentenceSounds SentenceSound[]
+  sensesSounds   SensesSound[]
+  senseSounds    SenseSound[]
+  sensess        Senses[]
+  @@map("sounds")
+}
 
-  @@unique([sentenceId, voiceType])
-  @@index([sentenceId], map: "sentence_sounds_sentence_id_fkey")
+model Senses {
+  id        Int       @id @default(autoincrement())
+  wordId    Int       @unique @map("word_id")
+  ukphone   String
+  usphone   String
+  soundId   String?   @map("sound_id")
+  createAt  DateTime  @default(now()) @map("create_at")
+  modifyAt  DateTime? @map("modify_at")
+  deleteAt  DateTime? @map("delete_at")
+  isDeleted Boolean   @default(false) @map("is_deleted")
+  word      Word      @relation(fields: [wordId], references: [id], onDelete: Cascade)
+  sound     Sound?    @relation(fields: [soundId], references: [id], onDelete: SetNull)
+  sense     Sense[]
+  sensesSounds SensesSound[]
+
+  @@index([wordId], map: "senses_word_id_fkey")
+  @@index([soundId], map: "senses_sound_id_fkey")
+  @@map("senses")
+}
+
+model Sense {
+  id        Int       @id @default(autoincrement())
+  content   String
+  pos       String
+  ukphone   String?
+  usphone   String?
+  sensesId  Int       @map("senses_id")
+  createAt  DateTime  @default(now()) @map("create_at")
+  modifyAt  DateTime? @map("modify_at")
+  deleteAt  DateTime? @map("delete_at")
+  isDeleted Boolean   @default(false) @map("is_deleted")
+  senses    Senses    @relation(fields: [sensesId], references: [id], onDelete: Cascade)
+  senseSounds SenseSound[]
+
+  @@index([sensesId], map: "sense_senses_id_fkey")
+  @@map("sense")
+}
+
+model SentenceSound {
+  sentenceId Int    @map("sentence_id")
+  soundId    String @map("sound_id")
+  sentence   Sentence @relation(fields: [sentenceId], references: [id], onDelete: Cascade)
+  sound      Sound    @relation(fields: [soundId], references: [id], onDelete: Cascade)
+
+  @@id([sentenceId, soundId])
   @@map("sentence_sounds")
+}
+
+model SensesSound {
+  sensesId  Int    @map("senses_id")
+  soundId  String @map("sound_id")
+  senses    Senses  @relation(fields: [sensesId], references: [id], onDelete: Cascade)
+  sound    Sound  @relation(fields: [soundId], references: [id], onDelete: Cascade)
+
+  @@id([sensesId, soundId])
+  @@map("senses_sounds")
+}
+
+model SenseSound {
+  senseId  Int    @map("sense_id")
+  soundId  String @map("sound_id")
+  sense    Sense  @relation(fields: [senseId], references: [id], onDelete: Cascade)
+  sound    Sound  @relation(fields: [soundId], references: [id], onDelete: Cascade)
+
+  @@id([senseId, soundId])
+  @@map("sense_sounds")
 }

@@ -2,6 +2,7 @@ import { PassageAnalyzer } from './../analyzer/PassageAnalyzer';
 import { PassageInput } from '../analyzer/model';
 import { PassageDao } from '../dao/PassageDao';
 import { WordService } from './WordService';
+import { WordsInput } from '../models/WordModel';
 
 // 句子服务类
 export class SentenceService {
@@ -17,7 +18,7 @@ export class SentenceService {
 
   // 分析并存储短文
   // @param input 短文输入
-  // @returns 存储的文章
+  // @returns 存储的短文
   async analyzeAndStorePassage(input: PassageInput) {
     try {
       // 1. 使用 PassageAnalyzer 分析短文
@@ -27,7 +28,18 @@ export class SentenceService {
 
       // 2. 存储单词
       console.log('Storing words...');
-      await this.wordService.processAndStoreWords(analysisResult.words);
+      // 转换单词格式，添加默认的音标和语义数据
+      const wordsWithDetails = analysisResult.words.map(word => ({
+        content: word,
+        ukphone: '', // 默认空值，实际应用中应该从API获取
+        usphone: '', // 默认空值，实际应用中应该从API获取
+        senses: [{
+          content: '', // 默认空值，实际应用中应该从API获取
+          pos: '' // 默认空值，实际应用中应该从API获取
+        }]
+      }));
+      const wordsInput = new WordsInput(wordsWithDetails);
+      await this.wordService.processAndStoreWords(wordsInput);
       console.log('Words stored successfully');
 
       // 3. 使用 PassageDao 存储分析结果
